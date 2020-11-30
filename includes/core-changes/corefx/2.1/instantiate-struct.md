@@ -1,20 +1,20 @@
 ---
 ms.openlocfilehash: b55de00188d92623c493dfc5f9aca915890ae5df
-ms.sourcegitcommit: 348bb052d5cef109a61a3d5253faa5d7167d55ac
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "82021450"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96032089"
 ---
-### <a name="private-fields-added-to-built-in-struct-types"></a><span data-ttu-id="24418-101">Частные поля, добавленные во встроенные типы структур</span><span class="sxs-lookup"><span data-stu-id="24418-101">Private fields added to built-in struct types</span></span>
+### <a name="private-fields-added-to-built-in-struct-types"></a><span data-ttu-id="e2011-101">Частные поля, добавленные во встроенные типы структур</span><span class="sxs-lookup"><span data-stu-id="e2011-101">Private fields added to built-in struct types</span></span>
 
-<span data-ttu-id="24418-102">Частные поля добавлены в [некоторые типы структур](#affected-apis) в [ссылочных сборках](../../../../docs/standard/assembly/reference-assemblies.md).</span><span class="sxs-lookup"><span data-stu-id="24418-102">Private fields were added to [certain struct types](#affected-apis) in [reference assemblies](../../../../docs/standard/assembly/reference-assemblies.md).</span></span> <span data-ttu-id="24418-103">В результате в C# эти типы структуры всегда должны создаваться с помощью [оператора new](../../../../docs/csharp/language-reference/operators/new-operator.md) или [литерала по умолчанию](../../../../docs/csharp/language-reference/operators/default.md#default-literal).</span><span class="sxs-lookup"><span data-stu-id="24418-103">As a result, in C#, those struct types must always be instantiated by using the [new operator](../../../../docs/csharp/language-reference/operators/new-operator.md) or [default literal](../../../../docs/csharp/language-reference/operators/default.md#default-literal).</span></span>
+<span data-ttu-id="e2011-102">Частные поля добавлены в [некоторые типы структур](#affected-apis) в [ссылочных сборках](../../../../docs/standard/assembly/reference-assemblies.md).</span><span class="sxs-lookup"><span data-stu-id="e2011-102">Private fields were added to [certain struct types](#affected-apis) in [reference assemblies](../../../../docs/standard/assembly/reference-assemblies.md).</span></span> <span data-ttu-id="e2011-103">В результате в C# эти типы структуры всегда должны создаваться с помощью [оператора new](../../../../docs/csharp/language-reference/operators/new-operator.md) или [литерала по умолчанию](../../../../docs/csharp/language-reference/operators/default.md#default-literal).</span><span class="sxs-lookup"><span data-stu-id="e2011-103">As a result, in C#, those struct types must always be instantiated by using the [new operator](../../../../docs/csharp/language-reference/operators/new-operator.md) or [default literal](../../../../docs/csharp/language-reference/operators/default.md#default-literal).</span></span>
 
-#### <a name="change-description"></a><span data-ttu-id="24418-104">Описание изменений</span><span class="sxs-lookup"><span data-stu-id="24418-104">Change description</span></span>
+#### <a name="change-description"></a><span data-ttu-id="e2011-104">Описание изменений</span><span class="sxs-lookup"><span data-stu-id="e2011-104">Change description</span></span>
 
-<span data-ttu-id="24418-105">В .NET Core 2.0 и предыдущих версиях некоторые типы структур, например <xref:System.ConsoleKeyInfo>, можно создать в C# без использования оператора `new` или [литерала по умолчанию](../../../../docs/csharp/language-reference/operators/default.md#default-literal).</span><span class="sxs-lookup"><span data-stu-id="24418-105">In .NET Core 2.0 and previous versions, some provided struct types, for example, <xref:System.ConsoleKeyInfo>, could be instantiated without using the `new` operator or [default literal](../../../../docs/csharp/language-reference/operators/default.md#default-literal) in C#.</span></span> <span data-ttu-id="24418-106">Это вызвано тем, что [ссылочные сборки](../../../../docs/standard/assembly/reference-assemblies.md), используемые компилятором C#, не содержат частных полей для структур.</span><span class="sxs-lookup"><span data-stu-id="24418-106">This was because the [reference assemblies](../../../../docs/standard/assembly/reference-assemblies.md) used by the C# compiler didn't contain the private fields for the structs.</span></span> <span data-ttu-id="24418-107">Все частные поля для типов структуры .NET добавляются в ссылочные сборки, начиная с .NET Core 2.1.</span><span class="sxs-lookup"><span data-stu-id="24418-107">All private fields for .NET struct types are added to the reference assemblies starting in .NET Core 2.1.</span></span>
+<span data-ttu-id="e2011-105">В .NET Core 2.0 и предыдущих версиях некоторые типы структур, например <xref:System.ConsoleKeyInfo>, можно создать в C# без использования оператора `new` или [литерала по умолчанию](../../../../docs/csharp/language-reference/operators/default.md#default-literal).</span><span class="sxs-lookup"><span data-stu-id="e2011-105">In .NET Core 2.0 and previous versions, some provided struct types, for example, <xref:System.ConsoleKeyInfo>, could be instantiated without using the `new` operator or [default literal](../../../../docs/csharp/language-reference/operators/default.md#default-literal) in C#.</span></span> <span data-ttu-id="e2011-106">Это вызвано тем, что [ссылочные сборки](../../../../docs/standard/assembly/reference-assemblies.md), используемые компилятором C#, не содержат частных полей для структур.</span><span class="sxs-lookup"><span data-stu-id="e2011-106">This was because the [reference assemblies](../../../../docs/standard/assembly/reference-assemblies.md) used by the C# compiler didn't contain the private fields for the structs.</span></span> <span data-ttu-id="e2011-107">Все частные поля для типов структуры .NET добавляются в ссылочные сборки, начиная с .NET Core 2.1.</span><span class="sxs-lookup"><span data-stu-id="e2011-107">All private fields for .NET struct types are added to the reference assemblies starting in .NET Core 2.1.</span></span>
 
-<span data-ttu-id="24418-108">Например, следующий код C# компилируется в .NET Core 2.0, но не в .NET Core 2.1:</span><span class="sxs-lookup"><span data-stu-id="24418-108">For example, the following C# code compiles in .NET Core 2.0, but not in .NET Core 2.1:</span></span>
+<span data-ttu-id="e2011-108">Например, следующий код C# компилируется в .NET Core 2.0, но не в .NET Core 2.1:</span><span class="sxs-lookup"><span data-stu-id="e2011-108">For example, the following C# code compiles in .NET Core 2.0, but not in .NET Core 2.1:</span></span>
 
 ```csharp
 ConsoleKeyInfo key;    // Struct type
@@ -25,17 +25,17 @@ if (key.ToString() == "y")
 }
 ```
 
-<span data-ttu-id="24418-109">В .NET Core 2.1 предыдущий код приводит к следующей ошибке компилятора: **CS0165 — использование локальной переменной "name", которой не присвоено значение "key"**</span><span class="sxs-lookup"><span data-stu-id="24418-109">In .NET Core 2.1, the previous code results in the following compiler error: **CS0165 - Use of unassigned local variable 'key'**</span></span>
+<span data-ttu-id="e2011-109">В .NET Core 2.1 предыдущий код приводит к следующей ошибке компилятора: **CS0165 — использование локальной переменной "name", которой не присвоено значение "key"**</span><span class="sxs-lookup"><span data-stu-id="e2011-109">In .NET Core 2.1, the previous code results in the following compiler error: **CS0165 - Use of unassigned local variable 'key'**</span></span>
 
-#### <a name="version-introduced"></a><span data-ttu-id="24418-110">Представленная версия</span><span class="sxs-lookup"><span data-stu-id="24418-110">Version introduced</span></span>
+#### <a name="version-introduced"></a><span data-ttu-id="e2011-110">Представленная версия</span><span class="sxs-lookup"><span data-stu-id="e2011-110">Version introduced</span></span>
 
-<span data-ttu-id="24418-111">2.1</span><span class="sxs-lookup"><span data-stu-id="24418-111">2.1</span></span>
+<span data-ttu-id="e2011-111">2.1</span><span class="sxs-lookup"><span data-stu-id="e2011-111">2.1</span></span>
 
-#### <a name="recommended-action"></a><span data-ttu-id="24418-112">Рекомендованное действие</span><span class="sxs-lookup"><span data-stu-id="24418-112">Recommended action</span></span>
+#### <a name="recommended-action"></a><span data-ttu-id="e2011-112">Рекомендованное действие</span><span class="sxs-lookup"><span data-stu-id="e2011-112">Recommended action</span></span>
 
-<span data-ttu-id="24418-113">Создайте экземпляры типов структуры с помощью оператора `new` или [литерала по умолчанию](../../../../docs/csharp/language-reference/operators/default.md#default-literal).</span><span class="sxs-lookup"><span data-stu-id="24418-113">Instantiate struct types by using the `new` operator or [default literal](../../../../docs/csharp/language-reference/operators/default.md#default-literal).</span></span>
+<span data-ttu-id="e2011-113">Создайте экземпляры типов структуры с помощью оператора `new` или [литерала по умолчанию](../../../../docs/csharp/language-reference/operators/default.md#default-literal).</span><span class="sxs-lookup"><span data-stu-id="e2011-113">Instantiate struct types by using the `new` operator or [default literal](../../../../docs/csharp/language-reference/operators/default.md#default-literal).</span></span>
 
-<span data-ttu-id="24418-114">Пример:</span><span class="sxs-lookup"><span data-stu-id="24418-114">For example:</span></span>
+<span data-ttu-id="e2011-114">Пример:</span><span class="sxs-lookup"><span data-stu-id="e2011-114">For example:</span></span>
 
 ```csharp
 ConsoleKeyInfo key = new ConsoleKeyInfo();    // Struct type.
@@ -51,11 +51,11 @@ if (key.ToString() == "y")
     Console.WriteLine("Yes!");
 ```
 
-#### <a name="category"></a><span data-ttu-id="24418-115">Категория</span><span class="sxs-lookup"><span data-stu-id="24418-115">Category</span></span>
+#### <a name="category"></a><span data-ttu-id="e2011-115">Категория</span><span class="sxs-lookup"><span data-stu-id="e2011-115">Category</span></span>
 
-<span data-ttu-id="24418-116">Библиотеки Core .NET</span><span class="sxs-lookup"><span data-stu-id="24418-116">Core .NET libraries</span></span>
+<span data-ttu-id="e2011-116">Библиотеки Core .NET</span><span class="sxs-lookup"><span data-stu-id="e2011-116">Core .NET libraries</span></span>
 
-#### <a name="affected-apis"></a><span data-ttu-id="24418-117">Затронутые API</span><span class="sxs-lookup"><span data-stu-id="24418-117">Affected APIs</span></span>
+#### <a name="affected-apis"></a><span data-ttu-id="e2011-117">Затронутые API</span><span class="sxs-lookup"><span data-stu-id="e2011-117">Affected APIs</span></span>
 
 - <xref:System.ArraySegment%601.Enumerator?displayProperty=fullName>
 - <xref:System.ArraySegment%601?displayProperty=fullName>
