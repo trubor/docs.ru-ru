@@ -138,7 +138,7 @@ items:
           - name: Новые возможности
             href: ../core/dotnet-five.md
           - name: Критические изменения
-            href: ../core/compatibility/5.0.md
+            href: ../core/compatibility/5.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: ".NET Core\_3.1"
         items:
           - name: Новые возможности
@@ -367,6 +367,8 @@ items:
             href: ../core/additional-tools/index.md
           - name: "Средство удаления\_.NET"
             href: ../core/additional-tools/uninstall-tool.md
+          - name: Создание самозаверяющих сертификатов
+            href: ../core/additional-tools/self-signed-certificates-guide.md
           - name: "WCF Web Service Reference\_Provider"
             href: ../core/additional-tools/wcf-web-service-reference-guide.md
           - name: "Служебная программа для\_WCF"
@@ -385,9 +387,12 @@ items:
           - name: Управляемые отладчики
             href: ../core/diagnostics/managed-debuggers.md
           - name: Файлы дампа
-            href: ../core/diagnostics/dumps.md
-          - name: Отладка дампов Linux
-            href: ../core/diagnostics/debug-linux-dumps.md
+            items:
+              - name: Обзор
+                displayName: dumps
+                href: ../core/diagnostics/dumps.md
+              - name: Дампы Linux
+                href: ../core/diagnostics/debug-linux-dumps.md
           - name: Счетчики событий
             href: ../core/diagnostics/event-counters.md
           - name: Каналы событий
@@ -1603,10 +1608,36 @@ items:
                 displayName: json serialization
               - name: Практическое руководство. Сериализация и десериализация JSON
                 href: ../standard/serialization/system-text-json-how-to.md
-              - name: Практическое руководство. Написание настраиваемых преобразователей
-                href: ../standard/serialization/system-text-json-converters-how-to.md
+              - name: Управление сериализацией
+                items:
+                  - name: Создание экземпляров JsonSerializerOptions
+                    href: ../standard/serialization/system-text-json-configure-options.md
+                  - name: Сопоставление без учета регистра
+                    href: ../standard/serialization/system-text-json-character-casing.md
+                  - name: Настройка имен и значений свойств
+                    href: ../standard/serialization/system-text-json-customize-properties.md
+                  - name: Игнорирование свойств
+                    href: ../standard/serialization/system-text-json-ignore-properties.md
+                  - name: "Применение недействительного кода\_JSON"
+                    href: ../standard/serialization/system-text-json-invalid-json.md
+                  - name: Обработка переполнения JSON
+                    href: ../standard/serialization/system-text-json-handle-overflow.md
+                  - name: Сохранение ссылок
+                    href: ../standard/serialization/system-text-json-preserve-references.md
+                  - name: Неизменяемые типы и непубличные методы доступа
+                    href: ../standard/serialization/system-text-json-immutability.md
+                  - name: Полиморфная сериализация
+                    href: ../standard/serialization/system-text-json-polymorphism.md
               - name: Как выполнить миграцию из Newtonsoft.Json
                 href: ../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md
+              - name: Продвинутый уровень
+                items:
+                  - name: Настройка кодировки символов
+                    href: ../standard/serialization/system-text-json-character-encoding.md
+                  - name: Настраиваемые сериализаторы и десериализаторы
+                    href: ../standard/serialization/write-custom-serializer-deserializer.md
+                  - name: Настраиваемые преобразователи
+                    href: ../standard/serialization/system-text-json-converters-how-to.md
           - name: Двоичная сериализация
             items:
               - name: Обзор
@@ -2249,7 +2280,7 @@ items:
           - name: Использование пакета обеспечения совместимости Windows
             href: ../core/porting/windows-compat-pack.md
           - name: Перенос проектов Windows Forms
-            href: ../core/porting/winforms.md
+            href: /dotnet/desktop/winforms/migration/?view=netdesktop-5.0
           - name: Перенос проектов WPF
             href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework
           - name: Перенос проектов C++/CLI
