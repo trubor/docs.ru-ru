@@ -142,6 +142,8 @@
       href: language-reference/classes.md
     - name: Структуры
       href: language-reference/structures.md
+    - name: 'Типы значений, допускающие значение NULL'
+      href: language-reference/nullable-value-types.md
     - name: Наследование
       href: language-reference/inheritance.md
     - name: Интерфейсы
