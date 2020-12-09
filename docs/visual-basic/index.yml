@@ -7,12 +7,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 08/13/2020
   ms.custom: contperfq1
-  ms.openlocfilehash: 1819d6c6cedcd9c2544c8ab6e5ff47d807d8c232
-  ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+  ms.openlocfilehash: 5c393052a1782b64af18d32727f6df5bbd9d1415
+  ms.sourcegitcommit: 9d525bb8109216ca1dc9e39c149d4902f4b43da5
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/15/2020
-  ms.locfileid: "90554753"
+  ms.lasthandoff: 12/04/2020
+  ms.locfileid: "96599685"
 landingContent:
 - title: Начало работы
   linkLists:
@@ -30,7 +30,7 @@ landingContent:
       url: walkthroughs.md
     - text: Дополнительные ресурсы
       url: getting-started/additional-resources.md
-- title: Основы
+- title: Базовый
   linkLists:
   - linkListType: overview
     links:
@@ -50,6 +50,10 @@ landingContent:
       url: developing-apps/index.md
     - text: Приложения Windows Forms
       url: developing-apps/windows-forms/index.md
+  - linkListType: get-started
+    links:
+    - text: Visual Basic на сайте Q&A
+      url: /answers/topics/dotnet-visual-basic.html
 - title: Справочник по языку
   linkLists:
   - linkListType: reference
