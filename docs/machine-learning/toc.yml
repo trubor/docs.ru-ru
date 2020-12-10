@@ -111,6 +111,8 @@
               href: how-to-guides/serve-model-serverless-azure-functions-ml-net.md
             - name: Развертывание модели в веб-API
               href: how-to-guides/serve-model-web-api-ml-net.md
+            - name: Использование модели ONNX Машинного обучения Azure
+              href: /azure/machine-learning/how-to-use-automl-onnx-model-dotnet?toc=/dotnet/machine-learning/how-to-guides/toc.json&bc=/dotnet/machine-learning/how-to-guides/toc.json
 - name: Справочник
   items:
     - name: Справочник по API ML.NET
