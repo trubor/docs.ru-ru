@@ -1,17 +1,17 @@
 ### YamlMime:Landing
 title: Установка .NET в Windows, Linux и macOS
-summary: Сведения об установке .NET в разных версиях Windows, Linux и macOS. Узнайте о зависимостях, необходимых для разработки, развертывания и запуска приложений .NET.
+summary: Сведения об установке .NET Core, .NET 5 и более поздних версий в Windows, Linux и macOS. Узнайте о зависимостях, необходимых для разработки, развертывания и запуска приложений .NET.
 metadata:
   title: Установка .NET в Windows, Linux и macOS
-  description: Сведения о том, где скачивать и устанавливать .NET в разных версиях Windows, Linux и macOS. Узнайте о зависимостях, необходимых для разработки, развертывания и запуска приложений .NET.
+  description: Сведения о скачивании и установке .NET Core, .NET 5 и более поздних версий в Windows, Linux и macOS. Узнайте о зависимостях, необходимых для разработки, развертывания и запуска приложений .NET.
   ms.topic: landing-page
   ms.date: 06/29/2020
-  ms.openlocfilehash: 4ffa74980e983442d37306fe1e943f68251e51e5
-  ms.sourcegitcommit: 9d525bb8109216ca1dc9e39c149d4902f4b43da5
+  ms.openlocfilehash: 4fdfa606c07105a5a0f966a4562732d150bd3d54
+  ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 12/04/2020
-  ms.locfileid: "96599249"
+  ms.lasthandoff: 12/10/2020
+  ms.locfileid: "97009512"
 landingContent:
 - title: Windows
   linkLists:
