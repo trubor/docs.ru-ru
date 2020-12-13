@@ -52,8 +52,6 @@
       href: tutorials/exploration/top-level-statements.md
     - name: Поиск закономерностей в объектах
       href: tutorials/exploration/patterns-objects.md
-    - name: "Обзор C#\_6"
-      href: tutorials/exploration/csharp-6.yml
     - name: Интерполяция строк. Интерактивное руководство
       href: tutorials/exploration/interpolated-strings.yml
     - name: Интерполяция строк. В вашей среде
@@ -93,8 +91,6 @@
       href: whats-new/csharp-8.md
     - name: C# 7.0–7.3
       href: whats-new/csharp-7.md
-    - name: C# 6
-      href: whats-new/csharp-6.md
     - name: Критические изменения в компиляторе
       href: whats-new/breaking-changes.md
     - name: Журнал версий C#
