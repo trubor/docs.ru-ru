@@ -6,12 +6,12 @@ metadata:
   description: Программирование на C#. Документация для начинающих разработчиков, для тех, кто только начинает работать на C#, а также для опытных разработчиков C# и .NET
   ms.topic: landing-page
   ms.date: 11/19/2019
-  ms.openlocfilehash: bc75503b565020fb9966fd756d87890263f63533
-  ms.sourcegitcommit: 9d525bb8109216ca1dc9e39c149d4902f4b43da5
+  ms.openlocfilehash: 584db55455af54bcf7e91771e3598a7349091bee
+  ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 12/04/2020
-  ms.locfileid: "96599451"
+  ms.lasthandoff: 12/15/2020
+  ms.locfileid: "97512155"
 landingContent:
 - title: Обучение программированию на C#
   linkLists:
@@ -71,38 +71,20 @@ landingContent:
     links:
     - text: Новые возможности C# 9.0
       url: whats-new/csharp-9.md
-- title: Новые возможности в C# 8.0
+- title: Новые возможности в C# 9.0
   linkLists:
   - linkListType: whats-new
     links:
-    - text: Новые возможности C# 8.0
-      url: whats-new/csharp-8.md
-  - linkListType: overview
-    links:
-    - text: Регулярные выражения
-      url: pattern-matching.md
-    - text: Ссылочные типы, допускающие значение null
-      url: nullable-references.md
-  - linkListType: concept
-    links:
-    - text: Выбор стратегии миграции, допускающей значение null
-      url: nullable-migration-strategies.md
+    - text: Новые возможности C# 9.0
+      url: whats-new/csharp-9.md
   - linkListType: tutorial
     links:
-    - text: Использование и создание асинхронных потоков
-      url: tutorials/generate-consume-asynchronous-stream.md
-    - text: Разработка с использованием ссылочных типов, допускающих значение NULL
-      url: tutorials/nullable-reference-types.md
-    - text: Перенос существующего кода для использования ссылочных типов, допускающих значение null
-      url: tutorials/upgrade-to-nullable-references.md
-    - text: Использование сопоставления шаблонов для более выразительных алгоритмов
-      url: tutorials/pattern-matching.md
-    - text: Безопасное управление версиями интерфейсов с использованием элементов интерфейса по умолчанию
-      url: tutorials/default-interface-methods-versions.md
-    - text: Комбинирование функциональных возможностей с использованием членов интерфейса по умолчанию
-      url: tutorials/mixins-with-default-interface-methods.md
-    - text: Работа с подмножествами с использованием диапазонов и индексов
-      url: tutorials/ranges-indexes.md
+    - text: Подробнее о типах записей
+      url: tutorials/exploration/records.md
+    - text: Подробнее об инструкциях верхнего уровня
+      url: tutorials/exploration/top-level-statements.md
+    - text: Обзор новых шаблонов
+      url: tutorials/exploration/patterns-objects.md
   - linkListType: reference
     links:
     - text: Критические изменения в компиляторе C#

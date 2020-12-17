@@ -34,6 +34,8 @@
                   href: aspnet-core/5.0/authorization-resource-in-endpoint-routing.md
                 - name: Пакеты интеграции Azure с префиксом Майкрософт удалены
                   href: aspnet-core/5.0/azure-integration-packages-removed.md
+                - name: 'Blazor: в приложениях изменена логика очередности маршрутов'
+                  href: aspnet-core/5.0/blazor-routing-logic-changed.md
                 - name: 'Blazor: Обновлен список поддерживаемых веб-браузеров'
                   href: aspnet-core/5.0/blazor-browser-support-updated.md
                 - name: 'Blazor: незначимый пробел удаляется компилятором'
@@ -292,6 +294,8 @@
                   href: aspnet-core/5.0/authorization-resource-in-endpoint-routing.md
                 - name: Пакеты интеграции Azure с префиксом Майкрософт удалены
                   href: aspnet-core/5.0/azure-integration-packages-removed.md
+                - name: 'Blazor: в приложениях изменена логика очередности маршрутов'
+                  href: aspnet-core/5.0/blazor-routing-logic-changed.md
                 - name: 'Blazor: Обновлен список поддерживаемых веб-браузеров'
                   href: aspnet-core/5.0/blazor-browser-support-updated.md
                 - name: 'Blazor: незначимый пробел удаляется компилятором'
