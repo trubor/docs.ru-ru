@@ -45,6 +45,8 @@
           href: tutorials/image-classification.md
         - name: Прогнозирование спроса на прокат велосипедов (временные ряды)
           href: tutorials/time-series-demand-forecasting.md
+        - name: Всплески увеличения объема вызовов (обнаружение аномалий)
+          href: tutorials/phone-calls-anomaly-detection.md
         - name: Анализ продаж продукта (обнаружение аномалий)
           href: tutorials/sales-anomaly-detection.md
         - name: Обнаружение объектов на изображениях (обнаружение объектов)
