@@ -6,27 +6,27 @@ helpviewer_keywords:
 - auto-implemented properties [C#]
 - properties [C#], auto-implemented
 ms.topic: how-to
-ms.custom: contperfq2
+ms.custom: contperf-fy21q2
 ms.assetid: 1dc5a8ad-a4f7-4f32-8506-3fc6d8c8bfed
-ms.openlocfilehash: 39e191ce3b113b483fe93d70a0cadf02a7bee915
-ms.sourcegitcommit: 30e9e11dfd90112b8eec6406186ba3533f21eba1
+ms.openlocfilehash: 4b28ee17f4be2b933373cce0d3670cbfa9a12895
+ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95099378"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97513046"
 ---
-# <a name="how-to-implement-a-lightweight-class-with-auto-implemented-properties-c-programming-guide"></a><span data-ttu-id="5911c-104">Практическое руководство. Реализация облегченного класса с автоматически реализуемыми свойствами (руководство по программированию на C#)</span><span class="sxs-lookup"><span data-stu-id="5911c-104">How to implement a lightweight class with auto-implemented properties (C# Programming Guide)</span></span>
+# <a name="how-to-implement-a-lightweight-class-with-auto-implemented-properties-c-programming-guide"></a><span data-ttu-id="e48af-104">Практическое руководство. Реализация облегченного класса с автоматически реализуемыми свойствами (руководство по программированию на C#)</span><span class="sxs-lookup"><span data-stu-id="e48af-104">How to implement a lightweight class with auto-implemented properties (C# Programming Guide)</span></span>
 
-<span data-ttu-id="5911c-105">В этом примере показано, как создать неизменяемый упрощенный класс, служащий исключительно для инкапсуляции набора автоматически реализуемых свойств.</span><span class="sxs-lookup"><span data-stu-id="5911c-105">This example shows how to create an immutable lightweight class that serves only to encapsulate a set of auto-implemented properties.</span></span> <span data-ttu-id="5911c-106">Используйте такую конструкцию вместо структуры, когда требуется использовать семантику ссылочного типа.</span><span class="sxs-lookup"><span data-stu-id="5911c-106">Use this kind of construct instead of a struct when you must use reference type semantics.</span></span>
+<span data-ttu-id="e48af-105">В этом примере показано, как создать неизменяемый упрощенный класс, служащий исключительно для инкапсуляции набора автоматически реализуемых свойств.</span><span class="sxs-lookup"><span data-stu-id="e48af-105">This example shows how to create an immutable lightweight class that serves only to encapsulate a set of auto-implemented properties.</span></span> <span data-ttu-id="e48af-106">Используйте такую конструкцию вместо структуры, когда требуется использовать семантику ссылочного типа.</span><span class="sxs-lookup"><span data-stu-id="e48af-106">Use this kind of construct instead of a struct when you must use reference type semantics.</span></span>
 
-<span data-ttu-id="5911c-107">Неизменяемое свойство можно создать двумя способами.</span><span class="sxs-lookup"><span data-stu-id="5911c-107">You can make an immutable property in two ways:</span></span>
+<span data-ttu-id="e48af-107">Неизменяемое свойство можно создать двумя способами.</span><span class="sxs-lookup"><span data-stu-id="e48af-107">You can make an immutable property in two ways:</span></span>
 
-- <span data-ttu-id="5911c-108">Можно объявить метод доступа [set](../../language-reference/keywords/set.md) как [private](../../language-reference/keywords/private.md).</span><span class="sxs-lookup"><span data-stu-id="5911c-108">You can declare the [set](../../language-reference/keywords/set.md) accessor to be [private](../../language-reference/keywords/private.md).</span></span>  <span data-ttu-id="5911c-109">Свойство можно задать только в типе, но оно является неизменяемым для потребителей.</span><span class="sxs-lookup"><span data-stu-id="5911c-109">The property is only settable within the type, but it is immutable to consumers.</span></span>
+- <span data-ttu-id="e48af-108">Можно объявить метод доступа [set](../../language-reference/keywords/set.md) как [private](../../language-reference/keywords/private.md).</span><span class="sxs-lookup"><span data-stu-id="e48af-108">You can declare the [set](../../language-reference/keywords/set.md) accessor to be [private](../../language-reference/keywords/private.md).</span></span>  <span data-ttu-id="e48af-109">Свойство можно задать только в типе, но оно является неизменяемым для потребителей.</span><span class="sxs-lookup"><span data-stu-id="e48af-109">The property is only settable within the type, but it is immutable to consumers.</span></span>
 
-  <span data-ttu-id="5911c-110">При объявлении закрытого метода доступа `set` для инициализации свойства нельзя использовать инициализатор объекта.</span><span class="sxs-lookup"><span data-stu-id="5911c-110">When you declare a private `set` accessor, you cannot use an object initializer to initialize the property.</span></span> <span data-ttu-id="5911c-111">Необходимо использовать конструктор или фабричный метод.</span><span class="sxs-lookup"><span data-stu-id="5911c-111">You must use a constructor or a factory method.</span></span>
-- <span data-ttu-id="5911c-112">Вы можете объявить только метод доступа [get](../../language-reference/keywords/get.md), который делает свойство неизменяемым везде, кроме конструктора типа.</span><span class="sxs-lookup"><span data-stu-id="5911c-112">You can declare only the [get](../../language-reference/keywords/get.md) accessor, which makes the property immutable everywhere except in the type's constructor.</span></span>
+  <span data-ttu-id="e48af-110">При объявлении закрытого метода доступа `set` для инициализации свойства нельзя использовать инициализатор объекта.</span><span class="sxs-lookup"><span data-stu-id="e48af-110">When you declare a private `set` accessor, you cannot use an object initializer to initialize the property.</span></span> <span data-ttu-id="e48af-111">Необходимо использовать конструктор или фабричный метод.</span><span class="sxs-lookup"><span data-stu-id="e48af-111">You must use a constructor or a factory method.</span></span>
+- <span data-ttu-id="e48af-112">Вы можете объявить только метод доступа [get](../../language-reference/keywords/get.md), который делает свойство неизменяемым везде, кроме конструктора типа.</span><span class="sxs-lookup"><span data-stu-id="e48af-112">You can declare only the [get](../../language-reference/keywords/get.md) accessor, which makes the property immutable everywhere except in the type's constructor.</span></span>
 
-<span data-ttu-id="5911c-113">В следующем примере показано, как свойство с методом доступа get, отличается от свойства с методами доступа get и private set.</span><span class="sxs-lookup"><span data-stu-id="5911c-113">The following example shows how a property with only get accessor differs than one with get and private set.</span></span>
+<span data-ttu-id="e48af-113">В следующем примере показано, как свойство с методом доступа get, отличается от свойства с методами доступа get и private set.</span><span class="sxs-lookup"><span data-stu-id="e48af-113">The following example shows how a property with only get accessor differs than one with get and private set.</span></span>
 
 ```csharp
 class Contact
@@ -49,9 +49,9 @@ class Contact
 }
 ```
 
-## <a name="example"></a><span data-ttu-id="5911c-114">Пример</span><span class="sxs-lookup"><span data-stu-id="5911c-114">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e48af-114">Пример</span><span class="sxs-lookup"><span data-stu-id="e48af-114">Example</span></span>
 
-<span data-ttu-id="5911c-115">В следующем примере показаны два способа реализации неизменяемого класса с автоматически реализуемыми свойствами.</span><span class="sxs-lookup"><span data-stu-id="5911c-115">The following example shows two ways to implement an immutable class that has auto-implemented properties.</span></span> <span data-ttu-id="5911c-116">Каждый способ объявляет одно из свойств с закрытым методом доступа `set` и одно из свойств только с методом доступа `get`.</span><span class="sxs-lookup"><span data-stu-id="5911c-116">Each way declares one of the properties with a private `set` and one of the properties with a `get` only.</span></span>  <span data-ttu-id="5911c-117">Первый класс использует конструктор только для инициализации свойства, а второй класс использует статический фабричный метод, вызывающий конструктор.</span><span class="sxs-lookup"><span data-stu-id="5911c-117">The first class uses a constructor only to initialize the properties, and the second class uses a static factory method that calls a constructor.</span></span>
+<span data-ttu-id="e48af-115">В следующем примере показаны два способа реализации неизменяемого класса с автоматически реализуемыми свойствами.</span><span class="sxs-lookup"><span data-stu-id="e48af-115">The following example shows two ways to implement an immutable class that has auto-implemented properties.</span></span> <span data-ttu-id="e48af-116">Каждый способ объявляет одно из свойств с закрытым методом доступа `set` и одно из свойств только с методом доступа `get`.</span><span class="sxs-lookup"><span data-stu-id="e48af-116">Each way declares one of the properties with a private `set` and one of the properties with a `get` only.</span></span>  <span data-ttu-id="e48af-117">Первый класс использует конструктор только для инициализации свойства, а второй класс использует статический фабричный метод, вызывающий конструктор.</span><span class="sxs-lookup"><span data-stu-id="e48af-117">The first class uses a constructor only to initialize the properties, and the second class uses a static factory method that calls a constructor.</span></span>
 
 ```csharp
 // This class is immutable. After an object is created,
@@ -146,10 +146,10 @@ public class Program
 */
 ```
 
-<span data-ttu-id="5911c-118">Компилятор создает резервные поля для каждого автоматически реализуемого свойства.</span><span class="sxs-lookup"><span data-stu-id="5911c-118">The compiler creates backing fields for each auto-implemented property.</span></span> <span data-ttu-id="5911c-119">Эти поля недоступны непосредственно из исходного кода.</span><span class="sxs-lookup"><span data-stu-id="5911c-119">The fields are not accessible directly from source code.</span></span>
+<span data-ttu-id="e48af-118">Компилятор создает резервные поля для каждого автоматически реализуемого свойства.</span><span class="sxs-lookup"><span data-stu-id="e48af-118">The compiler creates backing fields for each auto-implemented property.</span></span> <span data-ttu-id="e48af-119">Эти поля недоступны непосредственно из исходного кода.</span><span class="sxs-lookup"><span data-stu-id="e48af-119">The fields are not accessible directly from source code.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="5911c-120">См. также</span><span class="sxs-lookup"><span data-stu-id="5911c-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e48af-120">См. также</span><span class="sxs-lookup"><span data-stu-id="e48af-120">See also</span></span>
 
-- [<span data-ttu-id="5911c-121">Свойства</span><span class="sxs-lookup"><span data-stu-id="5911c-121">Properties</span></span>](./properties.md)
-- [<span data-ttu-id="5911c-122">struct</span><span class="sxs-lookup"><span data-stu-id="5911c-122">struct</span></span>](../../language-reference/builtin-types/struct.md)
-- [<span data-ttu-id="5911c-123">Инициализаторы объектов и коллекций</span><span class="sxs-lookup"><span data-stu-id="5911c-123">Object and Collection Initializers</span></span>](./object-and-collection-initializers.md)
+- [<span data-ttu-id="e48af-121">Свойства</span><span class="sxs-lookup"><span data-stu-id="e48af-121">Properties</span></span>](./properties.md)
+- [<span data-ttu-id="e48af-122">struct</span><span class="sxs-lookup"><span data-stu-id="e48af-122">struct</span></span>](../../language-reference/builtin-types/struct.md)
+- [<span data-ttu-id="e48af-123">Инициализаторы объектов и коллекций</span><span class="sxs-lookup"><span data-stu-id="e48af-123">Object and Collection Initializers</span></span>](./object-and-collection-initializers.md)
