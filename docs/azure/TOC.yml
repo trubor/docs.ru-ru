@@ -5,16 +5,18 @@
   items:
     - name: Введение в Azure и .NET
       href: intro.md
-    - name: Инструменты для разработчиков
-      href: tools.md
-    - name: Проверка подлинности
-      href: authentication.md
-    - name: Ведение журнала
-      href: logging.md
-    - name: Пакеты
-      href: packages.md
-    - name: "Пример для пакета\_SDK"
-      href: /samples/dotnet/samples/azure-identity-resource-management-storage/
+    - name: "Ключевые службы Azure для разработчиков\_.NET"
+      href: key-azure-services.md
+    - name: Настройка среды разработки
+      items:
+        - name: Создание учетной записи Azure
+          href: create-azure-account.md
+        - name: "Настройка Visual\_Studio для разработки Azure (Windows)"
+          href: configure-visual-studio.md
+        - name: "Настройка VS\_Code для разработки Azure (для разных платформ)"
+          href: configure-vs-code.md
+        - name: Установка Azure CLI
+          href: install-azure-cli.md
 - name: Миграция в Azure
   items:
     - name: Выбор правильного размещения в Azure
@@ -25,6 +27,20 @@
       href: ./migration/vm.md
     - name: Перенос базы данных SQL Server в Azure
       href: ./migration/sql.md
+- name: Azure SDK для .NET
+  items:
+    - name: Что такое «пакет Azure SDK для .NET»?
+      href: ./sdk/azure-sdk-for-dotnet.md
+    - name: Проверка подлинности
+      href: authentication.md
+    - name: Ведение журнала
+      href: logging.md
+    - name: Настройка прокси-сервера
+      href: ./sdk/azure-sdk-configure-proxy.md
+    - name: Список пакетов
+      href: packages.md
+    - name: "Пример для пакета\_SDK"
+      href: /samples/dotnet/samples/azure-identity-resource-management-storage/
 - name: Пример кода
   items:
     - name: Веб-приложения и бессерверные приложения

@@ -393,14 +393,28 @@ items:
               - name: Обзор
                 displayName: dumps
                 href: ../core/diagnostics/dumps.md
+              - name: Отладка StackOverflow
+                href: ../core/diagnostics/debug-stackoverflow.md
               - name: Дампы Linux
                 href: ../core/diagnostics/debug-linux-dumps.md
+              - name: "Расширение отладчика\_SOS"
+                href: ../core/diagnostics/sos-debugging-extension.md
           - name: Счетчики событий
-            href: ../core/diagnostics/event-counters.md
+            items:
+              - name: Обзор
+                displayName: EventCounters
+                href: ../core/diagnostics/event-counters.md
+              - name: "Стандартные счетчики в\_.NET"
+                href: ../core/diagnostics/available-counters.md
           - name: Каналы событий
             href: ../core/diagnostics/eventpipe.md
           - name: Ведение журнала и трассировка
-            href: ../core/diagnostics/logging-tracing.md
+            items:
+              - name: Обзор
+                displayName: logging and tracing
+                href: ../core/diagnostics/logging-tracing.md
+              - name: Стандартные поставщики событий
+                href: ../core/diagnostics/well-known-event-providers.md
           - name: События среды выполнения
             items:
               - name: Обзор
@@ -417,7 +431,7 @@ items:
                 href: ../fundamentals/diagnostics/runtime-loader-binder-events.md
               - name: События методов
                 href: ../fundamentals/diagnostics/runtime-method-events.md
-              - name: События ThreadPool
+              - name: События пула потоков
                 href: ../fundamentals/diagnostics/runtime-thread-events.md
               - name: События системы типов
                 href: ../fundamentals/diagnostics/runtime-type-events.md
@@ -579,8 +593,6 @@ items:
                         href: code-analysis/quality-rules/ca1069.md
                       - name: CA1070
                         href: code-analysis/quality-rules/ca1070.md
-                      - name: CA1071
-                        href: code-analysis/quality-rules/ca1071.md
                   - name: Правила документирования
                     items:
                       - name: Обзор
