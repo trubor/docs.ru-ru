@@ -2,26 +2,26 @@
 title: 'Новые возможности в F # 5,0-F # Guide'
 description: 'Ознакомьтесь с обзором новых функций, доступных в F # 5,0.'
 ms.date: 11/06/2020
-ms.openlocfilehash: 2384f1a75f5e708dc6f170d82fa15c5e0f54c85d
-ms.sourcegitcommit: ecd9e9bb2225eb76f819722ea8b24988fe46f34c
+ms.openlocfilehash: 9b138e4801a3e599db650990acd53c0f956b78b8
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96740189"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98190732"
 ---
-# <a name="whats-new-in-f-50"></a><span data-ttu-id="d8028-103">Новые возможности F# 5.0</span><span class="sxs-lookup"><span data-stu-id="d8028-103">What's new in F# 5.0</span></span>
+# <a name="whats-new-in-f-50"></a><span data-ttu-id="f71ab-103">Новые возможности F# 5.0</span><span class="sxs-lookup"><span data-stu-id="f71ab-103">What's new in F# 5.0</span></span>
 
-<span data-ttu-id="d8028-104">В f # 5,0 добавлено несколько улучшений языка F # и F# Interactive.</span><span class="sxs-lookup"><span data-stu-id="d8028-104">F# 5.0 adds several improvements to the F# language and F# Interactive.</span></span> <span data-ttu-id="d8028-105">Он выпущен с **.NET 5**.</span><span class="sxs-lookup"><span data-stu-id="d8028-105">It is released with **.NET 5**.</span></span>
+<span data-ttu-id="f71ab-104">В f # 5,0 добавлено несколько улучшений языка F # и F# Interactive.</span><span class="sxs-lookup"><span data-stu-id="f71ab-104">F# 5.0 adds several improvements to the F# language and F# Interactive.</span></span> <span data-ttu-id="f71ab-105">Он выпущен с **.NET 5**.</span><span class="sxs-lookup"><span data-stu-id="f71ab-105">It is released with **.NET 5**.</span></span>
 
-<span data-ttu-id="d8028-106">Вы можете скачать последний пакет SDK для .NET на странице [скачиваемых файлов .NET](https://dotnet.microsoft.com/download).</span><span class="sxs-lookup"><span data-stu-id="d8028-106">You can download the latest .NET SDK from the [.NET downloads page](https://dotnet.microsoft.com/download).</span></span>
+<span data-ttu-id="f71ab-106">Вы можете скачать последний пакет SDK для .NET на странице [скачиваемых файлов .NET](https://dotnet.microsoft.com/download).</span><span class="sxs-lookup"><span data-stu-id="f71ab-106">You can download the latest .NET SDK from the [.NET downloads page](https://dotnet.microsoft.com/download).</span></span>
 
-## <a name="get-started"></a><span data-ttu-id="d8028-107">Начало работы</span><span class="sxs-lookup"><span data-stu-id="d8028-107">Get started</span></span>
+## <a name="get-started"></a><span data-ttu-id="f71ab-107">Начало работы</span><span class="sxs-lookup"><span data-stu-id="f71ab-107">Get started</span></span>
 
-<span data-ttu-id="d8028-108">F # 5,0 доступен во всех дистрибутивах .NET Core и средствах Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="d8028-108">F# 5.0 is available in all .NET Core distributions and Visual Studio tooling.</span></span> <span data-ttu-id="d8028-109">Дополнительные сведения см. в статье [Приступая к работе с F #](../get-started/index.md) .</span><span class="sxs-lookup"><span data-stu-id="d8028-109">For more information, see [Get started with F#](../get-started/index.md) to learn more.</span></span>
+<span data-ttu-id="f71ab-108">F # 5,0 доступен во всех дистрибутивах .NET Core и средствах Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="f71ab-108">F# 5.0 is available in all .NET Core distributions and Visual Studio tooling.</span></span> <span data-ttu-id="f71ab-109">Дополнительные сведения см. в статье [Приступая к работе с F #](../get-started/index.md) .</span><span class="sxs-lookup"><span data-stu-id="f71ab-109">For more information, see [Get started with F#](../get-started/index.md) to learn more.</span></span>
 
-## <a name="package-references-in-f-scripts"></a><span data-ttu-id="d8028-110">Ссылки на пакеты в скриптах F #</span><span class="sxs-lookup"><span data-stu-id="d8028-110">Package references in F# scripts</span></span>
+## <a name="package-references-in-f-scripts"></a><span data-ttu-id="f71ab-110">Ссылки на пакеты в скриптах F #</span><span class="sxs-lookup"><span data-stu-id="f71ab-110">Package references in F# scripts</span></span>
 
-<span data-ttu-id="d8028-111">F # 5 предоставляет поддержку ссылок на пакеты в скриптах F # с `#r "nuget:..."` синтаксисом.</span><span class="sxs-lookup"><span data-stu-id="d8028-111">F# 5 brings support for package references in F# scripts with `#r "nuget:..."` syntax.</span></span> <span data-ttu-id="d8028-112">Например, рассмотрим следующую ссылку на пакет:</span><span class="sxs-lookup"><span data-stu-id="d8028-112">For example, consider the following package reference:</span></span>
+<span data-ttu-id="f71ab-111">F # 5 предоставляет поддержку ссылок на пакеты в скриптах F # с `#r "nuget:..."` синтаксисом.</span><span class="sxs-lookup"><span data-stu-id="f71ab-111">F# 5 brings support for package references in F# scripts with `#r "nuget:..."` syntax.</span></span> <span data-ttu-id="f71ab-112">Например, рассмотрим следующую ссылку на пакет:</span><span class="sxs-lookup"><span data-stu-id="f71ab-112">For example, consider the following package reference:</span></span>
 
 ```fsharp
 #r "nuget: Newtonsoft.Json"
@@ -33,15 +33,15 @@ let o = {| X = 2; Y = "Hello" |}
 printfn $"{JsonConvert.SerializeObject o}"
 ```
 
-<span data-ttu-id="d8028-113">Можно также указать явную версию после имени пакета следующим образом:</span><span class="sxs-lookup"><span data-stu-id="d8028-113">You can also supply an explicit version after the name of the package like this:</span></span>
+<span data-ttu-id="f71ab-113">Можно также указать явную версию после имени пакета следующим образом:</span><span class="sxs-lookup"><span data-stu-id="f71ab-113">You can also supply an explicit version after the name of the package like this:</span></span>
 
 ```fsharp
 #r "nuget: Newtonsoft.Json,11.0.1"
 ```
 
-<span data-ttu-id="d8028-114">Ссылки на пакет поддерживают пакеты с собственными зависимостями, например ML.NET.</span><span class="sxs-lookup"><span data-stu-id="d8028-114">Package references support packages with native dependencies, such as ML.NET.</span></span>
+<span data-ttu-id="f71ab-114">Ссылки на пакет поддерживают пакеты с собственными зависимостями, например ML.NET.</span><span class="sxs-lookup"><span data-stu-id="f71ab-114">Package references support packages with native dependencies, such as ML.NET.</span></span>
 
-<span data-ttu-id="d8028-115">Ссылки на пакет также поддерживают пакеты с особыми требованиями к ссылкам, зависимым от `.dll` s.</span><span class="sxs-lookup"><span data-stu-id="d8028-115">Package references also support packages with special requirements about referencing dependent `.dll`s.</span></span> <span data-ttu-id="d8028-116">Например, пакет [фпарсек](https://www.nuget.org/packages/FParsec/) , используемый, чтобы пользователи вручную гарантированно ссылались на зависимый объект, `FParsecCS.dll` прежде чем `FParsec.dll` был указан в F# Interactive.</span><span class="sxs-lookup"><span data-stu-id="d8028-116">For example, the [FParsec](https://www.nuget.org/packages/FParsec/) package used to require that users manually ensure that its dependent `FParsecCS.dll` was referenced first before `FParsec.dll` was referenced in F# Interactive.</span></span> <span data-ttu-id="d8028-117">Это больше не требуется, и вы можете ссылаться на пакет следующим образом:</span><span class="sxs-lookup"><span data-stu-id="d8028-117">This is no longer needed, and you can reference the package as follows:</span></span>
+<span data-ttu-id="f71ab-115">Ссылки на пакет также поддерживают пакеты с особыми требованиями к ссылкам, зависимым от `.dll` s.</span><span class="sxs-lookup"><span data-stu-id="f71ab-115">Package references also support packages with special requirements about referencing dependent `.dll`s.</span></span> <span data-ttu-id="f71ab-116">Например, пакет [фпарсек](https://www.nuget.org/packages/FParsec/) , используемый, чтобы пользователи вручную гарантированно ссылались на зависимый объект, `FParsecCS.dll` прежде чем `FParsec.dll` был указан в F# Interactive.</span><span class="sxs-lookup"><span data-stu-id="f71ab-116">For example, the [FParsec](https://www.nuget.org/packages/FParsec/) package used to require that users manually ensure that its dependent `FParsecCS.dll` was referenced first before `FParsec.dll` was referenced in F# Interactive.</span></span> <span data-ttu-id="f71ab-117">Это больше не требуется, и вы можете ссылаться на пакет следующим образом:</span><span class="sxs-lookup"><span data-stu-id="f71ab-117">This is no longer needed, and you can reference the package as follows:</span></span>
 
 ```fsharp
 #r "nuget: FParsec"
@@ -56,11 +56,11 @@ let test p str =
 test pfloat "1.234"
 ```
 
-<span data-ttu-id="d8028-118">Эта функция реализует [F # Tools RFC ФСТ-1027](https://github.com/fsharp/fslang-design/blob/master/tooling/FST-1027-fsi-references.md).</span><span class="sxs-lookup"><span data-stu-id="d8028-118">This feature implements [F# Tooling RFC FST-1027](https://github.com/fsharp/fslang-design/blob/master/tooling/FST-1027-fsi-references.md).</span></span> <span data-ttu-id="d8028-119">Дополнительные сведения о ссылках на пакеты см. в руководстве по [F# Interactive](../tools/fsharp-interactive/index.md) .</span><span class="sxs-lookup"><span data-stu-id="d8028-119">For more information on package references, see the [F# Interactive](../tools/fsharp-interactive/index.md) tutorial.</span></span>
+<span data-ttu-id="f71ab-118">Эта функция реализует [F # Tools RFC ФСТ-1027](https://github.com/fsharp/fslang-design/blob/master/tooling/FST-1027-fsi-references.md).</span><span class="sxs-lookup"><span data-stu-id="f71ab-118">This feature implements [F# Tooling RFC FST-1027](https://github.com/fsharp/fslang-design/blob/master/tooling/FST-1027-fsi-references.md).</span></span> <span data-ttu-id="f71ab-119">Дополнительные сведения о ссылках на пакеты см. в руководстве по [F# Interactive](../tools/fsharp-interactive/index.md) .</span><span class="sxs-lookup"><span data-stu-id="f71ab-119">For more information on package references, see the [F# Interactive](../tools/fsharp-interactive/index.md) tutorial.</span></span>
 
-## <a name="string-interpolation"></a><span data-ttu-id="d8028-120">Интерполяция строк</span><span class="sxs-lookup"><span data-stu-id="d8028-120">String interpolation</span></span>
+## <a name="string-interpolation"></a><span data-ttu-id="f71ab-120">Интерполяция строк</span><span class="sxs-lookup"><span data-stu-id="f71ab-120">String interpolation</span></span>
 
-<span data-ttu-id="d8028-121">Строки с интерполяцией F # очень похожи на строки с интерполяцией C# или JavaScript, в том, что они позволяют писать код в "отверстиях" внутри строкового литерала.</span><span class="sxs-lookup"><span data-stu-id="d8028-121">F# interpolated strings are fairly similar to C# or JavaScript interpolated strings, in that they let you write code in "holes" inside of a string literal.</span></span> <span data-ttu-id="d8028-122">Простой пример:</span><span class="sxs-lookup"><span data-stu-id="d8028-122">Here's a basic example:</span></span>
+<span data-ttu-id="f71ab-121">Строки с интерполяцией F # очень похожи на строки с интерполяцией C# или JavaScript, в том, что они позволяют писать код в "отверстиях" внутри строкового литерала.</span><span class="sxs-lookup"><span data-stu-id="f71ab-121">F# interpolated strings are fairly similar to C# or JavaScript interpolated strings, in that they let you write code in "holes" inside of a string literal.</span></span> <span data-ttu-id="f71ab-122">Простой пример:</span><span class="sxs-lookup"><span data-stu-id="f71ab-122">Here's a basic example:</span></span>
 
 ```fsharp
 let name = "Phillip"
@@ -70,7 +70,7 @@ printfn $"Name: {name}, Age: {age}"
 printfn $"I think {3.0 + 0.14} is close to {System.Math.PI}!"
 ```
 
-<span data-ttu-id="d8028-123">Однако строки с интерполяцией F # также позволяют использовать типизированные интерполяции, как и `sprintf` функцию, чтобы обеспечить соответствие выражения в контексте с интерполяцией конкретному типу.</span><span class="sxs-lookup"><span data-stu-id="d8028-123">However, F# interpolated strings also allow for typed interpolations, just like the `sprintf` function, to enforce that an expression inside of an interpolated context conforms to a particular type.</span></span> <span data-ttu-id="d8028-124">В нем используются те же описатели формата.</span><span class="sxs-lookup"><span data-stu-id="d8028-124">It uses the same format specifiers.</span></span>
+<span data-ttu-id="f71ab-123">Однако строки с интерполяцией F # также позволяют использовать типизированные интерполяции, как и `sprintf` функцию, чтобы обеспечить соответствие выражения в контексте с интерполяцией конкретному типу.</span><span class="sxs-lookup"><span data-stu-id="f71ab-123">However, F# interpolated strings also allow for typed interpolations, just like the `sprintf` function, to enforce that an expression inside of an interpolated context conforms to a particular type.</span></span> <span data-ttu-id="f71ab-124">В нем используются те же описатели формата.</span><span class="sxs-lookup"><span data-stu-id="f71ab-124">It uses the same format specifiers.</span></span>
 
 ```fsharp
 let name = "Phillip"
@@ -82,9 +82,9 @@ printfn $"Name: %s{name}, Age: %d{age}"
 printfn $"Name: %s{age}, Age: %d{name}"
 ```
 
-<span data-ttu-id="d8028-125">В приведенном выше примере интерполяции объект `%s` требует, чтобы интерполяция была типа `string` , тогда как для параметра `%d` требуется интерполяция `integer` .</span><span class="sxs-lookup"><span data-stu-id="d8028-125">In the preceding typed interpolation example, the `%s` requires the interpolation to be of type `string`, whereas the `%d` requires the interpolation to be an `integer`.</span></span>
+<span data-ttu-id="f71ab-125">В приведенном выше примере интерполяции объект `%s` требует, чтобы интерполяция была типа `string` , тогда как для параметра `%d` требуется интерполяция `integer` .</span><span class="sxs-lookup"><span data-stu-id="f71ab-125">In the preceding typed interpolation example, the `%s` requires the interpolation to be of type `string`, whereas the `%d` requires the interpolation to be an `integer`.</span></span>
 
-<span data-ttu-id="d8028-126">Кроме того, любое произвольное выражение F # (или выражения) может быть помещено в сторону контекста интерполяции.</span><span class="sxs-lookup"><span data-stu-id="d8028-126">Additionally, any arbitrary F# expression (or expressions) can be placed in side of an interpolation context.</span></span> <span data-ttu-id="d8028-127">Даже можно написать более сложное выражение, например так:</span><span class="sxs-lookup"><span data-stu-id="d8028-127">It is even possible to write a more complicated expression, like so:</span></span>
+<span data-ttu-id="f71ab-126">Кроме того, любое произвольное выражение F # (или выражения) может быть помещено в сторону контекста интерполяции.</span><span class="sxs-lookup"><span data-stu-id="f71ab-126">Additionally, any arbitrary F# expression (or expressions) can be placed in side of an interpolation context.</span></span> <span data-ttu-id="f71ab-127">Даже можно написать более сложное выражение, например так:</span><span class="sxs-lookup"><span data-stu-id="f71ab-127">It is even possible to write a more complicated expression, like so:</span></span>
 
 ```fsharp
 let str =
@@ -101,13 +101,13 @@ let str =
 """
 ```
 
-<span data-ttu-id="d8028-128">Хотя мы не рекомендуем делать это слишком много на практике.</span><span class="sxs-lookup"><span data-stu-id="d8028-128">Although we don't recommend doing this too much in practice.</span></span>
+<span data-ttu-id="f71ab-128">Хотя мы не рекомендуем делать это слишком много на практике.</span><span class="sxs-lookup"><span data-stu-id="f71ab-128">Although we don't recommend doing this too much in practice.</span></span>
 
-<span data-ttu-id="d8028-129">Эта функция реализует [F # RFC FS-1001](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1001-StringInterpolation.md).</span><span class="sxs-lookup"><span data-stu-id="d8028-129">This feature implements [F# RFC FS-1001](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1001-StringInterpolation.md).</span></span>
+<span data-ttu-id="f71ab-129">Эта функция реализует [F # RFC FS-1001](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1001-StringInterpolation.md).</span><span class="sxs-lookup"><span data-stu-id="f71ab-129">This feature implements [F# RFC FS-1001](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1001-StringInterpolation.md).</span></span>
 
-## <a name="support-for-nameof"></a><span data-ttu-id="d8028-130">Поддержка NameOf</span><span class="sxs-lookup"><span data-stu-id="d8028-130">Support for nameof</span></span>
+## <a name="support-for-nameof"></a><span data-ttu-id="f71ab-130">Поддержка NameOf</span><span class="sxs-lookup"><span data-stu-id="f71ab-130">Support for nameof</span></span>
 
-<span data-ttu-id="d8028-131">F # 5 поддерживает `nameof` оператор, который разрешает символ, который он использует, и создает его имя в источнике f #.</span><span class="sxs-lookup"><span data-stu-id="d8028-131">F# 5 supports the `nameof` operator, which resolves the symbol it's being used for and produces its name in F# source.</span></span> <span data-ttu-id="d8028-132">Это полезно в различных сценариях, таких как ведение журнала, и защита ведения журнала от изменений в исходном коде.</span><span class="sxs-lookup"><span data-stu-id="d8028-132">This is useful in various scenarios, such as logging, and protects your logging against changes in source code.</span></span>
+<span data-ttu-id="f71ab-131">F # 5 поддерживает `nameof` оператор, который разрешает символ, который он использует, и создает его имя в источнике f #.</span><span class="sxs-lookup"><span data-stu-id="f71ab-131">F# 5 supports the `nameof` operator, which resolves the symbol it's being used for and produces its name in F# source.</span></span> <span data-ttu-id="f71ab-132">Это полезно в различных сценариях, таких как ведение журнала, и защита ведения журнала от изменений в исходном коде.</span><span class="sxs-lookup"><span data-stu-id="f71ab-132">This is useful in various scenarios, such as logging, and protects your logging against changes in source code.</span></span>
 
 ```fsharp
 let months =
@@ -128,9 +128,9 @@ printfn $"{lookupMonth 1}"
 printfn $"{lookupMonth 13}"
 ```
 
-<span data-ttu-id="d8028-133">В последней строке будет выдано исключение, а в сообщении об ошибке появится сообщение "month" (месяц).</span><span class="sxs-lookup"><span data-stu-id="d8028-133">The last line will throw an exception and "month" will be shown in the error message.</span></span>
+<span data-ttu-id="f71ab-133">В последней строке будет выдано исключение, а в сообщении об ошибке появится сообщение "month" (месяц).</span><span class="sxs-lookup"><span data-stu-id="f71ab-133">The last line will throw an exception and "month" will be shown in the error message.</span></span>
 
-<span data-ttu-id="d8028-134">Вы можете задействовать почти каждую конструкцию F #:</span><span class="sxs-lookup"><span data-stu-id="d8028-134">You can take a name of nearly every F# construct:</span></span>
+<span data-ttu-id="f71ab-134">Вы можете задействовать почти каждую конструкцию F #:</span><span class="sxs-lookup"><span data-stu-id="f71ab-134">You can take a name of nearly every F# construct:</span></span>
 
 ```fsharp
 module M =
@@ -141,25 +141,25 @@ printfn $"{nameof M}"
 printfn $"{nameof M.f}"
 ```
 
-<span data-ttu-id="d8028-135">Три последних дополнения — это изменения в работе операторов: Добавление `nameof<'type-parameter>` формы для параметров универсального типа и возможность использования в `nameof` качестве шаблона в выражении соответствия шаблону.</span><span class="sxs-lookup"><span data-stu-id="d8028-135">Three final additions are changes to how operators work: the addition of the `nameof<'type-parameter>` form for generic type parameters, and the ability to use `nameof` as a pattern in a pattern match expression.</span></span>
+<span data-ttu-id="f71ab-135">Три последних дополнения — это изменения в работе операторов: Добавление `nameof<'type-parameter>` формы для параметров универсального типа и возможность использования в `nameof` качестве шаблона в выражении соответствия шаблону.</span><span class="sxs-lookup"><span data-stu-id="f71ab-135">Three final additions are changes to how operators work: the addition of the `nameof<'type-parameter>` form for generic type parameters, and the ability to use `nameof` as a pattern in a pattern match expression.</span></span>
 
-<span data-ttu-id="d8028-136">Если присвоить имя оператору, он получает его исходную строку.</span><span class="sxs-lookup"><span data-stu-id="d8028-136">Taking a name of an operator gives its source string.</span></span> <span data-ttu-id="d8028-137">Если требуется скомпилированная форма, используйте скомпилированное имя оператора:</span><span class="sxs-lookup"><span data-stu-id="d8028-137">If you need the compiled form, use the compiled name of an operator:</span></span>
+<span data-ttu-id="f71ab-136">Если присвоить имя оператору, он получает его исходную строку.</span><span class="sxs-lookup"><span data-stu-id="f71ab-136">Taking a name of an operator gives its source string.</span></span> <span data-ttu-id="f71ab-137">Если требуется скомпилированная форма, используйте скомпилированное имя оператора:</span><span class="sxs-lookup"><span data-stu-id="f71ab-137">If you need the compiled form, use the compiled name of an operator:</span></span>
 
 ```fsharp
 nameof(+) // "+"
 nameof op_Addition // "op_Addition"
 ```
 
-<span data-ttu-id="d8028-138">Для получения имени параметра типа требуется немного другой синтаксис:</span><span class="sxs-lookup"><span data-stu-id="d8028-138">Taking the name of a type parameter requires a slightly different syntax:</span></span>
+<span data-ttu-id="f71ab-138">Для получения имени параметра типа требуется немного другой синтаксис:</span><span class="sxs-lookup"><span data-stu-id="f71ab-138">Taking the name of a type parameter requires a slightly different syntax:</span></span>
 
 ```fsharp
 type C<'TType> =
     member _.TypeName = nameof<'TType>
 ```
 
-<span data-ttu-id="d8028-139">Это похоже на `typeof<'T>` `typedefof<'T>` операторы и.</span><span class="sxs-lookup"><span data-stu-id="d8028-139">This is similar to the `typeof<'T>` and `typedefof<'T>` operators.</span></span>
+<span data-ttu-id="f71ab-139">Это похоже на `typeof<'T>` `typedefof<'T>` операторы и.</span><span class="sxs-lookup"><span data-stu-id="f71ab-139">This is similar to the `typeof<'T>` and `typedefof<'T>` operators.</span></span>
 
-<span data-ttu-id="d8028-140">В F # 5 также добавлена поддержка `nameof` шаблона, который можно использовать в `match` выражениях:</span><span class="sxs-lookup"><span data-stu-id="d8028-140">F# 5 also adds support for a `nameof` pattern that can be used in `match` expressions:</span></span>
+<span data-ttu-id="f71ab-140">В F # 5 также добавлена поддержка `nameof` шаблона, который можно использовать в `match` выражениях:</span><span class="sxs-lookup"><span data-stu-id="f71ab-140">F# 5 also adds support for a `nameof` pattern that can be used in `match` expressions:</span></span>
 
 ```fsharp
 [<Struct; IsByRefLike>]
@@ -176,15 +176,15 @@ let deserialize (e: RecordedEvent) : MyEvent =
     | t -> failwithf "Invalid EventType: %s" t
 ```
 
-<span data-ttu-id="d8028-141">Приведенный выше код использует "NameOf" вместо строкового литерала в выражении match.</span><span class="sxs-lookup"><span data-stu-id="d8028-141">The preceding code uses 'nameof' instead of the string literal in the match expression.</span></span>
+<span data-ttu-id="f71ab-141">Приведенный выше код использует "NameOf" вместо строкового литерала в выражении match.</span><span class="sxs-lookup"><span data-stu-id="f71ab-141">The preceding code uses 'nameof' instead of the string literal in the match expression.</span></span>
 
-<span data-ttu-id="d8028-142">Эта функция реализует [F # RFC FS-1003](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1003-nameof-operator.md).</span><span class="sxs-lookup"><span data-stu-id="d8028-142">This feature implements [F# RFC FS-1003](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1003-nameof-operator.md).</span></span>
+<span data-ttu-id="f71ab-142">Эта функция реализует [F # RFC FS-1003](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1003-nameof-operator.md).</span><span class="sxs-lookup"><span data-stu-id="f71ab-142">This feature implements [F# RFC FS-1003](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1003-nameof-operator.md).</span></span>
 
-## <a name="open-type-declarations"></a><span data-ttu-id="d8028-143">Открытые объявления типов</span><span class="sxs-lookup"><span data-stu-id="d8028-143">Open type declarations</span></span>
+## <a name="open-type-declarations"></a><span data-ttu-id="f71ab-143">Открытые объявления типов</span><span class="sxs-lookup"><span data-stu-id="f71ab-143">Open type declarations</span></span>
 
-<span data-ttu-id="d8028-144">В F # 5 также добавлена поддержка объявлений открытых типов.</span><span class="sxs-lookup"><span data-stu-id="d8028-144">F# 5 also adds support for open type declarations.</span></span> <span data-ttu-id="d8028-145">Объявление открытого типа аналогично открытию статического класса в C#, за исключением некоторого другого синтаксиса и немного другого поведения в соответствии с семантикой F #.</span><span class="sxs-lookup"><span data-stu-id="d8028-145">An open type declaration is like opening a static class in C#, except with some different syntax and some slightly different behavior to fit F# semantics.</span></span>
+<span data-ttu-id="f71ab-144">В F # 5 также добавлена поддержка объявлений открытых типов.</span><span class="sxs-lookup"><span data-stu-id="f71ab-144">F# 5 also adds support for open type declarations.</span></span> <span data-ttu-id="f71ab-145">Объявление открытого типа аналогично открытию статического класса в C#, за исключением некоторого другого синтаксиса и немного другого поведения в соответствии с семантикой F #.</span><span class="sxs-lookup"><span data-stu-id="f71ab-145">An open type declaration is like opening a static class in C#, except with some different syntax and some slightly different behavior to fit F# semantics.</span></span>
 
-<span data-ttu-id="d8028-146">С помощью объявлений открытых типов можно использовать `open` любой тип для предоставления статического содержимого внутри него.</span><span class="sxs-lookup"><span data-stu-id="d8028-146">With open type declarations, you can `open` any type to expose static contents inside of it.</span></span> <span data-ttu-id="d8028-147">Кроме того, вы можете `open` определить объединения и записи F #, чтобы предоставить их содержимое.</span><span class="sxs-lookup"><span data-stu-id="d8028-147">Additionally, you can `open` F#-defined unions and records to expose their contents.</span></span> <span data-ttu-id="d8028-148">Например, это может быть полезно, если имеется объединение, определенное в модуле и требующее доступа к его случаям, но не нужно открывать весь модуль.</span><span class="sxs-lookup"><span data-stu-id="d8028-148">For example, this can be useful if you have a union defined in a module and want to access its cases, but don't want to open the entire module.</span></span>
+<span data-ttu-id="f71ab-146">С помощью объявлений открытых типов можно использовать `open` любой тип для предоставления статического содержимого внутри него.</span><span class="sxs-lookup"><span data-stu-id="f71ab-146">With open type declarations, you can `open` any type to expose static contents inside of it.</span></span> <span data-ttu-id="f71ab-147">Кроме того, вы можете `open` определить объединения и записи F #, чтобы предоставить их содержимое.</span><span class="sxs-lookup"><span data-stu-id="f71ab-147">Additionally, you can `open` F#-defined unions and records to expose their contents.</span></span> <span data-ttu-id="f71ab-148">Например, это может быть полезно, если имеется объединение, определенное в модуле и требующее доступа к его случаям, но не нужно открывать весь модуль.</span><span class="sxs-lookup"><span data-stu-id="f71ab-148">For example, this can be useful if you have a union defined in a module and want to access its cases, but don't want to open the entire module.</span></span>
 
 ```fsharp
 open type System.Math
@@ -202,13 +202,13 @@ open type M.DU
 printfn $"{A}"
 ```
 
-<span data-ttu-id="d8028-149">В отличие от C#, при использовании `open type` двух типов, предоставляющих член с тем же именем, элемент из последнего типа `open` ED скрывает другое имя.</span><span class="sxs-lookup"><span data-stu-id="d8028-149">Unlike C#, when you `open type` on two types that expose a member with the same name, the member from the last type being `open`ed shadows the other name.</span></span> <span data-ttu-id="d8028-150">Это согласуется с семантикой языка F # вокруг уже существующей теневой копии.</span><span class="sxs-lookup"><span data-stu-id="d8028-150">This is consistent with F# semantics around shadowing that exist already.</span></span>
+<span data-ttu-id="f71ab-149">В отличие от C#, при использовании `open type` двух типов, предоставляющих член с тем же именем, элемент из последнего типа `open` ED скрывает другое имя.</span><span class="sxs-lookup"><span data-stu-id="f71ab-149">Unlike C#, when you `open type` on two types that expose a member with the same name, the member from the last type being `open`ed shadows the other name.</span></span> <span data-ttu-id="f71ab-150">Это согласуется с семантикой языка F # вокруг уже существующей теневой копии.</span><span class="sxs-lookup"><span data-stu-id="f71ab-150">This is consistent with F# semantics around shadowing that exist already.</span></span>
 
-<span data-ttu-id="d8028-151">Эта функция реализует [F # RFC FS-1068](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1068-open-type-declaration.md).</span><span class="sxs-lookup"><span data-stu-id="d8028-151">This feature implements [F# RFC FS-1068](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1068-open-type-declaration.md).</span></span>
+<span data-ttu-id="f71ab-151">Эта функция реализует [F # RFC FS-1068](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1068-open-type-declaration.md).</span><span class="sxs-lookup"><span data-stu-id="f71ab-151">This feature implements [F# RFC FS-1068](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1068-open-type-declaration.md).</span></span>
 
-## <a name="consistent-slicing-behavior-for-built-in-data-types"></a><span data-ttu-id="d8028-152">Единообразное поведение при выполнении срезов для встроенных типов данных</span><span class="sxs-lookup"><span data-stu-id="d8028-152">Consistent slicing behavior for built-in data types</span></span>
+## <a name="consistent-slicing-behavior-for-built-in-data-types"></a><span data-ttu-id="f71ab-152">Единообразное поведение при выполнении срезов для встроенных типов данных</span><span class="sxs-lookup"><span data-stu-id="f71ab-152">Consistent slicing behavior for built-in data types</span></span>
 
-<span data-ttu-id="d8028-153">Поведение для создания среза встроенных `FSharp.Core` типов данных (массив, список, строка, 2D-массив, трехмерный массив, массив 4d), которые использовались для несоответствия до F # 5.</span><span class="sxs-lookup"><span data-stu-id="d8028-153">Behavior for slicing the built-in `FSharp.Core` data types (array, list, string, 2D array, 3D array, 4D array) used to not be consistent prior to F# 5.</span></span> <span data-ttu-id="d8028-154">В некоторых случаях происходит исключение, но некоторые из них не были бы.</span><span class="sxs-lookup"><span data-stu-id="d8028-154">Some edge-case behavior threw an exception and some wouldn't.</span></span> <span data-ttu-id="d8028-155">В F # 5 все встроенные типы теперь возвращают пустые срезы для срезов, которые невозможно создать:</span><span class="sxs-lookup"><span data-stu-id="d8028-155">In F# 5, all built-in types now return empty slices for slices that are impossible to generate:</span></span>
+<span data-ttu-id="f71ab-153">Поведение для создания среза встроенных `FSharp.Core` типов данных (массив, список, строка, 2D-массив, трехмерный массив, массив 4d), которые использовались для несоответствия до F # 5.</span><span class="sxs-lookup"><span data-stu-id="f71ab-153">Behavior for slicing the built-in `FSharp.Core` data types (array, list, string, 2D array, 3D array, 4D array) used to not be consistent prior to F# 5.</span></span> <span data-ttu-id="f71ab-154">В некоторых случаях происходит исключение, но некоторые из них не были бы.</span><span class="sxs-lookup"><span data-stu-id="f71ab-154">Some edge-case behavior threw an exception and some wouldn't.</span></span> <span data-ttu-id="f71ab-155">В F # 5 все встроенные типы теперь возвращают пустые срезы для срезов, которые невозможно создать:</span><span class="sxs-lookup"><span data-stu-id="f71ab-155">In F# 5, all built-in types now return empty slices for slices that are impossible to generate:</span></span>
 
 ```fsharp
 let l = [ 1..10 ]
@@ -228,27 +228,27 @@ let emptyArray = a.[-2..(-1)]
 let emptyString = s.[-2..(-1)]
 ```
 
-<span data-ttu-id="d8028-156">Эта функция реализует [F # RFC FS-1077](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1077-tolerant-slicing.md).</span><span class="sxs-lookup"><span data-stu-id="d8028-156">This feature implements [F# RFC FS-1077](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1077-tolerant-slicing.md).</span></span>
+<span data-ttu-id="f71ab-156">Эта функция реализует [F # RFC FS-1077](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1077-tolerant-slicing.md).</span><span class="sxs-lookup"><span data-stu-id="f71ab-156">This feature implements [F# RFC FS-1077](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1077-tolerant-slicing.md).</span></span>
 
-## <a name="fixed-index-slices-for-3d-and-4d-arrays-in-fsharpcore"></a><span data-ttu-id="d8028-157">Срезы фиксированного индекса для трехмерных и 4D-массивов в FSharp. Core</span><span class="sxs-lookup"><span data-stu-id="d8028-157">Fixed-index slices for 3D and 4D arrays in FSharp.Core</span></span>
+## <a name="fixed-index-slices-for-3d-and-4d-arrays-in-fsharpcore"></a><span data-ttu-id="f71ab-157">Срезы фиксированного индекса для трехмерных и 4D-массивов в FSharp. Core</span><span class="sxs-lookup"><span data-stu-id="f71ab-157">Fixed-index slices for 3D and 4D arrays in FSharp.Core</span></span>
 
-<span data-ttu-id="d8028-158">F # 5,0 предоставляет поддержку среза с фиксированным индексом во встроенных типах массивов 3D и 4D.</span><span class="sxs-lookup"><span data-stu-id="d8028-158">F# 5.0 brings support for slicing with a fixed index in the built-in 3D and 4D array types.</span></span>
+<span data-ttu-id="f71ab-158">F # 5,0 предоставляет поддержку среза с фиксированным индексом во встроенных типах массивов 3D и 4D.</span><span class="sxs-lookup"><span data-stu-id="f71ab-158">F# 5.0 brings support for slicing with a fixed index in the built-in 3D and 4D array types.</span></span>
 
-<span data-ttu-id="d8028-159">Чтобы проиллюстрировать это, рассмотрим следующий трехмерный массив:</span><span class="sxs-lookup"><span data-stu-id="d8028-159">To illustrate this, consider the following 3D array:</span></span>
+<span data-ttu-id="f71ab-159">Чтобы проиллюстрировать это, рассмотрим следующий трехмерный массив:</span><span class="sxs-lookup"><span data-stu-id="f71ab-159">To illustrate this, consider the following 3D array:</span></span>
 
-<span data-ttu-id="d8028-160">*z = 0*</span><span class="sxs-lookup"><span data-stu-id="d8028-160">*z = 0*</span></span>
-| <span data-ttu-id="d8028-161">кс\и</span><span class="sxs-lookup"><span data-stu-id="d8028-161">x\y</span></span>   | <span data-ttu-id="d8028-162">0</span><span class="sxs-lookup"><span data-stu-id="d8028-162">0</span></span> | <span data-ttu-id="d8028-163">1</span><span class="sxs-lookup"><span data-stu-id="d8028-163">1</span></span> |
+<span data-ttu-id="f71ab-160">*z = 0*</span><span class="sxs-lookup"><span data-stu-id="f71ab-160">*z = 0*</span></span>
+| <span data-ttu-id="f71ab-161">кс\и</span><span class="sxs-lookup"><span data-stu-id="f71ab-161">x\y</span></span>   | <span data-ttu-id="f71ab-162">0</span><span class="sxs-lookup"><span data-stu-id="f71ab-162">0</span></span> | <span data-ttu-id="f71ab-163">1</span><span class="sxs-lookup"><span data-stu-id="f71ab-163">1</span></span> |
 |-------|---|---|
-| <span data-ttu-id="d8028-164">**0**;</span><span class="sxs-lookup"><span data-stu-id="d8028-164">**0**</span></span> | <span data-ttu-id="d8028-165">0</span><span class="sxs-lookup"><span data-stu-id="d8028-165">0</span></span> | <span data-ttu-id="d8028-166">1</span><span class="sxs-lookup"><span data-stu-id="d8028-166">1</span></span> |
-| <span data-ttu-id="d8028-167">**1**</span><span class="sxs-lookup"><span data-stu-id="d8028-167">**1**</span></span> | <span data-ttu-id="d8028-168">2</span><span class="sxs-lookup"><span data-stu-id="d8028-168">2</span></span> | <span data-ttu-id="d8028-169">3</span><span class="sxs-lookup"><span data-stu-id="d8028-169">3</span></span> |
+| <span data-ttu-id="f71ab-164">**0**</span><span class="sxs-lookup"><span data-stu-id="f71ab-164">**0**</span></span> | <span data-ttu-id="f71ab-165">0</span><span class="sxs-lookup"><span data-stu-id="f71ab-165">0</span></span> | <span data-ttu-id="f71ab-166">1</span><span class="sxs-lookup"><span data-stu-id="f71ab-166">1</span></span> |
+| <span data-ttu-id="f71ab-167">**1**</span><span class="sxs-lookup"><span data-stu-id="f71ab-167">**1**</span></span> | <span data-ttu-id="f71ab-168">2</span><span class="sxs-lookup"><span data-stu-id="f71ab-168">2</span></span> | <span data-ttu-id="f71ab-169">3</span><span class="sxs-lookup"><span data-stu-id="f71ab-169">3</span></span> |
 
-<span data-ttu-id="d8028-170">*z = 1*</span><span class="sxs-lookup"><span data-stu-id="d8028-170">*z = 1*</span></span>
-| <span data-ttu-id="d8028-171">кс\и</span><span class="sxs-lookup"><span data-stu-id="d8028-171">x\y</span></span>   | <span data-ttu-id="d8028-172">0</span><span class="sxs-lookup"><span data-stu-id="d8028-172">0</span></span> | <span data-ttu-id="d8028-173">1</span><span class="sxs-lookup"><span data-stu-id="d8028-173">1</span></span> |
+<span data-ttu-id="f71ab-170">*z = 1*</span><span class="sxs-lookup"><span data-stu-id="f71ab-170">*z = 1*</span></span>
+| <span data-ttu-id="f71ab-171">кс\и</span><span class="sxs-lookup"><span data-stu-id="f71ab-171">x\y</span></span>   | <span data-ttu-id="f71ab-172">0</span><span class="sxs-lookup"><span data-stu-id="f71ab-172">0</span></span> | <span data-ttu-id="f71ab-173">1</span><span class="sxs-lookup"><span data-stu-id="f71ab-173">1</span></span> |
 |-------|---|---|
-| <span data-ttu-id="d8028-174">**0**;</span><span class="sxs-lookup"><span data-stu-id="d8028-174">**0**</span></span> | <span data-ttu-id="d8028-175">4</span><span class="sxs-lookup"><span data-stu-id="d8028-175">4</span></span> | <span data-ttu-id="d8028-176">5</span><span class="sxs-lookup"><span data-stu-id="d8028-176">5</span></span> |
-| <span data-ttu-id="d8028-177">**1**</span><span class="sxs-lookup"><span data-stu-id="d8028-177">**1**</span></span> | <span data-ttu-id="d8028-178">6</span><span class="sxs-lookup"><span data-stu-id="d8028-178">6</span></span> | <span data-ttu-id="d8028-179">7</span><span class="sxs-lookup"><span data-stu-id="d8028-179">7</span></span> |
+| <span data-ttu-id="f71ab-174">**0**</span><span class="sxs-lookup"><span data-stu-id="f71ab-174">**0**</span></span> | <span data-ttu-id="f71ab-175">4</span><span class="sxs-lookup"><span data-stu-id="f71ab-175">4</span></span> | <span data-ttu-id="f71ab-176">5</span><span class="sxs-lookup"><span data-stu-id="f71ab-176">5</span></span> |
+| <span data-ttu-id="f71ab-177">**1**</span><span class="sxs-lookup"><span data-stu-id="f71ab-177">**1**</span></span> | <span data-ttu-id="f71ab-178">6</span><span class="sxs-lookup"><span data-stu-id="f71ab-178">6</span></span> | <span data-ttu-id="f71ab-179">7</span><span class="sxs-lookup"><span data-stu-id="f71ab-179">7</span></span> |
 
-<span data-ttu-id="d8028-180">Что делать, если вы хотите извлечь срез `[| 4; 5 |]` из массива?</span><span class="sxs-lookup"><span data-stu-id="d8028-180">What if you wanted to extract the slice `[| 4; 5 |]` from the array?</span></span> <span data-ttu-id="d8028-181">Теперь это очень просто!</span><span class="sxs-lookup"><span data-stu-id="d8028-181">This is now very simple!</span></span>
+<span data-ttu-id="f71ab-180">Что делать, если вы хотите извлечь срез `[| 4; 5 |]` из массива?</span><span class="sxs-lookup"><span data-stu-id="f71ab-180">What if you wanted to extract the slice `[| 4; 5 |]` from the array?</span></span> <span data-ttu-id="f71ab-181">Теперь это очень просто!</span><span class="sxs-lookup"><span data-stu-id="f71ab-181">This is now very simple!</span></span>
 
 ```fsharp
 // First, create a 3D array to slice
@@ -268,11 +268,11 @@ for z in 0..dim-1 do
 m.[*, 0, 1]
 ```
 
-<span data-ttu-id="d8028-182">Эта функция реализует [F # RFC FS-1077b](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1077-3d-4d-fixed-index-slicing.md).</span><span class="sxs-lookup"><span data-stu-id="d8028-182">This feature implements [F# RFC FS-1077b](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1077-3d-4d-fixed-index-slicing.md).</span></span>
+<span data-ttu-id="f71ab-182">Эта функция реализует [F # RFC FS-1077b](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1077-3d-4d-fixed-index-slicing.md).</span><span class="sxs-lookup"><span data-stu-id="f71ab-182">This feature implements [F# RFC FS-1077b](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1077-3d-4d-fixed-index-slicing.md).</span></span>
 
-## <a name="f-quotations-improvements"></a><span data-ttu-id="d8028-183">Усовершенствования в кавычках F #</span><span class="sxs-lookup"><span data-stu-id="d8028-183">F# quotations improvements</span></span>
+## <a name="f-quotations-improvements"></a><span data-ttu-id="f71ab-183">Усовершенствования в кавычках F #</span><span class="sxs-lookup"><span data-stu-id="f71ab-183">F# quotations improvements</span></span>
 
-<span data-ttu-id="d8028-184">[Цитаты кода](../language-reference/code-quotations.md) F # теперь имеют возможность хранить сведения об ограничениях типов.</span><span class="sxs-lookup"><span data-stu-id="d8028-184">F# [code quotations](../language-reference/code-quotations.md) now have the ability to retain type constraint information.</span></span> <span data-ttu-id="d8028-185">Рассмотрим следующий пример.</span><span class="sxs-lookup"><span data-stu-id="d8028-185">Consider the following example:</span></span>
+<span data-ttu-id="f71ab-184">[Цитаты кода](../language-reference/code-quotations.md) F # теперь имеют возможность хранить сведения об ограничениях типов.</span><span class="sxs-lookup"><span data-stu-id="f71ab-184">F# [code quotations](../language-reference/code-quotations.md) now have the ability to retain type constraint information.</span></span> <span data-ttu-id="f71ab-185">Рассмотрим следующий пример.</span><span class="sxs-lookup"><span data-stu-id="f71ab-185">Consider the following example:</span></span>
 
 ```fsharp
 open FSharp.Linq.RuntimeHelpers
@@ -285,17 +285,17 @@ let inline negate x = -x
 <@ negate 1.0 @>  |> eval
 ```
 
-<span data-ttu-id="d8028-186">Ограничение, созданное `inline` функцией, сохраняется в цитате кода.</span><span class="sxs-lookup"><span data-stu-id="d8028-186">The constraint generated by the `inline` function is retained in the code quotation.</span></span> <span data-ttu-id="d8028-187">`negate`Теперь можно вычислить форму куотатед функции.</span><span class="sxs-lookup"><span data-stu-id="d8028-187">The `negate` function's quotated form can now be evaluated.</span></span>
+<span data-ttu-id="f71ab-186">Ограничение, созданное `inline` функцией, сохраняется в цитате кода.</span><span class="sxs-lookup"><span data-stu-id="f71ab-186">The constraint generated by the `inline` function is retained in the code quotation.</span></span> <span data-ttu-id="f71ab-187">`negate`Теперь можно вычислить форму куотатед функции.</span><span class="sxs-lookup"><span data-stu-id="f71ab-187">The `negate` function's quotated form can now be evaluated.</span></span>
 
-<span data-ttu-id="d8028-188">Эта функция реализует [F # RFC FS-1071](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1071-witness-passing-quotations.md).</span><span class="sxs-lookup"><span data-stu-id="d8028-188">This feature implements [F# RFC FS-1071](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1071-witness-passing-quotations.md).</span></span>
+<span data-ttu-id="f71ab-188">Эта функция реализует [F # RFC FS-1071](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1071-witness-passing-quotations.md).</span><span class="sxs-lookup"><span data-stu-id="f71ab-188">This feature implements [F# RFC FS-1071](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1071-witness-passing-quotations.md).</span></span>
 
-## <a name="applicative-computation-expressions"></a><span data-ttu-id="d8028-189">Выражения вычисления аппликативе</span><span class="sxs-lookup"><span data-stu-id="d8028-189">Applicative Computation Expressions</span></span>
+## <a name="applicative-computation-expressions"></a><span data-ttu-id="f71ab-189">Выражения вычисления аппликативе</span><span class="sxs-lookup"><span data-stu-id="f71ab-189">Applicative Computation Expressions</span></span>
 
-<span data-ttu-id="d8028-190">[Выражения вычислений (CEs)](../language-reference/computation-expressions.md) используются сегодня для моделирования "контекстных вычислений" или более функциональной терминологии, понятной программированию, готовых вычислений.</span><span class="sxs-lookup"><span data-stu-id="d8028-190">[Computation expressions (CEs)](../language-reference/computation-expressions.md) are used today to model "contextual computations", or in more functional programming-friendly terminology, monadic computations.</span></span>
+<span data-ttu-id="f71ab-190">[Выражения вычислений (CEs)](../language-reference/computation-expressions.md) используются сегодня для моделирования "контекстных вычислений" или более функциональной терминологии, понятной программированию, готовых вычислений.</span><span class="sxs-lookup"><span data-stu-id="f71ab-190">[Computation expressions (CEs)](../language-reference/computation-expressions.md) are used today to model "contextual computations", or in more functional programming-friendly terminology, monadic computations.</span></span>
 
-<span data-ttu-id="d8028-191">В F # 5 появился аппликативе CEs, предлагающий другую вычислительную модель.</span><span class="sxs-lookup"><span data-stu-id="d8028-191">F# 5 introduces applicative CEs, which offer a different computational model.</span></span> <span data-ttu-id="d8028-192">Аппликативе CEs обеспечивает более эффективные вычисления при условии, что каждое вычисление является независимым, и результаты накоплены в конце.</span><span class="sxs-lookup"><span data-stu-id="d8028-192">Applicative CEs allow for more efficient computations provided that every computation is independent, and their results are accumulated at the end.</span></span> <span data-ttu-id="d8028-193">Если вычисления не зависят друг от друга, они также просты в параллелизуемые, что позволяет авторам CE создавать более эффективные библиотеки.</span><span class="sxs-lookup"><span data-stu-id="d8028-193">When computations are independent of one another, they are also trivially parallelizable, allowing CE authors to write more efficient libraries.</span></span> <span data-ttu-id="d8028-194">Это преимущество обусловлено ограничением. Однако вычисления, зависящие от ранее вычисленных значений, не допускаются.</span><span class="sxs-lookup"><span data-stu-id="d8028-194">This benefit comes at a restriction, though: computations that depend on previously computed values are not allowed.</span></span>
+<span data-ttu-id="f71ab-191">В F # 5 появился аппликативе CEs, предлагающий другую вычислительную модель.</span><span class="sxs-lookup"><span data-stu-id="f71ab-191">F# 5 introduces applicative CEs, which offer a different computational model.</span></span> <span data-ttu-id="f71ab-192">Аппликативе CEs обеспечивает более эффективные вычисления при условии, что каждое вычисление является независимым, и результаты накоплены в конце.</span><span class="sxs-lookup"><span data-stu-id="f71ab-192">Applicative CEs allow for more efficient computations provided that every computation is independent, and their results are accumulated at the end.</span></span> <span data-ttu-id="f71ab-193">Если вычисления не зависят друг от друга, они также просты в параллелизуемые, что позволяет авторам CE создавать более эффективные библиотеки.</span><span class="sxs-lookup"><span data-stu-id="f71ab-193">When computations are independent of one another, they are also trivially parallelizable, allowing CE authors to write more efficient libraries.</span></span> <span data-ttu-id="f71ab-194">Это преимущество обусловлено ограничением. Однако вычисления, зависящие от ранее вычисленных значений, не допускаются.</span><span class="sxs-lookup"><span data-stu-id="f71ab-194">This benefit comes at a restriction, though: computations that depend on previously computed values are not allowed.</span></span>
 
-<span data-ttu-id="d8028-195">В следующем примере показана базовая аппликативе CE для `Result` типа.</span><span class="sxs-lookup"><span data-stu-id="d8028-195">The follow example shows a basic applicative CE for the `Result` type.</span></span>
+<span data-ttu-id="f71ab-195">В следующем примере показана базовая аппликативе CE для `Result` типа.</span><span class="sxs-lookup"><span data-stu-id="f71ab-195">The follow example shows a basic applicative CE for the `Result` type.</span></span>
 
 ```fsharp
 // First, define a 'zip' function
@@ -336,13 +336,13 @@ let printApplicatives () =
     run r1 (Error "failure!") r3
 ```
 
-<span data-ttu-id="d8028-196">Если вы являетесь автором библиотеки, который в настоящее время предоставляет CEs в своей библиотеке, необходимо учитывать некоторые дополнительные соображения.</span><span class="sxs-lookup"><span data-stu-id="d8028-196">If you're a library author who exposes CEs in their library today, there are some additional considerations you'll need to be aware of.</span></span>
+<span data-ttu-id="f71ab-196">Если вы являетесь автором библиотеки, который в настоящее время предоставляет CEs в своей библиотеке, необходимо учитывать некоторые дополнительные соображения.</span><span class="sxs-lookup"><span data-stu-id="f71ab-196">If you're a library author who exposes CEs in their library today, there are some additional considerations you'll need to be aware of.</span></span>
 
-<span data-ttu-id="d8028-197">Эта функция реализует [F # RFC FS-1063](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1063-support-letbang-andbang-for-applicative-functors.md).</span><span class="sxs-lookup"><span data-stu-id="d8028-197">This feature implements [F# RFC FS-1063](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1063-support-letbang-andbang-for-applicative-functors.md).</span></span>
+<span data-ttu-id="f71ab-197">Эта функция реализует [F # RFC FS-1063](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1063-support-letbang-andbang-for-applicative-functors.md).</span><span class="sxs-lookup"><span data-stu-id="f71ab-197">This feature implements [F# RFC FS-1063](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1063-support-letbang-andbang-for-applicative-functors.md).</span></span>
 
-## <a name="interfaces-can-be-implemented-at-different-generic-instantiations"></a><span data-ttu-id="d8028-198">Интерфейсы могут быть реализованы в разных универсальных экземплярах</span><span class="sxs-lookup"><span data-stu-id="d8028-198">Interfaces can be implemented at different generic instantiations</span></span>
+## <a name="interfaces-can-be-implemented-at-different-generic-instantiations"></a><span data-ttu-id="f71ab-198">Интерфейсы могут быть реализованы в разных универсальных экземплярах</span><span class="sxs-lookup"><span data-stu-id="f71ab-198">Interfaces can be implemented at different generic instantiations</span></span>
 
-<span data-ttu-id="d8028-199">Теперь можно реализовать тот же интерфейс в различных универсальных экземплярах:</span><span class="sxs-lookup"><span data-stu-id="d8028-199">You can now implement the same interface at different generic instantiations:</span></span>
+<span data-ttu-id="f71ab-199">Теперь можно реализовать тот же интерфейс в различных универсальных экземплярах:</span><span class="sxs-lookup"><span data-stu-id="f71ab-199">You can now implement the same interface at different generic instantiations:</span></span>
 
 ```fsharp
 type IA<'T> =
@@ -362,13 +362,13 @@ iaInt.Get() // 1
 iaString.Get() // "hello"
 ```
 
-<span data-ttu-id="d8028-200">Эта функция реализует [F # RFC FS-1031](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1031-Allow%20implementing%20the%20same%20interface%20at%20different%20generic%20instantiations%20in%20the%20same%20type.md).</span><span class="sxs-lookup"><span data-stu-id="d8028-200">This feature implements [F# RFC FS-1031](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1031-Allow%20implementing%20the%20same%20interface%20at%20different%20generic%20instantiations%20in%20the%20same%20type.md).</span></span>
+<span data-ttu-id="f71ab-200">Эта функция реализует [F # RFC FS-1031](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1031-Allow%20implementing%20the%20same%20interface%20at%20different%20generic%20instantiations%20in%20the%20same%20type.md).</span><span class="sxs-lookup"><span data-stu-id="f71ab-200">This feature implements [F# RFC FS-1031](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1031-Allow%20implementing%20the%20same%20interface%20at%20different%20generic%20instantiations%20in%20the%20same%20type.md).</span></span>
 
-## <a name="default-interface-member-consumption"></a><span data-ttu-id="d8028-201">Использование элементов интерфейса по умолчанию</span><span class="sxs-lookup"><span data-stu-id="d8028-201">Default interface member consumption</span></span>
+## <a name="default-interface-member-consumption"></a><span data-ttu-id="f71ab-201">Использование элементов интерфейса по умолчанию</span><span class="sxs-lookup"><span data-stu-id="f71ab-201">Default interface member consumption</span></span>
 
-<span data-ttu-id="d8028-202">F # 5 позволяет использовать [интерфейсы с реализациями по умолчанию](../../csharp/tutorials/default-interface-methods-versions.md).</span><span class="sxs-lookup"><span data-stu-id="d8028-202">F# 5 lets you consume [interfaces with default implementations](../../csharp/tutorials/default-interface-methods-versions.md).</span></span>
+<span data-ttu-id="f71ab-202">F # 5 позволяет использовать [интерфейсы с реализациями по умолчанию](../../csharp/tutorials/default-interface-methods-versions.md).</span><span class="sxs-lookup"><span data-stu-id="f71ab-202">F# 5 lets you consume [interfaces with default implementations](../../csharp/tutorials/default-interface-methods-versions.md).</span></span>
 
-<span data-ttu-id="d8028-203">Рассмотрим интерфейс, определенный в C# следующим образом:</span><span class="sxs-lookup"><span data-stu-id="d8028-203">Consider an interface defined in C# like this:</span></span>
+<span data-ttu-id="f71ab-203">Рассмотрим интерфейс, определенный в C# следующим образом:</span><span class="sxs-lookup"><span data-stu-id="f71ab-203">Consider an interface defined in C# like this:</span></span>
 
 ```csharp
 using System;
@@ -382,7 +382,7 @@ namespace CSharp
 }
 ```
 
-<span data-ttu-id="d8028-204">Его можно использовать в F # с помощью любого из стандартных средств реализации интерфейса:</span><span class="sxs-lookup"><span data-stu-id="d8028-204">You can consume it in F# through any of the standard means of implementing an interface:</span></span>
+<span data-ttu-id="f71ab-204">Его можно использовать в F # с помощью любого из стандартных средств реализации интерфейса:</span><span class="sxs-lookup"><span data-stu-id="f71ab-204">You can consume it in F# through any of the standard means of implementing an interface:</span></span>
 
 ```fsharp
 open CSharp
@@ -401,13 +401,13 @@ let md' = { new MyDim }
 printfn $"DIM from C# but via Object Expression: %d{md'.Z}"
 ```
 
-<span data-ttu-id="d8028-205">Это позволяет безопасно использовать преимущества кода C# и компонентов .NET, написанных на современном языке C#, когда они хотят, чтобы пользователи могли использовать реализацию по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="d8028-205">This lets you safely take advantage of C# code and .NET components written in modern C# when they expect users to be able to consume a default implementation.</span></span>
+<span data-ttu-id="f71ab-205">Это позволяет безопасно использовать преимущества кода C# и компонентов .NET, написанных на современном языке C#, когда они хотят, чтобы пользователи могли использовать реализацию по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="f71ab-205">This lets you safely take advantage of C# code and .NET components written in modern C# when they expect users to be able to consume a default implementation.</span></span>
 
-<span data-ttu-id="d8028-206">Эта функция реализует [F # RFC FS-1074](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1074-default-interface-member-consumption.md).</span><span class="sxs-lookup"><span data-stu-id="d8028-206">This feature implements [F# RFC FS-1074](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1074-default-interface-member-consumption.md).</span></span>
+<span data-ttu-id="f71ab-206">Эта функция реализует [F # RFC FS-1074](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1074-default-interface-member-consumption.md).</span><span class="sxs-lookup"><span data-stu-id="f71ab-206">This feature implements [F# RFC FS-1074](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1074-default-interface-member-consumption.md).</span></span>
 
-## <a name="simplified-interop-with-nullable-value-types"></a><span data-ttu-id="d8028-207">Упрощенное взаимодействие с типами значений, допускающими значение null</span><span class="sxs-lookup"><span data-stu-id="d8028-207">Simplified interop with nullable value types</span></span>
+## <a name="simplified-interop-with-nullable-value-types"></a><span data-ttu-id="f71ab-207">Упрощенное взаимодействие с типами значений, допускающими значение null</span><span class="sxs-lookup"><span data-stu-id="f71ab-207">Simplified interop with nullable value types</span></span>
 
-<span data-ttu-id="d8028-208">В F # поддерживаются [типы, допускающие значения NULL](https://docs.microsoft.com/dotnet/api/system.nullable-1) (которые также называются типами, допускающими значения NULL), но их взаимодействие с ними традиционно было довольно сложно, поскольку вам пришлось бы `Nullable` создавать `Nullable<SomeType>` обертку или каждый раз, когда нужно передать значение.</span><span class="sxs-lookup"><span data-stu-id="d8028-208">[Nullable (value) types](https://docs.microsoft.com/dotnet/api/system.nullable-1) (called Nullable Types historically) have long been supported by F#, but interacting with them has traditionally been somewhat of a pain since you'd have to construct a `Nullable` or `Nullable<SomeType>` wrapper every time you wanted to pass a value.</span></span> <span data-ttu-id="d8028-209">Теперь компилятор будет неявно преобразовывать тип значения в, `Nullable<ThatValueType>` Если целевой тип соответствует.</span><span class="sxs-lookup"><span data-stu-id="d8028-209">Now the compiler will implicitly convert a value type into a `Nullable<ThatValueType>` if the target type matches.</span></span> <span data-ttu-id="d8028-210">Теперь возможны следующие фрагменты кода:</span><span class="sxs-lookup"><span data-stu-id="d8028-210">The following code is now possible:</span></span>
+<span data-ttu-id="f71ab-208">В F # поддерживаются [типы, допускающие значения NULL](/dotnet/api/system.nullable-1) (которые также называются типами, допускающими значения NULL), но их взаимодействие с ними традиционно было довольно сложно, поскольку вам пришлось бы `Nullable` создавать `Nullable<SomeType>` обертку или каждый раз, когда нужно передать значение.</span><span class="sxs-lookup"><span data-stu-id="f71ab-208">[Nullable (value) types](/dotnet/api/system.nullable-1) (called Nullable Types historically) have long been supported by F#, but interacting with them has traditionally been somewhat of a pain since you'd have to construct a `Nullable` or `Nullable<SomeType>` wrapper every time you wanted to pass a value.</span></span> <span data-ttu-id="f71ab-209">Теперь компилятор будет неявно преобразовывать тип значения в, `Nullable<ThatValueType>` Если целевой тип соответствует.</span><span class="sxs-lookup"><span data-stu-id="f71ab-209">Now the compiler will implicitly convert a value type into a `Nullable<ThatValueType>` if the target type matches.</span></span> <span data-ttu-id="f71ab-210">Теперь возможны следующие фрагменты кода:</span><span class="sxs-lookup"><span data-stu-id="f71ab-210">The following code is now possible:</span></span>
 
 ```fsharp
 #r "nuget: Microsoft.Data.Analysis"
@@ -423,11 +423,11 @@ dateTimes.Append(DateTime.Parse("2019/01/01"))
 dateTimes.Append(Nullable<DateTime>(DateTime.Parse("2019/01/01")))
 ```
 
-<span data-ttu-id="d8028-211">Эта функция реализует [F # RFC FS-1075](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1075-nullable-interop.md).</span><span class="sxs-lookup"><span data-stu-id="d8028-211">This feature implements [F# RFC FS-1075](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1075-nullable-interop.md).</span></span>
+<span data-ttu-id="f71ab-211">Эта функция реализует [F # RFC FS-1075](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1075-nullable-interop.md).</span><span class="sxs-lookup"><span data-stu-id="f71ab-211">This feature implements [F# RFC FS-1075](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1075-nullable-interop.md).</span></span>
 
-## <a name="preview-reverse-indexes"></a><span data-ttu-id="d8028-212">Предварительный просмотр: обратные индексы</span><span class="sxs-lookup"><span data-stu-id="d8028-212">Preview: reverse indexes</span></span>
+## <a name="preview-reverse-indexes"></a><span data-ttu-id="f71ab-212">Предварительный просмотр: обратные индексы</span><span class="sxs-lookup"><span data-stu-id="f71ab-212">Preview: reverse indexes</span></span>
 
-<span data-ttu-id="d8028-213">В F # 5 также появился предварительный просмотр для разрешения обратных индексов.</span><span class="sxs-lookup"><span data-stu-id="d8028-213">F# 5 also introduces a preview for allowing reverse indexes.</span></span> <span data-ttu-id="d8028-214">Синтаксис: `^idx`.</span><span class="sxs-lookup"><span data-stu-id="d8028-214">The syntax is `^idx`.</span></span> <span data-ttu-id="d8028-215">Вот как можно получить значение элемента 1 из конца списка:</span><span class="sxs-lookup"><span data-stu-id="d8028-215">Here's how you can an element 1 value from the end of a list:</span></span>
+<span data-ttu-id="f71ab-213">В F # 5 также появился предварительный просмотр для разрешения обратных индексов.</span><span class="sxs-lookup"><span data-stu-id="f71ab-213">F# 5 also introduces a preview for allowing reverse indexes.</span></span> <span data-ttu-id="f71ab-214">Синтаксис: `^idx`.</span><span class="sxs-lookup"><span data-stu-id="f71ab-214">The syntax is `^idx`.</span></span> <span data-ttu-id="f71ab-215">Вот как можно получить значение элемента 1 из конца списка:</span><span class="sxs-lookup"><span data-stu-id="f71ab-215">Here's how you can an element 1 value from the end of a list:</span></span>
 
 ```fsharp
 let xs = [1..10]
@@ -444,13 +444,13 @@ let lastTwoNewStyle = xs.[^1..]
 lastTwoOldStyle = lastTwoNewStyle // true
 ```
 
-<span data-ttu-id="d8028-216">Кроме того, можно определить обратные индексы для собственных типов.</span><span class="sxs-lookup"><span data-stu-id="d8028-216">You can also define reverse indexes for your own types.</span></span> <span data-ttu-id="d8028-217">Для этого необходимо реализовать следующий метод:</span><span class="sxs-lookup"><span data-stu-id="d8028-217">To do so, you'll need to implement the following method:</span></span>
+<span data-ttu-id="f71ab-216">Кроме того, можно определить обратные индексы для собственных типов.</span><span class="sxs-lookup"><span data-stu-id="f71ab-216">You can also define reverse indexes for your own types.</span></span> <span data-ttu-id="f71ab-217">Для этого необходимо реализовать следующий метод:</span><span class="sxs-lookup"><span data-stu-id="f71ab-217">To do so, you'll need to implement the following method:</span></span>
 
 ```fsharp
 GetReverseIndex: dimension: int -> offset: int
 ```
 
-<span data-ttu-id="d8028-218">Ниже приведен пример для `Span<'T>` типа:</span><span class="sxs-lookup"><span data-stu-id="d8028-218">Here's an example for the `Span<'T>` type:</span></span>
+<span data-ttu-id="f71ab-218">Ниже приведен пример для `Span<'T>` типа:</span><span class="sxs-lookup"><span data-stu-id="f71ab-218">Here's an example for the `Span<'T>` type:</span></span>
 
 ```fsharp
 open System
@@ -484,13 +484,13 @@ let run () =
 run() // Prints the same thing twice
 ```
 
-<span data-ttu-id="d8028-219">Эта функция реализует [F # RFC FS-1076](https://github.com/fsharp/fslang-design/blob/master/preview/FS-1076-from-the-end-slicing.md).</span><span class="sxs-lookup"><span data-stu-id="d8028-219">This feature implements [F# RFC FS-1076](https://github.com/fsharp/fslang-design/blob/master/preview/FS-1076-from-the-end-slicing.md).</span></span>
+<span data-ttu-id="f71ab-219">Эта функция реализует [F # RFC FS-1076](https://github.com/fsharp/fslang-design/blob/master/preview/FS-1076-from-the-end-slicing.md).</span><span class="sxs-lookup"><span data-stu-id="f71ab-219">This feature implements [F# RFC FS-1076](https://github.com/fsharp/fslang-design/blob/master/preview/FS-1076-from-the-end-slicing.md).</span></span>
 
-## <a name="preview-overloads-of-custom-keywords-in-computation-expressions"></a><span data-ttu-id="d8028-220">Предварительный просмотр: перегрузки пользовательских ключевых слов в вычислительных выражениях</span><span class="sxs-lookup"><span data-stu-id="d8028-220">Preview: overloads of custom keywords in computation expressions</span></span>
+## <a name="preview-overloads-of-custom-keywords-in-computation-expressions"></a><span data-ttu-id="f71ab-220">Предварительный просмотр: перегрузки пользовательских ключевых слов в вычислительных выражениях</span><span class="sxs-lookup"><span data-stu-id="f71ab-220">Preview: overloads of custom keywords in computation expressions</span></span>
 
-<span data-ttu-id="d8028-221">Вычислительные выражения — это мощная функция для авторов библиотек и платформ.</span><span class="sxs-lookup"><span data-stu-id="d8028-221">Computation expressions are a powerful feature for library and framework authors.</span></span> <span data-ttu-id="d8028-222">Они позволяют значительно повысить выразительность компонентов, позволяя определять хорошо известные члены и формировать DSL для домена, в котором вы работаете.</span><span class="sxs-lookup"><span data-stu-id="d8028-222">They allow you to greatly improve the expressiveness of your components by letting you define well-known members and form a DSL for the domain you're working in.</span></span>
+<span data-ttu-id="f71ab-221">Вычислительные выражения — это мощная функция для авторов библиотек и платформ.</span><span class="sxs-lookup"><span data-stu-id="f71ab-221">Computation expressions are a powerful feature for library and framework authors.</span></span> <span data-ttu-id="f71ab-222">Они позволяют значительно повысить выразительность компонентов, позволяя определять хорошо известные члены и формировать DSL для домена, в котором вы работаете.</span><span class="sxs-lookup"><span data-stu-id="f71ab-222">They allow you to greatly improve the expressiveness of your components by letting you define well-known members and form a DSL for the domain you're working in.</span></span>
 
-<span data-ttu-id="d8028-223">В F # 5 добавлена поддержка предварительной версии для перегрузки пользовательских операций в вычислительных выражениях.</span><span class="sxs-lookup"><span data-stu-id="d8028-223">F# 5 adds preview support for overloading custom operations in Computation Expressions.</span></span> <span data-ttu-id="d8028-224">Это позволяет написать и использовать следующий код:</span><span class="sxs-lookup"><span data-stu-id="d8028-224">It allows the following code to be written and consumed:</span></span>
+<span data-ttu-id="f71ab-223">В F # 5 добавлена поддержка предварительной версии для перегрузки пользовательских операций в вычислительных выражениях.</span><span class="sxs-lookup"><span data-stu-id="f71ab-223">F# 5 adds preview support for overloading custom operations in Computation Expressions.</span></span> <span data-ttu-id="f71ab-224">Это позволяет написать и использовать следующий код:</span><span class="sxs-lookup"><span data-stu-id="f71ab-224">It allows the following code to be written and consumed:</span></span>
 
 ```fsharp
 open System
@@ -556,6 +556,6 @@ let password =
     }
 ```
 
-<span data-ttu-id="d8028-225">До этого изменения можно было бы написать `InputBuilder` тип так, как он есть, но вы не смогли использовать его так, как он используется в примере.</span><span class="sxs-lookup"><span data-stu-id="d8028-225">Prior to this change, you could write the `InputBuilder` type as it is, but you couldn't use it the way it's used in the example.</span></span> <span data-ttu-id="d8028-226">Так как перегрузки, необязательные параметры и `System.ParamArray` типы Now разрешены, все работает так, как если бы оно было бы ожидаемым.</span><span class="sxs-lookup"><span data-stu-id="d8028-226">Since overloads, optional parameters, and now `System.ParamArray` types are allowed, everything just works as you'd expect it to.</span></span>
+<span data-ttu-id="f71ab-225">До этого изменения можно было бы написать `InputBuilder` тип так, как он есть, но вы не смогли использовать его так, как он используется в примере.</span><span class="sxs-lookup"><span data-stu-id="f71ab-225">Prior to this change, you could write the `InputBuilder` type as it is, but you couldn't use it the way it's used in the example.</span></span> <span data-ttu-id="f71ab-226">Так как перегрузки, необязательные параметры и `System.ParamArray` типы Now разрешены, все работает так, как если бы оно было бы ожидаемым.</span><span class="sxs-lookup"><span data-stu-id="f71ab-226">Since overloads, optional parameters, and now `System.ParamArray` types are allowed, everything just works as you'd expect it to.</span></span>
 
-<span data-ttu-id="d8028-227">Эта функция реализует [F # RFC FS-1056](https://github.com/fsharp/fslang-design/blob/master/preview/FS-1056-allow-custom-operation-overloads.md).</span><span class="sxs-lookup"><span data-stu-id="d8028-227">This feature implements [F# RFC FS-1056](https://github.com/fsharp/fslang-design/blob/master/preview/FS-1056-allow-custom-operation-overloads.md).</span></span>
+<span data-ttu-id="f71ab-227">Эта функция реализует [F # RFC FS-1056](https://github.com/fsharp/fslang-design/blob/master/preview/FS-1056-allow-custom-operation-overloads.md).</span><span class="sxs-lookup"><span data-stu-id="f71ab-227">This feature implements [F# RFC FS-1056](https://github.com/fsharp/fslang-design/blob/master/preview/FS-1056-allow-custom-operation-overloads.md).</span></span>
