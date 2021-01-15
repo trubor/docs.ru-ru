@@ -1,19 +1,19 @@
 ---
-title: Выбор между .NET Core и .NET Framework для контейнеров Docker
-description: Архитектура микрослужб .NET для упакованных в контейнеры приложений .NET | Выбор между .NET Core и .NET Framework для контейнеров Docker
-ms.date: 09/11/2018
-ms.openlocfilehash: b01aaf25f4071e8e4a07905a12ec9dd0d89a738d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+title: Выбор между .NET 5 и .NET Framework для контейнеров Docker
+description: Архитектура микрослужб .NET для упакованных в контейнеры приложений .NET | Выбор между .NET 5 и .NET Framework для контейнеров Docker
+ms.date: 01/13/2021
+ms.openlocfilehash: 5c7ea1be02722fce7c5784afa89c18defbe4eeaf
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "70849272"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188651"
 ---
-# <a name="choosing-between-net-core-and-net-framework-for-docker-containers"></a><span data-ttu-id="ab4e3-103">Выбор между .NET Core и .NET Framework для контейнеров Docker</span><span class="sxs-lookup"><span data-stu-id="ab4e3-103">Choosing Between .NET Core and .NET Framework for Docker Containers</span></span>
+# <a name="choosing-between-net-and-net-framework-for-docker-containers"></a><span data-ttu-id="cb1b7-103">Выбор между .NET и .NET Framework для контейнеров Docker</span><span class="sxs-lookup"><span data-stu-id="cb1b7-103">Choosing Between .NET and .NET Framework for Docker Containers</span></span>
 
-<span data-ttu-id="ab4e3-104">Серверные контейнерные приложения Docker можно разрабатывать на двух поддерживаемых платформах .NET: [.NET Framework и .NET Core](https://dotnet.microsoft.com/download).</span><span class="sxs-lookup"><span data-stu-id="ab4e3-104">There are two supported frameworks for building server-side containerized Docker applications with .NET: [.NET Framework and .NET Core](https://dotnet.microsoft.com/download).</span></span> <span data-ttu-id="ab4e3-105">В них используется множество одинаковых компонентов платформы .NET, а код можно использовать как в одной среде, так и в другой.</span><span class="sxs-lookup"><span data-stu-id="ab4e3-105">They share many .NET platform components, and you can share code across the two.</span></span> <span data-ttu-id="ab4e3-106">Но между этими двумя платформами также существуют и фундаментальные различия. Поэтому ваш выбор будет зависеть от поставленной задачи.</span><span class="sxs-lookup"><span data-stu-id="ab4e3-106">However, there are fundamental differences between them, and which framework you use will depend on what you want to accomplish.</span></span> <span data-ttu-id="ab4e3-107">В этом разделе приводятся рекомендации по выбору каждой из платформ.</span><span class="sxs-lookup"><span data-stu-id="ab4e3-107">This section provides guidance on when to choose each framework.</span></span>
+<span data-ttu-id="cb1b7-104">Серверные контейнерные приложения Docker можно разрабатывать на двух платформах .NET: [.NET Framework и .NET 5](https://dotnet.microsoft.com/download).</span><span class="sxs-lookup"><span data-stu-id="cb1b7-104">There are two supported frameworks for building server-side containerized Docker applications with .NET: [.NET Framework and .NET 5](https://dotnet.microsoft.com/download).</span></span> <span data-ttu-id="cb1b7-105">В них используется множество одинаковых компонентов платформы .NET, а код можно использовать как в одной среде, так и в другой.</span><span class="sxs-lookup"><span data-stu-id="cb1b7-105">They share many .NET platform components, and you can share code across the two.</span></span> <span data-ttu-id="cb1b7-106">Но между этими двумя платформами также существуют и фундаментальные различия. Поэтому ваш выбор будет зависеть от поставленной задачи.</span><span class="sxs-lookup"><span data-stu-id="cb1b7-106">However, there are fundamental differences between them, and which framework you use will depend on what you want to accomplish.</span></span> <span data-ttu-id="cb1b7-107">В этом разделе приводятся рекомендации по выбору каждой из платформ.</span><span class="sxs-lookup"><span data-stu-id="cb1b7-107">This section provides guidance on when to choose each framework.</span></span>
 
 >[!div class="step-by-step"]
-><span data-ttu-id="ab4e3-108">[Назад](../container-docker-introduction/docker-containers-images-registries.md)
->[Вперед](general-guidance.md)</span><span class="sxs-lookup"><span data-stu-id="ab4e3-108">[Previous](../container-docker-introduction/docker-containers-images-registries.md)
+><span data-ttu-id="cb1b7-108">[Назад](../container-docker-introduction/docker-containers-images-registries.md)
+>[Вперед](general-guidance.md)</span><span class="sxs-lookup"><span data-stu-id="cb1b7-108">[Previous](../container-docker-introduction/docker-containers-images-registries.md)
 [Next](general-guidance.md)</span></span>
