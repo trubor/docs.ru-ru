@@ -342,8 +342,6 @@ items:
                     href: /aspnet/core/razor-pages/sdk?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: Требуемые версии .NET Framework
             href: ../standard/frameworks.md
-          - name: Дополнения к формату CSPROJ
-            href: ../core/tools/csproj.md
           - name: Управление зависимостями
             href: ../core/tools/dependencies.md
       - name: Глобальные и локальные средства
@@ -397,8 +395,6 @@ items:
               - name: Обзор
                 displayName: dumps
                 href: ../core/diagnostics/dumps.md
-              - name: Отладка StackOverflow
-                href: ../core/diagnostics/debug-stackoverflow.md
               - name: Дампы Linux
                 href: ../core/diagnostics/debug-linux-dumps.md
               - name: "Расширение отладчика\_SOS"
@@ -467,6 +463,8 @@ items:
                 href: ../core/diagnostics/debug-highcpu.md
               - name: Отладка взаимоблокировки
                 href: ../core/diagnostics/debug-deadlock.md
+              - name: Отладка StackOverflow
+                href: ../core/diagnostics/debug-stackoverflow.md
       - name: Анализ кода
         items:
           - name: Обзор
@@ -2281,6 +2279,8 @@ items:
             href: ../core/migration/index.md
           - name: Сопоставление между project.json и CSPROJ
             href: ../core/tools/project-json-to-csproj.md
+          - name: Сопоставление со свойствами для атрибутов AssemblyInfo
+            href: ../core/migration/assembly-info.md
           - name: Общие сведения об изменениях интерфейса командной строки
             href: ../core/tools/cli-msbuild-architecture.md
           - name: Миграция из DNX

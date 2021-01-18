@@ -10,12 +10,12 @@
           href: container-docker-introduction/docker-terminology.md
         - name: "Контейнеры, образы и реестры\_Docker"
           href: container-docker-introduction/docker-containers-images-registries.md
-    - name: "Выбор между .NET\_Core и .NET\_Framework для контейнеров\_Docker"
+    - name: "Выбор между NET\_5 и NET\_Framework для контейнеров\_Docker"
       href: net-core-net-framework-containers/index.md
       items:
-        - name: Общие рекомендации
+        - name: Общее руководство
           href: net-core-net-framework-containers/general-guidance.md
-        - name: "Выбор .NET\_Core для контейнеров\_Docker"
+        - name: "Выбор .NET для контейнеров\_Docker"
           href: net-core-net-framework-containers/net-core-container-scenarios.md
         - name: "Выбор .NET\_Framework для контейнеров\_Docker"
           href: net-core-net-framework-containers/net-framework-container-scenarios.md
@@ -101,7 +101,7 @@
           href: microservice-ddd-cqrs-patterns/ddd-oriented-microservice.md
         - name: Проектирование модели предметной области микрослужбы
           href: microservice-ddd-cqrs-patterns/microservice-domain-model.md
-        - name: "Реализация модели предметной области микрослужбы с помощью .NET\_Core"
+        - name: "Реализация модели предметной области микрослужбы с помощью\_.NET"
           href: microservice-ddd-cqrs-patterns/net-core-microservice-domain-model.md
         - name: Seedwork (многократно используемые базовые классы и интерфейсы для модели предметной области)
           href: microservice-ddd-cqrs-patterns/seedwork-domain-model-base-classes-interfaces.md
