@@ -18,6 +18,14 @@
     - name: Критические изменения в разных версиях
       expanded: true
       items:
+        - name: ".NET\_6.0"
+          items:
+            - name: Обзор
+              href: 6.0.md
+            - name: Windows Forms
+              items:
+                - name: Свойства TableLayoutSettings вызывают исключение InvalidEnumArgumentException
+                  href: windows-forms/6.0/tablelayoutsettings-apis-throw-invalidenumargumentexception.md
         - name: .NET 5.0
           items:
             - name: Обзор
@@ -551,6 +559,10 @@
               href: visualbasic.md
         - name: Windows Forms
           items:
+            - name: ".NET\_6.0"
+              items:
+                - name: Свойства TableLayoutSettings вызывают исключение InvalidEnumArgumentException
+                  href: windows-forms/6.0/tablelayoutsettings-apis-throw-invalidenumargumentexception.md
             - name: .NET 5.0
               items:
                 - name: Для свойства OutputType задано значение WinExe
