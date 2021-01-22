@@ -1,15 +1,15 @@
-- name: "Модернизация классических приложений для Windows\_10 с помощью .NET Core\_3.1"
+- name: "Модернизация классических приложений для Windows\_10 с помощью .NET\_5"
   href: index.md
   items:
     - name: Причины использования современных классических приложений
       href: why-modern-applications.md
-    - name: Новые возможности .NET Core для классических приложений
-      href: whats-new-dotnet-core.md
+    - name: Новые возможности .NET для классических приложений
+      href: whats-new-dotnet.md
     - name: Миграция современных классических приложений
       href: migrate-modern-applications.md
     - name: "Миграция Windows\_10"
       href: windows-migration.md
-    - name: "Пример миграции на .NET Core\_3.1"
-      href: example-migration-core.md
+    - name: "Пример миграции на .NET\_5"
+      href: example-migration.md
     - name: Развертывание современных классических приложений
       href: deploy-modern-applications.md
