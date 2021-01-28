@@ -282,13 +282,13 @@
 - name: "Использование языка\_F# в Azure"
   href: using-fsharp-on-azure/index.md
   items:
-    - name: "Начало работы с хранилищем BLOB-объектов Azure с помощью языка\_F#"
+    - name: "Начало работы с Хранилищем BLOB-объектов Azure с помощью языка\_F#"
       href: using-fsharp-on-azure/blob-storage.md
-    - name: "Начало работы с хранилищем файлов Azure с помощью языка\_F#"
+    - name: "Начало работы с Хранилищем файлов Azure с помощью языка\_F#"
       href: using-fsharp-on-azure/file-storage.md
-    - name: "Начало работы с хранилищем очередей Azure с помощью языка\_F#"
+    - name: "Начало работы с Хранилищем очередей Azure с помощью языка\_F#"
       href: using-fsharp-on-azure/queue-storage.md
-    - name: "Начало работы с хранилищем таблиц Azure с помощью языка\_F#"
+    - name: "Начало работы с Хранилищем таблиц Azure с помощью языка\_F#"
       href: using-fsharp-on-azure/table-storage.md
     - name: Управление пакетами для зависимостей F# в Azure
       href: using-fsharp-on-azure/package-management.md
