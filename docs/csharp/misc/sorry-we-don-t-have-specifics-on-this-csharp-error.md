@@ -1,5 +1,6 @@
 ---
 title: К сожалению, конкретные сведения об этой ошибке C# отсутствуют.
+description: Список возможных ресурсов для ошибок компилятора и предупреждений, которые еще не документированы.
 ms.date: 08/04/2020
 f1_keywords:
 - CS0181
@@ -736,28 +737,26 @@ f1_keywords:
 helpviewer_keywords:
 - errors [C#], additional information
 ms.assetid: 48320e4a-6e17-45a6-9966-88c6ec89bd2f
-ms.openlocfilehash: 16420ee5889779e3aefdbc15f1050aeeeea8f624
-ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
+ms.openlocfilehash: c16698fbbf42e0967978a3502243793835f541c5
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91804616"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99216906"
 ---
-# <a name="sorry-we-dont-have-specifics-on-this-c-error"></a><span data-ttu-id="e0090-102">К сожалению, конкретные сведения об этой ошибке C# отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="e0090-102">Sorry, we don't have specifics on this C# error</span></span>
+# <a name="sorry-we-dont-have-specifics-on-this-c-error"></a><span data-ttu-id="fcddf-103">К сожалению, конкретные сведения об этой ошибке C# отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="fcddf-103">Sorry, we don't have specifics on this C# error</span></span>
 
-<span data-ttu-id="e0090-103">К сожалению, у нас нет специальных сведений об этой ошибке.</span><span class="sxs-lookup"><span data-stu-id="e0090-103">We're sorry, but we don't have any specific information about this error.</span></span> <span data-ttu-id="e0090-104">Можно выполнить поиск по номеру ошибки и тексту сообщения об ошибке в Интернете.</span><span class="sxs-lookup"><span data-stu-id="e0090-104">You can search for the error number and message text to find information on the web.</span></span> <span data-ttu-id="e0090-105">Кроме того, вы можете попросить других разработчиков использовать один из следующих средств:</span><span class="sxs-lookup"><span data-stu-id="e0090-105">Or you can ask other developers using one of these:</span></span>
+<span data-ttu-id="fcddf-104">К сожалению, у нас нет специальных сведений об этой ошибке.</span><span class="sxs-lookup"><span data-stu-id="fcddf-104">We're sorry, but we don't have any specific information about this error.</span></span> <span data-ttu-id="fcddf-105">Можно выполнить поиск по номеру ошибки и тексту сообщения об ошибке в Интернете.</span><span class="sxs-lookup"><span data-stu-id="fcddf-105">You can search for the error number and message text to find information on the web.</span></span> <span data-ttu-id="fcddf-106">Кроме того, вы можете попросить других разработчиков использовать один из следующих средств:</span><span class="sxs-lookup"><span data-stu-id="fcddf-106">Or you can ask other developers using one of these:</span></span>
   
- [<span data-ttu-id="e0090-106">Форумы MSDN — Visual C #</span><span class="sxs-lookup"><span data-stu-id="e0090-106">Msdn forums - Visual C#</span></span>](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=csharpgeneral)  
- <span data-ttu-id="e0090-107">Форум для вопросов и проблем с Visual C#, которые не обсуждаются на других форумах.</span><span class="sxs-lookup"><span data-stu-id="e0090-107">Provides a forum for questions about and issues with Visual C# that are not discussed in other forums.</span></span>  
+ [<span data-ttu-id="fcddf-107">Форумы MSDN — Visual C #</span><span class="sxs-lookup"><span data-stu-id="fcddf-107">Msdn forums - Visual C#</span></span>](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=csharpgeneral)  
+ <span data-ttu-id="fcddf-108">Форум для вопросов и проблем с Visual C#, которые не обсуждаются на других форумах.</span><span class="sxs-lookup"><span data-stu-id="fcddf-108">Provides a forum for questions about and issues with Visual C# that are not discussed in other forums.</span></span>  
 
- [<span data-ttu-id="e0090-108">Stack Overflow</span><span class="sxs-lookup"><span data-stu-id="e0090-108">Stack Overflow</span></span>](https://stackoverflow.com/questions/tagged/c%23)  
-<span data-ttu-id="e0090-109">Содержит веб-сайт вопросов и ответов для вопросов и проблем с Visual C#.</span><span class="sxs-lookup"><span data-stu-id="e0090-109">Provides a QA website for questions about and issues with Visual C#.</span></span>  
+ [<span data-ttu-id="fcddf-109">Stack Overflow</span><span class="sxs-lookup"><span data-stu-id="fcddf-109">Stack Overflow</span></span>](https://stackoverflow.com/questions/tagged/c%23)  
+<span data-ttu-id="fcddf-110">Содержит веб-сайт вопросов и ответов для вопросов и проблем с Visual C#.</span><span class="sxs-lookup"><span data-stu-id="fcddf-110">Provides a QA website for questions about and issues with Visual C#.</span></span>  
 
- <span data-ttu-id="e0090-110">См. также:</span><span class="sxs-lookup"><span data-stu-id="e0090-110">Also see:</span></span>  
- [<span data-ttu-id="e0090-111">Дополнительные ресурсы для программистов Visual C#</span><span class="sxs-lookup"><span data-stu-id="e0090-111">Additional Resources for Visual C# Programmers</span></span>](../getting-started/index.md)  
-  
-## <a name="see-also"></a><span data-ttu-id="e0090-112">См. также</span><span class="sxs-lookup"><span data-stu-id="e0090-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="fcddf-111">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="fcddf-111">See also</span></span>
 
-- [<span data-ttu-id="e0090-113">Руководство по программированию на C#</span><span class="sxs-lookup"><span data-stu-id="e0090-113">C# Programming Guide</span></span>](../programming-guide/index.md)
-- [<span data-ttu-id="e0090-114">Справочник по C#</span><span class="sxs-lookup"><span data-stu-id="e0090-114">C# Reference</span></span>](../language-reference/index.md)
-- [<span data-ttu-id="e0090-115">Обращайтесь к нам</span><span class="sxs-lookup"><span data-stu-id="e0090-115">Talk to Us</span></span>](/visualstudio/ide/feedback-options)
+- [<span data-ttu-id="fcddf-112">Руководство по программированию на C#</span><span class="sxs-lookup"><span data-stu-id="fcddf-112">C# Programming Guide</span></span>](../programming-guide/index.md)
+- [<span data-ttu-id="fcddf-113">Справочник по C#</span><span class="sxs-lookup"><span data-stu-id="fcddf-113">C# Reference</span></span>](../language-reference/index.md)
+- [<span data-ttu-id="fcddf-114">Обращайтесь к нам</span><span class="sxs-lookup"><span data-stu-id="fcddf-114">Talk to Us</span></span>](/visualstudio/ide/feedback-options)
+- [<span data-ttu-id="fcddf-115">Дополнительные ресурсы для программистов Visual C#</span><span class="sxs-lookup"><span data-stu-id="fcddf-115">Additional Resources for Visual C# Programmers</span></span>](../tour-of-csharp/index.md)
