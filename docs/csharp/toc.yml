@@ -1,21 +1,16 @@
 items:
   - name: Документация по C#
     href: index.yml
-  - name: Начало работы
+  - name: Обзор языка C#
     items:
-      - name: Основы работы с языком C# и .NET
-        displayName: get started
-        href: getting-started/index.md
-      - name: Обзор языка C#
-        items:
-          - name: Вступление
-            href: tour-of-csharp/index.md
-          - name: Типы
-            href: tour-of-csharp/types.md
-          - name: Стандартные блоки программы
-            href: tour-of-csharp/program-building-blocks.md
-          - name: Основные области языка
-            href: tour-of-csharp/features.md
+      - name: Вступление
+        href: tour-of-csharp/index.md
+      - name: Типы
+        href: tour-of-csharp/types.md
+      - name: Стандартные блоки программы
+        href: tour-of-csharp/program-building-blocks.md
+      - name: Основные области языка
+        href: tour-of-csharp/features.md
   - name: Учебники
     items:
       - name: Обзор
