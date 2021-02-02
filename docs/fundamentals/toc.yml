@@ -197,7 +197,7 @@ items:
                 href: ../core/tools/sdk-errors/netsdk1079.md
               - name: NETSDK1145
                 href: ../core/tools/sdk-errors/netsdk1145.md
-      - name: Интерфейс командной строки .NET Core
+      - name: Интерфейс командной строки.NET
         items:
           - name: Обзор
             displayName: '.net cli,command-line interface,cli,tool'
@@ -439,7 +439,7 @@ items:
                 href: ../fundamentals/diagnostics/runtime-type-events.md
           - name: Сбор диагностики в контейнерах
             href: ../core/diagnostics/diagnostics-in-containers.md
-          - name: Глобальные средства .NET Core CLI
+          - name: "Глобальные средства .NET\_CLI"
             items:
               - name: dotnet-counters
                 href: ../core/diagnostics/dotnet-counters.md
@@ -453,7 +453,7 @@ items:
                 href: ../core/diagnostics/dotnet-symbol.md
               - name: dotnet-sos
                 href: ../core/diagnostics/dotnet-sos.md
-          - name: Учебники по диагностике .NET Core
+          - name: Учебники по диагностике .NET
             items:
               - name: Сбор трассировки производительности в Linux с помощью PerfCollect
                 href: ../core/diagnostics/trace-perfcollect-lttng.md
@@ -478,6 +478,8 @@ items:
                 href: code-analysis/configuration-options.md
               - name: Файлы конфигурации.
                 href: code-analysis/configuration-files.md
+              - name: Отключение предупреждений
+                href: code-analysis/suppress-warnings.md
               - name: Правила качества кода
                 items:
                   - name: Параметры правила
@@ -1296,15 +1298,15 @@ items:
                 href: ../core/dependency-loading/loading-unmanaged.md
           - name: Учебники
             items:
-              - name: Создание приложения .NET Core с подключаемыми модулями
+              - name: Создание приложения .NET с подключаемыми модулями
                 href: ../core/tutorials/creating-app-with-plugin-support.md
-              - name: Использование и отладка сборок с возможностью выгрузки в .NET Core
+              - name: Использование и отладка сборок с возможностью выгрузки в .NET
                 href: ../core/../standard/assembly/unloadability.md
       - name: Управление версиями
         items:
           - name: Обзор
             href: ../core/versions/index.md
-          - name: Выбор версии .NET Core
+          - name: Выбор версии .NET
             href: ../core/versions/selection.md
       - name: Конфигурация среды выполнения
         items:
@@ -1354,7 +1356,7 @@ items:
         items:
           - name: Введение в .NET и Docker
             href: ../core/docker/introduction.md
-          - name: Контейнеризация приложения .NET Core
+          - name: Контейнеризация приложения .NET
             href: ../core/docker/build-container.md
           - name: "Средства Visual\_Studio для контейнеров"
             href: /visualstudio/containers/overview
@@ -1836,6 +1838,8 @@ items:
             displayName: 'custom configuration,custom config,custom configuration provider,custom config provider'
           - name: Шаблон параметров
             href: ../core/extensions/options.md
+          - name: "Руководство по шаблону параметров для авторов\_библиотек"
+            href: ../core/extensions/options-library-authors.md
       - name: Ведение журнала
         items:
           - name: Обзор
@@ -2054,7 +2058,7 @@ items:
         href: ../core/testing/unit-testing-code-coverage.md
       - name: Модульное тестирование публикуемых выходных данных
         href: ../core/testing/unit-testing-published-output.md
-      - name: Live Unit Testing в проектах .NET Core с использованием Visual Studio
+      - name: Live Unit Testing в проектах .NET с использованием Visual Studio
         href: /visualstudio/test/live-unit-testing-start
   - name: Безопасность
     href: ../standard/security/
@@ -2133,9 +2137,9 @@ items:
             href: ../standard/native-interop/best-practices.md
           - name: Кодировки и маршалинг
             href: ../standard/native-interop/charset.md
-          - name: Предоставление доступа к компонентам .NET Core для COM
+          - name: "Предоставление\_модели COM доступа к компонентам .NET"
             href: ../core/native-interop/expose-components-to-com.md
-          - name: Размещение .NET Core из машинного кода
+          - name: Размещение .NET из машинного кода
             href: ../core/tutorials/netcore-hosting.md
           - name: взаимодействие COM
             items:
@@ -2157,7 +2161,7 @@ items:
             href: ../standard/native-interop/apply-interop-attributes.md
           - name: Исключения
             href: ../standard/native-interop/exceptions-interoperability.md
-      - name: Упаковка дистрибутивов .NET Core
+      - name: Упаковка дистрибутивов .NET
         href: ../core/distribution-packaging.md
       - name: Глобализация и локализация
         href: ../standard/globalization-localization/
@@ -2295,7 +2299,7 @@ items:
             href: ../core/porting/third-party-deps.md
           - name: Перенос библиотек
             href: ../core/porting/libraries.md
-          - name: Организация проектов для .NET Core
+          - name: Организация проектов для .NET
             href: ../core/porting/project-structure.md
           - name: Недоступные технологии
             href: ../core/porting/net-framework-tech-unavailable.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json

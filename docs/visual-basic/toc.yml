@@ -338,16 +338,17 @@
         - name: Тип данных UShort
           href: language-reference/data-types/ushort-data-type.md
     - name: Директивы
-      href: language-reference/directives/index.md
       items:
-        - name: '#Директива Const'
+        - name: '#Константа'
           href: language-reference/directives/const-directive.md
-        - name: '#Директива ExternalSource'
+        - name: '#ExternalSource'
           href: language-reference/directives/externalsource-directive.md
-        - name: '#Директивы If…Then…#Else'
+        - name: '#If...Then...#Else'
           href: language-reference/directives/if-then-else-directives.md
-        - name: '#Директива Region'
+        - name: '#Регион'
           href: language-reference/directives/region-directive.md
+        - name: '#Disable и #Enable'
+          href: language-reference/directives/disable-enable.md
     - name: Функции
       href: language-reference/functions/index.md
       items:
