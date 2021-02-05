@@ -1296,6 +1296,8 @@ items:
                 href: ../core/dependency-loading/loading-resources.md
               - name: Загрузка неуправляемых библиотек
                 href: ../core/dependency-loading/loading-unmanaged.md
+              - name: Сбор подробных сведений о загрузке сборок
+                href: ../core/dependency-loading/collect-details.md
           - name: Учебники
             items:
               - name: Создание приложения .NET с подключаемыми модулями
@@ -2133,6 +2135,8 @@ items:
             href: ../standard/native-interop/customize-struct-marshaling.md
           - name: Настройка маршалинга параметров
             href: ../standard/native-interop/customize-parameter-marshaling.md
+          - name: Написание кроссплатформенного кода P/Invoke
+            href: ../standard/native-interop/cross-platform.md
           - name: Руководство по взаимодействию
             href: ../standard/native-interop/best-practices.md
           - name: Кодировки и маршалинг

@@ -28,6 +28,8 @@
                   href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
                 - name: Свойства TableLayoutSettings вызывают исключение InvalidEnumArgumentException
                   href: windows-forms/6.0/tablelayoutsettings-apis-throw-invalidenumargumentexception.md
+                - name: 'TreeNodeCollection.Item создает исключение, если узел назначен в другом месте'
+                  href: windows-forms/6.0/treenodecollection-item-throws-argumentexception.md
         - name: .NET 5.0
           items:
             - name: Обзор
@@ -260,6 +262,8 @@
                   href: serialization/5.0/options-honored-when-serializing-key-value-pairs.md
             - name: Windows Forms
               items:
+                - name: Машинный код не может получить доступ к объектам Windows Forms
+                  href: windows-forms/5.0/winforms-objects-not-accessible-from-native-code.md
                 - name: Для свойства OutputType задано значение WinExe
                   href: windows-forms/5.0/automatically-infer-winexe-output-type.md
                 - name: Элемент DataGridView не сбрасывает шрифты
@@ -566,8 +570,12 @@
                   href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
                 - name: Свойства TableLayoutSettings вызывают исключение InvalidEnumArgumentException
                   href: windows-forms/6.0/tablelayoutsettings-apis-throw-invalidenumargumentexception.md
+                - name: 'TreeNodeCollection.Item создает исключение, если узел назначен в другом месте'
+                  href: windows-forms/6.0/treenodecollection-item-throws-argumentexception.md
             - name: .NET 5.0
               items:
+                - name: Машинный код не может получить доступ к объектам Windows Forms
+                  href: windows-forms/5.0/winforms-objects-not-accessible-from-native-code.md
                 - name: Для свойства OutputType задано значение WinExe
                   href: windows-forms/5.0/automatically-infer-winexe-output-type.md
                 - name: Элемент DataGridView не сбрасывает шрифты
