@@ -581,3 +581,6 @@ items:
           - name: Библиотеки .NET для Интернета вещей
             tocHref: /dotnet/iot/
             topicHref: /dotnet/iot/index
+          - name: Новые возможности
+            tocHref: /dotnet/whats-new/
+            topicHref: /dotnet/whats-new/index
