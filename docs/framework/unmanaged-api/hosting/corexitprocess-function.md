@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции Корекситпроцесс
 title: Функция CorExitProcess
 ms.date: 03/30/2017
 api_name:
@@ -18,20 +19,20 @@ helpviewer_keywords:
 ms.assetid: a5cab4c6-990e-47f3-8798-cf422b791015
 topic_type:
 - apiref
-ms.openlocfilehash: f6d8114732a3b7c15d0a0258a28a362d661b030a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 68d33dec76387e103a34e99c529a4e7aff7535b4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95673635"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649589"
 ---
-# <a name="corexitprocess-function"></a><span data-ttu-id="4c1ea-102">Функция CorExitProcess</span><span class="sxs-lookup"><span data-stu-id="4c1ea-102">CorExitProcess Function</span></span>
+# <a name="corexitprocess-function"></a><span data-ttu-id="ea0db-103">Функция CorExitProcess</span><span class="sxs-lookup"><span data-stu-id="ea0db-103">CorExitProcess Function</span></span>
 
-<span data-ttu-id="4c1ea-103">Завершает текущий неуправляемый процесс.</span><span class="sxs-lookup"><span data-stu-id="4c1ea-103">Shuts down the current unmanaged process.</span></span>  
+<span data-ttu-id="ea0db-104">Завершает текущий неуправляемый процесс.</span><span class="sxs-lookup"><span data-stu-id="ea0db-104">Shuts down the current unmanaged process.</span></span>  
   
- <span data-ttu-id="4c1ea-104">Эта функция является устаревшей в .NET Framework 4.</span><span class="sxs-lookup"><span data-stu-id="4c1ea-104">This function has been deprecated in the .NET Framework 4.</span></span> <span data-ttu-id="4c1ea-105">Используйте вместо этого метод [ICLRMetaHost:: ExitProcess](iclrmetahost-exitprocess-method.md) .</span><span class="sxs-lookup"><span data-stu-id="4c1ea-105">Use the [ICLRMetaHost::ExitProcess](iclrmetahost-exitprocess-method.md) method instead.</span></span>  
+ <span data-ttu-id="ea0db-105">Эта функция является устаревшей в платформа .NET Framework 4.</span><span class="sxs-lookup"><span data-stu-id="ea0db-105">This function has been deprecated in the .NET Framework 4.</span></span> <span data-ttu-id="ea0db-106">Используйте вместо этого метод [ICLRMetaHost:: ExitProcess](iclrmetahost-exitprocess-method.md) .</span><span class="sxs-lookup"><span data-stu-id="ea0db-106">Use the [ICLRMetaHost::ExitProcess](iclrmetahost-exitprocess-method.md) method instead.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="4c1ea-106">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="4c1ea-106">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="ea0db-107">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="ea0db-107">Syntax</span></span>  
   
 ```cpp  
 void STDMETHODCALLTYPE CorExitProcess (
@@ -39,26 +40,26 @@ void STDMETHODCALLTYPE CorExitProcess (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="4c1ea-107">Параметры</span><span class="sxs-lookup"><span data-stu-id="4c1ea-107">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="ea0db-108">Параметры</span><span class="sxs-lookup"><span data-stu-id="ea0db-108">Parameters</span></span>  
 
  `exitCode`  
- <span data-ttu-id="4c1ea-108">Целое число, указывающее код завершения процесса.</span><span class="sxs-lookup"><span data-stu-id="4c1ea-108">An integer that specifies the process exit code.</span></span>  
+ <span data-ttu-id="ea0db-109">Целое число, указывающее код завершения процесса.</span><span class="sxs-lookup"><span data-stu-id="ea0db-109">An integer that specifies the process exit code.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="4c1ea-109">Комментарии</span><span class="sxs-lookup"><span data-stu-id="4c1ea-109">Remarks</span></span>  
+## <a name="remarks"></a><span data-ttu-id="ea0db-110">Remarks</span><span class="sxs-lookup"><span data-stu-id="ea0db-110">Remarks</span></span>  
   
 > [!NOTE]
-> <span data-ttu-id="4c1ea-110">Начиная с .NET Framework 4, `CorExitProcess` завершает каждую запущенную среду выполнения в процессе, а не только среду выполнения, к которой привязаны API прежних версий.</span><span class="sxs-lookup"><span data-stu-id="4c1ea-110">Beginning with the .NET Framework 4, `CorExitProcess` exits every started runtime in the process, not just the runtime to which the legacy APIs have been bound.</span></span>  
+> <span data-ttu-id="ea0db-111">Начиная с платформа .NET Framework 4, `CorExitProcess` завершает каждую запущенную среду выполнения в процессе, а не только среду выполнения, к которой привязаны API прежних версий.</span><span class="sxs-lookup"><span data-stu-id="ea0db-111">Beginning with the .NET Framework 4, `CorExitProcess` exits every started runtime in the process, not just the runtime to which the legacy APIs have been bound.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="4c1ea-111">Требования</span><span class="sxs-lookup"><span data-stu-id="4c1ea-111">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="ea0db-112">Требования</span><span class="sxs-lookup"><span data-stu-id="ea0db-112">Requirements</span></span>  
 
- <span data-ttu-id="4c1ea-112">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="4c1ea-112">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="ea0db-113">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="ea0db-113">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="4c1ea-113">**Заголовок:** MSCorEE. h</span><span class="sxs-lookup"><span data-stu-id="4c1ea-113">**Header:** MSCorEE.h</span></span>  
+ <span data-ttu-id="ea0db-114">**Заголовок:** MSCorEE. h</span><span class="sxs-lookup"><span data-stu-id="ea0db-114">**Header:** MSCorEE.h</span></span>  
   
- <span data-ttu-id="4c1ea-114">**Библиотека:** MSCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="4c1ea-114">**Library:** MSCorEE.dll</span></span>  
+ <span data-ttu-id="ea0db-115">**Библиотека:** MSCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="ea0db-115">**Library:** MSCorEE.dll</span></span>  
   
- <span data-ttu-id="4c1ea-115">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="4c1ea-115">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="ea0db-116">**Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="ea0db-116">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="4c1ea-116">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="4c1ea-116">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ea0db-117">См. также</span><span class="sxs-lookup"><span data-stu-id="ea0db-117">See also</span></span>
 
-- [<span data-ttu-id="4c1ea-117">Устаревшие функции размещения CLR</span><span class="sxs-lookup"><span data-stu-id="4c1ea-117">Deprecated CLR Hosting Functions</span></span>](deprecated-clr-hosting-functions.md)
+- [<span data-ttu-id="ea0db-118">Устаревшие функции размещения CLR</span><span class="sxs-lookup"><span data-stu-id="ea0db-118">Deprecated CLR Hosting Functions</span></span>](deprecated-clr-hosting-functions.md)
