@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: Иклрвалидатор:: FormatEventInfo'
 title: Метод ICLRValidator::FormatEventInfo
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 808e1f1d-52f4-47c4-83cc-dcf47d075219
 topic_type:
 - apiref
-ms.openlocfilehash: a3f52deab4d0c8ca56fae2e65912217e51abe58a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3d8d1eff8c638517e201905d0313ee824490acf4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95715879"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99636797"
 ---
-# <a name="iclrvalidatorformateventinfo-method"></a><span data-ttu-id="58c3e-102">Метод ICLRValidator::FormatEventInfo</span><span class="sxs-lookup"><span data-stu-id="58c3e-102">ICLRValidator::FormatEventInfo Method</span></span>
+# <a name="iclrvalidatorformateventinfo-method"></a><span data-ttu-id="30a06-103">Метод ICLRValidator::FormatEventInfo</span><span class="sxs-lookup"><span data-stu-id="30a06-103">ICLRValidator::FormatEventInfo Method</span></span>
 
-<span data-ttu-id="58c3e-103">Возвращает подробное сообщение об указанной ошибке проверки.</span><span class="sxs-lookup"><span data-stu-id="58c3e-103">Gets a detailed message about the specified validation error.</span></span>  
+<span data-ttu-id="30a06-104">Возвращает подробное сообщение об указанной ошибке проверки.</span><span class="sxs-lookup"><span data-stu-id="30a06-104">Gets a detailed message about the specified validation error.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="58c3e-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="58c3e-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="30a06-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="30a06-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT FormatEventInfo (  
@@ -38,45 +39,45 @@ HRESULT FormatEventInfo (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="58c3e-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="58c3e-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="30a06-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="30a06-106">Parameters</span></span>  
 
  `hVECode`  
- <span data-ttu-id="58c3e-106">окне Значение HRESULT, которое было передано обработчику ошибок проверки.</span><span class="sxs-lookup"><span data-stu-id="58c3e-106">[in] The HRESULT value that was passed to the validation error handler.</span></span>  
+ <span data-ttu-id="30a06-107">окне Значение HRESULT, которое было передано обработчику ошибок проверки.</span><span class="sxs-lookup"><span data-stu-id="30a06-107">[in] The HRESULT value that was passed to the validation error handler.</span></span>  
   
  `Context`  
- <span data-ttu-id="58c3e-107">окне `VEContext` Экземпляр, содержащий контекстные сведения об ошибках проверки.</span><span class="sxs-lookup"><span data-stu-id="58c3e-107">[in] A `VEContext` instance that contains context information about the validation errors.</span></span>  
+ <span data-ttu-id="30a06-108">окне `VEContext` Экземпляр, содержащий контекстные сведения об ошибках проверки.</span><span class="sxs-lookup"><span data-stu-id="30a06-108">[in] A `VEContext` instance that contains context information about the validation errors.</span></span>  
   
  `msg`  
- <span data-ttu-id="58c3e-108">[вход, выход] Понятное сообщение об ошибке.</span><span class="sxs-lookup"><span data-stu-id="58c3e-108">[in, out] The friendly error message.</span></span>  
+ <span data-ttu-id="30a06-109">[вход, выход] Понятное сообщение об ошибке.</span><span class="sxs-lookup"><span data-stu-id="30a06-109">[in, out] The friendly error message.</span></span>  
   
  `ulMaxLength`  
- <span data-ttu-id="58c3e-109">окне Максимальная длина сообщения об ошибке.</span><span class="sxs-lookup"><span data-stu-id="58c3e-109">[in] The maximum length of the error message.</span></span>  
+ <span data-ttu-id="30a06-110">окне Максимальная длина сообщения об ошибке.</span><span class="sxs-lookup"><span data-stu-id="30a06-110">[in] The maximum length of the error message.</span></span>  
   
  `psa`  
- <span data-ttu-id="58c3e-110">окне Защищенный массив дополнительных параметров, которые будут использоваться в сообщении.</span><span class="sxs-lookup"><span data-stu-id="58c3e-110">[in] A safe array of additional parameters to be used in the message.</span></span>  
+ <span data-ttu-id="30a06-111">окне Защищенный массив дополнительных параметров, которые будут использоваться в сообщении.</span><span class="sxs-lookup"><span data-stu-id="30a06-111">[in] A safe array of additional parameters to be used in the message.</span></span>  
   
-## <a name="return-value"></a><span data-ttu-id="58c3e-111">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="58c3e-111">Return Value</span></span>  
+## <a name="return-value"></a><span data-ttu-id="30a06-112">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="30a06-112">Return Value</span></span>  
   
-|<span data-ttu-id="58c3e-112">HRESULT</span><span class="sxs-lookup"><span data-stu-id="58c3e-112">HRESULT</span></span>|<span data-ttu-id="58c3e-113">Описание:</span><span class="sxs-lookup"><span data-stu-id="58c3e-113">Description</span></span>|  
+|<span data-ttu-id="30a06-113">HRESULT</span><span class="sxs-lookup"><span data-stu-id="30a06-113">HRESULT</span></span>|<span data-ttu-id="30a06-114">Описание:</span><span class="sxs-lookup"><span data-stu-id="30a06-114">Description</span></span>|  
 |-------------|-----------------|  
-|<span data-ttu-id="58c3e-114">S_OK</span><span class="sxs-lookup"><span data-stu-id="58c3e-114">S_OK</span></span>|<span data-ttu-id="58c3e-115">`FormatEventInfo` успешно возвращено.</span><span class="sxs-lookup"><span data-stu-id="58c3e-115">`FormatEventInfo` returned successfully.</span></span>|  
-|<span data-ttu-id="58c3e-116">HOST_E_CLRNOTAVAILABLE</span><span class="sxs-lookup"><span data-stu-id="58c3e-116">HOST_E_CLRNOTAVAILABLE</span></span>|<span data-ttu-id="58c3e-117">Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.</span><span class="sxs-lookup"><span data-stu-id="58c3e-117">The common language runtime (CLR) has not been loaded into a process, or the CLR is in a state in which it cannot run managed code or process the call successfully.</span></span>|  
-|<span data-ttu-id="58c3e-118">HOST_E_TIMEOUT</span><span class="sxs-lookup"><span data-stu-id="58c3e-118">HOST_E_TIMEOUT</span></span>|<span data-ttu-id="58c3e-119">Время ожидания вызова истекло.</span><span class="sxs-lookup"><span data-stu-id="58c3e-119">The call timed out.</span></span>|  
-|<span data-ttu-id="58c3e-120">HOST_E_NOT_OWNER</span><span class="sxs-lookup"><span data-stu-id="58c3e-120">HOST_E_NOT_OWNER</span></span>|<span data-ttu-id="58c3e-121">Вызывающий объект не владеет блокировкой.</span><span class="sxs-lookup"><span data-stu-id="58c3e-121">The caller does not own the lock.</span></span>|  
-|<span data-ttu-id="58c3e-122">HOST_E_ABANDONED</span><span class="sxs-lookup"><span data-stu-id="58c3e-122">HOST_E_ABANDONED</span></span>|<span data-ttu-id="58c3e-123">Событие было отменено, пока заблокированный поток или волокно ожидают его.</span><span class="sxs-lookup"><span data-stu-id="58c3e-123">An event was canceled while a blocked thread or fiber was waiting on it.</span></span>|  
-|<span data-ttu-id="58c3e-124">E_FAIL</span><span class="sxs-lookup"><span data-stu-id="58c3e-124">E_FAIL</span></span>|<span data-ttu-id="58c3e-125">Произошла неизвестная фатальная ошибка.</span><span class="sxs-lookup"><span data-stu-id="58c3e-125">An unknown catastrophic failure occurred.</span></span> <span data-ttu-id="58c3e-126">Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе.</span><span class="sxs-lookup"><span data-stu-id="58c3e-126">When a method returns E_FAIL, the CLR is no longer usable within the process.</span></span> <span data-ttu-id="58c3e-127">Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.</span><span class="sxs-lookup"><span data-stu-id="58c3e-127">Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.</span></span>|  
+|<span data-ttu-id="30a06-115">S_OK</span><span class="sxs-lookup"><span data-stu-id="30a06-115">S_OK</span></span>|<span data-ttu-id="30a06-116">`FormatEventInfo` успешно возвращено.</span><span class="sxs-lookup"><span data-stu-id="30a06-116">`FormatEventInfo` returned successfully.</span></span>|  
+|<span data-ttu-id="30a06-117">HOST_E_CLRNOTAVAILABLE</span><span class="sxs-lookup"><span data-stu-id="30a06-117">HOST_E_CLRNOTAVAILABLE</span></span>|<span data-ttu-id="30a06-118">Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.</span><span class="sxs-lookup"><span data-stu-id="30a06-118">The common language runtime (CLR) has not been loaded into a process, or the CLR is in a state in which it cannot run managed code or process the call successfully.</span></span>|  
+|<span data-ttu-id="30a06-119">HOST_E_TIMEOUT</span><span class="sxs-lookup"><span data-stu-id="30a06-119">HOST_E_TIMEOUT</span></span>|<span data-ttu-id="30a06-120">Время ожидания вызова истекло.</span><span class="sxs-lookup"><span data-stu-id="30a06-120">The call timed out.</span></span>|  
+|<span data-ttu-id="30a06-121">HOST_E_NOT_OWNER</span><span class="sxs-lookup"><span data-stu-id="30a06-121">HOST_E_NOT_OWNER</span></span>|<span data-ttu-id="30a06-122">Вызывающий объект не владеет блокировкой.</span><span class="sxs-lookup"><span data-stu-id="30a06-122">The caller does not own the lock.</span></span>|  
+|<span data-ttu-id="30a06-123">HOST_E_ABANDONED</span><span class="sxs-lookup"><span data-stu-id="30a06-123">HOST_E_ABANDONED</span></span>|<span data-ttu-id="30a06-124">Событие было отменено, пока заблокированный поток или волокно ожидают его.</span><span class="sxs-lookup"><span data-stu-id="30a06-124">An event was canceled while a blocked thread or fiber was waiting on it.</span></span>|  
+|<span data-ttu-id="30a06-125">E_FAIL</span><span class="sxs-lookup"><span data-stu-id="30a06-125">E_FAIL</span></span>|<span data-ttu-id="30a06-126">Произошла неизвестная фатальная ошибка.</span><span class="sxs-lookup"><span data-stu-id="30a06-126">An unknown catastrophic failure occurred.</span></span> <span data-ttu-id="30a06-127">Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе.</span><span class="sxs-lookup"><span data-stu-id="30a06-127">When a method returns E_FAIL, the CLR is no longer usable within the process.</span></span> <span data-ttu-id="30a06-128">Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.</span><span class="sxs-lookup"><span data-stu-id="30a06-128">Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.</span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="58c3e-128">Требования</span><span class="sxs-lookup"><span data-stu-id="58c3e-128">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="30a06-129">Требования</span><span class="sxs-lookup"><span data-stu-id="30a06-129">Requirements</span></span>  
 
- <span data-ttu-id="58c3e-129">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="58c3e-129">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="30a06-130">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="30a06-130">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="58c3e-130">**Заголовок:** IValidator. idl, IValidator. h</span><span class="sxs-lookup"><span data-stu-id="58c3e-130">**Header:** IValidator.idl, IValidator.h</span></span>  
+ <span data-ttu-id="30a06-131">**Заголовок:** IValidator. idl, IValidator. h</span><span class="sxs-lookup"><span data-stu-id="30a06-131">**Header:** IValidator.idl, IValidator.h</span></span>  
   
- <span data-ttu-id="58c3e-131">**Библиотека:** Включается в качестве ресурса в MSCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="58c3e-131">**Library:** Included as a resource in MSCorEE.dll</span></span>  
+ <span data-ttu-id="30a06-132">**Библиотека:** Включается в качестве ресурса в MSCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="30a06-132">**Library:** Included as a resource in MSCorEE.dll</span></span>  
   
- <span data-ttu-id="58c3e-132">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="58c3e-132">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="30a06-133">**Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="30a06-133">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="58c3e-133">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="58c3e-133">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="30a06-134">См. также</span><span class="sxs-lookup"><span data-stu-id="30a06-134">See also</span></span>
 
-- [<span data-ttu-id="58c3e-134">Интерфейс ICLRErrorReportingManager</span><span class="sxs-lookup"><span data-stu-id="58c3e-134">ICLRErrorReportingManager Interface</span></span>](iclrerrorreportingmanager-interface.md)
-- [<span data-ttu-id="58c3e-135">Интерфейс ICLRValidator</span><span class="sxs-lookup"><span data-stu-id="58c3e-135">ICLRValidator Interface</span></span>](iclrvalidator-interface.md)
+- [<span data-ttu-id="30a06-135">Интерфейс ICLRErrorReportingManager</span><span class="sxs-lookup"><span data-stu-id="30a06-135">ICLRErrorReportingManager Interface</span></span>](iclrerrorreportingmanager-interface.md)
+- [<span data-ttu-id="30a06-136">Интерфейс ICLRValidator</span><span class="sxs-lookup"><span data-stu-id="30a06-136">ICLRValidator Interface</span></span>](iclrvalidator-interface.md)
