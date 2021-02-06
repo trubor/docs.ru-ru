@@ -1,4 +1,5 @@
 ---
+description: 'См. Дополнительные сведения о методе ICorDebugModule:: методом with Token'
 title: Метод ICorDebugModule::GetToken
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: f759f87a-18ae-4c1a-8300-29b803432d0a
 topic_type:
 - apiref
-ms.openlocfilehash: 6ffc74247a4ecafcc3744923c0def99220b5ca6f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fd1bc4bc397e7f81c77f2fe784c68dbaaceb2695
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95709886"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99660171"
 ---
-# <a name="icordebugmodulegettoken-method"></a><span data-ttu-id="efeb5-102">Метод ICorDebugModule::GetToken</span><span class="sxs-lookup"><span data-stu-id="efeb5-102">ICorDebugModule::GetToken Method</span></span>
+# <a name="icordebugmodulegettoken-method"></a><span data-ttu-id="d6c68-103">Метод ICorDebugModule::GetToken</span><span class="sxs-lookup"><span data-stu-id="d6c68-103">ICorDebugModule::GetToken Method</span></span>
 
-<span data-ttu-id="efeb5-103">Возвращает маркер для записи таблицы для этого модуля.</span><span class="sxs-lookup"><span data-stu-id="efeb5-103">Gets the token for the table entry for this module.</span></span>  
+<span data-ttu-id="d6c68-104">Возвращает маркер для записи таблицы для этого модуля.</span><span class="sxs-lookup"><span data-stu-id="d6c68-104">Gets the token for the table entry for this module.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="efeb5-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="efeb5-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="d6c68-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="d6c68-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetToken(  
@@ -34,25 +35,25 @@ HRESULT GetToken(
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="efeb5-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="efeb5-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="d6c68-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="d6c68-106">Parameters</span></span>  
 
  `pToken`  
- <span data-ttu-id="efeb5-106">заполняет Указатель на `mdModule` маркер, который ссылается на метаданные модуля.</span><span class="sxs-lookup"><span data-stu-id="efeb5-106">[out] A pointer to the `mdModule` token that references the module's metadata.</span></span>  
+ <span data-ttu-id="d6c68-107">заполняет Указатель на `mdModule` маркер, который ссылается на метаданные модуля.</span><span class="sxs-lookup"><span data-stu-id="d6c68-107">[out] A pointer to the `mdModule` token that references the module's metadata.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="efeb5-107">Комментарии</span><span class="sxs-lookup"><span data-stu-id="efeb5-107">Remarks</span></span>  
+## <a name="remarks"></a><span data-ttu-id="d6c68-108">Remarks</span><span class="sxs-lookup"><span data-stu-id="d6c68-108">Remarks</span></span>  
 
- <span data-ttu-id="efeb5-108">Маркер может быть передан интерфейсам импорта метаданных [IMetaDataImport](../metadata/imetadataimport-interface.md), [IMetaDataImport2](../metadata/imetadataimport2-interface.md)и [IMetaDataAssemblyImport](../metadata/imetadataassemblyimport-interface.md) .</span><span class="sxs-lookup"><span data-stu-id="efeb5-108">The token can be passed to the [IMetaDataImport](../metadata/imetadataimport-interface.md), [IMetaDataImport2](../metadata/imetadataimport2-interface.md), and [IMetaDataAssemblyImport](../metadata/imetadataassemblyimport-interface.md) metadata import interfaces.</span></span>  
+ <span data-ttu-id="d6c68-109">Маркер может быть передан интерфейсам импорта метаданных [IMetaDataImport](../metadata/imetadataimport-interface.md), [IMetaDataImport2](../metadata/imetadataimport2-interface.md)и [IMetaDataAssemblyImport](../metadata/imetadataassemblyimport-interface.md) .</span><span class="sxs-lookup"><span data-stu-id="d6c68-109">The token can be passed to the [IMetaDataImport](../metadata/imetadataimport-interface.md), [IMetaDataImport2](../metadata/imetadataimport2-interface.md), and [IMetaDataAssemblyImport](../metadata/imetadataassemblyimport-interface.md) metadata import interfaces.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="efeb5-109">Требования</span><span class="sxs-lookup"><span data-stu-id="efeb5-109">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="d6c68-110">Требования</span><span class="sxs-lookup"><span data-stu-id="d6c68-110">Requirements</span></span>  
 
- <span data-ttu-id="efeb5-110">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="efeb5-110">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="d6c68-111">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="d6c68-111">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="efeb5-111">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="efeb5-111">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="d6c68-112">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="d6c68-112">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="efeb5-112">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="efeb5-112">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="d6c68-113">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="d6c68-113">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="efeb5-113">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="efeb5-113">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="d6c68-114">**Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="d6c68-114">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="efeb5-114">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="efeb5-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d6c68-115">См. также</span><span class="sxs-lookup"><span data-stu-id="d6c68-115">See also</span></span>
 
-- [<span data-ttu-id="efeb5-115">Метаданные</span><span class="sxs-lookup"><span data-stu-id="efeb5-115">Metadata</span></span>](../metadata/index.md)
+- [<span data-ttu-id="d6c68-116">Метаданные</span><span class="sxs-lookup"><span data-stu-id="d6c68-116">Metadata</span></span>](../metadata/index.md)
