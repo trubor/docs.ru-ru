@@ -1,24 +1,25 @@
 ---
+description: 'Дополнительные сведения: System. Runtime. Serialization. Кссдекспортенд'
 title: System.Runtime.Serialization.XsdExportEnd
 ms.date: 03/30/2017
 ms.assetid: 406169f7-dc69-4e02-8a22-b38049dab995
-ms.openlocfilehash: b95e2c02ca261cfeec1db2bfb8432ebc2d3a165b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 6372bcce8806574f48da202288e638e735ab7603
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96258170"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99654581"
 ---
-# <a name="systemruntimeserializationxsdexportend"></a><span data-ttu-id="41d53-102">System.Runtime.Serialization.XsdExportEnd</span><span class="sxs-lookup"><span data-stu-id="41d53-102">System.Runtime.Serialization.XsdExportEnd</span></span>
+# <a name="systemruntimeserializationxsdexportend"></a><span data-ttu-id="b8ea3-103">System.Runtime.Serialization.XsdExportEnd</span><span class="sxs-lookup"><span data-stu-id="b8ea3-103">System.Runtime.Serialization.XsdExportEnd</span></span>
 
-<span data-ttu-id="41d53-103">System.Runtime.Serialization.XsdExportEnd</span><span class="sxs-lookup"><span data-stu-id="41d53-103">System.Runtime.Serialization.XsdExportEnd</span></span>  
+<span data-ttu-id="b8ea3-104">System.Runtime.Serialization.XsdExportEnd</span><span class="sxs-lookup"><span data-stu-id="b8ea3-104">System.Runtime.Serialization.XsdExportEnd</span></span>  
   
-## <a name="description"></a><span data-ttu-id="41d53-104">Описание</span><span class="sxs-lookup"><span data-stu-id="41d53-104">Description</span></span>  
+## <a name="description"></a><span data-ttu-id="b8ea3-105">Описание</span><span class="sxs-lookup"><span data-stu-id="b8ea3-105">Description</span></span>  
 
- <span data-ttu-id="41d53-105">Экспорт схемы завершен.</span><span class="sxs-lookup"><span data-stu-id="41d53-105">Finished schema export.</span></span>  
+ <span data-ttu-id="b8ea3-106">Экспорт схемы завершен.</span><span class="sxs-lookup"><span data-stu-id="b8ea3-106">Finished schema export.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="41d53-106">См. также</span><span class="sxs-lookup"><span data-stu-id="41d53-106">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b8ea3-107">См. также</span><span class="sxs-lookup"><span data-stu-id="b8ea3-107">See also</span></span>
 
-- [<span data-ttu-id="41d53-107">Трассировка</span><span class="sxs-lookup"><span data-stu-id="41d53-107">Tracing</span></span>](index.md)
-- [<span data-ttu-id="41d53-108">Использование трассировки для устранения неполадок приложения</span><span class="sxs-lookup"><span data-stu-id="41d53-108">Using Tracing to Troubleshoot Your Application</span></span>](using-tracing-to-troubleshoot-your-application.md)
-- [<span data-ttu-id="41d53-109">Администрирование и диагностика</span><span class="sxs-lookup"><span data-stu-id="41d53-109">Administration and Diagnostics</span></span>](../index.md)
+- [<span data-ttu-id="b8ea3-108">Трассировка</span><span class="sxs-lookup"><span data-stu-id="b8ea3-108">Tracing</span></span>](index.md)
+- [<span data-ttu-id="b8ea3-109">Использование трассировки для устранения неполадок приложения</span><span class="sxs-lookup"><span data-stu-id="b8ea3-109">Using Tracing to Troubleshoot Your Application</span></span>](using-tracing-to-troubleshoot-your-application.md)
+- [<span data-ttu-id="b8ea3-110">Администрирование и диагностика</span><span class="sxs-lookup"><span data-stu-id="b8ea3-110">Administration and Diagnostics</span></span>](../index.md)
