@@ -1,37 +1,38 @@
 ---
+description: 'Дополнительные сведения: 2576-Трикатчексцептионфромтри'
 title: 2576 - TryCatchExceptionFromTry
 ms.date: 03/30/2017
 ms.assetid: 47e48973-b17c-4a16-8338-c84b54aa0a6e
-ms.openlocfilehash: 722d5206322c2a9abacbca554d489ba2f6efe357
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 83e26726377a9f8bbedda2a310dcf4ee6928d3a2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96235835"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99631531"
 ---
-# <a name="2576---trycatchexceptionfromtry"></a><span data-ttu-id="ebe6a-102">2576 - TryCatchExceptionFromTry</span><span class="sxs-lookup"><span data-stu-id="ebe6a-102">2576 - TryCatchExceptionFromTry</span></span>
+# <a name="2576---trycatchexceptionfromtry"></a><span data-ttu-id="95a57-103">2576 - TryCatchExceptionFromTry</span><span class="sxs-lookup"><span data-stu-id="95a57-103">2576 - TryCatchExceptionFromTry</span></span>
 
-## <a name="properties"></a><span data-ttu-id="ebe6a-103">Свойства</span><span class="sxs-lookup"><span data-stu-id="ebe6a-103">Properties</span></span>  
+## <a name="properties"></a><span data-ttu-id="95a57-104">Свойства</span><span class="sxs-lookup"><span data-stu-id="95a57-104">Properties</span></span>  
   
 |||  
 |-|-|  
-|<span data-ttu-id="ebe6a-104">ID</span><span class="sxs-lookup"><span data-stu-id="ebe6a-104">ID</span></span>|<span data-ttu-id="ebe6a-105">2576</span><span class="sxs-lookup"><span data-stu-id="ebe6a-105">2576</span></span>|  
-|<span data-ttu-id="ebe6a-106">Keywords</span><span class="sxs-lookup"><span data-stu-id="ebe6a-106">Keywords</span></span>|<span data-ttu-id="ebe6a-107">WFActivities</span><span class="sxs-lookup"><span data-stu-id="ebe6a-107">WFActivities</span></span>|  
-|<span data-ttu-id="ebe6a-108">Level</span><span class="sxs-lookup"><span data-stu-id="ebe6a-108">Level</span></span>|<span data-ttu-id="ebe6a-109">Сведения</span><span class="sxs-lookup"><span data-stu-id="ebe6a-109">Information</span></span>|  
-|<span data-ttu-id="ebe6a-110">Канал</span><span class="sxs-lookup"><span data-stu-id="ebe6a-110">Channel</span></span>|<span data-ttu-id="ebe6a-111">Microsoft-Windows-Application Server-Applications/Debug</span><span class="sxs-lookup"><span data-stu-id="ebe6a-111">Microsoft-Windows-Application Server-Applications/Debug</span></span>|  
+|<span data-ttu-id="95a57-105">ID</span><span class="sxs-lookup"><span data-stu-id="95a57-105">ID</span></span>|<span data-ttu-id="95a57-106">2576</span><span class="sxs-lookup"><span data-stu-id="95a57-106">2576</span></span>|  
+|<span data-ttu-id="95a57-107">Keywords</span><span class="sxs-lookup"><span data-stu-id="95a57-107">Keywords</span></span>|<span data-ttu-id="95a57-108">WFActivities</span><span class="sxs-lookup"><span data-stu-id="95a57-108">WFActivities</span></span>|  
+|<span data-ttu-id="95a57-109">Уровень</span><span class="sxs-lookup"><span data-stu-id="95a57-109">Level</span></span>|<span data-ttu-id="95a57-110">Сведения</span><span class="sxs-lookup"><span data-stu-id="95a57-110">Information</span></span>|  
+|<span data-ttu-id="95a57-111">Канал</span><span class="sxs-lookup"><span data-stu-id="95a57-111">Channel</span></span>|<span data-ttu-id="95a57-112">Microsoft-Windows-Application Server-Applications/Debug</span><span class="sxs-lookup"><span data-stu-id="95a57-112">Microsoft-Windows-Application Server-Applications/Debug</span></span>|  
   
-## <a name="description"></a><span data-ttu-id="ebe6a-112">Описание</span><span class="sxs-lookup"><span data-stu-id="ebe6a-112">Description</span></span>  
+## <a name="description"></a><span data-ttu-id="95a57-113">Описание</span><span class="sxs-lookup"><span data-stu-id="95a57-113">Description</span></span>  
 
- <span data-ttu-id="ebe6a-113">Показывает, что действие TryCatch перехватило исключение.</span><span class="sxs-lookup"><span data-stu-id="ebe6a-113">Indicates the TryCatch activity has caught an exception.</span></span>  
+ <span data-ttu-id="95a57-114">Показывает, что действие TryCatch перехватило исключение.</span><span class="sxs-lookup"><span data-stu-id="95a57-114">Indicates the TryCatch activity has caught an exception.</span></span>  
   
-## <a name="message"></a><span data-ttu-id="ebe6a-114">Сообщение</span><span class="sxs-lookup"><span data-stu-id="ebe6a-114">Message</span></span>  
+## <a name="message"></a><span data-ttu-id="95a57-115">Сообщение</span><span class="sxs-lookup"><span data-stu-id="95a57-115">Message</span></span>  
 
- <span data-ttu-id="ebe6a-115">В действии TryCatch «%1» было перехвачено исключение типа «%2».</span><span class="sxs-lookup"><span data-stu-id="ebe6a-115">The TryCatch activity '%1' has caught an exception of type '%2'.</span></span>  
+ <span data-ttu-id="95a57-116">В действии TryCatch «%1» было перехвачено исключение типа «%2».</span><span class="sxs-lookup"><span data-stu-id="95a57-116">The TryCatch activity '%1' has caught an exception of type '%2'.</span></span>  
   
-## <a name="details"></a><span data-ttu-id="ebe6a-116">Сведения</span><span class="sxs-lookup"><span data-stu-id="ebe6a-116">Details</span></span>  
+## <a name="details"></a><span data-ttu-id="95a57-117">Сведения</span><span class="sxs-lookup"><span data-stu-id="95a57-117">Details</span></span>  
   
-|<span data-ttu-id="ebe6a-117">Имя элемента данных</span><span class="sxs-lookup"><span data-stu-id="ebe6a-117">Data Item Name</span></span>|<span data-ttu-id="ebe6a-118">Тип элемента данных</span><span class="sxs-lookup"><span data-stu-id="ebe6a-118">Data Item Type</span></span>|<span data-ttu-id="ebe6a-119">Описание</span><span class="sxs-lookup"><span data-stu-id="ebe6a-119">Description</span></span>|  
+|<span data-ttu-id="95a57-118">Имя элемента данных</span><span class="sxs-lookup"><span data-stu-id="95a57-118">Data Item Name</span></span>|<span data-ttu-id="95a57-119">Тип элемента данных</span><span class="sxs-lookup"><span data-stu-id="95a57-119">Data Item Type</span></span>|<span data-ttu-id="95a57-120">Описание</span><span class="sxs-lookup"><span data-stu-id="95a57-120">Description</span></span>|  
 |--------------------|--------------------|-----------------|  
-|<span data-ttu-id="ebe6a-120">DisplayName</span><span class="sxs-lookup"><span data-stu-id="ebe6a-120">DisplayName</span></span>|<span data-ttu-id="ebe6a-121">xs:string</span><span class="sxs-lookup"><span data-stu-id="ebe6a-121">xs:string</span></span>|<span data-ttu-id="ebe6a-122">Отображаемое имя действия.</span><span class="sxs-lookup"><span data-stu-id="ebe6a-122">The display name of the activity.</span></span>|  
-|<span data-ttu-id="ebe6a-123">Исключение</span><span class="sxs-lookup"><span data-stu-id="ebe6a-123">Exception</span></span>|<span data-ttu-id="ebe6a-124">xs:string</span><span class="sxs-lookup"><span data-stu-id="ebe6a-124">xs:string</span></span>|<span data-ttu-id="ebe6a-125">Имя типа исключения.</span><span class="sxs-lookup"><span data-stu-id="ebe6a-125">The type name of the exception.</span></span>|  
-|<span data-ttu-id="ebe6a-126">Домен приложения</span><span class="sxs-lookup"><span data-stu-id="ebe6a-126">AppDomain</span></span>|<span data-ttu-id="ebe6a-127">xs:string</span><span class="sxs-lookup"><span data-stu-id="ebe6a-127">xs:string</span></span>|<span data-ttu-id="ebe6a-128">Строка, возвращаемая AppDomain.CurrentDomain.FriendlyName.</span><span class="sxs-lookup"><span data-stu-id="ebe6a-128">The string returned by AppDomain.CurrentDomain.FriendlyName.</span></span>|
+|<span data-ttu-id="95a57-121">DisplayName</span><span class="sxs-lookup"><span data-stu-id="95a57-121">DisplayName</span></span>|<span data-ttu-id="95a57-122">xs:string</span><span class="sxs-lookup"><span data-stu-id="95a57-122">xs:string</span></span>|<span data-ttu-id="95a57-123">Отображаемое имя действия.</span><span class="sxs-lookup"><span data-stu-id="95a57-123">The display name of the activity.</span></span>|  
+|<span data-ttu-id="95a57-124">Исключение</span><span class="sxs-lookup"><span data-stu-id="95a57-124">Exception</span></span>|<span data-ttu-id="95a57-125">xs:string</span><span class="sxs-lookup"><span data-stu-id="95a57-125">xs:string</span></span>|<span data-ttu-id="95a57-126">Имя типа исключения.</span><span class="sxs-lookup"><span data-stu-id="95a57-126">The type name of the exception.</span></span>|  
+|<span data-ttu-id="95a57-127">Домен приложения</span><span class="sxs-lookup"><span data-stu-id="95a57-127">AppDomain</span></span>|<span data-ttu-id="95a57-128">xs:string</span><span class="sxs-lookup"><span data-stu-id="95a57-128">xs:string</span></span>|<span data-ttu-id="95a57-129">Строка, возвращаемая AppDomain.CurrentDomain.FriendlyName.</span><span class="sxs-lookup"><span data-stu-id="95a57-129">The string returned by AppDomain.CurrentDomain.FriendlyName.</span></span>|

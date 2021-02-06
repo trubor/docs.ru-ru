@@ -1,26 +1,27 @@
 ---
+description: 'Дополнительные сведения: System. ServiceModel. Дроппедамессаже'
 title: System.ServiceModel.DroppedAMessage
 ms.date: 03/30/2017
 ms.assetid: a299401f-2983-45ea-b4f3-963bece3602e
-ms.openlocfilehash: ac5c3e754dc709aac970c4295d17dfc660bdfdca
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 3f74764cdde28c9ef5e96049c649015efbcb5da3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96235965"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99633794"
 ---
-# <a name="systemservicemodeldroppedamessage"></a><span data-ttu-id="a6153-102">System.ServiceModel.DroppedAMessage</span><span class="sxs-lookup"><span data-stu-id="a6153-102">System.ServiceModel.DroppedAMessage</span></span>
+# <a name="systemservicemodeldroppedamessage"></a><span data-ttu-id="4c524-103">System.ServiceModel.DroppedAMessage</span><span class="sxs-lookup"><span data-stu-id="4c524-103">System.ServiceModel.DroppedAMessage</span></span>
 
-<span data-ttu-id="a6153-103">System.ServiceModel.DroppedAMessage</span><span class="sxs-lookup"><span data-stu-id="a6153-103">System.ServiceModel.DroppedAMessage</span></span>  
+<span data-ttu-id="4c524-104">System.ServiceModel.DroppedAMessage</span><span class="sxs-lookup"><span data-stu-id="4c524-104">System.ServiceModel.DroppedAMessage</span></span>  
   
-## <a name="description"></a><span data-ttu-id="a6153-104">Описание</span><span class="sxs-lookup"><span data-stu-id="a6153-104">Description</span></span>  
+## <a name="description"></a><span data-ttu-id="4c524-105">Описание</span><span class="sxs-lookup"><span data-stu-id="4c524-105">Description</span></span>  
 
- <span data-ttu-id="a6153-105">Ответное сообщение было получено, но нет необработанных запросов, ожидающих это сообщение.</span><span class="sxs-lookup"><span data-stu-id="a6153-105">A response message was received, but there are no outstanding requests waiting for this message.</span></span> <span data-ttu-id="a6153-106">Сообщение отбрасывается средой выполнения Windows Communication Foundation (WCF).</span><span class="sxs-lookup"><span data-stu-id="a6153-106">The message is being dropped by Windows Communication Foundation (WCF) runtime.</span></span>  
+ <span data-ttu-id="4c524-106">Ответное сообщение было получено, но нет необработанных запросов, ожидающих это сообщение.</span><span class="sxs-lookup"><span data-stu-id="4c524-106">A response message was received, but there are no outstanding requests waiting for this message.</span></span> <span data-ttu-id="4c524-107">Сообщение отбрасывается средой выполнения Windows Communication Foundation (WCF).</span><span class="sxs-lookup"><span data-stu-id="4c524-107">The message is being dropped by Windows Communication Foundation (WCF) runtime.</span></span>  
   
- <span data-ttu-id="a6153-107">Эта трассировка может использоваться для отладки проблемы потери сообщений.</span><span class="sxs-lookup"><span data-stu-id="a6153-107">This trace can be used for debugging lost messages.</span></span>  
+ <span data-ttu-id="4c524-108">Эта трассировка может использоваться для отладки проблемы потери сообщений.</span><span class="sxs-lookup"><span data-stu-id="4c524-108">This trace can be used for debugging lost messages.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="a6153-108">См. также</span><span class="sxs-lookup"><span data-stu-id="a6153-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4c524-109">См. также</span><span class="sxs-lookup"><span data-stu-id="4c524-109">See also</span></span>
 
-- [<span data-ttu-id="a6153-109">Трассировка</span><span class="sxs-lookup"><span data-stu-id="a6153-109">Tracing</span></span>](index.md)
-- [<span data-ttu-id="a6153-110">Использование трассировки для устранения неполадок приложения</span><span class="sxs-lookup"><span data-stu-id="a6153-110">Using Tracing to Troubleshoot Your Application</span></span>](using-tracing-to-troubleshoot-your-application.md)
-- [<span data-ttu-id="a6153-111">Администрирование и диагностика</span><span class="sxs-lookup"><span data-stu-id="a6153-111">Administration and Diagnostics</span></span>](../index.md)
+- [<span data-ttu-id="4c524-110">Трассировка</span><span class="sxs-lookup"><span data-stu-id="4c524-110">Tracing</span></span>](index.md)
+- [<span data-ttu-id="4c524-111">Использование трассировки для устранения неполадок приложения</span><span class="sxs-lookup"><span data-stu-id="4c524-111">Using Tracing to Troubleshoot Your Application</span></span>](using-tracing-to-troubleshoot-your-application.md)
+- [<span data-ttu-id="4c524-112">Администрирование и диагностика</span><span class="sxs-lookup"><span data-stu-id="4c524-112">Administration and Diagnostics</span></span>](../index.md)
