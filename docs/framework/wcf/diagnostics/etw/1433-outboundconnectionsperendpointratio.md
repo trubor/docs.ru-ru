@@ -1,31 +1,32 @@
 ---
+description: 'Дополнительные сведения: 1433-Аутбаундконнектионсперендпоинтратио'
 title: 1433 - OutboundConnectionsPerEndpointRatio
 ms.date: 03/30/2017
 ms.assetid: 5f17f20d-7035-45f7-85a6-a6743f77fe70
-ms.openlocfilehash: df23ce662ceb7a0bc2dca1ed4f602ae648b3e93b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e86828dd762b193f086399ae117817089233b3aa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96271061"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99645377"
 ---
-# <a name="1433---outboundconnectionsperendpointratio"></a><span data-ttu-id="8b62c-102">1433 - OutboundConnectionsPerEndpointRatio</span><span class="sxs-lookup"><span data-stu-id="8b62c-102">1433 - OutboundConnectionsPerEndpointRatio</span></span>
+# <a name="1433---outboundconnectionsperendpointratio"></a><span data-ttu-id="dc1b3-103">1433 - OutboundConnectionsPerEndpointRatio</span><span class="sxs-lookup"><span data-stu-id="dc1b3-103">1433 - OutboundConnectionsPerEndpointRatio</span></span>
 
-## <a name="properties"></a><span data-ttu-id="8b62c-103">Свойства</span><span class="sxs-lookup"><span data-stu-id="8b62c-103">Properties</span></span>  
+## <a name="properties"></a><span data-ttu-id="dc1b3-104">Свойства</span><span class="sxs-lookup"><span data-stu-id="dc1b3-104">Properties</span></span>  
   
 |||  
 |-|-|  
-|<span data-ttu-id="8b62c-104">ID</span><span class="sxs-lookup"><span data-stu-id="8b62c-104">ID</span></span>|<span data-ttu-id="8b62c-105">1433</span><span class="sxs-lookup"><span data-stu-id="8b62c-105">1433</span></span>|  
-|<span data-ttu-id="8b62c-106">Keywords</span><span class="sxs-lookup"><span data-stu-id="8b62c-106">Keywords</span></span>|<span data-ttu-id="8b62c-107">Quota</span><span class="sxs-lookup"><span data-stu-id="8b62c-107">Quota</span></span>|  
-|<span data-ttu-id="8b62c-108">Level</span><span class="sxs-lookup"><span data-stu-id="8b62c-108">Level</span></span>|<span data-ttu-id="8b62c-109">Подробный</span><span class="sxs-lookup"><span data-stu-id="8b62c-109">Verbose</span></span>|  
-|<span data-ttu-id="8b62c-110">Канал</span><span class="sxs-lookup"><span data-stu-id="8b62c-110">Channel</span></span>|<span data-ttu-id="8b62c-111">Microsoft-Windows-Application Server-Applications/Analytic</span><span class="sxs-lookup"><span data-stu-id="8b62c-111">Microsoft-Windows-Application Server-Applications/Analytic</span></span>|  
+|<span data-ttu-id="dc1b3-105">ID</span><span class="sxs-lookup"><span data-stu-id="dc1b3-105">ID</span></span>|<span data-ttu-id="dc1b3-106">1433</span><span class="sxs-lookup"><span data-stu-id="dc1b3-106">1433</span></span>|  
+|<span data-ttu-id="dc1b3-107">Keywords</span><span class="sxs-lookup"><span data-stu-id="dc1b3-107">Keywords</span></span>|<span data-ttu-id="dc1b3-108">Quota</span><span class="sxs-lookup"><span data-stu-id="dc1b3-108">Quota</span></span>|  
+|<span data-ttu-id="dc1b3-109">Level</span><span class="sxs-lookup"><span data-stu-id="dc1b3-109">Level</span></span>|<span data-ttu-id="dc1b3-110">Подробный</span><span class="sxs-lookup"><span data-stu-id="dc1b3-110">Verbose</span></span>|  
+|<span data-ttu-id="dc1b3-111">Канал</span><span class="sxs-lookup"><span data-stu-id="dc1b3-111">Channel</span></span>|<span data-ttu-id="dc1b3-112">Microsoft-Windows-Application Server-Applications/Analytic</span><span class="sxs-lookup"><span data-stu-id="dc1b3-112">Microsoft-Windows-Application Server-Applications/Analytic</span></span>|  
   
-## <a name="description"></a><span data-ttu-id="8b62c-112">Описание</span><span class="sxs-lookup"><span data-stu-id="8b62c-112">Description</span></span>  
+## <a name="description"></a><span data-ttu-id="dc1b3-113">Описание</span><span class="sxs-lookup"><span data-stu-id="dc1b3-113">Description</span></span>  
 
- <span data-ttu-id="8b62c-113">Это событие предоставляет данные о соотношении количества исходящих соединений для каждой конечной точки.</span><span class="sxs-lookup"><span data-stu-id="8b62c-113">This event is emitted to provide the outbound connections per endpoint ratio information.</span></span>  
+ <span data-ttu-id="dc1b3-114">Это событие предоставляет данные о соотношении количества исходящих соединений для каждой конечной точки.</span><span class="sxs-lookup"><span data-stu-id="dc1b3-114">This event is emitted to provide the outbound connections per endpoint ratio information.</span></span>  
   
-## <a name="message"></a><span data-ttu-id="8b62c-114">Сообщение</span><span class="sxs-lookup"><span data-stu-id="8b62c-114">Message</span></span>  
+## <a name="message"></a><span data-ttu-id="dc1b3-115">Сообщение</span><span class="sxs-lookup"><span data-stu-id="dc1b3-115">Message</span></span>  
 
- <span data-ttu-id="8b62c-115">Отношение исходящих соединений на конечную точку: %1/%2</span><span class="sxs-lookup"><span data-stu-id="8b62c-115">Outbound connections per endpoint ratio: %1/%2</span></span>  
+ <span data-ttu-id="dc1b3-116">Отношение исходящих соединений на конечную точку: %1/%2</span><span class="sxs-lookup"><span data-stu-id="dc1b3-116">Outbound connections per endpoint ratio: %1/%2</span></span>  
   
-## <a name="details"></a><span data-ttu-id="8b62c-116">Подробнее</span><span class="sxs-lookup"><span data-stu-id="8b62c-116">Details</span></span>
+## <a name="details"></a><span data-ttu-id="dc1b3-117">Подробнее</span><span class="sxs-lookup"><span data-stu-id="dc1b3-117">Details</span></span>

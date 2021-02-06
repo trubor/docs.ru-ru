@@ -1,31 +1,32 @@
 ---
+description: 'Дополнительные сведения: 1419-Макспендингконнектионсексцеедед'
 title: 1419 - MaxPendingConnectionsExceeded
 ms.date: 03/30/2017
 ms.assetid: e48e438e-f4c1-4f4f-85d6-c6c820a81df9
-ms.openlocfilehash: 51996ca825d1aa810c8121110a1b893f6bfde420
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 91b0c5380a67bd840dbfc4c36c499a763d92276e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96241334"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99645585"
 ---
-# <a name="1419---maxpendingconnectionsexceeded"></a><span data-ttu-id="e6347-102">1419 - MaxPendingConnectionsExceeded</span><span class="sxs-lookup"><span data-stu-id="e6347-102">1419 - MaxPendingConnectionsExceeded</span></span>
+# <a name="1419---maxpendingconnectionsexceeded"></a><span data-ttu-id="ceb27-103">1419 - MaxPendingConnectionsExceeded</span><span class="sxs-lookup"><span data-stu-id="ceb27-103">1419 - MaxPendingConnectionsExceeded</span></span>
 
-## <a name="properties"></a><span data-ttu-id="e6347-103">Свойства</span><span class="sxs-lookup"><span data-stu-id="e6347-103">Properties</span></span>  
+## <a name="properties"></a><span data-ttu-id="ceb27-104">Свойства</span><span class="sxs-lookup"><span data-stu-id="ceb27-104">Properties</span></span>  
   
 |||  
 |-|-|  
-|<span data-ttu-id="e6347-104">ID</span><span class="sxs-lookup"><span data-stu-id="e6347-104">ID</span></span>|<span data-ttu-id="e6347-105">1419</span><span class="sxs-lookup"><span data-stu-id="e6347-105">1419</span></span>|  
-|<span data-ttu-id="e6347-106">Keywords</span><span class="sxs-lookup"><span data-stu-id="e6347-106">Keywords</span></span>|<span data-ttu-id="e6347-107">Quota</span><span class="sxs-lookup"><span data-stu-id="e6347-107">Quota</span></span>|  
-|<span data-ttu-id="e6347-108">Level</span><span class="sxs-lookup"><span data-stu-id="e6347-108">Level</span></span>|<span data-ttu-id="e6347-109">Сведения</span><span class="sxs-lookup"><span data-stu-id="e6347-109">Information</span></span>|  
-|<span data-ttu-id="e6347-110">Канал</span><span class="sxs-lookup"><span data-stu-id="e6347-110">Channel</span></span>|<span data-ttu-id="e6347-111">Microsoft-Windows-Application Server-Applications/Debug</span><span class="sxs-lookup"><span data-stu-id="e6347-111">Microsoft-Windows-Application Server-Applications/Debug</span></span>|  
+|<span data-ttu-id="ceb27-105">ID</span><span class="sxs-lookup"><span data-stu-id="ceb27-105">ID</span></span>|<span data-ttu-id="ceb27-106">1419</span><span class="sxs-lookup"><span data-stu-id="ceb27-106">1419</span></span>|  
+|<span data-ttu-id="ceb27-107">Keywords</span><span class="sxs-lookup"><span data-stu-id="ceb27-107">Keywords</span></span>|<span data-ttu-id="ceb27-108">Quota</span><span class="sxs-lookup"><span data-stu-id="ceb27-108">Quota</span></span>|  
+|<span data-ttu-id="ceb27-109">Уровень</span><span class="sxs-lookup"><span data-stu-id="ceb27-109">Level</span></span>|<span data-ttu-id="ceb27-110">Сведения</span><span class="sxs-lookup"><span data-stu-id="ceb27-110">Information</span></span>|  
+|<span data-ttu-id="ceb27-111">Канал</span><span class="sxs-lookup"><span data-stu-id="ceb27-111">Channel</span></span>|<span data-ttu-id="ceb27-112">Microsoft-Windows-Application Server-Applications/Debug</span><span class="sxs-lookup"><span data-stu-id="ceb27-112">Microsoft-Windows-Application Server-Applications/Debug</span></span>|  
   
-## <a name="description"></a><span data-ttu-id="e6347-112">Описание</span><span class="sxs-lookup"><span data-stu-id="e6347-112">Description</span></span>  
+## <a name="description"></a><span data-ttu-id="ceb27-113">Описание</span><span class="sxs-lookup"><span data-stu-id="ceb27-113">Description</span></span>  
 
- <span data-ttu-id="e6347-113">Событие возникает при превышении максимального количества ожидающих соединений.</span><span class="sxs-lookup"><span data-stu-id="e6347-113">This event is emitted when maximum pending connections are exceeded.</span></span>  
+ <span data-ttu-id="ceb27-114">Событие возникает при превышении максимального количества ожидающих соединений.</span><span class="sxs-lookup"><span data-stu-id="ceb27-114">This event is emitted when maximum pending connections are exceeded.</span></span>  
   
-## <a name="message"></a><span data-ttu-id="e6347-114">Сообщение</span><span class="sxs-lookup"><span data-stu-id="e6347-114">Message</span></span>  
+## <a name="message"></a><span data-ttu-id="ceb27-115">Сообщение</span><span class="sxs-lookup"><span data-stu-id="ceb27-115">Message</span></span>  
 
- <span data-ttu-id="e6347-115">1 %</span><span class="sxs-lookup"><span data-stu-id="e6347-115">1%</span></span>  
+ <span data-ttu-id="ceb27-116">1 %</span><span class="sxs-lookup"><span data-stu-id="ceb27-116">1%</span></span>  
   
-## <a name="details"></a><span data-ttu-id="e6347-116">Подробнее</span><span class="sxs-lookup"><span data-stu-id="e6347-116">Details</span></span>
+## <a name="details"></a><span data-ttu-id="ceb27-117">Подробнее</span><span class="sxs-lookup"><span data-stu-id="ceb27-117">Details</span></span>
