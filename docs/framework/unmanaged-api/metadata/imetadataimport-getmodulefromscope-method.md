@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: метод IMetaDataImport:: Жетмодулефромскопе'
 title: Метод IMetaDataImport::GetModuleFromScope
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: add68d3f-45fd-4bef-af94-eb5273f26b11
 topic_type:
 - apiref
-ms.openlocfilehash: 2eddd7a80c2b9c1b71f3e7fc5b1e4686ba11bccd
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8c1e952a45b3827717102428fbd18ceac3951baf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733169"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753371"
 ---
-# <a name="imetadataimportgetmodulefromscope-method"></a><span data-ttu-id="ef674-102">Метод IMetaDataImport::GetModuleFromScope</span><span class="sxs-lookup"><span data-stu-id="ef674-102">IMetaDataImport::GetModuleFromScope Method</span></span>
+# <a name="imetadataimportgetmodulefromscope-method"></a><span data-ttu-id="e053e-103">Метод IMetaDataImport::GetModuleFromScope</span><span class="sxs-lookup"><span data-stu-id="e053e-103">IMetaDataImport::GetModuleFromScope Method</span></span>
 
-<span data-ttu-id="ef674-103">Возвращает маркер метаданных для модуля, на который ссылается текущая область метаданных.</span><span class="sxs-lookup"><span data-stu-id="ef674-103">Gets a metadata token for the module referenced in the current metadata scope.</span></span>  
+<span data-ttu-id="e053e-104">Возвращает маркер метаданных для модуля, на который ссылается текущая область метаданных.</span><span class="sxs-lookup"><span data-stu-id="e053e-104">Gets a metadata token for the module referenced in the current metadata scope.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="ef674-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="ef674-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="e053e-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="e053e-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetModuleFromScope (  
@@ -34,22 +35,22 @@ HRESULT GetModuleFromScope (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="ef674-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="ef674-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="e053e-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="e053e-106">Parameters</span></span>  
 
  `pmd`  
- <span data-ttu-id="ef674-106">заполняет Указатель на маркер, представляющий модуль, на который ссылается текущая область метаданных.</span><span class="sxs-lookup"><span data-stu-id="ef674-106">[out] A pointer to the token representing the module referenced in the current metadata scope.</span></span>  
+ <span data-ttu-id="e053e-107">заполняет Указатель на маркер, представляющий модуль, на который ссылается текущая область метаданных.</span><span class="sxs-lookup"><span data-stu-id="e053e-107">[out] A pointer to the token representing the module referenced in the current metadata scope.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="ef674-107">Требования</span><span class="sxs-lookup"><span data-stu-id="ef674-107">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="e053e-108">Требования</span><span class="sxs-lookup"><span data-stu-id="e053e-108">Requirements</span></span>  
 
- <span data-ttu-id="ef674-108">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="ef674-108">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="e053e-109">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="e053e-109">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="ef674-109">**Заголовок:** COR. h</span><span class="sxs-lookup"><span data-stu-id="ef674-109">**Header:** Cor.h</span></span>  
+ <span data-ttu-id="e053e-110">**Заголовок:** COR. h</span><span class="sxs-lookup"><span data-stu-id="e053e-110">**Header:** Cor.h</span></span>  
   
- <span data-ttu-id="ef674-110">**Библиотека:** Включается в качестве ресурса в MsCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="ef674-110">**Library:** Included as a resource in MsCorEE.dll</span></span>  
+ <span data-ttu-id="e053e-111">**Библиотека:** Включается в качестве ресурса в MsCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="e053e-111">**Library:** Included as a resource in MsCorEE.dll</span></span>  
   
- <span data-ttu-id="ef674-111">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="ef674-111">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="e053e-112">**Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="e053e-112">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="ef674-112">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="ef674-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e053e-113">См. также</span><span class="sxs-lookup"><span data-stu-id="e053e-113">See also</span></span>
 
-- [<span data-ttu-id="ef674-113">Интерфейс IMetaDataImport</span><span class="sxs-lookup"><span data-stu-id="ef674-113">IMetaDataImport Interface</span></span>](imetadataimport-interface.md)
-- [<span data-ttu-id="ef674-114">Интерфейс IMetaDataImport2</span><span class="sxs-lookup"><span data-stu-id="ef674-114">IMetaDataImport2 Interface</span></span>](imetadataimport2-interface.md)
+- [<span data-ttu-id="e053e-114">Интерфейс IMetaDataImport</span><span class="sxs-lookup"><span data-stu-id="e053e-114">IMetaDataImport Interface</span></span>](imetadataimport-interface.md)
+- [<span data-ttu-id="e053e-115">Интерфейс IMetaDataImport2</span><span class="sxs-lookup"><span data-stu-id="e053e-115">IMetaDataImport2 Interface</span></span>](imetadataimport2-interface.md)
