@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IHostThreadPoolManager:: SetMinThreads'
 title: Метод IHostThreadPoolManager::SetMinThreads
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 10409db9-9fd2-4e4d-b8cd-cf6fec0afaa2
 topic_type:
 - apiref
-ms.openlocfilehash: d6f56f689a35fa025a924be0db67c893f160fc7f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 00d6bd8212ee95318bbe546da80ca34bff7d1324
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730738"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753761"
 ---
-# <a name="ihostthreadpoolmanagersetminthreads-method"></a><span data-ttu-id="8e47d-102">Метод IHostThreadPoolManager::SetMinThreads</span><span class="sxs-lookup"><span data-stu-id="8e47d-102">IHostThreadPoolManager::SetMinThreads Method</span></span>
+# <a name="ihostthreadpoolmanagersetminthreads-method"></a><span data-ttu-id="2700c-103">Метод IHostThreadPoolManager::SetMinThreads</span><span class="sxs-lookup"><span data-stu-id="2700c-103">IHostThreadPoolManager::SetMinThreads Method</span></span>
 
-<span data-ttu-id="8e47d-103">Задает минимальное число бездействующих потоков, которые должны поддерживаться узлом в ожидаемых запросах.</span><span class="sxs-lookup"><span data-stu-id="8e47d-103">Sets the minimum number of idle threads that the host must maintain in anticipation of requests.</span></span>  
+<span data-ttu-id="2700c-104">Задает минимальное число бездействующих потоков, которые должны поддерживаться узлом в ожидаемых запросах.</span><span class="sxs-lookup"><span data-stu-id="2700c-104">Sets the minimum number of idle threads that the host must maintain in anticipation of requests.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="8e47d-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="8e47d-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="2700c-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="2700c-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT SetMinThreads (  
@@ -34,41 +35,41 @@ HRESULT SetMinThreads (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="8e47d-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="8e47d-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="2700c-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="2700c-106">Parameters</span></span>  
 
  `MinThreads`  
- <span data-ttu-id="8e47d-106">окне Новое минимальное число потоков, которое должен поддерживать узел.</span><span class="sxs-lookup"><span data-stu-id="8e47d-106">[in] The new minimum number of threads that the host must maintain.</span></span>  
+ <span data-ttu-id="2700c-107">окне Новое минимальное число потоков, которое должен поддерживать узел.</span><span class="sxs-lookup"><span data-stu-id="2700c-107">[in] The new minimum number of threads that the host must maintain.</span></span>  
   
-## <a name="return-value"></a><span data-ttu-id="8e47d-107">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="8e47d-107">Return Value</span></span>  
+## <a name="return-value"></a><span data-ttu-id="2700c-108">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="2700c-108">Return Value</span></span>  
   
-|<span data-ttu-id="8e47d-108">HRESULT</span><span class="sxs-lookup"><span data-stu-id="8e47d-108">HRESULT</span></span>|<span data-ttu-id="8e47d-109">Описание:</span><span class="sxs-lookup"><span data-stu-id="8e47d-109">Description</span></span>|  
+|<span data-ttu-id="2700c-109">HRESULT</span><span class="sxs-lookup"><span data-stu-id="2700c-109">HRESULT</span></span>|<span data-ttu-id="2700c-110">Описание:</span><span class="sxs-lookup"><span data-stu-id="2700c-110">Description</span></span>|  
 |-------------|-----------------|  
-|<span data-ttu-id="8e47d-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="8e47d-110">S_OK</span></span>|<span data-ttu-id="8e47d-111">`SetMinThreads` успешно возвращено.</span><span class="sxs-lookup"><span data-stu-id="8e47d-111">`SetMinThreads` returned successfully.</span></span>|  
-|<span data-ttu-id="8e47d-112">HOST_E_CLRNOTAVAILABLE</span><span class="sxs-lookup"><span data-stu-id="8e47d-112">HOST_E_CLRNOTAVAILABLE</span></span>|<span data-ttu-id="8e47d-113">Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.</span><span class="sxs-lookup"><span data-stu-id="8e47d-113">The common language runtime (CLR) has not been loaded into a process, or the CLR is in a state in which it cannot run managed code or process the call successfully.</span></span>|  
-|<span data-ttu-id="8e47d-114">HOST_E_TIMEOUT</span><span class="sxs-lookup"><span data-stu-id="8e47d-114">HOST_E_TIMEOUT</span></span>|<span data-ttu-id="8e47d-115">Время ожидания вызова истекло.</span><span class="sxs-lookup"><span data-stu-id="8e47d-115">The call timed out.</span></span>|  
-|<span data-ttu-id="8e47d-116">HOST_E_NOT_OWNER</span><span class="sxs-lookup"><span data-stu-id="8e47d-116">HOST_E_NOT_OWNER</span></span>|<span data-ttu-id="8e47d-117">Вызывающий объект не владеет блокировкой.</span><span class="sxs-lookup"><span data-stu-id="8e47d-117">The caller does not own the lock.</span></span>|  
-|<span data-ttu-id="8e47d-118">HOST_E_ABANDONED</span><span class="sxs-lookup"><span data-stu-id="8e47d-118">HOST_E_ABANDONED</span></span>|<span data-ttu-id="8e47d-119">Событие было отменено, пока заблокированный поток или волокно ожидают его.</span><span class="sxs-lookup"><span data-stu-id="8e47d-119">An event was canceled while a blocked thread or fiber was waiting on it.</span></span>|  
-|<span data-ttu-id="8e47d-120">E_FAIL</span><span class="sxs-lookup"><span data-stu-id="8e47d-120">E_FAIL</span></span>|<span data-ttu-id="8e47d-121">Произошла неизвестная фатальная ошибка.</span><span class="sxs-lookup"><span data-stu-id="8e47d-121">An unknown catastrophic failure occurred.</span></span> <span data-ttu-id="8e47d-122">Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе.</span><span class="sxs-lookup"><span data-stu-id="8e47d-122">When a method returns E_FAIL, the CLR is no longer usable within the process.</span></span> <span data-ttu-id="8e47d-123">Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.</span><span class="sxs-lookup"><span data-stu-id="8e47d-123">Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.</span></span>|  
-|<span data-ttu-id="8e47d-124">E_NOTIMPL</span><span class="sxs-lookup"><span data-stu-id="8e47d-124">E_NOTIMPL</span></span>|<span data-ttu-id="8e47d-125">Узел не предоставляет реализацию `SetMinThreads` .</span><span class="sxs-lookup"><span data-stu-id="8e47d-125">The host does not provide an implementation of `SetMinThreads`.</span></span>|  
+|<span data-ttu-id="2700c-111">S_OK</span><span class="sxs-lookup"><span data-stu-id="2700c-111">S_OK</span></span>|<span data-ttu-id="2700c-112">`SetMinThreads` успешно возвращено.</span><span class="sxs-lookup"><span data-stu-id="2700c-112">`SetMinThreads` returned successfully.</span></span>|  
+|<span data-ttu-id="2700c-113">HOST_E_CLRNOTAVAILABLE</span><span class="sxs-lookup"><span data-stu-id="2700c-113">HOST_E_CLRNOTAVAILABLE</span></span>|<span data-ttu-id="2700c-114">Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.</span><span class="sxs-lookup"><span data-stu-id="2700c-114">The common language runtime (CLR) has not been loaded into a process, or the CLR is in a state in which it cannot run managed code or process the call successfully.</span></span>|  
+|<span data-ttu-id="2700c-115">HOST_E_TIMEOUT</span><span class="sxs-lookup"><span data-stu-id="2700c-115">HOST_E_TIMEOUT</span></span>|<span data-ttu-id="2700c-116">Время ожидания вызова истекло.</span><span class="sxs-lookup"><span data-stu-id="2700c-116">The call timed out.</span></span>|  
+|<span data-ttu-id="2700c-117">HOST_E_NOT_OWNER</span><span class="sxs-lookup"><span data-stu-id="2700c-117">HOST_E_NOT_OWNER</span></span>|<span data-ttu-id="2700c-118">Вызывающий объект не владеет блокировкой.</span><span class="sxs-lookup"><span data-stu-id="2700c-118">The caller does not own the lock.</span></span>|  
+|<span data-ttu-id="2700c-119">HOST_E_ABANDONED</span><span class="sxs-lookup"><span data-stu-id="2700c-119">HOST_E_ABANDONED</span></span>|<span data-ttu-id="2700c-120">Событие было отменено, пока заблокированный поток или волокно ожидают его.</span><span class="sxs-lookup"><span data-stu-id="2700c-120">An event was canceled while a blocked thread or fiber was waiting on it.</span></span>|  
+|<span data-ttu-id="2700c-121">E_FAIL</span><span class="sxs-lookup"><span data-stu-id="2700c-121">E_FAIL</span></span>|<span data-ttu-id="2700c-122">Произошла неизвестная фатальная ошибка.</span><span class="sxs-lookup"><span data-stu-id="2700c-122">An unknown catastrophic failure occurred.</span></span> <span data-ttu-id="2700c-123">Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе.</span><span class="sxs-lookup"><span data-stu-id="2700c-123">When a method returns E_FAIL, the CLR is no longer usable within the process.</span></span> <span data-ttu-id="2700c-124">Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.</span><span class="sxs-lookup"><span data-stu-id="2700c-124">Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.</span></span>|  
+|<span data-ttu-id="2700c-125">E_NOTIMPL</span><span class="sxs-lookup"><span data-stu-id="2700c-125">E_NOTIMPL</span></span>|<span data-ttu-id="2700c-126">Узел не предоставляет реализацию `SetMinThreads` .</span><span class="sxs-lookup"><span data-stu-id="2700c-126">The host does not provide an implementation of `SetMinThreads`.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="8e47d-126">Комментарии</span><span class="sxs-lookup"><span data-stu-id="8e47d-126">Remarks</span></span>  
+## <a name="remarks"></a><span data-ttu-id="2700c-127">Remarks</span><span class="sxs-lookup"><span data-stu-id="2700c-127">Remarks</span></span>  
 
- <span data-ttu-id="8e47d-127">Узлу не требуется предоставлять реализацию `SetMinThreads` .</span><span class="sxs-lookup"><span data-stu-id="8e47d-127">A host is not required to provide an implementation of `SetMinThreads`.</span></span> <span data-ttu-id="8e47d-128">В этом случае он должен возвращать значение HRESULT, равное E_NOTIMPL.</span><span class="sxs-lookup"><span data-stu-id="8e47d-128">In this case, it should return an HRESULT value of E_NOTIMPL.</span></span>  
+ <span data-ttu-id="2700c-128">Узлу не требуется предоставлять реализацию `SetMinThreads` .</span><span class="sxs-lookup"><span data-stu-id="2700c-128">A host is not required to provide an implementation of `SetMinThreads`.</span></span> <span data-ttu-id="2700c-129">В этом случае он должен возвращать значение HRESULT, равное E_NOTIMPL.</span><span class="sxs-lookup"><span data-stu-id="2700c-129">In this case, it should return an HRESULT value of E_NOTIMPL.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="8e47d-129">Требования</span><span class="sxs-lookup"><span data-stu-id="8e47d-129">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="2700c-130">Требования</span><span class="sxs-lookup"><span data-stu-id="2700c-130">Requirements</span></span>  
 
- <span data-ttu-id="8e47d-130">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="8e47d-130">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="2700c-131">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="2700c-131">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="8e47d-131">**Заголовок:** MSCorEE. h</span><span class="sxs-lookup"><span data-stu-id="8e47d-131">**Header:** MSCorEE.h</span></span>  
+ <span data-ttu-id="2700c-132">**Заголовок:** MSCorEE. h</span><span class="sxs-lookup"><span data-stu-id="2700c-132">**Header:** MSCorEE.h</span></span>  
   
- <span data-ttu-id="8e47d-132">**Библиотека:** Включается в качестве ресурса в MSCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="8e47d-132">**Library:** Included as a resource in MSCorEE.dll</span></span>  
+ <span data-ttu-id="2700c-133">**Библиотека:** Включается в качестве ресурса в MSCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="2700c-133">**Library:** Included as a resource in MSCorEE.dll</span></span>  
   
- <span data-ttu-id="8e47d-133">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="8e47d-133">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="2700c-134">**Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="2700c-134">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="8e47d-134">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="8e47d-134">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2700c-135">См. также</span><span class="sxs-lookup"><span data-stu-id="2700c-135">See also</span></span>
 
 - <xref:System.Threading.ThreadPool.SetMinThreads%2A>
 - <xref:System.Threading.ThreadPool>
-- [<span data-ttu-id="8e47d-135">Метод GetMinThreads</span><span class="sxs-lookup"><span data-stu-id="8e47d-135">GetMinThreads Method</span></span>](ihostthreadpoolmanager-getminthreads-method.md)
-- [<span data-ttu-id="8e47d-136">Метод SetMaxThreads</span><span class="sxs-lookup"><span data-stu-id="8e47d-136">SetMaxThreads Method</span></span>](ihostthreadpoolmanager-setmaxthreads-method.md)
-- [<span data-ttu-id="8e47d-137">Интерфейс IHostThreadPoolManager</span><span class="sxs-lookup"><span data-stu-id="8e47d-137">IHostThreadPoolManager Interface</span></span>](ihostthreadpoolmanager-interface.md)
+- [<span data-ttu-id="2700c-136">Метод GetMinThreads</span><span class="sxs-lookup"><span data-stu-id="2700c-136">GetMinThreads Method</span></span>](ihostthreadpoolmanager-getminthreads-method.md)
+- [<span data-ttu-id="2700c-137">Метод SetMaxThreads</span><span class="sxs-lookup"><span data-stu-id="2700c-137">SetMaxThreads Method</span></span>](ihostthreadpoolmanager-setmaxthreads-method.md)
+- [<span data-ttu-id="2700c-138">Интерфейс IHostThreadPoolManager</span><span class="sxs-lookup"><span data-stu-id="2700c-138">IHostThreadPoolManager Interface</span></span>](ihostthreadpoolmanager-interface.md)

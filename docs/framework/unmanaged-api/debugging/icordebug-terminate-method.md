@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorDebug:: Terminate'
 title: Метод ICorDebug::Terminate
 ms.date: 03/30/2017
 api_name:
@@ -15,40 +16,40 @@ helpviewer_keywords:
 ms.assetid: fffe5616-0896-4426-ab5e-21869b514883
 topic_type:
 - apiref
-ms.openlocfilehash: cf9c9d11c4725908fcf7ff4a0c91882b70a80190
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c2de27a47bfd4c364a09180c75109679234f3cae
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723380"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754294"
 ---
-# <a name="icordebugterminate-method"></a><span data-ttu-id="14311-102">Метод ICorDebug::Terminate</span><span class="sxs-lookup"><span data-stu-id="14311-102">ICorDebug::Terminate Method</span></span>
+# <a name="icordebugterminate-method"></a><span data-ttu-id="db17d-103">Метод ICorDebug::Terminate</span><span class="sxs-lookup"><span data-stu-id="db17d-103">ICorDebug::Terminate Method</span></span>
 
-<span data-ttu-id="14311-103">Завершает `ICorDebug` объект.</span><span class="sxs-lookup"><span data-stu-id="14311-103">Terminates the `ICorDebug` object.</span></span>  
+<span data-ttu-id="db17d-104">Завершает `ICorDebug` объект.</span><span class="sxs-lookup"><span data-stu-id="db17d-104">Terminates the `ICorDebug` object.</span></span>  
   
 > [!NOTE]
-> <span data-ttu-id="14311-104">`Terminate` не следует вызывать, пока не получен обратный вызов [ICorDebugManagedCallback:: ExitProcess](icordebugmanagedcallback-exitprocess-method.md) для всех отлаживаемых процессов.</span><span class="sxs-lookup"><span data-stu-id="14311-104">`Terminate` should not be called until an [ICorDebugManagedCallback::ExitProcess](icordebugmanagedcallback-exitprocess-method.md) callback has been received for all processes being debugged.</span></span>  
+> <span data-ttu-id="db17d-105">`Terminate` не следует вызывать, пока не получен обратный вызов [ICorDebugManagedCallback:: ExitProcess](icordebugmanagedcallback-exitprocess-method.md) для всех отлаживаемых процессов.</span><span class="sxs-lookup"><span data-stu-id="db17d-105">`Terminate` should not be called until an [ICorDebugManagedCallback::ExitProcess](icordebugmanagedcallback-exitprocess-method.md) callback has been received for all processes being debugged.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="14311-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="14311-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="db17d-106">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="db17d-106">Syntax</span></span>  
   
 ```cpp  
 HRESULT Terminate ();  
 ```  
   
-## <a name="remarks"></a><span data-ttu-id="14311-106">Remarks</span><span class="sxs-lookup"><span data-stu-id="14311-106">Remarks</span></span>  
+## <a name="remarks"></a><span data-ttu-id="db17d-107">Remarks</span><span class="sxs-lookup"><span data-stu-id="db17d-107">Remarks</span></span>  
 
- <span data-ttu-id="14311-107">`Terminate` должен вызываться, когда `ICorDebug` объект больше не нужен.</span><span class="sxs-lookup"><span data-stu-id="14311-107">`Terminate` must be called when the `ICorDebug` object is no longer needed.</span></span>  
+ <span data-ttu-id="db17d-108">`Terminate` должен вызываться, когда `ICorDebug` объект больше не нужен.</span><span class="sxs-lookup"><span data-stu-id="db17d-108">`Terminate` must be called when the `ICorDebug` object is no longer needed.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="14311-108">Требования</span><span class="sxs-lookup"><span data-stu-id="14311-108">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="db17d-109">Требования</span><span class="sxs-lookup"><span data-stu-id="db17d-109">Requirements</span></span>  
 
- <span data-ttu-id="14311-109">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="14311-109">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="db17d-110">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="db17d-110">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="14311-110">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="14311-110">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="db17d-111">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="db17d-111">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="14311-111">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="14311-111">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="db17d-112">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="db17d-112">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="14311-112">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="14311-112">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="db17d-113">**Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="db17d-113">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="14311-113">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="14311-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="db17d-114">См. также</span><span class="sxs-lookup"><span data-stu-id="db17d-114">See also</span></span>
 
-- [<span data-ttu-id="14311-114">Интерфейс ICorDebug</span><span class="sxs-lookup"><span data-stu-id="14311-114">ICorDebug Interface</span></span>](icordebug-interface.md)
+- [<span data-ttu-id="db17d-115">Интерфейс ICorDebug</span><span class="sxs-lookup"><span data-stu-id="db17d-115">ICorDebug Interface</span></span>](icordebug-interface.md)
