@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IGCHost:: Setvirtualmemlimit-'
 title: Метод IGCHost::SetVirtualMemLimit
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: c7e7c2d0-e58c-4650-b40c-47b2be2cda45
 topic_type:
 - apiref
-ms.openlocfilehash: 9898b760edbb149afcd6bf957a30d0a47287485b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 62cd9e2d84e51f0544e464bdbf49c50af8086546
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95687825"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99709442"
 ---
-# <a name="igchostsetvirtualmemlimit-method"></a><span data-ttu-id="a6429-102">Метод IGCHost::SetVirtualMemLimit</span><span class="sxs-lookup"><span data-stu-id="a6429-102">IGCHost::SetVirtualMemLimit Method</span></span>
+# <a name="igchostsetvirtualmemlimit-method"></a><span data-ttu-id="097e2-103">Метод IGCHost::SetVirtualMemLimit</span><span class="sxs-lookup"><span data-stu-id="097e2-103">IGCHost::SetVirtualMemLimit Method</span></span>
 
-<span data-ttu-id="a6429-103">Задает максимальный размер виртуальной памяти среды выполнения.</span><span class="sxs-lookup"><span data-stu-id="a6429-103">Sets the maximum size of the runtime's virtual memory.</span></span>  
+<span data-ttu-id="097e2-104">Задает максимальный размер виртуальной памяти среды выполнения.</span><span class="sxs-lookup"><span data-stu-id="097e2-104">Sets the maximum size of the runtime's virtual memory.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="a6429-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="a6429-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="097e2-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="097e2-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT SetVirtualMemLimit (  
@@ -34,25 +35,25 @@ HRESULT SetVirtualMemLimit (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="a6429-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="a6429-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="097e2-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="097e2-106">Parameters</span></span>  
 
  `sztMaxVirtualMemMB`  
- <span data-ttu-id="a6429-106">окне Максимальный размер виртуальной памяти среды выполнения в мегабайтах.</span><span class="sxs-lookup"><span data-stu-id="a6429-106">[in] The maximum size, in megabytes, of the runtime's virtual memory.</span></span>  
+ <span data-ttu-id="097e2-107">окне Максимальный размер виртуальной памяти среды выполнения в мегабайтах.</span><span class="sxs-lookup"><span data-stu-id="097e2-107">[in] The maximum size, in megabytes, of the runtime's virtual memory.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="a6429-107">Комментарии</span><span class="sxs-lookup"><span data-stu-id="a6429-107">Remarks</span></span>  
+## <a name="remarks"></a><span data-ttu-id="097e2-108">Remarks</span><span class="sxs-lookup"><span data-stu-id="097e2-108">Remarks</span></span>  
 
- <span data-ttu-id="a6429-108">Максимальный размер виртуальной памяти среды выполнения можно изменить динамически.</span><span class="sxs-lookup"><span data-stu-id="a6429-108">The maximum size of the runtime's virtual memory can be changed dynamically.</span></span>  
+ <span data-ttu-id="097e2-109">Максимальный размер виртуальной памяти среды выполнения можно изменить динамически.</span><span class="sxs-lookup"><span data-stu-id="097e2-109">The maximum size of the runtime's virtual memory can be changed dynamically.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="a6429-109">Требования</span><span class="sxs-lookup"><span data-stu-id="a6429-109">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="097e2-110">Требования</span><span class="sxs-lookup"><span data-stu-id="097e2-110">Requirements</span></span>  
 
- <span data-ttu-id="a6429-110">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="a6429-110">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="097e2-111">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="097e2-111">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="a6429-111">**Заголовок:** Гчост. idl, Гчост. h</span><span class="sxs-lookup"><span data-stu-id="a6429-111">**Header:** GCHost.idl, GCHost.h</span></span>  
+ <span data-ttu-id="097e2-112">**Заголовок:** Гчост. idl, Гчост. h</span><span class="sxs-lookup"><span data-stu-id="097e2-112">**Header:** GCHost.idl, GCHost.h</span></span>  
   
- <span data-ttu-id="a6429-112">**Библиотека:** Включается в качестве ресурса в MSCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="a6429-112">**Library:** Included as a resource in MSCorEE.dll</span></span>  
+ <span data-ttu-id="097e2-113">**Библиотека:** Включается в качестве ресурса в MSCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="097e2-113">**Library:** Included as a resource in MSCorEE.dll</span></span>  
   
- <span data-ttu-id="a6429-113">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="a6429-113">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="097e2-114">**Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="097e2-114">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="a6429-114">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="a6429-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="097e2-115">См. также</span><span class="sxs-lookup"><span data-stu-id="097e2-115">See also</span></span>
 
-- [<span data-ttu-id="a6429-115">Интерфейс IGCHost</span><span class="sxs-lookup"><span data-stu-id="a6429-115">IGCHost Interface</span></span>](igchost-interface.md)
+- [<span data-ttu-id="097e2-116">Интерфейс IGCHost</span><span class="sxs-lookup"><span data-stu-id="097e2-116">IGCHost Interface</span></span>](igchost-interface.md)
