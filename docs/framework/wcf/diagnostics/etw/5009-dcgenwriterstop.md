@@ -1,31 +1,32 @@
 ---
+description: 'Дополнительные сведения: 5009-Дкженвритерстоп'
 title: 5009 - DCGenWriterStop
 ms.date: 03/30/2017
 ms.assetid: 8489e542-b2ab-4c31-9150-08d4f6704150
-ms.openlocfilehash: ed51d0b73b76ca5adc42e83340be2cfb87c0765a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: cb8a32a3488c7b27b2114292963e16b7900c11bb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254744"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760138"
 ---
-# <a name="5009---dcgenwriterstop"></a><span data-ttu-id="fe1ed-102">5009 - DCGenWriterStop</span><span class="sxs-lookup"><span data-stu-id="fe1ed-102">5009 - DCGenWriterStop</span></span>
+# <a name="5009---dcgenwriterstop"></a><span data-ttu-id="765ed-103">5009 - DCGenWriterStop</span><span class="sxs-lookup"><span data-stu-id="765ed-103">5009 - DCGenWriterStop</span></span>
 
-## <a name="properties"></a><span data-ttu-id="fe1ed-103">Свойства</span><span class="sxs-lookup"><span data-stu-id="fe1ed-103">Properties</span></span>  
+## <a name="properties"></a><span data-ttu-id="765ed-104">Свойства</span><span class="sxs-lookup"><span data-stu-id="765ed-104">Properties</span></span>  
   
 |||  
 |-|-|  
-|<span data-ttu-id="fe1ed-104">ID</span><span class="sxs-lookup"><span data-stu-id="fe1ed-104">ID</span></span>|<span data-ttu-id="fe1ed-105">5009</span><span class="sxs-lookup"><span data-stu-id="fe1ed-105">5009</span></span>|  
-|<span data-ttu-id="fe1ed-106">Keywords</span><span class="sxs-lookup"><span data-stu-id="fe1ed-106">Keywords</span></span>|<span data-ttu-id="fe1ed-107">Сериализация</span><span class="sxs-lookup"><span data-stu-id="fe1ed-107">Serialization</span></span>|  
-|<span data-ttu-id="fe1ed-108">Level</span><span class="sxs-lookup"><span data-stu-id="fe1ed-108">Level</span></span>|<span data-ttu-id="fe1ed-109">Подробный</span><span class="sxs-lookup"><span data-stu-id="fe1ed-109">Verbose</span></span>|  
-|<span data-ttu-id="fe1ed-110">Канал</span><span class="sxs-lookup"><span data-stu-id="fe1ed-110">Channel</span></span>|<span data-ttu-id="fe1ed-111">Microsoft-Windows-Application Server-Applications/Debug</span><span class="sxs-lookup"><span data-stu-id="fe1ed-111">Microsoft-Windows-Application Server-Applications/Debug</span></span>|  
+|<span data-ttu-id="765ed-105">ID</span><span class="sxs-lookup"><span data-stu-id="765ed-105">ID</span></span>|<span data-ttu-id="765ed-106">5009</span><span class="sxs-lookup"><span data-stu-id="765ed-106">5009</span></span>|  
+|<span data-ttu-id="765ed-107">Keywords</span><span class="sxs-lookup"><span data-stu-id="765ed-107">Keywords</span></span>|<span data-ttu-id="765ed-108">Сериализация</span><span class="sxs-lookup"><span data-stu-id="765ed-108">Serialization</span></span>|  
+|<span data-ttu-id="765ed-109">Level</span><span class="sxs-lookup"><span data-stu-id="765ed-109">Level</span></span>|<span data-ttu-id="765ed-110">Подробный</span><span class="sxs-lookup"><span data-stu-id="765ed-110">Verbose</span></span>|  
+|<span data-ttu-id="765ed-111">Канал</span><span class="sxs-lookup"><span data-stu-id="765ed-111">Channel</span></span>|<span data-ttu-id="765ed-112">Microsoft-Windows-Application Server-Applications/Debug</span><span class="sxs-lookup"><span data-stu-id="765ed-112">Microsoft-Windows-Application Server-Applications/Debug</span></span>|  
   
-## <a name="description"></a><span data-ttu-id="fe1ed-112">Описание</span><span class="sxs-lookup"><span data-stu-id="fe1ed-112">Description</span></span>  
+## <a name="description"></a><span data-ttu-id="765ed-113">Описание</span><span class="sxs-lookup"><span data-stu-id="765ed-113">Description</span></span>  
 
- <span data-ttu-id="fe1ed-113">Это событие создается при остановке создания модуля записи, выполняемого контрактом DataContract.</span><span class="sxs-lookup"><span data-stu-id="fe1ed-113">This event is emitted when the DataContract generate writer stops.</span></span>  
+ <span data-ttu-id="765ed-114">Это событие создается при остановке создания модуля записи, выполняемого контрактом DataContract.</span><span class="sxs-lookup"><span data-stu-id="765ed-114">This event is emitted when the DataContract generate writer stops.</span></span>  
   
-## <a name="message"></a><span data-ttu-id="fe1ed-114">Сообщение</span><span class="sxs-lookup"><span data-stu-id="fe1ed-114">Message</span></span>  
+## <a name="message"></a><span data-ttu-id="765ed-115">Сообщение</span><span class="sxs-lookup"><span data-stu-id="765ed-115">Message</span></span>  
 
- <span data-ttu-id="fe1ed-115">Остановка создания модуля записи, выполняемого контрактом DataContract.</span><span class="sxs-lookup"><span data-stu-id="fe1ed-115">DataContract generate writer stop.</span></span>  
+ <span data-ttu-id="765ed-116">Остановка создания модуля записи, выполняемого контрактом DataContract.</span><span class="sxs-lookup"><span data-stu-id="765ed-116">DataContract generate writer stop.</span></span>  
   
-## <a name="details"></a><span data-ttu-id="fe1ed-116">Подробнее</span><span class="sxs-lookup"><span data-stu-id="fe1ed-116">Details</span></span>
+## <a name="details"></a><span data-ttu-id="765ed-117">Подробнее</span><span class="sxs-lookup"><span data-stu-id="765ed-117">Details</span></span>
