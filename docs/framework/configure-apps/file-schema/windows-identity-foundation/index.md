@@ -1,18 +1,19 @@
 ---
+description: Дополнительные сведения см. в статье схема конфигурации Windows Identity Foundation.
 title: Схема конфигурации Windows Identity Foundation
 ms.date: 03/30/2017
 ms.assetid: 4d4f6d76-49a5-4bad-b345-097b2e2844e9
 author: BrucePerlerMS
-ms.openlocfilehash: 14d596ae77019932d169e1a84732fb8522bfc46c
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 926b2dbe25359ebc789c95f75a59090c7e5a52e6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79152727"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725341"
 ---
-# <a name="windows-identity-foundation-configuration-schema"></a><span data-ttu-id="437f1-102">Схема конфигурации Windows Identity Foundation</span><span class="sxs-lookup"><span data-stu-id="437f1-102">Windows Identity Foundation Configuration Schema</span></span>
+# <a name="windows-identity-foundation-configuration-schema"></a><span data-ttu-id="c9dd3-103">Схема конфигурации Windows Identity Foundation</span><span class="sxs-lookup"><span data-stu-id="c9dd3-103">Windows Identity Foundation Configuration Schema</span></span>
 
-<span data-ttu-id="437f1-103">В представленных в этом разделе статьях приводятся сведения о схеме конфигурации Windows Identity Foundation (WIF).</span><span class="sxs-lookup"><span data-stu-id="437f1-103">The topics in this section provide information about the Windows Identity Foundation (WIF) configuration schema.</span></span> <span data-ttu-id="437f1-104">Вы также можете настроить приложение для использования WIF через классы, предоставляемые платформой.</span><span class="sxs-lookup"><span data-stu-id="437f1-104">You can also configure an application to use WIF through classes exposed by the framework.</span></span> <span data-ttu-id="437f1-105">Эти классы указываются в разделах, посвященных соответствующим элементам схемы.</span><span class="sxs-lookup"><span data-stu-id="437f1-105">These classes are noted in the sections that treat relevant elements in the schema.</span></span> <span data-ttu-id="437f1-106">Ниже показана базовая структура тегов XML, предоставляемая схемой конфигурации WIF.</span><span class="sxs-lookup"><span data-stu-id="437f1-106">The following shows the basic XML tag structure exposed by the WIF configuration schema.</span></span> <span data-ttu-id="437f1-107">Атрибуты не приводятся.</span><span class="sxs-lookup"><span data-stu-id="437f1-107">Attributes are omitted.</span></span> <span data-ttu-id="437f1-108">Выделенные комментарии указывают на основные компоненты схемы.</span><span class="sxs-lookup"><span data-stu-id="437f1-108">Highlighted comments indicate major components of the schema.</span></span>  
+<span data-ttu-id="c9dd3-104">В представленных в этом разделе статьях приводятся сведения о схеме конфигурации Windows Identity Foundation (WIF).</span><span class="sxs-lookup"><span data-stu-id="c9dd3-104">The topics in this section provide information about the Windows Identity Foundation (WIF) configuration schema.</span></span> <span data-ttu-id="c9dd3-105">Вы также можете настроить приложение для использования WIF через классы, предоставляемые платформой.</span><span class="sxs-lookup"><span data-stu-id="c9dd3-105">You can also configure an application to use WIF through classes exposed by the framework.</span></span> <span data-ttu-id="c9dd3-106">Эти классы указываются в разделах, посвященных соответствующим элементам схемы.</span><span class="sxs-lookup"><span data-stu-id="c9dd3-106">These classes are noted in the sections that treat relevant elements in the schema.</span></span> <span data-ttu-id="c9dd3-107">Ниже показана базовая структура тегов XML, предоставляемая схемой конфигурации WIF.</span><span class="sxs-lookup"><span data-stu-id="c9dd3-107">The following shows the basic XML tag structure exposed by the WIF configuration schema.</span></span> <span data-ttu-id="c9dd3-108">Атрибуты не приводятся.</span><span class="sxs-lookup"><span data-stu-id="c9dd3-108">Attributes are omitted.</span></span> <span data-ttu-id="c9dd3-109">Выделенные комментарии указывают на основные компоненты схемы.</span><span class="sxs-lookup"><span data-stu-id="c9dd3-109">Highlighted comments indicate major components of the schema.</span></span>  
   
 ```xml  
 <configuration>  
@@ -109,8 +110,8 @@ ms.locfileid: "79152727"
 </configuration>  
 ```  
   
-## <a name="in-this-section"></a><span data-ttu-id="437f1-109">В этом разделе</span><span class="sxs-lookup"><span data-stu-id="437f1-109">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="c9dd3-110">В этом разделе</span><span class="sxs-lookup"><span data-stu-id="c9dd3-110">In This Section</span></span>  
 
-<span data-ttu-id="437f1-110">[\<system.identityModel>](system-identitymodel.md)Предоставляет конфигурацию для включения параметров WIF в приложениях.</span><span class="sxs-lookup"><span data-stu-id="437f1-110">[\<system.identityModel>](system-identitymodel.md) Provides configuration for enabling WIF options in applications.</span></span>  
+<span data-ttu-id="c9dd3-111">[\<system.identityModel>](system-identitymodel.md) Предоставляет конфигурацию для включения параметров WIF в приложениях.</span><span class="sxs-lookup"><span data-stu-id="c9dd3-111">[\<system.identityModel>](system-identitymodel.md) Provides configuration for enabling WIF options in applications.</span></span>  
   
-<span data-ttu-id="437f1-111">[\<system.identityModel.services>](system-identitymodel-services.md)Предоставляет конфигурацию для пассивной федерации с помощью WIF.</span><span class="sxs-lookup"><span data-stu-id="437f1-111">[\<system.identityModel.services>](system-identitymodel-services.md) Provides configuration for passive federation using WIF.</span></span> <span data-ttu-id="437f1-112">Настраивает модуль проверки подлинности сеансов (SAM) и модуль федеративной проверки подлинности (WSFAM).</span><span class="sxs-lookup"><span data-stu-id="437f1-112">Configures the Session Authentication Module (SAM) and the Federated Authentication Module (WSFAM).</span></span>
+<span data-ttu-id="c9dd3-112">[\<system.identityModel.services>](system-identitymodel-services.md) Предоставляет конфигурацию для пассивной федерации с помощью WIF.</span><span class="sxs-lookup"><span data-stu-id="c9dd3-112">[\<system.identityModel.services>](system-identitymodel-services.md) Provides configuration for passive federation using WIF.</span></span> <span data-ttu-id="c9dd3-113">Настраивает модуль проверки подлинности сеансов (SAM) и модуль федеративной проверки подлинности (WSFAM).</span><span class="sxs-lookup"><span data-stu-id="c9dd3-113">Configures the Session Authentication Module (SAM) and the Federated Authentication Module (WSFAM).</span></span>
