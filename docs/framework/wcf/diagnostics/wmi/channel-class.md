@@ -1,19 +1,20 @@
 ---
+description: Дополнительные сведения о классе Channel
 title: Класс Channel
 ms.date: 03/30/2017
 ms.assetid: d9fae2ca-209c-4341-a0f5-6b79d1a67776
-ms.openlocfilehash: a920636e7df9609b12834366b1488c80122f9fca
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: dcc92f78f09e9a73a24134c6c0685949f46f38dd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96274235"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99757726"
 ---
-# <a name="channel-class"></a><span data-ttu-id="a4083-102">Класс Channel</span><span class="sxs-lookup"><span data-stu-id="a4083-102">Channel class</span></span>
+# <a name="channel-class"></a><span data-ttu-id="9b578-103">Класс Channel</span><span class="sxs-lookup"><span data-stu-id="9b578-103">Channel class</span></span>
 
-<span data-ttu-id="a4083-103">Канал</span><span class="sxs-lookup"><span data-stu-id="a4083-103">Channel</span></span>  
+<span data-ttu-id="9b578-104">Канал</span><span class="sxs-lookup"><span data-stu-id="9b578-104">Channel</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="a4083-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="a4083-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="9b578-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="9b578-105">Syntax</span></span>  
   
 ```csharp
 class Channel  
@@ -26,60 +27,60 @@ class Channel
 };  
 ```  
   
-## <a name="methods"></a><span data-ttu-id="a4083-105">Методы</span><span class="sxs-lookup"><span data-stu-id="a4083-105">Methods</span></span>  
+## <a name="methods"></a><span data-ttu-id="9b578-106">Методы</span><span class="sxs-lookup"><span data-stu-id="9b578-106">Methods</span></span>  
 
- <span data-ttu-id="a4083-106">Класс Channel не определяет никаких методов.</span><span class="sxs-lookup"><span data-stu-id="a4083-106">The Channel class does not define any methods.</span></span>  
+ <span data-ttu-id="9b578-107">Класс Channel не определяет никаких методов.</span><span class="sxs-lookup"><span data-stu-id="9b578-107">The Channel class does not define any methods.</span></span>  
   
-## <a name="properties"></a><span data-ttu-id="a4083-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="a4083-107">Properties</span></span>  
+## <a name="properties"></a><span data-ttu-id="9b578-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="9b578-108">Properties</span></span>  
 
- <span data-ttu-id="a4083-108">Класс Channel имеет следующие свойства.</span><span class="sxs-lookup"><span data-stu-id="a4083-108">The Channel class has the following properties.</span></span>  
+ <span data-ttu-id="9b578-109">Класс Channel имеет следующие свойства.</span><span class="sxs-lookup"><span data-stu-id="9b578-109">The Channel class has the following properties.</span></span>  
   
-### <a name="localaddress"></a><span data-ttu-id="a4083-109">LocalAddress</span><span class="sxs-lookup"><span data-stu-id="a4083-109">LocalAddress</span></span>  
+### <a name="localaddress"></a><span data-ttu-id="9b578-110">LocalAddress</span><span class="sxs-lookup"><span data-stu-id="9b578-110">LocalAddress</span></span>  
 
- <span data-ttu-id="a4083-110">Тип данных: строка</span><span class="sxs-lookup"><span data-stu-id="a4083-110">Data type: string</span></span>  
+ <span data-ttu-id="9b578-111">Тип данных: строка</span><span class="sxs-lookup"><span data-stu-id="9b578-111">Data type: string</span></span>  
   
- <span data-ttu-id="a4083-111">Тип доступа: только для чтения</span><span class="sxs-lookup"><span data-stu-id="a4083-111">Access type: Read-only</span></span>  
+ <span data-ttu-id="9b578-112">Тип доступа: только для чтения</span><span class="sxs-lookup"><span data-stu-id="9b578-112">Access type: Read-only</span></span>  
   
- <span data-ttu-id="a4083-112">Локальная конечная точка канала.</span><span class="sxs-lookup"><span data-stu-id="a4083-112">The local endpoint for the channel.</span></span>  
+ <span data-ttu-id="9b578-113">Локальная конечная точка канала.</span><span class="sxs-lookup"><span data-stu-id="9b578-113">The local endpoint for the channel.</span></span>  
   
-### <a name="ref"></a><span data-ttu-id="a4083-113">ref</span><span class="sxs-lookup"><span data-stu-id="a4083-113">ref</span></span>  
+### <a name="ref"></a><span data-ttu-id="9b578-114">ref</span><span class="sxs-lookup"><span data-stu-id="9b578-114">ref</span></span>  
 
- <span data-ttu-id="a4083-114">Тип данных: Endpoint</span><span class="sxs-lookup"><span data-stu-id="a4083-114">Data type: Endpoint</span></span>  
+ <span data-ttu-id="9b578-115">Тип данных: Endpoint</span><span class="sxs-lookup"><span data-stu-id="9b578-115">Data type: Endpoint</span></span>  
   
- <span data-ttu-id="a4083-115">Тип доступа: только для чтения</span><span class="sxs-lookup"><span data-stu-id="a4083-115">Access type: Read-only</span></span>  
+ <span data-ttu-id="9b578-116">Тип доступа: только для чтения</span><span class="sxs-lookup"><span data-stu-id="9b578-116">Access type: Read-only</span></span>  
   
- <span data-ttu-id="a4083-116">Ссылка на конечную точку, к которой подключается канал.</span><span class="sxs-lookup"><span data-stu-id="a4083-116">A reference to the endpoint the channel connects to.</span></span>  
+ <span data-ttu-id="9b578-117">Ссылка на конечную точку, к которой подключается канал.</span><span class="sxs-lookup"><span data-stu-id="9b578-117">A reference to the endpoint the channel connects to.</span></span>  
   
-### <a name="remoteaddress"></a><span data-ttu-id="a4083-117">RemoteAddress</span><span class="sxs-lookup"><span data-stu-id="a4083-117">RemoteAddress</span></span>  
+### <a name="remoteaddress"></a><span data-ttu-id="9b578-118">RemoteAddress</span><span class="sxs-lookup"><span data-stu-id="9b578-118">RemoteAddress</span></span>  
 
- <span data-ttu-id="a4083-118">Тип данных: строка</span><span class="sxs-lookup"><span data-stu-id="a4083-118">Data type: string</span></span>  
+ <span data-ttu-id="9b578-119">Тип данных: строка</span><span class="sxs-lookup"><span data-stu-id="9b578-119">Data type: string</span></span>  
   
- <span data-ttu-id="a4083-119">Тип доступа: только для чтения</span><span class="sxs-lookup"><span data-stu-id="a4083-119">Access type: Read-only</span></span>  
+ <span data-ttu-id="9b578-120">Тип доступа: только для чтения</span><span class="sxs-lookup"><span data-stu-id="9b578-120">Access type: Read-only</span></span>  
   
- <span data-ttu-id="a4083-120">Удаленный адрес, связанный с каналом.</span><span class="sxs-lookup"><span data-stu-id="a4083-120">The remote address associated with the channel.</span></span>  
+ <span data-ttu-id="9b578-121">Удаленный адрес, связанный с каналом.</span><span class="sxs-lookup"><span data-stu-id="9b578-121">The remote address associated with the channel.</span></span>  
   
-### <a name="sessionid"></a><span data-ttu-id="a4083-121">SessionId</span><span class="sxs-lookup"><span data-stu-id="a4083-121">SessionId</span></span>  
+### <a name="sessionid"></a><span data-ttu-id="9b578-122">SessionId</span><span class="sxs-lookup"><span data-stu-id="9b578-122">SessionId</span></span>  
 
- <span data-ttu-id="a4083-122">Тип данных: строка</span><span class="sxs-lookup"><span data-stu-id="a4083-122">Data type: string</span></span>  
+ <span data-ttu-id="9b578-123">Тип данных: строка</span><span class="sxs-lookup"><span data-stu-id="9b578-123">Data type: string</span></span>  
   
- <span data-ttu-id="a4083-123">Тип доступа: только для чтения</span><span class="sxs-lookup"><span data-stu-id="a4083-123">Access type: Read-only</span></span>  
+ <span data-ttu-id="9b578-124">Тип доступа: только для чтения</span><span class="sxs-lookup"><span data-stu-id="9b578-124">Access type: Read-only</span></span>  
   
- <span data-ttu-id="a4083-124">Идентификатор текущего сеанса, если он существует.</span><span class="sxs-lookup"><span data-stu-id="a4083-124">The current session Id, if any.</span></span>  
+ <span data-ttu-id="9b578-125">Идентификатор текущего сеанса, если он существует.</span><span class="sxs-lookup"><span data-stu-id="9b578-125">The current session Id, if any.</span></span>  
   
-### <a name="type"></a><span data-ttu-id="a4083-125">Тип</span><span class="sxs-lookup"><span data-stu-id="a4083-125">Type</span></span>  
+### <a name="type"></a><span data-ttu-id="9b578-126">Тип</span><span class="sxs-lookup"><span data-stu-id="9b578-126">Type</span></span>  
 
- <span data-ttu-id="a4083-126">Тип данных: строка</span><span class="sxs-lookup"><span data-stu-id="a4083-126">Data type: string</span></span>  
+ <span data-ttu-id="9b578-127">Тип данных: строка</span><span class="sxs-lookup"><span data-stu-id="9b578-127">Data type: string</span></span>  
   
- <span data-ttu-id="a4083-127">Тип доступа: только для чтения</span><span class="sxs-lookup"><span data-stu-id="a4083-127">Access type: Read-only</span></span>  
+ <span data-ttu-id="9b578-128">Тип доступа: только для чтения</span><span class="sxs-lookup"><span data-stu-id="9b578-128">Access type: Read-only</span></span>  
   
- <span data-ttu-id="a4083-128">Тип канала.</span><span class="sxs-lookup"><span data-stu-id="a4083-128">The type of the channel.</span></span>  
+ <span data-ttu-id="9b578-129">Тип канала.</span><span class="sxs-lookup"><span data-stu-id="9b578-129">The type of the channel.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="a4083-129">Требования</span><span class="sxs-lookup"><span data-stu-id="a4083-129">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="9b578-130">Требования</span><span class="sxs-lookup"><span data-stu-id="9b578-130">Requirements</span></span>  
   
-|<span data-ttu-id="a4083-130">MOF</span><span class="sxs-lookup"><span data-stu-id="a4083-130">MOF</span></span>|<span data-ttu-id="a4083-131">Объявлено в файле Servicemodel.mof.</span><span class="sxs-lookup"><span data-stu-id="a4083-131">Declared in Servicemodel.mof.</span></span>|  
+|<span data-ttu-id="9b578-131">MOF</span><span class="sxs-lookup"><span data-stu-id="9b578-131">MOF</span></span>|<span data-ttu-id="9b578-132">Объявлено в файле Servicemodel.mof.</span><span class="sxs-lookup"><span data-stu-id="9b578-132">Declared in Servicemodel.mof.</span></span>|  
 |---------|-----------------------------------|  
-|<span data-ttu-id="a4083-132">Пространство имен</span><span class="sxs-lookup"><span data-stu-id="a4083-132">Namespace</span></span>|<span data-ttu-id="a4083-133">Определено в root\ServiceModel.</span><span class="sxs-lookup"><span data-stu-id="a4083-133">Defined in root\ServiceModel</span></span>|  
+|<span data-ttu-id="9b578-133">Пространство имен</span><span class="sxs-lookup"><span data-stu-id="9b578-133">Namespace</span></span>|<span data-ttu-id="9b578-134">Определено в root\ServiceModel.</span><span class="sxs-lookup"><span data-stu-id="9b578-134">Defined in root\ServiceModel</span></span>|  
   
-## <a name="see-also"></a><span data-ttu-id="a4083-134">См. также</span><span class="sxs-lookup"><span data-stu-id="a4083-134">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9b578-135">См. также</span><span class="sxs-lookup"><span data-stu-id="9b578-135">See also</span></span>
 
 - <xref:System.ServiceModel.Channels.ChannelBase>
