@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IMetaDataFilter:: UnmarkAll'
 title: Метод IMetaDataFilter::UnmarkAll
 ms.date: 03/30/2017
 api_name:
@@ -15,37 +16,37 @@ helpviewer_keywords:
 ms.assetid: a04d91dc-690f-4de8-8c97-55c69a8503b4
 topic_type:
 - apiref
-ms.openlocfilehash: 0be94e55b2838e543686b84be736a228ce7dae57
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f4923c3b2c6ff4332d4a885136d660d889f2c8d9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95701826"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99688862"
 ---
-# <a name="imetadatafilterunmarkall-method"></a><span data-ttu-id="0d7b3-102">Метод IMetaDataFilter::UnmarkAll</span><span class="sxs-lookup"><span data-stu-id="0d7b3-102">IMetaDataFilter::UnmarkAll Method</span></span>
+# <a name="imetadatafilterunmarkall-method"></a><span data-ttu-id="efcbd-103">Метод IMetaDataFilter::UnmarkAll</span><span class="sxs-lookup"><span data-stu-id="efcbd-103">IMetaDataFilter::UnmarkAll Method</span></span>
 
-<span data-ttu-id="0d7b3-103">Удаляет метки обработки из всех токенов в текущей области метаданных.</span><span class="sxs-lookup"><span data-stu-id="0d7b3-103">Removes the processing marks from all the tokens in the current metadata scope.</span></span>  
+<span data-ttu-id="efcbd-104">Удаляет метки обработки из всех токенов в текущей области метаданных.</span><span class="sxs-lookup"><span data-stu-id="efcbd-104">Removes the processing marks from all the tokens in the current metadata scope.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="0d7b3-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="0d7b3-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="efcbd-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="efcbd-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT UnmarkAll ();  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="0d7b3-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="0d7b3-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="efcbd-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="efcbd-106">Parameters</span></span>  
 
- <span data-ttu-id="0d7b3-106">`UnmarkAll` не принимает параметров.</span><span class="sxs-lookup"><span data-stu-id="0d7b3-106">`UnmarkAll` takes no parameters.</span></span>  
+ <span data-ttu-id="efcbd-107">`UnmarkAll` не принимает параметров.</span><span class="sxs-lookup"><span data-stu-id="efcbd-107">`UnmarkAll` takes no parameters.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="0d7b3-107">Требования</span><span class="sxs-lookup"><span data-stu-id="0d7b3-107">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="efcbd-108">Требования</span><span class="sxs-lookup"><span data-stu-id="efcbd-108">Requirements</span></span>  
 
- <span data-ttu-id="0d7b3-108">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="0d7b3-108">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="efcbd-109">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="efcbd-109">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="0d7b3-109">**Заголовок:** COR. h</span><span class="sxs-lookup"><span data-stu-id="0d7b3-109">**Header:** Cor.h</span></span>  
+ <span data-ttu-id="efcbd-110">**Заголовок:** COR. h</span><span class="sxs-lookup"><span data-stu-id="efcbd-110">**Header:** Cor.h</span></span>  
   
- <span data-ttu-id="0d7b3-110">**Библиотека:** Используется в качестве ресурса в MsCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="0d7b3-110">**Library:** Used as a resource in MsCorEE.dll</span></span>  
+ <span data-ttu-id="efcbd-111">**Библиотека:** Используется в качестве ресурса в MsCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="efcbd-111">**Library:** Used as a resource in MsCorEE.dll</span></span>  
   
- <span data-ttu-id="0d7b3-111">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="0d7b3-111">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="efcbd-112">**Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="efcbd-112">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="0d7b3-112">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="0d7b3-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="efcbd-113">См. также</span><span class="sxs-lookup"><span data-stu-id="efcbd-113">See also</span></span>
 
-- [<span data-ttu-id="0d7b3-113">Интерфейс IMetaDataFilter</span><span class="sxs-lookup"><span data-stu-id="0d7b3-113">IMetaDataFilter Interface</span></span>](imetadatafilter-interface.md)
+- [<span data-ttu-id="efcbd-114">Интерфейс IMetaDataFilter</span><span class="sxs-lookup"><span data-stu-id="efcbd-114">IMetaDataFilter Interface</span></span>](imetadatafilter-interface.md)

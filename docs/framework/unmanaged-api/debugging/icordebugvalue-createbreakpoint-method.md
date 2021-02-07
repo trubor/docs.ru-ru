@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorDebugValue:: CreateBreakpoint'
 title: Метод ICorDebugValue::CreateBreakpoint
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 87af9661-b59d-4077-aabf-d59fb8673602
 topic_type:
 - apiref
-ms.openlocfilehash: 5944d7f39d327c2787c517aeebdb302834551b59
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 98009fdb69a37780e6d6f85f58451f185bded46c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731154"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99690500"
 ---
-# <a name="icordebugvaluecreatebreakpoint-method"></a><span data-ttu-id="66045-102">Метод ICorDebugValue::CreateBreakpoint</span><span class="sxs-lookup"><span data-stu-id="66045-102">ICorDebugValue::CreateBreakpoint Method</span></span>
+# <a name="icordebugvaluecreatebreakpoint-method"></a><span data-ttu-id="8035b-103">Метод ICorDebugValue::CreateBreakpoint</span><span class="sxs-lookup"><span data-stu-id="8035b-103">ICorDebugValue::CreateBreakpoint Method</span></span>
 
-<span data-ttu-id="66045-103">`CreateBreakpoint`Метод в настоящее время не реализован.</span><span class="sxs-lookup"><span data-stu-id="66045-103">The `CreateBreakpoint` method is currently not implemented.</span></span>  
+<span data-ttu-id="8035b-104">`CreateBreakpoint`Метод в настоящее время не реализован.</span><span class="sxs-lookup"><span data-stu-id="8035b-104">The `CreateBreakpoint` method is currently not implemented.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="66045-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="66045-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="8035b-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="8035b-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT CreateBreakpoint (  
@@ -34,14 +35,14 @@ HRESULT CreateBreakpoint (
 );  
 ```  
   
-## <a name="requirements"></a><span data-ttu-id="66045-105">Требования</span><span class="sxs-lookup"><span data-stu-id="66045-105">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="8035b-106">Требования</span><span class="sxs-lookup"><span data-stu-id="8035b-106">Requirements</span></span>  
 
- <span data-ttu-id="66045-106">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="66045-106">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="8035b-107">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="8035b-107">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="66045-107">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="66045-107">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="8035b-108">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="8035b-108">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="66045-108">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="66045-108">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="8035b-109">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="8035b-109">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="66045-109">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="66045-109">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="8035b-110">**Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="8035b-110">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="66045-110">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="66045-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8035b-111">См. также</span><span class="sxs-lookup"><span data-stu-id="8035b-111">See also</span></span>
