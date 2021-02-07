@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ISymUnmanagedReaderSymbolSearchInfo'
 title: Интерфейс ISymUnmanagedReaderSymbolSearchInfo
 ms.date: 03/30/2017
 api_name:
@@ -14,28 +15,28 @@ helpviewer_keywords:
 ms.assetid: fde7e21d-1169-4bed-a34d-792e69652bf9
 topic_type:
 - apiref
-ms.openlocfilehash: af4124aed823a0a2475a181efe3fa68e1fae0bfe
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f5d13027709698df735af5fceac31f7b73741440
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95678393"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99763570"
 ---
-# <a name="isymunmanagedreadersymbolsearchinfo-interface"></a><span data-ttu-id="0e051-102">Интерфейс ISymUnmanagedReaderSymbolSearchInfo</span><span class="sxs-lookup"><span data-stu-id="0e051-102">ISymUnmanagedReaderSymbolSearchInfo Interface</span></span>
+# <a name="isymunmanagedreadersymbolsearchinfo-interface"></a><span data-ttu-id="0348a-103">Интерфейс ISymUnmanagedReaderSymbolSearchInfo</span><span class="sxs-lookup"><span data-stu-id="0348a-103">ISymUnmanagedReaderSymbolSearchInfo Interface</span></span>
 
-<span data-ttu-id="0e051-103">Предоставляет методы, которые получают сведения о поиске символов.</span><span class="sxs-lookup"><span data-stu-id="0e051-103">Provides methods that get symbol search information.</span></span> <span data-ttu-id="0e051-104">Получите этот интерфейс, вызвав `QueryInterface` для объекта, который реализует интерфейс [ISymUnmanagedReader](isymunmanagedreader-interface.md) .</span><span class="sxs-lookup"><span data-stu-id="0e051-104">Obtain this interface by calling `QueryInterface` on an object that implements the [ISymUnmanagedReader](isymunmanagedreader-interface.md) interface.</span></span>  
+<span data-ttu-id="0348a-104">Предоставляет методы, которые получают сведения о поиске символов.</span><span class="sxs-lookup"><span data-stu-id="0348a-104">Provides methods that get symbol search information.</span></span> <span data-ttu-id="0348a-105">Получите этот интерфейс, вызвав `QueryInterface` для объекта, который реализует интерфейс [ISymUnmanagedReader](isymunmanagedreader-interface.md) .</span><span class="sxs-lookup"><span data-stu-id="0348a-105">Obtain this interface by calling `QueryInterface` on an object that implements the [ISymUnmanagedReader](isymunmanagedreader-interface.md) interface.</span></span>  
   
-## <a name="methods"></a><span data-ttu-id="0e051-105">Методы</span><span class="sxs-lookup"><span data-stu-id="0e051-105">Methods</span></span>  
+## <a name="methods"></a><span data-ttu-id="0348a-106">Методы</span><span class="sxs-lookup"><span data-stu-id="0348a-106">Methods</span></span>  
   
-|<span data-ttu-id="0e051-106">Метод</span><span class="sxs-lookup"><span data-stu-id="0e051-106">Method</span></span>|<span data-ttu-id="0e051-107">Описание</span><span class="sxs-lookup"><span data-stu-id="0e051-107">Description</span></span>|  
+|<span data-ttu-id="0348a-107">Метод</span><span class="sxs-lookup"><span data-stu-id="0348a-107">Method</span></span>|<span data-ttu-id="0348a-108">Описание</span><span class="sxs-lookup"><span data-stu-id="0348a-108">Description</span></span>|  
 |------------|-----------------|  
-|[<span data-ttu-id="0e051-108">Метод GetSymbolSearchInfo</span><span class="sxs-lookup"><span data-stu-id="0e051-108">GetSymbolSearchInfo Method</span></span>](isymunmanagedreadersymbolsearchinfo-getsymbolsearchinfo-method.md)|<span data-ttu-id="0e051-109">Возвращает сведения о поиске символов.</span><span class="sxs-lookup"><span data-stu-id="0e051-109">Gets symbol search information.</span></span>|  
-|[<span data-ttu-id="0e051-110">Метод GetSymbolSearchInfoCount</span><span class="sxs-lookup"><span data-stu-id="0e051-110">GetSymbolSearchInfoCount Method</span></span>](isymunmanagedreadersymbolsearchinfo-getsymbolsearchinfocount-method.md)|<span data-ttu-id="0e051-111">Возвращает число сведений о поиске символов.</span><span class="sxs-lookup"><span data-stu-id="0e051-111">Gets a count of symbol search information.</span></span>|  
+|[<span data-ttu-id="0348a-109">Метод GetSymbolSearchInfo</span><span class="sxs-lookup"><span data-stu-id="0348a-109">GetSymbolSearchInfo Method</span></span>](isymunmanagedreadersymbolsearchinfo-getsymbolsearchinfo-method.md)|<span data-ttu-id="0348a-110">Возвращает сведения о поиске символов.</span><span class="sxs-lookup"><span data-stu-id="0348a-110">Gets symbol search information.</span></span>|  
+|[<span data-ttu-id="0348a-111">Метод GetSymbolSearchInfoCount</span><span class="sxs-lookup"><span data-stu-id="0348a-111">GetSymbolSearchInfoCount Method</span></span>](isymunmanagedreadersymbolsearchinfo-getsymbolsearchinfocount-method.md)|<span data-ttu-id="0348a-112">Возвращает число сведений о поиске символов.</span><span class="sxs-lookup"><span data-stu-id="0348a-112">Gets a count of symbol search information.</span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="0e051-112">Требования</span><span class="sxs-lookup"><span data-stu-id="0e051-112">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="0348a-113">Требования</span><span class="sxs-lookup"><span data-stu-id="0348a-113">Requirements</span></span>  
 
- <span data-ttu-id="0e051-113">**Заголовок:** Корсим. idl, Корсим. h</span><span class="sxs-lookup"><span data-stu-id="0e051-113">**Header:** CorSym.idl, CorSym.h</span></span>  
+ <span data-ttu-id="0348a-114">**Заголовок:** Корсим. idl, Корсим. h</span><span class="sxs-lookup"><span data-stu-id="0348a-114">**Header:** CorSym.idl, CorSym.h</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="0e051-114">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="0e051-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0348a-115">См. также</span><span class="sxs-lookup"><span data-stu-id="0348a-115">See also</span></span>
 
-- [<span data-ttu-id="0e051-115">Интерфейсы хранилища символов диагностики</span><span class="sxs-lookup"><span data-stu-id="0e051-115">Diagnostics Symbol Store Interfaces</span></span>](diagnostics-symbol-store-interfaces.md)
+- [<span data-ttu-id="0348a-116">Интерфейсы хранилища символов диагностики</span><span class="sxs-lookup"><span data-stu-id="0348a-116">Diagnostics Symbol Store Interfaces</span></span>](diagnostics-symbol-store-interfaces.md)

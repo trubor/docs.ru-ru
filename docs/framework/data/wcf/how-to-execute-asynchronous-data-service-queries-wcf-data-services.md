@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как выполнять запросы асинхронных служб данных (службы данных WCF)
 title: Практическое руководство. Выполнение асинхронных запросов к службе данных (службы данных WCF)
 ms.date: 03/30/2017
 dev_langs:
@@ -8,29 +9,31 @@ helpviewer_keywords:
 - WCF Data Services, asynchronous operations
 - asynchronous operations [WCF Data Services]
 ms.assetid: 902a2dc1-d0e9-4b00-90a8-becc4cb1f6a7
-ms.openlocfilehash: 84eb88695580598d41615653723c137d3f766a47
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 35300de319673b29484dc981b5d6d51c964ad908
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91150613"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99765351"
 ---
-# <a name="how-to-execute-asynchronous-data-service-queries-wcf-data-services"></a><span data-ttu-id="6199e-102">Практическое руководство. Выполнение асинхронных запросов к службе данных (службы данных WCF)</span><span class="sxs-lookup"><span data-stu-id="6199e-102">How to: Execute Asynchronous Data Service Queries (WCF Data Services)</span></span>
+# <a name="how-to-execute-asynchronous-data-service-queries-wcf-data-services"></a><span data-ttu-id="1f960-103">Практическое руководство. Выполнение асинхронных запросов к службе данных (службы данных WCF)</span><span class="sxs-lookup"><span data-stu-id="1f960-103">How to: Execute Asynchronous Data Service Queries (WCF Data Services)</span></span>
 
-<span data-ttu-id="6199e-103">С помощью клиентской библиотеки WCF Data Services можно асинхронно выполнять операции типа "клиент-сервер", такие как выполнение запросов и сохранение изменений.</span><span class="sxs-lookup"><span data-stu-id="6199e-103">By using the WCF Data Services client library, you can asynchronously perform client-server operations, such as executing queries and saving changes.</span></span> <span data-ttu-id="6199e-104">Дополнительные сведения см. в разделе [асинхронные операции](asynchronous-operations-wcf-data-services.md).</span><span class="sxs-lookup"><span data-stu-id="6199e-104">For more information, see [Asynchronous Operations](asynchronous-operations-wcf-data-services.md).</span></span>  
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+<span data-ttu-id="1f960-104">С помощью клиентской библиотеки службы данных WCF можно асинхронно выполнять операции типа "клиент-сервер", такие как выполнение запросов и сохранение изменений.</span><span class="sxs-lookup"><span data-stu-id="1f960-104">By using the WCF Data Services client library, you can asynchronously perform client-server operations, such as executing queries and saving changes.</span></span> <span data-ttu-id="1f960-105">Дополнительные сведения см. в разделе [асинхронные операции](asynchronous-operations-wcf-data-services.md).</span><span class="sxs-lookup"><span data-stu-id="1f960-105">For more information, see [Asynchronous Operations](asynchronous-operations-wcf-data-services.md).</span></span>  
   
 > [!NOTE]
-> <span data-ttu-id="6199e-105">В приложении, в котором метод обратного вызова должен быть вызван из определенного потока, необходимо выполнить явный маршалинг выполнения метода <xref:System.Data.Services.Client.DataServiceQuery%601.EndExecute%2A>.</span><span class="sxs-lookup"><span data-stu-id="6199e-105">In an application where the callback must be invoked on a specific thread, you must explicitly marshal the execution of the <xref:System.Data.Services.Client.DataServiceQuery%601.EndExecute%2A> method.</span></span> <span data-ttu-id="6199e-106">Дополнительные сведения см. в разделе [асинхронные операции](asynchronous-operations-wcf-data-services.md).</span><span class="sxs-lookup"><span data-stu-id="6199e-106">For more information, see [Asynchronous Operations](asynchronous-operations-wcf-data-services.md).</span></span>  
+> <span data-ttu-id="1f960-106">В приложении, в котором метод обратного вызова должен быть вызван из определенного потока, необходимо выполнить явный маршалинг выполнения метода <xref:System.Data.Services.Client.DataServiceQuery%601.EndExecute%2A>.</span><span class="sxs-lookup"><span data-stu-id="1f960-106">In an application where the callback must be invoked on a specific thread, you must explicitly marshal the execution of the <xref:System.Data.Services.Client.DataServiceQuery%601.EndExecute%2A> method.</span></span> <span data-ttu-id="1f960-107">Дополнительные сведения см. в разделе [асинхронные операции](asynchronous-operations-wcf-data-services.md).</span><span class="sxs-lookup"><span data-stu-id="1f960-107">For more information, see [Asynchronous Operations](asynchronous-operations-wcf-data-services.md).</span></span>  
   
- <span data-ttu-id="6199e-107">Пример в этом разделе использует образец службы данных Northwind и автоматически сформированные клиентские классы службы данных.</span><span class="sxs-lookup"><span data-stu-id="6199e-107">The example in this topic uses the Northwind sample data service and autogenerated client data service classes.</span></span> <span data-ttu-id="6199e-108">Эта служба и классы данных клиента создаются при завершении [краткого руководства по WCF Data Services](quickstart-wcf-data-services.md).</span><span class="sxs-lookup"><span data-stu-id="6199e-108">This service and the client data classes are created when you complete the [WCF Data Services quickstart](quickstart-wcf-data-services.md).</span></span>  
+ <span data-ttu-id="1f960-108">Пример в этом разделе использует образец службы данных Northwind и автоматически сформированные клиентские классы службы данных.</span><span class="sxs-lookup"><span data-stu-id="1f960-108">The example in this topic uses the Northwind sample data service and autogenerated client data service classes.</span></span> <span data-ttu-id="1f960-109">Эта служба и классы данных клиента создаются при завершении [краткого руководства по службы данных WCF](quickstart-wcf-data-services.md).</span><span class="sxs-lookup"><span data-stu-id="1f960-109">This service and the client data classes are created when you complete the [WCF Data Services quickstart](quickstart-wcf-data-services.md).</span></span>  
   
-## <a name="example"></a><span data-ttu-id="6199e-109">Пример</span><span class="sxs-lookup"><span data-stu-id="6199e-109">Example</span></span>  
+## <a name="example"></a><span data-ttu-id="1f960-110">Пример</span><span class="sxs-lookup"><span data-stu-id="1f960-110">Example</span></span>  
 
- <span data-ttu-id="6199e-110">Следующий пример иллюстрирует выполнение асинхронного запроса путем вызова метода <xref:System.Data.Services.Client.DataServiceQuery%601.BeginExecute%2A> для запуска запроса.</span><span class="sxs-lookup"><span data-stu-id="6199e-110">The following example shows how to execute an asynchronous query by calling the <xref:System.Data.Services.Client.DataServiceQuery%601.BeginExecute%2A> method to start the query.</span></span> <span data-ttu-id="6199e-111">Встроенный делегат вызывает метод <xref:System.Data.Services.Client.DataServiceQuery%601.EndExecute%2A> для отображения результатов запроса.</span><span class="sxs-lookup"><span data-stu-id="6199e-111">The inline delegate calls the <xref:System.Data.Services.Client.DataServiceQuery%601.EndExecute%2A> method to display the query results.</span></span>  
+ <span data-ttu-id="1f960-111">Следующий пример иллюстрирует выполнение асинхронного запроса путем вызова метода <xref:System.Data.Services.Client.DataServiceQuery%601.BeginExecute%2A> для запуска запроса.</span><span class="sxs-lookup"><span data-stu-id="1f960-111">The following example shows how to execute an asynchronous query by calling the <xref:System.Data.Services.Client.DataServiceQuery%601.BeginExecute%2A> method to start the query.</span></span> <span data-ttu-id="1f960-112">Встроенный делегат вызывает метод <xref:System.Data.Services.Client.DataServiceQuery%601.EndExecute%2A> для отображения результатов запроса.</span><span class="sxs-lookup"><span data-stu-id="1f960-112">The inline delegate calls the <xref:System.Data.Services.Client.DataServiceQuery%601.EndExecute%2A> method to display the query results.</span></span>  
   
  [!code-csharp[Astoria Northwind Client#ExecuteQueryAsync](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#executequeryasync)]
  [!code-vb[Astoria Northwind Client#ExecuteQueryAsync](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#executequeryasync)]  
   
-## <a name="see-also"></a><span data-ttu-id="6199e-112">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="6199e-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1f960-113">См. также</span><span class="sxs-lookup"><span data-stu-id="1f960-113">See also</span></span>
 
-- [<span data-ttu-id="6199e-113">Библиотека клиентов служб данных WCF</span><span class="sxs-lookup"><span data-stu-id="6199e-113">WCF Data Services Client Library</span></span>](wcf-data-services-client-library.md)
+- [<span data-ttu-id="1f960-114">Библиотека клиентов служб данных WCF</span><span class="sxs-lookup"><span data-stu-id="1f960-114">WCF Data Services Client Library</span></span>](wcf-data-services-client-library.md)

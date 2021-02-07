@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ISymUnmanagedReader2:: Жетмесодсиндокумент'
 title: Метод ISymUnmanagedReader2::GetMethodsInDocument
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: c7ae84d6-81e8-4cb7-a1f9-d48b6cde5d79
 topic_type:
 - apiref
-ms.openlocfilehash: 2e7eb183200c6e6de8ee18b58aab457c7e7bf2eb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1f75594a479edbf2e0160c9d3543384c0cbf68a0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95675754"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99763687"
 ---
-# <a name="isymunmanagedreader2getmethodsindocument-method"></a><span data-ttu-id="49d0b-102">Метод ISymUnmanagedReader2::GetMethodsInDocument</span><span class="sxs-lookup"><span data-stu-id="49d0b-102">ISymUnmanagedReader2::GetMethodsInDocument Method</span></span>
+# <a name="isymunmanagedreader2getmethodsindocument-method"></a><span data-ttu-id="0eacd-103">Метод ISymUnmanagedReader2::GetMethodsInDocument</span><span class="sxs-lookup"><span data-stu-id="0eacd-103">ISymUnmanagedReader2::GetMethodsInDocument Method</span></span>
 
-<span data-ttu-id="49d0b-103">Возвращает каждый метод, имеющий сведения о строке в указанном документе.</span><span class="sxs-lookup"><span data-stu-id="49d0b-103">Gets every method that has line information in the provided document.</span></span>  
+<span data-ttu-id="0eacd-104">Возвращает каждый метод, имеющий сведения о строке в указанном документе.</span><span class="sxs-lookup"><span data-stu-id="0eacd-104">Gets every method that has line information in the provided document.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="49d0b-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="49d0b-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="0eacd-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="0eacd-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetMethodsInDocument(  
@@ -37,28 +38,28 @@ HRESULT GetMethodsInDocument(
         length_is(*pcMethod)] ISymUnmanagedMethod* pRetVal[]);  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="49d0b-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="49d0b-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="0eacd-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="0eacd-106">Parameters</span></span>  
 
  `document`  
- <span data-ttu-id="49d0b-106">окне Указатель на документ.</span><span class="sxs-lookup"><span data-stu-id="49d0b-106">[in] A pointer to the document.</span></span>  
+ <span data-ttu-id="0eacd-107">окне Указатель на документ.</span><span class="sxs-lookup"><span data-stu-id="0eacd-107">[in] A pointer to the document.</span></span>  
   
  `cMethod`  
- <span data-ttu-id="49d0b-107">окне Значение типа `ULONG32` , указывающее размер  `pRetVal` массива.</span><span class="sxs-lookup"><span data-stu-id="49d0b-107">[in] A `ULONG32` that indicates the size of the  `pRetVal` array.</span></span>  
+ <span data-ttu-id="0eacd-108">окне Значение типа `ULONG32` , указывающее размер  `pRetVal` массива.</span><span class="sxs-lookup"><span data-stu-id="0eacd-108">[in] A `ULONG32` that indicates the size of the  `pRetVal` array.</span></span>  
   
  `pcMethod`  
- <span data-ttu-id="49d0b-108">заполняет Указатель на объект `ULONG32` , который получает размер буфера, необходимого для хранения методов.</span><span class="sxs-lookup"><span data-stu-id="49d0b-108">[out] A pointer to a `ULONG32` that receives the size of the buffer required to contain the methods.</span></span>  
+ <span data-ttu-id="0eacd-109">заполняет Указатель на объект `ULONG32` , который получает размер буфера, необходимого для хранения методов.</span><span class="sxs-lookup"><span data-stu-id="0eacd-109">[out] A pointer to a `ULONG32` that receives the size of the buffer required to contain the methods.</span></span>  
   
  `pRetVal`  
- <span data-ttu-id="49d0b-109">заполняет Указатель на буфер, который получает методы.</span><span class="sxs-lookup"><span data-stu-id="49d0b-109">[out] A pointer to the buffer that receives the methods.</span></span>  
+ <span data-ttu-id="0eacd-110">заполняет Указатель на буфер, который получает методы.</span><span class="sxs-lookup"><span data-stu-id="0eacd-110">[out] A pointer to the buffer that receives the methods.</span></span>  
   
-## <a name="return-value"></a><span data-ttu-id="49d0b-110">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="49d0b-110">Return Value</span></span>  
+## <a name="return-value"></a><span data-ttu-id="0eacd-111">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="0eacd-111">Return Value</span></span>  
 
- <span data-ttu-id="49d0b-111">S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.</span><span class="sxs-lookup"><span data-stu-id="49d0b-111">S_OK if the method succeeds; otherwise, E_FAIL or some other error code.</span></span>  
+ <span data-ttu-id="0eacd-112">S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.</span><span class="sxs-lookup"><span data-stu-id="0eacd-112">S_OK if the method succeeds; otherwise, E_FAIL or some other error code.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="49d0b-112">Требования</span><span class="sxs-lookup"><span data-stu-id="49d0b-112">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="0eacd-113">Требования</span><span class="sxs-lookup"><span data-stu-id="0eacd-113">Requirements</span></span>  
 
- <span data-ttu-id="49d0b-113">**Заголовок:** Корсим. idl, Корсим. h</span><span class="sxs-lookup"><span data-stu-id="49d0b-113">**Header:** CorSym.idl, CorSym.h</span></span>  
+ <span data-ttu-id="0eacd-114">**Заголовок:** Корсим. idl, Корсим. h</span><span class="sxs-lookup"><span data-stu-id="0eacd-114">**Header:** CorSym.idl, CorSym.h</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="49d0b-114">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="49d0b-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0eacd-115">См. также</span><span class="sxs-lookup"><span data-stu-id="0eacd-115">See also</span></span>
 
-- [<span data-ttu-id="49d0b-115">Интерфейс ISymUnmanagedReader2</span><span class="sxs-lookup"><span data-stu-id="49d0b-115">ISymUnmanagedReader2 Interface</span></span>](isymunmanagedreader2-interface.md)
+- [<span data-ttu-id="0eacd-116">Интерфейс ISymUnmanagedReader2</span><span class="sxs-lookup"><span data-stu-id="0eacd-116">ISymUnmanagedReader2 Interface</span></span>](isymunmanagedreader2-interface.md)

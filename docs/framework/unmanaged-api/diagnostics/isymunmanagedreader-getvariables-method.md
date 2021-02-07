@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ISymUnmanagedReader:: WebMethod'
 title: Метод ISymUnmanagedReader::GetVariables
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 16dc49cb-2c60-4ac8-9c35-020e9afba3f8
 topic_type:
 - apiref
-ms.openlocfilehash: c4341a5ffe557694473ae505590b57d39a27a721
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 93208e6c5c65c4c770c533b7ea72de513451d97d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95675897"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99763908"
 ---
-# <a name="isymunmanagedreadergetvariables-method"></a><span data-ttu-id="6b446-102">Метод ISymUnmanagedReader::GetVariables</span><span class="sxs-lookup"><span data-stu-id="6b446-102">ISymUnmanagedReader::GetVariables Method</span></span>
+# <a name="isymunmanagedreadergetvariables-method"></a><span data-ttu-id="bd431-103">Метод ISymUnmanagedReader::GetVariables</span><span class="sxs-lookup"><span data-stu-id="bd431-103">ISymUnmanagedReader::GetVariables Method</span></span>
 
-<span data-ttu-id="6b446-103">Возвращает нелокальную переменную с учетом ее родителя и имени.</span><span class="sxs-lookup"><span data-stu-id="6b446-103">Returns a non-local variable, given its parent and name.</span></span>  
+<span data-ttu-id="bd431-104">Возвращает нелокальную переменную с учетом ее родителя и имени.</span><span class="sxs-lookup"><span data-stu-id="bd431-104">Returns a non-local variable, given its parent and name.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="6b446-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="6b446-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="bd431-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="bd431-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetVariables (  
@@ -37,28 +38,28 @@ HRESULT GetVariables (
         length_is (*pcVars)] ISymUnmanagedVariable *pVars[]);  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="6b446-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="6b446-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="bd431-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="bd431-106">Parameters</span></span>  
 
  `parent`  
- <span data-ttu-id="6b446-106">окне Родительский объект переменной.</span><span class="sxs-lookup"><span data-stu-id="6b446-106">[in] The parent of the variable.</span></span>  
+ <span data-ttu-id="bd431-107">окне Родительский объект переменной.</span><span class="sxs-lookup"><span data-stu-id="bd431-107">[in] The parent of the variable.</span></span>  
   
  `cVars`  
- <span data-ttu-id="6b446-107">[in] Размер массива `pVars`.</span><span class="sxs-lookup"><span data-stu-id="6b446-107">[in] The size of the `pVars` array.</span></span>  
+ <span data-ttu-id="bd431-108">[in] Размер массива `pVars`.</span><span class="sxs-lookup"><span data-stu-id="bd431-108">[in] The size of the `pVars` array.</span></span>  
   
  `pcVars`  
- <span data-ttu-id="6b446-108">заполняет Указатель на переменную, которая получает количество переменных, возвращаемых в `pVars` .</span><span class="sxs-lookup"><span data-stu-id="6b446-108">[out] A pointer to the variable that receives the number of variables returned in `pVars`.</span></span>  
+ <span data-ttu-id="bd431-109">заполняет Указатель на переменную, которая получает количество переменных, возвращаемых в `pVars` .</span><span class="sxs-lookup"><span data-stu-id="bd431-109">[out] A pointer to the variable that receives the number of variables returned in `pVars`.</span></span>  
   
  `pVars`  
- <span data-ttu-id="6b446-109">заполняет Указатель на переменную, которая получает переменные.</span><span class="sxs-lookup"><span data-stu-id="6b446-109">[out] A pointer to the variable that receives the variables.</span></span>  
+ <span data-ttu-id="bd431-110">заполняет Указатель на переменную, которая получает переменные.</span><span class="sxs-lookup"><span data-stu-id="bd431-110">[out] A pointer to the variable that receives the variables.</span></span>  
   
-## <a name="return-value"></a><span data-ttu-id="6b446-110">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="6b446-110">Return Value</span></span>  
+## <a name="return-value"></a><span data-ttu-id="bd431-111">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="bd431-111">Return Value</span></span>  
 
- <span data-ttu-id="6b446-111">S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.</span><span class="sxs-lookup"><span data-stu-id="6b446-111">S_OK if the method succeeds; otherwise, E_FAIL or some other error code.</span></span>  
+ <span data-ttu-id="bd431-112">S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.</span><span class="sxs-lookup"><span data-stu-id="bd431-112">S_OK if the method succeeds; otherwise, E_FAIL or some other error code.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="6b446-112">Требования</span><span class="sxs-lookup"><span data-stu-id="6b446-112">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="bd431-113">Требования</span><span class="sxs-lookup"><span data-stu-id="bd431-113">Requirements</span></span>  
 
- <span data-ttu-id="6b446-113">**Заголовок:** Корсим. idl, Корсим. h</span><span class="sxs-lookup"><span data-stu-id="6b446-113">**Header:** CorSym.idl, CorSym.h</span></span>  
+ <span data-ttu-id="bd431-114">**Заголовок:** Корсим. idl, Корсим. h</span><span class="sxs-lookup"><span data-stu-id="bd431-114">**Header:** CorSym.idl, CorSym.h</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="6b446-114">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="6b446-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bd431-115">См. также</span><span class="sxs-lookup"><span data-stu-id="bd431-115">See also</span></span>
 
-- [<span data-ttu-id="6b446-115">Интерфейс ISymUnmanagedReader</span><span class="sxs-lookup"><span data-stu-id="6b446-115">ISymUnmanagedReader Interface</span></span>](isymunmanagedreader-interface.md)
+- [<span data-ttu-id="bd431-116">Интерфейс ISymUnmanagedReader</span><span class="sxs-lookup"><span data-stu-id="bd431-116">ISymUnmanagedReader Interface</span></span>](isymunmanagedreader-interface.md)

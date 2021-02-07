@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ISymUnmanagedDocumentWriter'
 title: Интерфейс ISymUnmanagedDocumentWriter
 ms.date: 03/30/2017
 api_name:
@@ -14,28 +15,28 @@ helpviewer_keywords:
 ms.assetid: edc8a02b-a0ac-46e3-80c1-fb8b5cef6341
 topic_type:
 - apiref
-ms.openlocfilehash: d56ce4d508d9e3c55b70a3a599e98ce5b254352f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9d110432c60274e5ca2cfc2b4e67c63c4326c26f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95687994"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99764207"
 ---
-# <a name="isymunmanageddocumentwriter-interface"></a><span data-ttu-id="24e41-102">Интерфейс ISymUnmanagedDocumentWriter</span><span class="sxs-lookup"><span data-stu-id="24e41-102">ISymUnmanagedDocumentWriter Interface</span></span>
+# <a name="isymunmanageddocumentwriter-interface"></a><span data-ttu-id="2bcf5-103">Интерфейс ISymUnmanagedDocumentWriter</span><span class="sxs-lookup"><span data-stu-id="2bcf5-103">ISymUnmanagedDocumentWriter Interface</span></span>
 
-<span data-ttu-id="24e41-103">Предоставляет методы для записи в документ, на который ссылается хранилище символов.</span><span class="sxs-lookup"><span data-stu-id="24e41-103">Provides methods for writing to a document referenced by a symbol store.</span></span>  
+<span data-ttu-id="2bcf5-104">Предоставляет методы для записи в документ, на который ссылается хранилище символов.</span><span class="sxs-lookup"><span data-stu-id="2bcf5-104">Provides methods for writing to a document referenced by a symbol store.</span></span>  
   
-## <a name="methods"></a><span data-ttu-id="24e41-104">Методы</span><span class="sxs-lookup"><span data-stu-id="24e41-104">Methods</span></span>  
+## <a name="methods"></a><span data-ttu-id="2bcf5-105">Методы</span><span class="sxs-lookup"><span data-stu-id="2bcf5-105">Methods</span></span>  
   
-|<span data-ttu-id="24e41-105">Метод</span><span class="sxs-lookup"><span data-stu-id="24e41-105">Method</span></span>|<span data-ttu-id="24e41-106">Описание</span><span class="sxs-lookup"><span data-stu-id="24e41-106">Description</span></span>|  
+|<span data-ttu-id="2bcf5-106">Метод</span><span class="sxs-lookup"><span data-stu-id="2bcf5-106">Method</span></span>|<span data-ttu-id="2bcf5-107">Описание</span><span class="sxs-lookup"><span data-stu-id="2bcf5-107">Description</span></span>|  
 |------------|-----------------|  
-|[<span data-ttu-id="24e41-107">Метод SetCheckSum</span><span class="sxs-lookup"><span data-stu-id="24e41-107">SetCheckSum Method</span></span>](isymunmanageddocumentwriter-setchecksum-method.md)|<span data-ttu-id="24e41-108">Задает сведения о контрольной сумме.</span><span class="sxs-lookup"><span data-stu-id="24e41-108">Sets checksum information.</span></span>|  
-|[<span data-ttu-id="24e41-109">Метод SetSource</span><span class="sxs-lookup"><span data-stu-id="24e41-109">SetSource Method</span></span>](isymunmanageddocumentwriter-setsource-method.md)|<span data-ttu-id="24e41-110">Задает внедренный источник для записываемого документа.</span><span class="sxs-lookup"><span data-stu-id="24e41-110">Sets embedded source for a document that is being written.</span></span>|  
+|[<span data-ttu-id="2bcf5-108">Метод SetCheckSum</span><span class="sxs-lookup"><span data-stu-id="2bcf5-108">SetCheckSum Method</span></span>](isymunmanageddocumentwriter-setchecksum-method.md)|<span data-ttu-id="2bcf5-109">Задает сведения о контрольной сумме.</span><span class="sxs-lookup"><span data-stu-id="2bcf5-109">Sets checksum information.</span></span>|  
+|[<span data-ttu-id="2bcf5-110">Метод SetSource</span><span class="sxs-lookup"><span data-stu-id="2bcf5-110">SetSource Method</span></span>](isymunmanageddocumentwriter-setsource-method.md)|<span data-ttu-id="2bcf5-111">Задает внедренный источник для записываемого документа.</span><span class="sxs-lookup"><span data-stu-id="2bcf5-111">Sets embedded source for a document that is being written.</span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="24e41-111">Требования</span><span class="sxs-lookup"><span data-stu-id="24e41-111">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="2bcf5-112">Требования</span><span class="sxs-lookup"><span data-stu-id="2bcf5-112">Requirements</span></span>  
 
- <span data-ttu-id="24e41-112">**Заголовок:** Корсим. idl, Корсим. h</span><span class="sxs-lookup"><span data-stu-id="24e41-112">**Header:** CorSym.idl, CorSym.h</span></span>  
+ <span data-ttu-id="2bcf5-113">**Заголовок:** Корсим. idl, Корсим. h</span><span class="sxs-lookup"><span data-stu-id="2bcf5-113">**Header:** CorSym.idl, CorSym.h</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="24e41-113">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="24e41-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2bcf5-114">См. также</span><span class="sxs-lookup"><span data-stu-id="2bcf5-114">See also</span></span>
 
-- [<span data-ttu-id="24e41-114">Интерфейсы хранилища символов диагностики</span><span class="sxs-lookup"><span data-stu-id="24e41-114">Diagnostics Symbol Store Interfaces</span></span>](diagnostics-symbol-store-interfaces.md)
+- [<span data-ttu-id="2bcf5-115">Интерфейсы хранилища символов диагностики</span><span class="sxs-lookup"><span data-stu-id="2bcf5-115">Diagnostics Symbol Store Interfaces</span></span>](diagnostics-symbol-store-interfaces.md)
