@@ -1,19 +1,20 @@
 ---
+description: 'Дополнительные сведения о: ServiceMetadataBehavior'
 title: ServiceMetadataBehavior
 ms.date: 03/30/2017
 ms.assetid: 0f194476-72f1-467e-bdce-674306316e64
-ms.openlocfilehash: 921a880dad0d77558a70dff8a09f75c25a3cbb8a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1b1438013ec667b10b300d898687abf6f33f96fb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262285"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99715487"
 ---
-# <a name="servicemetadatabehavior"></a><span data-ttu-id="83e4a-102">ServiceMetadataBehavior</span><span class="sxs-lookup"><span data-stu-id="83e4a-102">ServiceMetadataBehavior</span></span>
+# <a name="servicemetadatabehavior"></a><span data-ttu-id="03e5d-103">ServiceMetadataBehavior</span><span class="sxs-lookup"><span data-stu-id="03e5d-103">ServiceMetadataBehavior</span></span>
 
-<span data-ttu-id="83e4a-103">ServiceMetadataBehavior</span><span class="sxs-lookup"><span data-stu-id="83e4a-103">ServiceMetadataBehavior</span></span>  
+<span data-ttu-id="03e5d-104">ServiceMetadataBehavior</span><span class="sxs-lookup"><span data-stu-id="03e5d-104">ServiceMetadataBehavior</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="83e4a-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="83e4a-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="03e5d-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="03e5d-105">Syntax</span></span>  
   
 ```csharp
 class ServiceMetadataBehavior : Behavior  
@@ -26,60 +27,60 @@ class ServiceMetadataBehavior : Behavior
 };  
 ```  
   
-## <a name="methods"></a><span data-ttu-id="83e4a-105">Методы</span><span class="sxs-lookup"><span data-stu-id="83e4a-105">Methods</span></span>  
+## <a name="methods"></a><span data-ttu-id="03e5d-106">Методы</span><span class="sxs-lookup"><span data-stu-id="03e5d-106">Methods</span></span>  
 
- <span data-ttu-id="83e4a-106">Класс ServiceMetadataBehavior не определяет никаких методов.</span><span class="sxs-lookup"><span data-stu-id="83e4a-106">The ServiceMetadataBehavior class does not define any methods.</span></span>  
+ <span data-ttu-id="03e5d-107">Класс ServiceMetadataBehavior не определяет никаких методов.</span><span class="sxs-lookup"><span data-stu-id="03e5d-107">The ServiceMetadataBehavior class does not define any methods.</span></span>  
   
-## <a name="properties"></a><span data-ttu-id="83e4a-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="83e4a-107">Properties</span></span>  
+## <a name="properties"></a><span data-ttu-id="03e5d-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="03e5d-108">Properties</span></span>  
 
- <span data-ttu-id="83e4a-108">Класс ServiceMetadataBehavior имеет следующие свойства.</span><span class="sxs-lookup"><span data-stu-id="83e4a-108">The ServiceMetadataBehavior class has the following properties:</span></span>  
+ <span data-ttu-id="03e5d-109">Класс ServiceMetadataBehavior имеет следующие свойства.</span><span class="sxs-lookup"><span data-stu-id="03e5d-109">The ServiceMetadataBehavior class has the following properties:</span></span>  
   
-### <a name="externalmetadatalocation"></a><span data-ttu-id="83e4a-109">ExternalMetadataLocation</span><span class="sxs-lookup"><span data-stu-id="83e4a-109">ExternalMetadataLocation</span></span>  
+### <a name="externalmetadatalocation"></a><span data-ttu-id="03e5d-110">ExternalMetadataLocation</span><span class="sxs-lookup"><span data-stu-id="03e5d-110">ExternalMetadataLocation</span></span>  
 
- <span data-ttu-id="83e4a-110">Тип данных: строка</span><span class="sxs-lookup"><span data-stu-id="83e4a-110">Data type: string</span></span>  
+ <span data-ttu-id="03e5d-111">Тип данных: строка</span><span class="sxs-lookup"><span data-stu-id="03e5d-111">Data type: string</span></span>  
   
- <span data-ttu-id="83e4a-111">Тип доступа: только для чтения</span><span class="sxs-lookup"><span data-stu-id="83e4a-111">Access type: Read-only</span></span>  
+ <span data-ttu-id="03e5d-112">Тип доступа: только для чтения</span><span class="sxs-lookup"><span data-stu-id="03e5d-112">Access type: Read-only</span></span>  
   
- <span data-ttu-id="83e4a-112">Задает расположение, в которое служба перенаправляет запросы метаданных.</span><span class="sxs-lookup"><span data-stu-id="83e4a-112">Sets the location to which the service redirects metadata requests.</span></span>  
+ <span data-ttu-id="03e5d-113">Задает расположение, в которое служба перенаправляет запросы метаданных.</span><span class="sxs-lookup"><span data-stu-id="03e5d-113">Sets the location to which the service redirects metadata requests.</span></span>  
   
-### <a name="httpgetenabled"></a><span data-ttu-id="83e4a-113">HttpGetEnabled</span><span class="sxs-lookup"><span data-stu-id="83e4a-113">HttpGetEnabled</span></span>  
+### <a name="httpgetenabled"></a><span data-ttu-id="03e5d-114">HttpGetEnabled</span><span class="sxs-lookup"><span data-stu-id="03e5d-114">HttpGetEnabled</span></span>  
 
- <span data-ttu-id="83e4a-114">Тип данных: boolean</span><span class="sxs-lookup"><span data-stu-id="83e4a-114">Data type: boolean</span></span>  
+ <span data-ttu-id="03e5d-115">Тип данных: boolean</span><span class="sxs-lookup"><span data-stu-id="03e5d-115">Data type: boolean</span></span>  
   
- <span data-ttu-id="83e4a-115">Тип доступа: только для чтения</span><span class="sxs-lookup"><span data-stu-id="83e4a-115">Access type: Read-only</span></span>  
+ <span data-ttu-id="03e5d-116">Тип доступа: только для чтения</span><span class="sxs-lookup"><span data-stu-id="03e5d-116">Access type: Read-only</span></span>  
   
- <span data-ttu-id="83e4a-116">Определяет, публикует ли служба свой код WSDL по адресу, определяемому атрибутом `HttpGetUrl`.</span><span class="sxs-lookup"><span data-stu-id="83e4a-116">Controls whether the service publishes its WSDL at the address controlled by the `HttpGetUrl` attribute.</span></span>  
+ <span data-ttu-id="03e5d-117">Определяет, публикует ли служба свой код WSDL по адресу, определяемому атрибутом `HttpGetUrl`.</span><span class="sxs-lookup"><span data-stu-id="03e5d-117">Controls whether the service publishes its WSDL at the address controlled by the `HttpGetUrl` attribute.</span></span>  
   
-### <a name="httpgeturl"></a><span data-ttu-id="83e4a-117">HttpGetUrl</span><span class="sxs-lookup"><span data-stu-id="83e4a-117">HttpGetUrl</span></span>  
+### <a name="httpgeturl"></a><span data-ttu-id="03e5d-118">HttpGetUrl</span><span class="sxs-lookup"><span data-stu-id="03e5d-118">HttpGetUrl</span></span>  
 
- <span data-ttu-id="83e4a-118">Тип данных: строка</span><span class="sxs-lookup"><span data-stu-id="83e4a-118">Data type: string</span></span>  
+ <span data-ttu-id="03e5d-119">Тип данных: строка</span><span class="sxs-lookup"><span data-stu-id="03e5d-119">Data type: string</span></span>  
   
- <span data-ttu-id="83e4a-119">Тип доступа: только для чтения</span><span class="sxs-lookup"><span data-stu-id="83e4a-119">Access type: Read-only</span></span>  
+ <span data-ttu-id="03e5d-120">Тип доступа: только для чтения</span><span class="sxs-lookup"><span data-stu-id="03e5d-120">Access type: Read-only</span></span>  
   
- <span data-ttu-id="83e4a-120">Задает расположение для публикации языка WSDL службы и его получения с помощью HTTP.</span><span class="sxs-lookup"><span data-stu-id="83e4a-120">Sets the location at which the service WSDL is published for retrieval using HTTP.</span></span>  
+ <span data-ttu-id="03e5d-121">Задает расположение для публикации языка WSDL службы и его получения с помощью HTTP.</span><span class="sxs-lookup"><span data-stu-id="03e5d-121">Sets the location at which the service WSDL is published for retrieval using HTTP.</span></span>  
   
-### <a name="httpsgetenabled"></a><span data-ttu-id="83e4a-121">HttpsGetEnabled</span><span class="sxs-lookup"><span data-stu-id="83e4a-121">HttpsGetEnabled</span></span>  
+### <a name="httpsgetenabled"></a><span data-ttu-id="03e5d-122">HttpsGetEnabled</span><span class="sxs-lookup"><span data-stu-id="03e5d-122">HttpsGetEnabled</span></span>  
 
- <span data-ttu-id="83e4a-122">Тип данных: boolean</span><span class="sxs-lookup"><span data-stu-id="83e4a-122">Data type: boolean</span></span>  
+ <span data-ttu-id="03e5d-123">Тип данных: boolean</span><span class="sxs-lookup"><span data-stu-id="03e5d-123">Data type: boolean</span></span>  
   
- <span data-ttu-id="83e4a-123">Тип доступа: только для чтения</span><span class="sxs-lookup"><span data-stu-id="83e4a-123">Access type: Read-only</span></span>  
+ <span data-ttu-id="03e5d-124">Тип доступа: только для чтения</span><span class="sxs-lookup"><span data-stu-id="03e5d-124">Access type: Read-only</span></span>  
   
- <span data-ttu-id="83e4a-124">Определяет, публикует ли служба свой язык WSDL через HTTPS по адресу, указанному в атрибуте `HttpsGetUrl`.</span><span class="sxs-lookup"><span data-stu-id="83e4a-124">Controls whether the service publishes its WSDL over HTTPS at the address controlled by the `HttpsGetUrl` attribute.</span></span>  
+ <span data-ttu-id="03e5d-125">Определяет, публикует ли служба свой язык WSDL через HTTPS по адресу, указанному в атрибуте `HttpsGetUrl`.</span><span class="sxs-lookup"><span data-stu-id="03e5d-125">Controls whether the service publishes its WSDL over HTTPS at the address controlled by the `HttpsGetUrl` attribute.</span></span>  
   
-### <a name="httpsgeturl"></a><span data-ttu-id="83e4a-125">HttpsGetUrl</span><span class="sxs-lookup"><span data-stu-id="83e4a-125">HttpsGetUrl</span></span>  
+### <a name="httpsgeturl"></a><span data-ttu-id="03e5d-126">HttpsGetUrl</span><span class="sxs-lookup"><span data-stu-id="03e5d-126">HttpsGetUrl</span></span>  
 
- <span data-ttu-id="83e4a-126">Тип данных: строка</span><span class="sxs-lookup"><span data-stu-id="83e4a-126">Data type: string</span></span>  
+ <span data-ttu-id="03e5d-127">Тип данных: строка</span><span class="sxs-lookup"><span data-stu-id="03e5d-127">Data type: string</span></span>  
   
- <span data-ttu-id="83e4a-127">Тип доступа: только для чтения</span><span class="sxs-lookup"><span data-stu-id="83e4a-127">Access type: Read-only</span></span>  
+ <span data-ttu-id="03e5d-128">Тип доступа: только для чтения</span><span class="sxs-lookup"><span data-stu-id="03e5d-128">Access type: Read-only</span></span>  
   
- <span data-ttu-id="83e4a-128">Задает расположение для публикации языка WSDL службы и его получения с помощью HTTPS.</span><span class="sxs-lookup"><span data-stu-id="83e4a-128">Sets the location at which the service WSDL is published for retrieval using HTTPS.</span></span>  
+ <span data-ttu-id="03e5d-129">Задает расположение для публикации языка WSDL службы и его получения с помощью HTTPS.</span><span class="sxs-lookup"><span data-stu-id="03e5d-129">Sets the location at which the service WSDL is published for retrieval using HTTPS.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="83e4a-129">Требования</span><span class="sxs-lookup"><span data-stu-id="83e4a-129">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="03e5d-130">Требования</span><span class="sxs-lookup"><span data-stu-id="03e5d-130">Requirements</span></span>  
   
-|<span data-ttu-id="83e4a-130">MOF</span><span class="sxs-lookup"><span data-stu-id="83e4a-130">MOF</span></span>|<span data-ttu-id="83e4a-131">Объявлено в файле Servicemodel.mof.</span><span class="sxs-lookup"><span data-stu-id="83e4a-131">Declared in Servicemodel.mof.</span></span>|  
+|<span data-ttu-id="03e5d-131">MOF</span><span class="sxs-lookup"><span data-stu-id="03e5d-131">MOF</span></span>|<span data-ttu-id="03e5d-132">Объявлено в файле Servicemodel.mof.</span><span class="sxs-lookup"><span data-stu-id="03e5d-132">Declared in Servicemodel.mof.</span></span>|  
 |---------|-----------------------------------|  
-|<span data-ttu-id="83e4a-132">Пространство имен</span><span class="sxs-lookup"><span data-stu-id="83e4a-132">Namespace</span></span>|<span data-ttu-id="83e4a-133">Определено в root\ServiceModel.</span><span class="sxs-lookup"><span data-stu-id="83e4a-133">Defined in root\ServiceModel</span></span>|  
+|<span data-ttu-id="03e5d-133">Пространство имен</span><span class="sxs-lookup"><span data-stu-id="03e5d-133">Namespace</span></span>|<span data-ttu-id="03e5d-134">Определено в root\ServiceModel.</span><span class="sxs-lookup"><span data-stu-id="03e5d-134">Defined in root\ServiceModel</span></span>|  
   
-## <a name="see-also"></a><span data-ttu-id="83e4a-134">См. также</span><span class="sxs-lookup"><span data-stu-id="83e4a-134">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="03e5d-135">См. также</span><span class="sxs-lookup"><span data-stu-id="03e5d-135">See also</span></span>
 
 - <xref:System.ServiceModel.Description.ServiceMetadataBehavior>

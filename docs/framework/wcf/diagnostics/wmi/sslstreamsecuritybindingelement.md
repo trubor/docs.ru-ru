@@ -1,19 +1,20 @@
 ---
+description: 'Дополнительные сведения о: SslStreamSecurityBindingElement'
 title: SslStreamSecurityBindingElement
 ms.date: 03/30/2017
 ms.assetid: 18130d50-8996-4257-9c60-bc457f8654d8
-ms.openlocfilehash: fcb6cb304c7435f8b954ed5aeea7179c7cb40be8
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 32e21adedb533edbe2adf8a30ddaff64eb038936
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96282097"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99715331"
 ---
-# <a name="sslstreamsecuritybindingelement"></a><span data-ttu-id="fe74e-102">SslStreamSecurityBindingElement</span><span class="sxs-lookup"><span data-stu-id="fe74e-102">SslStreamSecurityBindingElement</span></span>
+# <a name="sslstreamsecuritybindingelement"></a><span data-ttu-id="5fc44-103">SslStreamSecurityBindingElement</span><span class="sxs-lookup"><span data-stu-id="5fc44-103">SslStreamSecurityBindingElement</span></span>
 
-<span data-ttu-id="fe74e-103">SslStreamSecurityBindingElement</span><span class="sxs-lookup"><span data-stu-id="fe74e-103">SslStreamSecurityBindingElement</span></span>  
+<span data-ttu-id="5fc44-104">SslStreamSecurityBindingElement</span><span class="sxs-lookup"><span data-stu-id="5fc44-104">SslStreamSecurityBindingElement</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="fe74e-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="fe74e-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="5fc44-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="5fc44-105">Syntax</span></span>  
   
 ```csharp
 class SslStreamSecurityBindingElement : BindingElement  
@@ -22,28 +23,28 @@ class SslStreamSecurityBindingElement : BindingElement
 };  
 ```  
   
-## <a name="methods"></a><span data-ttu-id="fe74e-105">Методы</span><span class="sxs-lookup"><span data-stu-id="fe74e-105">Methods</span></span>  
+## <a name="methods"></a><span data-ttu-id="5fc44-106">Методы</span><span class="sxs-lookup"><span data-stu-id="5fc44-106">Methods</span></span>  
 
- <span data-ttu-id="fe74e-106">Класс SslStreamSecurityBindingElement не определяет никаких методов.</span><span class="sxs-lookup"><span data-stu-id="fe74e-106">The SslStreamSecurityBindingElement class does not define any methods.</span></span>  
+ <span data-ttu-id="5fc44-107">Класс SslStreamSecurityBindingElement не определяет никаких методов.</span><span class="sxs-lookup"><span data-stu-id="5fc44-107">The SslStreamSecurityBindingElement class does not define any methods.</span></span>  
   
-## <a name="properties"></a><span data-ttu-id="fe74e-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="fe74e-107">Properties</span></span>  
+## <a name="properties"></a><span data-ttu-id="5fc44-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="5fc44-108">Properties</span></span>  
 
- <span data-ttu-id="fe74e-108">Класс SslStreamSecurityBindingElement имеет следующее свойство:</span><span class="sxs-lookup"><span data-stu-id="fe74e-108">The SslStreamSecurityBindingElement class has the following property:</span></span>  
+ <span data-ttu-id="5fc44-109">Класс SslStreamSecurityBindingElement имеет следующее свойство:</span><span class="sxs-lookup"><span data-stu-id="5fc44-109">The SslStreamSecurityBindingElement class has the following property:</span></span>  
   
-### <a name="requireclientcertificate"></a><span data-ttu-id="fe74e-109">RequireClientCertificate</span><span class="sxs-lookup"><span data-stu-id="fe74e-109">RequireClientCertificate</span></span>  
+### <a name="requireclientcertificate"></a><span data-ttu-id="5fc44-110">RequireClientCertificate</span><span class="sxs-lookup"><span data-stu-id="5fc44-110">RequireClientCertificate</span></span>  
 
- <span data-ttu-id="fe74e-110">Тип данных: boolean</span><span class="sxs-lookup"><span data-stu-id="fe74e-110">Data type: boolean</span></span>  
+ <span data-ttu-id="5fc44-111">Тип данных: boolean</span><span class="sxs-lookup"><span data-stu-id="5fc44-111">Data type: boolean</span></span>  
   
- <span data-ttu-id="fe74e-111">Тип доступа: только для чтения</span><span class="sxs-lookup"><span data-stu-id="fe74e-111">Access type: Read-only</span></span>  
+ <span data-ttu-id="5fc44-112">Тип доступа: только для чтения</span><span class="sxs-lookup"><span data-stu-id="5fc44-112">Access type: Read-only</span></span>  
   
- <span data-ttu-id="fe74e-112">Определяет, требуется ли для этой привязки сертификат клиента.</span><span class="sxs-lookup"><span data-stu-id="fe74e-112">Specifies whether a client certificate is required for this binding.</span></span>  
+ <span data-ttu-id="5fc44-113">Определяет, требуется ли для этой привязки сертификат клиента.</span><span class="sxs-lookup"><span data-stu-id="5fc44-113">Specifies whether a client certificate is required for this binding.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="fe74e-113">Требования</span><span class="sxs-lookup"><span data-stu-id="fe74e-113">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="5fc44-114">Требования</span><span class="sxs-lookup"><span data-stu-id="5fc44-114">Requirements</span></span>  
   
-|<span data-ttu-id="fe74e-114">MOF</span><span class="sxs-lookup"><span data-stu-id="fe74e-114">MOF</span></span>|<span data-ttu-id="fe74e-115">Объявлено в файле Servicemodel.mof.</span><span class="sxs-lookup"><span data-stu-id="fe74e-115">Declared in Servicemodel.mof.</span></span>|  
+|<span data-ttu-id="5fc44-115">MOF</span><span class="sxs-lookup"><span data-stu-id="5fc44-115">MOF</span></span>|<span data-ttu-id="5fc44-116">Объявлено в файле Servicemodel.mof.</span><span class="sxs-lookup"><span data-stu-id="5fc44-116">Declared in Servicemodel.mof.</span></span>|  
 |---------|-----------------------------------|  
-|<span data-ttu-id="fe74e-116">Пространство имен</span><span class="sxs-lookup"><span data-stu-id="fe74e-116">Namespace</span></span>|<span data-ttu-id="fe74e-117">Определено в root\ServiceModel.</span><span class="sxs-lookup"><span data-stu-id="fe74e-117">Defined in root\ServiceModel</span></span>|  
+|<span data-ttu-id="5fc44-117">Пространство имен</span><span class="sxs-lookup"><span data-stu-id="5fc44-117">Namespace</span></span>|<span data-ttu-id="5fc44-118">Определено в root\ServiceModel.</span><span class="sxs-lookup"><span data-stu-id="5fc44-118">Defined in root\ServiceModel</span></span>|  
   
-## <a name="see-also"></a><span data-ttu-id="fe74e-118">См. также</span><span class="sxs-lookup"><span data-stu-id="fe74e-118">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5fc44-119">См. также</span><span class="sxs-lookup"><span data-stu-id="5fc44-119">See also</span></span>
 
 - <xref:System.ServiceModel.Channels.SslStreamSecurityBindingElement>
