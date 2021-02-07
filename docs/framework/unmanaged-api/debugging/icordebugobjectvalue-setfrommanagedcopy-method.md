@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugObjectValue:: Сетфромманажедкопи'
 title: Метод ICorDebugObjectValue::SetFromManagedCopy
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 2cee9108-a58d-48a8-b7d4-6beb6da3f4bb
 topic_type:
 - apiref
-ms.openlocfilehash: 931cb06102227c9be75d3b44ba5bd336dbd0b9bb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 492e81d03b8396828042d5ee4e6b384b2553ba5c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724617"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728851"
 ---
-# <a name="icordebugobjectvaluesetfrommanagedcopy-method"></a><span data-ttu-id="62d22-102">Метод ICorDebugObjectValue::SetFromManagedCopy</span><span class="sxs-lookup"><span data-stu-id="62d22-102">ICorDebugObjectValue::SetFromManagedCopy Method</span></span>
+# <a name="icordebugobjectvaluesetfrommanagedcopy-method"></a><span data-ttu-id="332f0-103">Метод ICorDebugObjectValue::SetFromManagedCopy</span><span class="sxs-lookup"><span data-stu-id="332f0-103">ICorDebugObjectValue::SetFromManagedCopy Method</span></span>
 
-<span data-ttu-id="62d22-103">`SetFromManagedCopy` устарел.</span><span class="sxs-lookup"><span data-stu-id="62d22-103">`SetFromManagedCopy` is obsolete.</span></span> <span data-ttu-id="62d22-104">Этот метод не следует вызывать.</span><span class="sxs-lookup"><span data-stu-id="62d22-104">Do not call this method.</span></span>  
+<span data-ttu-id="332f0-104">`SetFromManagedCopy` устарел.</span><span class="sxs-lookup"><span data-stu-id="332f0-104">`SetFromManagedCopy` is obsolete.</span></span> <span data-ttu-id="332f0-105">Этот метод не следует вызывать.</span><span class="sxs-lookup"><span data-stu-id="332f0-105">Do not call this method.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="62d22-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="62d22-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="332f0-106">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="332f0-106">Syntax</span></span>  
   
 ```cpp  
 HRESULT SetFromManagedCopy (  
@@ -34,8 +35,8 @@ HRESULT SetFromManagedCopy (
 );  
 ```  
   
-## <a name="requirements"></a><span data-ttu-id="62d22-106">Требования</span><span class="sxs-lookup"><span data-stu-id="62d22-106">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="332f0-107">Требования</span><span class="sxs-lookup"><span data-stu-id="332f0-107">Requirements</span></span>  
 
- <span data-ttu-id="62d22-107">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="62d22-107">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="332f0-108">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="332f0-108">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="62d22-108">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="62d22-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="332f0-109">См. также</span><span class="sxs-lookup"><span data-stu-id="332f0-109">See also</span></span>
