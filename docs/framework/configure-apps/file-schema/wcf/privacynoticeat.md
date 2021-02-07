@@ -1,17 +1,18 @@
 ---
+description: 'Дополнительные сведения: <privacyNoticeAt>'
 title: <privacyNoticeAt>
 ms.date: 03/30/2017
 ms.assetid: 4cc96942-4eb9-4241-b2fd-45aa239915e8
-ms.openlocfilehash: 5e772e23b21c566c906be854e33b924698dcf3e0
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2e38d43becd783cc50afba5a029d3ab9905ec15a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91158712"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683506"
 ---
 # \<privacyNoticeAt>
 
-<span data-ttu-id="78309-101">Представляет элемент конфигурации, который задает уведомление о конфиденциальности, используемое в привязке `wsFederationHttp`.</span><span class="sxs-lookup"><span data-stu-id="78309-101">Represents a configuration element that specifies a privacy notice used in `wsFederationHttp` binding.</span></span>  
+<span data-ttu-id="1303b-102">Представляет элемент конфигурации, который задает уведомление о конфиденциальности, используемое в привязке `wsFederationHttp`.</span><span class="sxs-lookup"><span data-stu-id="1303b-102">Represents a configuration element that specifies a privacy notice used in `wsFederationHttp` binding.</span></span>  
   
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
@@ -20,44 +21,44 @@ ms.locfileid: "91158712"
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<privacyNotice>**  
   
-## <a name="syntax"></a><span data-ttu-id="78309-102">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="78309-102">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="1303b-103">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="1303b-103">Syntax</span></span>  
   
 ```xml  
 <privacyNotice url="String"
                version="Integer" />
 ```  
   
-## <a name="type"></a><span data-ttu-id="78309-103">Type</span><span class="sxs-lookup"><span data-stu-id="78309-103">Type</span></span>  
+## <a name="type"></a><span data-ttu-id="1303b-104">Тип</span><span class="sxs-lookup"><span data-stu-id="1303b-104">Type</span></span>  
 
  `Type`  
   
-## <a name="attributes-and-elements"></a><span data-ttu-id="78309-104">Атрибуты и элементы</span><span class="sxs-lookup"><span data-stu-id="78309-104">Attributes and Elements</span></span>  
+## <a name="attributes-and-elements"></a><span data-ttu-id="1303b-105">Атрибуты и элементы</span><span class="sxs-lookup"><span data-stu-id="1303b-105">Attributes and Elements</span></span>  
 
- <span data-ttu-id="78309-105">В следующих разделах описаны атрибуты, дочерние и родительские элементы.</span><span class="sxs-lookup"><span data-stu-id="78309-105">The following sections describe attributes, child elements, and parent elements.</span></span>  
+ <span data-ttu-id="1303b-106">В следующих разделах описаны атрибуты, дочерние и родительские элементы.</span><span class="sxs-lookup"><span data-stu-id="1303b-106">The following sections describe attributes, child elements, and parent elements.</span></span>  
   
-### <a name="attributes"></a><span data-ttu-id="78309-106">Атрибуты</span><span class="sxs-lookup"><span data-stu-id="78309-106">Attributes</span></span>  
+### <a name="attributes"></a><span data-ttu-id="1303b-107">Атрибуты</span><span class="sxs-lookup"><span data-stu-id="1303b-107">Attributes</span></span>  
   
-|<span data-ttu-id="78309-107">Атрибут</span><span class="sxs-lookup"><span data-stu-id="78309-107">Attribute</span></span>|<span data-ttu-id="78309-108">Описание</span><span class="sxs-lookup"><span data-stu-id="78309-108">Description</span></span>|  
+|<span data-ttu-id="1303b-108">Атрибут</span><span class="sxs-lookup"><span data-stu-id="1303b-108">Attribute</span></span>|<span data-ttu-id="1303b-109">Описание</span><span class="sxs-lookup"><span data-stu-id="1303b-109">Description</span></span>|  
 |---------------|-----------------|  
-|`url`|<span data-ttu-id="78309-109">Строка, задающая универсальный код ресурса (URI), определяющий расположение примечания о конфиденциальности.</span><span class="sxs-lookup"><span data-stu-id="78309-109">A string that specifies the URI at which the privacy notice is located.</span></span>|  
-|`version`|<span data-ttu-id="78309-110">Целое число, определяющее версию этого уведомления о конфиденциальности.</span><span class="sxs-lookup"><span data-stu-id="78309-110">An integer that specifies the version of this privacy notice.</span></span>|  
+|`url`|<span data-ttu-id="1303b-110">Строка, задающая универсальный код ресурса (URI), определяющий расположение примечания о конфиденциальности.</span><span class="sxs-lookup"><span data-stu-id="1303b-110">A string that specifies the URI at which the privacy notice is located.</span></span>|  
+|`version`|<span data-ttu-id="1303b-111">Целое число, определяющее версию этого уведомления о конфиденциальности.</span><span class="sxs-lookup"><span data-stu-id="1303b-111">An integer that specifies the version of this privacy notice.</span></span>|  
   
-### <a name="child-elements"></a><span data-ttu-id="78309-111">Дочерние элементы</span><span class="sxs-lookup"><span data-stu-id="78309-111">Child Elements</span></span>  
+### <a name="child-elements"></a><span data-ttu-id="1303b-112">Дочерние элементы</span><span class="sxs-lookup"><span data-stu-id="1303b-112">Child Elements</span></span>  
 
- <span data-ttu-id="78309-112">Отсутствует.</span><span class="sxs-lookup"><span data-stu-id="78309-112">None.</span></span>  
+ <span data-ttu-id="1303b-113">Отсутствует.</span><span class="sxs-lookup"><span data-stu-id="1303b-113">None.</span></span>  
   
-### <a name="parent-elements"></a><span data-ttu-id="78309-113">Родительские элементы</span><span class="sxs-lookup"><span data-stu-id="78309-113">Parent Elements</span></span>  
+### <a name="parent-elements"></a><span data-ttu-id="1303b-114">Родительские элементы</span><span class="sxs-lookup"><span data-stu-id="1303b-114">Parent Elements</span></span>  
   
-|<span data-ttu-id="78309-114">Элемент</span><span class="sxs-lookup"><span data-stu-id="78309-114">Element</span></span>|<span data-ttu-id="78309-115">Описание</span><span class="sxs-lookup"><span data-stu-id="78309-115">Description</span></span>|  
+|<span data-ttu-id="1303b-115">Элемент</span><span class="sxs-lookup"><span data-stu-id="1303b-115">Element</span></span>|<span data-ttu-id="1303b-116">Описание</span><span class="sxs-lookup"><span data-stu-id="1303b-116">Description</span></span>|  
 |-------------|-----------------|  
-|[\<binding>](bindings.md)|<span data-ttu-id="78309-116">Определяет все возможности пользовательской привязки.</span><span class="sxs-lookup"><span data-stu-id="78309-116">Defines all binding capabilities of the custom binding.</span></span>|  
+|[\<binding>](bindings.md)|<span data-ttu-id="1303b-117">Определяет все возможности пользовательской привязки.</span><span class="sxs-lookup"><span data-stu-id="1303b-117">Defines all binding capabilities of the custom binding.</span></span>|  
   
-## <a name="see-also"></a><span data-ttu-id="78309-117">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="78309-117">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1303b-118">См. также</span><span class="sxs-lookup"><span data-stu-id="1303b-118">See also</span></span>
 
 - <xref:System.ServiceModel.Configuration.PrivacyNoticeElement>
 - <xref:System.ServiceModel.Channels.PrivacyNoticeBindingElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>
-- [<span data-ttu-id="78309-118">Привязки</span><span class="sxs-lookup"><span data-stu-id="78309-118">Bindings</span></span>](../../../wcf/bindings.md)
-- [<span data-ttu-id="78309-119">Расширение привязок</span><span class="sxs-lookup"><span data-stu-id="78309-119">Extending Bindings</span></span>](../../../wcf/extending/extending-bindings.md)
-- [<span data-ttu-id="78309-120">Пользовательские привязки</span><span class="sxs-lookup"><span data-stu-id="78309-120">Custom Bindings</span></span>](../../../wcf/extending/custom-bindings.md)
+- [<span data-ttu-id="1303b-119">Привязки</span><span class="sxs-lookup"><span data-stu-id="1303b-119">Bindings</span></span>](../../../wcf/bindings.md)
+- [<span data-ttu-id="1303b-120">Расширение привязок</span><span class="sxs-lookup"><span data-stu-id="1303b-120">Extending Bindings</span></span>](../../../wcf/extending/extending-bindings.md)
+- [<span data-ttu-id="1303b-121">Пользовательские привязки</span><span class="sxs-lookup"><span data-stu-id="1303b-121">Custom Bindings</span></span>](../../../wcf/extending/custom-bindings.md)
 - [\<customBinding>](custombinding.md)
