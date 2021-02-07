@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о методе ImportTypes
 title: Метод ImportTypes
 ms.date: 03/30/2017
 api_name:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 ms.assetid: 351d4b4c-c939-486d-9471-51914a55f471
 topic_type:
 - apiref
-ms.openlocfilehash: 762f78900add70238971978ceecda089d0c725ce
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9a30c735ca2c9ad0f945628c3de1eb1bb56efe2c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95705115"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99662628"
 ---
-# <a name="importtypes-method"></a><span data-ttu-id="56259-102">Метод ImportTypes</span><span class="sxs-lookup"><span data-stu-id="56259-102">ImportTypes Method</span></span>
+# <a name="importtypes-method"></a><span data-ttu-id="8e17d-103">Метод ImportTypes</span><span class="sxs-lookup"><span data-stu-id="8e17d-103">ImportTypes Method</span></span>
 
-<span data-ttu-id="56259-103">Инициирует импорт типов из каждой области, импортированной с помощью [метода ImportFile](importfile-method.md).</span><span class="sxs-lookup"><span data-stu-id="56259-103">Initiates the importing of types from each scope imported via [ImportFile Method](importfile-method.md).</span></span>  
+<span data-ttu-id="8e17d-104">Инициирует импорт типов из каждой области, импортированной с помощью [метода ImportFile](importfile-method.md).</span><span class="sxs-lookup"><span data-stu-id="8e17d-104">Initiates the importing of types from each scope imported via [ImportFile Method](importfile-method.md).</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="56259-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="56259-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="8e17d-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="8e17d-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT ImportTypes(  
@@ -38,36 +39,36 @@ HRESULT ImportTypes(
 ) PURE;  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="56259-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="56259-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="8e17d-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="8e17d-106">Parameters</span></span>  
 
  `AssemblyID`  
- <span data-ttu-id="56259-106">Идентификатор сборки, в которую необходимо выполнить импорт.</span><span class="sxs-lookup"><span data-stu-id="56259-106">ID of the assembly to import to.</span></span>  
+ <span data-ttu-id="8e17d-107">Идентификатор сборки, в которую необходимо выполнить импорт.</span><span class="sxs-lookup"><span data-stu-id="8e17d-107">ID of the assembly to import to.</span></span>  
   
  `FileToken`  
- <span data-ttu-id="56259-107">Идентификатор файла, из которого необходимо выполнить импорт.</span><span class="sxs-lookup"><span data-stu-id="56259-107">ID of the file to import from.</span></span>  
+ <span data-ttu-id="8e17d-108">Идентификатор файла, из которого необходимо выполнить импорт.</span><span class="sxs-lookup"><span data-stu-id="8e17d-108">ID of the file to import from.</span></span>  
   
  `dwScope`  
- <span data-ttu-id="56259-108">Отсчитываемая от нуля область для импорта.</span><span class="sxs-lookup"><span data-stu-id="56259-108">Zero-based scope to import.</span></span>  
+ <span data-ttu-id="8e17d-109">Отсчитываемая от нуля область для импорта.</span><span class="sxs-lookup"><span data-stu-id="8e17d-109">Zero-based scope to import.</span></span>  
   
  `phEnum`  
- <span data-ttu-id="56259-109">Получает обработчики перечислителя для типов в этой области.</span><span class="sxs-lookup"><span data-stu-id="56259-109">Receives enumerator handle for the types in this scope.</span></span>  
+ <span data-ttu-id="8e17d-110">Получает обработчики перечислителя для типов в этой области.</span><span class="sxs-lookup"><span data-stu-id="8e17d-110">Receives enumerator handle for the types in this scope.</span></span>  
   
  `ppImportScope`  
- <span data-ttu-id="56259-110">При необходимости получает интерфейс [интерфейса IMetaDataImport](../metadata/imetadataimport-interface.md) .</span><span class="sxs-lookup"><span data-stu-id="56259-110">Optionally receives [IMetaDataImport Interface](../metadata/imetadataimport-interface.md) interface.</span></span>  
+ <span data-ttu-id="8e17d-111">При необходимости получает интерфейс [интерфейса IMetaDataImport](../metadata/imetadataimport-interface.md) .</span><span class="sxs-lookup"><span data-stu-id="8e17d-111">Optionally receives [IMetaDataImport Interface](../metadata/imetadataimport-interface.md) interface.</span></span>  
   
  `pdwCountOfTypes`  
- <span data-ttu-id="56259-111">При необходимости получает число типов в указанной области.</span><span class="sxs-lookup"><span data-stu-id="56259-111">Optionally receives count of types in the indicated scope.</span></span>  
+ <span data-ttu-id="8e17d-112">При необходимости получает число типов в указанной области.</span><span class="sxs-lookup"><span data-stu-id="8e17d-112">Optionally receives count of types in the indicated scope.</span></span>  
   
-## <a name="return-value"></a><span data-ttu-id="56259-112">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="56259-112">Return Value</span></span>  
+## <a name="return-value"></a><span data-ttu-id="8e17d-113">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="8e17d-113">Return Value</span></span>  
 
- <span data-ttu-id="56259-113">Возвращает S_OK, если метод завершается с ошибкой.</span><span class="sxs-lookup"><span data-stu-id="56259-113">Returns S_OK if the method succeeds.</span></span>  
+ <span data-ttu-id="8e17d-114">Возвращает S_OK, если метод завершается с ошибкой.</span><span class="sxs-lookup"><span data-stu-id="8e17d-114">Returns S_OK if the method succeeds.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="56259-114">Требования</span><span class="sxs-lookup"><span data-stu-id="56259-114">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="8e17d-115">Требования</span><span class="sxs-lookup"><span data-stu-id="8e17d-115">Requirements</span></span>  
 
- <span data-ttu-id="56259-115">Требуется ALink. h</span><span class="sxs-lookup"><span data-stu-id="56259-115">Requires alink.h</span></span>  
+ <span data-ttu-id="8e17d-116">Требуется ALink. h</span><span class="sxs-lookup"><span data-stu-id="8e17d-116">Requires alink.h</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="56259-116">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="56259-116">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8e17d-117">См. также</span><span class="sxs-lookup"><span data-stu-id="8e17d-117">See also</span></span>
 
-- [<span data-ttu-id="56259-117">Интерфейс IALink</span><span class="sxs-lookup"><span data-stu-id="56259-117">IALink Interface</span></span>](ialink-interface.md)
-- [<span data-ttu-id="56259-118">Интерфейс IALink2</span><span class="sxs-lookup"><span data-stu-id="56259-118">IALink2 Interface</span></span>](ialink2-interface.md)
-- [<span data-ttu-id="56259-119">API ALink</span><span class="sxs-lookup"><span data-stu-id="56259-119">ALink API</span></span>](index.md)
+- [<span data-ttu-id="8e17d-118">Интерфейс IALink</span><span class="sxs-lookup"><span data-stu-id="8e17d-118">IALink Interface</span></span>](ialink-interface.md)
+- [<span data-ttu-id="8e17d-119">Интерфейс IALink2</span><span class="sxs-lookup"><span data-stu-id="8e17d-119">IALink2 Interface</span></span>](ialink2-interface.md)
+- [<span data-ttu-id="8e17d-120">API ALink</span><span class="sxs-lookup"><span data-stu-id="8e17d-120">ALink API</span></span>](index.md)
