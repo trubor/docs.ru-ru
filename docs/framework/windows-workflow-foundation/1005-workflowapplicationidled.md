@@ -1,36 +1,37 @@
 ---
+description: 'Дополнительные сведения: 1005-Воркфловаппликатионидлед'
 title: 1005 - WorkflowApplicationIdled
 ms.date: 03/30/2017
 ms.assetid: 74d77dfa-f20d-4fe9-a6ae-e6d1b5fe4182
-ms.openlocfilehash: 3b7210246b7fb754145c8aa6128da3183cea9f91
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ee8d0b7ff2155333213a718a04c3966024fda89d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96239865"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755607"
 ---
-# <a name="1005---workflowapplicationidled"></a><span data-ttu-id="4d3ed-102">1005 - WorkflowApplicationIdled</span><span class="sxs-lookup"><span data-stu-id="4d3ed-102">1005 - WorkflowApplicationIdled</span></span>
+# <a name="1005---workflowapplicationidled"></a><span data-ttu-id="165dd-103">1005 - WorkflowApplicationIdled</span><span class="sxs-lookup"><span data-stu-id="165dd-103">1005 - WorkflowApplicationIdled</span></span>
 
-## <a name="properties"></a><span data-ttu-id="4d3ed-103">Свойства</span><span class="sxs-lookup"><span data-stu-id="4d3ed-103">Properties</span></span>  
+## <a name="properties"></a><span data-ttu-id="165dd-104">Свойства</span><span class="sxs-lookup"><span data-stu-id="165dd-104">Properties</span></span>  
   
 |||  
 |-|-|  
-|<span data-ttu-id="4d3ed-104">ID</span><span class="sxs-lookup"><span data-stu-id="4d3ed-104">ID</span></span>|<span data-ttu-id="4d3ed-105">1005</span><span class="sxs-lookup"><span data-stu-id="4d3ed-105">1005</span></span>|  
-|<span data-ttu-id="4d3ed-106">Keywords</span><span class="sxs-lookup"><span data-stu-id="4d3ed-106">Keywords</span></span>|<span data-ttu-id="4d3ed-107">WFRuntime</span><span class="sxs-lookup"><span data-stu-id="4d3ed-107">WFRuntime</span></span>|  
-|<span data-ttu-id="4d3ed-108">Level</span><span class="sxs-lookup"><span data-stu-id="4d3ed-108">Level</span></span>|<span data-ttu-id="4d3ed-109">Сведения</span><span class="sxs-lookup"><span data-stu-id="4d3ed-109">Information</span></span>|  
-|<span data-ttu-id="4d3ed-110">Канал</span><span class="sxs-lookup"><span data-stu-id="4d3ed-110">Channel</span></span>|<span data-ttu-id="4d3ed-111">Microsoft-Windows-Application Server-Applications/Debug</span><span class="sxs-lookup"><span data-stu-id="4d3ed-111">Microsoft-Windows-Application Server-Applications/Debug</span></span>|  
+|<span data-ttu-id="165dd-105">ID</span><span class="sxs-lookup"><span data-stu-id="165dd-105">ID</span></span>|<span data-ttu-id="165dd-106">1005</span><span class="sxs-lookup"><span data-stu-id="165dd-106">1005</span></span>|  
+|<span data-ttu-id="165dd-107">Keywords</span><span class="sxs-lookup"><span data-stu-id="165dd-107">Keywords</span></span>|<span data-ttu-id="165dd-108">WFRuntime</span><span class="sxs-lookup"><span data-stu-id="165dd-108">WFRuntime</span></span>|  
+|<span data-ttu-id="165dd-109">Уровень</span><span class="sxs-lookup"><span data-stu-id="165dd-109">Level</span></span>|<span data-ttu-id="165dd-110">Сведения</span><span class="sxs-lookup"><span data-stu-id="165dd-110">Information</span></span>|  
+|<span data-ttu-id="165dd-111">Канал</span><span class="sxs-lookup"><span data-stu-id="165dd-111">Channel</span></span>|<span data-ttu-id="165dd-112">Microsoft-Windows-Application Server-Applications/Debug</span><span class="sxs-lookup"><span data-stu-id="165dd-112">Microsoft-Windows-Application Server-Applications/Debug</span></span>|  
   
-## <a name="description"></a><span data-ttu-id="4d3ed-112">Описание</span><span class="sxs-lookup"><span data-stu-id="4d3ed-112">Description</span></span>  
+## <a name="description"></a><span data-ttu-id="165dd-113">Описание</span><span class="sxs-lookup"><span data-stu-id="165dd-113">Description</span></span>  
 
- <span data-ttu-id="4d3ed-113">Указывает, что приложение рабочего процесса простаивало.</span><span class="sxs-lookup"><span data-stu-id="4d3ed-113">Indicates a workflow application has idled.</span></span>  
+ <span data-ttu-id="165dd-114">Указывает, что приложение рабочего процесса простаивало.</span><span class="sxs-lookup"><span data-stu-id="165dd-114">Indicates a workflow application has idled.</span></span>  
   
-## <a name="message"></a><span data-ttu-id="4d3ed-114">Сообщение</span><span class="sxs-lookup"><span data-stu-id="4d3ed-114">Message</span></span>  
+## <a name="message"></a><span data-ttu-id="165dd-115">Сообщение</span><span class="sxs-lookup"><span data-stu-id="165dd-115">Message</span></span>  
 
- <span data-ttu-id="4d3ed-115">WorkflowApplication с идентификатором «%1» перешло в состояние простоя.</span><span class="sxs-lookup"><span data-stu-id="4d3ed-115">WorkflowApplication Id: '%1' went idle.</span></span>  
+ <span data-ttu-id="165dd-116">WorkflowApplication с идентификатором «%1» перешло в состояние простоя.</span><span class="sxs-lookup"><span data-stu-id="165dd-116">WorkflowApplication Id: '%1' went idle.</span></span>  
   
-## <a name="details"></a><span data-ttu-id="4d3ed-116">Сведения</span><span class="sxs-lookup"><span data-stu-id="4d3ed-116">Details</span></span>  
+## <a name="details"></a><span data-ttu-id="165dd-117">Сведения</span><span class="sxs-lookup"><span data-stu-id="165dd-117">Details</span></span>  
   
-|<span data-ttu-id="4d3ed-117">Имя элемента данных</span><span class="sxs-lookup"><span data-stu-id="4d3ed-117">Data Item Name</span></span>|<span data-ttu-id="4d3ed-118">Тип элемента данных</span><span class="sxs-lookup"><span data-stu-id="4d3ed-118">Data Item Type</span></span>|<span data-ttu-id="4d3ed-119">Описание</span><span class="sxs-lookup"><span data-stu-id="4d3ed-119">Description</span></span>|  
+|<span data-ttu-id="165dd-118">Имя элемента данных</span><span class="sxs-lookup"><span data-stu-id="165dd-118">Data Item Name</span></span>|<span data-ttu-id="165dd-119">Тип элемента данных</span><span class="sxs-lookup"><span data-stu-id="165dd-119">Data Item Type</span></span>|<span data-ttu-id="165dd-120">Описание</span><span class="sxs-lookup"><span data-stu-id="165dd-120">Description</span></span>|  
 |--------------------|--------------------|-----------------|  
-|<span data-ttu-id="4d3ed-120">WorkflowInstanceId</span><span class="sxs-lookup"><span data-stu-id="4d3ed-120">WorkflowInstanceId</span></span>|`xs:string`|<span data-ttu-id="4d3ed-121">Идентификатор приложения рабочего процесса</span><span class="sxs-lookup"><span data-stu-id="4d3ed-121">The workflow application id</span></span>|  
-|<span data-ttu-id="4d3ed-122">Домен приложения</span><span class="sxs-lookup"><span data-stu-id="4d3ed-122">AppDomain</span></span>|`xs:string`|<span data-ttu-id="4d3ed-123">Строка, возвращаемая AppDomain.CurrentDomain.FriendlyName.</span><span class="sxs-lookup"><span data-stu-id="4d3ed-123">The string returned by AppDomain.CurrentDomain.FriendlyName.</span></span>|
+|<span data-ttu-id="165dd-121">WorkflowInstanceId</span><span class="sxs-lookup"><span data-stu-id="165dd-121">WorkflowInstanceId</span></span>|`xs:string`|<span data-ttu-id="165dd-122">Идентификатор приложения рабочего процесса</span><span class="sxs-lookup"><span data-stu-id="165dd-122">The workflow application id</span></span>|  
+|<span data-ttu-id="165dd-123">Домен приложения</span><span class="sxs-lookup"><span data-stu-id="165dd-123">AppDomain</span></span>|`xs:string`|<span data-ttu-id="165dd-124">Строка, возвращаемая AppDomain.CurrentDomain.FriendlyName.</span><span class="sxs-lookup"><span data-stu-id="165dd-124">The string returned by AppDomain.CurrentDomain.FriendlyName.</span></span>|

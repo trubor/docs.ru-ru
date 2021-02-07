@@ -1,36 +1,37 @@
 ---
+description: 'Дополнительные сведения: 2026-Компилевбекспрессионстарт'
 title: 2026 - CompileVbExpressionStart
 ms.date: 03/30/2017
 ms.assetid: daad57eb-8198-49b5-9920-aa0e7428ccf1
-ms.openlocfilehash: b264066043716e533f6478deb393b587a69e087c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 45d1c236c8f0abe938a9a985106eda6f22b14ca8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96294551"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755412"
 ---
-# <a name="2026---compilevbexpressionstart"></a><span data-ttu-id="e8e1d-102">2026 - CompileVbExpressionStart</span><span class="sxs-lookup"><span data-stu-id="e8e1d-102">2026 - CompileVbExpressionStart</span></span>
+# <a name="2026---compilevbexpressionstart"></a><span data-ttu-id="4324c-103">2026 - CompileVbExpressionStart</span><span class="sxs-lookup"><span data-stu-id="4324c-103">2026 - CompileVbExpressionStart</span></span>
 
-## <a name="properties"></a><span data-ttu-id="e8e1d-103">Свойства</span><span class="sxs-lookup"><span data-stu-id="e8e1d-103">Properties</span></span>  
+## <a name="properties"></a><span data-ttu-id="4324c-104">Свойства</span><span class="sxs-lookup"><span data-stu-id="4324c-104">Properties</span></span>  
   
 |||  
 |-|-|  
-|<span data-ttu-id="e8e1d-104">ID</span><span class="sxs-lookup"><span data-stu-id="e8e1d-104">ID</span></span>|<span data-ttu-id="e8e1d-105">2026</span><span class="sxs-lookup"><span data-stu-id="e8e1d-105">2026</span></span>|  
-|<span data-ttu-id="e8e1d-106">Keywords</span><span class="sxs-lookup"><span data-stu-id="e8e1d-106">Keywords</span></span>|<span data-ttu-id="e8e1d-107">WFRuntime</span><span class="sxs-lookup"><span data-stu-id="e8e1d-107">WFRuntime</span></span>|  
-|<span data-ttu-id="e8e1d-108">Level</span><span class="sxs-lookup"><span data-stu-id="e8e1d-108">Level</span></span>|<span data-ttu-id="e8e1d-109">Подробный</span><span class="sxs-lookup"><span data-stu-id="e8e1d-109">Verbose</span></span>|  
-|<span data-ttu-id="e8e1d-110">Канал</span><span class="sxs-lookup"><span data-stu-id="e8e1d-110">Channel</span></span>|<span data-ttu-id="e8e1d-111">Microsoft-Windows-Application Server-Applications/Debug</span><span class="sxs-lookup"><span data-stu-id="e8e1d-111">Microsoft-Windows-Application Server-Applications/Debug</span></span>|  
+|<span data-ttu-id="4324c-105">ID</span><span class="sxs-lookup"><span data-stu-id="4324c-105">ID</span></span>|<span data-ttu-id="4324c-106">2026</span><span class="sxs-lookup"><span data-stu-id="4324c-106">2026</span></span>|  
+|<span data-ttu-id="4324c-107">Keywords</span><span class="sxs-lookup"><span data-stu-id="4324c-107">Keywords</span></span>|<span data-ttu-id="4324c-108">WFRuntime</span><span class="sxs-lookup"><span data-stu-id="4324c-108">WFRuntime</span></span>|  
+|<span data-ttu-id="4324c-109">Level</span><span class="sxs-lookup"><span data-stu-id="4324c-109">Level</span></span>|<span data-ttu-id="4324c-110">Подробный</span><span class="sxs-lookup"><span data-stu-id="4324c-110">Verbose</span></span>|  
+|<span data-ttu-id="4324c-111">Канал</span><span class="sxs-lookup"><span data-stu-id="4324c-111">Channel</span></span>|<span data-ttu-id="4324c-112">Microsoft-Windows-Application Server-Applications/Debug</span><span class="sxs-lookup"><span data-stu-id="4324c-112">Microsoft-Windows-Application Server-Applications/Debug</span></span>|  
   
-## <a name="description"></a><span data-ttu-id="e8e1d-112">Описание</span><span class="sxs-lookup"><span data-stu-id="e8e1d-112">Description</span></span>  
+## <a name="description"></a><span data-ttu-id="4324c-113">Описание</span><span class="sxs-lookup"><span data-stu-id="4324c-113">Description</span></span>  
 
- <span data-ttu-id="e8e1d-113">Указывает начало компиляции Visual Basicного выражения.</span><span class="sxs-lookup"><span data-stu-id="e8e1d-113">Indicates the start of a Visual Basic expression compilation.</span></span>  
+ <span data-ttu-id="4324c-114">Указывает начало компиляции Visual Basicного выражения.</span><span class="sxs-lookup"><span data-stu-id="4324c-114">Indicates the start of a Visual Basic expression compilation.</span></span>  
   
-## <a name="message"></a><span data-ttu-id="e8e1d-114">Сообщение</span><span class="sxs-lookup"><span data-stu-id="e8e1d-114">Message</span></span>  
+## <a name="message"></a><span data-ttu-id="4324c-115">Сообщение</span><span class="sxs-lookup"><span data-stu-id="4324c-115">Message</span></span>  
 
- <span data-ttu-id="e8e1d-115">Компиляция выражения Visual Basic "%1"</span><span class="sxs-lookup"><span data-stu-id="e8e1d-115">Compiling Visual Basic expression '%1'</span></span>  
+ <span data-ttu-id="4324c-116">Компиляция выражения Visual Basic "%1"</span><span class="sxs-lookup"><span data-stu-id="4324c-116">Compiling Visual Basic expression '%1'</span></span>  
   
-## <a name="details"></a><span data-ttu-id="e8e1d-116">Сведения</span><span class="sxs-lookup"><span data-stu-id="e8e1d-116">Details</span></span>  
+## <a name="details"></a><span data-ttu-id="4324c-117">Сведения</span><span class="sxs-lookup"><span data-stu-id="4324c-117">Details</span></span>  
   
-|<span data-ttu-id="e8e1d-117">Имя элемента данных</span><span class="sxs-lookup"><span data-stu-id="e8e1d-117">Data Item Name</span></span>|<span data-ttu-id="e8e1d-118">Тип элемента данных</span><span class="sxs-lookup"><span data-stu-id="e8e1d-118">Data Item Type</span></span>|<span data-ttu-id="e8e1d-119">Описание</span><span class="sxs-lookup"><span data-stu-id="e8e1d-119">Description</span></span>|  
+|<span data-ttu-id="4324c-118">Имя элемента данных</span><span class="sxs-lookup"><span data-stu-id="4324c-118">Data Item Name</span></span>|<span data-ttu-id="4324c-119">Тип элемента данных</span><span class="sxs-lookup"><span data-stu-id="4324c-119">Data Item Type</span></span>|<span data-ttu-id="4324c-120">Описание</span><span class="sxs-lookup"><span data-stu-id="4324c-120">Description</span></span>|  
 |--------------------|--------------------|-----------------|  
-|<span data-ttu-id="e8e1d-120">Выражение</span><span class="sxs-lookup"><span data-stu-id="e8e1d-120">Expression</span></span>|<span data-ttu-id="e8e1d-121">xs:string</span><span class="sxs-lookup"><span data-stu-id="e8e1d-121">xs:string</span></span>|<span data-ttu-id="e8e1d-122">Выражение VisualBasic, предназначенное для компиляции.</span><span class="sxs-lookup"><span data-stu-id="e8e1d-122">The VisualBasic expression to compile.</span></span>|  
-|<span data-ttu-id="e8e1d-123">Домен приложения</span><span class="sxs-lookup"><span data-stu-id="e8e1d-123">AppDomain</span></span>|<span data-ttu-id="e8e1d-124">xs:string</span><span class="sxs-lookup"><span data-stu-id="e8e1d-124">xs:string</span></span>|<span data-ttu-id="e8e1d-125">Строка, возвращаемая AppDomain.CurrentDomain.FriendlyName.</span><span class="sxs-lookup"><span data-stu-id="e8e1d-125">The string returned by AppDomain.CurrentDomain.FriendlyName.</span></span>|
+|<span data-ttu-id="4324c-121">Выражение</span><span class="sxs-lookup"><span data-stu-id="4324c-121">Expression</span></span>|<span data-ttu-id="4324c-122">xs:string</span><span class="sxs-lookup"><span data-stu-id="4324c-122">xs:string</span></span>|<span data-ttu-id="4324c-123">Выражение VisualBasic, предназначенное для компиляции.</span><span class="sxs-lookup"><span data-stu-id="4324c-123">The VisualBasic expression to compile.</span></span>|  
+|<span data-ttu-id="4324c-124">Домен приложения</span><span class="sxs-lookup"><span data-stu-id="4324c-124">AppDomain</span></span>|<span data-ttu-id="4324c-125">xs:string</span><span class="sxs-lookup"><span data-stu-id="4324c-125">xs:string</span></span>|<span data-ttu-id="4324c-126">Строка, возвращаемая AppDomain.CurrentDomain.FriendlyName.</span><span class="sxs-lookup"><span data-stu-id="4324c-126">The string returned by AppDomain.CurrentDomain.FriendlyName.</span></span>|
