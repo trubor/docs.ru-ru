@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorProfilerCallback2:: Хандледестройед'
 title: Метод ICorProfilerCallback2::HandleDestroyed
 ms.date: 03/30/2017
 api_name:
@@ -15,40 +16,40 @@ helpviewer_keywords:
 ms.assetid: ab4f4bbd-40c7-4667-bfde-60cd73803110
 topic_type:
 - apiref
-ms.openlocfilehash: 06064d82e5f572de08e56fd83923134a94d5e77b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d583a2170efbb4ebe72d7eacdd60af1a089a518f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731934"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99705603"
 ---
-# <a name="icorprofilercallback2handledestroyed-method"></a><span data-ttu-id="934e5-102">Метод ICorProfilerCallback2::HandleDestroyed</span><span class="sxs-lookup"><span data-stu-id="934e5-102">ICorProfilerCallback2::HandleDestroyed Method</span></span>
+# <a name="icorprofilercallback2handledestroyed-method"></a><span data-ttu-id="76488-103">Метод ICorProfilerCallback2::HandleDestroyed</span><span class="sxs-lookup"><span data-stu-id="76488-103">ICorProfilerCallback2::HandleDestroyed Method</span></span>
 
-<span data-ttu-id="934e5-103">Уведомляет профилировщик кода о том, что был уничтожен обработчик сборки мусора.</span><span class="sxs-lookup"><span data-stu-id="934e5-103">Notifies the code profiler that a garbage collection handle has been destroyed.</span></span>  
+<span data-ttu-id="76488-104">Уведомляет профилировщик кода о том, что был уничтожен обработчик сборки мусора.</span><span class="sxs-lookup"><span data-stu-id="76488-104">Notifies the code profiler that a garbage collection handle has been destroyed.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="934e5-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="934e5-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="76488-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="76488-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT HandleDestroyed(  
     [in] GCHandleID handleId);  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="934e5-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="934e5-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="76488-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="76488-106">Parameters</span></span>  
 
  `handleId`  
- <span data-ttu-id="934e5-106">окне Идентификатор обработчика для сборки мусора.</span><span class="sxs-lookup"><span data-stu-id="934e5-106">[in] The ID of the handle for the garbage collection.</span></span>  
+ <span data-ttu-id="76488-107">окне Идентификатор обработчика для сборки мусора.</span><span class="sxs-lookup"><span data-stu-id="76488-107">[in] The ID of the handle for the garbage collection.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="934e5-107">Требования</span><span class="sxs-lookup"><span data-stu-id="934e5-107">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="76488-108">Требования</span><span class="sxs-lookup"><span data-stu-id="76488-108">Requirements</span></span>  
 
- <span data-ttu-id="934e5-108">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="934e5-108">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="76488-109">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="76488-109">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="934e5-109">**Заголовок:** CorProf.idl, CorProf.h</span><span class="sxs-lookup"><span data-stu-id="934e5-109">**Header:** CorProf.idl, CorProf.h</span></span>  
+ <span data-ttu-id="76488-110">**Заголовок:** CorProf.idl, CorProf.h</span><span class="sxs-lookup"><span data-stu-id="76488-110">**Header:** CorProf.idl, CorProf.h</span></span>  
   
- <span data-ttu-id="934e5-110">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="934e5-110">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="76488-111">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="76488-111">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="934e5-111">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="934e5-111">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="76488-112">**Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="76488-112">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="934e5-112">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="934e5-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="76488-113">См. также</span><span class="sxs-lookup"><span data-stu-id="76488-113">See also</span></span>
 
-- [<span data-ttu-id="934e5-113">Интерфейс ICorProfilerCallback</span><span class="sxs-lookup"><span data-stu-id="934e5-113">ICorProfilerCallback Interface</span></span>](icorprofilercallback-interface.md)
-- [<span data-ttu-id="934e5-114">Интерфейс ICorProfilerCallback2</span><span class="sxs-lookup"><span data-stu-id="934e5-114">ICorProfilerCallback2 Interface</span></span>](icorprofilercallback2-interface.md)
+- [<span data-ttu-id="76488-114">Интерфейс ICorProfilerCallback</span><span class="sxs-lookup"><span data-stu-id="76488-114">ICorProfilerCallback Interface</span></span>](icorprofilercallback-interface.md)
+- [<span data-ttu-id="76488-115">Интерфейс ICorProfilerCallback2</span><span class="sxs-lookup"><span data-stu-id="76488-115">ICorProfilerCallback2 Interface</span></span>](icorprofilercallback2-interface.md)
