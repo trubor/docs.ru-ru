@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IMetaDataEmit2:: Жетделтасавесизе'
 title: Метод IMetaDataEmit2::GetDeltaSaveSize
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 036db5e7-8211-4645-9a34-03d1a89be955
 topic_type:
 - apiref
-ms.openlocfilehash: 36021333c1efb61e23c16782d8ad721de62c2643
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d7b5eae7f89a5465876083c5cc8021330d3c59de
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95674345"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99745766"
 ---
-# <a name="imetadataemit2getdeltasavesize-method"></a><span data-ttu-id="5bad9-102">Метод IMetaDataEmit2::GetDeltaSaveSize</span><span class="sxs-lookup"><span data-stu-id="5bad9-102">IMetaDataEmit2::GetDeltaSaveSize Method</span></span>
+# <a name="imetadataemit2getdeltasavesize-method"></a><span data-ttu-id="c587b-103">Метод IMetaDataEmit2::GetDeltaSaveSize</span><span class="sxs-lookup"><span data-stu-id="c587b-103">IMetaDataEmit2::GetDeltaSaveSize Method</span></span>
 
-<span data-ttu-id="5bad9-103">Возвращает значение, указывающее на изменение размера метаданных, полученное в результате текущего сеанса "изменить и продолжить".</span><span class="sxs-lookup"><span data-stu-id="5bad9-103">Gets a value indicating any change in metadata size that results from the current edit-and-continue session.</span></span>  
+<span data-ttu-id="c587b-104">Возвращает значение, указывающее на изменение размера метаданных, полученное в результате текущего сеанса "изменить и продолжить".</span><span class="sxs-lookup"><span data-stu-id="c587b-104">Gets a value indicating any change in metadata size that results from the current edit-and-continue session.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="5bad9-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="5bad9-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="c587b-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="c587b-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetDeltaSaveSize (  
@@ -35,25 +36,25 @@ HRESULT GetDeltaSaveSize (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="5bad9-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="5bad9-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="c587b-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="c587b-106">Parameters</span></span>  
 
  `fSave`  
- <span data-ttu-id="5bad9-106">окне Одно из значений [корсавесизе](corsavesize-enumeration.md) , указывающее требуемый уровень точности.</span><span class="sxs-lookup"><span data-stu-id="5bad9-106">[in] One of the [CorSaveSize](corsavesize-enumeration.md) values, indicating the level of precision desired.</span></span> <span data-ttu-id="5bad9-107">Для .NET Framework версии 2,0 этот параметр игнорируется.</span><span class="sxs-lookup"><span data-stu-id="5bad9-107">For the .NET Framework version 2.0, this parameter is ignored.</span></span>  
+ <span data-ttu-id="c587b-107">окне Одно из значений [корсавесизе](corsavesize-enumeration.md) , указывающее требуемый уровень точности.</span><span class="sxs-lookup"><span data-stu-id="c587b-107">[in] One of the [CorSaveSize](corsavesize-enumeration.md) values, indicating the level of precision desired.</span></span> <span data-ttu-id="c587b-108">Для платформа .NET Framework версии 2,0 этот параметр игнорируется.</span><span class="sxs-lookup"><span data-stu-id="c587b-108">For the .NET Framework version 2.0, this parameter is ignored.</span></span>  
   
  `pdwSaveSize`  
- <span data-ttu-id="5bad9-108">заполняет Изменение размера метаданных.</span><span class="sxs-lookup"><span data-stu-id="5bad9-108">[out] The change in the size of the metadata.</span></span>  
+ <span data-ttu-id="c587b-109">заполняет Изменение размера метаданных.</span><span class="sxs-lookup"><span data-stu-id="c587b-109">[out] The change in the size of the metadata.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="5bad9-109">Требования</span><span class="sxs-lookup"><span data-stu-id="5bad9-109">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="c587b-110">Требования</span><span class="sxs-lookup"><span data-stu-id="c587b-110">Requirements</span></span>  
 
- <span data-ttu-id="5bad9-110">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="5bad9-110">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="c587b-111">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="c587b-111">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="5bad9-111">**Заголовок:** COR. h</span><span class="sxs-lookup"><span data-stu-id="5bad9-111">**Header:** Cor.h</span></span>  
+ <span data-ttu-id="c587b-112">**Заголовок:** COR. h</span><span class="sxs-lookup"><span data-stu-id="c587b-112">**Header:** Cor.h</span></span>  
   
- <span data-ttu-id="5bad9-112">**Библиотека:** Используется в качестве ресурса в MsCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="5bad9-112">**Library:** Used as a resource in MsCorEE.dll</span></span>  
+ <span data-ttu-id="c587b-113">**Библиотека:** Используется в качестве ресурса в MsCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="c587b-113">**Library:** Used as a resource in MsCorEE.dll</span></span>  
   
- <span data-ttu-id="5bad9-113">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="5bad9-113">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="c587b-114">**Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="c587b-114">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="5bad9-114">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="5bad9-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c587b-115">См. также</span><span class="sxs-lookup"><span data-stu-id="c587b-115">See also</span></span>
 
-- [<span data-ttu-id="5bad9-115">Интерфейс IMetaDataEmit2</span><span class="sxs-lookup"><span data-stu-id="5bad9-115">IMetaDataEmit2 Interface</span></span>](imetadataemit2-interface.md)
-- [<span data-ttu-id="5bad9-116">Интерфейс IMetaDataEmit</span><span class="sxs-lookup"><span data-stu-id="5bad9-116">IMetaDataEmit Interface</span></span>](imetadataemit-interface.md)
+- [<span data-ttu-id="c587b-116">Интерфейс IMetaDataEmit2</span><span class="sxs-lookup"><span data-stu-id="c587b-116">IMetaDataEmit2 Interface</span></span>](imetadataemit2-interface.md)
+- [<span data-ttu-id="c587b-117">Интерфейс IMetaDataEmit</span><span class="sxs-lookup"><span data-stu-id="c587b-117">IMetaDataEmit Interface</span></span>](imetadataemit-interface.md)
