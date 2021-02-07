@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: метод ICorDebugCode:: Жетенкремапсекуенцепоинтс'
 title: Метод ICorDebugCode::GetEnCRemapSequencePoints
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 8463a98a-de4a-418e-beb0-9611885ae6b0
 topic_type:
 - apiref
-ms.openlocfilehash: 83801f7133df6ffb4bdf4a816142849f40baeb53
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: e9785460490aa602a49dff3ab972b409dde48cdc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73125650"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711171"
 ---
-# <a name="icordebugcodegetencremapsequencepoints-method"></a><span data-ttu-id="51f26-102">Метод ICorDebugCode::GetEnCRemapSequencePoints</span><span class="sxs-lookup"><span data-stu-id="51f26-102">ICorDebugCode::GetEnCRemapSequencePoints Method</span></span>
+# <a name="icordebugcodegetencremapsequencepoints-method"></a><span data-ttu-id="e072e-103">Метод ICorDebugCode::GetEnCRemapSequencePoints</span><span class="sxs-lookup"><span data-stu-id="e072e-103">ICorDebugCode::GetEnCRemapSequencePoints Method</span></span>
 
-<span data-ttu-id="51f26-103">Этот метод не реализован в текущей версии .NET Framework.</span><span class="sxs-lookup"><span data-stu-id="51f26-103">This method is not implemented in the current version of the .NET Framework.</span></span>
+<span data-ttu-id="e072e-104">Этот метод не реализован в текущей версии платформа .NET Framework.</span><span class="sxs-lookup"><span data-stu-id="e072e-104">This method is not implemented in the current version of the .NET Framework.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="51f26-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="51f26-104">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="e072e-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="e072e-105">Syntax</span></span>
 
 ```cpp
 HRESULT GetEnCRemapSequencePoints(

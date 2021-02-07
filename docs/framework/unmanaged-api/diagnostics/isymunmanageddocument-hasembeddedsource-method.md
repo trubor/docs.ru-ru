@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ISymUnmanagedDocument:: Хасембеддедсаурце'
 title: Метод ISymUnmanagedDocument::HasEmbeddedSource
 ms.date: 03/30/2017
 api_name:
@@ -15,33 +16,33 @@ helpviewer_keywords:
 ms.assetid: 385fc4d3-365c-4645-b7b0-6c4c5344b79f
 topic_type:
 - apiref
-ms.openlocfilehash: 09bc0f87cd35f12a15566fb525c2ce42990ac69b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fcab83fea65d9a9e483bff9d2d75714c233718eb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95688202"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99710131"
 ---
-# <a name="isymunmanageddocumenthasembeddedsource-method"></a><span data-ttu-id="6c8b9-102">Метод ISymUnmanagedDocument::HasEmbeddedSource</span><span class="sxs-lookup"><span data-stu-id="6c8b9-102">ISymUnmanagedDocument::HasEmbeddedSource Method</span></span>
+# <a name="isymunmanageddocumenthasembeddedsource-method"></a><span data-ttu-id="969f9-103">Метод ISymUnmanagedDocument::HasEmbeddedSource</span><span class="sxs-lookup"><span data-stu-id="969f9-103">ISymUnmanagedDocument::HasEmbeddedSource Method</span></span>
 
-<span data-ttu-id="6c8b9-103">Возвращает `true` , если документ имеет исходный код, внедренный в отладочные символы; в противном случае возвращает `false` .</span><span class="sxs-lookup"><span data-stu-id="6c8b9-103">Returns `true` if the document has source embedded in the debugging symbols; otherwise, returns `false`.</span></span>  
+<span data-ttu-id="969f9-104">Возвращает `true` , если документ имеет исходный код, внедренный в отладочные символы; в противном случае возвращает `false` .</span><span class="sxs-lookup"><span data-stu-id="969f9-104">Returns `true` if the document has source embedded in the debugging symbols; otherwise, returns `false`.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="6c8b9-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="6c8b9-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="969f9-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="969f9-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT HasEmbeddedSource(  
    [out, retval]  BOOL  *pRetVal);  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="6c8b9-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="6c8b9-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="969f9-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="969f9-106">Parameters</span></span>  
 
  `pRetVal`  
- <span data-ttu-id="6c8b9-106">заполняет Указатель на переменную, которая указывает, имеет ли документ исходный код, внедренный в отладочные символы.</span><span class="sxs-lookup"><span data-stu-id="6c8b9-106">[out] A pointer to a variable that indicates whether the document has source embedded in the debugging symbols.</span></span>  
+ <span data-ttu-id="969f9-107">заполняет Указатель на переменную, которая указывает, имеет ли документ исходный код, внедренный в отладочные символы.</span><span class="sxs-lookup"><span data-stu-id="969f9-107">[out] A pointer to a variable that indicates whether the document has source embedded in the debugging symbols.</span></span>  
   
-## <a name="return-value"></a><span data-ttu-id="6c8b9-107">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="6c8b9-107">Return Value</span></span>  
+## <a name="return-value"></a><span data-ttu-id="969f9-108">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="969f9-108">Return Value</span></span>  
 
- <span data-ttu-id="6c8b9-108">S_OK, если метод выполнен.</span><span class="sxs-lookup"><span data-stu-id="6c8b9-108">S_OK if the method succeeds.</span></span>  
+ <span data-ttu-id="969f9-109">S_OK, если метод выполнен.</span><span class="sxs-lookup"><span data-stu-id="969f9-109">S_OK if the method succeeds.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="6c8b9-109">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="6c8b9-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="969f9-110">См. также</span><span class="sxs-lookup"><span data-stu-id="969f9-110">See also</span></span>
 
-- [<span data-ttu-id="6c8b9-110">Интерфейс ISymUnmanagedDocument</span><span class="sxs-lookup"><span data-stu-id="6c8b9-110">ISymUnmanagedDocument Interface</span></span>](isymunmanageddocument-interface.md)
+- [<span data-ttu-id="969f9-111">Интерфейс ISymUnmanagedDocument</span><span class="sxs-lookup"><span data-stu-id="969f9-111">ISymUnmanagedDocument Interface</span></span>](isymunmanageddocument-interface.md)

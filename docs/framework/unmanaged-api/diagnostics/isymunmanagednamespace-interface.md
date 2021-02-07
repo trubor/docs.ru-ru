@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ISymUnmanagedNamespace'
 title: Интерфейс ISymUnmanagedNamespace
 ms.date: 03/30/2017
 api_name:
@@ -14,29 +15,29 @@ helpviewer_keywords:
 ms.assetid: d42bea4e-5848-4e43-a883-69af7a313ce9
 topic_type:
 - apiref
-ms.openlocfilehash: d9b295060426acd7f925bcf19c05ba216fdc2a4d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ff2cd2286ab006411a70ff9aa32c4f0265a73995
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95707902"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99709845"
 ---
-# <a name="isymunmanagednamespace-interface"></a><span data-ttu-id="44c72-102">Интерфейс ISymUnmanagedNamespace</span><span class="sxs-lookup"><span data-stu-id="44c72-102">ISymUnmanagedNamespace Interface</span></span>
+# <a name="isymunmanagednamespace-interface"></a><span data-ttu-id="8e67a-103">Интерфейс ISymUnmanagedNamespace</span><span class="sxs-lookup"><span data-stu-id="8e67a-103">ISymUnmanagedNamespace Interface</span></span>
 
-<span data-ttu-id="44c72-103">Представляет пространство имен.</span><span class="sxs-lookup"><span data-stu-id="44c72-103">Represents a namespace.</span></span>  
+<span data-ttu-id="8e67a-104">Представляет пространство имен.</span><span class="sxs-lookup"><span data-stu-id="8e67a-104">Represents a namespace.</span></span>  
   
-## <a name="methods"></a><span data-ttu-id="44c72-104">Методы</span><span class="sxs-lookup"><span data-stu-id="44c72-104">Methods</span></span>  
+## <a name="methods"></a><span data-ttu-id="8e67a-105">Методы</span><span class="sxs-lookup"><span data-stu-id="8e67a-105">Methods</span></span>  
   
-|<span data-ttu-id="44c72-105">Метод</span><span class="sxs-lookup"><span data-stu-id="44c72-105">Method</span></span>|<span data-ttu-id="44c72-106">Описание</span><span class="sxs-lookup"><span data-stu-id="44c72-106">Description</span></span>|  
+|<span data-ttu-id="8e67a-106">Метод</span><span class="sxs-lookup"><span data-stu-id="8e67a-106">Method</span></span>|<span data-ttu-id="8e67a-107">Описание</span><span class="sxs-lookup"><span data-stu-id="8e67a-107">Description</span></span>|  
 |------------|-----------------|  
-|[<span data-ttu-id="44c72-107">Метод GetName</span><span class="sxs-lookup"><span data-stu-id="44c72-107">GetName Method</span></span>](isymunmanagednamespace-getname-method.md)|<span data-ttu-id="44c72-108">Возвращает имя этого пространства имен.</span><span class="sxs-lookup"><span data-stu-id="44c72-108">Gets the name of this namespace.</span></span>|  
-|[<span data-ttu-id="44c72-109">Метод GetNamespaces</span><span class="sxs-lookup"><span data-stu-id="44c72-109">GetNamespaces Method</span></span>](isymunmanagednamespace-getnamespaces-method.md)|<span data-ttu-id="44c72-110">Возвращает дочерние элементы этого пространства имен.</span><span class="sxs-lookup"><span data-stu-id="44c72-110">Gets the children of this namespace.</span></span>|  
-|[<span data-ttu-id="44c72-111">Метод GetVariables</span><span class="sxs-lookup"><span data-stu-id="44c72-111">GetVariables Method</span></span>](isymunmanagednamespace-getvariables-method.md)|<span data-ttu-id="44c72-112">Возвращает все переменные, определенные в глобальной области видимости в этом пространстве имен.</span><span class="sxs-lookup"><span data-stu-id="44c72-112">Returns all variables defined at global scope within this namespace.</span></span>|  
+|[<span data-ttu-id="8e67a-108">Метод GetName</span><span class="sxs-lookup"><span data-stu-id="8e67a-108">GetName Method</span></span>](isymunmanagednamespace-getname-method.md)|<span data-ttu-id="8e67a-109">Возвращает имя этого пространства имен.</span><span class="sxs-lookup"><span data-stu-id="8e67a-109">Gets the name of this namespace.</span></span>|  
+|[<span data-ttu-id="8e67a-110">Метод GetNamespaces</span><span class="sxs-lookup"><span data-stu-id="8e67a-110">GetNamespaces Method</span></span>](isymunmanagednamespace-getnamespaces-method.md)|<span data-ttu-id="8e67a-111">Возвращает дочерние элементы этого пространства имен.</span><span class="sxs-lookup"><span data-stu-id="8e67a-111">Gets the children of this namespace.</span></span>|  
+|[<span data-ttu-id="8e67a-112">Метод GetVariables</span><span class="sxs-lookup"><span data-stu-id="8e67a-112">GetVariables Method</span></span>](isymunmanagednamespace-getvariables-method.md)|<span data-ttu-id="8e67a-113">Возвращает все переменные, определенные в глобальной области видимости в этом пространстве имен.</span><span class="sxs-lookup"><span data-stu-id="8e67a-113">Returns all variables defined at global scope within this namespace.</span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="44c72-113">Требования</span><span class="sxs-lookup"><span data-stu-id="44c72-113">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="8e67a-114">Требования</span><span class="sxs-lookup"><span data-stu-id="8e67a-114">Requirements</span></span>  
 
- <span data-ttu-id="44c72-114">**Заголовок:** Корсим. idl, Корсим. h</span><span class="sxs-lookup"><span data-stu-id="44c72-114">**Header:** CorSym.idl, CorSym.h</span></span>  
+ <span data-ttu-id="8e67a-115">**Заголовок:** Корсим. idl, Корсим. h</span><span class="sxs-lookup"><span data-stu-id="8e67a-115">**Header:** CorSym.idl, CorSym.h</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="44c72-115">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="44c72-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8e67a-116">См. также</span><span class="sxs-lookup"><span data-stu-id="8e67a-116">See also</span></span>
 
-- [<span data-ttu-id="44c72-116">Интерфейсы хранилища символов диагностики</span><span class="sxs-lookup"><span data-stu-id="44c72-116">Diagnostics Symbol Store Interfaces</span></span>](diagnostics-symbol-store-interfaces.md)
+- [<span data-ttu-id="8e67a-117">Интерфейсы хранилища символов диагностики</span><span class="sxs-lookup"><span data-stu-id="8e67a-117">Diagnostics Symbol Store Interfaces</span></span>](diagnostics-symbol-store-interfaces.md)

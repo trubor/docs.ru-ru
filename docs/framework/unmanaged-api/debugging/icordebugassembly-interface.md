@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICorDebugAssembly'
 title: Интерфейс ICorDebugAssembly
 ms.date: 03/30/2017
 api_name:
@@ -14,42 +15,42 @@ helpviewer_keywords:
 ms.assetid: 9d657a28-6984-4c5e-8a54-89d20080baff
 topic_type:
 - apiref
-ms.openlocfilehash: 821eae8ea5b4147408e9fe60d1e5b70c7936959e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 746b5f4b2f26550788708d93bf0dd50f5f495041
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95696249"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711951"
 ---
-# <a name="icordebugassembly-interface"></a><span data-ttu-id="21617-102">Интерфейс ICorDebugAssembly</span><span class="sxs-lookup"><span data-stu-id="21617-102">ICorDebugAssembly Interface</span></span>
+# <a name="icordebugassembly-interface"></a><span data-ttu-id="a7ba9-103">Интерфейс ICorDebugAssembly</span><span class="sxs-lookup"><span data-stu-id="a7ba9-103">ICorDebugAssembly Interface</span></span>
 
-<span data-ttu-id="21617-103">Представляет сборку.</span><span class="sxs-lookup"><span data-stu-id="21617-103">Represents an assembly.</span></span>  
+<span data-ttu-id="a7ba9-104">Представляет сборку.</span><span class="sxs-lookup"><span data-stu-id="a7ba9-104">Represents an assembly.</span></span>  
   
-## <a name="methods"></a><span data-ttu-id="21617-104">Методы</span><span class="sxs-lookup"><span data-stu-id="21617-104">Methods</span></span>  
+## <a name="methods"></a><span data-ttu-id="a7ba9-105">Методы</span><span class="sxs-lookup"><span data-stu-id="a7ba9-105">Methods</span></span>  
   
-|<span data-ttu-id="21617-105">Метод</span><span class="sxs-lookup"><span data-stu-id="21617-105">Method</span></span>|<span data-ttu-id="21617-106">Описание</span><span class="sxs-lookup"><span data-stu-id="21617-106">Description</span></span>|  
+|<span data-ttu-id="a7ba9-106">Метод</span><span class="sxs-lookup"><span data-stu-id="a7ba9-106">Method</span></span>|<span data-ttu-id="a7ba9-107">Описание</span><span class="sxs-lookup"><span data-stu-id="a7ba9-107">Description</span></span>|  
 |------------|-----------------|  
-|[<span data-ttu-id="21617-107">Метод EnumerateModules</span><span class="sxs-lookup"><span data-stu-id="21617-107">EnumerateModules Method</span></span>](icordebugassembly-enumeratemodules-method.md)|<span data-ttu-id="21617-108">Возвращает перечислитель для модулей, содержащихся в сборке.</span><span class="sxs-lookup"><span data-stu-id="21617-108">Gets an enumerator for the modules contained in the assembly.</span></span>|  
-|[<span data-ttu-id="21617-109">Метод GetAppDomain</span><span class="sxs-lookup"><span data-stu-id="21617-109">GetAppDomain Method</span></span>](icordebugassembly-getappdomain-method.md)|<span data-ttu-id="21617-110">Возвращает указатель интерфейса на домен приложения, содержащий данный `ICorDebugAssembly` экземпляр.</span><span class="sxs-lookup"><span data-stu-id="21617-110">Gets an interface pointer to the application domain that contains this `ICorDebugAssembly` instance.</span></span>|  
-|[<span data-ttu-id="21617-111">Метод GetCodeBase</span><span class="sxs-lookup"><span data-stu-id="21617-111">GetCodeBase Method</span></span>](icordebugassembly-getcodebase-method.md)|<span data-ttu-id="21617-112">Не реализовано в текущей версии .NET Framework.</span><span class="sxs-lookup"><span data-stu-id="21617-112">Not implemented in the current version of the .NET Framework.</span></span>|  
-|[<span data-ttu-id="21617-113">Метод GetName</span><span class="sxs-lookup"><span data-stu-id="21617-113">GetName Method</span></span>](icordebugassembly-getname-method.md)|<span data-ttu-id="21617-114">Возвращает имя сборки.</span><span class="sxs-lookup"><span data-stu-id="21617-114">Gets the name of the assembly.</span></span>|  
-|[<span data-ttu-id="21617-115">Метод GetProcess</span><span class="sxs-lookup"><span data-stu-id="21617-115">GetProcess Method</span></span>](icordebugassembly-getprocess-method.md)|<span data-ttu-id="21617-116">Возвращает экземпляр ICorDebugProcess, в котором выполняется сборка.</span><span class="sxs-lookup"><span data-stu-id="21617-116">Gets the ICorDebugProcess instance in which the assembly is running.</span></span>|  
+|[<span data-ttu-id="a7ba9-108">Метод EnumerateModules</span><span class="sxs-lookup"><span data-stu-id="a7ba9-108">EnumerateModules Method</span></span>](icordebugassembly-enumeratemodules-method.md)|<span data-ttu-id="a7ba9-109">Возвращает перечислитель для модулей, содержащихся в сборке.</span><span class="sxs-lookup"><span data-stu-id="a7ba9-109">Gets an enumerator for the modules contained in the assembly.</span></span>|  
+|[<span data-ttu-id="a7ba9-110">Метод GetAppDomain</span><span class="sxs-lookup"><span data-stu-id="a7ba9-110">GetAppDomain Method</span></span>](icordebugassembly-getappdomain-method.md)|<span data-ttu-id="a7ba9-111">Возвращает указатель интерфейса на домен приложения, содержащий данный `ICorDebugAssembly` экземпляр.</span><span class="sxs-lookup"><span data-stu-id="a7ba9-111">Gets an interface pointer to the application domain that contains this `ICorDebugAssembly` instance.</span></span>|  
+|[<span data-ttu-id="a7ba9-112">Метод GetCodeBase</span><span class="sxs-lookup"><span data-stu-id="a7ba9-112">GetCodeBase Method</span></span>](icordebugassembly-getcodebase-method.md)|<span data-ttu-id="a7ba9-113">Не реализовано в текущей версии платформа .NET Framework.</span><span class="sxs-lookup"><span data-stu-id="a7ba9-113">Not implemented in the current version of the .NET Framework.</span></span>|  
+|[<span data-ttu-id="a7ba9-114">Метод GetName</span><span class="sxs-lookup"><span data-stu-id="a7ba9-114">GetName Method</span></span>](icordebugassembly-getname-method.md)|<span data-ttu-id="a7ba9-115">Возвращает имя сборки.</span><span class="sxs-lookup"><span data-stu-id="a7ba9-115">Gets the name of the assembly.</span></span>|  
+|[<span data-ttu-id="a7ba9-116">Метод GetProcess</span><span class="sxs-lookup"><span data-stu-id="a7ba9-116">GetProcess Method</span></span>](icordebugassembly-getprocess-method.md)|<span data-ttu-id="a7ba9-117">Возвращает экземпляр ICorDebugProcess, в котором выполняется сборка.</span><span class="sxs-lookup"><span data-stu-id="a7ba9-117">Gets the ICorDebugProcess instance in which the assembly is running.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="21617-117">Комментарии</span><span class="sxs-lookup"><span data-stu-id="21617-117">Remarks</span></span>  
+## <a name="remarks"></a><span data-ttu-id="a7ba9-118">Remarks</span><span class="sxs-lookup"><span data-stu-id="a7ba9-118">Remarks</span></span>  
   
 > [!NOTE]
-> <span data-ttu-id="21617-118">Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.</span><span class="sxs-lookup"><span data-stu-id="21617-118">This interface does not support being called remotely, either cross-machine or cross-process.</span></span>  
+> <span data-ttu-id="a7ba9-119">Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.</span><span class="sxs-lookup"><span data-stu-id="a7ba9-119">This interface does not support being called remotely, either cross-machine or cross-process.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="21617-119">Требования</span><span class="sxs-lookup"><span data-stu-id="21617-119">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="a7ba9-120">Требования</span><span class="sxs-lookup"><span data-stu-id="a7ba9-120">Requirements</span></span>  
 
- <span data-ttu-id="21617-120">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="21617-120">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="a7ba9-121">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="a7ba9-121">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="21617-121">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="21617-121">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="a7ba9-122">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="a7ba9-122">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="21617-122">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="21617-122">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="a7ba9-123">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="a7ba9-123">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="21617-123">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="21617-123">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="a7ba9-124">**Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="a7ba9-124">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="21617-124">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="21617-124">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a7ba9-125">См. также</span><span class="sxs-lookup"><span data-stu-id="a7ba9-125">See also</span></span>
 
-- [<span data-ttu-id="21617-125">Интерфейсы отладки</span><span class="sxs-lookup"><span data-stu-id="21617-125">Debugging Interfaces</span></span>](debugging-interfaces.md)
+- [<span data-ttu-id="a7ba9-126">Интерфейсы отладки</span><span class="sxs-lookup"><span data-stu-id="a7ba9-126">Debugging Interfaces</span></span>](debugging-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorDebugCode:: Function'
 title: Метод ICorDebugCode::GetFunction
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: c568b737-fdb2-4816-accd-051f5ab760f1
 topic_type:
 - apiref
-ms.openlocfilehash: 99972c5840645c95b7b349daf2d8ea7173d0cc03
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c90635bf1821d70d6d056d5cbd495ddfa2d2a2ff
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95674732"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711210"
 ---
-# <a name="icordebugcodegetfunction-method"></a><span data-ttu-id="4a7fe-102">Метод ICorDebugCode::GetFunction</span><span class="sxs-lookup"><span data-stu-id="4a7fe-102">ICorDebugCode::GetFunction Method</span></span>
+# <a name="icordebugcodegetfunction-method"></a><span data-ttu-id="e3949-103">Метод ICorDebugCode::GetFunction</span><span class="sxs-lookup"><span data-stu-id="e3949-103">ICorDebugCode::GetFunction Method</span></span>
 
-<span data-ttu-id="4a7fe-103">Возвращает "ICorDebugFunction", связанный с этим "ICorDebugCode".</span><span class="sxs-lookup"><span data-stu-id="4a7fe-103">Gets the "ICorDebugFunction" associated with this "ICorDebugCode".</span></span>  
+<span data-ttu-id="e3949-104">Возвращает "ICorDebugFunction", связанный с этим "ICorDebugCode".</span><span class="sxs-lookup"><span data-stu-id="e3949-104">Gets the "ICorDebugFunction" associated with this "ICorDebugCode".</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="4a7fe-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="4a7fe-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="e3949-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="e3949-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetFunction (  
@@ -34,21 +35,21 @@ HRESULT GetFunction (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="4a7fe-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="4a7fe-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="e3949-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="e3949-106">Parameters</span></span>  
 
  `ppFunction`  
- <span data-ttu-id="4a7fe-106">заполняет Указатель на адрес функции.</span><span class="sxs-lookup"><span data-stu-id="4a7fe-106">[out] A pointer to the address of the function.</span></span>  
+ <span data-ttu-id="e3949-107">заполняет Указатель на адрес функции.</span><span class="sxs-lookup"><span data-stu-id="e3949-107">[out] A pointer to the address of the function.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="4a7fe-107">Комментарии</span><span class="sxs-lookup"><span data-stu-id="4a7fe-107">Remarks</span></span>  
+## <a name="remarks"></a><span data-ttu-id="e3949-108">Remarks</span><span class="sxs-lookup"><span data-stu-id="e3949-108">Remarks</span></span>  
 
- <span data-ttu-id="4a7fe-108">`ICorDebugCode` и `ICorDebugFunction` поддерживают связь «один к одному».</span><span class="sxs-lookup"><span data-stu-id="4a7fe-108">`ICorDebugCode` and `ICorDebugFunction` maintain a one-to-one relationship.</span></span>  
+ <span data-ttu-id="e3949-109">`ICorDebugCode` и `ICorDebugFunction` поддерживают связь «один к одному».</span><span class="sxs-lookup"><span data-stu-id="e3949-109">`ICorDebugCode` and `ICorDebugFunction` maintain a one-to-one relationship.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="4a7fe-109">Требования</span><span class="sxs-lookup"><span data-stu-id="4a7fe-109">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="e3949-110">Требования</span><span class="sxs-lookup"><span data-stu-id="e3949-110">Requirements</span></span>  
 
- <span data-ttu-id="4a7fe-110">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="4a7fe-110">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="e3949-111">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="e3949-111">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="4a7fe-111">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="4a7fe-111">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="e3949-112">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="e3949-112">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="4a7fe-112">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="4a7fe-112">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="e3949-113">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="e3949-113">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="4a7fe-113">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="4a7fe-113">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>
+ <span data-ttu-id="e3949-114">**Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="e3949-114">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>
