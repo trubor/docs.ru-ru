@@ -1,17 +1,18 @@
 ---
+description: 'Дополнительные сведения <add> о: <namespaceTable>'
 title: <add> из <namespaceTable>
 ms.date: 03/30/2017
 ms.assetid: cf7b5b75-63bd-49a6-abac-4bfdab377e36
-ms.openlocfilehash: 7d055d4933f1ad625d6842f91a140f668c05c64e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b7804bdec4a1fb2199c81ba0dde031b80b451d2d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91205000"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99750264"
 ---
-# <a name="add-of-namespacetable"></a><span data-ttu-id="cf70d-102">\<add> из \<namespaceTable></span><span class="sxs-lookup"><span data-stu-id="cf70d-102">\<add> of \<namespaceTable></span></span>
+# <a name="add-of-namespacetable"></a><span data-ttu-id="49cbc-103">\<add> из \<namespaceTable></span><span class="sxs-lookup"><span data-stu-id="49cbc-103">\<add> of \<namespaceTable></span></span>
 
-<span data-ttu-id="cf70d-103">Представляет элемент конфигурации, содержащий пространство имен, используемое в качестве префикса сопоставления, которое затем можно использовать в фильтрах XPath для маршрутизации.</span><span class="sxs-lookup"><span data-stu-id="cf70d-103">Represents a configuration element that contains a namespace to prefix mapping that can then be used in XPath filters for routing.</span></span>  
+<span data-ttu-id="49cbc-104">Представляет элемент конфигурации, содержащий пространство имен, используемое в качестве префикса сопоставления, которое затем можно использовать в фильтрах XPath для маршрутизации.</span><span class="sxs-lookup"><span data-stu-id="49cbc-104">Represents a configuration element that contains a namespace to prefix mapping that can then be used in XPath filters for routing.</span></span>  
   
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
@@ -19,7 +20,7 @@ ms.locfileid: "91205000"
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<namespaceTable>**](namespacetable.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
-## <a name="syntax"></a><span data-ttu-id="cf70d-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="cf70d-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="49cbc-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="49cbc-105">Syntax</span></span>  
   
 ```xml  
 <routing>
@@ -30,27 +31,27 @@ ms.locfileid: "91205000"
 </routing>
 ```  
   
-## <a name="attributes-and-elements"></a><span data-ttu-id="cf70d-105">Атрибуты и элементы</span><span class="sxs-lookup"><span data-stu-id="cf70d-105">Attributes and Elements</span></span>  
+## <a name="attributes-and-elements"></a><span data-ttu-id="49cbc-106">Атрибуты и элементы</span><span class="sxs-lookup"><span data-stu-id="49cbc-106">Attributes and Elements</span></span>  
 
- <span data-ttu-id="cf70d-106">В следующих разделах описаны атрибуты, дочерние и родительские элементы.</span><span class="sxs-lookup"><span data-stu-id="cf70d-106">The following sections describe attributes, child elements, and parent elements.</span></span>  
+ <span data-ttu-id="49cbc-107">В следующих разделах описаны атрибуты, дочерние и родительские элементы.</span><span class="sxs-lookup"><span data-stu-id="49cbc-107">The following sections describe attributes, child elements, and parent elements.</span></span>  
   
-### <a name="attributes"></a><span data-ttu-id="cf70d-107">Атрибуты</span><span class="sxs-lookup"><span data-stu-id="cf70d-107">Attributes</span></span>  
+### <a name="attributes"></a><span data-ttu-id="49cbc-108">Атрибуты</span><span class="sxs-lookup"><span data-stu-id="49cbc-108">Attributes</span></span>  
   
-|<span data-ttu-id="cf70d-108">Атрибут</span><span class="sxs-lookup"><span data-stu-id="cf70d-108">Attribute</span></span>|<span data-ttu-id="cf70d-109">Описание</span><span class="sxs-lookup"><span data-stu-id="cf70d-109">Description</span></span>|  
+|<span data-ttu-id="49cbc-109">Атрибут</span><span class="sxs-lookup"><span data-stu-id="49cbc-109">Attribute</span></span>|<span data-ttu-id="49cbc-110">Описание</span><span class="sxs-lookup"><span data-stu-id="49cbc-110">Description</span></span>|  
 |---------------|-----------------|  
-|<span data-ttu-id="cf70d-110">namespace</span><span class="sxs-lookup"><span data-stu-id="cf70d-110">namespace</span></span>|<span data-ttu-id="cf70d-111">Строка, содержащая пространство имен.</span><span class="sxs-lookup"><span data-stu-id="cf70d-111">A string containing the namespace.</span></span>|  
-|<span data-ttu-id="cf70d-112">prefix</span><span class="sxs-lookup"><span data-stu-id="cf70d-112">prefix</span></span>|<span data-ttu-id="cf70d-113">Строка, содержащая префикс этого пространства имен.</span><span class="sxs-lookup"><span data-stu-id="cf70d-113">A string containing the prefix for this namespace.</span></span>|  
+|<span data-ttu-id="49cbc-111">пространство имен</span><span class="sxs-lookup"><span data-stu-id="49cbc-111">namespace</span></span>|<span data-ttu-id="49cbc-112">Строка, содержащая пространство имен.</span><span class="sxs-lookup"><span data-stu-id="49cbc-112">A string containing the namespace.</span></span>|  
+|<span data-ttu-id="49cbc-113">prefix</span><span class="sxs-lookup"><span data-stu-id="49cbc-113">prefix</span></span>|<span data-ttu-id="49cbc-114">Строка, содержащая префикс этого пространства имен.</span><span class="sxs-lookup"><span data-stu-id="49cbc-114">A string containing the prefix for this namespace.</span></span>|  
   
-### <a name="child-elements"></a><span data-ttu-id="cf70d-114">Дочерние элементы</span><span class="sxs-lookup"><span data-stu-id="cf70d-114">Child Elements</span></span>  
+### <a name="child-elements"></a><span data-ttu-id="49cbc-115">Дочерние элементы</span><span class="sxs-lookup"><span data-stu-id="49cbc-115">Child Elements</span></span>  
 
- <span data-ttu-id="cf70d-115">Отсутствует.</span><span class="sxs-lookup"><span data-stu-id="cf70d-115">None.</span></span>  
+ <span data-ttu-id="49cbc-116">Отсутствует.</span><span class="sxs-lookup"><span data-stu-id="49cbc-116">None.</span></span>  
   
-### <a name="parent-elements"></a><span data-ttu-id="cf70d-116">Родительские элементы</span><span class="sxs-lookup"><span data-stu-id="cf70d-116">Parent Elements</span></span>  
+### <a name="parent-elements"></a><span data-ttu-id="49cbc-117">Родительские элементы</span><span class="sxs-lookup"><span data-stu-id="49cbc-117">Parent Elements</span></span>  
   
-|<span data-ttu-id="cf70d-117">Элемент</span><span class="sxs-lookup"><span data-stu-id="cf70d-117">Element</span></span>|<span data-ttu-id="cf70d-118">Описание</span><span class="sxs-lookup"><span data-stu-id="cf70d-118">Description</span></span>|  
+|<span data-ttu-id="49cbc-118">Элемент</span><span class="sxs-lookup"><span data-stu-id="49cbc-118">Element</span></span>|<span data-ttu-id="49cbc-119">Описание</span><span class="sxs-lookup"><span data-stu-id="49cbc-119">Description</span></span>|  
 |-------------|-----------------|  
-|[\<namespaceTable>](namespacetable.md)|<span data-ttu-id="cf70d-119">Представляет секцию конфигурации для определения набора элементов, содержащих пространство имен для использования в качестве префиксов сопоставлений, которые в дальнейшем могут быть использованы в фильтрах XPath для маршрутизации.</span><span class="sxs-lookup"><span data-stu-id="cf70d-119">Represents a configuration section for defining a set of elements that contain namespace to prefix mappings that can then be used in XPath filters for routing.</span></span>|  
+|[\<namespaceTable>](namespacetable.md)|<span data-ttu-id="49cbc-120">Представляет секцию конфигурации для определения набора элементов, содержащих пространство имен для использования в качестве префиксов сопоставлений, которые в дальнейшем могут быть использованы в фильтрах XPath для маршрутизации.</span><span class="sxs-lookup"><span data-stu-id="49cbc-120">Represents a configuration section for defining a set of elements that contain namespace to prefix mappings that can then be used in XPath filters for routing.</span></span>|  
   
-## <a name="see-also"></a><span data-ttu-id="cf70d-120">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="cf70d-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="49cbc-121">См. также</span><span class="sxs-lookup"><span data-stu-id="49cbc-121">See also</span></span>
 
 - <xref:System.ServiceModel.Routing.Configuration.NamespaceElement?displayProperty=nameWithType>
