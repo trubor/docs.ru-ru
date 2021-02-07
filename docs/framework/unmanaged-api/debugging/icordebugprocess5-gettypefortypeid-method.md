@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: метод ICorDebugProcess5:: Жеттипефортипеид'
 title: Метод ICorDebugProcess5::GetTypeForTypeID
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: e0eed5a8-fa6d-4818-bd00-7babcea30325
 topic_type:
 - apiref
-ms.openlocfilehash: 0ed83005bd4ab23124a458a024985d011dfce8c1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a18543b0afc867dc3796264ac1d08a775c73ca59
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95717608"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99746377"
 ---
-# <a name="icordebugprocess5gettypefortypeid-method"></a><span data-ttu-id="6ec96-102">Метод ICorDebugProcess5::GetTypeForTypeID</span><span class="sxs-lookup"><span data-stu-id="6ec96-102">ICorDebugProcess5::GetTypeForTypeID Method</span></span>
+# <a name="icordebugprocess5gettypefortypeid-method"></a><span data-ttu-id="3155b-103">Метод ICorDebugProcess5::GetTypeForTypeID</span><span class="sxs-lookup"><span data-stu-id="3155b-103">ICorDebugProcess5::GetTypeForTypeID Method</span></span>
 
-<span data-ttu-id="6ec96-103">Преобразует идентификатор типа в значение ICorDebugType.</span><span class="sxs-lookup"><span data-stu-id="6ec96-103">Converts a type identifier to an ICorDebugType value.</span></span>  
+<span data-ttu-id="3155b-104">Преобразует идентификатор типа в значение ICorDebugType.</span><span class="sxs-lookup"><span data-stu-id="3155b-104">Converts a type identifier to an ICorDebugType value.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="6ec96-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="6ec96-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="3155b-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="3155b-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetTypeForTypeID(  
@@ -35,29 +36,29 @@ HRESULT GetTypeForTypeID(
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="6ec96-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="6ec96-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="3155b-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="3155b-106">Parameters</span></span>  
 
  `id`  
- <span data-ttu-id="6ec96-106">окне Идентификатор типа.</span><span class="sxs-lookup"><span data-stu-id="6ec96-106">[in] The type identifier.</span></span>  
+ <span data-ttu-id="3155b-107">окне Идентификатор типа.</span><span class="sxs-lookup"><span data-stu-id="3155b-107">[in] The type identifier.</span></span>  
   
  `ppType`  
- <span data-ttu-id="6ec96-107">заполняет Указатель на адрес объекта ICorDebugType.</span><span class="sxs-lookup"><span data-stu-id="6ec96-107">[out] A pointer to the address of an ICorDebugType object.</span></span>  
+ <span data-ttu-id="3155b-108">заполняет Указатель на адрес объекта ICorDebugType.</span><span class="sxs-lookup"><span data-stu-id="3155b-108">[out] A pointer to the address of an ICorDebugType object.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="6ec96-108">Комментарии</span><span class="sxs-lookup"><span data-stu-id="6ec96-108">Remarks</span></span>  
+## <a name="remarks"></a><span data-ttu-id="3155b-109">Remarks</span><span class="sxs-lookup"><span data-stu-id="3155b-109">Remarks</span></span>  
 
- <span data-ttu-id="6ec96-109">В некоторых случаях методы, возвращающие идентификатор типа, могут возвращать `COR_TYPEID` значение null.</span><span class="sxs-lookup"><span data-stu-id="6ec96-109">In some cases, methods that return a type identifier may return a null `COR_TYPEID` value.</span></span> <span data-ttu-id="6ec96-110">Если это значение передается в качестве `id` аргумента, `GetTypeForTypeID` метод завершится ошибкой и вернет значение `E_FAIL` .</span><span class="sxs-lookup"><span data-stu-id="6ec96-110">If this value is passed as the `id` argument, the `GetTypeForTypeID` method will fail and return `E_FAIL`.</span></span>  
+ <span data-ttu-id="3155b-110">В некоторых случаях методы, возвращающие идентификатор типа, могут возвращать `COR_TYPEID` значение null.</span><span class="sxs-lookup"><span data-stu-id="3155b-110">In some cases, methods that return a type identifier may return a null `COR_TYPEID` value.</span></span> <span data-ttu-id="3155b-111">Если это значение передается в качестве `id` аргумента, `GetTypeForTypeID` метод завершится ошибкой и вернет значение `E_FAIL` .</span><span class="sxs-lookup"><span data-stu-id="3155b-111">If this value is passed as the `id` argument, the `GetTypeForTypeID` method will fail and return `E_FAIL`.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="6ec96-111">Требования</span><span class="sxs-lookup"><span data-stu-id="6ec96-111">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="3155b-112">Требования</span><span class="sxs-lookup"><span data-stu-id="3155b-112">Requirements</span></span>  
 
- <span data-ttu-id="6ec96-112">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="6ec96-112">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="3155b-113">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="3155b-113">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="6ec96-113">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="6ec96-113">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="3155b-114">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="3155b-114">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="6ec96-114">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="6ec96-114">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="3155b-115">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="3155b-115">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="6ec96-115">**.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="6ec96-115">**.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]</span></span>  
+ <span data-ttu-id="3155b-116">**Платформа .NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="3155b-116">**.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="6ec96-116">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="6ec96-116">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3155b-117">См. также</span><span class="sxs-lookup"><span data-stu-id="3155b-117">See also</span></span>
 
-- [<span data-ttu-id="6ec96-117">Интерфейс ICorDebugProcess5</span><span class="sxs-lookup"><span data-stu-id="6ec96-117">ICorDebugProcess5 Interface</span></span>](icordebugprocess5-interface.md)
-- [<span data-ttu-id="6ec96-118">Интерфейсы отладки</span><span class="sxs-lookup"><span data-stu-id="6ec96-118">Debugging Interfaces</span></span>](debugging-interfaces.md)
+- [<span data-ttu-id="3155b-118">Интерфейс ICorDebugProcess5</span><span class="sxs-lookup"><span data-stu-id="3155b-118">ICorDebugProcess5 Interface</span></span>](icordebugprocess5-interface.md)
+- [<span data-ttu-id="3155b-119">Интерфейсы отладки</span><span class="sxs-lookup"><span data-stu-id="3155b-119">Debugging Interfaces</span></span>](debugging-interfaces.md)
