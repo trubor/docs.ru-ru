@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorDebugFrame:: с кодом'
 title: Метод ICorDebugFrame::GetCode
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: fbaa0794-a031-4015-8beb-2749e47ac340
 topic_type:
 - apiref
-ms.openlocfilehash: 29dc87bf465fc9751b5af795f7640b095e535e63
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f45e0a29530a8b4ddbeaa92db4489a030ac1ae79
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95690399"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99693035"
 ---
-# <a name="icordebugframegetcode-method"></a><span data-ttu-id="a6f04-102">Метод ICorDebugFrame::GetCode</span><span class="sxs-lookup"><span data-stu-id="a6f04-102">ICorDebugFrame::GetCode Method</span></span>
+# <a name="icordebugframegetcode-method"></a><span data-ttu-id="77abb-103">Метод ICorDebugFrame::GetCode</span><span class="sxs-lookup"><span data-stu-id="77abb-103">ICorDebugFrame::GetCode Method</span></span>
 
-<span data-ttu-id="a6f04-103">Возвращает указатель на код, связанный с этим кадром стека.</span><span class="sxs-lookup"><span data-stu-id="a6f04-103">Gets a pointer to the code associated with this stack frame.</span></span>  
+<span data-ttu-id="77abb-104">Возвращает указатель на код, связанный с этим кадром стека.</span><span class="sxs-lookup"><span data-stu-id="77abb-104">Gets a pointer to the code associated with this stack frame.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="a6f04-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="a6f04-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="77abb-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="77abb-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetCode (  
@@ -34,17 +35,17 @@ HRESULT GetCode (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="a6f04-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="a6f04-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="77abb-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="77abb-106">Parameters</span></span>  
 
  `ppCode`  
- <span data-ttu-id="a6f04-106">заполняет Указатель на адрес объекта ICorDebugCode, представляющий код, связанный с этим кадром.</span><span class="sxs-lookup"><span data-stu-id="a6f04-106">[out] A pointer to the address of an ICorDebugCode object that represents the code associated with this frame.</span></span>  
+ <span data-ttu-id="77abb-107">заполняет Указатель на адрес объекта ICorDebugCode, представляющий код, связанный с этим кадром.</span><span class="sxs-lookup"><span data-stu-id="77abb-107">[out] A pointer to the address of an ICorDebugCode object that represents the code associated with this frame.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="a6f04-107">Требования</span><span class="sxs-lookup"><span data-stu-id="a6f04-107">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="77abb-108">Требования</span><span class="sxs-lookup"><span data-stu-id="77abb-108">Requirements</span></span>  
 
- <span data-ttu-id="a6f04-108">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="a6f04-108">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="77abb-109">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="77abb-109">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="a6f04-109">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="a6f04-109">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="77abb-110">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="77abb-110">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="a6f04-110">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="a6f04-110">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="77abb-111">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="77abb-111">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="a6f04-111">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="a6f04-111">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>
+ <span data-ttu-id="77abb-112">**Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="77abb-112">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>

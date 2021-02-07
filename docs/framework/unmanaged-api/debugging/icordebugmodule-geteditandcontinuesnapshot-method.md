@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugModule:: Жетедитандконтинуеснапшот'
 title: Метод ICorDebugModule::GetEditAndContinueSnapshot
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: fad94e1e-78be-440f-aa43-e0c66e0b102e
 topic_type:
 - apiref
-ms.openlocfilehash: dbb67aba5997297d4649c845b709a4b48060b7ea
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 63ec84c40f3fc11308a657e2161c95b828db1fb2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95710211"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99691735"
 ---
-# <a name="icordebugmodulegeteditandcontinuesnapshot-method"></a><span data-ttu-id="3828f-102">Метод ICorDebugModule::GetEditAndContinueSnapshot</span><span class="sxs-lookup"><span data-stu-id="3828f-102">ICorDebugModule::GetEditAndContinueSnapshot Method</span></span>
+# <a name="icordebugmodulegeteditandcontinuesnapshot-method"></a><span data-ttu-id="b55ae-103">Метод ICorDebugModule::GetEditAndContinueSnapshot</span><span class="sxs-lookup"><span data-stu-id="b55ae-103">ICorDebugModule::GetEditAndContinueSnapshot Method</span></span>
 
-<span data-ttu-id="3828f-103">Не рекомендуется.</span><span class="sxs-lookup"><span data-stu-id="3828f-103">Deprecated.</span></span>  
+<span data-ttu-id="b55ae-104">Не рекомендуется.</span><span class="sxs-lookup"><span data-stu-id="b55ae-104">Deprecated.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="3828f-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="3828f-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="b55ae-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="b55ae-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetEditAndContinueSnapshot(  
@@ -34,12 +35,12 @@ HRESULT GetEditAndContinueSnapshot(
 );  
 ```  
   
-## <a name="requirements"></a><span data-ttu-id="3828f-105">Требования</span><span class="sxs-lookup"><span data-stu-id="3828f-105">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="b55ae-106">Требования</span><span class="sxs-lookup"><span data-stu-id="b55ae-106">Requirements</span></span>  
 
- <span data-ttu-id="3828f-106">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="3828f-106">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="b55ae-107">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="b55ae-107">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="3828f-107">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="3828f-107">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="b55ae-108">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="b55ae-108">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="3828f-108">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="3828f-108">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="b55ae-109">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="b55ae-109">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="3828f-109">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="3828f-109">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>
+ <span data-ttu-id="b55ae-110">**Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="b55ae-110">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>

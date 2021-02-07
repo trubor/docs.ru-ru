@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: метод ICorDebugFunction:: module'
 title: Метод ICorDebugFunction::GetModule
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 5031a5d3-2564-412a-9007-e36d4631308a
 topic_type:
 - apiref
-ms.openlocfilehash: 5fad8b56b783748e23c8adc4aee0e1bf3450e243
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 62087cdf0443b2ef495461aab74cfa047b95efca
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95696132"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99692476"
 ---
-# <a name="icordebugfunctiongetmodule-method"></a><span data-ttu-id="ea041-102">Метод ICorDebugFunction::GetModule</span><span class="sxs-lookup"><span data-stu-id="ea041-102">ICorDebugFunction::GetModule Method</span></span>
+# <a name="icordebugfunctiongetmodule-method"></a><span data-ttu-id="412e8-103">Метод ICorDebugFunction::GetModule</span><span class="sxs-lookup"><span data-stu-id="412e8-103">ICorDebugFunction::GetModule Method</span></span>
 
-<span data-ttu-id="ea041-103">Возвращает модуль, в котором определена эта функция.</span><span class="sxs-lookup"><span data-stu-id="ea041-103">Gets the module in which this function is defined.</span></span>  
+<span data-ttu-id="412e8-104">Возвращает модуль, в котором определена эта функция.</span><span class="sxs-lookup"><span data-stu-id="412e8-104">Gets the module in which this function is defined.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="ea041-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="ea041-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="412e8-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="412e8-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetModule (  
@@ -34,17 +35,17 @@ HRESULT GetModule (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="ea041-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="ea041-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="412e8-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="412e8-106">Parameters</span></span>  
 
  `ppModule`  
- <span data-ttu-id="ea041-106">заполняет Указатель на адрес объекта ICorDebugModule, который представляет модуль, в котором определена эта функция.</span><span class="sxs-lookup"><span data-stu-id="ea041-106">[out] A pointer to the address of an ICorDebugModule object that represents the module in which this function is defined.</span></span>  
+ <span data-ttu-id="412e8-107">заполняет Указатель на адрес объекта ICorDebugModule, который представляет модуль, в котором определена эта функция.</span><span class="sxs-lookup"><span data-stu-id="412e8-107">[out] A pointer to the address of an ICorDebugModule object that represents the module in which this function is defined.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="ea041-107">Требования</span><span class="sxs-lookup"><span data-stu-id="ea041-107">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="412e8-108">Требования</span><span class="sxs-lookup"><span data-stu-id="412e8-108">Requirements</span></span>  
 
- <span data-ttu-id="ea041-108">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="ea041-108">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="412e8-109">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="412e8-109">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="ea041-109">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="ea041-109">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="412e8-110">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="412e8-110">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="ea041-110">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="ea041-110">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="412e8-111">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="412e8-111">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="ea041-111">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="ea041-111">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>
+ <span data-ttu-id="412e8-112">**Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="412e8-112">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>

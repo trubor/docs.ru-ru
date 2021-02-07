@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugModule:: onprocess'
 title: Метод ICorDebugModule::GetProcess
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 5e13446c-0271-446c-924a-9072c0e6eeae
 topic_type:
 - apiref
-ms.openlocfilehash: 8f4b9e73e0d716561dd64bc0df702d835e0eee06
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: eb8497ac8ec6913fe079d6f5f148d3769bf6633a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95709964"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99691631"
 ---
-# <a name="icordebugmodulegetprocess-method"></a><span data-ttu-id="40247-102">Метод ICorDebugModule::GetProcess</span><span class="sxs-lookup"><span data-stu-id="40247-102">ICorDebugModule::GetProcess Method</span></span>
+# <a name="icordebugmodulegetprocess-method"></a><span data-ttu-id="ce339-103">Метод ICorDebugModule::GetProcess</span><span class="sxs-lookup"><span data-stu-id="ce339-103">ICorDebugModule::GetProcess Method</span></span>
 
-<span data-ttu-id="40247-103">Возвращает содержащий процесс этого модуля.</span><span class="sxs-lookup"><span data-stu-id="40247-103">Gets the containing process of this module.</span></span>  
+<span data-ttu-id="ce339-104">Возвращает содержащий процесс этого модуля.</span><span class="sxs-lookup"><span data-stu-id="ce339-104">Gets the containing process of this module.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="40247-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="40247-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="ce339-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="ce339-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetProcess (  
@@ -34,17 +35,17 @@ HRESULT GetProcess (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="40247-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="40247-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="ce339-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="ce339-106">Parameters</span></span>  
 
  `ppProcess`  
- <span data-ttu-id="40247-106">заполняет Указатель на адрес объекта ICorDebugProcess, который представляет процесс, содержащий этот модуль.</span><span class="sxs-lookup"><span data-stu-id="40247-106">[out] A pointer to the address of an ICorDebugProcess object that represents the process containing this module.</span></span>  
+ <span data-ttu-id="ce339-107">заполняет Указатель на адрес объекта ICorDebugProcess, который представляет процесс, содержащий этот модуль.</span><span class="sxs-lookup"><span data-stu-id="ce339-107">[out] A pointer to the address of an ICorDebugProcess object that represents the process containing this module.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="40247-107">Требования</span><span class="sxs-lookup"><span data-stu-id="40247-107">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="ce339-108">Требования</span><span class="sxs-lookup"><span data-stu-id="ce339-108">Requirements</span></span>  
 
- <span data-ttu-id="40247-108">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="40247-108">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="ce339-109">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="ce339-109">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="40247-109">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="40247-109">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="ce339-110">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="ce339-110">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="40247-110">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="40247-110">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="ce339-111">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="ce339-111">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="40247-111">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="40247-111">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>
+ <span data-ttu-id="ce339-112">**Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="ce339-112">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>
