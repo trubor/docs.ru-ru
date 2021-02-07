@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugProcess:: EnumerateObjects'
 title: Метод ICorDebugProcess::EnumerateObjects
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 5cf8c5b0-6caa-4f5d-8afe-957573c5ee43
 topic_type:
 - apiref
-ms.openlocfilehash: f0b84b145ac49a40c679e6f84a69a2546b7c5d73
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ecec0f485c677881bb9984205021b80e3351bfe0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724602"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99717918"
 ---
-# <a name="icordebugprocessenumerateobjects-method"></a><span data-ttu-id="b3b72-102">Метод ICorDebugProcess::EnumerateObjects</span><span class="sxs-lookup"><span data-stu-id="b3b72-102">ICorDebugProcess::EnumerateObjects Method</span></span>
+# <a name="icordebugprocessenumerateobjects-method"></a><span data-ttu-id="57862-103">Метод ICorDebugProcess::EnumerateObjects</span><span class="sxs-lookup"><span data-stu-id="57862-103">ICorDebugProcess::EnumerateObjects Method</span></span>
 
-<span data-ttu-id="b3b72-103">Этот метод не был реализован.</span><span class="sxs-lookup"><span data-stu-id="b3b72-103">This method has not been implemented.</span></span>  
+<span data-ttu-id="57862-104">Этот метод не был реализован.</span><span class="sxs-lookup"><span data-stu-id="57862-104">This method has not been implemented.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="b3b72-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="b3b72-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="57862-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="57862-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT EnumerateObjects (  
