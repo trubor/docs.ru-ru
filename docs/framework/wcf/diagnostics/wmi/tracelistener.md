@@ -1,19 +1,20 @@
 ---
+description: 'Дополнительные сведения о: TraceListener'
 title: TraceListener
 ms.date: 03/30/2017
 ms.assetid: c2c0b595-a384-4eb3-b94d-1b3be7cc7a5c
-ms.openlocfilehash: 68c58623c3d3861b1a1c5652712bfa79bfc9f042
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4c351e71740e132ac4127108d2be2d7c2866c755
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96239162"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99757323"
 ---
-# <a name="tracelistener"></a><span data-ttu-id="ae5a2-102">TraceListener</span><span class="sxs-lookup"><span data-stu-id="ae5a2-102">TraceListener</span></span>
+# <a name="tracelistener"></a><span data-ttu-id="ee1f7-103">TraceListener</span><span class="sxs-lookup"><span data-stu-id="ee1f7-103">TraceListener</span></span>
 
-<span data-ttu-id="ae5a2-103">TraceListener.</span><span class="sxs-lookup"><span data-stu-id="ae5a2-103">TraceListener.</span></span>  
+<span data-ttu-id="ee1f7-104">TraceListener.</span><span class="sxs-lookup"><span data-stu-id="ee1f7-104">TraceListener.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="ae5a2-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="ae5a2-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="ee1f7-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="ee1f7-105">Syntax</span></span>  
   
 ```csharp
 class TraceListener  
@@ -23,32 +24,32 @@ class TraceListener
 };  
 ```  
   
-## <a name="methods"></a><span data-ttu-id="ae5a2-105">Методы</span><span class="sxs-lookup"><span data-stu-id="ae5a2-105">Methods</span></span>  
+## <a name="methods"></a><span data-ttu-id="ee1f7-106">Методы</span><span class="sxs-lookup"><span data-stu-id="ee1f7-106">Methods</span></span>  
 
- <span data-ttu-id="ae5a2-106">Класс TraceListener не определяет никакие методы.</span><span class="sxs-lookup"><span data-stu-id="ae5a2-106">The TraceListener class does not define any methods.</span></span>  
+ <span data-ttu-id="ee1f7-107">Класс TraceListener не определяет никакие методы.</span><span class="sxs-lookup"><span data-stu-id="ee1f7-107">The TraceListener class does not define any methods.</span></span>  
   
-## <a name="properties"></a><span data-ttu-id="ae5a2-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="ae5a2-107">Properties</span></span>  
+## <a name="properties"></a><span data-ttu-id="ee1f7-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="ee1f7-108">Properties</span></span>  
 
- <span data-ttu-id="ae5a2-108">Класс TraceListener имеет следующие свойства.</span><span class="sxs-lookup"><span data-stu-id="ae5a2-108">The TraceListener class has the following properties:</span></span>  
+ <span data-ttu-id="ee1f7-109">Класс TraceListener имеет следующие свойства.</span><span class="sxs-lookup"><span data-stu-id="ee1f7-109">The TraceListener class has the following properties:</span></span>  
   
-### <a name="name"></a><span data-ttu-id="ae5a2-109">name</span><span class="sxs-lookup"><span data-stu-id="ae5a2-109">Name</span></span>  
+### <a name="name"></a><span data-ttu-id="ee1f7-110">Имя</span><span class="sxs-lookup"><span data-stu-id="ee1f7-110">Name</span></span>  
 
- <span data-ttu-id="ae5a2-110">Тип данных: строка</span><span class="sxs-lookup"><span data-stu-id="ae5a2-110">Data type: string</span></span>  
+ <span data-ttu-id="ee1f7-111">Тип данных: строка</span><span class="sxs-lookup"><span data-stu-id="ee1f7-111">Data type: string</span></span>  
   
- <span data-ttu-id="ae5a2-111">Тип доступа: только для чтения</span><span class="sxs-lookup"><span data-stu-id="ae5a2-111">Access type: Read-only</span></span>  
+ <span data-ttu-id="ee1f7-112">Тип доступа: только для чтения</span><span class="sxs-lookup"><span data-stu-id="ee1f7-112">Access type: Read-only</span></span>  
   
- <span data-ttu-id="ae5a2-112">Имя прослушивателя трассировки.</span><span class="sxs-lookup"><span data-stu-id="ae5a2-112">The name of the trace listener.</span></span>  
+ <span data-ttu-id="ee1f7-113">Имя прослушивателя трассировки.</span><span class="sxs-lookup"><span data-stu-id="ee1f7-113">The name of the trace listener.</span></span>  
   
-### <a name="tracelistenerarguments"></a><span data-ttu-id="ae5a2-113">TraceListenerArguments</span><span class="sxs-lookup"><span data-stu-id="ae5a2-113">TraceListenerArguments</span></span>  
+### <a name="tracelistenerarguments"></a><span data-ttu-id="ee1f7-114">TraceListenerArguments</span><span class="sxs-lookup"><span data-stu-id="ee1f7-114">TraceListenerArguments</span></span>  
 
- <span data-ttu-id="ae5a2-114">Тип данных: массив TraceListenerArgument</span><span class="sxs-lookup"><span data-stu-id="ae5a2-114">Data type: TraceListenerArgument array</span></span>  
+ <span data-ttu-id="ee1f7-115">Тип данных: массив TraceListenerArgument</span><span class="sxs-lookup"><span data-stu-id="ee1f7-115">Data type: TraceListenerArgument array</span></span>  
   
- <span data-ttu-id="ae5a2-115">Тип доступа: только для чтения</span><span class="sxs-lookup"><span data-stu-id="ae5a2-115">Access type: Read-only</span></span>  
+ <span data-ttu-id="ee1f7-116">Тип доступа: только для чтения</span><span class="sxs-lookup"><span data-stu-id="ee1f7-116">Access type: Read-only</span></span>  
   
- <span data-ttu-id="ae5a2-116">Аргументы прослушивателя трассировки.</span><span class="sxs-lookup"><span data-stu-id="ae5a2-116">The arguments of the trace listener.</span></span>  
+ <span data-ttu-id="ee1f7-117">Аргументы прослушивателя трассировки.</span><span class="sxs-lookup"><span data-stu-id="ee1f7-117">The arguments of the trace listener.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="ae5a2-117">Требования</span><span class="sxs-lookup"><span data-stu-id="ae5a2-117">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="ee1f7-118">Требования</span><span class="sxs-lookup"><span data-stu-id="ee1f7-118">Requirements</span></span>  
   
-|<span data-ttu-id="ae5a2-118">MOF</span><span class="sxs-lookup"><span data-stu-id="ae5a2-118">MOF</span></span>|<span data-ttu-id="ae5a2-119">Объявлено в файле Servicemodel.mof.</span><span class="sxs-lookup"><span data-stu-id="ae5a2-119">Declared in Servicemodel.mof.</span></span>|  
+|<span data-ttu-id="ee1f7-119">MOF</span><span class="sxs-lookup"><span data-stu-id="ee1f7-119">MOF</span></span>|<span data-ttu-id="ee1f7-120">Объявлено в файле Servicemodel.mof.</span><span class="sxs-lookup"><span data-stu-id="ee1f7-120">Declared in Servicemodel.mof.</span></span>|  
 |---------|-----------------------------------|  
-|<span data-ttu-id="ae5a2-120">Пространство имен</span><span class="sxs-lookup"><span data-stu-id="ae5a2-120">Namespace</span></span>|<span data-ttu-id="ae5a2-121">Определено в root\ServiceModel.</span><span class="sxs-lookup"><span data-stu-id="ae5a2-121">Defined in root\ServiceModel</span></span>|
+|<span data-ttu-id="ee1f7-121">Пространство имен</span><span class="sxs-lookup"><span data-stu-id="ee1f7-121">Namespace</span></span>|<span data-ttu-id="ee1f7-122">Определено в root\ServiceModel.</span><span class="sxs-lookup"><span data-stu-id="ee1f7-122">Defined in root\ServiceModel</span></span>|

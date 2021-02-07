@@ -1,19 +1,20 @@
 ---
+description: 'Дополнительные сведения о: Жетоператионкаунтеринстанценаме'
 title: GetOperationCounterInstanceName
 ms.date: 03/30/2017
 ms.assetid: ac42e20f-63c1-4bdb-8660-736980936811
-ms.openlocfilehash: b073cd5aea930dec0491f8fe87e578bd190027ab
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 9d6d88ae6e3d1fd6ee408e9167dc07196d44797d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96288857"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99757401"
 ---
-# <a name="getoperationcounterinstancename"></a><span data-ttu-id="1a76a-102">GetOperationCounterInstanceName</span><span class="sxs-lookup"><span data-stu-id="1a76a-102">GetOperationCounterInstanceName</span></span>
+# <a name="getoperationcounterinstancename"></a><span data-ttu-id="dce0b-103">GetOperationCounterInstanceName</span><span class="sxs-lookup"><span data-stu-id="dce0b-103">GetOperationCounterInstanceName</span></span>
 
-<span data-ttu-id="1a76a-103">Извлекает имя экземпляра счетчика производительности операций.</span><span class="sxs-lookup"><span data-stu-id="1a76a-103">Retrieves the operation performance counter instance name.</span></span>  
+<span data-ttu-id="dce0b-104">Извлекает имя экземпляра счетчика производительности операций.</span><span class="sxs-lookup"><span data-stu-id="dce0b-104">Retrieves the operation performance counter instance name.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="1a76a-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="1a76a-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="dce0b-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="dce0b-105">Syntax</span></span>  
   
 ```csharp
 string GetOperationCounterInstanceName(  
@@ -21,14 +22,14 @@ string GetOperationCounterInstanceName(
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="1a76a-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="1a76a-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="dce0b-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="dce0b-106">Parameters</span></span>  
   
-### <a name="operation"></a><span data-ttu-id="1a76a-106">Операция</span><span class="sxs-lookup"><span data-stu-id="1a76a-106">Operation</span></span>  
+### <a name="operation"></a><span data-ttu-id="dce0b-107">Операция</span><span class="sxs-lookup"><span data-stu-id="dce0b-107">Operation</span></span>  
 
- <span data-ttu-id="1a76a-107">[in] string</span><span class="sxs-lookup"><span data-stu-id="1a76a-107">[in] string</span></span>  
+ <span data-ttu-id="dce0b-108">[in] string</span><span class="sxs-lookup"><span data-stu-id="dce0b-108">[in] string</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="1a76a-108">Требования</span><span class="sxs-lookup"><span data-stu-id="1a76a-108">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="dce0b-109">Требования</span><span class="sxs-lookup"><span data-stu-id="dce0b-109">Requirements</span></span>  
   
-|<span data-ttu-id="1a76a-109">MOF</span><span class="sxs-lookup"><span data-stu-id="1a76a-109">MOF</span></span>|<span data-ttu-id="1a76a-110">Объявлено в файле Servicemodel.mof.</span><span class="sxs-lookup"><span data-stu-id="1a76a-110">Declared in Servicemodel.mof.</span></span>|  
+|<span data-ttu-id="dce0b-110">MOF</span><span class="sxs-lookup"><span data-stu-id="dce0b-110">MOF</span></span>|<span data-ttu-id="dce0b-111">Объявлено в файле Servicemodel.mof.</span><span class="sxs-lookup"><span data-stu-id="dce0b-111">Declared in Servicemodel.mof.</span></span>|  
 |---------|-----------------------------------|  
-|<span data-ttu-id="1a76a-111">Пространство имен</span><span class="sxs-lookup"><span data-stu-id="1a76a-111">Namespace</span></span>|<span data-ttu-id="1a76a-112">Определено в root\ServiceModel.</span><span class="sxs-lookup"><span data-stu-id="1a76a-112">Defined in root\ServiceModel</span></span>|
+|<span data-ttu-id="dce0b-112">Пространство имен</span><span class="sxs-lookup"><span data-stu-id="dce0b-112">Namespace</span></span>|<span data-ttu-id="dce0b-113">Определено в root\ServiceModel.</span><span class="sxs-lookup"><span data-stu-id="dce0b-113">Defined in root\ServiceModel</span></span>|
