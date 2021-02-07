@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении Цеесектионаттр
 title: Перечисление CeeSectionAttr
 ms.date: 03/30/2017
 api_name:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 ms.assetid: 0db51881-b869-4677-a715-1726a9216489
 topic_type:
 - apiref
-ms.openlocfilehash: 4b2fb80298f6eef331b5b7ae4a46222ce97ede6f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 13cfb635aaa606905745146d7c3caae3f9162e91
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732740"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99678878"
 ---
-# <a name="ceesectionattr-enumeration"></a><span data-ttu-id="1aabd-102">Перечисление CeeSectionAttr</span><span class="sxs-lookup"><span data-stu-id="1aabd-102">CeeSectionAttr Enumeration</span></span>
+# <a name="ceesectionattr-enumeration"></a><span data-ttu-id="aae2e-103">Перечисление CeeSectionAttr</span><span class="sxs-lookup"><span data-stu-id="aae2e-103">CeeSectionAttr Enumeration</span></span>
 
-<span data-ttu-id="1aabd-103">Предоставляет значения, указывающие атрибуты раздела для использования интерфейсом [ICeeGen](iceegen-interface.md) .</span><span class="sxs-lookup"><span data-stu-id="1aabd-103">Provides values that specify attributes of a section for use by the [ICeeGen](iceegen-interface.md) interface.</span></span>  
+<span data-ttu-id="aae2e-104">Предоставляет значения, указывающие атрибуты раздела для использования интерфейсом [ICeeGen](iceegen-interface.md) .</span><span class="sxs-lookup"><span data-stu-id="aae2e-104">Provides values that specify attributes of a section for use by the [ICeeGen](iceegen-interface.md) interface.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="1aabd-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="1aabd-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="aae2e-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="aae2e-105">Syntax</span></span>  
   
 ```cpp  
 typedef enum  {  
@@ -38,25 +39,25 @@ typedef enum  {
 } CeeSectionAttr;  
 ```  
   
-## <a name="members"></a><span data-ttu-id="1aabd-105">Члены</span><span class="sxs-lookup"><span data-stu-id="1aabd-105">Members</span></span>  
+## <a name="members"></a><span data-ttu-id="aae2e-106">Члены</span><span class="sxs-lookup"><span data-stu-id="aae2e-106">Members</span></span>  
   
-|<span data-ttu-id="1aabd-106">Член</span><span class="sxs-lookup"><span data-stu-id="1aabd-106">Member</span></span>|<span data-ttu-id="1aabd-107">Описание</span><span class="sxs-lookup"><span data-stu-id="1aabd-107">Description</span></span>|  
+|<span data-ttu-id="aae2e-107">Член</span><span class="sxs-lookup"><span data-stu-id="aae2e-107">Member</span></span>|<span data-ttu-id="aae2e-108">Описание</span><span class="sxs-lookup"><span data-stu-id="aae2e-108">Description</span></span>|  
 |------------|-----------------|  
-|`sdNone`|<span data-ttu-id="1aabd-108">Раздел не имеет атрибутов.</span><span class="sxs-lookup"><span data-stu-id="1aabd-108">Section has no attributes.</span></span>|  
-|`sdReadOnly`|<span data-ttu-id="1aabd-109">Раздел содержит инициализированные данные, которые могут быть только считаны, но не обновлены.</span><span class="sxs-lookup"><span data-stu-id="1aabd-109">Section contains initialized data that can be only read, not updated.</span></span>|  
-|`sdReadWrite`|<span data-ttu-id="1aabd-110">Раздел содержит инициализированные данные, которые могут быть считаны или обновлены.</span><span class="sxs-lookup"><span data-stu-id="1aabd-110">Section contains initialized data that can be read or updated.</span></span>|  
-|`sdExecute`|<span data-ttu-id="1aabd-111">Раздел содержит исполняемый код, который может быть прочитан и выполнен.</span><span class="sxs-lookup"><span data-stu-id="1aabd-111">Section contains executable code that is allowed to be read and executed.</span></span>|  
+|`sdNone`|<span data-ttu-id="aae2e-109">Раздел не имеет атрибутов.</span><span class="sxs-lookup"><span data-stu-id="aae2e-109">Section has no attributes.</span></span>|  
+|`sdReadOnly`|<span data-ttu-id="aae2e-110">Раздел содержит инициализированные данные, которые могут быть только считаны, но не обновлены.</span><span class="sxs-lookup"><span data-stu-id="aae2e-110">Section contains initialized data that can be only read, not updated.</span></span>|  
+|`sdReadWrite`|<span data-ttu-id="aae2e-111">Раздел содержит инициализированные данные, которые могут быть считаны или обновлены.</span><span class="sxs-lookup"><span data-stu-id="aae2e-111">Section contains initialized data that can be read or updated.</span></span>|  
+|`sdExecute`|<span data-ttu-id="aae2e-112">Раздел содержит исполняемый код, который может быть прочитан и выполнен.</span><span class="sxs-lookup"><span data-stu-id="aae2e-112">Section contains executable code that is allowed to be read and executed.</span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="1aabd-112">Требования</span><span class="sxs-lookup"><span data-stu-id="1aabd-112">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="aae2e-113">Требования</span><span class="sxs-lookup"><span data-stu-id="aae2e-113">Requirements</span></span>  
 
- <span data-ttu-id="1aabd-113">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="1aabd-113">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="aae2e-114">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="aae2e-114">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="1aabd-114">**Заголовок:** COR. h</span><span class="sxs-lookup"><span data-stu-id="1aabd-114">**Header:** Cor.h</span></span>  
+ <span data-ttu-id="aae2e-115">**Заголовок:** COR. h</span><span class="sxs-lookup"><span data-stu-id="aae2e-115">**Header:** Cor.h</span></span>  
   
- <span data-ttu-id="1aabd-115">**Библиотека:** Включается в качестве ресурса в MsCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="1aabd-115">**Library:** Included as a resource in MsCorEE.dll</span></span>  
+ <span data-ttu-id="aae2e-116">**Библиотека:** Включается в качестве ресурса в MsCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="aae2e-116">**Library:** Included as a resource in MsCorEE.dll</span></span>  
   
- <span data-ttu-id="1aabd-116">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="1aabd-116">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="aae2e-117">**Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="aae2e-117">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="1aabd-117">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="1aabd-117">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="aae2e-118">См. также</span><span class="sxs-lookup"><span data-stu-id="aae2e-118">See also</span></span>
 
-- [<span data-ttu-id="1aabd-118">Перечисления метаданных</span><span class="sxs-lookup"><span data-stu-id="1aabd-118">Metadata Enumerations</span></span>](metadata-enumerations.md)
+- [<span data-ttu-id="aae2e-119">Перечисления метаданных</span><span class="sxs-lookup"><span data-stu-id="aae2e-119">Metadata Enumerations</span></span>](metadata-enumerations.md)
