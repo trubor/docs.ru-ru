@@ -1,24 +1,25 @@
 ---
+description: 'Дополнительные сведения: <dynamicEndpoint>'
 title: <dynamicEndpoint>
 ms.date: 03/30/2017
 ms.assetid: 929f223d-176d-4205-9505-234ddb6dbff4
-ms.openlocfilehash: 6f9cb127deb5651ed27a0ef5802512fb5b6c7b54
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0fe30492e1daeecca5e27aef844f5f6977396049
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91190102"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725900"
 ---
 # \<dynamicEndpoint>
 
-<span data-ttu-id="bf37c-101">Этот элемент конфигурации определяет стандартную конечную точку, содержащую сведения, позволяющие приложению работать в качестве клиентской программы, которая может найти адрес конечной точки динамически во время выполнения.</span><span class="sxs-lookup"><span data-stu-id="bf37c-101">This configuration element defines a standard endpoint that contains information to enable an application to function as a client program that can find the endpoint address dynamically at runtime.</span></span>  
+<span data-ttu-id="0bb1c-102">Этот элемент конфигурации определяет стандартную конечную точку, содержащую сведения, позволяющие приложению работать в качестве клиентской программы, которая может найти адрес конечной точки динамически во время выполнения.</span><span class="sxs-lookup"><span data-stu-id="0bb1c-102">This configuration element defines a standard endpoint that contains information to enable an application to function as a client program that can find the endpoint address dynamically at runtime.</span></span>  
   
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<standardEndpoints>**](standardendpoints.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<dynamicEndpoint>**  
   
-## <a name="syntax"></a><span data-ttu-id="bf37c-102">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="bf37c-102">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="0bb1c-103">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="0bb1c-103">Syntax</span></span>  
   
 ```xml  
 <system.serviceModel>
@@ -45,27 +46,27 @@ ms.locfileid: "91190102"
 </system.serviceModel>
 ```  
   
-## <a name="attributes-and-elements"></a><span data-ttu-id="bf37c-103">Атрибуты и элементы</span><span class="sxs-lookup"><span data-stu-id="bf37c-103">Attributes and Elements</span></span>  
+## <a name="attributes-and-elements"></a><span data-ttu-id="0bb1c-104">Атрибуты и элементы</span><span class="sxs-lookup"><span data-stu-id="0bb1c-104">Attributes and Elements</span></span>  
 
- <span data-ttu-id="bf37c-104">В следующих разделах описаны атрибуты, дочерние и родительские элементы.</span><span class="sxs-lookup"><span data-stu-id="bf37c-104">The following sections describe attributes, child elements, and parent elements.</span></span>  
+ <span data-ttu-id="0bb1c-105">В следующих разделах описаны атрибуты, дочерние и родительские элементы.</span><span class="sxs-lookup"><span data-stu-id="0bb1c-105">The following sections describe attributes, child elements, and parent elements.</span></span>  
   
-### <a name="attributes"></a><span data-ttu-id="bf37c-105">Атрибуты</span><span class="sxs-lookup"><span data-stu-id="bf37c-105">Attributes</span></span>  
+### <a name="attributes"></a><span data-ttu-id="0bb1c-106">Атрибуты</span><span class="sxs-lookup"><span data-stu-id="0bb1c-106">Attributes</span></span>  
 
- <span data-ttu-id="bf37c-106">Отсутствует.</span><span class="sxs-lookup"><span data-stu-id="bf37c-106">None.</span></span>  
+ <span data-ttu-id="0bb1c-107">Отсутствует.</span><span class="sxs-lookup"><span data-stu-id="0bb1c-107">None.</span></span>  
   
-### <a name="child-elements"></a><span data-ttu-id="bf37c-107">Дочерние элементы</span><span class="sxs-lookup"><span data-stu-id="bf37c-107">Child Elements</span></span>  
+### <a name="child-elements"></a><span data-ttu-id="0bb1c-108">Дочерние элементы</span><span class="sxs-lookup"><span data-stu-id="0bb1c-108">Child Elements</span></span>  
   
-|<span data-ttu-id="bf37c-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="bf37c-108">Element</span></span>|<span data-ttu-id="bf37c-109">Описание</span><span class="sxs-lookup"><span data-stu-id="bf37c-109">Description</span></span>|  
+|<span data-ttu-id="0bb1c-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="0bb1c-109">Element</span></span>|<span data-ttu-id="0bb1c-110">Описание</span><span class="sxs-lookup"><span data-stu-id="0bb1c-110">Description</span></span>|  
 |-------------|-----------------|  
-|[\<discoveryClientSettings>](discoveryclientsettings.md)|<span data-ttu-id="bf37c-110">Содержит параметры, необходимые приложению для участия в процессе обнаружения служб в качестве клиента.</span><span class="sxs-lookup"><span data-stu-id="bf37c-110">Contains the settings needed by an application to participate in the service discovery process as a client.</span></span>|  
+|[\<discoveryClientSettings>](discoveryclientsettings.md)|<span data-ttu-id="0bb1c-111">Содержит параметры, необходимые приложению для участия в процессе обнаружения служб в качестве клиента.</span><span class="sxs-lookup"><span data-stu-id="0bb1c-111">Contains the settings needed by an application to participate in the service discovery process as a client.</span></span>|  
   
-### <a name="parent-elements"></a><span data-ttu-id="bf37c-111">Родительские элементы</span><span class="sxs-lookup"><span data-stu-id="bf37c-111">Parent Elements</span></span>  
+### <a name="parent-elements"></a><span data-ttu-id="0bb1c-112">Родительские элементы</span><span class="sxs-lookup"><span data-stu-id="0bb1c-112">Parent Elements</span></span>  
   
-|<span data-ttu-id="bf37c-112">Элемент</span><span class="sxs-lookup"><span data-stu-id="bf37c-112">Element</span></span>|<span data-ttu-id="bf37c-113">Описание</span><span class="sxs-lookup"><span data-stu-id="bf37c-113">Description</span></span>|  
+|<span data-ttu-id="0bb1c-113">Элемент</span><span class="sxs-lookup"><span data-stu-id="0bb1c-113">Element</span></span>|<span data-ttu-id="0bb1c-114">Описание</span><span class="sxs-lookup"><span data-stu-id="0bb1c-114">Description</span></span>|  
 |-------------|-----------------|  
-|[\<standardEndpoints>](standardendpoints.md)|<span data-ttu-id="bf37c-114">Коллекция стандартных конечных точек, одно или несколько свойств которых (адрес, привязка, контракт) являются фиксированными.</span><span class="sxs-lookup"><span data-stu-id="bf37c-114">A collection of standard endpoints that are pre-defined endpoints with one or more of their properties (address, binding, contract) fixed.</span></span>|  
+|[\<standardEndpoints>](standardendpoints.md)|<span data-ttu-id="0bb1c-115">Коллекция стандартных конечных точек, одно или несколько свойств которых (адрес, привязка, контракт) являются фиксированными.</span><span class="sxs-lookup"><span data-stu-id="0bb1c-115">A collection of standard endpoints that are pre-defined endpoints with one or more of their properties (address, binding, contract) fixed.</span></span>|  
   
-## <a name="see-also"></a><span data-ttu-id="bf37c-115">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="bf37c-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0bb1c-116">См. также</span><span class="sxs-lookup"><span data-stu-id="0bb1c-116">See also</span></span>
 
 - <xref:System.ServiceModel.Discovery.DynamicEndpoint>
 - <xref:System.ServiceModel.Discovery.Configuration.DynamicEndpointElement>
