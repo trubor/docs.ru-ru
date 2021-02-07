@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: <compilers> element'
 title: Элемент <compilers>
 ms.date: 03/30/2017
 f1_keywords:
@@ -9,22 +10,22 @@ helpviewer_keywords:
 - <compilers> element
 - compilers element
 ms.assetid: d40fba59-98f9-4783-ae0c-2ebea27ce77b
-ms.openlocfilehash: 1aa096e185ae7f5957f173c03e221a31f30d5200
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 6ced6bc81bc7d829ccebab50e0a361985c970f5e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172948"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99699172"
 ---
-# <a name="compilers-element"></a><span data-ttu-id="e95de-102">Элемент \<compilers></span><span class="sxs-lookup"><span data-stu-id="e95de-102">\<compilers> Element</span></span>
+# <a name="compilers-element"></a><span data-ttu-id="f8b43-103">Элемент \<compilers></span><span class="sxs-lookup"><span data-stu-id="f8b43-103">\<compilers> Element</span></span>
 
-<span data-ttu-id="e95de-103">Контейнер для элементов конфигурации компилятора; содержит ноль или более [\<compiler>](compiler-element.md) элементов.</span><span class="sxs-lookup"><span data-stu-id="e95de-103">Container for compiler configuration elements; contains zero or more [\<compiler>](compiler-element.md) elements.</span></span>  
+<span data-ttu-id="f8b43-104">Контейнер для элементов конфигурации компилятора; содержит ноль или более [\<compiler>](compiler-element.md) элементов.</span><span class="sxs-lookup"><span data-stu-id="f8b43-104">Container for compiler configuration elements; contains zero or more [\<compiler>](compiler-element.md) elements.</span></span>  
 
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.codedom>**](system-codedom-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<compilers>**
 
-## <a name="syntax"></a><span data-ttu-id="e95de-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="e95de-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="f8b43-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="f8b43-105">Syntax</span></span>  
   
 ```xml  
 <compilers>  
@@ -32,40 +33,40 @@ ms.locfileid: "91172948"
 </compilers>  
 ```  
   
-## <a name="attributes-and-elements"></a><span data-ttu-id="e95de-105">Атрибуты и элементы</span><span class="sxs-lookup"><span data-stu-id="e95de-105">Attributes and Elements</span></span>  
+## <a name="attributes-and-elements"></a><span data-ttu-id="f8b43-106">Атрибуты и элементы</span><span class="sxs-lookup"><span data-stu-id="f8b43-106">Attributes and Elements</span></span>  
 
- <span data-ttu-id="e95de-106">В следующих разделах описаны атрибуты, дочерние и родительские элементы.</span><span class="sxs-lookup"><span data-stu-id="e95de-106">The following sections describe attributes, child elements, and parent elements.</span></span>  
+ <span data-ttu-id="f8b43-107">В следующих разделах описаны атрибуты, дочерние и родительские элементы.</span><span class="sxs-lookup"><span data-stu-id="f8b43-107">The following sections describe attributes, child elements, and parent elements.</span></span>  
   
-### <a name="attributes"></a><span data-ttu-id="e95de-107">Атрибуты</span><span class="sxs-lookup"><span data-stu-id="e95de-107">Attributes</span></span>  
+### <a name="attributes"></a><span data-ttu-id="f8b43-108">Атрибуты</span><span class="sxs-lookup"><span data-stu-id="f8b43-108">Attributes</span></span>  
 
- <span data-ttu-id="e95de-108">Отсутствует.</span><span class="sxs-lookup"><span data-stu-id="e95de-108">None.</span></span>  
+ <span data-ttu-id="f8b43-109">Отсутствует.</span><span class="sxs-lookup"><span data-stu-id="f8b43-109">None.</span></span>  
   
-### <a name="child-elements"></a><span data-ttu-id="e95de-109">Дочерние элементы</span><span class="sxs-lookup"><span data-stu-id="e95de-109">Child Elements</span></span>  
+### <a name="child-elements"></a><span data-ttu-id="f8b43-110">Дочерние элементы</span><span class="sxs-lookup"><span data-stu-id="f8b43-110">Child Elements</span></span>  
   
-|<span data-ttu-id="e95de-110">Элемент</span><span class="sxs-lookup"><span data-stu-id="e95de-110">Element</span></span>|<span data-ttu-id="e95de-111">Описание</span><span class="sxs-lookup"><span data-stu-id="e95de-111">Description</span></span>|  
+|<span data-ttu-id="f8b43-111">Элемент</span><span class="sxs-lookup"><span data-stu-id="f8b43-111">Element</span></span>|<span data-ttu-id="f8b43-112">Описание</span><span class="sxs-lookup"><span data-stu-id="f8b43-112">Description</span></span>|  
 |-------------|-----------------|  
-|[<span data-ttu-id="e95de-112">\<compiler> Элемент</span><span class="sxs-lookup"><span data-stu-id="e95de-112">\<compiler> Element</span></span>](compiler-element.md)|<span data-ttu-id="e95de-113">Задает атрибуты конфигурации компилятора для поставщика языка.</span><span class="sxs-lookup"><span data-stu-id="e95de-113">Specifies the compiler configuration attributes for a language provider.</span></span>|  
+|[<span data-ttu-id="f8b43-113">\<compiler> Элемент</span><span class="sxs-lookup"><span data-stu-id="f8b43-113">\<compiler> Element</span></span>](compiler-element.md)|<span data-ttu-id="f8b43-114">Задает атрибуты конфигурации компилятора для поставщика языка.</span><span class="sxs-lookup"><span data-stu-id="f8b43-114">Specifies the compiler configuration attributes for a language provider.</span></span>|  
   
-### <a name="parent-elements"></a><span data-ttu-id="e95de-114">Родительские элементы</span><span class="sxs-lookup"><span data-stu-id="e95de-114">Parent Elements</span></span>  
+### <a name="parent-elements"></a><span data-ttu-id="f8b43-115">Родительские элементы</span><span class="sxs-lookup"><span data-stu-id="f8b43-115">Parent Elements</span></span>  
   
-|<span data-ttu-id="e95de-115">Элемент</span><span class="sxs-lookup"><span data-stu-id="e95de-115">Element</span></span>|<span data-ttu-id="e95de-116">Описание</span><span class="sxs-lookup"><span data-stu-id="e95de-116">Description</span></span>|  
+|<span data-ttu-id="f8b43-116">Элемент</span><span class="sxs-lookup"><span data-stu-id="f8b43-116">Element</span></span>|<span data-ttu-id="f8b43-117">Описание</span><span class="sxs-lookup"><span data-stu-id="f8b43-117">Description</span></span>|  
 |-------------|-----------------|  
-|[<span data-ttu-id="e95de-117">\<configuration> Элемент</span><span class="sxs-lookup"><span data-stu-id="e95de-117">\<configuration> Element</span></span>](../configuration-element.md)|<span data-ttu-id="e95de-118">Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.</span><span class="sxs-lookup"><span data-stu-id="e95de-118">The root element in every configuration file used by the common language runtime and .NET Framework applications.</span></span>|  
-|[<span data-ttu-id="e95de-119">\<system.codedom> Элемент</span><span class="sxs-lookup"><span data-stu-id="e95de-119">\<system.codedom> Element</span></span>](system-codedom-element.md)|<span data-ttu-id="e95de-120">Задает параметры конфигурации компилятора для доступных поставщиков языков.</span><span class="sxs-lookup"><span data-stu-id="e95de-120">Specifies compiler configuration settings for available language providers.</span></span>|  
+|[<span data-ttu-id="f8b43-118">\<configuration> Элемент</span><span class="sxs-lookup"><span data-stu-id="f8b43-118">\<configuration> Element</span></span>](../configuration-element.md)|<span data-ttu-id="f8b43-119">Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.</span><span class="sxs-lookup"><span data-stu-id="f8b43-119">The root element in every configuration file used by the common language runtime and .NET Framework applications.</span></span>|  
+|[<span data-ttu-id="f8b43-120">\<system.codedom> Элемент</span><span class="sxs-lookup"><span data-stu-id="f8b43-120">\<system.codedom> Element</span></span>](system-codedom-element.md)|<span data-ttu-id="f8b43-121">Задает параметры конфигурации компилятора для доступных поставщиков языков.</span><span class="sxs-lookup"><span data-stu-id="f8b43-121">Specifies compiler configuration settings for available language providers.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="e95de-121">Remarks</span><span class="sxs-lookup"><span data-stu-id="e95de-121">Remarks</span></span>  
+## <a name="remarks"></a><span data-ttu-id="f8b43-122">Remarks</span><span class="sxs-lookup"><span data-stu-id="f8b43-122">Remarks</span></span>  
 
- <span data-ttu-id="e95de-122">[\<compilers>](compilers-element.md)Элемент содержит параметры конфигурации компилятора для поставщиков языков на компьютере.</span><span class="sxs-lookup"><span data-stu-id="e95de-122">The [\<compilers>](compilers-element.md) element contains the compiler configuration settings for language providers on a computer.</span></span> <span data-ttu-id="e95de-123">Каждый [\<compiler>](compiler-element.md) элемент задает атрибуты конфигурации компилятора для конкретного поставщика языка.</span><span class="sxs-lookup"><span data-stu-id="e95de-123">Each [\<compiler>](compiler-element.md) element specifies the compiler configuration attributes for a specific language provider.</span></span>  
+ <span data-ttu-id="f8b43-123">[\<compilers>](compilers-element.md)Элемент содержит параметры конфигурации компилятора для поставщиков языков на компьютере.</span><span class="sxs-lookup"><span data-stu-id="f8b43-123">The [\<compilers>](compilers-element.md) element contains the compiler configuration settings for language providers on a computer.</span></span> <span data-ttu-id="f8b43-124">Каждый [\<compiler>](compiler-element.md) элемент задает атрибуты конфигурации компилятора для конкретного поставщика языка.</span><span class="sxs-lookup"><span data-stu-id="f8b43-124">Each [\<compiler>](compiler-element.md) element specifies the compiler configuration attributes for a specific language provider.</span></span>  
   
- <span data-ttu-id="e95de-124">.NET Framework определяет начальные параметры компилятора и языка в файле конфигурации компьютера (Machine.config).</span><span class="sxs-lookup"><span data-stu-id="e95de-124">The .NET Framework defines the initial compiler and language provider settings in the machine configuration file (Machine.config).</span></span> <span data-ttu-id="e95de-125">Разработчики и поставщики компиляторов могут добавлять параметры конфигурации для новой реализации <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType>.</span><span class="sxs-lookup"><span data-stu-id="e95de-125">Developers and compiler vendors can add configuration settings for a new <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType> implementation.</span></span> <span data-ttu-id="e95de-126">С помощью метода <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A?displayProperty=nameWithType> можно осуществлять программное перечисление параметров конфигурации для поставщиков языков и компиляторов на компьютере.</span><span class="sxs-lookup"><span data-stu-id="e95de-126">Use the <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A?displayProperty=nameWithType> method to programmatically enumerate language provider and compiler configuration settings on a computer.</span></span>  
+ <span data-ttu-id="f8b43-125">Платформа .NET Framework определяет начальные параметры компилятора и языка в файле конфигурации компьютера (Machine.config).</span><span class="sxs-lookup"><span data-stu-id="f8b43-125">The .NET Framework defines the initial compiler and language provider settings in the machine configuration file (Machine.config).</span></span> <span data-ttu-id="f8b43-126">Разработчики и поставщики компиляторов могут добавлять параметры конфигурации для новой реализации <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType>.</span><span class="sxs-lookup"><span data-stu-id="f8b43-126">Developers and compiler vendors can add configuration settings for a new <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType> implementation.</span></span> <span data-ttu-id="f8b43-127">С помощью метода <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A?displayProperty=nameWithType> можно осуществлять программное перечисление параметров конфигурации для поставщиков языков и компиляторов на компьютере.</span><span class="sxs-lookup"><span data-stu-id="f8b43-127">Use the <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A?displayProperty=nameWithType> method to programmatically enumerate language provider and compiler configuration settings on a computer.</span></span>  
   
-## <a name="configuration-file"></a><span data-ttu-id="e95de-127">Файл конфигурации</span><span class="sxs-lookup"><span data-stu-id="e95de-127">Configuration File</span></span>  
+## <a name="configuration-file"></a><span data-ttu-id="f8b43-128">Файл конфигурации</span><span class="sxs-lookup"><span data-stu-id="f8b43-128">Configuration File</span></span>  
 
- <span data-ttu-id="e95de-128">Этот элемент можно использовать в файле конфигурации компьютера и файле конфигурации приложения.</span><span class="sxs-lookup"><span data-stu-id="e95de-128">This element can be used in the machine configuration file and the application configuration file.</span></span>  
+ <span data-ttu-id="f8b43-129">Этот элемент можно использовать в файле конфигурации компьютера и файле конфигурации приложения.</span><span class="sxs-lookup"><span data-stu-id="f8b43-129">This element can be used in the machine configuration file and the application configuration file.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="e95de-129">Пример</span><span class="sxs-lookup"><span data-stu-id="e95de-129">Example</span></span>  
+## <a name="example"></a><span data-ttu-id="f8b43-130">Пример</span><span class="sxs-lookup"><span data-stu-id="f8b43-130">Example</span></span>  
 
- <span data-ttu-id="e95de-130">В приведенном ниже примере показан типичный элемент конфигурации компилятора.</span><span class="sxs-lookup"><span data-stu-id="e95de-130">The following example illustrates a typical compiler configuration element.</span></span>  
+ <span data-ttu-id="f8b43-131">В приведенном ниже примере показан типичный элемент конфигурации компилятора.</span><span class="sxs-lookup"><span data-stu-id="f8b43-131">The following example illustrates a typical compiler configuration element.</span></span>  
   
 ```xml  
 <configuration>  
@@ -83,10 +84,10 @@ ms.locfileid: "91172948"
 </configuration>  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="e95de-131">См. также</span><span class="sxs-lookup"><span data-stu-id="e95de-131">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f8b43-132">См. также</span><span class="sxs-lookup"><span data-stu-id="f8b43-132">See also</span></span>
 
 - <xref:System.CodeDom.Compiler.CompilerInfo>
 - <xref:System.CodeDom.Compiler.CodeDomProvider>
-- [<span data-ttu-id="e95de-132">Схема файла конфигурации</span><span class="sxs-lookup"><span data-stu-id="e95de-132">Configuration File Schema</span></span>](../index.md)
-- [<span data-ttu-id="e95de-133">Схема параметров поставщиков языков и компиляторов</span><span class="sxs-lookup"><span data-stu-id="e95de-133">Compiler and Language Provider Settings Schema</span></span>](index.md)
-- [<span data-ttu-id="e95de-134">\<compiler> Элемент</span><span class="sxs-lookup"><span data-stu-id="e95de-134">\<compiler> Element</span></span>](compiler-element.md)
+- [<span data-ttu-id="f8b43-133">Схема файла конфигурации</span><span class="sxs-lookup"><span data-stu-id="f8b43-133">Configuration File Schema</span></span>](../index.md)
+- [<span data-ttu-id="f8b43-134">Схема параметров поставщика языка и компилятора</span><span class="sxs-lookup"><span data-stu-id="f8b43-134">Compiler and Language Provider Settings Schema</span></span>](index.md)
+- [<span data-ttu-id="f8b43-135">\<compiler> Элемент</span><span class="sxs-lookup"><span data-stu-id="f8b43-135">\<compiler> Element</span></span>](compiler-element.md)
