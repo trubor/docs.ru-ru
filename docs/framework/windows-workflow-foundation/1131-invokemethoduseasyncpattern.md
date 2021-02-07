@@ -1,38 +1,39 @@
 ---
+description: 'Дополнительные сведения: 1131-Инвокемесодусеасинкпаттерн'
 title: 1131 - InvokeMethodUseAsyncPattern
 ms.date: 03/30/2017
 ms.assetid: eca50fa7-5276-4759-ad1c-e490b9bd1f82
-ms.openlocfilehash: 2192b63b8a08657b69f6e3984f898bd6baddbc5f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 59d8e5e1fe7c5b038df6fce3211fd01977abc4f9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96294187"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667321"
 ---
-# <a name="1131---invokemethoduseasyncpattern"></a><span data-ttu-id="41b04-102">1131 - InvokeMethodUseAsyncPattern</span><span class="sxs-lookup"><span data-stu-id="41b04-102">1131 - InvokeMethodUseAsyncPattern</span></span>
+# <a name="1131---invokemethoduseasyncpattern"></a><span data-ttu-id="7aa59-103">1131 - InvokeMethodUseAsyncPattern</span><span class="sxs-lookup"><span data-stu-id="7aa59-103">1131 - InvokeMethodUseAsyncPattern</span></span>
 
-## <a name="properties"></a><span data-ttu-id="41b04-103">Свойства</span><span class="sxs-lookup"><span data-stu-id="41b04-103">Properties</span></span>  
+## <a name="properties"></a><span data-ttu-id="7aa59-104">Свойства</span><span class="sxs-lookup"><span data-stu-id="7aa59-104">Properties</span></span>  
   
 |||  
 |-|-|  
-|<span data-ttu-id="41b04-104">ID</span><span class="sxs-lookup"><span data-stu-id="41b04-104">ID</span></span>|<span data-ttu-id="41b04-105">1131</span><span class="sxs-lookup"><span data-stu-id="41b04-105">1131</span></span>|  
-|<span data-ttu-id="41b04-106">Keywords</span><span class="sxs-lookup"><span data-stu-id="41b04-106">Keywords</span></span>|<span data-ttu-id="41b04-107">WFRuntime</span><span class="sxs-lookup"><span data-stu-id="41b04-107">WFRuntime</span></span>|  
-|<span data-ttu-id="41b04-108">Level</span><span class="sxs-lookup"><span data-stu-id="41b04-108">Level</span></span>|<span data-ttu-id="41b04-109">Сведения</span><span class="sxs-lookup"><span data-stu-id="41b04-109">Information</span></span>|  
-|<span data-ttu-id="41b04-110">Канал</span><span class="sxs-lookup"><span data-stu-id="41b04-110">Channel</span></span>|<span data-ttu-id="41b04-111">Microsoft-Windows-Application Server-Applications/Debug</span><span class="sxs-lookup"><span data-stu-id="41b04-111">Microsoft-Windows-Application Server-Applications/Debug</span></span>|  
+|<span data-ttu-id="7aa59-105">ID</span><span class="sxs-lookup"><span data-stu-id="7aa59-105">ID</span></span>|<span data-ttu-id="7aa59-106">1131</span><span class="sxs-lookup"><span data-stu-id="7aa59-106">1131</span></span>|  
+|<span data-ttu-id="7aa59-107">Keywords</span><span class="sxs-lookup"><span data-stu-id="7aa59-107">Keywords</span></span>|<span data-ttu-id="7aa59-108">WFRuntime</span><span class="sxs-lookup"><span data-stu-id="7aa59-108">WFRuntime</span></span>|  
+|<span data-ttu-id="7aa59-109">Уровень</span><span class="sxs-lookup"><span data-stu-id="7aa59-109">Level</span></span>|<span data-ttu-id="7aa59-110">Сведения</span><span class="sxs-lookup"><span data-stu-id="7aa59-110">Information</span></span>|  
+|<span data-ttu-id="7aa59-111">Канал</span><span class="sxs-lookup"><span data-stu-id="7aa59-111">Channel</span></span>|<span data-ttu-id="7aa59-112">Microsoft-Windows-Application Server-Applications/Debug</span><span class="sxs-lookup"><span data-stu-id="7aa59-112">Microsoft-Windows-Application Server-Applications/Debug</span></span>|  
   
-## <a name="description"></a><span data-ttu-id="41b04-112">Описание</span><span class="sxs-lookup"><span data-stu-id="41b04-112">Description</span></span>  
+## <a name="description"></a><span data-ttu-id="7aa59-113">Описание</span><span class="sxs-lookup"><span data-stu-id="7aa59-113">Description</span></span>  
 
- <span data-ttu-id="41b04-113">На шаге CacheMetadata действие InvokeMethod указывает на использование асинхронного шаблона при вызове метода.</span><span class="sxs-lookup"><span data-stu-id="41b04-113">During CacheMetadata step, InvokeMethod activity indicates that it is using the async pattern when invoking the method.</span></span>  
+ <span data-ttu-id="7aa59-114">На шаге CacheMetadata действие InvokeMethod указывает на использование асинхронного шаблона при вызове метода.</span><span class="sxs-lookup"><span data-stu-id="7aa59-114">During CacheMetadata step, InvokeMethod activity indicates that it is using the async pattern when invoking the method.</span></span>  
   
-## <a name="message"></a><span data-ttu-id="41b04-114">Сообщение</span><span class="sxs-lookup"><span data-stu-id="41b04-114">Message</span></span>  
+## <a name="message"></a><span data-ttu-id="7aa59-115">Сообщение</span><span class="sxs-lookup"><span data-stu-id="7aa59-115">Message</span></span>  
 
- <span data-ttu-id="41b04-115">Метод InvokeMethod «%1»: в методе используется асинхронная модель «%2» и «%3».</span><span class="sxs-lookup"><span data-stu-id="41b04-115">InvokeMethod '%1' - method uses asynchronous pattern of '%2' and '%3'.</span></span>  
+ <span data-ttu-id="7aa59-116">Метод InvokeMethod «%1»: в методе используется асинхронная модель «%2» и «%3».</span><span class="sxs-lookup"><span data-stu-id="7aa59-116">InvokeMethod '%1' - method uses asynchronous pattern of '%2' and '%3'.</span></span>  
   
-## <a name="details"></a><span data-ttu-id="41b04-116">Сведения</span><span class="sxs-lookup"><span data-stu-id="41b04-116">Details</span></span>  
+## <a name="details"></a><span data-ttu-id="7aa59-117">Сведения</span><span class="sxs-lookup"><span data-stu-id="7aa59-117">Details</span></span>  
   
-|<span data-ttu-id="41b04-117">Имя элемента данных</span><span class="sxs-lookup"><span data-stu-id="41b04-117">Data Item Name</span></span>|<span data-ttu-id="41b04-118">Тип элемента данных</span><span class="sxs-lookup"><span data-stu-id="41b04-118">Data Item Type</span></span>|<span data-ttu-id="41b04-119">Описание</span><span class="sxs-lookup"><span data-stu-id="41b04-119">Description</span></span>|  
+|<span data-ttu-id="7aa59-118">Имя элемента данных</span><span class="sxs-lookup"><span data-stu-id="7aa59-118">Data Item Name</span></span>|<span data-ttu-id="7aa59-119">Тип элемента данных</span><span class="sxs-lookup"><span data-stu-id="7aa59-119">Data Item Type</span></span>|<span data-ttu-id="7aa59-120">Описание</span><span class="sxs-lookup"><span data-stu-id="7aa59-120">Description</span></span>|  
 |--------------------|--------------------|-----------------|  
-|<span data-ttu-id="41b04-120">InvokeMethod</span><span class="sxs-lookup"><span data-stu-id="41b04-120">InvokeMethod</span></span>|<span data-ttu-id="41b04-121">xs:string</span><span class="sxs-lookup"><span data-stu-id="41b04-121">xs:string</span></span>|<span data-ttu-id="41b04-122">Отображаемое имя действия InvokeMethod.</span><span class="sxs-lookup"><span data-stu-id="41b04-122">The display name of the InvokeMethod activity.</span></span>|  
-|<span data-ttu-id="41b04-123">BeginMethod</span><span class="sxs-lookup"><span data-stu-id="41b04-123">BeginMethod</span></span>|<span data-ttu-id="41b04-124">xs:string</span><span class="sxs-lookup"><span data-stu-id="41b04-124">xs:string</span></span>|<span data-ttu-id="41b04-125">Имя метода Begin.</span><span class="sxs-lookup"><span data-stu-id="41b04-125">The name of the begin method.</span></span>|  
-|<span data-ttu-id="41b04-126">EndMethod</span><span class="sxs-lookup"><span data-stu-id="41b04-126">EndMethod</span></span>|<span data-ttu-id="41b04-127">xs:string</span><span class="sxs-lookup"><span data-stu-id="41b04-127">xs:string</span></span>|<span data-ttu-id="41b04-128">Имя метода End.</span><span class="sxs-lookup"><span data-stu-id="41b04-128">The name of the end method.</span></span>|  
-|<span data-ttu-id="41b04-129">Домен приложения</span><span class="sxs-lookup"><span data-stu-id="41b04-129">AppDomain</span></span>|<span data-ttu-id="41b04-130">xs:string</span><span class="sxs-lookup"><span data-stu-id="41b04-130">xs:string</span></span>|<span data-ttu-id="41b04-131">Строка, возвращаемая AppDomain.CurrentDomain.FriendlyName.</span><span class="sxs-lookup"><span data-stu-id="41b04-131">The string returned by AppDomain.CurrentDomain.FriendlyName.</span></span>|
+|<span data-ttu-id="7aa59-121">InvokeMethod</span><span class="sxs-lookup"><span data-stu-id="7aa59-121">InvokeMethod</span></span>|<span data-ttu-id="7aa59-122">xs:string</span><span class="sxs-lookup"><span data-stu-id="7aa59-122">xs:string</span></span>|<span data-ttu-id="7aa59-123">Отображаемое имя действия InvokeMethod.</span><span class="sxs-lookup"><span data-stu-id="7aa59-123">The display name of the InvokeMethod activity.</span></span>|  
+|<span data-ttu-id="7aa59-124">BeginMethod</span><span class="sxs-lookup"><span data-stu-id="7aa59-124">BeginMethod</span></span>|<span data-ttu-id="7aa59-125">xs:string</span><span class="sxs-lookup"><span data-stu-id="7aa59-125">xs:string</span></span>|<span data-ttu-id="7aa59-126">Имя метода Begin.</span><span class="sxs-lookup"><span data-stu-id="7aa59-126">The name of the begin method.</span></span>|  
+|<span data-ttu-id="7aa59-127">EndMethod</span><span class="sxs-lookup"><span data-stu-id="7aa59-127">EndMethod</span></span>|<span data-ttu-id="7aa59-128">xs:string</span><span class="sxs-lookup"><span data-stu-id="7aa59-128">xs:string</span></span>|<span data-ttu-id="7aa59-129">Имя метода End.</span><span class="sxs-lookup"><span data-stu-id="7aa59-129">The name of the end method.</span></span>|  
+|<span data-ttu-id="7aa59-130">Домен приложения</span><span class="sxs-lookup"><span data-stu-id="7aa59-130">AppDomain</span></span>|<span data-ttu-id="7aa59-131">xs:string</span><span class="sxs-lookup"><span data-stu-id="7aa59-131">xs:string</span></span>|<span data-ttu-id="7aa59-132">Строка, возвращаемая AppDomain.CurrentDomain.FriendlyName.</span><span class="sxs-lookup"><span data-stu-id="7aa59-132">The string returned by AppDomain.CurrentDomain.FriendlyName.</span></span>|
