@@ -1,19 +1,20 @@
 ---
-title: <workflowInstanceQuery>WCF
+description: 'Дополнительные сведения о: <workflowInstanceQuery> из WCF'
+title: <workflowInstanceQuery> WCF
 ms.date: 03/30/2017
 ms.assetid: 35c73f9d-474e-42eb-874d-ddc04b1987f3
-ms.openlocfilehash: eaf0cd204265aac7c1421e3de0c33963e6bbb7a1
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 30df1a6b4fc0aeac5b7094f1a1f7d9d02599c94d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70854739"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682323"
 ---
-# <a name="workflowinstancequery-of-wcf"></a><span data-ttu-id="e1eb7-102">\<workflowInstanceQuery>WCF</span><span class="sxs-lookup"><span data-stu-id="e1eb7-102">\<workflowInstanceQuery> of WCF</span></span>
+# <a name="workflowinstancequery-of-wcf"></a><span data-ttu-id="74e84-103">\<workflowInstanceQuery> WCF</span><span class="sxs-lookup"><span data-stu-id="74e84-103">\<workflowInstanceQuery> of WCF</span></span>
 
-<span data-ttu-id="e1eb7-103">Представляет запрос, отслеживающий изменения жизненного цикла экземпляра рабочего процесса, например начавшиеся и завершенные события.</span><span class="sxs-lookup"><span data-stu-id="e1eb7-103">Represents a query that tracks workflow instance life cycle changes such as a started or completed event.</span></span>  
+<span data-ttu-id="74e84-104">Представляет запрос, отслеживающий изменения жизненного цикла экземпляра рабочего процесса, например начавшиеся и завершенные события.</span><span class="sxs-lookup"><span data-stu-id="74e84-104">Represents a query that tracks workflow instance life cycle changes such as a started or completed event.</span></span>  
   
-<span data-ttu-id="e1eb7-104">Дополнительные сведения о запросах профиля отслеживания см. в разделе [Профили отслеживания](../../../windows-workflow-foundation/tracking-profiles.md) .</span><span class="sxs-lookup"><span data-stu-id="e1eb7-104">For more information on tracking profile queries, see [Tracking Profiles](../../../windows-workflow-foundation/tracking-profiles.md)</span></span>  
+<span data-ttu-id="74e84-105">Дополнительные сведения о запросах профиля отслеживания см. в разделе [Профили отслеживания](../../../windows-workflow-foundation/tracking-profiles.md) .</span><span class="sxs-lookup"><span data-stu-id="74e84-105">For more information on tracking profile queries, see [Tracking Profiles](../../../windows-workflow-foundation/tracking-profiles.md)</span></span>  
   
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
@@ -24,7 +25,7 @@ ms.locfileid: "70854739"
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<workflowInstanceQueries>**](workflowinstancequeries-of-wcf.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<workflowInstanceQuery>**  
   
-## <a name="syntax"></a><span data-ttu-id="e1eb7-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="e1eb7-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="74e84-106">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="74e84-106">Syntax</span></span>  
   
 ```xml  
 <tracking>
@@ -44,29 +45,29 @@ ms.locfileid: "70854739"
 </tracking>
 ```  
   
-## <a name="attributes-and-elements"></a><span data-ttu-id="e1eb7-106">Элементы и атрибуты</span><span class="sxs-lookup"><span data-stu-id="e1eb7-106">Attributes and elements</span></span>  
+## <a name="attributes-and-elements"></a><span data-ttu-id="74e84-107">Элементы и атрибуты</span><span class="sxs-lookup"><span data-stu-id="74e84-107">Attributes and elements</span></span>  
 
-<span data-ttu-id="e1eb7-107">В следующих разделах описаны атрибуты, дочерние и родительские элементы.</span><span class="sxs-lookup"><span data-stu-id="e1eb7-107">The following sections describe attributes, child elements, and parent elements.</span></span>  
+<span data-ttu-id="74e84-108">В следующих разделах описаны атрибуты, дочерние и родительские элементы.</span><span class="sxs-lookup"><span data-stu-id="74e84-108">The following sections describe attributes, child elements, and parent elements.</span></span>  
   
-### <a name="attributes"></a><span data-ttu-id="e1eb7-108">Атрибуты</span><span class="sxs-lookup"><span data-stu-id="e1eb7-108">Attributes</span></span>  
+### <a name="attributes"></a><span data-ttu-id="74e84-109">Атрибуты</span><span class="sxs-lookup"><span data-stu-id="74e84-109">Attributes</span></span>  
 
-<span data-ttu-id="e1eb7-109">Отсутствует.</span><span class="sxs-lookup"><span data-stu-id="e1eb7-109">None.</span></span>  
+<span data-ttu-id="74e84-110">Отсутствует.</span><span class="sxs-lookup"><span data-stu-id="74e84-110">None.</span></span>  
   
-### <a name="child-elements"></a><span data-ttu-id="e1eb7-110">Дочерние элементы</span><span class="sxs-lookup"><span data-stu-id="e1eb7-110">Child elements</span></span>  
+### <a name="child-elements"></a><span data-ttu-id="74e84-111">Дочерние элементы</span><span class="sxs-lookup"><span data-stu-id="74e84-111">Child elements</span></span>  
   
-|<span data-ttu-id="e1eb7-111">Элемент</span><span class="sxs-lookup"><span data-stu-id="e1eb7-111">Element</span></span>|<span data-ttu-id="e1eb7-112">Описание</span><span class="sxs-lookup"><span data-stu-id="e1eb7-112">Description</span></span>|  
+|<span data-ttu-id="74e84-112">Элемент</span><span class="sxs-lookup"><span data-stu-id="74e84-112">Element</span></span>|<span data-ttu-id="74e84-113">Описание</span><span class="sxs-lookup"><span data-stu-id="74e84-113">Description</span></span>|  
 |-------------|-----------------|  
-|[\<states>](states-of-wcf-workflowinstancequery.md)|<span data-ttu-id="e1eb7-113">Коллекция состояний, на которые установлена подписка, из отслеживаемого экземпляра рабочего процесса в момент создания записей отслеживания.</span><span class="sxs-lookup"><span data-stu-id="e1eb7-113">A collection of subscribed states from the tracked workflow instance when the tracking records are created.</span></span>|  
+|[\<states>](states-of-wcf-workflowinstancequery.md)|<span data-ttu-id="74e84-114">Коллекция состояний, на которые установлена подписка, из отслеживаемого экземпляра рабочего процесса в момент создания записей отслеживания.</span><span class="sxs-lookup"><span data-stu-id="74e84-114">A collection of subscribed states from the tracked workflow instance when the tracking records are created.</span></span>|  
   
-### <a name="parent-elements"></a><span data-ttu-id="e1eb7-114">Родительские элементы</span><span class="sxs-lookup"><span data-stu-id="e1eb7-114">Parent elements</span></span>  
+### <a name="parent-elements"></a><span data-ttu-id="74e84-115">Родительские элементы</span><span class="sxs-lookup"><span data-stu-id="74e84-115">Parent elements</span></span>  
   
-|<span data-ttu-id="e1eb7-115">Элемент</span><span class="sxs-lookup"><span data-stu-id="e1eb7-115">Element</span></span>|<span data-ttu-id="e1eb7-116">Описание</span><span class="sxs-lookup"><span data-stu-id="e1eb7-116">Description</span></span>|  
+|<span data-ttu-id="74e84-116">Элемент</span><span class="sxs-lookup"><span data-stu-id="74e84-116">Element</span></span>|<span data-ttu-id="74e84-117">Описание</span><span class="sxs-lookup"><span data-stu-id="74e84-117">Description</span></span>|  
 |-------------|-----------------|  
-|[\<workflowInstanceQueries>](workflowinstancequeries-of-wcf.md)|<span data-ttu-id="e1eb7-117">Представляет коллекцию элементов конфигурации, которые отслеживают изменения жизненного цикла экземпляра рабочего процесса, например события «запущен» или «завершен».</span><span class="sxs-lookup"><span data-stu-id="e1eb7-117">Represents a collection of configuration elements that track workflow instance life cycle changes such as a started or completed event.</span></span>|  
+|[\<workflowInstanceQueries>](workflowinstancequeries-of-wcf.md)|<span data-ttu-id="74e84-118">Представляет коллекцию элементов конфигурации, которые отслеживают изменения жизненного цикла экземпляра рабочего процесса, например события «запущен» или «завершен».</span><span class="sxs-lookup"><span data-stu-id="74e84-118">Represents a collection of configuration elements that track workflow instance life cycle changes such as a started or completed event.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="e1eb7-118">Примечания</span><span class="sxs-lookup"><span data-stu-id="e1eb7-118">Remarks</span></span>  
+## <a name="remarks"></a><span data-ttu-id="74e84-119">Remarks</span><span class="sxs-lookup"><span data-stu-id="74e84-119">Remarks</span></span>  
 
-<span data-ttu-id="e1eb7-119">Запрос <xref:System.Activities.Tracking.WorkflowInstanceQuery> используется для подписки на следующие объекты <xref:System.Activities.Tracking.TrackingRecord>.</span><span class="sxs-lookup"><span data-stu-id="e1eb7-119">The <xref:System.Activities.Tracking.WorkflowInstanceQuery> is used to subscribe to the following <xref:System.Activities.Tracking.TrackingRecord> objects:</span></span>  
+<span data-ttu-id="74e84-120">Запрос <xref:System.Activities.Tracking.WorkflowInstanceQuery> используется для подписки на следующие объекты <xref:System.Activities.Tracking.TrackingRecord>.</span><span class="sxs-lookup"><span data-stu-id="74e84-120">The <xref:System.Activities.Tracking.WorkflowInstanceQuery> is used to subscribe to the following <xref:System.Activities.Tracking.TrackingRecord> objects:</span></span>  
   
 - <xref:System.Activities.Tracking.WorkflowInstanceRecord>  
   
@@ -78,9 +79,9 @@ ms.locfileid: "70854739"
   
 - <xref:System.Activities.Tracking.WorkflowInstanceSuspendedRecord>  
   
-## <a name="example"></a><span data-ttu-id="e1eb7-120">Пример</span><span class="sxs-lookup"><span data-stu-id="e1eb7-120">Example</span></span>  
+## <a name="example"></a><span data-ttu-id="74e84-121">Пример</span><span class="sxs-lookup"><span data-stu-id="74e84-121">Example</span></span>  
 
-<span data-ttu-id="e1eb7-121">При использовании следующей конфигурации устанавливается подписка на записи отслеживания рабочего процесса на уровне экземпляра для состояния экземпляра `Started` при помощи данного запроса.</span><span class="sxs-lookup"><span data-stu-id="e1eb7-121">The following configuration subscribes to workflow instance-level tracking records for the `Started` instance state using this query.</span></span>  
+<span data-ttu-id="74e84-122">При использовании следующей конфигурации устанавливается подписка на записи отслеживания рабочего процесса на уровне экземпляра для состояния экземпляра `Started` при помощи данного запроса.</span><span class="sxs-lookup"><span data-stu-id="74e84-122">The following configuration subscribes to workflow instance-level tracking records for the `Started` instance state using this query.</span></span>  
   
 ```xml  
 <workflowInstanceQueries>
@@ -92,9 +93,9 @@ ms.locfileid: "70854739"
 </workflowInstanceQueries>
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="e1eb7-122">См. также</span><span class="sxs-lookup"><span data-stu-id="e1eb7-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="74e84-123">См. также</span><span class="sxs-lookup"><span data-stu-id="74e84-123">See also</span></span>
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElement?displayProperty=nameWithType>
 - <xref:System.Activities.Tracking.WorkflowInstanceQuery?displayProperty=nameWithType>
-- [<span data-ttu-id="e1eb7-123">Отслеживание и трассировка рабочих процессов</span><span class="sxs-lookup"><span data-stu-id="e1eb7-123">Workflow Tracking and Tracing</span></span>](../../../windows-workflow-foundation/workflow-tracking-and-tracing.md)
-- [<span data-ttu-id="e1eb7-124">Профили отслеживания</span><span class="sxs-lookup"><span data-stu-id="e1eb7-124">Tracking Profiles</span></span>](../../../windows-workflow-foundation/tracking-profiles.md)
+- [<span data-ttu-id="74e84-124">Отслеживание и трассировка рабочих процессов</span><span class="sxs-lookup"><span data-stu-id="74e84-124">Workflow Tracking and Tracing</span></span>](../../../windows-workflow-foundation/workflow-tracking-and-tracing.md)
+- [<span data-ttu-id="74e84-125">Профили отслеживания</span><span class="sxs-lookup"><span data-stu-id="74e84-125">Tracking Profiles</span></span>](../../../windows-workflow-foundation/tracking-profiles.md)
