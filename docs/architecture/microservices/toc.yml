@@ -10,7 +10,7 @@
           href: container-docker-introduction/docker-terminology.md
         - name: "Контейнеры, образы и реестры\_Docker"
           href: container-docker-introduction/docker-containers-images-registries.md
-    - name: "Выбор между NET\_5 и NET\_Framework для контейнеров\_Docker"
+    - name: "Выбор между .NET\_5 и .NET\_Framework для контейнеров\_Docker"
       href: net-core-net-framework-containers/index.md
       items:
         - name: Общее руководство
