@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: функция CoInitialize'
 title: Функция CoInitializeEE
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 7e42a928-5068-4ba6-b8c3-806551a01fa8
 topic_type:
 - apiref
-ms.openlocfilehash: 707e182e62f4a7b7b813e6b288c6825b0d3d2eab
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9664324c569ed4de73262491cf8eda8296b3c3a1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731759"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799828"
 ---
-# <a name="coinitializeee-function"></a><span data-ttu-id="6f612-102">Функция CoInitializeEE</span><span class="sxs-lookup"><span data-stu-id="6f612-102">CoInitializeEE Function</span></span>
+# <a name="coinitializeee-function"></a><span data-ttu-id="a01ec-103">Функция CoInitializeEE</span><span class="sxs-lookup"><span data-stu-id="a01ec-103">CoInitializeEE Function</span></span>
 
-<span data-ttu-id="6f612-103">Гарантирует, что подсистема выполнения среды CLR загружается в процесс.</span><span class="sxs-lookup"><span data-stu-id="6f612-103">Ensures that the common language runtime execution engine is loaded into a process.</span></span> <span data-ttu-id="6f612-104">Эта функция является устаревшей в .NET Framework 4.</span><span class="sxs-lookup"><span data-stu-id="6f612-104">This function is deprecated in the .NET Framework 4.</span></span> <span data-ttu-id="6f612-105">Используйте вместо этого метод [ICLRRuntimeHost:: Start](iclrruntimehost-start-method.md) .</span><span class="sxs-lookup"><span data-stu-id="6f612-105">Use the [ICLRRuntimeHost::Start](iclrruntimehost-start-method.md) method instead.</span></span>  
+<span data-ttu-id="a01ec-104">Гарантирует, что подсистема выполнения среды CLR загружается в процесс.</span><span class="sxs-lookup"><span data-stu-id="a01ec-104">Ensures that the common language runtime execution engine is loaded into a process.</span></span> <span data-ttu-id="a01ec-105">Эта функция является устаревшей в платформа .NET Framework 4.</span><span class="sxs-lookup"><span data-stu-id="a01ec-105">This function is deprecated in the .NET Framework 4.</span></span> <span data-ttu-id="a01ec-106">Используйте вместо этого метод [ICLRRuntimeHost:: Start](iclrruntimehost-start-method.md) .</span><span class="sxs-lookup"><span data-stu-id="a01ec-106">Use the [ICLRRuntimeHost::Start](iclrruntimehost-start-method.md) method instead.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="6f612-106">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="6f612-106">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="a01ec-107">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="a01ec-107">Syntax</span></span>  
   
 ```cpp  
 HRESULT CoInitializeEE (  
@@ -34,35 +35,35 @@ HRESULT CoInitializeEE (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="6f612-107">Параметры</span><span class="sxs-lookup"><span data-stu-id="6f612-107">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="a01ec-108">Параметры</span><span class="sxs-lookup"><span data-stu-id="a01ec-108">Parameters</span></span>  
 
  `fFlags`  
- <span data-ttu-id="6f612-108">окне Одна из констант перечисления [коинитии](../metadata/coinitiee-enumeration.md) .</span><span class="sxs-lookup"><span data-stu-id="6f612-108">[in] One of the [COINITIEE](../metadata/coinitiee-enumeration.md) enumeration constants.</span></span>  
+ <span data-ttu-id="a01ec-109">окне Одна из констант перечисления [коинитии](../metadata/coinitiee-enumeration.md) .</span><span class="sxs-lookup"><span data-stu-id="a01ec-109">[in] One of the [COINITIEE](../metadata/coinitiee-enumeration.md) enumeration constants.</span></span>  
   
-## <a name="return-value"></a><span data-ttu-id="6f612-109">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="6f612-109">Return Value</span></span>  
+## <a name="return-value"></a><span data-ttu-id="a01ec-110">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="a01ec-110">Return Value</span></span>  
 
- <span data-ttu-id="6f612-110">Этот метод возвращает стандартные коды ошибок COM, определенные в файле Winerror. h, и значения, приведенные в следующей таблице.</span><span class="sxs-lookup"><span data-stu-id="6f612-110">This method returns standard COM error codes as defined in Winerror.h, and the values in the following table.</span></span>  
+ <span data-ttu-id="a01ec-111">Этот метод возвращает стандартные коды ошибок COM, определенные в файле Winerror. h, и значения, приведенные в следующей таблице.</span><span class="sxs-lookup"><span data-stu-id="a01ec-111">This method returns standard COM error codes as defined in Winerror.h, and the values in the following table.</span></span>  
   
-|<span data-ttu-id="6f612-111">Код возврата</span><span class="sxs-lookup"><span data-stu-id="6f612-111">Return code</span></span>|<span data-ttu-id="6f612-112">Описание</span><span class="sxs-lookup"><span data-stu-id="6f612-112">Description</span></span>|  
+|<span data-ttu-id="a01ec-112">Код возврата</span><span class="sxs-lookup"><span data-stu-id="a01ec-112">Return code</span></span>|<span data-ttu-id="a01ec-113">Описание</span><span class="sxs-lookup"><span data-stu-id="a01ec-113">Description</span></span>|  
 |-----------------|-----------------|  
-|<span data-ttu-id="6f612-113">S_OK</span><span class="sxs-lookup"><span data-stu-id="6f612-113">S_OK</span></span>|<span data-ttu-id="6f612-114">Подсистема выполнения успешно загружена.</span><span class="sxs-lookup"><span data-stu-id="6f612-114">The execution engine was loaded successfully.</span></span>|  
-|<span data-ttu-id="6f612-115">S_FALSE</span><span class="sxs-lookup"><span data-stu-id="6f612-115">S_FALSE</span></span>|<span data-ttu-id="6f612-116">Подсистема выполнения уже загружена.</span><span class="sxs-lookup"><span data-stu-id="6f612-116">The execution engine is already loaded.</span></span>|  
-|<span data-ttu-id="6f612-117">E_FAIL</span><span class="sxs-lookup"><span data-stu-id="6f612-117">E_FAIL</span></span>|<span data-ttu-id="6f612-118">Не удалось загрузить подсистему выполнения.</span><span class="sxs-lookup"><span data-stu-id="6f612-118">The execution engine could not be loaded.</span></span>|  
+|<span data-ttu-id="a01ec-114">S_OK</span><span class="sxs-lookup"><span data-stu-id="a01ec-114">S_OK</span></span>|<span data-ttu-id="a01ec-115">Подсистема выполнения успешно загружена.</span><span class="sxs-lookup"><span data-stu-id="a01ec-115">The execution engine was loaded successfully.</span></span>|  
+|<span data-ttu-id="a01ec-116">S_FALSE</span><span class="sxs-lookup"><span data-stu-id="a01ec-116">S_FALSE</span></span>|<span data-ttu-id="a01ec-117">Подсистема выполнения уже загружена.</span><span class="sxs-lookup"><span data-stu-id="a01ec-117">The execution engine is already loaded.</span></span>|  
+|<span data-ttu-id="a01ec-118">E_FAIL</span><span class="sxs-lookup"><span data-stu-id="a01ec-118">E_FAIL</span></span>|<span data-ttu-id="a01ec-119">Не удалось загрузить подсистему выполнения.</span><span class="sxs-lookup"><span data-stu-id="a01ec-119">The execution engine could not be loaded.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="6f612-119">Комментарии</span><span class="sxs-lookup"><span data-stu-id="6f612-119">Remarks</span></span>  
+## <a name="remarks"></a><span data-ttu-id="a01ec-120">Remarks</span><span class="sxs-lookup"><span data-stu-id="a01ec-120">Remarks</span></span>  
 
- <span data-ttu-id="6f612-120">Этот метод загружает подсистему выполнения, если он не был загружен ранее.</span><span class="sxs-lookup"><span data-stu-id="6f612-120">This method loads the execution engine if it has not been previously loaded.</span></span>  
+ <span data-ttu-id="a01ec-121">Этот метод загружает подсистему выполнения, если он не был загружен ранее.</span><span class="sxs-lookup"><span data-stu-id="a01ec-121">This method loads the execution engine if it has not been previously loaded.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="6f612-121">Требования</span><span class="sxs-lookup"><span data-stu-id="6f612-121">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="a01ec-122">Требования</span><span class="sxs-lookup"><span data-stu-id="a01ec-122">Requirements</span></span>  
 
- <span data-ttu-id="6f612-122">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="6f612-122">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="a01ec-123">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="a01ec-123">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="6f612-123">**Заголовок:** COR. h</span><span class="sxs-lookup"><span data-stu-id="6f612-123">**Header:** Cor.h</span></span>  
+ <span data-ttu-id="a01ec-124">**Заголовок:** COR. h</span><span class="sxs-lookup"><span data-stu-id="a01ec-124">**Header:** Cor.h</span></span>  
   
- <span data-ttu-id="6f612-124">**Библиотека:** Включается в качестве ресурса в MsCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="6f612-124">**Library:** Included as a resource in MsCorEE.dll</span></span>  
+ <span data-ttu-id="a01ec-125">**Библиотека:** Включается в качестве ресурса в MsCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="a01ec-125">**Library:** Included as a resource in MsCorEE.dll</span></span>  
   
- <span data-ttu-id="6f612-125">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="6f612-125">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="a01ec-126">**Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="a01ec-126">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="6f612-126">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="6f612-126">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a01ec-127">См. также</span><span class="sxs-lookup"><span data-stu-id="a01ec-127">See also</span></span>
 
-- [<span data-ttu-id="6f612-127">Глобальные статические функции метаданных</span><span class="sxs-lookup"><span data-stu-id="6f612-127">Metadata Global Static Functions</span></span>](../metadata/metadata-global-static-functions.md)
+- [<span data-ttu-id="a01ec-128">Глобальные статические функции метаданных</span><span class="sxs-lookup"><span data-stu-id="a01ec-128">Metadata Global Static Functions</span></span>](../metadata/metadata-global-static-functions.md)
