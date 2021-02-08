@@ -1,31 +1,32 @@
 ---
+description: 'Дополнительные сведения: указание значений XML в качестве параметров'
 title: Указание значений XML как параметров
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 2c4d08b8-fc29-4614-97fa-29c8ff7ca5b3
-ms.openlocfilehash: 20a573da0221704451f10138cb854523d5a17f17
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 9c5b81270eeaec1fc0b3992971c9285863c92466
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183056"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767457"
 ---
-# <a name="specifying-xml-values-as-parameters"></a><span data-ttu-id="4548f-102">Указание значений XML как параметров</span><span class="sxs-lookup"><span data-stu-id="4548f-102">Specifying XML Values as Parameters</span></span>
+# <a name="specifying-xml-values-as-parameters"></a><span data-ttu-id="c5967-103">Указание значений XML как параметров</span><span class="sxs-lookup"><span data-stu-id="c5967-103">Specifying XML Values as Parameters</span></span>
 
-<span data-ttu-id="4548f-103">Если запрос требует параметров, значения которых представляет XML-строка, разработчики могут передать это значение с помощью экземпляра типа данных **SqlXml**.</span><span class="sxs-lookup"><span data-stu-id="4548f-103">If a query requires a parameter whose value is an XML string, developers can supply that value using an instance of the **SqlXml** data type.</span></span> <span data-ttu-id="4548f-104">Это не составляет никакой сложности, поскольку XML-столбцы в SQL Server принимают значения параметров точно так же, как другие типы данных.</span><span class="sxs-lookup"><span data-stu-id="4548f-104">There really are no tricks; XML columns in SQL Server accept parameter values in exactly the same way as other data types.</span></span>  
+<span data-ttu-id="c5967-104">Если запрос требует параметров, значения которых представляет XML-строка, разработчики могут передать это значение с помощью экземпляра типа данных **SqlXml**.</span><span class="sxs-lookup"><span data-stu-id="c5967-104">If a query requires a parameter whose value is an XML string, developers can supply that value using an instance of the **SqlXml** data type.</span></span> <span data-ttu-id="c5967-105">Это не составляет никакой сложности, поскольку XML-столбцы в SQL Server принимают значения параметров точно так же, как другие типы данных.</span><span class="sxs-lookup"><span data-stu-id="c5967-105">There really are no tricks; XML columns in SQL Server accept parameter values in exactly the same way as other data types.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="4548f-105">Пример</span><span class="sxs-lookup"><span data-stu-id="4548f-105">Example</span></span>  
+## <a name="example"></a><span data-ttu-id="c5967-106">Пример</span><span class="sxs-lookup"><span data-stu-id="c5967-106">Example</span></span>  
 
- <span data-ttu-id="4548f-106">Следующее приложение командной строки создает новую таблицу в базе данных **AdventureWorks**.</span><span class="sxs-lookup"><span data-stu-id="4548f-106">The following console application creates a new table in the **AdventureWorks** database.</span></span> <span data-ttu-id="4548f-107">Новая таблица содержит столбец с именем **SalesID** и XML-столбец с именем **SalesInfo**.</span><span class="sxs-lookup"><span data-stu-id="4548f-107">The new table includes a column named **SalesID** and an XML column named **SalesInfo**.</span></span>  
+ <span data-ttu-id="c5967-107">Следующее приложение командной строки создает новую таблицу в базе данных **AdventureWorks**.</span><span class="sxs-lookup"><span data-stu-id="c5967-107">The following console application creates a new table in the **AdventureWorks** database.</span></span> <span data-ttu-id="c5967-108">Новая таблица содержит столбец с именем **SalesID** и XML-столбец с именем **SalesInfo**.</span><span class="sxs-lookup"><span data-stu-id="c5967-108">The new table includes a column named **SalesID** and an XML column named **SalesInfo**.</span></span>  
   
 > [!NOTE]
-> <span data-ttu-id="4548f-108">Образец базы данных **AdventureWorks** не устанавливается по умолчанию при установке SQL Server.</span><span class="sxs-lookup"><span data-stu-id="4548f-108">The **AdventureWorks** sample database is not installed by default when you install SQL Server.</span></span> <span data-ttu-id="4548f-109">Чтобы установить его, запустите программу установки SQL Server.</span><span class="sxs-lookup"><span data-stu-id="4548f-109">You can install it by running SQL Server Setup.</span></span>  
+> <span data-ttu-id="c5967-109">Образец базы данных **AdventureWorks** не устанавливается по умолчанию при установке SQL Server.</span><span class="sxs-lookup"><span data-stu-id="c5967-109">The **AdventureWorks** sample database is not installed by default when you install SQL Server.</span></span> <span data-ttu-id="c5967-110">Чтобы установить его, запустите программу установки SQL Server.</span><span class="sxs-lookup"><span data-stu-id="c5967-110">You can install it by running SQL Server Setup.</span></span>  
   
- <span data-ttu-id="4548f-110">Наш пример подготавливает объект <xref:System.Data.SqlClient.SqlCommand> для вставки строки в новую таблицу.</span><span class="sxs-lookup"><span data-stu-id="4548f-110">The example prepares a <xref:System.Data.SqlClient.SqlCommand> object to insert a row in the new table.</span></span> <span data-ttu-id="4548f-111">Сохраненный файл предоставляет XML-данные, необходимые для столбца **SalesInfo**.</span><span class="sxs-lookup"><span data-stu-id="4548f-111">A saved file provides the XML data needed for the **SalesInfo** column.</span></span>  
+ <span data-ttu-id="c5967-111">Наш пример подготавливает объект <xref:System.Data.SqlClient.SqlCommand> для вставки строки в новую таблицу.</span><span class="sxs-lookup"><span data-stu-id="c5967-111">The example prepares a <xref:System.Data.SqlClient.SqlCommand> object to insert a row in the new table.</span></span> <span data-ttu-id="c5967-112">Сохраненный файл предоставляет XML-данные, необходимые для столбца **SalesInfo**.</span><span class="sxs-lookup"><span data-stu-id="c5967-112">A saved file provides the XML data needed for the **SalesInfo** column.</span></span>  
   
- <span data-ttu-id="4548f-112">Чтобы получить файл, необходимый для выполнения этого примера, создайте пустой текстовый файл в той же папке, где размещен проект.</span><span class="sxs-lookup"><span data-stu-id="4548f-112">To create the file needed for the example to run, create a new text file in the same folder as your project.</span></span> <span data-ttu-id="4548f-113">Присвойте этому файлу имя MyTestStoreData.xml.</span><span class="sxs-lookup"><span data-stu-id="4548f-113">Name the file MyTestStoreData.xml.</span></span> <span data-ttu-id="4548f-114">Откройте файл в Блокноте, скопируйте и вставьте в него следующий текст:</span><span class="sxs-lookup"><span data-stu-id="4548f-114">Open the file in Notepad and copy and paste the following text:</span></span>  
+ <span data-ttu-id="c5967-113">Чтобы получить файл, необходимый для выполнения этого примера, создайте пустой текстовый файл в той же папке, где размещен проект.</span><span class="sxs-lookup"><span data-stu-id="c5967-113">To create the file needed for the example to run, create a new text file in the same folder as your project.</span></span> <span data-ttu-id="c5967-114">Присвойте этому файлу имя MyTestStoreData.xml.</span><span class="sxs-lookup"><span data-stu-id="c5967-114">Name the file MyTestStoreData.xml.</span></span> <span data-ttu-id="c5967-115">Откройте файл в Блокноте, скопируйте и вставьте в него следующий текст:</span><span class="sxs-lookup"><span data-stu-id="c5967-115">Open the file in Notepad and copy and paste the following text:</span></span>  
   
 ```xml  
 <StoreSurvey xmlns="http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/StoreSurvey">  
@@ -161,8 +162,8 @@ class Class1
 }  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="4548f-115">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="4548f-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c5967-116">См. также</span><span class="sxs-lookup"><span data-stu-id="c5967-116">See also</span></span>
 
 - <xref:System.Data.SqlTypes.SqlXml>
-- [<span data-ttu-id="4548f-116">XML-данные в SQL Server</span><span class="sxs-lookup"><span data-stu-id="4548f-116">XML Data in SQL Server</span></span>](xml-data-in-sql-server.md)
-- [<span data-ttu-id="4548f-117">Общие сведения об ADO.NET</span><span class="sxs-lookup"><span data-stu-id="4548f-117">ADO.NET Overview</span></span>](../ado-net-overview.md)
+- [<span data-ttu-id="c5967-117">XML-данные в SQL Server</span><span class="sxs-lookup"><span data-stu-id="c5967-117">XML Data in SQL Server</span></span>](xml-data-in-sql-server.md)
+- [<span data-ttu-id="c5967-118">Общие сведения об ADO.NET</span><span class="sxs-lookup"><span data-stu-id="c5967-118">ADO.NET Overview</span></span>](../ado-net-overview.md)
