@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICLRAssemblyReferenceList:: IsStringAssemblyReferenceInList'
 title: Метод ICLRAssemblyReferenceList::IsStringAssemblyReferenceInList
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: e6121cc3-2f11-42c7-bdae-47808581ff71
 topic_type:
 - apiref
-ms.openlocfilehash: 74d47b3f55c10f65d47f726a2b96ba5e0b18b749
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 667764337fbda22a526e51575faf049efc4b86ca
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95679147"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790039"
 ---
-# <a name="iclrassemblyreferencelistisstringassemblyreferenceinlist-method"></a><span data-ttu-id="22c26-102">Метод ICLRAssemblyReferenceList::IsStringAssemblyReferenceInList</span><span class="sxs-lookup"><span data-stu-id="22c26-102">ICLRAssemblyReferenceList::IsStringAssemblyReferenceInList Method</span></span>
+# <a name="iclrassemblyreferencelistisstringassemblyreferenceinlist-method"></a><span data-ttu-id="902fd-103">Метод ICLRAssemblyReferenceList::IsStringAssemblyReferenceInList</span><span class="sxs-lookup"><span data-stu-id="902fd-103">ICLRAssemblyReferenceList::IsStringAssemblyReferenceInList Method</span></span>
 
-<span data-ttu-id="22c26-103">Возвращает значение, указывающее, совпадает ли заданное имя с именем сборки в списке.</span><span class="sxs-lookup"><span data-stu-id="22c26-103">Gets a value that indicates whether the supplied name matches the name of an assembly in the list.</span></span>  
+<span data-ttu-id="902fd-104">Возвращает значение, указывающее, совпадает ли заданное имя с именем сборки в списке.</span><span class="sxs-lookup"><span data-stu-id="902fd-104">Gets a value that indicates whether the supplied name matches the name of an assembly in the list.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="22c26-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="22c26-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="902fd-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="902fd-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT IsStringAssemblyReferenceInList (  
@@ -34,32 +35,32 @@ HRESULT IsStringAssemblyReferenceInList (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="22c26-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="22c26-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="902fd-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="902fd-106">Parameters</span></span>  
 
  `pwzAssemblyName`  
- <span data-ttu-id="22c26-106">окне Имя сборки, для которой необходимо выполнить поиск.</span><span class="sxs-lookup"><span data-stu-id="22c26-106">[in] The name of the assembly for which to search.</span></span>  
+ <span data-ttu-id="902fd-107">окне Имя сборки, для которой необходимо выполнить поиск.</span><span class="sxs-lookup"><span data-stu-id="902fd-107">[in] The name of the assembly for which to search.</span></span>  
   
-## <a name="return-value"></a><span data-ttu-id="22c26-107">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="22c26-107">Return Value</span></span>  
+## <a name="return-value"></a><span data-ttu-id="902fd-108">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="902fd-108">Return Value</span></span>  
   
-|<span data-ttu-id="22c26-108">HRESULT</span><span class="sxs-lookup"><span data-stu-id="22c26-108">HRESULT</span></span>|<span data-ttu-id="22c26-109">Описание:</span><span class="sxs-lookup"><span data-stu-id="22c26-109">Description</span></span>|  
+|<span data-ttu-id="902fd-109">HRESULT</span><span class="sxs-lookup"><span data-stu-id="902fd-109">HRESULT</span></span>|<span data-ttu-id="902fd-110">Описание:</span><span class="sxs-lookup"><span data-stu-id="902fd-110">Description</span></span>|  
 |-------------|-----------------|  
-|<span data-ttu-id="22c26-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="22c26-110">S_OK</span></span>|<span data-ttu-id="22c26-111">Строка появится в списке.</span><span class="sxs-lookup"><span data-stu-id="22c26-111">The string appears in the list.</span></span>|  
-|<span data-ttu-id="22c26-112">S_FALSE</span><span class="sxs-lookup"><span data-stu-id="22c26-112">S_FALSE</span></span>|<span data-ttu-id="22c26-113">Строка не отображается в списке.</span><span class="sxs-lookup"><span data-stu-id="22c26-113">The string does not appear in the list.</span></span>|  
-|<span data-ttu-id="22c26-114">E_FAIL</span><span class="sxs-lookup"><span data-stu-id="22c26-114">E_FAIL</span></span>|<span data-ttu-id="22c26-115">Произошла неизвестная фатальная ошибка.</span><span class="sxs-lookup"><span data-stu-id="22c26-115">An unknown catastrophic failure occurred.</span></span> <span data-ttu-id="22c26-116">После того как метод возвращает E_FAIL, среда CLR больше не будет использоваться в процессе.</span><span class="sxs-lookup"><span data-stu-id="22c26-116">After a method returns E_FAIL, the common language runtime is no longer usable within the process.</span></span> <span data-ttu-id="22c26-117">Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.</span><span class="sxs-lookup"><span data-stu-id="22c26-117">Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.</span></span>|  
+|<span data-ttu-id="902fd-111">S_OK</span><span class="sxs-lookup"><span data-stu-id="902fd-111">S_OK</span></span>|<span data-ttu-id="902fd-112">Строка появится в списке.</span><span class="sxs-lookup"><span data-stu-id="902fd-112">The string appears in the list.</span></span>|  
+|<span data-ttu-id="902fd-113">S_FALSE</span><span class="sxs-lookup"><span data-stu-id="902fd-113">S_FALSE</span></span>|<span data-ttu-id="902fd-114">Строка не отображается в списке.</span><span class="sxs-lookup"><span data-stu-id="902fd-114">The string does not appear in the list.</span></span>|  
+|<span data-ttu-id="902fd-115">E_FAIL</span><span class="sxs-lookup"><span data-stu-id="902fd-115">E_FAIL</span></span>|<span data-ttu-id="902fd-116">Произошла неизвестная фатальная ошибка.</span><span class="sxs-lookup"><span data-stu-id="902fd-116">An unknown catastrophic failure occurred.</span></span> <span data-ttu-id="902fd-117">После того как метод возвращает E_FAIL, среда CLR больше не будет использоваться в процессе.</span><span class="sxs-lookup"><span data-stu-id="902fd-117">After a method returns E_FAIL, the common language runtime is no longer usable within the process.</span></span> <span data-ttu-id="902fd-118">Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.</span><span class="sxs-lookup"><span data-stu-id="902fd-118">Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.</span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="22c26-118">Требования</span><span class="sxs-lookup"><span data-stu-id="22c26-118">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="902fd-119">Требования</span><span class="sxs-lookup"><span data-stu-id="902fd-119">Requirements</span></span>  
 
- <span data-ttu-id="22c26-119">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="22c26-119">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="902fd-120">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="902fd-120">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="22c26-120">**Заголовок:** MSCorEE. h</span><span class="sxs-lookup"><span data-stu-id="22c26-120">**Header:** MSCorEE.h</span></span>  
+ <span data-ttu-id="902fd-121">**Заголовок:** MSCorEE. h</span><span class="sxs-lookup"><span data-stu-id="902fd-121">**Header:** MSCorEE.h</span></span>  
   
- <span data-ttu-id="22c26-121">**Библиотека:** Включается в качестве ресурса в MSCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="22c26-121">**Library:** Included as a resource in MSCorEE.dll</span></span>  
+ <span data-ttu-id="902fd-122">**Библиотека:** Включается в качестве ресурса в MSCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="902fd-122">**Library:** Included as a resource in MSCorEE.dll</span></span>  
   
- <span data-ttu-id="22c26-122">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="22c26-122">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="902fd-123">**Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="902fd-123">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="22c26-123">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="22c26-123">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="902fd-124">См. также</span><span class="sxs-lookup"><span data-stu-id="902fd-124">See also</span></span>
 
-- [<span data-ttu-id="22c26-124">Интерфейс ICLRAssemblyIdentityManager</span><span class="sxs-lookup"><span data-stu-id="22c26-124">ICLRAssemblyIdentityManager Interface</span></span>](iclrassemblyidentitymanager-interface.md)
-- [<span data-ttu-id="22c26-125">Интерфейс ICLRAssemblyReferenceList</span><span class="sxs-lookup"><span data-stu-id="22c26-125">ICLRAssemblyReferenceList Interface</span></span>](iclrassemblyreferencelist-interface.md)
-- [<span data-ttu-id="22c26-126">Интерфейс IHostAssemblyManager</span><span class="sxs-lookup"><span data-stu-id="22c26-126">IHostAssemblyManager Interface</span></span>](ihostassemblymanager-interface.md)
-- [<span data-ttu-id="22c26-127">Интерфейс IHostAssemblyStore</span><span class="sxs-lookup"><span data-stu-id="22c26-127">IHostAssemblyStore Interface</span></span>](ihostassemblystore-interface.md)
+- [<span data-ttu-id="902fd-125">Интерфейс ICLRAssemblyIdentityManager</span><span class="sxs-lookup"><span data-stu-id="902fd-125">ICLRAssemblyIdentityManager Interface</span></span>](iclrassemblyidentitymanager-interface.md)
+- [<span data-ttu-id="902fd-126">Интерфейс ICLRAssemblyReferenceList</span><span class="sxs-lookup"><span data-stu-id="902fd-126">ICLRAssemblyReferenceList Interface</span></span>](iclrassemblyreferencelist-interface.md)
+- [<span data-ttu-id="902fd-127">Интерфейс IHostAssemblyManager</span><span class="sxs-lookup"><span data-stu-id="902fd-127">IHostAssemblyManager Interface</span></span>](ihostassemblymanager-interface.md)
+- [<span data-ttu-id="902fd-128">Интерфейс IHostAssemblyStore</span><span class="sxs-lookup"><span data-stu-id="902fd-128">IHostAssemblyStore Interface</span></span>](ihostassemblystore-interface.md)

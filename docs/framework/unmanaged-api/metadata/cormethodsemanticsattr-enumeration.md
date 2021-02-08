@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении Кормесодсемантиксаттр
 title: Перечисление CorMethodSemanticsAttr
 ms.date: 03/30/2017
 api_name:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 ms.assetid: ca2af325-eb9d-4a91-90e4-267e45b98611
 topic_type:
 - apiref
-ms.openlocfilehash: 347b323951b0125ffa5f82626b2d9b235079492c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4079e81ae2389ff0684fd11d0751b191a7289932
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95676950"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784370"
 ---
-# <a name="cormethodsemanticsattr-enumeration"></a><span data-ttu-id="7119a-102">Перечисление CorMethodSemanticsAttr</span><span class="sxs-lookup"><span data-stu-id="7119a-102">CorMethodSemanticsAttr Enumeration</span></span>
+# <a name="cormethodsemanticsattr-enumeration"></a><span data-ttu-id="46dae-103">Перечисление CorMethodSemanticsAttr</span><span class="sxs-lookup"><span data-stu-id="46dae-103">CorMethodSemanticsAttr Enumeration</span></span>
 
-<span data-ttu-id="7119a-103">Содержит значения, описывающие связь между методом и соответствующим свойством или событием.</span><span class="sxs-lookup"><span data-stu-id="7119a-103">Contains values that describe the relationship between a method and an associated property or event.</span></span>  
+<span data-ttu-id="46dae-104">Содержит значения, описывающие связь между методом и соответствующим свойством или событием.</span><span class="sxs-lookup"><span data-stu-id="46dae-104">Contains values that describe the relationship between a method and an associated property or event.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="7119a-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="7119a-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="46dae-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="46dae-105">Syntax</span></span>  
   
 ```cpp  
 typedef enum CorMethodSemanticsAttr {  
@@ -40,25 +41,25 @@ typedef enum CorMethodSemanticsAttr {
 } CorMethodSemanticsAttr;  
 ```  
   
-## <a name="members"></a><span data-ttu-id="7119a-105">Члены</span><span class="sxs-lookup"><span data-stu-id="7119a-105">Members</span></span>  
+## <a name="members"></a><span data-ttu-id="46dae-106">Члены</span><span class="sxs-lookup"><span data-stu-id="46dae-106">Members</span></span>  
   
-|<span data-ttu-id="7119a-106">Член</span><span class="sxs-lookup"><span data-stu-id="7119a-106">Member</span></span>|<span data-ttu-id="7119a-107">Описание</span><span class="sxs-lookup"><span data-stu-id="7119a-107">Description</span></span>|  
+|<span data-ttu-id="46dae-107">Член</span><span class="sxs-lookup"><span data-stu-id="46dae-107">Member</span></span>|<span data-ttu-id="46dae-108">Описание</span><span class="sxs-lookup"><span data-stu-id="46dae-108">Description</span></span>|  
 |------------|-----------------|  
-|`msSetter`|<span data-ttu-id="7119a-108">Указывает, что метод является методом `set` доступа для свойства.</span><span class="sxs-lookup"><span data-stu-id="7119a-108">Specifies that the method is a `set` accessor for a property.</span></span>|  
-|`msGetter`|<span data-ttu-id="7119a-109">Указывает, что метод является методом `get` доступа для свойства.</span><span class="sxs-lookup"><span data-stu-id="7119a-109">Specifies that the method is a `get` accessor for a property.</span></span>|  
-|`msOther`|<span data-ttu-id="7119a-110">Указывает, что метод имеет связь со свойством или событием, отличным от указанных здесь.</span><span class="sxs-lookup"><span data-stu-id="7119a-110">Specifies that the method has a relationship to a property or an event other than those defined here.</span></span>|  
-|`msAddOn`|<span data-ttu-id="7119a-111">Указывает, что метод добавляет методы обработчика для события.</span><span class="sxs-lookup"><span data-stu-id="7119a-111">Specifies that the method adds handler methods for an event.</span></span>|  
-|`msRemoveOn`|<span data-ttu-id="7119a-112">Указывает, что метод удаляет методы обработчика для события.</span><span class="sxs-lookup"><span data-stu-id="7119a-112">Specifies that the method removes handler methods for an event.</span></span>|  
-|`msFire`|<span data-ttu-id="7119a-113">Указывает, что метод вызывает событие.</span><span class="sxs-lookup"><span data-stu-id="7119a-113">Specifies that the method raises an event.</span></span>|  
+|`msSetter`|<span data-ttu-id="46dae-109">Указывает, что метод является методом `set` доступа для свойства.</span><span class="sxs-lookup"><span data-stu-id="46dae-109">Specifies that the method is a `set` accessor for a property.</span></span>|  
+|`msGetter`|<span data-ttu-id="46dae-110">Указывает, что метод является методом `get` доступа для свойства.</span><span class="sxs-lookup"><span data-stu-id="46dae-110">Specifies that the method is a `get` accessor for a property.</span></span>|  
+|`msOther`|<span data-ttu-id="46dae-111">Указывает, что метод имеет связь со свойством или событием, отличным от указанных здесь.</span><span class="sxs-lookup"><span data-stu-id="46dae-111">Specifies that the method has a relationship to a property or an event other than those defined here.</span></span>|  
+|`msAddOn`|<span data-ttu-id="46dae-112">Указывает, что метод добавляет методы обработчика для события.</span><span class="sxs-lookup"><span data-stu-id="46dae-112">Specifies that the method adds handler methods for an event.</span></span>|  
+|`msRemoveOn`|<span data-ttu-id="46dae-113">Указывает, что метод удаляет методы обработчика для события.</span><span class="sxs-lookup"><span data-stu-id="46dae-113">Specifies that the method removes handler methods for an event.</span></span>|  
+|`msFire`|<span data-ttu-id="46dae-114">Указывает, что метод вызывает событие.</span><span class="sxs-lookup"><span data-stu-id="46dae-114">Specifies that the method raises an event.</span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="7119a-114">Требования</span><span class="sxs-lookup"><span data-stu-id="7119a-114">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="46dae-115">Требования</span><span class="sxs-lookup"><span data-stu-id="46dae-115">Requirements</span></span>  
 
- <span data-ttu-id="7119a-115">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="7119a-115">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="46dae-116">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="46dae-116">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="7119a-116">**Заголовок:** Корхдр. h</span><span class="sxs-lookup"><span data-stu-id="7119a-116">**Header:** CorHdr.h</span></span>  
+ <span data-ttu-id="46dae-117">**Заголовок:** Корхдр. h</span><span class="sxs-lookup"><span data-stu-id="46dae-117">**Header:** CorHdr.h</span></span>  
   
- <span data-ttu-id="7119a-117">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="7119a-117">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="46dae-118">**Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="46dae-118">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="7119a-118">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="7119a-118">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="46dae-119">См. также</span><span class="sxs-lookup"><span data-stu-id="46dae-119">See also</span></span>
 
-- [<span data-ttu-id="7119a-119">Перечисления метаданных</span><span class="sxs-lookup"><span data-stu-id="7119a-119">Metadata Enumerations</span></span>](metadata-enumerations.md)
+- [<span data-ttu-id="46dae-120">Перечисления метаданных</span><span class="sxs-lookup"><span data-stu-id="46dae-120">Metadata Enumerations</span></span>](metadata-enumerations.md)

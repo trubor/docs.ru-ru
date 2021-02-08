@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: IMetaDataEmit::D метод Ефинепинвокемап'
 title: Метод IMetaDataEmit::DefinePinvokeMap
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 03abf921-5154-4070-88fa-10b7092901fb
 topic_type:
 - apiref
-ms.openlocfilehash: b46d39ab3958227c1fca24ceb3a9934f2778aa2c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7b0477ca603241e773a67f335da579daa2ed3d30
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719506"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784071"
 ---
-# <a name="imetadataemitdefinepinvokemap-method"></a><span data-ttu-id="4d956-102">Метод IMetaDataEmit::DefinePinvokeMap</span><span class="sxs-lookup"><span data-stu-id="4d956-102">IMetaDataEmit::DefinePinvokeMap Method</span></span>
+# <a name="imetadataemitdefinepinvokemap-method"></a><span data-ttu-id="8a029-103">Метод IMetaDataEmit::DefinePinvokeMap</span><span class="sxs-lookup"><span data-stu-id="8a029-103">IMetaDataEmit::DefinePinvokeMap Method</span></span>
 
-<span data-ttu-id="4d956-103">Задает функции сигнатуры PInvoke метода, на который ссылается указанный токен.</span><span class="sxs-lookup"><span data-stu-id="4d956-103">Sets features of the PInvoke signature of the method referenced by the specified token.</span></span>  
+<span data-ttu-id="8a029-104">Задает функции сигнатуры PInvoke метода, на который ссылается указанный токен.</span><span class="sxs-lookup"><span data-stu-id="8a029-104">Sets features of the PInvoke signature of the method referenced by the specified token.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="4d956-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="4d956-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="8a029-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="8a029-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT DefinePinvokeMap (
@@ -37,31 +38,31 @@ HRESULT DefinePinvokeMap (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="4d956-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="4d956-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="8a029-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="8a029-106">Parameters</span></span>  
 
  `tk`  
- <span data-ttu-id="4d956-106">окне Токен для целевого метода.</span><span class="sxs-lookup"><span data-stu-id="4d956-106">[in] The token for the target method.</span></span>  
+ <span data-ttu-id="8a029-107">окне Токен для целевого метода.</span><span class="sxs-lookup"><span data-stu-id="8a029-107">[in] The token for the target method.</span></span>  
   
  `dwMappingFlags`  
- <span data-ttu-id="4d956-107">окне Флаги, используемые PInvoke для сопоставления.</span><span class="sxs-lookup"><span data-stu-id="4d956-107">[in] Flags used by PInvoke to do the mapping.</span></span>  
+ <span data-ttu-id="8a029-108">окне Флаги, используемые PInvoke для сопоставления.</span><span class="sxs-lookup"><span data-stu-id="8a029-108">[in] Flags used by PInvoke to do the mapping.</span></span>  
   
  `szImportName`  
- <span data-ttu-id="4d956-108">окне Имя целевого метода экспорта в неуправляемой библиотеке DLL.</span><span class="sxs-lookup"><span data-stu-id="4d956-108">[in] The name of the target export method in an unmanaged DLL.</span></span>  
+ <span data-ttu-id="8a029-109">окне Имя целевого метода экспорта в неуправляемой библиотеке DLL.</span><span class="sxs-lookup"><span data-stu-id="8a029-109">[in] The name of the target export method in an unmanaged DLL.</span></span>  
   
  `mrImportDLL`  
- <span data-ttu-id="4d956-109">окне Токен для собственной DLL-библиотеки целевого объекта.</span><span class="sxs-lookup"><span data-stu-id="4d956-109">[in] The token for the target native DLL.</span></span>  
+ <span data-ttu-id="8a029-110">окне Токен для собственной DLL-библиотеки целевого объекта.</span><span class="sxs-lookup"><span data-stu-id="8a029-110">[in] The token for the target native DLL.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="4d956-110">Требования</span><span class="sxs-lookup"><span data-stu-id="4d956-110">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="8a029-111">Требования</span><span class="sxs-lookup"><span data-stu-id="8a029-111">Requirements</span></span>  
 
- <span data-ttu-id="4d956-111">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="4d956-111">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="8a029-112">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="8a029-112">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="4d956-112">**Заголовок:** COR. h</span><span class="sxs-lookup"><span data-stu-id="4d956-112">**Header:** Cor.h</span></span>  
+ <span data-ttu-id="8a029-113">**Заголовок:** COR. h</span><span class="sxs-lookup"><span data-stu-id="8a029-113">**Header:** Cor.h</span></span>  
   
- <span data-ttu-id="4d956-113">**Библиотека:** Используется в качестве ресурса в MSCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="4d956-113">**Library:** Used as a resource in MSCorEE.dll</span></span>  
+ <span data-ttu-id="8a029-114">**Библиотека:** Используется в качестве ресурса в MSCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="8a029-114">**Library:** Used as a resource in MSCorEE.dll</span></span>  
   
- <span data-ttu-id="4d956-114">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="4d956-114">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="8a029-115">**Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="8a029-115">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="4d956-115">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="4d956-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8a029-116">См. также</span><span class="sxs-lookup"><span data-stu-id="8a029-116">See also</span></span>
 
-- [<span data-ttu-id="4d956-116">Интерфейс IMetaDataEmit</span><span class="sxs-lookup"><span data-stu-id="4d956-116">IMetaDataEmit Interface</span></span>](imetadataemit-interface.md)
-- [<span data-ttu-id="4d956-117">Интерфейс IMetaDataEmit2</span><span class="sxs-lookup"><span data-stu-id="4d956-117">IMetaDataEmit2 Interface</span></span>](imetadataemit2-interface.md)
+- [<span data-ttu-id="8a029-117">Интерфейс IMetaDataEmit</span><span class="sxs-lookup"><span data-stu-id="8a029-117">IMetaDataEmit Interface</span></span>](imetadataemit-interface.md)
+- [<span data-ttu-id="8a029-118">Интерфейс IMetaDataEmit2</span><span class="sxs-lookup"><span data-stu-id="8a029-118">IMetaDataEmit2 Interface</span></span>](imetadataemit2-interface.md)
