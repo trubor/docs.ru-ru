@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: структура COR_DEBUG_STEP_RANGE'
 title: Структура COR_DEBUG_STEP_RANGE
 ms.date: 03/30/2017
 api_name:
@@ -14,20 +15,20 @@ helpviewer_keywords:
 ms.assetid: 8809d00e-beaa-4dcf-b4e8-e89d0a5406b7
 topic_type:
 - apiref
-ms.openlocfilehash: cd85ba2e6a907ff9546614e02b4da5f45e74b924
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 40462be4b165351b3265fa0833d19f18e0fa3a37
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726643"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801843"
 ---
-# <a name="cor_debug_step_range-structure"></a><span data-ttu-id="c229f-102">Структура COR_DEBUG_STEP_RANGE</span><span class="sxs-lookup"><span data-stu-id="c229f-102">COR_DEBUG_STEP_RANGE Structure</span></span>
+# <a name="cor_debug_step_range-structure"></a><span data-ttu-id="a504f-103">Структура COR_DEBUG_STEP_RANGE</span><span class="sxs-lookup"><span data-stu-id="a504f-103">COR_DEBUG_STEP_RANGE Structure</span></span>
 
-<span data-ttu-id="c229f-103">Содержит сведения о смещении для диапазона кода.</span><span class="sxs-lookup"><span data-stu-id="c229f-103">Contains the offset information for a range of code.</span></span>  
+<span data-ttu-id="a504f-104">Содержит сведения о смещении для диапазона кода.</span><span class="sxs-lookup"><span data-stu-id="a504f-104">Contains the offset information for a range of code.</span></span>  
   
- <span data-ttu-id="c229f-104">Эта структура используется методом [ICorDebugStepper:: степранже](icordebugstepper-steprange-method.md) .</span><span class="sxs-lookup"><span data-stu-id="c229f-104">This structure is used by the [ICorDebugStepper::StepRange](icordebugstepper-steprange-method.md) method.</span></span>  
+ <span data-ttu-id="a504f-105">Эта структура используется методом [ICorDebugStepper:: степранже](icordebugstepper-steprange-method.md) .</span><span class="sxs-lookup"><span data-stu-id="a504f-105">This structure is used by the [ICorDebugStepper::StepRange](icordebugstepper-steprange-method.md) method.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="c229f-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="c229f-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="a504f-106">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="a504f-106">Syntax</span></span>  
   
 ```cpp  
 typedef struct {  
@@ -36,25 +37,25 @@ typedef struct {
 } COR_DEBUG_STEP_RANGE;  
 ```  
   
-## <a name="members"></a><span data-ttu-id="c229f-106">Члены</span><span class="sxs-lookup"><span data-stu-id="c229f-106">Members</span></span>  
+## <a name="members"></a><span data-ttu-id="a504f-107">Члены</span><span class="sxs-lookup"><span data-stu-id="a504f-107">Members</span></span>  
   
-|<span data-ttu-id="c229f-107">Член</span><span class="sxs-lookup"><span data-stu-id="c229f-107">Member</span></span>|<span data-ttu-id="c229f-108">Описание</span><span class="sxs-lookup"><span data-stu-id="c229f-108">Description</span></span>|  
+|<span data-ttu-id="a504f-108">Член</span><span class="sxs-lookup"><span data-stu-id="a504f-108">Member</span></span>|<span data-ttu-id="a504f-109">Описание</span><span class="sxs-lookup"><span data-stu-id="a504f-109">Description</span></span>|  
 |------------|-----------------|  
-|`startOffset`|<span data-ttu-id="c229f-109">Смещение начала диапазона.</span><span class="sxs-lookup"><span data-stu-id="c229f-109">The offset of the beginning of the range.</span></span>|  
-|`endOffset`|<span data-ttu-id="c229f-110">Смещение конца диапазона.</span><span class="sxs-lookup"><span data-stu-id="c229f-110">The offset of the end of the range.</span></span>|  
+|`startOffset`|<span data-ttu-id="a504f-110">Смещение начала диапазона.</span><span class="sxs-lookup"><span data-stu-id="a504f-110">The offset of the beginning of the range.</span></span>|  
+|`endOffset`|<span data-ttu-id="a504f-111">Смещение конца диапазона.</span><span class="sxs-lookup"><span data-stu-id="a504f-111">The offset of the end of the range.</span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="c229f-111">Требования</span><span class="sxs-lookup"><span data-stu-id="c229f-111">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="a504f-112">Требования</span><span class="sxs-lookup"><span data-stu-id="a504f-112">Requirements</span></span>  
 
- <span data-ttu-id="c229f-112">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="c229f-112">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="a504f-113">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="a504f-113">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="c229f-113">**Заголовок:** CorDebug. idl</span><span class="sxs-lookup"><span data-stu-id="c229f-113">**Header:** CorDebug.idl</span></span>  
+ <span data-ttu-id="a504f-114">**Заголовок:** CorDebug. idl</span><span class="sxs-lookup"><span data-stu-id="a504f-114">**Header:** CorDebug.idl</span></span>  
   
- <span data-ttu-id="c229f-114">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="c229f-114">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="a504f-115">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="a504f-115">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="c229f-115">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="c229f-115">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="a504f-116">**Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="a504f-116">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="c229f-116">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="c229f-116">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a504f-117">См. также</span><span class="sxs-lookup"><span data-stu-id="a504f-117">See also</span></span>
 
-- [<span data-ttu-id="c229f-117">Метод StepRange</span><span class="sxs-lookup"><span data-stu-id="c229f-117">StepRange Method</span></span>](icordebugstepper-steprange-method.md)
-- [<span data-ttu-id="c229f-118">Структуры отладки</span><span class="sxs-lookup"><span data-stu-id="c229f-118">Debugging Structures</span></span>](debugging-structures.md)
-- [<span data-ttu-id="c229f-119">Отладка</span><span class="sxs-lookup"><span data-stu-id="c229f-119">Debugging</span></span>](index.md)
+- [<span data-ttu-id="a504f-118">Метод StepRange</span><span class="sxs-lookup"><span data-stu-id="a504f-118">StepRange Method</span></span>](icordebugstepper-steprange-method.md)
+- [<span data-ttu-id="a504f-119">Структуры отладки</span><span class="sxs-lookup"><span data-stu-id="a504f-119">Debugging Structures</span></span>](debugging-structures.md)
+- [<span data-ttu-id="a504f-120">Отладка</span><span class="sxs-lookup"><span data-stu-id="a504f-120">Debugging</span></span>](index.md)

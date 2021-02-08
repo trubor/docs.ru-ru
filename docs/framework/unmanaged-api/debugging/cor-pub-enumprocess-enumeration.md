@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: перечисление COR_PUB_ENUMPROCESS'
 title: Перечисление COR_PUB_ENUMPROCESS
 ms.date: 03/30/2017
 api_name:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 ms.assetid: 5d3ada6e-feea-47da-a7ed-b664107c137f
 topic_type:
 - apiref
-ms.openlocfilehash: 30a522fbf96aebaa96f33f4a1dc381683f183871
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 66bbd08aabb9d2c93e385ed098bae54754a85b85
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726422"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801791"
 ---
-# <a name="cor_pub_enumprocess-enumeration"></a><span data-ttu-id="3f8be-102">Перечисление COR_PUB_ENUMPROCESS</span><span class="sxs-lookup"><span data-stu-id="3f8be-102">COR_PUB_ENUMPROCESS Enumeration</span></span>
+# <a name="cor_pub_enumprocess-enumeration"></a><span data-ttu-id="d1edd-103">Перечисление COR_PUB_ENUMPROCESS</span><span class="sxs-lookup"><span data-stu-id="d1edd-103">COR_PUB_ENUMPROCESS Enumeration</span></span>
 
-<span data-ttu-id="3f8be-103">Идентифицирует тип процесса для перечисления.</span><span class="sxs-lookup"><span data-stu-id="3f8be-103">Identifies the type of process to be enumerated.</span></span>  
+<span data-ttu-id="d1edd-104">Идентифицирует тип процесса для перечисления.</span><span class="sxs-lookup"><span data-stu-id="d1edd-104">Identifies the type of process to be enumerated.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="3f8be-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="3f8be-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="d1edd-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="d1edd-105">Syntax</span></span>  
   
 ```cpp  
 typedef enum {  
@@ -33,26 +34,26 @@ typedef enum {
 } COR_PUB_ENUMPROCESS;  
 ```  
   
-## <a name="members"></a><span data-ttu-id="3f8be-105">Члены</span><span class="sxs-lookup"><span data-stu-id="3f8be-105">Members</span></span>  
+## <a name="members"></a><span data-ttu-id="d1edd-106">Члены</span><span class="sxs-lookup"><span data-stu-id="d1edd-106">Members</span></span>  
   
-|<span data-ttu-id="3f8be-106">Имя участника</span><span class="sxs-lookup"><span data-stu-id="3f8be-106">Member name</span></span>|<span data-ttu-id="3f8be-107">Описание</span><span class="sxs-lookup"><span data-stu-id="3f8be-107">Description</span></span>|  
+|<span data-ttu-id="d1edd-107">Имя участника</span><span class="sxs-lookup"><span data-stu-id="d1edd-107">Member name</span></span>|<span data-ttu-id="d1edd-108">Описание</span><span class="sxs-lookup"><span data-stu-id="d1edd-108">Description</span></span>|  
 |-----------------|-----------------|  
-|`COR_PUB_MANAGEDONLY`|<span data-ttu-id="3f8be-108">Управляемый процесс.</span><span class="sxs-lookup"><span data-stu-id="3f8be-108">A managed process.</span></span>|  
+|`COR_PUB_MANAGEDONLY`|<span data-ttu-id="d1edd-109">Управляемый процесс.</span><span class="sxs-lookup"><span data-stu-id="d1edd-109">A managed process.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="3f8be-109">Комментарии</span><span class="sxs-lookup"><span data-stu-id="3f8be-109">Remarks</span></span>  
+## <a name="remarks"></a><span data-ttu-id="d1edd-110">Remarks</span><span class="sxs-lookup"><span data-stu-id="d1edd-110">Remarks</span></span>  
 
- <span data-ttu-id="3f8be-110">Текущая версия неуправляемого API отладки перечисляет только управляемые процессы.</span><span class="sxs-lookup"><span data-stu-id="3f8be-110">The current version of the unmanaged debugging API enumerates only managed processes.</span></span>  
+ <span data-ttu-id="d1edd-111">Текущая версия неуправляемого API отладки перечисляет только управляемые процессы.</span><span class="sxs-lookup"><span data-stu-id="d1edd-111">The current version of the unmanaged debugging API enumerates only managed processes.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="3f8be-111">Требования</span><span class="sxs-lookup"><span data-stu-id="3f8be-111">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="d1edd-112">Требования</span><span class="sxs-lookup"><span data-stu-id="d1edd-112">Requirements</span></span>  
 
- <span data-ttu-id="3f8be-112">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="3f8be-112">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="d1edd-113">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="d1edd-113">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="3f8be-113">**Заголовок:** Корпуб. idl, Корпуб. h</span><span class="sxs-lookup"><span data-stu-id="3f8be-113">**Header:** CorPub.idl, CorPub.h</span></span>  
+ <span data-ttu-id="d1edd-114">**Заголовок:** Корпуб. idl, Корпуб. h</span><span class="sxs-lookup"><span data-stu-id="d1edd-114">**Header:** CorPub.idl, CorPub.h</span></span>  
   
- <span data-ttu-id="3f8be-114">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="3f8be-114">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="d1edd-115">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="d1edd-115">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="3f8be-115">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="3f8be-115">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="d1edd-116">**Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="d1edd-116">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="3f8be-116">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="3f8be-116">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d1edd-117">См. также</span><span class="sxs-lookup"><span data-stu-id="d1edd-117">See also</span></span>
 
-- [<span data-ttu-id="3f8be-117">Перечисления отладки</span><span class="sxs-lookup"><span data-stu-id="3f8be-117">Debugging Enumerations</span></span>](debugging-enumerations.md)
+- [<span data-ttu-id="d1edd-118">Перечисления отладки</span><span class="sxs-lookup"><span data-stu-id="d1edd-118">Debugging Enumerations</span></span>](debugging-enumerations.md)

@@ -1,17 +1,18 @@
 ---
+description: 'Дополнительные сведения <add> о: <filters>'
 title: <add> из <filters>
 ms.date: 03/30/2017
 ms.assetid: e3bf437c-dd99-49f3-9792-9a8721e6eaad
-ms.openlocfilehash: c1de0605bc8afc502a85d9b2917b975ee45a3d26
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 546ff41fddfd8a48e14508e27f09236c67c9abc9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201659"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802350"
 ---
-# <a name="add-of-filters"></a><span data-ttu-id="8e7e0-102">\<add> из \<filters></span><span class="sxs-lookup"><span data-stu-id="8e7e0-102">\<add> of \<filters></span></span>
+# <a name="add-of-filters"></a><span data-ttu-id="ad989-103">\<add> из \<filters></span><span class="sxs-lookup"><span data-stu-id="ad989-103">\<add> of \<filters></span></span>
 
-<span data-ttu-id="8e7e0-103">Фильтр XPath, задающий тип сообщений для записи в журнал.</span><span class="sxs-lookup"><span data-stu-id="8e7e0-103">A XPath filter that specifies the kind of message to be logged.</span></span>  
+<span data-ttu-id="ad989-104">Фильтр XPath, задающий тип сообщений для записи в журнал.</span><span class="sxs-lookup"><span data-stu-id="ad989-104">A XPath filter that specifies the kind of message to be logged.</span></span>  
   
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
@@ -20,7 +21,7 @@ ms.locfileid: "91201659"
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<filters>**](filters.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
-## <a name="syntax"></a><span data-ttu-id="8e7e0-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="8e7e0-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="ad989-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="ad989-105">Syntax</span></span>  
   
 ```xml  
 <filters>
@@ -28,39 +29,39 @@ ms.locfileid: "91201659"
 </filters>
 ```  
   
-## <a name="attributes-and-elements"></a><span data-ttu-id="8e7e0-105">Атрибуты и элементы</span><span class="sxs-lookup"><span data-stu-id="8e7e0-105">Attributes and Elements</span></span>  
+## <a name="attributes-and-elements"></a><span data-ttu-id="ad989-106">Атрибуты и элементы</span><span class="sxs-lookup"><span data-stu-id="ad989-106">Attributes and Elements</span></span>  
 
- <span data-ttu-id="8e7e0-106">В следующих разделах описаны атрибуты, дочерние и родительские элементы.</span><span class="sxs-lookup"><span data-stu-id="8e7e0-106">The following sections describe attributes, child elements, and parent elements.</span></span>  
+ <span data-ttu-id="ad989-107">В следующих разделах описаны атрибуты, дочерние и родительские элементы.</span><span class="sxs-lookup"><span data-stu-id="ad989-107">The following sections describe attributes, child elements, and parent elements.</span></span>  
   
-### <a name="attributes"></a><span data-ttu-id="8e7e0-107">Атрибуты</span><span class="sxs-lookup"><span data-stu-id="8e7e0-107">Attributes</span></span>  
+### <a name="attributes"></a><span data-ttu-id="ad989-108">Атрибуты</span><span class="sxs-lookup"><span data-stu-id="ad989-108">Attributes</span></span>  
   
-|<span data-ttu-id="8e7e0-108">Атрибут</span><span class="sxs-lookup"><span data-stu-id="8e7e0-108">Attribute</span></span>|<span data-ttu-id="8e7e0-109">Описание</span><span class="sxs-lookup"><span data-stu-id="8e7e0-109">Description</span></span>|  
+|<span data-ttu-id="ad989-109">Атрибут</span><span class="sxs-lookup"><span data-stu-id="ad989-109">Attribute</span></span>|<span data-ttu-id="ad989-110">Описание</span><span class="sxs-lookup"><span data-stu-id="ad989-110">Description</span></span>|  
 |---------------|-----------------|  
-|<span data-ttu-id="8e7e0-110">фильтр</span><span class="sxs-lookup"><span data-stu-id="8e7e0-110">filter</span></span>|<span data-ttu-id="8e7e0-111">Строка, задающая запрос к документу XML, определенный в виде выражения XPath 1.0.</span><span class="sxs-lookup"><span data-stu-id="8e7e0-111">A string that specifies a query on an XML document defined by an XPath 1.0 expression.</span></span> <span data-ttu-id="8e7e0-112">Для получения дополнительной информации см. <xref:System.ServiceModel.Dispatcher.XPathMessageFilter>.</span><span class="sxs-lookup"><span data-stu-id="8e7e0-112">For more information, see <xref:System.ServiceModel.Dispatcher.XPathMessageFilter>.</span></span>|  
+|<span data-ttu-id="ad989-111">фильтр</span><span class="sxs-lookup"><span data-stu-id="ad989-111">filter</span></span>|<span data-ttu-id="ad989-112">Строка, задающая запрос к документу XML, определенный в виде выражения XPath 1.0.</span><span class="sxs-lookup"><span data-stu-id="ad989-112">A string that specifies a query on an XML document defined by an XPath 1.0 expression.</span></span> <span data-ttu-id="ad989-113">Для получения дополнительной информации см. <xref:System.ServiceModel.Dispatcher.XPathMessageFilter>.</span><span class="sxs-lookup"><span data-stu-id="ad989-113">For more information, see <xref:System.ServiceModel.Dispatcher.XPathMessageFilter>.</span></span>|  
   
-### <a name="child-elements"></a><span data-ttu-id="8e7e0-113">Дочерние элементы</span><span class="sxs-lookup"><span data-stu-id="8e7e0-113">Child Elements</span></span>  
+### <a name="child-elements"></a><span data-ttu-id="ad989-114">Дочерние элементы</span><span class="sxs-lookup"><span data-stu-id="ad989-114">Child Elements</span></span>  
 
- <span data-ttu-id="8e7e0-114">Отсутствует.</span><span class="sxs-lookup"><span data-stu-id="8e7e0-114">None.</span></span>  
+ <span data-ttu-id="ad989-115">Отсутствует.</span><span class="sxs-lookup"><span data-stu-id="ad989-115">None.</span></span>  
   
-### <a name="parent-elements"></a><span data-ttu-id="8e7e0-115">Родительские элементы</span><span class="sxs-lookup"><span data-stu-id="8e7e0-115">Parent Elements</span></span>  
+### <a name="parent-elements"></a><span data-ttu-id="ad989-116">Родительские элементы</span><span class="sxs-lookup"><span data-stu-id="ad989-116">Parent Elements</span></span>  
   
-|<span data-ttu-id="8e7e0-116">Элемент</span><span class="sxs-lookup"><span data-stu-id="8e7e0-116">Element</span></span>|<span data-ttu-id="8e7e0-117">Описание</span><span class="sxs-lookup"><span data-stu-id="8e7e0-117">Description</span></span>|  
+|<span data-ttu-id="ad989-117">Элемент</span><span class="sxs-lookup"><span data-stu-id="ad989-117">Element</span></span>|<span data-ttu-id="ad989-118">Описание</span><span class="sxs-lookup"><span data-stu-id="ad989-118">Description</span></span>|  
 |-------------|-----------------|  
-|[\<filters>](filters.md)|<span data-ttu-id="8e7e0-118">Содержит коллекцию фильтров XPath, используемых для контроля типов регистрируемых сообщений.</span><span class="sxs-lookup"><span data-stu-id="8e7e0-118">Contains a collection of XPath filters used to control what kind of message is logged.</span></span>|  
+|[\<filters>](filters.md)|<span data-ttu-id="ad989-119">Содержит коллекцию фильтров XPath, используемых для контроля типов регистрируемых сообщений.</span><span class="sxs-lookup"><span data-stu-id="ad989-119">Contains a collection of XPath filters used to control what kind of message is logged.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="8e7e0-119">Remarks</span><span class="sxs-lookup"><span data-stu-id="8e7e0-119">Remarks</span></span>  
+## <a name="remarks"></a><span data-ttu-id="ad989-120">Remarks</span><span class="sxs-lookup"><span data-stu-id="ad989-120">Remarks</span></span>  
 
- <span data-ttu-id="8e7e0-120">Фильтры применяются только на транспортном уровне, когда параметр `logMessagesAtTransportLevel` имеет значение `true`.</span><span class="sxs-lookup"><span data-stu-id="8e7e0-120">Filters are applied only at the transport layer, specified by `logMessagesAtTransportLevel` is `true`.</span></span> <span data-ttu-id="8e7e0-121">Фильтры не влияют на ведение журнала сообщений уровня службы и неправильно сформированных сообщений.</span><span class="sxs-lookup"><span data-stu-id="8e7e0-121">Service level and malformed message logging are not affected by filters.</span></span>  
+ <span data-ttu-id="ad989-121">Фильтры применяются только на транспортном уровне, когда параметр `logMessagesAtTransportLevel` имеет значение `true`.</span><span class="sxs-lookup"><span data-stu-id="ad989-121">Filters are applied only at the transport layer, specified by `logMessagesAtTransportLevel` is `true`.</span></span> <span data-ttu-id="ad989-122">Фильтры не влияют на ведение журнала сообщений уровня службы и неправильно сформированных сообщений.</span><span class="sxs-lookup"><span data-stu-id="ad989-122">Service level and malformed message logging are not affected by filters.</span></span>  
   
- <span data-ttu-id="8e7e0-122">Для добавления нового фильтра в коллекцию используется ключевое слово `add`.</span><span class="sxs-lookup"><span data-stu-id="8e7e0-122">To add a filter to the collection, use the `add` keyword.</span></span> <span data-ttu-id="8e7e0-123">Если в файле конфигурации определены один или несколько фильтров, в журнал записываются только сообщения, соответствующие хотя бы одному из фильтров.</span><span class="sxs-lookup"><span data-stu-id="8e7e0-123">When one or more filters are defined, only messages that match at least one of the filters are logged.</span></span> <span data-ttu-id="8e7e0-124">Если фильтры не заданы, в журнал записываются все сообщения.</span><span class="sxs-lookup"><span data-stu-id="8e7e0-124">If no filter is defined, all messages pass through.</span></span>  
+ <span data-ttu-id="ad989-123">Для добавления нового фильтра в коллекцию используется ключевое слово `add`.</span><span class="sxs-lookup"><span data-stu-id="ad989-123">To add a filter to the collection, use the `add` keyword.</span></span> <span data-ttu-id="ad989-124">Если в файле конфигурации определены один или несколько фильтров, в журнал записываются только сообщения, соответствующие хотя бы одному из фильтров.</span><span class="sxs-lookup"><span data-stu-id="ad989-124">When one or more filters are defined, only messages that match at least one of the filters are logged.</span></span> <span data-ttu-id="ad989-125">Если фильтры не заданы, в журнал записываются все сообщения.</span><span class="sxs-lookup"><span data-stu-id="ad989-125">If no filter is defined, all messages pass through.</span></span>  
   
- <span data-ttu-id="8e7e0-125">Фильтры поддерживают полный синтаксис XPath и применяются в том порядке, в котором они записаны в файле конфигурации.</span><span class="sxs-lookup"><span data-stu-id="8e7e0-125">Filters support the full XPath syntax, and are applied in the order they appear in the configuration file.</span></span> <span data-ttu-id="8e7e0-126">Синтаксически неверные фильтры вызывают исключения конфигурации.</span><span class="sxs-lookup"><span data-stu-id="8e7e0-126">A syntactically incorrect filter results in a configuration exception.</span></span>  
+ <span data-ttu-id="ad989-126">Фильтры поддерживают полный синтаксис XPath и применяются в том порядке, в котором они записаны в файле конфигурации.</span><span class="sxs-lookup"><span data-stu-id="ad989-126">Filters support the full XPath syntax, and are applied in the order they appear in the configuration file.</span></span> <span data-ttu-id="ad989-127">Синтаксически неверные фильтры вызывают исключения конфигурации.</span><span class="sxs-lookup"><span data-stu-id="ad989-127">A syntactically incorrect filter results in a configuration exception.</span></span>  
   
- <span data-ttu-id="8e7e0-127">В следующем примере показано, как настроить фильтр для записи только сообщений с разделом заголовка SOAP.</span><span class="sxs-lookup"><span data-stu-id="8e7e0-127">The following is an example of how to configure a filter that records only messages that have a SOAP Header section.</span></span>  
+ <span data-ttu-id="ad989-128">В следующем примере показано, как настроить фильтр для записи только сообщений с разделом заголовка SOAP.</span><span class="sxs-lookup"><span data-stu-id="ad989-128">The following is an example of how to configure a filter that records only messages that have a SOAP Header section.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="8e7e0-128">Пример</span><span class="sxs-lookup"><span data-stu-id="8e7e0-128">Example</span></span>  
+## <a name="example"></a><span data-ttu-id="ad989-129">Пример</span><span class="sxs-lookup"><span data-stu-id="ad989-129">Example</span></span>  
 
- <span data-ttu-id="8e7e0-129">В следующем примере показано, как настроить фильтр для записи только сообщений с разделом заголовка SOAP.</span><span class="sxs-lookup"><span data-stu-id="8e7e0-129">The following is an example of how to configure a filter that records only messages that have a SOAP Header section.</span></span>  
+ <span data-ttu-id="ad989-130">В следующем примере показано, как настроить фильтр для записи только сообщений с разделом заголовка SOAP.</span><span class="sxs-lookup"><span data-stu-id="ad989-130">The following is an example of how to configure a filter that records only messages that have a SOAP Header section.</span></span>  
   
 ```xml  
 <messageLogging logEntireMessage="true"
@@ -76,7 +77,7 @@ ms.locfileid: "91201659"
 </messageLogging>
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="8e7e0-130">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="8e7e0-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ad989-131">См. также</span><span class="sxs-lookup"><span data-stu-id="ad989-131">See also</span></span>
 
 - <xref:System.ServiceModel.Configuration.DiagnosticSection>
 - <xref:System.ServiceModel.Diagnostics>
@@ -85,5 +86,5 @@ ms.locfileid: "91201659"
 - <xref:System.ServiceModel.Configuration.MessageLoggingElement.Filters%2A>
 - <xref:System.ServiceModel.Configuration.XPathMessageFilterElement>
 - <xref:System.ServiceModel.Dispatcher.XPathMessageFilter>
-- [<span data-ttu-id="8e7e0-131">Настройка ведения журналов сообщений</span><span class="sxs-lookup"><span data-stu-id="8e7e0-131">Configuring Message Logging</span></span>](../../../wcf/diagnostics/configuring-message-logging.md)
+- [<span data-ttu-id="ad989-132">Настройка ведения журналов сообщений</span><span class="sxs-lookup"><span data-stu-id="ad989-132">Configuring Message Logging</span></span>](../../../wcf/diagnostics/configuring-message-logging.md)
 - [\<messageLogging>](messagelogging.md)
