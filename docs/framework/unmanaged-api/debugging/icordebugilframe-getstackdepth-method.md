@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugILFrame:: GetStackDepth'
 title: Метод ICorDebugILFrame::GetStackDepth
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: da6a1123-871d-4492-9d35-3bdb49f94c93
 topic_type:
 - apiref
-ms.openlocfilehash: 4d03d1c3fccf0be7e8d8a79477fc5b48a565cf2a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 950903f35c59d87a121e71a2ce81e9e0302ec2f4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95703074"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791360"
 ---
-# <a name="icordebugilframegetstackdepth-method"></a><span data-ttu-id="9a9f6-102">Метод ICorDebugILFrame::GetStackDepth</span><span class="sxs-lookup"><span data-stu-id="9a9f6-102">ICorDebugILFrame::GetStackDepth Method</span></span>
+# <a name="icordebugilframegetstackdepth-method"></a><span data-ttu-id="a871d-103">Метод ICorDebugILFrame::GetStackDepth</span><span class="sxs-lookup"><span data-stu-id="a871d-103">ICorDebugILFrame::GetStackDepth Method</span></span>
 
-<span data-ttu-id="9a9f6-103">Этот метод не был реализован.</span><span class="sxs-lookup"><span data-stu-id="9a9f6-103">This method has not been implemented.</span></span>  
+<span data-ttu-id="a871d-104">Этот метод не был реализован.</span><span class="sxs-lookup"><span data-stu-id="a871d-104">This method has not been implemented.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="9a9f6-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="9a9f6-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="a871d-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="a871d-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetStackDepth (  
@@ -34,6 +35,6 @@ HRESULT GetStackDepth (
 );  
 ```  
   
-## <a name="requirements"></a><span data-ttu-id="9a9f6-105">Требования</span><span class="sxs-lookup"><span data-stu-id="9a9f6-105">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="a871d-106">Требования</span><span class="sxs-lookup"><span data-stu-id="a871d-106">Requirements</span></span>  
 
- <span data-ttu-id="9a9f6-106">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="9a9f6-106">**Header:** CorDebug.idl, CorDebug.h</span></span>
+ <span data-ttu-id="a871d-107">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="a871d-107">**Header:** CorDebug.idl, CorDebug.h</span></span>
