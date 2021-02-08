@@ -1,17 +1,18 @@
 ---
+description: 'Дополнительные сведения <add> о: <baseAddresses>'
 title: <add> из <baseAddresses>
 ms.date: 03/30/2017
 ms.assetid: 1bd7426f-5f4f-43fc-b8e9-de842219aa32
-ms.openlocfilehash: cd0ef5cc5f0f809bdafa23bd312e7e30fcdccc21
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b25a4b5551784ecd8e67569c82c1388a144a9c9f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91181613"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99804066"
 ---
-# <a name="add-of-baseaddresses"></a><span data-ttu-id="23367-102">\<add> из \<baseAddresses></span><span class="sxs-lookup"><span data-stu-id="23367-102">\<add> of \<baseAddresses></span></span>
+# <a name="add-of-baseaddresses"></a><span data-ttu-id="abb5e-103">\<add> из \<baseAddresses></span><span class="sxs-lookup"><span data-stu-id="abb5e-103">\<add> of \<baseAddresses></span></span>
 
-<span data-ttu-id="23367-103">Представляет элемент конфигурации, который задает базовые адреса, используемые узлом службы.</span><span class="sxs-lookup"><span data-stu-id="23367-103">Represents a configuration element that specifies the base addresses used by the service host.</span></span>  
+<span data-ttu-id="abb5e-104">Представляет элемент конфигурации, который задает базовые адреса, используемые узлом службы.</span><span class="sxs-lookup"><span data-stu-id="abb5e-104">Represents a configuration element that specifies the base addresses used by the service host.</span></span>  
   
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
@@ -21,39 +22,39 @@ ms.locfileid: "91181613"
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<baseAddresses>**](baseaddresses.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
-## <a name="syntax"></a><span data-ttu-id="23367-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="23367-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="abb5e-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="abb5e-105">Syntax</span></span>  
   
 ```xml  
 <add baseAddress="string" />
 ```  
   
-## <a name="type"></a><span data-ttu-id="23367-105">Type</span><span class="sxs-lookup"><span data-stu-id="23367-105">Type</span></span>  
+## <a name="type"></a><span data-ttu-id="abb5e-106">Тип</span><span class="sxs-lookup"><span data-stu-id="abb5e-106">Type</span></span>  
 
  `Type`  
   
-## <a name="attributes-and-elements"></a><span data-ttu-id="23367-106">Атрибуты и элементы</span><span class="sxs-lookup"><span data-stu-id="23367-106">Attributes and Elements</span></span>  
+## <a name="attributes-and-elements"></a><span data-ttu-id="abb5e-107">Атрибуты и элементы</span><span class="sxs-lookup"><span data-stu-id="abb5e-107">Attributes and Elements</span></span>  
 
- <span data-ttu-id="23367-107">В следующих разделах описаны атрибуты, дочерние и родительские элементы.</span><span class="sxs-lookup"><span data-stu-id="23367-107">The following sections describe attributes, child elements, and parent elements.</span></span>  
+ <span data-ttu-id="abb5e-108">В следующих разделах описаны атрибуты, дочерние и родительские элементы.</span><span class="sxs-lookup"><span data-stu-id="abb5e-108">The following sections describe attributes, child elements, and parent elements.</span></span>  
   
-### <a name="attributes"></a><span data-ttu-id="23367-108">Атрибуты</span><span class="sxs-lookup"><span data-stu-id="23367-108">Attributes</span></span>  
+### <a name="attributes"></a><span data-ttu-id="abb5e-109">Атрибуты</span><span class="sxs-lookup"><span data-stu-id="abb5e-109">Attributes</span></span>  
   
-|<span data-ttu-id="23367-109">Атрибут</span><span class="sxs-lookup"><span data-stu-id="23367-109">Attribute</span></span>|<span data-ttu-id="23367-110">Описание</span><span class="sxs-lookup"><span data-stu-id="23367-110">Description</span></span>|  
+|<span data-ttu-id="abb5e-110">Атрибут</span><span class="sxs-lookup"><span data-stu-id="abb5e-110">Attribute</span></span>|<span data-ttu-id="abb5e-111">Описание</span><span class="sxs-lookup"><span data-stu-id="abb5e-111">Description</span></span>|  
 |---------------|-----------------|  
-|`baseAddress`|<span data-ttu-id="23367-111">Строка, которая задает базовый адрес, используемый узлом службы.</span><span class="sxs-lookup"><span data-stu-id="23367-111">A string that specifies a base address used by the service host.</span></span>|  
+|`baseAddress`|<span data-ttu-id="abb5e-112">Строка, которая задает базовый адрес, используемый узлом службы.</span><span class="sxs-lookup"><span data-stu-id="abb5e-112">A string that specifies a base address used by the service host.</span></span>|  
   
-### <a name="child-elements"></a><span data-ttu-id="23367-112">Дочерние элементы</span><span class="sxs-lookup"><span data-stu-id="23367-112">Child Elements</span></span>  
+### <a name="child-elements"></a><span data-ttu-id="abb5e-113">Дочерние элементы</span><span class="sxs-lookup"><span data-stu-id="abb5e-113">Child Elements</span></span>  
 
- <span data-ttu-id="23367-113">Отсутствует.</span><span class="sxs-lookup"><span data-stu-id="23367-113">None.</span></span>  
+ <span data-ttu-id="abb5e-114">Отсутствует.</span><span class="sxs-lookup"><span data-stu-id="abb5e-114">None.</span></span>  
   
-### <a name="parent-elements"></a><span data-ttu-id="23367-114">Родительские элементы</span><span class="sxs-lookup"><span data-stu-id="23367-114">Parent Elements</span></span>  
+### <a name="parent-elements"></a><span data-ttu-id="abb5e-115">Родительские элементы</span><span class="sxs-lookup"><span data-stu-id="abb5e-115">Parent Elements</span></span>  
   
-|<span data-ttu-id="23367-115">Элемент</span><span class="sxs-lookup"><span data-stu-id="23367-115">Element</span></span>|<span data-ttu-id="23367-116">Описание</span><span class="sxs-lookup"><span data-stu-id="23367-116">Description</span></span>|  
+|<span data-ttu-id="abb5e-116">Элемент</span><span class="sxs-lookup"><span data-stu-id="abb5e-116">Element</span></span>|<span data-ttu-id="abb5e-117">Описание</span><span class="sxs-lookup"><span data-stu-id="abb5e-117">Description</span></span>|  
 |-------------|-----------------|  
-|[\<baseAddresses>](baseaddresses.md)|<span data-ttu-id="23367-117">Коллекция элементов `baseAddress`.</span><span class="sxs-lookup"><span data-stu-id="23367-117">A collection of `baseAddress` elements.</span></span>|  
+|[\<baseAddresses>](baseaddresses.md)|<span data-ttu-id="abb5e-118">Коллекция элементов `baseAddress`.</span><span class="sxs-lookup"><span data-stu-id="abb5e-118">A collection of `baseAddress` elements.</span></span>|  
   
-## <a name="see-also"></a><span data-ttu-id="23367-118">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="23367-118">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="abb5e-119">См. также</span><span class="sxs-lookup"><span data-stu-id="abb5e-119">See also</span></span>
 
 - <xref:System.ServiceModel.Configuration.HostElement>
 - <xref:System.ServiceModel.ServiceHost>
 - <xref:System.ServiceModel.ServiceHostBase.BaseAddresses%2A>
-- [<span data-ttu-id="23367-119">Размещение</span><span class="sxs-lookup"><span data-stu-id="23367-119">Hosting</span></span>](../../../wcf/feature-details/hosting.md)
+- [<span data-ttu-id="abb5e-120">Размещение</span><span class="sxs-lookup"><span data-stu-id="abb5e-120">Hosting</span></span>](../../../wcf/feature-details/hosting.md)
