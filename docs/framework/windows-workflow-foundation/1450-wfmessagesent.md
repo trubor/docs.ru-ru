@@ -1,35 +1,36 @@
 ---
+description: 'Дополнительные сведения: 1450-Вфмессажесент'
 title: 1450 - WfMessageSent
 ms.date: 03/30/2017
 ms.assetid: 1acc8b92-a76d-479b-a6fe-328affff5f3d
-ms.openlocfilehash: 9e0af754ead3102627e8621ff714104b2ddcc21e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ded3acafa222b6b323db897897cb4430ac27d057
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96294616"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788024"
 ---
-# <a name="1450---wfmessagesent"></a><span data-ttu-id="86de5-102">1450 - WfMessageSent</span><span class="sxs-lookup"><span data-stu-id="86de5-102">1450 - WfMessageSent</span></span>
+# <a name="1450---wfmessagesent"></a><span data-ttu-id="cf624-103">1450 - WfMessageSent</span><span class="sxs-lookup"><span data-stu-id="cf624-103">1450 - WfMessageSent</span></span>
 
-## <a name="properties"></a><span data-ttu-id="86de5-103">Свойства</span><span class="sxs-lookup"><span data-stu-id="86de5-103">Properties</span></span>  
+## <a name="properties"></a><span data-ttu-id="cf624-104">Свойства</span><span class="sxs-lookup"><span data-stu-id="cf624-104">Properties</span></span>  
   
 |||  
 |-|-|  
-|<span data-ttu-id="86de5-104">ID</span><span class="sxs-lookup"><span data-stu-id="86de5-104">ID</span></span>|<span data-ttu-id="86de5-105">1450</span><span class="sxs-lookup"><span data-stu-id="86de5-105">1450</span></span>|  
-|<span data-ttu-id="86de5-106">Keywords</span><span class="sxs-lookup"><span data-stu-id="86de5-106">Keywords</span></span>|<span data-ttu-id="86de5-107">WFServices</span><span class="sxs-lookup"><span data-stu-id="86de5-107">WFServices</span></span>|  
-|<span data-ttu-id="86de5-108">Level</span><span class="sxs-lookup"><span data-stu-id="86de5-108">Level</span></span>|<span data-ttu-id="86de5-109">Сведения</span><span class="sxs-lookup"><span data-stu-id="86de5-109">Information</span></span>|  
-|<span data-ttu-id="86de5-110">Канал</span><span class="sxs-lookup"><span data-stu-id="86de5-110">Channel</span></span>|<span data-ttu-id="86de5-111">Microsoft-Windows-Application Server-Applications/Debug</span><span class="sxs-lookup"><span data-stu-id="86de5-111">Microsoft-Windows-Application Server-Applications/Debug</span></span>|  
+|<span data-ttu-id="cf624-105">ID</span><span class="sxs-lookup"><span data-stu-id="cf624-105">ID</span></span>|<span data-ttu-id="cf624-106">1450</span><span class="sxs-lookup"><span data-stu-id="cf624-106">1450</span></span>|  
+|<span data-ttu-id="cf624-107">Keywords</span><span class="sxs-lookup"><span data-stu-id="cf624-107">Keywords</span></span>|<span data-ttu-id="cf624-108">WFServices</span><span class="sxs-lookup"><span data-stu-id="cf624-108">WFServices</span></span>|  
+|<span data-ttu-id="cf624-109">Уровень</span><span class="sxs-lookup"><span data-stu-id="cf624-109">Level</span></span>|<span data-ttu-id="cf624-110">Сведения</span><span class="sxs-lookup"><span data-stu-id="cf624-110">Information</span></span>|  
+|<span data-ttu-id="cf624-111">Канал</span><span class="sxs-lookup"><span data-stu-id="cf624-111">Channel</span></span>|<span data-ttu-id="cf624-112">Microsoft-Windows-Application Server-Applications/Debug</span><span class="sxs-lookup"><span data-stu-id="cf624-112">Microsoft-Windows-Application Server-Applications/Debug</span></span>|  
   
-## <a name="description"></a><span data-ttu-id="86de5-112">Описание</span><span class="sxs-lookup"><span data-stu-id="86de5-112">Description</span></span>  
+## <a name="description"></a><span data-ttu-id="cf624-113">Описание</span><span class="sxs-lookup"><span data-stu-id="cf624-113">Description</span></span>  
 
- <span data-ttu-id="86de5-113">Указывает, что сообщение было отправлено рабочим процессом.</span><span class="sxs-lookup"><span data-stu-id="86de5-113">Indicates a message has been sent by a workflow.</span></span>  
+ <span data-ttu-id="cf624-114">Указывает, что сообщение было отправлено рабочим процессом.</span><span class="sxs-lookup"><span data-stu-id="cf624-114">Indicates a message has been sent by a workflow.</span></span>  
   
-## <a name="message"></a><span data-ttu-id="86de5-114">Сообщение</span><span class="sxs-lookup"><span data-stu-id="86de5-114">Message</span></span>  
+## <a name="message"></a><span data-ttu-id="cf624-115">Сообщение</span><span class="sxs-lookup"><span data-stu-id="cf624-115">Message</span></span>  
 
- <span data-ttu-id="86de5-115">Сообщение, отправленное из рабочего процесса</span><span class="sxs-lookup"><span data-stu-id="86de5-115">Message sent from workflow</span></span>  
+ <span data-ttu-id="cf624-116">Сообщение, отправленное из рабочего процесса</span><span class="sxs-lookup"><span data-stu-id="cf624-116">Message sent from workflow</span></span>  
   
-## <a name="details"></a><span data-ttu-id="86de5-116">Сведения</span><span class="sxs-lookup"><span data-stu-id="86de5-116">Details</span></span>  
+## <a name="details"></a><span data-ttu-id="cf624-117">Сведения</span><span class="sxs-lookup"><span data-stu-id="cf624-117">Details</span></span>  
   
-|<span data-ttu-id="86de5-117">Имя элемента данных</span><span class="sxs-lookup"><span data-stu-id="86de5-117">Data Item Name</span></span>|<span data-ttu-id="86de5-118">Тип элемента данных</span><span class="sxs-lookup"><span data-stu-id="86de5-118">Data Item Type</span></span>|<span data-ttu-id="86de5-119">Описание</span><span class="sxs-lookup"><span data-stu-id="86de5-119">Description</span></span>|  
+|<span data-ttu-id="cf624-118">Имя элемента данных</span><span class="sxs-lookup"><span data-stu-id="cf624-118">Data Item Name</span></span>|<span data-ttu-id="cf624-119">Тип элемента данных</span><span class="sxs-lookup"><span data-stu-id="cf624-119">Data Item Type</span></span>|<span data-ttu-id="cf624-120">Описание</span><span class="sxs-lookup"><span data-stu-id="cf624-120">Description</span></span>|  
 |--------------------|--------------------|-----------------|  
-|<span data-ttu-id="86de5-120">Домен приложения</span><span class="sxs-lookup"><span data-stu-id="86de5-120">AppDomain</span></span>|<span data-ttu-id="86de5-121">xs:string</span><span class="sxs-lookup"><span data-stu-id="86de5-121">xs:string</span></span>|<span data-ttu-id="86de5-122">Строка, возвращаемая AppDomain.CurrentDomain.FriendlyName.</span><span class="sxs-lookup"><span data-stu-id="86de5-122">The string returned by AppDomain.CurrentDomain.FriendlyName.</span></span>|
+|<span data-ttu-id="cf624-121">Домен приложения</span><span class="sxs-lookup"><span data-stu-id="cf624-121">AppDomain</span></span>|<span data-ttu-id="cf624-122">xs:string</span><span class="sxs-lookup"><span data-stu-id="cf624-122">xs:string</span></span>|<span data-ttu-id="cf624-123">Строка, возвращаемая AppDomain.CurrentDomain.FriendlyName.</span><span class="sxs-lookup"><span data-stu-id="cf624-123">The string returned by AppDomain.CurrentDomain.FriendlyName.</span></span>|

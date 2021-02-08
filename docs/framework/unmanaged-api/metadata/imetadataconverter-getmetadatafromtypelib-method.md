@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IMetaDataConverter:: Жетметадатафромтипелиб'
 title: Метод IMetaDataConverter::GetMetaDataFromTypeLib
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 97dc3a56-adfa-431f-889e-06a35ac84d51
 topic_type:
 - apiref
-ms.openlocfilehash: ed0902824bdbb4d057bf5a7920db4b1d18eb7347
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d1ed5feb9f42ea0f8dc802c4dad527be5d2ed25f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95714670"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789285"
 ---
-# <a name="imetadataconvertergetmetadatafromtypelib-method"></a><span data-ttu-id="68924-102">Метод IMetaDataConverter::GetMetaDataFromTypeLib</span><span class="sxs-lookup"><span data-stu-id="68924-102">IMetaDataConverter::GetMetaDataFromTypeLib Method</span></span>
+# <a name="imetadataconvertergetmetadatafromtypelib-method"></a><span data-ttu-id="b0c06-103">Метод IMetaDataConverter::GetMetaDataFromTypeLib</span><span class="sxs-lookup"><span data-stu-id="b0c06-103">IMetaDataConverter::GetMetaDataFromTypeLib Method</span></span>
 
-<span data-ttu-id="68924-103">Возвращает указатель интерфейса на экземпляр [IMetaDataImport](imetadataimport-interface.md) , представляющий сигнатуру метаданных библиотеки типов, представленной указанным `ITypeLib` экземпляром.</span><span class="sxs-lookup"><span data-stu-id="68924-103">Gets an interface pointer to an [IMetaDataImport](imetadataimport-interface.md) instance that represents the metadata signature of the type library represented by the specified `ITypeLib` instance.</span></span>  
+<span data-ttu-id="b0c06-104">Возвращает указатель интерфейса на экземпляр [IMetaDataImport](imetadataimport-interface.md) , представляющий сигнатуру метаданных библиотеки типов, представленной указанным `ITypeLib` экземпляром.</span><span class="sxs-lookup"><span data-stu-id="b0c06-104">Gets an interface pointer to an [IMetaDataImport](imetadataimport-interface.md) instance that represents the metadata signature of the type library represented by the specified `ITypeLib` instance.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="68924-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="68924-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="b0c06-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="b0c06-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetMetaDataFromTypeLib (  
@@ -35,25 +36,25 @@ HRESULT GetMetaDataFromTypeLib (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="68924-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="68924-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="b0c06-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="b0c06-106">Parameters</span></span>  
 
  `pITL`  
- <span data-ttu-id="68924-106">окне Указатель на `ITypeLib` объект, представляющий библиотеку типов.</span><span class="sxs-lookup"><span data-stu-id="68924-106">[in] Pointer to an `ITypeLib` object that represents the type library.</span></span>  
+ <span data-ttu-id="b0c06-107">окне Указатель на `ITypeLib` объект, представляющий библиотеку типов.</span><span class="sxs-lookup"><span data-stu-id="b0c06-107">[in] Pointer to an `ITypeLib` object that represents the type library.</span></span>  
   
  `ppMDI`  
- <span data-ttu-id="68924-107">заполняет Указатель на расположение, которое получает адрес `IMetaDataImport` экземпляра, представляющий подпись метаданных.</span><span class="sxs-lookup"><span data-stu-id="68924-107">[out] Pointer to a location that receives the address of the `IMetaDataImport` instance that represents the metadata signature.</span></span>  
+ <span data-ttu-id="b0c06-108">заполняет Указатель на расположение, которое получает адрес `IMetaDataImport` экземпляра, представляющий подпись метаданных.</span><span class="sxs-lookup"><span data-stu-id="b0c06-108">[out] Pointer to a location that receives the address of the `IMetaDataImport` instance that represents the metadata signature.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="68924-108">Требования</span><span class="sxs-lookup"><span data-stu-id="68924-108">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="b0c06-109">Требования</span><span class="sxs-lookup"><span data-stu-id="b0c06-109">Requirements</span></span>  
 
- <span data-ttu-id="68924-109">**Платформа:** См. раздел [требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="68924-109">**Platform:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="b0c06-110">**Платформа:** См. раздел [требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="b0c06-110">**Platform:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="68924-110">**Заголовок:** COR. h</span><span class="sxs-lookup"><span data-stu-id="68924-110">**Header:** Cor.h</span></span>  
+ <span data-ttu-id="b0c06-111">**Заголовок:** COR. h</span><span class="sxs-lookup"><span data-stu-id="b0c06-111">**Header:** Cor.h</span></span>  
   
- <span data-ttu-id="68924-111">**Библиотека:** Используется в качестве ресурса в MsCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="68924-111">**Library:** Used as a resource in MsCorEE.dll</span></span>  
+ <span data-ttu-id="b0c06-112">**Библиотека:** Используется в качестве ресурса в MsCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="b0c06-112">**Library:** Used as a resource in MsCorEE.dll</span></span>  
   
- <span data-ttu-id="68924-112">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="68924-112">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="b0c06-113">**Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="b0c06-113">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="68924-113">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="68924-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b0c06-114">См. также</span><span class="sxs-lookup"><span data-stu-id="b0c06-114">See also</span></span>
 
-- [<span data-ttu-id="68924-114">Интерфейс IMetaDataEmit</span><span class="sxs-lookup"><span data-stu-id="68924-114">IMetaDataEmit Interface</span></span>](imetadataemit-interface.md)
-- [<span data-ttu-id="68924-115">Интерфейс IMetaDataImport</span><span class="sxs-lookup"><span data-stu-id="68924-115">IMetaDataImport Interface</span></span>](imetadataimport-interface.md)
+- [<span data-ttu-id="b0c06-115">Интерфейс IMetaDataEmit</span><span class="sxs-lookup"><span data-stu-id="b0c06-115">IMetaDataEmit Interface</span></span>](imetadataemit-interface.md)
+- [<span data-ttu-id="b0c06-116">Интерфейс IMetaDataImport</span><span class="sxs-lookup"><span data-stu-id="b0c06-116">IMetaDataImport Interface</span></span>](imetadataimport-interface.md)
