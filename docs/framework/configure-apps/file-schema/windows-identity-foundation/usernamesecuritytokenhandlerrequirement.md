@@ -1,18 +1,19 @@
 ---
+description: 'Дополнительные сведения: <userNameSecurityTokenHandlerRequirement>'
 title: <userNameSecurityTokenHandlerRequirement>
 ms.date: 03/30/2017
 ms.assetid: 6ec3bac1-b014-49ae-843c-c54518cb709a
 author: BrucePerlerMS
-ms.openlocfilehash: a49b41c04c8f184188b62e04c3b232bd33752fca
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c2bca086d06738699517fe140173f321a3233a4a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91185526"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786503"
 ---
 # \<userNameSecurityTokenHandlerRequirement>
 
-<span data-ttu-id="058bd-101">Предоставляет конфигурацию для <xref:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler> класса или производных классов.</span><span class="sxs-lookup"><span data-stu-id="058bd-101">Provides configuration for the <xref:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler> class or derived classes.</span></span>  
+<span data-ttu-id="03a35-102">Предоставляет конфигурацию для <xref:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler> класса или производных классов.</span><span class="sxs-lookup"><span data-stu-id="03a35-102">Provides configuration for the <xref:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler> class or derived classes.</span></span>  
   
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.identityModel>**](system-identitymodel.md)\
@@ -21,7 +22,7 @@ ms.locfileid: "91185526"
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<add>**](add.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<userNameSecurityTokenHandlerRequirement>**  
   
-## <a name="syntax"></a><span data-ttu-id="058bd-102">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="058bd-102">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="03a35-103">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="03a35-103">Syntax</span></span>  
   
 ```xml  
 <system.identityModel>  
@@ -36,31 +37,31 @@ ms.locfileid: "91185526"
 </system.identityModel>  
 ```  
   
-## <a name="attributes-and-elements"></a><span data-ttu-id="058bd-103">Атрибуты и элементы</span><span class="sxs-lookup"><span data-stu-id="058bd-103">Attributes and Elements</span></span>  
+## <a name="attributes-and-elements"></a><span data-ttu-id="03a35-104">Атрибуты и элементы</span><span class="sxs-lookup"><span data-stu-id="03a35-104">Attributes and Elements</span></span>  
 
- <span data-ttu-id="058bd-104">В следующих разделах описаны атрибуты, дочерние и родительские элементы.</span><span class="sxs-lookup"><span data-stu-id="058bd-104">The following sections describe attributes, child elements, and parent elements.</span></span>  
+ <span data-ttu-id="03a35-105">В следующих разделах описаны атрибуты, дочерние и родительские элементы.</span><span class="sxs-lookup"><span data-stu-id="03a35-105">The following sections describe attributes, child elements, and parent elements.</span></span>  
   
-### <a name="attributes"></a><span data-ttu-id="058bd-105">Атрибуты</span><span class="sxs-lookup"><span data-stu-id="058bd-105">Attributes</span></span>  
+### <a name="attributes"></a><span data-ttu-id="03a35-106">Атрибуты</span><span class="sxs-lookup"><span data-stu-id="03a35-106">Attributes</span></span>  
   
-|<span data-ttu-id="058bd-106">Атрибут</span><span class="sxs-lookup"><span data-stu-id="058bd-106">Attribute</span></span>|<span data-ttu-id="058bd-107">Описание</span><span class="sxs-lookup"><span data-stu-id="058bd-107">Description</span></span>|  
+|<span data-ttu-id="03a35-107">Атрибут</span><span class="sxs-lookup"><span data-stu-id="03a35-107">Attribute</span></span>|<span data-ttu-id="03a35-108">Описание</span><span class="sxs-lookup"><span data-stu-id="03a35-108">Description</span></span>|  
 |---------------|-----------------|  
-|<span data-ttu-id="058bd-108">мембершиппровидернаме</span><span class="sxs-lookup"><span data-stu-id="058bd-108">membershipProviderName</span></span>|<span data-ttu-id="058bd-109">Указывает <xref:System.Web.Security.MembershipProvider> , который должен использоваться обработчиком маркеров безопасности.</span><span class="sxs-lookup"><span data-stu-id="058bd-109">Specifies the <xref:System.Web.Security.MembershipProvider> that should be used by the security token handler.</span></span>|  
+|<span data-ttu-id="03a35-109">мембершиппровидернаме</span><span class="sxs-lookup"><span data-stu-id="03a35-109">membershipProviderName</span></span>|<span data-ttu-id="03a35-110">Указывает <xref:System.Web.Security.MembershipProvider> , который должен использоваться обработчиком маркеров безопасности.</span><span class="sxs-lookup"><span data-stu-id="03a35-110">Specifies the <xref:System.Web.Security.MembershipProvider> that should be used by the security token handler.</span></span>|  
   
-### <a name="child-elements"></a><span data-ttu-id="058bd-110">Дочерние элементы</span><span class="sxs-lookup"><span data-stu-id="058bd-110">Child Elements</span></span>  
+### <a name="child-elements"></a><span data-ttu-id="03a35-111">Дочерние элементы</span><span class="sxs-lookup"><span data-stu-id="03a35-111">Child Elements</span></span>  
 
- <span data-ttu-id="058bd-111">Нет</span><span class="sxs-lookup"><span data-stu-id="058bd-111">None</span></span>  
+ <span data-ttu-id="03a35-112">None</span><span class="sxs-lookup"><span data-stu-id="03a35-112">None</span></span>  
   
-### <a name="parent-elements"></a><span data-ttu-id="058bd-112">Родительские элементы</span><span class="sxs-lookup"><span data-stu-id="058bd-112">Parent Elements</span></span>  
+### <a name="parent-elements"></a><span data-ttu-id="03a35-113">Родительские элементы</span><span class="sxs-lookup"><span data-stu-id="03a35-113">Parent Elements</span></span>  
   
-|<span data-ttu-id="058bd-113">Элемент</span><span class="sxs-lookup"><span data-stu-id="058bd-113">Element</span></span>|<span data-ttu-id="058bd-114">Описание</span><span class="sxs-lookup"><span data-stu-id="058bd-114">Description</span></span>|  
+|<span data-ttu-id="03a35-114">Элемент</span><span class="sxs-lookup"><span data-stu-id="03a35-114">Element</span></span>|<span data-ttu-id="03a35-115">Описание</span><span class="sxs-lookup"><span data-stu-id="03a35-115">Description</span></span>|  
 |-------------|-----------------|  
-|[\<add>](add.md)|<span data-ttu-id="058bd-115">Добавляет указанный обработчик маркеров безопасности в коллекцию обработчиков маркеров.</span><span class="sxs-lookup"><span data-stu-id="058bd-115">Adds the specified security token handler to the token handler collection.</span></span>|  
+|[\<add>](add.md)|<span data-ttu-id="03a35-116">Добавляет указанный обработчик маркеров безопасности в коллекцию обработчиков маркеров.</span><span class="sxs-lookup"><span data-stu-id="03a35-116">Adds the specified security token handler to the token handler collection.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="058bd-116">Remarks</span><span class="sxs-lookup"><span data-stu-id="058bd-116">Remarks</span></span>  
+## <a name="remarks"></a><span data-ttu-id="03a35-117">Remarks</span><span class="sxs-lookup"><span data-stu-id="03a35-117">Remarks</span></span>  
 
- <span data-ttu-id="058bd-117">`<userNameSecurityTokenHandlerRequirement>`Элемент задает <xref:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.MembershipProvider%2A> свойство при <xref:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler> инициализации объекта из конфигурации.</span><span class="sxs-lookup"><span data-stu-id="058bd-117">The `<userNameSecurityTokenHandlerRequirement>` element sets the <xref:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.MembershipProvider%2A> property when a <xref:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler> object is initialized from configuration.</span></span>  
+ <span data-ttu-id="03a35-118">`<userNameSecurityTokenHandlerRequirement>`Элемент задает <xref:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.MembershipProvider%2A> свойство при <xref:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler> инициализации объекта из конфигурации.</span><span class="sxs-lookup"><span data-stu-id="03a35-118">The `<userNameSecurityTokenHandlerRequirement>` element sets the <xref:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.MembershipProvider%2A> property when a <xref:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler> object is initialized from configuration.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="058bd-118">Пример</span><span class="sxs-lookup"><span data-stu-id="058bd-118">Example</span></span>  
+## <a name="example"></a><span data-ttu-id="03a35-119">Пример</span><span class="sxs-lookup"><span data-stu-id="03a35-119">Example</span></span>  
   
 ```xml  
 <add type="System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler, System.IdentityModel.Services">  
