@@ -1,26 +1,27 @@
 ---
+description: 'Дополнительные сведения: SimplifiedChinese и VbStrConv. TraditionalChinese нельзя использовать вместе.'
 title: VbStrConv.SimplifiedChinese и VbStrConv.TraditionalChinese не могут использоваться вместе
 ms.date: 07/20/2015
 f1_keywords:
 - vbrArgument_StrConvSCandTC
 ms.assetid: d8e6a11b-f549-43b5-8337-0594340e1325
-ms.openlocfilehash: 512651add89de23b35512e736dbf74f0891c995a
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: c1389976c6b4e33a418531c62b59bf1eb6460218
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91060488"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100438233"
 ---
-# <a name="simplifiedchinese-and-vbstrconvtraditionalchinese-cannot-be-combined"></a><span data-ttu-id="339c9-102">VbStrConv.SimplifiedChinese и VbStrConv.TraditionalChinese не могут использоваться вместе</span><span class="sxs-lookup"><span data-stu-id="339c9-102">SimplifiedChinese and VbStrConv.TraditionalChinese cannot be combined</span></span>
+# <a name="simplifiedchinese-and-vbstrconvtraditionalchinese-cannot-be-combined"></a><span data-ttu-id="ee3dd-103">VbStrConv.SimplifiedChinese и VbStrConv.TraditionalChinese не могут использоваться вместе</span><span class="sxs-lookup"><span data-stu-id="ee3dd-103">SimplifiedChinese and VbStrConv.TraditionalChinese cannot be combined</span></span>
 
-<span data-ttu-id="339c9-103">Приложение пытается объединить взаимоисключающие элементы `VbStrConv` и `SimplifiedChinese` , являющиеся членами перечисления `TraditionalChinese`.</span><span class="sxs-lookup"><span data-stu-id="339c9-103">Your application is attempting to combine the `VbStrConv` enumeration members `SimplifiedChinese` and `TraditionalChinese`, which are mutually exclusive.</span></span>  
+<span data-ttu-id="ee3dd-104">Приложение пытается объединить взаимоисключающие элементы `VbStrConv` и `SimplifiedChinese` , являющиеся членами перечисления `TraditionalChinese`.</span><span class="sxs-lookup"><span data-stu-id="ee3dd-104">Your application is attempting to combine the `VbStrConv` enumeration members `SimplifiedChinese` and `TraditionalChinese`, which are mutually exclusive.</span></span>  
   
-## <a name="to-correct-this-error"></a><span data-ttu-id="339c9-104">Исправление ошибки</span><span class="sxs-lookup"><span data-stu-id="339c9-104">To correct this error</span></span>  
+## <a name="to-correct-this-error"></a><span data-ttu-id="ee3dd-105">Исправление ошибки</span><span class="sxs-lookup"><span data-stu-id="ee3dd-105">To correct this error</span></span>  
   
-- <span data-ttu-id="339c9-105">Удалите `VbStrConv.SimplifiedChinese` или `VbStrConv.TraditionalChinese`.</span><span class="sxs-lookup"><span data-stu-id="339c9-105">Remove either `VbStrConv.SimplifiedChinese` or `VbStrConv.TraditionalChinese`.</span></span>  
+- <span data-ttu-id="ee3dd-106">Удалите `VbStrConv.SimplifiedChinese` или `VbStrConv.TraditionalChinese`.</span><span class="sxs-lookup"><span data-stu-id="ee3dd-106">Remove either `VbStrConv.SimplifiedChinese` or `VbStrConv.TraditionalChinese`.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="339c9-106">См. также</span><span class="sxs-lookup"><span data-stu-id="339c9-106">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ee3dd-107">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="ee3dd-107">See also</span></span>
 
 - <xref:System.Globalization>
 
-- [<span data-ttu-id="339c9-107">Разработка глобализованных и локализованных приложений</span><span class="sxs-lookup"><span data-stu-id="339c9-107">Develop globalized and localized apps</span></span>](/visualstudio/ide/globalizing-and-localizing-applications)
+- [<span data-ttu-id="ee3dd-108">Разработка глобализованных и локализованных приложений</span><span class="sxs-lookup"><span data-stu-id="ee3dd-108">Develop globalized and localized apps</span></span>](/visualstudio/ide/globalizing-and-localizing-applications)
