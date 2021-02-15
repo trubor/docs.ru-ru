@@ -1,25 +1,26 @@
 ---
+description: Дополнительные сведения см. в статье Использование вариативности в интерфейсах для универсальных коллекций (Visual Basic)
 title: Использование расхождения в интерфейсах для универсальных коллекций
 ms.date: 07/20/2015
 ms.assetid: c867fcea-7462-4995-b9c5-542feec74036
-ms.openlocfilehash: b762ce42215f9b24371313446637e95962677bfb
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 9f98facbe1b89e468902384d2145fc5f91aae66a
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84375645"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100458984"
 ---
-# <a name="using-variance-in-interfaces-for-generic-collections-visual-basic"></a><span data-ttu-id="a9316-102">Использование вариативности в интерфейсах для универсальных коллекций (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="a9316-102">Using Variance in Interfaces for Generic Collections (Visual Basic)</span></span>
+# <a name="using-variance-in-interfaces-for-generic-collections-visual-basic"></a><span data-ttu-id="3f11c-103">Использование вариативности в интерфейсах для универсальных коллекций (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="3f11c-103">Using Variance in Interfaces for Generic Collections (Visual Basic)</span></span>
 
-<span data-ttu-id="a9316-103">Ковариантный интерфейс позволяет его методам возвращать более производные типы, чем указанные в интерфейсе.</span><span class="sxs-lookup"><span data-stu-id="a9316-103">A covariant interface allows its methods to return more derived types than those specified in the interface.</span></span> <span data-ttu-id="a9316-104">Контравариантный интерфейс позволяет его методам принимать параметры менее производных типов, чем указанные в интерфейсе.</span><span class="sxs-lookup"><span data-stu-id="a9316-104">A contravariant interface allows its methods to accept parameters of less derived types than those specified in the interface.</span></span>
+<span data-ttu-id="3f11c-104">Ковариантный интерфейс позволяет его методам возвращать более производные типы, чем указанные в интерфейсе.</span><span class="sxs-lookup"><span data-stu-id="3f11c-104">A covariant interface allows its methods to return more derived types than those specified in the interface.</span></span> <span data-ttu-id="3f11c-105">Контравариантный интерфейс позволяет его методам принимать параметры менее производных типов, чем указанные в интерфейсе.</span><span class="sxs-lookup"><span data-stu-id="3f11c-105">A contravariant interface allows its methods to accept parameters of less derived types than those specified in the interface.</span></span>
 
-<span data-ttu-id="a9316-105">В .NET Framework 4 несколько имеющихся интерфейсов стали ковариантными и контравариантными.</span><span class="sxs-lookup"><span data-stu-id="a9316-105">In .NET Framework 4, several existing interfaces became covariant and contravariant.</span></span> <span data-ttu-id="a9316-106">В их числе <xref:System.Collections.Generic.IEnumerable%601> и <xref:System.IComparable%601>.</span><span class="sxs-lookup"><span data-stu-id="a9316-106">These include <xref:System.Collections.Generic.IEnumerable%601> and <xref:System.IComparable%601>.</span></span> <span data-ttu-id="a9316-107">Это позволяет повторно использовать методы, оперирующие универсальными коллекциями базовых типов, для коллекций производных типов.</span><span class="sxs-lookup"><span data-stu-id="a9316-107">This enables you to reuse methods that operate with generic collections of base types for collections of derived types.</span></span>
+<span data-ttu-id="3f11c-106">В .NET Framework 4 несколько имеющихся интерфейсов стали ковариантными и контравариантными.</span><span class="sxs-lookup"><span data-stu-id="3f11c-106">In .NET Framework 4, several existing interfaces became covariant and contravariant.</span></span> <span data-ttu-id="3f11c-107">В их числе <xref:System.Collections.Generic.IEnumerable%601> и <xref:System.IComparable%601>.</span><span class="sxs-lookup"><span data-stu-id="3f11c-107">These include <xref:System.Collections.Generic.IEnumerable%601> and <xref:System.IComparable%601>.</span></span> <span data-ttu-id="3f11c-108">Это позволяет повторно использовать методы, оперирующие универсальными коллекциями базовых типов, для коллекций производных типов.</span><span class="sxs-lookup"><span data-stu-id="3f11c-108">This enables you to reuse methods that operate with generic collections of base types for collections of derived types.</span></span>
 
-<span data-ttu-id="a9316-108">Список вариативных интерфейсов в .NET Framework см. в разделе [вариативность в универсальных интерфейсах (Visual Basic)](variance-in-generic-interfaces.md).</span><span class="sxs-lookup"><span data-stu-id="a9316-108">For a list of variant interfaces in the .NET Framework, see [Variance in Generic Interfaces (Visual Basic)](variance-in-generic-interfaces.md).</span></span>
+<span data-ttu-id="3f11c-109">Список вариативных интерфейсов в платформа .NET Framework см. в разделе [вариативность в универсальных интерфейсах (Visual Basic)](variance-in-generic-interfaces.md).</span><span class="sxs-lookup"><span data-stu-id="3f11c-109">For a list of variant interfaces in the .NET Framework, see [Variance in Generic Interfaces (Visual Basic)](variance-in-generic-interfaces.md).</span></span>
 
-## <a name="converting-generic-collections"></a><span data-ttu-id="a9316-109">Преобразование универсальных коллекций</span><span class="sxs-lookup"><span data-stu-id="a9316-109">Converting Generic Collections</span></span>
+## <a name="converting-generic-collections"></a><span data-ttu-id="3f11c-110">Преобразование универсальных коллекций</span><span class="sxs-lookup"><span data-stu-id="3f11c-110">Converting Generic Collections</span></span>
 
-<span data-ttu-id="a9316-110">Следующий пример иллюстрирует преимущества поддержки ковариантности в интерфейсе <xref:System.Collections.Generic.IEnumerable%601>.</span><span class="sxs-lookup"><span data-stu-id="a9316-110">The following example illustrates the benefits of covariance support in the <xref:System.Collections.Generic.IEnumerable%601> interface.</span></span> <span data-ttu-id="a9316-111">Метод `PrintFullName` принимает коллекцию типа `IEnumerable(Of Person)` в качестве параметра.</span><span class="sxs-lookup"><span data-stu-id="a9316-111">The `PrintFullName` method accepts a collection of the `IEnumerable(Of Person)` type as a parameter.</span></span> <span data-ttu-id="a9316-112">При этом его можно повторно использовать для коллекции типа `IEnumerable(Of Person)`, так как `Employee` наследует `Person`.</span><span class="sxs-lookup"><span data-stu-id="a9316-112">However, you can reuse it for a collection of the `IEnumerable(Of Person)` type because `Employee` inherits `Person`.</span></span>
+<span data-ttu-id="3f11c-111">Следующий пример иллюстрирует преимущества поддержки ковариантности в интерфейсе <xref:System.Collections.Generic.IEnumerable%601>.</span><span class="sxs-lookup"><span data-stu-id="3f11c-111">The following example illustrates the benefits of covariance support in the <xref:System.Collections.Generic.IEnumerable%601> interface.</span></span> <span data-ttu-id="3f11c-112">Метод `PrintFullName` принимает коллекцию типа `IEnumerable(Of Person)` в качестве параметра.</span><span class="sxs-lookup"><span data-stu-id="3f11c-112">The `PrintFullName` method accepts a collection of the `IEnumerable(Of Person)` type as a parameter.</span></span> <span data-ttu-id="3f11c-113">При этом его можно повторно использовать для коллекции типа `IEnumerable(Of Person)`, так как `Employee` наследует `Person`.</span><span class="sxs-lookup"><span data-stu-id="3f11c-113">However, you can reuse it for a collection of the `IEnumerable(Of Person)` type because `Employee` inherits `Person`.</span></span>
 
 ```vb
 ' Simple hierarchy of classes.
@@ -51,9 +52,9 @@ Sub Main()
 End Sub
 ```
 
-## <a name="comparing-generic-collections"></a><span data-ttu-id="a9316-113">Сравнение универсальных коллекций</span><span class="sxs-lookup"><span data-stu-id="a9316-113">Comparing Generic Collections</span></span>
+## <a name="comparing-generic-collections"></a><span data-ttu-id="3f11c-114">Сравнение универсальных коллекций</span><span class="sxs-lookup"><span data-stu-id="3f11c-114">Comparing Generic Collections</span></span>
 
-<span data-ttu-id="a9316-114">Следующий пример иллюстрирует преимущества поддержки контрвариантности в интерфейсе <xref:System.Collections.Generic.IComparer%601>.</span><span class="sxs-lookup"><span data-stu-id="a9316-114">The following example illustrates the benefits of contravariance support in the <xref:System.Collections.Generic.IComparer%601> interface.</span></span> <span data-ttu-id="a9316-115">Класс `PersonComparer` реализует интерфейс `IComparer(Of Person)`.</span><span class="sxs-lookup"><span data-stu-id="a9316-115">The `PersonComparer` class implements the `IComparer(Of Person)` interface.</span></span> <span data-ttu-id="a9316-116">Тем не менее этот класс можно повторно использовать для сравнения последовательности объектов типа `Employee`, так как `Employee` наследует `Person`.</span><span class="sxs-lookup"><span data-stu-id="a9316-116">However, you can reuse this class to compare a sequence of objects of the `Employee` type because `Employee` inherits `Person`.</span></span>
+<span data-ttu-id="3f11c-115">Следующий пример иллюстрирует преимущества поддержки контрвариантности в интерфейсе <xref:System.Collections.Generic.IComparer%601>.</span><span class="sxs-lookup"><span data-stu-id="3f11c-115">The following example illustrates the benefits of contravariance support in the <xref:System.Collections.Generic.IComparer%601> interface.</span></span> <span data-ttu-id="3f11c-116">Класс `PersonComparer` реализует интерфейс `IComparer(Of Person)`.</span><span class="sxs-lookup"><span data-stu-id="3f11c-116">The `PersonComparer` class implements the `IComparer(Of Person)` interface.</span></span> <span data-ttu-id="3f11c-117">Тем не менее этот класс можно повторно использовать для сравнения последовательности объектов типа `Employee`, так как `Employee` наследует `Person`.</span><span class="sxs-lookup"><span data-stu-id="3f11c-117">However, you can reuse this class to compare a sequence of objects of the `Employee` type because `Employee` inherits `Person`.</span></span>
 
 ```vb
 ' Simple hierarchy of classes.
@@ -112,6 +113,6 @@ Sub Main()
 End Sub
 ```
 
-## <a name="see-also"></a><span data-ttu-id="a9316-117">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="a9316-117">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3f11c-118">См. также</span><span class="sxs-lookup"><span data-stu-id="3f11c-118">See also</span></span>
 
-- [<span data-ttu-id="a9316-118">Вариативность в универсальных интерфейсах (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="a9316-118">Variance in Generic Interfaces (Visual Basic)</span></span>](variance-in-generic-interfaces.md)
+- [<span data-ttu-id="3f11c-119">Вариативность в универсальных интерфейсах (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="3f11c-119">Variance in Generic Interfaces (Visual Basic)</span></span>](variance-in-generic-interfaces.md)
