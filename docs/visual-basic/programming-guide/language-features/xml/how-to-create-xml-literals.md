@@ -1,29 +1,30 @@
 ---
+description: Дополнительные сведения см. в статье Создание XML-литералов (Visual Basic).
 title: Практическое руководство. Создание XML-литералов
 ms.date: 07/20/2015
 helpviewer_keywords:
 - XML literals [Visual Basic], creating
 ms.assetid: 573a6db5-b14d-4e42-b356-8cc7e2d77745
-ms.openlocfilehash: c7ad8d684dde31550b6e1b74c098d152b227f6c1
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 0e57b037d0567002fd570025e147771c4fab38f4
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91058226"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100433295"
 ---
-# <a name="how-to-create-xml-literals-visual-basic"></a><span data-ttu-id="c5226-102">Практическое руководство. Создание XML-литералов (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="c5226-102">How to: Create XML Literals (Visual Basic)</span></span>
+# <a name="how-to-create-xml-literals-visual-basic"></a><span data-ttu-id="1441f-103">Практическое руководство. Создание XML-литералов (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="1441f-103">How to: Create XML Literals (Visual Basic)</span></span>
 
-<span data-ttu-id="c5226-103">XML-документ, фрагмент или элемент можно создать непосредственно в коде с помощью XML-литерала.</span><span class="sxs-lookup"><span data-stu-id="c5226-103">You can create an XML document, fragment, or element directly in code by using an XML literal.</span></span> <span data-ttu-id="c5226-104">В примерах этого раздела показано, как создать XML-элемент с тремя дочерними элементами и как создать XML-документ.</span><span class="sxs-lookup"><span data-stu-id="c5226-104">The examples in this topic demonstrate how to create an XML element that has three child elements, and how to create an XML document.</span></span>  
+<span data-ttu-id="1441f-104">XML-документ, фрагмент или элемент можно создать непосредственно в коде с помощью XML-литерала.</span><span class="sxs-lookup"><span data-stu-id="1441f-104">You can create an XML document, fragment, or element directly in code by using an XML literal.</span></span> <span data-ttu-id="1441f-105">В примерах этого раздела показано, как создать XML-элемент с тремя дочерними элементами и как создать XML-документ.</span><span class="sxs-lookup"><span data-stu-id="1441f-105">The examples in this topic demonstrate how to create an XML element that has three child elements, and how to create an XML document.</span></span>  
   
- <span data-ttu-id="c5226-105">Вы также можете использовать [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] API для создания [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] объектов.</span><span class="sxs-lookup"><span data-stu-id="c5226-105">You can also use the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] APIs to create [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] objects.</span></span> <span data-ttu-id="c5226-106">Для получения дополнительной информации см. <xref:System.Xml.Linq.XElement>.</span><span class="sxs-lookup"><span data-stu-id="c5226-106">For more information, see <xref:System.Xml.Linq.XElement>.</span></span>  
+ <span data-ttu-id="1441f-106">Вы также можете использовать [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] API для создания [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] объектов.</span><span class="sxs-lookup"><span data-stu-id="1441f-106">You can also use the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] APIs to create [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] objects.</span></span> <span data-ttu-id="1441f-107">Для получения дополнительной информации см. <xref:System.Xml.Linq.XElement>.</span><span class="sxs-lookup"><span data-stu-id="1441f-107">For more information, see <xref:System.Xml.Linq.XElement>.</span></span>  
   
-### <a name="to-create-an-xml-element"></a><span data-ttu-id="c5226-107">Создание XML-элемента</span><span class="sxs-lookup"><span data-stu-id="c5226-107">To create an XML element</span></span>  
+### <a name="to-create-an-xml-element"></a><span data-ttu-id="1441f-108">Создание XML-элемента</span><span class="sxs-lookup"><span data-stu-id="1441f-108">To create an XML element</span></span>  
   
-- <span data-ttu-id="c5226-108">Создайте встроенный XML-файл с помощью синтаксиса XML-литерала, который совпадает с фактическим синтаксисом XML.</span><span class="sxs-lookup"><span data-stu-id="c5226-108">Create the XML inline by using the XML literal syntax, which is the same as the actual XML syntax.</span></span>  
+- <span data-ttu-id="1441f-109">Создайте встроенный XML-файл с помощью синтаксиса XML-литерала, который совпадает с фактическим синтаксисом XML.</span><span class="sxs-lookup"><span data-stu-id="1441f-109">Create the XML inline by using the XML literal syntax, which is the same as the actual XML syntax.</span></span>  
   
      [!code-vb[VbXMLSamples#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples2.vb#5)]  
   
-     <span data-ttu-id="c5226-109">Выполните код.</span><span class="sxs-lookup"><span data-stu-id="c5226-109">Run the code.</span></span> <span data-ttu-id="c5226-110">Выходные данные этого кода:</span><span class="sxs-lookup"><span data-stu-id="c5226-110">The output of this code is:</span></span>  
+     <span data-ttu-id="1441f-110">Выполните код.</span><span class="sxs-lookup"><span data-stu-id="1441f-110">Run the code.</span></span> <span data-ttu-id="1441f-111">Выходные данные этого кода:</span><span class="sxs-lookup"><span data-stu-id="1441f-111">The output of this code is:</span></span>  
   
      `<contact>`  
   
@@ -35,13 +36,13 @@ ms.locfileid: "91058226"
   
      `</contact>`  
   
-### <a name="to-create-an-xml-document"></a><span data-ttu-id="c5226-111">Создание XML-документа</span><span class="sxs-lookup"><span data-stu-id="c5226-111">To create an XML document</span></span>  
+### <a name="to-create-an-xml-document"></a><span data-ttu-id="1441f-112">Создание XML-документа</span><span class="sxs-lookup"><span data-stu-id="1441f-112">To create an XML document</span></span>  
   
-- <span data-ttu-id="c5226-112">Создайте встроенный XML-документ.</span><span class="sxs-lookup"><span data-stu-id="c5226-112">Create the XML document inline.</span></span> <span data-ttu-id="c5226-113">Следующий код создает XML-документ с литеральным синтаксисом, объявлением XML, инструкцией по обработке, комментарием и элементом, содержащим другой элемент.</span><span class="sxs-lookup"><span data-stu-id="c5226-113">The following code creates an XML document that has literal syntax, an XML declaration, a processing instruction, a comment, and an element that contains another element.</span></span>  
+- <span data-ttu-id="1441f-113">Создайте встроенный XML-документ.</span><span class="sxs-lookup"><span data-stu-id="1441f-113">Create the XML document inline.</span></span> <span data-ttu-id="1441f-114">Следующий код создает XML-документ с литеральным синтаксисом, объявлением XML, инструкцией по обработке, комментарием и элементом, содержащим другой элемент.</span><span class="sxs-lookup"><span data-stu-id="1441f-114">The following code creates an XML document that has literal syntax, an XML declaration, a processing instruction, a comment, and an element that contains another element.</span></span>  
   
      [!code-vb[VbXMLSamples#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples13.vb#30)]  
   
-     <span data-ttu-id="c5226-114">Выполните код.</span><span class="sxs-lookup"><span data-stu-id="c5226-114">Run the code.</span></span> <span data-ttu-id="c5226-115">Выходные данные этого кода:</span><span class="sxs-lookup"><span data-stu-id="c5226-115">The output of this code is:</span></span>  
+     <span data-ttu-id="1441f-115">Выполните код.</span><span class="sxs-lookup"><span data-stu-id="1441f-115">Run the code.</span></span> <span data-ttu-id="1441f-116">Выходные данные этого кода:</span><span class="sxs-lookup"><span data-stu-id="1441f-116">The output of this code is:</span></span>  
   
      `<?xml-stylesheet type="text/xsl" href="show_book.xsl"?>`  
   
@@ -53,9 +54,9 @@ ms.locfileid: "91058226"
   
      `</books>`  
   
-## <a name="see-also"></a><span data-ttu-id="c5226-116">См. также</span><span class="sxs-lookup"><span data-stu-id="c5226-116">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1441f-117">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="1441f-117">See also</span></span>
 
-- [<span data-ttu-id="c5226-117">XML</span><span class="sxs-lookup"><span data-stu-id="c5226-117">XML</span></span>](index.md)
-- [<span data-ttu-id="c5226-118">Создание XML в Visual Basic</span><span class="sxs-lookup"><span data-stu-id="c5226-118">Creating XML in Visual Basic</span></span>](creating-xml.md)
-- [<span data-ttu-id="c5226-119">XML-литерал элемента</span><span class="sxs-lookup"><span data-stu-id="c5226-119">XML Element Literal</span></span>](../../../language-reference/xml-literals/xml-element-literal.md)
-- [<span data-ttu-id="c5226-120">XML-литерал документа</span><span class="sxs-lookup"><span data-stu-id="c5226-120">XML Document Literal</span></span>](../../../language-reference/xml-literals/xml-document-literal.md)
+- [<span data-ttu-id="1441f-118">XML</span><span class="sxs-lookup"><span data-stu-id="1441f-118">XML</span></span>](index.md)
+- [<span data-ttu-id="1441f-119">Создание XML в Visual Basic</span><span class="sxs-lookup"><span data-stu-id="1441f-119">Creating XML in Visual Basic</span></span>](creating-xml.md)
+- [<span data-ttu-id="1441f-120">XML-литерал элемента</span><span class="sxs-lookup"><span data-stu-id="1441f-120">XML Element Literal</span></span>](../../../language-reference/xml-literals/xml-element-literal.md)
+- [<span data-ttu-id="1441f-121">XML-литерал документа</span><span class="sxs-lookup"><span data-stu-id="1441f-121">XML Document Literal</span></span>](../../../language-reference/xml-literals/xml-document-literal.md)
