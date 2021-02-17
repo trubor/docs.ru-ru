@@ -24,8 +24,18 @@
               href: 6.0.md
             - name: ASP.NET Core
               items:
+                - name: 'Blazor: изменено имя параметра в методе RequestImageFileAsync'
+                  href: aspnet-core/6.0/blazor-parameter-name-changed-in-method.md
                 - name: Kestrel. Атрибуты сообщения журнала изменились
                   href: aspnet-core/6.0/kestrel-log-message-attributes-changed.md
+                - name: 'ПО промежуточного слоя: ПО промежуточного слоя перенаправления HTTPS создает исключение для неоднозначных портов HTTPS'
+                  href: aspnet-core/6.0/middleware-ambiguous-https-ports-exception.md
+                - name: Razor. Интерфейсы API RazorEngine помечены как устаревшие
+                  href: aspnet-core/6.0/razor-engine-apis-obsolete.md
+            - name: Библиотеки Core .NET
+              items:
+                - name: Изменения аннотации о допустимости значений NULL
+                  href: core-libraries/6.0/nullable-ref-type-annotation-changes.md
             - name: Windows Forms
               items:
                 - name: API вызывают исключение ArgumentNullException
@@ -306,8 +316,14 @@
           items:
             - name: ".NET\_6.0"
               items:
+                - name: 'Blazor: изменено имя параметра в методе RequestImageFileAsync'
+                  href: aspnet-core/6.0/blazor-parameter-name-changed-in-method.md
                 - name: Kestrel. Атрибуты сообщения журнала изменились
                   href: aspnet-core/6.0/kestrel-log-message-attributes-changed.md
+                - name: 'ПО промежуточного слоя: ПО промежуточного слоя перенаправления HTTPS создает исключение для неоднозначных портов HTTPS'
+                  href: aspnet-core/6.0/middleware-ambiguous-https-ports-exception.md
+                - name: Razor. Интерфейсы API RazorEngine помечены как устаревшие
+                  href: aspnet-core/6.0/razor-engine-apis-obsolete.md
             - name: .NET 5.0
               items:
                 - name: "Приложения ASP.NET\_Core с поддержкой десериализации заключенных в кавычки чисел"
@@ -406,6 +422,10 @@
                   href: code-analysis/5.0/ca2247-ctor-arg-should-be-taskcreationoptions.md
         - name: Библиотеки Core .NET
           items:
+            - name: ".NET\_6.0"
+              items:
+                - name: Изменения аннотации о допустимости значений NULL
+                  href: core-libraries/6.0/nullable-ref-type-annotation-changes.md
             - name: .NET 5.0
               items:
                 - name: 'Изменения в API, связанные со сборкой, для публикации с одним файлом'

@@ -1,0 +1,68 @@
+- name: Перенос существующих приложений ASP.NET в .NET Core
+  href: index.md
+  items:
+    - name: Общие сведения о переносе приложений в .NET Core
+      href: introduction.md
+      items:
+        - name: Вопросы миграции
+          href: migration-considerations.md
+        - name: Миграция на ASP.NET Core 2.1
+          href: migrate-aspnet-core-2-1.md
+        - name: Выбор подходящей версии .NET Core
+          href: choose-net-core-version.md
+        - name: Стратегии постепенной миграции
+          href: incremental-migration-strategies.md
+        - name: Стратегии миграции приложений ASP.NET Web Forms
+          href: migrate-web-forms.md
+        - name: Стратегии развертывания
+          href: deployment-strategies.md
+        - name: Дополнительные ресурсы по переносу
+          href: additional-migration-resources.md
+    - name: Различия архитектуры ASP.NET MVC и ASP.NET Core
+      href: architectural-differences.md
+      items:
+        - name: Различия в запуске приложений
+          href: app-startup-differences.md
+        - name: Различия в размещении
+          href: hosting-differences.md
+        - name: Обслуживание статических файлов
+          href: serving-static-files.md
+        - name: Различия в внедрении зависимостей
+          href: dependency-injection-differences.md
+        - name: 'ПО промежуточного слоя, модули и обработчики'
+          href: middleware-modules-handlers.md
+        - name: Различия в конфигурации
+          href: configuration-differences.md
+        - name: Различия в маршрутизации
+          href: routing-differences.md
+        - name: Сравнение Razor Pages с ASP.NET MVC
+          href: comparing-razor-pages-aspnet-mvc.md
+        - name: Различия в использовании веб-API
+          href: webapi-differences.md
+        - name: Различия в проверке подлинности
+          href: authentication-differences.md
+        - name: Различия в удостоверениях
+          href: identity-differences.md
+        - name: Различия в контроллерах
+          href: controller-differences.md
+        - name: Различия в использовании Razor
+          href: razor-differences.md
+        - name: Различия в использовании SignalR
+          href: signalr-differences.md
+        - name: Различия в тестировании
+          href: testing-differences.md
+    - name: Перенос крупных решений
+      href: migrate-large-solutions.md
+      items:
+        - name: Определение последовательности переносимых проектов
+          href: identify-migration-sequence.md
+        - name: Общие сведения о зависимостях и их обновление
+          href: understand-update-dependencies.md
+        - name: Стратегии миграции для решений в рабочей среде
+          href: strategies-migrating-in-production.md
+    - name: Пример миграции проекта eShop
+      href: example-migration-eshop.md
+    - name: Сценарии развертывания
+      href: deployment-scenarios.md
+    - name: Сводка
+      href: summary.md
