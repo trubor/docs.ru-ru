@@ -62,6 +62,9 @@
           href: strategies-migrating-in-production.md
     - name: Пример миграции проекта eShop
       href: example-migration-eshop.md
+      items:
+        - name: Дополнительные сценарии миграции
+          href: more-migration-scenarios.md
     - name: Сценарии развертывания
       href: deployment-scenarios.md
     - name: Сводка

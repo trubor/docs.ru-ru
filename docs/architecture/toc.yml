@@ -21,3 +21,5 @@
       href: microservices/
     - name: 'Бессерверные приложения: Архитектура, шаблоны и реализация в Azure'
       href: serverless/
+    - name: Dapr для разработчиков .NET
+      href: dapr-for-net-developers/

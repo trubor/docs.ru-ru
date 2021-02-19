@@ -24,6 +24,8 @@
               href: 6.0.md
             - name: ASP.NET Core
               items:
+                - name: "Изменения в аннотациях ссылочного типа, допускающих значения\_NULL"
+                  href: aspnet-core/6.0/nullable-reference-type-annotations-changed.md
                 - name: 'Blazor: изменено имя параметра в методе RequestImageFileAsync'
                   href: aspnet-core/6.0/blazor-parameter-name-changed-in-method.md
                 - name: Kestrel. Атрибуты сообщения журнала изменились
@@ -316,6 +318,8 @@
           items:
             - name: ".NET\_6.0"
               items:
+                - name: "Изменения в аннотациях ссылочного типа, допускающих значения\_NULL"
+                  href: aspnet-core/6.0/nullable-reference-type-annotations-changed.md
                 - name: 'Blazor: изменено имя параметра в методе RequestImageFileAsync'
                   href: aspnet-core/6.0/blazor-parameter-name-changed-in-method.md
                 - name: Kestrel. Атрибуты сообщения журнала изменились

@@ -1,7 +1,7 @@
 items:
   - name: Документация по C#
     href: index.yml
-  - name: Обзор языка C#
+  - name: Начало работы
     items:
       - name: Вступление
         href: tour-of-csharp/index.md
@@ -11,37 +11,39 @@ items:
         href: tour-of-csharp/program-building-blocks.md
       - name: Основные области языка
         href: tour-of-csharp/features.md
+      - name: Учебники
+        items:
+          - name: Выберите первый урок
+            href: tour-of-csharp/tutorials/index.md
+          - name: Учебники на основе браузера
+            items:
+              - name: 'Здравствуй, мир'
+                href: tour-of-csharp/tutorials/hello-world.yml
+              - name: Числа в C#
+                href: tour-of-csharp/tutorials/numbers-in-csharp.yml
+              - name: Ветви и циклы
+                href: tour-of-csharp/tutorials/branches-and-loops.yml
+              - name: Коллекции списков
+                href: tour-of-csharp/tutorials/list-collection.yml
+          - name: Работа в локальной среде
+            items:
+              - name: Настройка среды
+                href: tour-of-csharp/tutorials/local-environment.md
+              - name: Числа в C#
+                href: tour-of-csharp/tutorials/numbers-in-csharp-local.md
+              - name: Ветви и циклы
+                href: tour-of-csharp/tutorials/branches-and-loops-local.md
+              - name: Коллекции списков
+                href: tour-of-csharp/tutorials/arrays-and-collections.md
   - name: Учебники
     items:
       - name: Обзор
         displayName: tutorials
         href: tutorials/index.md
-      - name: Введение в программирование на C#
-        items:
-          - name: Выберите первый урок
-            href: tutorials/intro-to-csharp/index.md
-          - name: 'Здравствуй, мир'
-            href: tutorials/intro-to-csharp/hello-world.yml
-          - name: Числа в C#
-            href: tutorials/intro-to-csharp/numbers-in-csharp.yml
-          - name: Ветви и циклы
-            href: tutorials/intro-to-csharp/branches-and-loops.yml
-          - name: Коллекции списков
-            href: tutorials/intro-to-csharp/list-collection.yml
-          - name: Работа в локальной среде
-            items:
-              - name: Настройка среды
-                href: tutorials/intro-to-csharp/local-environment.md
-              - name: Числа в C#
-                href: tutorials/intro-to-csharp/numbers-in-csharp-local.md
-              - name: Ветви и циклы
-                href: tutorials/intro-to-csharp/branches-and-loops-local.md
-              - name: Коллекции списков
-                href: tutorials/intro-to-csharp/arrays-and-collections.md
-              - name: Общие сведения о классах
-                href: tutorials/intro-to-csharp/introduction-to-classes.md
-              - name: Объектно-ориентированное программирование
-                href: tutorials/intro-to-csharp/object-oriented-programming.md
+      - name: Общие сведения о классах
+        href: tutorials/intro-to-csharp/introduction-to-classes.md
+      - name: Объектно-ориентированное программирование
+        href: tutorials/intro-to-csharp/object-oriented-programming.md
       - name: Подробнее о типах записей
         href: tutorials/exploration/records.md
       - name: Подробнее об инструкциях верхнего уровня
@@ -267,8 +269,6 @@ items:
         items:
           - name: Структура программы C#
             href: programming-guide/inside-a-program/index.md
-          - name: Hello World — Создаем первую программу
-            href: programming-guide/inside-a-program/hello-world-your-first-program.md
           - name: Общая структура программы C#
             href: programming-guide/inside-a-program/general-structure-of-a-csharp-program.md
           - name: Имена идентификаторов
