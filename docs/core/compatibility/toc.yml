@@ -26,6 +26,8 @@
               items:
                 - name: "Изменения в аннотациях ссылочного типа, допускающих значения\_NULL"
                   href: aspnet-core/6.0/nullable-reference-type-annotations-changed.md
+                - name: Устаревшие и удаленные API
+                  href: aspnet-core/6.0/obsolete-removed-apis.md
                 - name: 'Blazor: изменено имя параметра в методе RequestImageFileAsync'
                   href: aspnet-core/6.0/blazor-parameter-name-changed-in-method.md
                 - name: Kestrel. Атрибуты сообщения журнала изменились
@@ -38,6 +40,8 @@
               items:
                 - name: Изменения аннотации о допустимости значений NULL
                   href: core-libraries/6.0/nullable-ref-type-annotation-changes.md
+                - name: Значение точности при анализе стандартных числовых форматов
+                  href: core-libraries/6.0/numeric-format-parsing-handles-higher-precision.md
             - name: Windows Forms
               items:
                 - name: API вызывают исключение ArgumentNullException
@@ -320,6 +324,8 @@
               items:
                 - name: "Изменения в аннотациях ссылочного типа, допускающих значения\_NULL"
                   href: aspnet-core/6.0/nullable-reference-type-annotations-changed.md
+                - name: Устаревшие и удаленные API
+                  href: aspnet-core/6.0/obsolete-removed-apis.md
                 - name: 'Blazor: изменено имя параметра в методе RequestImageFileAsync'
                   href: aspnet-core/6.0/blazor-parameter-name-changed-in-method.md
                 - name: Kestrel. Атрибуты сообщения журнала изменились
@@ -430,6 +436,8 @@
               items:
                 - name: Изменения аннотации о допустимости значений NULL
                   href: core-libraries/6.0/nullable-ref-type-annotation-changes.md
+                - name: Значение точности при анализе стандартных числовых форматов
+                  href: core-libraries/6.0/numeric-format-parsing-handles-higher-precision.md
             - name: .NET 5.0
               items:
                 - name: 'Изменения в API, связанные со сборкой, для публикации с одним файлом'
@@ -548,7 +556,7 @@
                   href: msbuild/5.0/publishdepsfilepath-behavior-change.md
                 - name: Значение TargetFramework изменено с netcoreapp на net
                   href: msbuild/5.0/targetframework-name-change.md
-            - name: ".NET\_3.0"
+            - name: ".NET Core\_2.1 – 3.1"
               href: msbuild.md
         - name: Сеть
           items:
