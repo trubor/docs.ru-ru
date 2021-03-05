@@ -241,9 +241,8 @@
             - name: Приостановление и восстановление рабочего процесса
               href: pausing-and-resuming-a-workflow.md
         - name: Руководство по миграции
-          href: wf-migration-guidance.md
           items:
-            - name: Руководство по миграции
+            - name: Обзор
               href: migration-guidance.md
             - name: Использование действий .NET Framework 3.0 WF на платформе .NET Framework 4 с действием «Interop»
               href: net-framework-3-0-wf-in-net-framework-4-interop.md
