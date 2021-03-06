@@ -1419,6 +1419,6 @@
     - name: Спецификация языка
       href: reference/language-specification/
 - name: Примеры приложений
-  href: 'https://github.com/dotnet/docs/tree/master/samples/snippets/visualbasic'
+  href: 'https://github.com/dotnet/docs/tree/main/samples/snippets/visualbasic'
 - name: Пошаговые руководства
   href: walkthroughs.md
