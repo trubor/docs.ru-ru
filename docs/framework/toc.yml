@@ -397,8 +397,6 @@ items:
         href: tools/certmgr-exe-certificate-manager-tool.md
       - name: Clrver.exe (средство проверки версий среды CLR)
         href: tools/clrver-exe-clr-version-tool.md
-      - name: Командные строки
-        href: tools/developer-command-prompt-for-vs.md
       - name: CorFlags.exe (средство преобразования CorFlags)
         href: tools/corflags-exe-corflags-conversion-tool.md
       - name: Fuslogvw.exe (средство просмотра журнала привязки сборок)
