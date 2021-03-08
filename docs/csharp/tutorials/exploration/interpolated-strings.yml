@@ -10,12 +10,12 @@ metadata:
   level: Beginner
   displayType: two-column
   interactive: csharp
-  ms.openlocfilehash: 072c232613073c10caf6f8927154ce8f24c19af5
-  ms.sourcegitcommit: 0100be20fcf23f61dab672deced70059ed71bb2e
+  ms.openlocfilehash: 76af703567c7f6aecc409becfeb4bb0f580092e1
+  ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 08/17/2020
-  ms.locfileid: "88268014"
+  ms.lasthandoff: 03/04/2021
+  ms.locfileid: "102103170"
 items:
 - durationInMinutes: 2
   content: >
@@ -91,7 +91,7 @@ items:
     ```
 
 
-    Задайте строку формата, указав ее после интерполированного выражения через двоеточие. "d" — это [стандартная строка формата для даты и времени](../../../standard/base-types/standard-date-and-time-format-strings.md#the-short-date-d-format-specifier), представляющая краткий формат. "C2" — это [стандартная строка числового формата](../../../standard/base-types/standard-numeric-format-strings.md#the-currency-c-format-specifier), представляющая число в виде денежной единицы с точностью два знака после запятой.
+    Задайте строку формата, указав ее после интерполированного выражения через двоеточие. "d" — это [стандартная строка формата для даты и времени](../../../standard/base-types/standard-date-and-time-format-strings.md#the-short-date-d-format-specifier), представляющая краткий формат. "C2" — это [стандартная строка числового формата](../../../standard/base-types/standard-numeric-format-strings.md#currency-format-specifier-c), представляющая число в виде денежной единицы с точностью два знака после запятой.
 
 
     Некоторые типы в библиотеках .NET поддерживают предопределенный набор строк формата. К ним относятся все числовые типы, а также типы даты и времени. Полный список типов, поддерживающих строки формата, см. в разделе [Строки формата и типы библиотек классов .NET](../../../standard/base-types/formatting-types.md#format-strings-and-net-types) статьи [Типы форматирования в .NET](../../../standard/base-types/formatting-types.md).
