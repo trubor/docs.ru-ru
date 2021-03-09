@@ -35,6 +35,8 @@
           href: configuration-differences.md
         - name: Различия в маршрутизации
           href: routing-differences.md
+        - name: Различия в ведении журнала
+          href: logging-differences.md
         - name: Сравнение Razor Pages с ASP.NET MVC
           href: comparing-razor-pages-aspnet-mvc.md
         - name: Различия в использовании веб-API
