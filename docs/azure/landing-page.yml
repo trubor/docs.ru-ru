@@ -10,12 +10,12 @@ metadata:
   ms.technology: azure
   ms.service: multiple
   ms.prod: azure-dotnet
-  ms.openlocfilehash: 3f84758863561be809078b888f18308d5cbcfb82
-  ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
+  ms.openlocfilehash: 121499bc7f26ba6b07851696ae20b9ebf730de2a
+  ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 01/30/2021
-  ms.locfileid: "99216068"
+  ms.lasthandoff: 03/04/2021
+  ms.locfileid: "102105721"
 landingContent:
 - title: Начало работы с .NET в Azure
   linkLists:
@@ -26,7 +26,7 @@ landingContent:
   - linkListType: get-started
     links:
     - text: Средства для разработчиков .NET
-      url: tools.md
+      url: ./dotnet-dev-env-checklist.md
     - text: Проверка подлинности приложения
       url: authentication.md
     - text: Ведение журнала
@@ -220,4 +220,4 @@ landingContent:
     - text: Жизненный цикл контейнерного приложения Docker на основе платформы и средств Майкрософт
       url: ../architecture/containerized-lifecycle/index.md
     - text: Модернизация существующих приложений .NET с помощью облака Azure и контейнеров Windows
-      url: /dotnet/architecture/modernize-with-azure-containers/
+      url: ../architecture/modernize-with-azure-containers/index.md
