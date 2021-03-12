@@ -286,6 +286,8 @@ items:
             href: programming-guide/main-and-command-args/how-to-display-command-line-arguments.md
           - name: 'Значения, возвращаемые методом Main()'
             href: programming-guide/main-and-command-args/main-return-values.md
+          - name: Инструкции верхнего уровня
+            href: programming-guide/main-and-command-args/top-level-statements.md
       - name: Основные понятия программирования
         items:
           - name: Обзор
@@ -1133,6 +1135,8 @@ items:
                 href: language-reference/keywords/add.md
               - name: get
                 href: language-reference/keywords/get.md
+              - name: init
+                href: language-reference/keywords/init.md
               - name: partial (тип)
                 href: language-reference/keywords/partial-type.md
               - name: partial (метод)
