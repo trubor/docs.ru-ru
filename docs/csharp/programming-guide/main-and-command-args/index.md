@@ -1,7 +1,7 @@
 ---
 title: Руководство по программированию на C#. Main() и аргументы командной строки
 description: Сведения о методе Main() и аргументах командной строки. Метод Main является точкой входа для исполняемой программы.
-ms.date: 08/02/2017
+ms.date: 03/08/2021
 f1_keywords:
 - main_CSharpKeyword
 - Main
@@ -12,12 +12,12 @@ helpviewer_keywords:
 - command line [C#], arguments
 - command-line arguments [C#], Main method
 ms.assetid: 73a17231-cf96-44ea-aa8a-54807c6fb1f4
-ms.openlocfilehash: 611b0c8818f8f800cf1cf5c0f6b2789882939b7b
-ms.sourcegitcommit: 60dc0a11ebdd77f969f41891d5cca06335cda6a7
+ms.openlocfilehash: 35117642f38885aab08a5c0249d1f65ec76c59f3
+ms.sourcegitcommit: e3cf8227573e13b8e1f4e3dc007404881cdafe47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88957542"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103190207"
 ---
 # <a name="main-and-command-line-arguments-c-programming-guide"></a>Main() и аргументы командной строки (Руководство по программированию на C#)
 
@@ -26,6 +26,12 @@ ms.locfileid: "88957542"
 В программе на C# может существовать только одна точка входа. Если у вас есть несколько классов с методом `Main`, программу нужно компилировать с параметром `-main`, чтобы указать, какой из методов `Main` будет использоваться в качестве точки входа. Дополнительные сведения см. в разделе [-main (параметры компилятора C#)](../../language-reference/compiler-options/main-compiler-option.md).
 
 [!code-csharp[csProgGuideMain#17](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class1.cs#17)]
+
+Начиная с версии C# 9, можно не указывать метод `Main` и писать инструкции C# как включенные в метод `Main`, как показано в следующем примере:
+
+:::code language="csharp" source="snippets/top-level-statements-1/Program.cs":::
+
+Сведения о написании кода приложения с помощью неявного метода точки входа см. в статье [Инструкции верхнего уровня (руководство по программированию на C#)](top-level-statements.md).
 
 ## <a name="overview"></a>Обзор
 
