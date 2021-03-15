@@ -172,7 +172,7 @@ items:
       - name: Обзор
         displayName: 'diagnostics,tools,tooling,productivity,instrumentation'
         href: tools-and-productivity.md
-      - name: Пакет SDK для .NET Core
+      - name: Пакет SDK для .NET
         items:
           - name: Обзор
             displayName: '.net sdk,software development kit,software dev kit,tool'
