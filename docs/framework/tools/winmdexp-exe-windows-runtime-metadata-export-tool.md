@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Windows Runtime Metadata Export Tool
 - Winmdexp.exe
 ms.assetid: d2ce0683-343d-403e-bb8d-209186f7a19d
-ms.openlocfilehash: 42a57334f9f3e50a4d3c3ec48d57d26357d57510
-ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
+ms.openlocfilehash: b9a30076fdd67a90dc3e605a8014ead88141f43b
+ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94439499"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103477537"
 ---
 # <a name="winmdexpexe-windows-runtime-metadata-export-tool"></a>Winmdexp.exe (средство экспорта метаданных среды выполнения Windows)
 
@@ -19,7 +19,7 @@ ms.locfileid: "94439499"
   
  При использовании шаблона **Компонент среды выполнения Windows** из **Microsoft Store** для C# и Visual Basic в Visual Studio 2013 или Visual Studio 2012 компилятор создает WINMDOBJ-файл, а на последующих этапах сборки вызывается программа Winmdexp.exe, чтобы экспортировать WINMDOBJ-файл в WINMD-файл. Это рекомендуемый способ создания компонента среды выполнения Windows. Если над процессом построения требуется больший контроль по сравнению со средой Visual Studio, программу Winmdexp.exe следует вызывать напрямую.  
   
- Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы применить этот инструмент, воспользуйтесь командной строкой разработчика для Visual Studio (или командной строкой Visual Studio в Windows 7). Дополнительные сведения см. в разделе [Командные строки](developer-command-prompt-for-vs.md).  
+ Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы запустить инструмент, используйте [оболочку командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell).
   
  В командной строке введите следующее.  
   
@@ -33,7 +33,7 @@ winmdexp [options] winmdmodule
   
 |Аргумент или параметр|Описание|  
 |------------------------|-----------------|  
-|`winmdmodule`|Задает экспортируемый модуль (WINMDOBJ). Допускается только один модуль. Чтобы создать этот модуль, следует использовать параметр компилятора `/target` с целевым объектом `winmdobj`. См. раздел [-target:winmdobj (параметры компилятора C#)](../../csharp/language-reference/compiler-options/target-winmdobj-compiler-option.md) или [-target (Visual Basic)](../../visual-basic/reference/command-line-compiler/target.md).|  
+|`winmdmodule`|Задает экспортируемый модуль (WINMDOBJ). Допускается только один модуль. Чтобы создать этот модуль, следует использовать параметр компилятора `/target` с целевым объектом `winmdobj`. См. раздел [-target:winmdobj (параметры компилятора C#)](../../csharp/language-reference/compiler-options/output.md#targettype) или [-target (Visual Basic)](../../visual-basic/reference/command-line-compiler/target.md).|  
 |`/docfile:` `docfile`<br /><br /> `/d:` `docfile`|Задает выходной файл документации XML, который создаст программа Winmdexp.exe. В .NET Framework 4.5 выходной файл совпадает со входным файлом XML документации.|  
 |`/moduledoc:` `docfile`<br /><br /> `/md:` `docfile`|Задает имя файла документации XML, который компилятор создает с использованием `winmdmodule`.|  
 |`/modulepdb:` `symbolfile`<br /><br /> `/mp:` `symbolfile`|Задает имя файла базы данных программы (PDB), содержащего символы для `winmdmodule`.|  

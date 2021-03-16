@@ -8,18 +8,18 @@ helpviewer_keywords:
 - Regasm.exe
 - registering assemblies
 ms.assetid: e190e342-36ef-4651-a0b4-0e8c2c0281cb
-ms.openlocfilehash: a3af6a0fbc7c9c695e18448da285977f04fd72ef
-ms.sourcegitcommit: b4f8849c47c1a7145eb26ce68bc9f9976e0dbec3
+ms.openlocfilehash: 14dbaf0e100204718e78292b038bf016b5607bc8
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87517260"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102259194"
 ---
 # <a name="regasmexe-assembly-registration-tool"></a>Regasm.exe (средство регистрации сборок)
 
 Средство регистрации сборки считывает метаданные сборки и добавляет в реестр необходимые записи, что позволяет COM-клиентам прозрачно создавать классы .NET Framework. Зарегистрированные классы могут использоваться любыми COM-клиентами так же, как COM-классы. Класс регистрируется только один раз, при установке сборки. Экземпляры классов внутри сборки не могут создаваться на основе COM-классов до их фактической регистрации.
 
-Для запуска средства используйте командную строку разработчика Visual Studio. Дополнительные сведения см. в разделе [Командные строки](developer-command-prompt-for-vs.md).
+Чтобы запустить инструмент, используйте [оболочку командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell).
 
 В командной строке введите следующее.
 
@@ -31,7 +31,7 @@ regasm assemblyFile [options]
 
 ## <a name="parameters"></a>Параметры
 
-|Параметр|Описание:|
+|Параметр|Описание|
 |---------------|-----------------|
 |*assemblyFile*|Сборка, которая должна быть зарегистрирована в COM.|
 
@@ -89,4 +89,4 @@ regasm myTest.dll /tlb:myTest.tlb
 - [Tlbexp.exe (программа экспорта библиотек типов)](tlbexp-exe-type-library-exporter.md)
 - [Tlbimp.exe (программа экспорта библиотек типов)](tlbimp-exe-type-library-importer.md)
 - [Регистрация сборок в COM](../interop/registering-assemblies-with-com.md)
-- [Командные строки](developer-command-prompt-for-vs.md)
+- [Оболочки командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell)

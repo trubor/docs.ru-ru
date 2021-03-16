@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Aximp.exe
 - Windows Forms ActiveX Control Importer
 ms.assetid: 482c0d83-7144-4497-b626-87d2351b78d0
-ms.openlocfilehash: 97e5201aecc540594aa154bb5a2e93e85c925570
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4d3b5b1720f29c70b5276d1c79275d8c057b179a
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96247347"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102259477"
 ---
 # <a name="aximpexe-windows-forms-activex-control-importer"></a>Aximp.exe (программа импорта элементов ActiveX форм Windows)
 
@@ -24,7 +24,7 @@ ms.locfileid: "96247347"
   
  Чтобы разместить элемент управления ActiveX, необходимо создать элемент управления-оболочку, производный от <xref:System.Windows.Forms.AxHost>. Этот элемент управления-оболочка содержит экземпляр базового элемента управления ActiveX. Оболочка может взаимодействовать с элементом управления ActiveX, но выглядит как элемент управления Windows Forms. Созданный элемент управления размещает элемент управления ActiveX и представляет его свойства, методы и события как свои собственные.  
   
- Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы применить этот инструмент, воспользуйтесь командной строкой разработчика для Visual Studio (или командной строкой Visual Studio в Windows 7). Дополнительные сведения см. в разделе [Командные строки](developer-command-prompt-for-vs.md).  
+ Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы запустить инструмент, используйте [оболочку командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell).
   
  В командной строке введите следующее.  
   

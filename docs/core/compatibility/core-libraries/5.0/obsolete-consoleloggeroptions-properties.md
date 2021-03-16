@@ -1,13 +1,13 @@
 ---
 title: Критическое изменение. Устаревшие свойства ConsoleLoggerOptions
-description: Сведения о критическом изменении .NET 5.0 в основных библиотеках .NET, где тип ConsoleLoggerFormat и некоторые свойства в ConsoleLoggerOptions теперь являются устаревшими.
+description: Сведения о критическом изменении .NET 5 в основных библиотеках .NET, где тип ConsoleLoggerFormat и некоторые свойства в ConsoleLoggerOptions теперь являются устаревшими.
 ms.date: 11/01/2020
-ms.openlocfilehash: bd039dfa84ae3399d7fb36f992010a9a3c9f6ddf
-ms.sourcegitcommit: 4df8e005c074ceb1f978f007b222fe253be2baf3
+ms.openlocfilehash: c6ee294f90e304cebd517bd0139c58a6c7a41e0c
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99548387"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102257314"
 ---
 # <a name="obsolete-properties-on-consoleloggeroptions"></a>Устаревшие свойства ConsoleLoggerOptions
 
@@ -15,7 +15,7 @@ ms.locfileid: "99548387"
 
 ## <a name="change-description"></a>Описание изменений
 
-Начиная с .NET 5.0, тип <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerFormat?displayProperty=nameWithType> и несколько свойств <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions> являются устаревшими. Устаревшие свойства:
+Начиная с .NET 5 тип <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerFormat?displayProperty=nameWithType> и несколько свойств <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions> являются устаревшими. Устаревшие свойства:
 
 - <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.DisableColors?displayProperty=nameWithType>
 - <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.IncludeScopes?displayProperty=nameWithType>
@@ -49,7 +49,7 @@ ms.locfileid: "99548387"
   Есть несколько различий между <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.FormatterName> и <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.Format>:
 
   - <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.Format> имеет только два возможных параметра: `Default` и `Systemd`.
-  - <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.FormatterName> не учитывает регистр и может быть любой строкой. Зарезервированные встроенные имена — это `Simple`, `Systemd` и `Json` (.NET 5.0 и выше).
+  - <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.FormatterName> не учитывает регистр и может быть любой строкой. Зарезервированные встроенные имена — это `Simple`, `Systemd` и `Json` (.NET 5 и выше).
   - `"Format": "Systemd"` сопоставляется с `"FormatterName": "Systemd"`.
   - `"Format": "Default"` сопоставляется с `"FormatterName": "Simple"`.
 

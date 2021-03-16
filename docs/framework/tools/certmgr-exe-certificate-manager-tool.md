@@ -14,23 +14,23 @@ helpviewer_keywords:
 - CTLs
 - certificate revocation lists
 ms.assetid: 7e953b43-1374-4bbc-814f-53ca1b6b52bb
-ms.openlocfilehash: 30a35ded6fc86af6dc6dd4bf19cdf60f66570e0c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a5666645c674bbbe77b988fc7a1ff0db935920aa
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96247256"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102258238"
 ---
 # <a name="certmgrexe-certificate-manager-tool"></a>Certmgr.exe (средство диспетчера сертификатов)
 
 Диспетчер сертификатов (Certmgr.exe) предназначен для управления сертификатами, списками доверия сертификатов (CTL) и списками отзыва сертификатов (CRL).  
   
- Диспетчер сертификатов устанавливается автоматически вместе с Visual Studio. Для запуска программы используйте [Командные строки](developer-command-prompt-for-vs.md).  
+ Диспетчер сертификатов устанавливается автоматически вместе с Visual Studio. Чтобы запустить инструмент, используйте [оболочку командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell).  
   
 > [!NOTE]
 > Диспетчер сертификатов (Certmgr.exe) является служебной программой командной строки, в то время как сертификаты (Certmgr.msc) — это оснастка консоли управления (MMC). Поскольку файл Certmgr.msc обычно находится в системном каталоге Windows, при вводе `certmgr` в командной строке может загрузиться оснастка консоли управления (MMC) "Сертификаты", даже если открыта командная строка разработчика для Visual Studio. Это происходит потому, что путь к оснастке предшествует пути к диспетчеру сертификатов в переменной среды PATH. При возникновении этой проблемы команды Certmgr.exe можно выполнить, указав путь к исполняемому файлу.  
   
- Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы применить этот инструмент, воспользуйтесь командной строкой разработчика для Visual Studio (или командной строкой Visual Studio в Windows 7). Дополнительные сведения см. в разделе [Командные строки](developer-command-prompt-for-vs.md).  
+ Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы запустить инструмент, используйте [оболочку командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell).  
   
  Общие сведения о сертификатах X.509 см. в разделе [Работа с сертификатами](../wcf/feature-details/working-with-certificates.md).  
   
@@ -143,4 +143,4 @@ certmgr /put /c /s my newFile
 
 - [Инструменты](index.md)
 - [Makecert.exe (средство создания сертификатов)](/windows/desktop/SecCrypto/makecert)
-- [Командные строки](developer-command-prompt-for-vs.md)
+- [Оболочки командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell)

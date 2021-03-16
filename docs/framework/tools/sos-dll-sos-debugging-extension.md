@@ -7,12 +7,12 @@ helpviewer_keywords:
 - SOS debugging extensions
 - SOS.dll
 ms.assetid: 9ac1b522-77ab-4cdc-852a-20fcdc9ae498
-ms.openlocfilehash: cc9fed8432b5b24c20c3c470a842895a901d9efb
-ms.sourcegitcommit: b4f8849c47c1a7145eb26ce68bc9f9976e0dbec3
+ms.openlocfilehash: 6a145b7de157269cc83ff1375386cff7f2fb30a1
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87517182"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102258833"
 ---
 # <a name="sosdll-sos-debugging-extension"></a>SOS.dll (расширение отладки SOS)
 
@@ -206,4 +206,4 @@ ms.locfileid: "87517182"
 ## <a name="see-also"></a>См. также
 
 - [Инструменты](index.md)
-- [Командные строки](developer-command-prompt-for-vs.md)
+- [Оболочки командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell)

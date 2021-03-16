@@ -11,12 +11,12 @@ helpviewer_keywords:
 - strong-named assemblies, signing files
 - key pairs for signing files
 ms.assetid: c1d2b532-1b8e-4c7a-8ac5-53b801135ec6
-ms.openlocfilehash: bb9640bbb46683a3facf290c8157853007f4407d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 76999ab305f9924bafaa95884b634e2a59251ff0
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238448"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102259051"
 ---
 # <a name="snexe-strong-name-tool"></a>Sn.exe (средство строгих имен)
 
@@ -27,7 +27,7 @@ ms.locfileid: "96238448"
 
  Дополнительные сведения о строгом именовании и сборках со строгими именами см. в разделах [Сборки со строгими именами](../../standard/assembly/strong-named.md) и [Практическое руководство. Подписание сборки строгим именем](../../standard/assembly/sign-strong-name.md).  
   
- Программа строгих имен автоматически устанавливается вместе с Visual Studio. Программу можно запустить из командной строки разработчика (или из командной строки Visual Studio в Windows 7). Дополнительные сведения см. в разделе [Командные строки](developer-command-prompt-for-vs.md).  
+ Программа строгих имен автоматически устанавливается вместе с Visual Studio. Чтобы запустить инструмент, используйте [оболочку командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell).  
 
 > [!NOTE]
 > На 64-разрядных компьютерах можно запустить 32-разрядную версию программы Sn.exe через командную строку разработчика для Visual Studio и 64-разрядную версию через командную строку Visual Studio x64 Win64.
@@ -131,4 +131,4 @@ sn -d MyContainer
 - [Инструменты](index.md)
 - [Al.exe (компоновщик сборок)](al-exe-assembly-linker.md)
 - [Сборки со строгими именами](../../standard/assembly/strong-named.md)
-- [Командные строки](developer-command-prompt-for-vs.md)
+- [Оболочки командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell)

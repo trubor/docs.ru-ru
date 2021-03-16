@@ -1,13 +1,13 @@
 ---
 title: Критическое изменение. Blazor WebAssembly не поддерживает интерфейсы API System.Security.Cryptography
-description: Сведения о критическом изменении в .NET 5.0, где интерфейсы API шифрования выдают исключение при запуске в браузере.
+description: Сведения о критическом изменении в .NET 5, где интерфейсы API шифрования выдают исключение при запуске в браузере.
 ms.date: 09/16/2020
-ms.openlocfilehash: ec10fa777e91f641b5582378830536a0cfa8dd72
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ecbdda4c04642af6b1737e888491eb6565ba7479
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759650"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102256885"
 ---
 # <a name="systemsecuritycryptography-apis-not-supported-on-blazor-webassembly"></a>Blazor WebAssembly не поддерживает интерфейсы API System.Security.Cryptography
 
@@ -15,10 +15,10 @@ API <xref:System.Security.Cryptography> выдают исключение <xref:
 
 ## <a name="change-description"></a>Описание изменений
 
-В предыдущих версиях .NET большинство API <xref:System.Security.Cryptography> были недоступны приложениям Blazor WebAssembly. Начиная с .NET 5.0, приложения Blazor WebAssembly предназначены для использования в полной контактной зоне API .NET 5, но из-за ограничений песочницы браузера поддерживаются не все API .NET 5. В .NET 5.0 и более поздних версиях неподдерживаемые API <xref:System.Security.Cryptography> выдают исключение <xref:System.PlatformNotSupportedException> при выполнении в WebAssembly.
+В предыдущих версиях .NET большинство API <xref:System.Security.Cryptography> были недоступны приложениям Blazor WebAssembly. Начиная с .NET 5 приложения Blazor WebAssembly предназначены для использования в полной контактной зоне API .NET 5, но из-за ограничений песочницы браузера поддерживаются не все API .NET 5. В .NET 5 и более поздних версиях неподдерживаемые API <xref:System.Security.Cryptography> выдают исключение <xref:System.PlatformNotSupportedException> при выполнении в WebAssembly.
 
 > [!TIP]
-> [Анализатор совместимости платформ](../../code-analysis/5.0/ca1416-platform-compatibility-analyzer.md) помечает все вызовы затронутых API при сборке проекта, который поддерживает платформу браузера. Этот анализатор выполняется по умолчанию в приложениях .NET 5.0 и более поздних версий.
+> [Анализатор совместимости платформ](../../code-analysis/5.0/ca1416-platform-compatibility-analyzer.md) помечает все вызовы затронутых API при сборке проекта, который поддерживает платформу браузера. Этот анализатор выполняется по умолчанию в приложениях .NET 5 и более поздних версий.
 
 ## <a name="reason-for-change"></a>Причина изменения
 

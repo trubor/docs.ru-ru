@@ -1,13 +1,13 @@
 ---
 title: Критическое изменение. CA1417. OutAttribute в строковом параметре для P/Invoke
-description: Сведения о критическом изменении в .NET 5.0, вызванном включением правила анализа кода CA1417.
+description: Узнайте о критическом изменении в .NET 5, вызванном включением правила анализа кода CA1417.
 ms.date: 09/29/2020
-ms.openlocfilehash: 3316d07108ec7f9da985494413336cba6d560dc9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 74aa6dc867bc1eb62e32dd086dd6b43f62e7f01f
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759589"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102257834"
 ---
 # <a name="warning-ca1417-outattribute-on-string-parameter-for-pinvoke"></a>Предупреждение CA1417: OutAttribute в строковом параметре для P/Invoke
 
@@ -15,7 +15,7 @@ ms.locfileid: "95759589"
 
 ## <a name="change-description"></a>Описание изменений
 
-Начиная с .NET 5.0, пакет SDK для .NET включает [анализаторы исходного кода .NET](../../../../fundamentals/code-analysis/overview.md). Некоторые из этих правил включены по умолчанию, включая [CA1417](/visualstudio/code-quality/ca1417). Если проект содержит код, нарушающий это правило и настроенный на обработку предупреждений как ошибок, это изменение может нарушить сборку.
+Начиная с .NET 5, пакет SDK для .NET включает [анализаторы исходного кода .NET](../../../../fundamentals/code-analysis/overview.md). Некоторые из этих правил включены по умолчанию, включая [CA1417](/visualstudio/code-quality/ca1417). Если проект содержит код, нарушающий это правило и настроенный на обработку предупреждений как ошибок, это изменение может нарушить сборку.
 
 Флаги правила CA1417 определения методов [P/Invoke](../../../../standard/native-interop/pinvoke.md), в которых параметр <xref:System.String> отмечен атрибутом <xref:System.Runtime.InteropServices.OutAttribute> и передается по значению. Пример:
 

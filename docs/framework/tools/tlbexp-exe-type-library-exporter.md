@@ -9,18 +9,18 @@ helpviewer_keywords:
 - Type Library Exporter
 - type libraries [.NET Framework], exporting
 ms.assetid: a487d61b-d166-467b-a7ca-d8b52fbff42d
-ms.openlocfilehash: 1a9e984e1b81adda572076cb118a25f5f3a045ea
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c37864a785d450f9bba435b8a0a7b2e3b9f4ed3c
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96283761"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102258693"
 ---
 # <a name="tlbexpexe-type-library-exporter"></a>Tlbexp.exe (программа экспорта библиотек типов)
 
 Программа экспорта библиотек типов создает библиотеку типов, описывающую типы, определенные в сборке среды CLR.  
   
- Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы применить этот инструмент, воспользуйтесь командной строкой разработчика для Visual Studio (или командной строкой Visual Studio в Windows 7). Дополнительные сведения см. в разделе [Командные строки](developer-command-prompt-for-vs.md).  
+ Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы запустить инструмент, используйте [оболочку командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell).
   
  В командной строке введите следующее.  
   
@@ -138,4 +138,4 @@ tlbexp Sample.dll
 - [Regasm.exe (средство регистрации сборок)](regasm-exe-assembly-registration-tool.md)
 - [Общие сведения о преобразовании сборки в библиотеку типов](/previous-versions/dotnet/netframework-4.0/xk1120c3(v=vs.100))
 - [Tlbimp.exe (программа экспорта библиотек типов)](tlbimp-exe-type-library-importer.md)
-- [Командные строки](developer-command-prompt-for-vs.md)
+- [Оболочки командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell)

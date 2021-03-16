@@ -1,13 +1,13 @@
 ---
 title: Критическое изменение. Изменение поведения PublishDepsFilePath
-description: Сведения о критическом изменении в .NET 5.0, где свойство MSBuild PublishDepsFilePath пусто для однофайловых приложений.
+description: Сведения о критическом изменении в .NET 5, где свойство MSBuild PublishDepsFilePath пусто для однофайловых приложений.
 ms.date: 09/17/2020
-ms.openlocfilehash: 70631beff31aa3388e59f3b79875ef437351451a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3a32f733ceaa2a24eb55d5e89f2eb1791c277f0d
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95760295"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102256508"
 ---
 # <a name="publishdepsfilepath-behavior-change"></a>Изменение поведения PublishDepsFilePath
 
@@ -21,7 +21,7 @@ ms.locfileid: "95760295"
 
 В предыдущих версиях .NET свойство MSBuild `PublishDepsFilePath` является путем к файлу *deps.json* приложения в выходном каталоге для приложений с несколькими файлами и путем в промежуточном каталоге для однофайловых приложений.
 
-Начиная с .NET 5.0 свойство `PublishDepsFilePath` пусто для однофайловых приложений, а новое свойство `IntermediateDepsFilePath` указывает расположение файла *deps.json* в промежуточном каталоге. Кроме того, для приложений с несколькими файлами файл *deps.json* может быть скопирован в выходной каталог (т. е. по пути, указанному в `PublishDepsFilePath`) только на более поздних этапах сборки.
+Начиная с .NET 5 свойство `PublishDepsFilePath` пусто для однофайловых приложений, а новое свойство `IntermediateDepsFilePath` указывает расположение файла *deps.json* в промежуточном каталоге. Кроме того, для приложений с несколькими файлами файл *deps.json* может быть скопирован в выходной каталог (т. е. по пути, указанному в `PublishDepsFilePath`) только на более поздних этапах сборки.
 
 ## <a name="reason-for-change"></a>Причина изменения
 

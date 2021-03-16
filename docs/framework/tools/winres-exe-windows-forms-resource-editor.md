@@ -12,18 +12,18 @@ helpviewer_keywords:
 - resx files
 - .resx files
 ms.assetid: cb8bc835-9221-4888-af53-1a4f5fad6c48
-ms.openlocfilehash: 35d1324d5ea7a72ffd5ea594530d1312e717cd7c
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 723daa7703828ea6eb103ce3b63164bf787cc10b
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90543229"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102258667"
 ---
 # <a name="winresexe-windows-resource-localization-editor"></a>Winres.exe (редактор для локализации ресурсов Windows)
 
 Редактор для локализации ресурсов Windows (Winres.exe) — это программа визуальной разметки, используемая при локализации ресурсов пользовательского интерфейса Windows Forms. Файлы RESX и RESOURCES, используемые как входные для программы Winres.exe, могут быть созданы с использованием среды визуального проектирования, такой как Microsoft Visual Studio. Информацию о развертывании ресурсов в приложениях .NET Framework см. в разделе [Ресурсы в приложениях для настольных систем](../resources/index.md).
 
-Приложение Winres.exe устанавливается вместе с Visual Studio. Для запуска средства используйте командную строку разработчика Visual Studio. Дополнительные сведения см. в разделе [Командные строки](developer-command-prompt-for-vs.md).
+Приложение Winres.exe устанавливается вместе с Visual Studio. Чтобы запустить инструмент, используйте [оболочку командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell).
 
 ## <a name="syntax"></a>Синтаксис
 

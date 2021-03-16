@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Help, Visual Basic Web sites
 - Visual Basic, videos
 ms.assetid: 9bfb42e9-327f-439b-935e-8884f6aca80c
-ms.openlocfilehash: 4b2d671e310763e6ddfa114bd63b031afba83a20
-ms.sourcegitcommit: 48466b8fb7332ececff5dc388f19f6b3ff503dd4
+ms.openlocfilehash: 06746347910f62a428d4897693a88b5efe78e86f
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400621"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102258973"
 ---
 # <a name="additional-resources"></a>Дополнительные ресурсы
 
@@ -32,13 +32,14 @@ ms.locfileid: "93400621"
 
 |URL-адрес|Описание|
 |----------|----------------|
-|[Документация по Visual Basic](https://github.com/dotnet/docs/tree/master/samples/snippets/visualbasic)|Содержит примеры, используемые в документации по Visual Basic и .NET.|
+|[Документация по Visual Basic](https://github.com/dotnet/docs/tree/main/samples/snippets/visualbasic)|Содержит примеры, используемые в документации по Visual Basic и .NET.|
+|[Обозреватель примеров](https://docs.microsoft.com/samples/browse/?languages=vb)|Содержит примеры кода, написанные на Visual Basic|
 
 ### <a name="forums"></a>Форумы
 
 |URL-адрес|Описание|
 |----------|----------------|
-|[Форумы по Visual Basic](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vbgeneral)|Рассматриваются общие вопросы по Visual Basic.|
+|[Майкрософт: вопросы и ответы](https://docs.microsoft.com/answers/topics/dotnet-visual-basic.html)|Технические вопросы о языке программирования Visual Basic.|
 
 ### <a name="videos-and-webcasts"></a>Видеозаписи и веб-трансляции
 
@@ -64,4 +65,4 @@ ms.locfileid: "93400621"
 ## <a name="see-also"></a>См. также
 
 - [Начало работы с Visual Basic](index.md)
-- [Обращайтесь к нам](/visualstudio/ide/feedback-options)
+- [Параметры обратной связи Visual Studio](/visualstudio/ide/feedback-options)

@@ -1,13 +1,13 @@
 ---
 title: Критическое изменение. Удален пакет Microsoft.DotNet.PlatformAbstractions
-description: Сведения о критическом изменении .NET 5.0 в основных библиотеках .NET, в которых был удален пакет Microsoft.DotNet.PlatformAbstractions.
+description: Узнайте о критическом изменении .NET 5 в основных библиотеках .NET, в которых был удален пакет Microsoft.DotNet.PlatformAbstractions.
 ms.date: 11/01/2020
-ms.openlocfilehash: 38ffe5e592d01c3bae14fc41becb594283b975a3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: aff7be816815b016e3ce694c4e9a97410538c08d
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759781"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102257249"
 ---
 # <a name="microsoftdotnetplatformabstractions-package-removed"></a>Удален пакет Microsoft.DotNet.PlatformAbstractions
 
@@ -19,7 +19,7 @@ ms.locfileid: "95759781"
 
 Библиотека <xref:Microsoft.DotNet.PlatformAbstractions?displayProperty=fullName> пересекается с интерфейсами API, которые уже установлены в пространствах имен System\*. Кроме того, некоторые API <xref:Microsoft.DotNet.PlatformAbstractions> не разрабатывались с тем же уровнем детализации и не были рассчитаны на такую же долгосрочную поддержку, что и остальная часть System.\* Необходимо загрузить и установить пакет NuGet LINQ to Twitter для работы с этим учебником. Например, <xref:Microsoft.DotNet.PlatformAbstractions> использует перечисление `Platform` для описания текущей платформы операционной системы. От такой модели перечисления отказались при разработке API <xref:System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform(System.Runtime.InteropServices.OSPlatform)?displayProperty=nameWithType>, чтобы обеспечить поддержку новых платформ и гибкую настройку с учетом новых возможностей.
 
-Сценарии, которые активируются библиотекой <xref:Microsoft.DotNet.PlatformAbstractions?displayProperty=fullName>, теперь могут обходиться без нее. Существующие версии будут продолжать работать даже в .NET 5.0 и более поздних версиях и обслуживаться наряду с предыдущими версиями .NET Core. Однако новые функции в библиотеку не добавляются. Вместо этого новые функции будут добавляться в другие библиотеки и API-интерфейсы.
+Сценарии, которые активируются библиотекой <xref:Microsoft.DotNet.PlatformAbstractions?displayProperty=fullName>, теперь могут обходиться без нее. Существующие версии будут продолжать работать даже в .NET 5 и более поздних версиях и обслуживаться наряду с предыдущими версиями .NET Core. Однако новые функции в библиотеку не добавляются. Вместо этого новые функции будут добавляться в другие библиотеки и API-интерфейсы.
 
 ## <a name="version-introduced"></a>Представленная версия
 

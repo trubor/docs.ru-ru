@@ -18,18 +18,18 @@ helpviewer_keywords:
 - global assembly cache, Gacutil.exe
 - Global Assembly Cache tool
 ms.assetid: 4c7be9c8-72ae-481f-a01c-1a4716806e99
-ms.openlocfilehash: 1fe79a09aa99c9d91d8223e7642408a56da20dfe
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 3cdc9e2b07ad176f2a46aa419920d5fa3f47f6e7
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87166941"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102259254"
 ---
 # <a name="gacutilexe-global-assembly-cache-tool"></a>Gacutil.exe (программа глобального кэша сборок)
 
 С помощью программы глобального кэша сборок можно просматривать содержимое глобального кэша сборок и кэша загрузки, а также управлять им.
 
-Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы применить этот инструмент, воспользуйтесь командной строкой разработчика для Visual Studio (или командной строкой Visual Studio в Windows 7). Дополнительные сведения см. в разделе [Командные строки](developer-command-prompt-for-vs.md).
+Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы запустить инструмент, используйте [оболочку командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell).
 
 В командной строке введите следующее.
 
@@ -182,4 +182,4 @@ gacutil /l
 - [Инструменты](index.md)
 - [Глобальный кэш сборок](../app-domains/gac.md)
 - [Regasm.exe (средство регистрации сборок)](regasm-exe-assembly-registration-tool.md)
-- [Командные строки](developer-command-prompt-for-vs.md)
+- [Оболочки командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell)
