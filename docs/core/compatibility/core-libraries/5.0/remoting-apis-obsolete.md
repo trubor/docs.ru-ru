@@ -1,13 +1,13 @@
 ---
 title: Критическое изменение. API удаленного взаимодействия устарели
-description: Сведения о критическом изменении .NET 5.0 в основных библиотеках .NET, где некоторые API, связанные с удаленным взаимодействием, помечены как устаревшие и приводят к созданию предупреждения с настраиваемым идентификатором диагностики.
+description: Сведения о критическом изменении .NET 5 в основных библиотеках .NET, где некоторые API, связанные с удаленным взаимодействием, помечены как устаревшие и приводят к созданию предупреждения с настраиваемым идентификатором диагностики.
 ms.date: 11/01/2020
-ms.openlocfilehash: 5687b1471028b077674cfd31cb77ce95dc51bef5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3c4f7cd200cadd11321da60f2b4a0d191497aae8
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759750"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102257174"
 ---
 # <a name="remoting-apis-are-obsolete"></a>API удаленного взаимодействия устарели
 
@@ -24,7 +24,7 @@ ms.locfileid: "95759750"
 
 В .NET Framework версий с 2.x по 4.x методы <xref:System.MarshalByRefObject.GetLifetimeService> и <xref:System.MarshalByRefObject.InitializeLifetimeService> управляют временем существования экземпляров, участвующих в удаленном взаимодействии .NET. В .NET Core версий с 2.x по 3.x эти методы всегда приводят к созданию исключения <xref:System.PlatformNotSupportedException> во время выполнения.
 
-В .NET 5.0 и более поздних версий методы <xref:System.MarshalByRefObject.GetLifetimeService> и <xref:System.MarshalByRefObject.InitializeLifetimeService> помечены как устаревшие с помощью предупреждения, но по-прежнему приводят к созданию исключения <xref:System.PlatformNotSupportedException> во время выполнения.
+В .NET 5 и более поздних версий методы <xref:System.MarshalByRefObject.GetLifetimeService> и <xref:System.MarshalByRefObject.InitializeLifetimeService> помечены как устаревшие с помощью предупреждения, но по-прежнему приводят к созданию исключения <xref:System.PlatformNotSupportedException> во время выполнения.
 
 ```csharp
 // MemoryStream, like all Stream instances, subclasses MarshalByRefObject.
@@ -37,7 +37,7 @@ obj.InitializeLifetimeService();
 
 ## <a name="reason-for-change"></a>Причина изменения
 
-Технология [удаленного взаимодействия .NET](/previous-versions/dotnet/netframework-1.1/kwdt6w2k(v=vs.71)) устарела. Она позволяет создать экземпляр объекта в другом процессе (потенциально даже на другом компьютере) и взаимодействовать с этим объектом, как если бы он был обычным внутрипроцессным экземпляром объекта .NET. Инфраструктура удаленного взаимодействия .NET существует только в .NET Framework версий с 2.x по 4.x. .NET Core и .NET 5.0 и более поздних версий не поддерживают удаленное взаимодействие .NET, а API удаленного взаимодействия в них либо не существуют, либо всегда создают исключения в этих средах выполнения.
+Технология [удаленного взаимодействия .NET](/previous-versions/dotnet/netframework-1.1/kwdt6w2k(v=vs.71)) устарела. Она позволяет создать экземпляр объекта в другом процессе (потенциально даже на другом компьютере) и взаимодействовать с этим объектом, как если бы он был обычным внутрипроцессным экземпляром объекта .NET. Инфраструктура удаленного взаимодействия .NET существует только в .NET Framework версий с 2.x по 4.x. .NET Core и .NET 5 и более поздних версий не поддерживают удаленное взаимодействие .NET, а API удаленного взаимодействия в них либо не существуют, либо всегда создают исключения в этих средах выполнения.
 
 Чтобы помочь разработчикам отказаться от этих API, некоторые связанные с удаленным взаимодействием API были помечены как устаревшие. В последующей версии .NET эти API могут быть окончательно исключены.
 

@@ -1,13 +1,13 @@
 ---
 title: Критическое изменение. Теперь методы WinForms вызывают исключение ArgumentNullException
-description: Сведения о критическом изменении в .NET 5.0, где некоторые методы Windows Forms теперь вызывают исключение ArgumentNullException для аргументов NULL.
+description: Сведения о критическом изменении в .NET 5, где некоторые методы Windows Forms теперь вызывают исключение ArgumentNullException для аргументов NULL.
 ms.date: 09/18/2020
-ms.openlocfilehash: 77280827d44b0e58533339a09357d518a0bfe508
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9d72f8e3320430396132de20c252cd5e8759dce3
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759913"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102256104"
 ---
 # <a name="winforms-methods-now-throw-argumentnullexception"></a>Теперь методы WinForms вызывают исключение ArgumentNullException
 
@@ -15,7 +15,7 @@ ms.locfileid: "95759913"
 
 ## <a name="change-description"></a>Описание изменений
 
-Ранее некоторые методы Windows Forms вызвали <xref:System.NullReferenceException> при передаче аргумента, который имел значение NULL. Начиная с .NET 5.0, вместо этого такие методы вызывают <xref:System.ArgumentNullException> для аргументов NULL.
+Ранее некоторые методы Windows Forms вызвали <xref:System.NullReferenceException> при передаче аргумента, который имел значение NULL. Начиная с .NET 5, вместо этого такие методы вызывают <xref:System.ArgumentNullException> для аргументов NULL.
 
 Вызов <xref:System.ArgumentNullException> соответствует поведению среды выполнения .NET. Это также улучшает процесс отладки, четко указывая, что аргумент имеет значение NULL и какой именно это аргумент.
 

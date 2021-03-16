@@ -3,13 +3,13 @@ title: Установка .NET в Fedora — .NET
 description: Здесь приводятся различные способы установки пакета SDK для .NET и среды выполнения .NET в Fedora.
 author: adegeo
 ms.author: adegeo
-ms.date: 01/06/2021
-ms.openlocfilehash: 9dd8c6264831e2a9382960be505639f1eba95151
-ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
+ms.date: 02/17/2021
+ms.openlocfilehash: efaad4788db2200b1a47f9b4ae2414730588c6ae
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97970828"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102255765"
 ---
 # <a name="install-the-net-sdk-or-the-net-runtime-on-fedora"></a>Установка пакета SDK для .NET или среды выполнения .NET в Fedora
 
@@ -17,31 +17,19 @@ ms.locfileid: "97970828"
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
-[!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
+Дополнительные сведения об установке .NET без использования диспетчера пакетов см. в одной из следующих статей:
+
+- [Установка пакета SDK для .NET или среды выполнения .NET с использованием пакета Snap.](linux-snap.md)
+- [Установка пакета SDK для .NET или среды выполнения .NET с использованием скрипта.](linux-scripted-manual.md#scripted-install)
+- [Установка пакета SDK для .NET или среды выполнения .NET вручную.](linux-scripted-manual.md#manual-install)
 
 ## <a name="install-net-50"></a>Установка .NET 5.0
 
-[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
-
-**Fedora 32**
-
-```bash
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/32/prod.repo
-```
-
-**Fedora 33**
-
-```bash
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/33/prod.repo
-```
+Последней версией .NET, которая представлена в репозиториях пакетов по умолчанию для Fedora 33, является .NET 5.0.
 
 [!INCLUDE [linux-dnf-install-50](includes/linux-install-50-dnf.md)]
 
 ## <a name="install-net-core-31"></a>Установка .NET Core 3.1
-
-Последней версией .NET, которая представлена в репозиториях пакетов по умолчанию для Fedora 33, является .NET Core 3.1.
 
 [!INCLUDE [linux-dnf-install-31](includes/linux-install-31-dnf.md)]
 
@@ -109,7 +97,11 @@ sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com
 
 ### <a name="unable-to-find-package"></a>Не удалось найти пакет
 
-[!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
+Дополнительные сведения об установке .NET без использования диспетчера пакетов см. в одной из следующих статей:
+
+- [Установка пакета SDK для .NET или среды выполнения .NET с использованием пакета Snap.](linux-snap.md)
+- [Установка пакета SDK для .NET или среды выполнения .NET с использованием скрипта.](linux-scripted-manual.md#scripted-install)
+- [Установка пакета SDK для .NET или среды выполнения .NET вручную.](linux-scripted-manual.md#manual-install)
 
 ### <a name="failed-to-fetch"></a>Ошибка получения
 

@@ -1,13 +1,13 @@
 ---
 title: Критическое изменение. MulticastOption.Group не принимает значение null
-description: Сведения о критическом изменении в .NET 5.0, где MulticastOption.Group не принимает значение NULL.
+description: Сведения о критическом изменении в .NET 5, где MulticastOption.Group не принимает значение NULL.
 ms.date: 08/18/2020
-ms.openlocfilehash: 164ac8c2c8dd14f9e0758017e54eeb377f88a7e5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 09c6415d275361abee8285aabdda13ccd9727043
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759690"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102256456"
 ---
 # <a name="multicastoptiongroup-doesnt-accept-a-null-value"></a>MulticastOption.Group не принимает значение null
 
@@ -21,7 +21,7 @@ ms.locfileid: "95759690"
 
 В предыдущих версиях .NET для свойства <xref:System.Net.Sockets.MulticastOption.Group?displayProperty=nameWithType> можно было задать значение `null`. Если впоследствии <xref:System.Net.Sockets.MulticastOption> передается в <xref:System.Net.Sockets.Socket.SetSocketOption%2A?displayProperty=nameWithType>, среда выполнения вызывает исключение <xref:System.NullReferenceException>.
 
-В .NET 5.0 и более поздних версиях исключение <xref:System.ArgumentNullException> вызывается, если для этого свойства задано значение `null`.
+В .NET 5 и более поздних версиях исключение <xref:System.ArgumentNullException> вызывается, если для этого свойства задано значение `null`.
 
 ## <a name="reason-for-change"></a>Причина изменения
 

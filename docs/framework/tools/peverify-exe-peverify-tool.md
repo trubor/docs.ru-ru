@@ -11,18 +11,18 @@ helpviewer_keywords:
 - PEverify.exe
 - PE files, PEVerify
 ms.assetid: f4f46f9e-8d08-4e66-a94b-0c69c9b0bbfa
-ms.openlocfilehash: c859aa4e2e3ae95c5c72aed930a9bc4a05add296
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: b51b01e639719df7ecfde53819e3137813f7c46f
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238591"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102259253"
 ---
 # <a name="peverifyexe-peverify-tool"></a>Peverify.exe (средство PEVerify)
 
 Средство PEVerify помогает разработчикам, создающим код на языке MSIL, — авторам компиляторов, обработчиков скриптов и т. д. — определить, соответствует ли этот код и связанные с ним метаданные требованиям безопасности типов. Некоторые компиляторы создают проверяемый типобезопасный код только в том случае, если разработчик не применяет определенные языковые конструкции. При работе с таким компилятором иногда требуется проверить, сохранена ли в коде безопасность типов. В этом случае для проверки кода MSIL и метаданных в файлах можно использовать инструмент PEVerify.  
   
- Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы применить этот инструмент, воспользуйтесь командной строкой разработчика для Visual Studio (или командной строкой Visual Studio в Windows 7). Дополнительные сведения см. в разделе [Командные строки](developer-command-prompt-for-vs.md).
+ Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы запустить инструмент, используйте [оболочку командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell).
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -125,4 +125,4 @@ peverify myAssembly.exe /break=100 /ignore@ignoreErrors.rsp
 - [Инструменты](index.md)
 - [Написание проверяемого типобезопасного кода](../misc/code-access-security-basics.md#typesafe_code)
 - [Безопасность типа и безопасность](../../standard/security/key-security-concepts.md#type-safety-and-security)
-- [Командные строки](developer-command-prompt-for-vs.md)
+- [Оболочки командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell)

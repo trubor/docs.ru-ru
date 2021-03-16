@@ -2,12 +2,12 @@
 title: Команда dotnet tool install
 description: Команда dotnet tool install устанавливает указанное средство .NET на компьютер.
 ms.date: 02/14/2020
-ms.openlocfilehash: 1dd870a8f91e557a2f59919682616aa8817fc070
-ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
+ms.openlocfilehash: b04e7fd24edce5d5da67cdd83fbea797118689b4
+ms.sourcegitcommit: bdbf6472de867a0a11aaa5b9384a2506c24f27d2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "94634328"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102206485"
 ---
 # <a name="dotnet-tool-install"></a>dotnet tool install
 
@@ -71,15 +71,15 @@ dotnet new tool-manifest
 
 ## <a name="options"></a>Параметры
 
-- **`add-source <SOURCE>`**
+- **`--add-source <SOURCE>`**
 
-  Добавляет дополнительный источник пакета NuGet для использования во время установки.
+  Добавляет дополнительный источник пакета NuGet для использования во время установки. Доступ к каналам осуществляется параллельно, а не последовательно в некотором порядке приоритета. Если один и тот же пакет и версия находятся в нескольких каналах, используется самый быстрый канал. Дополнительные сведения см. в разделе [Процесс установки пакета NuGet](/nuget/concepts/package-installation-process).
 
-- **`configfile <FILE>`**
+- **`--configfile <FILE>`**
 
   Файл конфигурации NuGet (*nuget.config*), который будет использоваться.
 
-- **`framework <FRAMEWORK>`**
+- **`--framework <FRAMEWORK>`**
 
   Указывает [требуемую версию .NET Framework](../../standard/frameworks.md) для установки средства. По умолчанию пакет SDK для .NET пытается выбрать наиболее подходящую версию .NET Framework.
 
@@ -91,7 +91,7 @@ dotnet new tool-manifest
 
   Выводит краткую справку по команде.
 
-- **`tool-path <PATH>`**
+- **`--tool-path <PATH>`**
 
   Указывает место установки глобального средства. Путь может быть абсолютным или относительным. Если путь не существует, команда пытается создать его. Пропуск параметров `--global` и `--tool-path` задает установку локального средства.
 

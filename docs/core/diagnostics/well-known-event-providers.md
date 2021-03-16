@@ -3,12 +3,12 @@ title: Стандартные поставщики событий в .NET
 description: Сведения о поставщиках и событиях, публикуемых в библиотеках и среде выполнения .NET.
 ms.topic: reference
 ms.date: 12/21/2020
-ms.openlocfilehash: 03d505f33e300b094958676bb768fb542d828aeb
-ms.sourcegitcommit: c3093e9d106d8ca87cc86eef1f2ae4ecfb392118
+ms.openlocfilehash: 37aa9551397bb3e3e8858a1289ddc3921327b722
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97738192"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102105171"
 ---
 # <a name="well-known-event-providers-in-net"></a>Стандартные поставщики событий в .NET
 
@@ -113,3 +113,9 @@ ms.locfileid: "97738192"
 В ASP.NET Core также предусмотрен ряд событий, помогающих диагностировать проблемы в стеке ASP.NET Core.
 
 Дополнительные сведения о событиях в ASP.NET Core и их использовании см. в разделе [Ведение журнала в .NET Core и ASP.NET Core](/aspnet/core/fundamentals/logging/).
+
+## <a name="entity-framework-core"></a>Entity Framework Core
+
+EF Core также предоставляет события, которые помогают диагностировать проблемы в EF Core.
+
+Дополнительные сведения о событиях в EF Core и их использовании см. в разделе [События .NET в EF Core ](/ef/core/logging-events-diagnostics/events).

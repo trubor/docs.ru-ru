@@ -1,13 +1,13 @@
 ---
 title: Критическое изменение. По умолчанию ActivityIdFormat имеет значение W3C
-description: Ознакомьтесь с критическим изменением .NET 5.0 в основных библиотеках .NET, где ActivityIdFormat по умолчанию теперь имеет значение W3C.
+description: Ознакомьтесь с критическим изменением .NET 5 в основных библиотеках .NET, где ActivityIdFormat по умолчанию теперь имеет значение W3C.
 ms.date: 11/01/2020
-ms.openlocfilehash: 77ee705ac18065c84ddeab3127e01b6a40c3b84d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f15c2d61443117cfbcb2be7de9561fecbff9a1d9
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759835"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102257509"
 ---
 # <a name="default-activityidformat-is-w3c"></a>По умолчанию ActivityIdFormat имеет значение W3C
 
@@ -15,9 +15,9 @@ ms.locfileid: "95759835"
 
 ## <a name="change-description"></a>Описание изменений
 
-Формат идентификатора действия W3C был представлен в .NET Core 3.0 в качестве альтернативы иерархическому формату идентификатора. Тем не менее, чтобы обеспечить совместимость, вплоть до версии .NET 5.0 формат W3C не использовался по умолчанию. В .NET 5.0 значение по умолчанию было изменено в связи с [ратификацией формата W3C](https://www.w3.org/TR/trace-context/) для применения в различных реализациях языка.
+Формат идентификатора действия W3C был представлен в .NET Core 3.0 в качестве альтернативы иерархическому формату идентификатора. Тем не менее, чтобы обеспечить совместимость, вплоть до версии .NET 5.0 формат W3C не использовался по умолчанию. В .NET 5 значение по умолчанию было изменено в связи с [ратификацией формата W3C](https://www.w3.org/TR/trace-context/) для применения в различных реализациях языка.
 
-Если ваше приложение предназначено не для платформы .NET 5.0 или более поздней версии, в нем будет применяться поведение предшествующих версий, в которых по умолчанию использовался формат <xref:System.Diagnostics.ActivityIdFormat.Hierarchical>. Это значение по умолчанию применяется для платформ net45+, netstandard1.1+ и netcoreapp (1.x, 2.x и 3.x). В .NET 5.0 и более поздних версий <xref:System.Diagnostics.Activity.DefaultIdFormat?displayProperty=nameWithType> имеет значение <xref:System.Diagnostics.ActivityIdFormat.W3C?displayProperty=nameWithType>.
+Если ваше приложение предназначено не для платформы .NET 5 или более поздней версии, в нем будет применяться поведение предшествующих версий, в которых по умолчанию использовался формат <xref:System.Diagnostics.ActivityIdFormat.Hierarchical>. Это значение по умолчанию применяется для платформ net45+, netstandard1.1+ и netcoreapp (1.x, 2.x и 3.x). В .NET 5 и более поздних версий <xref:System.Diagnostics.Activity.DefaultIdFormat?displayProperty=nameWithType> имеет значение <xref:System.Diagnostics.ActivityIdFormat.W3C?displayProperty=nameWithType>.
 
 ## <a name="version-introduced"></a>Представленная версия
 

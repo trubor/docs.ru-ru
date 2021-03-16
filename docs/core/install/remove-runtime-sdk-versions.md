@@ -3,14 +3,14 @@ title: Удаление среды выполнения .NET и пакета SDK
 description: В этой статье объясняется, как определить установленные в текущее время версии среды выполнения .NET и пакета SDK и как затем удалить их в Windows, Mac и Linux.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/20/2020
+ms.date: 03/02/2021
 zone_pivot_groups: operating-systems-set-one
-ms.openlocfilehash: f07a9acdc5be310d38da18602dde2ebf678e9a1b
-ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
+ms.openlocfilehash: 8ef6ab531d6c3eada5226b1682f19bfe5537bfe4
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96031726"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102255637"
 ---
 # <a name="how-to-remove-the-net-runtime-and-sdk"></a>Удаление среды выполнения .NET и пакета SDK
 
@@ -71,15 +71,15 @@ ms.locfileid: "96031726"
 
 Если вы установили .NET из tar-архива, необходимо выполнить удаление вручную.
 
-На компьютерах Linux необходимо отдельно удалить пакеты SDK и среды выполнения, удаляя каталоги с версиями. При их удалении пакет SDK и среда выполнения также удаляются с диска. Например, чтобы удалить пакет SDK и среду выполнения версии 1.0.1, можно использовать следующие команды Bash:
+На компьютерах Linux необходимо отдельно удалить пакеты SDK и среды выполнения, удаляя каталоги с версиями. Эти каталоги могут различаться в зависимости от дистрибутива Linux. При их удалении пакет SDK и среда выполнения также удаляются с диска. Например, чтобы удалить пакет SDK и среду выполнения версии 1.0.1, можно использовать следующие команды Bash:
 
 ```bash
 version="1.0.1"
-sudo rm -rf /usr/local/share/dotnet/sdk/$version
-sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.NETCore.App/$version
-sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.AspNetCore.All/$version
-sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/$version
-sudo rm -rf /usr/local/share/dotnet/host/fxr/$version
+sudo rm -rf /usr/share/dotnet/sdk/$version
+sudo rm -rf /usr/share/dotnet/shared/Microsoft.NETCore.App/$version
+sudo rm -rf /usr/share/dotnet/shared/Microsoft.AspNetCore.All/$version
+sudo rm -rf /usr/share/dotnet/shared/Microsoft.AspNetCore.App/$version
+sudo rm -rf /usr/share/dotnet/host/fxr/$version
 ```
 
 Родительские каталоги для пакета SDK и среды выполнения указаны в выходных данных команд `dotnet --list-sdks` и `dotnet --list-runtimes`, как показано в приведенной выше таблице.
@@ -107,6 +107,8 @@ sudo rm -rf /usr/local/share/dotnet/host/fxr/$version
 
 [Средство удаления .NET](../additional-tools/uninstall-tool.md) (`dotnet-core-uninstall`) позволяет удалять пакеты SDK и среды выполнения .NET из системы. Указать удаляемые версии можно с помощью ряда параметров.
 
+::: zone pivot="os-windows"
+
 ## <a name="visual-studio-dependency-on-net-core-sdk-versions"></a>Зависимость Visual Studio от версий пакетов SDK для .NET Core
 
 До появления Visual Studio 2019 версии 16.3, установщики Visual Studio пользовались автономным установщиком пакета SDK для .NET Core. В результате версии пакета SDK отображаются в диалоговом окне Windows **Программы и компоненты**. Удаление пакетов SDK для .NET Core, установленных Visual Studio с помощью автономного установщика, может нарушить работу Visual Studio. Если после удаления пакетов SDK в Visual Studio возникают проблемы, запустите "Восстановление" для этой конкретной версии Visual Studio. В следующей таблице показаны некоторые зависимости Visual Studio от пакета SDK для версий .NET Core.
@@ -120,6 +122,8 @@ sudo rm -rf /usr/local/share/dotnet/host/fxr/$version
 | Visual Studio 2017 версии 15.8 | Пакет SDK для .NET Core 2.1.4xx          |
 
 Visual Studio 2019 версии 16.3 и выше управляет собственной копией пакета SDK для .NET. По этой причине вы больше не встретите эти версии пакета SDK в диалоговом окне **Программы и компоненты**.
+
+::: zone-end
 
 ## <a name="remove-the-nuget-fallback-folder"></a>Удаление резервной папки NuGet
 

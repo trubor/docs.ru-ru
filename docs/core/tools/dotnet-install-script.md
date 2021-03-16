@@ -2,12 +2,12 @@
 title: Скрипты dotnet-install
 description: Сведения о скриптах dotnet-install, которые служат для установки пакета SDK для .NET и общей среды выполнения.
 ms.date: 09/22/2020
-ms.openlocfilehash: 1904d0322774de25aeba7e7a53ab36ce135d685d
-ms.sourcegitcommit: 7e42488c2f8f63f6d499b5f8fb1dec5bac9ad254
+ms.openlocfilehash: 51482ca70d08d86e02a493f1da49b056fed8d11c
+ms.sourcegitcommit: bdbf6472de867a0a11aaa5b9384a2506c24f27d2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98957886"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102206691"
 ---
 # <a name="dotnet-install-scripts-reference"></a>Справка по скриптам dotnet-install
 
@@ -52,6 +52,9 @@ dotnet-install.sh --help
 
 * Скрипт PowerShell, который используется в Windows.
 * Скрипт bash, который выполняется в Linux и macOS.
+
+> [!NOTE]
+> .NET собирает данные телеметрии. Дополнительные сведения и о том, как отказаться от этого, см. в разделе [Телеметрия пакета SDK для .NET](telemetry.md).
 
 ### <a name="purpose"></a>Цель
 

@@ -5,12 +5,12 @@ ms.topic: error-reference
 ms.date: 02/12/2021
 f1_keywords:
 - NETSDK1045
-ms.openlocfilehash: 900402ae01f945b1096170ea4fc79d00ea789b62
-ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
+ms.openlocfilehash: 7f21270fdc7c2db862a49302a302bf8121fc86a5
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100488222"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102104106"
 ---
 # <a name="netsdk1045-the-current-net-sdk-does-not-support-newer-version-as-a-target"></a>NETSDK1045: текущий пакет SDK для .NET не поддерживает в качестве целевого объекта "более новую версию".
 
@@ -40,7 +40,7 @@ dotnet --list-sdks
 
 Каждая версия пакета SDK для .NET доступна как для архитектуры x86, так и для архитектуры x64. Возможно, проект пытается найти пакет SDK для .NET для неправильной архитектуры, либо пакет SDK для .NET для требуемой архитектуры, возможно, не установлен. Проверьте папки установки требуемой архитектуры. Например, в Windows версия пакета SDK для .NET для архитектуры x86 устанавливается в папку *C:\Program Files (x86)\dotnet*, а для архитектуры x64 — в папку *C:\Program Files\dotnet*. Ознакомьтесь с разделом [Проверка того, установлена ли платформа .NET](../../install/how-to-detect-installed-versions.md) и выберите свою операционную систему, чтобы узнать, как определить, какие компоненты установлены на компьютере.
 
-Если нужная версия не установлена, скачайте ее [здесь](https://dotnet.microsoft.com/download/dotnet-core).
+Если нужная версия не установлена, найдите нужный вариант на странице [загрузки .NET](https://dotnet.microsoft.com/download/dotnet).
 
 ## <a name="preview-not-enabled"></a>Не включена предварительная версия
 

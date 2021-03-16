@@ -4,12 +4,12 @@ description: Узнайте, как использовать файл global.jso
 ms.topic: how-to
 ms.date: 05/01/2020
 ms.custom: updateeachrelease
-ms.openlocfilehash: 02a0ab478a23f7df55a8cc2e872e480b311304fe
-ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
+ms.openlocfilehash: cc471cf5b50cf91c38b46607ccf38bd4d087aa6a
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "94634003"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102104145"
 ---
 # <a name="globaljson-overview"></a>Обзор global.json
 
@@ -153,7 +153,7 @@ ms.locfileid: "94634003"
 
 Полезно знать, какие версии пакета SDK установлены на компьютере, чтобы задать их в файле *global.json*. Дополнительные сведения о том, как это сделать, см. в разделе [Проверка того, установлена ли платформа .NET](../install/how-to-detect-installed-versions.md#check-sdk-versions).
 
-Чтобы установить дополнительные версии пакета SDK для .NET на компьютере, посетите страницу [скачиваемых файлов .NET Core](https://dotnet.microsoft.com/download/dotnet-core).
+Чтобы установить дополнительные версии пакета SDK для .NET на компьютере, посетите страницу [скачиваемых файлов .NET](https://dotnet.microsoft.com/download/dotnet).
 
 Вы можете создать новый файл *global.json* в текущем каталоге, выполнив команду [dotnet new](dotnet-new.md), как в следующем примере:
 

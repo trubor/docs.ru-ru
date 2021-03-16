@@ -1,13 +1,13 @@
 ---
 title: Критическое изменение. Класс WinHttpHandler удален из среды выполнения .NET
-description: Сведения о критическом изменении в .NET 5,0, где класс WinHttpHandler был удален из среды выполнения .NET.
+description: Сведения о критическом изменении в .NET 5, где класс WinHttpHandler был удален из среды выполнения .NET.
 ms.date: 10/18/2020
-ms.openlocfilehash: f8b9910ade8d459133791a23704d624a91cc5dff
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 95abcfb4d7670be035bd640dbb85458406c1b0e0
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759686"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102256417"
 ---
 # <a name="winhttphandler-removed-from-net-runtime"></a>Класс WinHttpHandler удален из среды выполнения .NET
 
@@ -19,7 +19,7 @@ ms.locfileid: "95759686"
 
 ## <a name="change-description"></a>Описание изменений
 
-В предыдущих версиях .NET класс <xref:System.Net.Http.WinHttpHandler> доступен как часть основных библиотек .NET. Начиная с .NET 5.0 класс <xref:System.Net.Http.WinHttpHandler> доступен только как отдельно устанавливаемый [пакет NuGet](https://www.nuget.org/packages/System.Net.Http.WinHttpHandler/).
+В предыдущих версиях .NET класс <xref:System.Net.Http.WinHttpHandler> доступен как часть основных библиотек .NET. Начиная с .NET 5 класс <xref:System.Net.Http.WinHttpHandler> доступен только как отдельно устанавливаемый [пакет NuGet](https://www.nuget.org/packages/System.Net.Http.WinHttpHandler/).
 
 ## <a name="recommended-action"></a>Рекомендованное действие
 

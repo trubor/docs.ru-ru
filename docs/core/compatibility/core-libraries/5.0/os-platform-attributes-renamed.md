@@ -1,42 +1,42 @@
 ---
 title: Критическое изменение. Атрибуты OSPlatform переименованы или удалены
-description: Сведения о критическом изменении .NET 5.0 в основных библиотеках .NET, где атрибуты платформы ОС, появившиеся в предварительной версии, были удалены или переименованы.
+description: Сведения о критическом изменении .NET 5 в основных библиотеках .NET, где атрибуты платформы ОС, появившиеся в предварительной версии, были удалены или переименованы.
 ms.date: 11/01/2020
-ms.openlocfilehash: be2ddd4909bef70f531ca48246f091923d6435ec
-ms.sourcegitcommit: ecd9e9bb2225eb76f819722ea8b24988fe46f34c
+ms.openlocfilehash: 118c5360eb02c1b4d57fccbd3b2cfdeff0b9fe12
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96739494"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102257262"
 ---
 # <a name="osplatform-attributes-renamed-or-removed"></a>Атрибуты OSPlatform переименованы или удалены
 
-Следующие атрибуты, появившиеся в предварительной версии 8 .NET 5.0, были удалены или переименованы: `MinimumOSPlatformAttribute`, `RemovedInOSPlatformAttribute` и `ObsoletedInOSPlatformAttribute`.
+Следующие атрибуты, появившиеся в предварительной версии 8 .NET 5, были удалены или переименованы: `MinimumOSPlatformAttribute`, `RemovedInOSPlatformAttribute` и `ObsoletedInOSPlatformAttribute`.
 
 ## <a name="change-description"></a>Описание изменений
 
-В предварительной версии 8 .NET 5.0 в пространстве имен <xref:System.Runtime.Versioning> появились следующие атрибуты:
+В предварительной версии 8 .NET 5 в пространстве имен <xref:System.Runtime.Versioning> появились следующие атрибуты:
 
 - `MinimumOSPlatformAttribute`
 - `RemovedInOSPlatformAttribute`
 - `ObsoletedInOSPlatformAttribute`
 
-Если в предварительной версии 8 .NET 5.0 проект предназначен для использования в конкретной ОС .NET 5 с помощью [моникера целевой платформы](../../../../standard/frameworks.md), например `net5.0-windows`, сборка добавляет атрибут `System.Runtime.Versioning.MinimumOSPlatformAttribute` уровня сборки.
+Если в предварительной версии 8 .NET 5 проект предназначен для использования в конкретной ОС .NET 5 с помощью [моникера целевой платформы](../../../../standard/frameworks.md), например `net5.0-windows`, сборка добавляет атрибут `System.Runtime.Versioning.MinimumOSPlatformAttribute` уровня сборки.
 
-В .NET 5.0 RC1 атрибут `ObsoletedInOSPlatformAttribute` был удален, а атрибуты `MinimumOSPlatformAttribute` и `RemovedInOSPlatformAttribute` переименованы следующим образом.
+В .NET 5 RC1 атрибут `ObsoletedInOSPlatformAttribute` был удален, а атрибуты `MinimumOSPlatformAttribute` и `RemovedInOSPlatformAttribute` переименованы следующим образом.
 
 | Имя предварительной версии 8 | Имя RC1 и более поздних версий |
 | - | - |
 | `MinimumOSPlatformAttribute` | <xref:System.Runtime.Versioning.SupportedOSPlatformAttribute> |
 | `RemovedInOSPlatformAttribute` | <xref:System.Runtime.Versioning.UnsupportedOSPlatformAttribute> |
 
-Если в .NET 5.0 RC1 и более поздних версиях проект предназначен для использования в конкретной ОС .NET 5 с помощью [моникера целевой платформы](../../../../standard/frameworks.md), например `net5.0-windows`, сборка добавляет атрибут <xref:System.Runtime.Versioning.SupportedOSPlatformAttribute> уровня сборки.
+Если в .NET 5 RC1 и более поздних версиях проект предназначен для использования в конкретной ОС .NET 5 с помощью [моникера целевой платформы](../../../../standard/frameworks.md), например `net5.0-windows`, сборка добавляет атрибут <xref:System.Runtime.Versioning.SupportedOSPlatformAttribute> уровня сборки.
 
 ## <a name="reason-for-change"></a>Причина изменения
 
-В предварительной версии 8 .NET 5.0 в <xref:System.Runtime.Versioning> появились атрибуты для указания поддерживаемых платформ для API-интерфейсов. [Анализатор совместимости платформ](../../code-analysis/5.0/ca1416-platform-compatibility-analyzer.md) использует эти атрибуты для создания предупреждений сборки, когда интерфейсы API, зависящие от платформы, работают на платформах, их не поддерживающих.
+В предварительной версии 8 .NET 5 в <xref:System.Runtime.Versioning> появились атрибуты для указания поддерживаемых платформ для API-интерфейсов. [Анализатор совместимости платформ](../../code-analysis/5.0/ca1416-platform-compatibility-analyzer.md) использует эти атрибуты для создания предупреждений сборки, когда интерфейсы API, зависящие от платформы, работают на платформах, их не поддерживающих.
 
-В .NET 5.0 RC1 в анализатор совместимости платформ была добавлена дополнительная возможность исключения платформы. Эта функция позволяет помечать API-интерфейсы как полностью не поддерживаемые на платформах ОС. Она предлагает изменить атрибуты или использовать более подходящие имена. `ObsoletedInOSPlatformAttribute` был удален, так как он больше не требуется.
+В .NET 5 RC1 в анализатор совместимости платформ была добавлена дополнительная возможность исключения платформы. Эта функция позволяет помечать API-интерфейсы как полностью не поддерживаемые на платформах ОС. Она предлагает изменить атрибуты или использовать более подходящие имена. `ObsoletedInOSPlatformAttribute` был удален, так как он больше не требуется.
 
 ## <a name="version-introduced"></a>Представленная версия
 
@@ -44,7 +44,7 @@ ms.locfileid: "96739494"
 
 ## <a name="recommended-action"></a>Рекомендованное действие
 
-При изменении целевой платформы проекта с предварительной версии 8 .NET 5.0 на .NET 5.0 RC1 могут возникать ошибки сборки или времени выполнения. Например, переименование `MinimumOSPlatformAttribute`, скорее всего, приведет к появлению ошибок, поскольку атрибут применяется к сборкам для конкретных платформ во время сборки, а старые артефакты сборки по-прежнему ссылаются на старое имя API.
+При изменении целевой платформы проекта с предварительной версии 8 .NET 5 на .NET 5 RC1 могут возникать ошибки сборки или времени выполнения. Например, переименование `MinimumOSPlatformAttribute`, скорее всего, приведет к появлению ошибок, поскольку атрибут применяется к сборкам для конкретных платформ во время сборки, а старые артефакты сборки по-прежнему ссылаются на старое имя API.
 
 Примеры ошибок во время сборки:
 

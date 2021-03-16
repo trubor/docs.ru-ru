@@ -1,13 +1,13 @@
 ---
 title: Критическое изменение. Теперь свойства WinForms вызывают исключение ArgumentOutOfRangeException
-description: Сведения о критическом изменении в .NET 5.0, где некоторые свойства Windows Forms теперь вызывают исключение ArgumentOutOfRangeException для недопустимых аргументов.
+description: Сведения о критическом изменении в .NET 5, где некоторые свойства Windows Forms теперь вызывают исключение ArgumentOutOfRangeException для недопустимых аргументов.
 ms.date: 06/18/2020
-ms.openlocfilehash: 94593047d16304ce401b23993ad4ca173c10812b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 493669af1ed5646d93e7c7d2688afd40f3fa731c
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759874"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102256157"
 ---
 # <a name="winforms-properties-now-throw-argumentoutofrangeexception"></a>Теперь свойства WinForms вызывают исключение ArgumentOutOfRangeException
 
@@ -15,7 +15,7 @@ ms.locfileid: "95759874"
 
 ## <a name="change-description"></a>Описание изменений
 
-Ранее эти свойства вызывали различные исключения, такие как <xref:System.NullReferenceException>, <xref:System.IndexOutOfRangeException> или <xref:System.ArgumentException> при передаче аргументов вне диапазона. Начиная с .NET 5.0, эти свойства вызывают <xref:System.ArgumentOutOfRangeException> при передаче аргументов, которые выходят за пределы диапазона.
+Ранее эти свойства вызывали различные исключения, такие как <xref:System.NullReferenceException>, <xref:System.IndexOutOfRangeException> или <xref:System.ArgumentException> при передаче аргументов вне диапазона. Начиная с .NET 5 эти свойства вызывают <xref:System.ArgumentOutOfRangeException> при передаче аргументов, которые выходят за пределы диапазона.
 
 Вызов <xref:System.ArgumentOutOfRangeException> соответствует поведению среды выполнения .NET. Это также улучшает процесс отладки, четко указывая, какой аргумент недопустим.
 

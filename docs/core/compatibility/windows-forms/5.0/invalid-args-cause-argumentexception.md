@@ -1,13 +1,13 @@
 ---
 title: Критическое изменение. Теперь методы WinForms вызывают исключение ArgumentException
-description: Сведения о критическом изменении в .NET 5.0, в результате которого ряд методов Windows Forms теперь выдает исключение ArgumentException для недопустимых аргументов.
+description: Сведения о критическом изменении в .NET 5, в результате которого ряд методов Windows Forms теперь выдает исключение ArgumentException для недопустимых аргументов.
 ms.date: 07/18/2020
-ms.openlocfilehash: 892f4d16b80f3e42187480a7fcfb24e81868d07c
-ms.sourcegitcommit: f8cd3ef517ee177c99feed944824c27d208cc0d1
+ms.openlocfilehash: 9823e9162a562081cdd64346a502ca136b51fa75
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98570220"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102256143"
 ---
 # <a name="winforms-methods-now-throw-argumentexception"></a>Теперь методы WinForms вызывают исключение ArgumentException
 
@@ -15,7 +15,7 @@ ms.locfileid: "98570220"
 
 ## <a name="change-description"></a>Описание изменений
 
-Ранее передача аргументов непредвиденного или неверного типа в определенные методы Windows Forms приводила к неопределенному состоянию. Начиная с .NET 5.0 эти методы теперь вызывают <xref:System.ArgumentException> при передаче недопустимых аргументов.
+Ранее передача аргументов непредвиденного или неверного типа в определенные методы Windows Forms приводила к неопределенному состоянию. Начиная с .NET 5 эти методы теперь вызывают <xref:System.ArgumentException> при передаче недопустимых аргументов.
 
 Вызов <xref:System.ArgumentException> соответствует поведению среды выполнения .NET. Это также улучшает процесс отладки, четко указывая, какой аргумент недопустим.
 

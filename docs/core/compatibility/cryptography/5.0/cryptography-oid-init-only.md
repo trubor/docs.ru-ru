@@ -1,13 +1,13 @@
 ---
 title: Критическое изменение. Класс Cryptography.Oid функционально доступен только для инициализации
-description: Сведения о критическом изменении в .NET 5.0, где методы задания свойств в классе Cryptography.Oid теперь вызывают исключение при попытке изменить значение.
+description: Сведения о критическом изменении в .NET 5, где методы задания свойств в классе Cryptography.Oid теперь вызывают исключение при попытке изменить значение.
 ms.date: 08/16/2020
-ms.openlocfilehash: a3b5a393e2a84f7c9a60c2a821ecfda9c6acd2e3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: aa1e72adcda61f2292574729e36cdc578bf907d2
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759649"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102256872"
 ---
 # <a name="systemsecuritycryptographyoid-is-functionally-init-only"></a>Класс System.Security.Cryptography.Oid функционально доступен только для инициализации
 
@@ -17,7 +17,7 @@ ms.locfileid: "95759649"
 
 В предыдущих версиях методы задания свойств в <xref:System.Security.Cryptography.Oid> можно было использовать для изменения значений свойств <xref:System.Security.Cryptography.Oid.FriendlyName> и <xref:System.Security.Cryptography.Oid.Value>.
 
-В .NET 5.0 и более поздних версиях методы задания свойств можно использовать только для инициализации значения. После того как свойство получило значение из конструктора или предыдущего вызова метода задания свойств, метод задания свойств всегда будет вызывать <xref:System.PlatformNotSupportedException>.
+В .NET 5 и более поздних версиях методы задания свойств можно использовать только для инициализации значения. После того как свойство получило значение из конструктора или предыдущего вызова метода задания свойств, метод задания свойств всегда будет вызывать <xref:System.PlatformNotSupportedException>.
 
 ## <a name="reason-for-change"></a>Причина изменения
 

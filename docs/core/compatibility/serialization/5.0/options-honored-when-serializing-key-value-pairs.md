@@ -1,13 +1,13 @@
 ---
 title: Критическое изменение. Параметры PropertyNamingPolicy, PropertyNameCaseInsensitive и Encoder учитываются при сериализации пар "ключ-значение"
-description: Сведения о критическом изменении в .NET 5.0, где параметры PropertyNamingPolicy, PropertyNameCaseInsensitive и Encoder учитываются при сериализации и десериализации имен свойств Key и Value экземпляра пары "ключ-значение".
+description: Сведения о критическом изменении в .NET 5, где параметры PropertyNamingPolicy, PropertyNameCaseInsensitive и Encoder учитываются при сериализации и десериализации имен свойств Key и Value экземпляра пары "ключ-значение".
 ms.date: 10/18/2020
-ms.openlocfilehash: 5d75cb7feea32cc4b942e5261c5b609e00a5082c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fe6298a677488574fdd7bdc7e887ed3b244ba8d6
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759943"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102256326"
 ---
 # <a name="propertynamingpolicy-propertynamecaseinsensitive-and-encoder-options-are-honored-when-serializing-and-deserializing-key-value-pairs"></a>Параметры PropertyNamingPolicy, PropertyNameCaseInsensitive и Encoder учитываются при сериализации и десериализации пар "ключ-значение"
 
@@ -27,7 +27,7 @@ Console.WriteLine(JsonSerializer.Serialize(kvp, options));
 // Actual: {"Key":1,"Value":1}
 ```
 
-Начиная с .NET 5.0 параметры <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy> и <xref:System.Text.Json.JsonSerializerOptions.Encoder> учитываются при сериализации экземпляров <xref:System.Collections.Generic.KeyValuePair%602>. В следующем примере кода показано, что имена свойств <xref:System.Collections.Generic.KeyValuePair%602.Key> и <xref:System.Collections.Generic.KeyValuePair%602.Value> после сериализации задаются в "верблюжьем" стиле в соответствии с действующей политикой именования свойств.
+Начиная с .NET 5 параметры <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy> и <xref:System.Text.Json.JsonSerializerOptions.Encoder> учитываются при сериализации экземпляров <xref:System.Collections.Generic.KeyValuePair%602>. В следующем примере кода показано, что имена свойств <xref:System.Collections.Generic.KeyValuePair%602.Key> и <xref:System.Collections.Generic.KeyValuePair%602.Value> после сериализации задаются в "верблюжьем" стиле в соответствии с действующей политикой именования свойств.
 
 ```csharp
 var options = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase };
@@ -47,7 +47,7 @@ string json = @"{""key"":1,""value"":1}";
 JsonSerializer.Deserialize<KeyValuePair<int, int>>(json, options);
 ```
 
-Начиная с .NET 5.0 параметры <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy> и <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive> учитываются при десериализации с использованием <xref:System.Text.Json.JsonSerializer>. Например, в следующем фрагменте кода показана успешная десериализация имен свойств <xref:System.Collections.Generic.KeyValuePair%602.Key> и <xref:System.Collections.Generic.KeyValuePair%602.Value> в нижнем регистре, поскольку это допускается действующей политикой именования свойств.
+Начиная с .NET 5 параметры <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy> и <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive> учитываются при десериализации с использованием <xref:System.Text.Json.JsonSerializer>. Например, в следующем фрагменте кода показана успешная десериализация имен свойств <xref:System.Collections.Generic.KeyValuePair%602.Key> и <xref:System.Collections.Generic.KeyValuePair%602.Value> в нижнем регистре, поскольку это допускается действующей политикой именования свойств.
 
 ```csharp
 var options = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase };

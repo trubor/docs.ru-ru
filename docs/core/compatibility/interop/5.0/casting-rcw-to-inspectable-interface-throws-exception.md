@@ -1,13 +1,13 @@
 ---
 title: Критическое изменение. Приведение RCW к `InterfaceIsIInspectable` создает исключение
-description: Узнайте о критических изменениях взаимодействия в .NET 5.0, где приведение RCW к интерфейсу `InterfaceIsIInspectable` создает исключение PlatformNotSupportedException.
+description: Узнайте о критических изменениях взаимодействия в .NET 5, где приведение RCW к интерфейсу `InterfaceIsIInspectable` создает исключение PlatformNotSupportedException.
 ms.date: 09/13/2020
-ms.openlocfilehash: 7c0f37057aebcc41d0c00d949b921ec3a4bdf012
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9f777ee9396f7822c9ff6bf5209021c07b8b618a
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759817"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102256638"
 ---
 # <a name="casting-rcw-to-an-interfaceisiinspectable-interface-throws-platformnotsupportedexception"></a>Приведение вызываемой оболочки времени выполнения к интерфейсу `InterfaceIsIInspectable` вызывает исключение PlatformNotSupportedException
 
@@ -19,13 +19,13 @@ ms.locfileid: "95759817"
 
 ## <a name="change-description"></a>Описание изменений
 
-В версиях .NET до .NET 5.0 (предварительная версия 6) приведение RCW к интерфейсу, помеченному как <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable>, работает должным образом. В версиях .NET 5.0 (предварительные версии 6–8 и RC1) можно успешно привести RCW к интерфейсу <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable>. Однако при выполнении методов в интерфейсе могут возникнуть нарушения прав доступа, так как базовая поддержка в среде выполнения [была удалена в .NET 5.0 (предварительная версия 6)](built-in-support-for-winrt-removed.md).
+В версиях от .NET до .NET 5 (предварительная версия 6) приведение RCW к интерфейсу, помеченному как <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable>, работает должным образом. В версиях .NET 5 (предварительные версии 6–8 и RC1) можно успешно привести RCW к интерфейсу <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable>. Однако при выполнении методов в интерфейсе могут возникнуть нарушения прав доступа, так как базовая поддержка в среде выполнения [была удалена в .NET 5 (предварительная версия 6)](built-in-support-for-winrt-removed.md).
 
-В .NET 5.0 RC2 и более поздних версиях приведение RCW к интерфейсу, помеченному как <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable>, вызывает исключение <xref:System.PlatformNotSupportedException> во время приведения.
+В .NET 5 RC2 и более поздних версиях приведение RCW к интерфейсу, помеченному как <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable>, вызывает исключение <xref:System.PlatformNotSupportedException> во время приведения.
 
 ## <a name="reason-for-change"></a>Причина изменения
 
-Поддержка <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable> была [удалена в предыдущей предварительной версии .NET 5.0](built-in-support-for-winrt-removed.md). Однако приведение к интерфейсу <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable> было пропущено по ошибке. Поскольку базовая поддержка в среде выполнения больше не существует, выдача исключения <xref:System.PlatformNotSupportedException> обеспечивает корректную обработку сбоя. Создание исключения также позволяет легче обнаружить, что эта функция больше не поддерживается.
+Поддержка <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable> была [удалена в предыдущей предварительной версии .NET 5](built-in-support-for-winrt-removed.md). Однако приведение к интерфейсу <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable> было пропущено по ошибке. Поскольку базовая поддержка в среде выполнения больше не существует, выдача исключения <xref:System.PlatformNotSupportedException> обеспечивает корректную обработку сбоя. Создание исключения также позволяет легче обнаружить, что эта функция больше не поддерживается.
 
 ## <a name="recommended-action"></a>Рекомендованное действие
 

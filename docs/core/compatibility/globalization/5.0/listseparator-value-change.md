@@ -1,13 +1,13 @@
 ---
 title: Критическое изменение. Изменение значения TextInfo.ListSeparator
-description: Узнайте о критическом изменении .NET 5.0, которое связано с тем, что значение по умолчанию TextInfo.ListSeparator изменилось между версиями 5.0 и 5.0.1.
+description: Узнайте о критическом изменении .NET 5, которое связано с тем, что значение по умолчанию TextInfo.ListSeparator изменилось между версиями 5.0 и 5.0.1.
 ms.date: 12/10/2020
-ms.openlocfilehash: 720d46c1908bcd70812f575a90f580470dbc7f32
-ms.sourcegitcommit: e301979e3049ce412d19b094c60ed95b316a8f8c
+ms.openlocfilehash: 9a319da8ea8e3cbf62cbf4730e553b03f5bfdc89
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97596423"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102256729"
 ---
 # <a name="textinfolistseparator-values-changed"></a>Изменение значения TextInfo.ListSeparator
 
@@ -21,7 +21,7 @@ ms.locfileid: "97596423"
 
 В следующей таблице приведены изменения для значений <xref:System.Globalization.TextInfo.ListSeparator?displayProperty=nameWithType>.
 
-| | .NET Framework<br/>.NET Core 1.0–3.1 | .NET 5.0 | .NET 5.0.1 |
+| | .NET Framework<br/>.NET Core 1.0–3.1 | .NET 5 | .NET 5.0.1 |
 -|-|-|-
 | **Windows** | Получение из NLS | Десятичный разделитель из ICU.<br/>Можно переключиться обратно на NLS. | Эквивалентно NLS |
 | **Linux и macOS** | Десятичный разделитель из ICU | Десятичный разделитель из ICU | Эквивалентно NLS |

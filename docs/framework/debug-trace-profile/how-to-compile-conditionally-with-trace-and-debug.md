@@ -11,12 +11,12 @@ helpviewer_keywords:
 - TRACE directive
 - conditional compilation, tracing code
 ms.assetid: 56d051c3-012c-42c1-9a58-7270edc624aa
-ms.openlocfilehash: 895e39593b5e84d708392d3d994267b25bc4eeea
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 90c989bcf21e24cf7ccf410c9a18a44cde81233e
+ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96244175"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103478218"
 ---
 # <a name="how-to-compile-conditionally-with-trace-and-debug"></a>Практическое руководство. Условная компиляция с использованием атрибутов Trace и Debug
 
@@ -67,13 +67,13 @@ ms.locfileid: "96244175"
     |`-d:`|Определяет символ условной компиляции|  
   
     > [!NOTE]
-    > Необходимо ввести команды TRACE или DEBUG буквами верхнего регистра. Для получения дополнительных сведений о командах условной компиляции введите `vbc /?` (для Visual Basic) или `csc /?` (для C#) в командной строке. Дополнительные сведения см. в разделах [Построение из командной строки](../../csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md) (C#) или [Вызов компилятора командной строки](../../visual-basic/reference/command-line-compiler/how-to-invoke-the-command-line-compiler.md) (Visual Basic).  
+    > Необходимо ввести команды TRACE или DEBUG буквами верхнего регистра. Для получения дополнительных сведений о командах условной компиляции введите `vbc /?` (для Visual Basic) или `csc /?` (для C#) в командной строке. Дополнительные сведения см. в разделах [Построение из командной строки](../../csharp/language-reference/compiler-options/index.md) (C#) или [Вызов компилятора командной строки](../../visual-basic/reference/command-line-compiler/how-to-invoke-the-command-line-compiler.md) (Visual Basic).  
   
 ### <a name="to-perform-conditional-compilation-using-const-or-define"></a>Выполнение условной компиляции с помощью #CONST или #define  
   
 1. Введите соответствующую инструкцию для используемого языка программирования в верхней части файла исходного кода.  
   
-    |Язык|Инструкция|Результат|  
+    |Язык|Инструкция|Result|  
     |--------------|---------------|------------|  
     |**Visual Basic**|**#CONST TRACE = true**|Включает трассировку|  
     ||**#CONST TRACE = false**|Отключает трассировку|  
@@ -95,12 +95,12 @@ ms.locfileid: "96244175"
 > [!NOTE]
 > Когда все готово для компиляции, можно выбрать команду **Построить** из меню **Сборка** или использовать метод командной строки (но без ввода **d:**), чтобы определить символы условной компиляции.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Трассировка и инструментирование приложений](tracing-and-instrumenting-applications.md)
 - [Практическое руководство. Создание, инициализация и настройка переключателей трассировки](how-to-create-initialize-and-configure-trace-switches.md)
 - [Переключатели трассировки](trace-switches.md)
 - [Прослушиватели трассировки](trace-listeners.md)
 - [Практическое руководство. Добавление операторов трассировки в код приложения](how-to-add-trace-statements-to-application-code.md)
-- [Практическое руководство. Настройка переменных среды для командной строки Visual Studio](../../csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md)
+- [Практическое руководство. Настройка переменных среды для командной строки Visual Studio](../../csharp/language-reference/compiler-options/index.md)
 - [Практическое руководство. Вызов компилятора командной строки](../../visual-basic/reference/command-line-compiler/how-to-invoke-the-command-line-compiler.md)

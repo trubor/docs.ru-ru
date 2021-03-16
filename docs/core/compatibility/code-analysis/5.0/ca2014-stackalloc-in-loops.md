@@ -1,13 +1,13 @@
 ---
 title: 'Критическое изменение. CA2014: не используйте stackalloc в циклах'
-description: Сведения о критическом изменении в .NET 5.0, вызванном включением правила анализа кода CA2014.
+description: Сведения о критическом изменении в .NET 5, вызванном включением правила анализа кода CA2014.
 ms.date: 09/03/2020
-ms.openlocfilehash: 7ad6203c0edd930bbbe43cdb8df0413cba833d8e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ac17c8ee588576947e21618a55c0eea883aa37ad
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759578"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102257782"
 ---
 # <a name="warning-ca2014-do-not-use-stackalloc-in-loops"></a>Предупреждение CA2014: не используйте stackalloc в циклах
 
@@ -15,7 +15,7 @@ ms.locfileid: "95759578"
 
 ## <a name="change-description"></a>Описание изменений
 
-Начиная с .NET 5.0, пакет SDK для .NET включает [анализаторы исходного кода .NET](../../../../fundamentals/code-analysis/overview.md). Некоторые из этих правил включены по умолчанию, в том числе [CA2014](/visualstudio/code-quality/ca2014). Если проект содержит код, нарушающий это правило и настроенный на обработку предупреждений как ошибок, это изменение может нарушить сборку.
+Начиная с .NET 5, пакет SDK для .NET включает [анализаторы исходного кода .NET](../../../../fundamentals/code-analysis/overview.md). Некоторые из этих правил включены по умолчанию, в том числе [CA2014](/visualstudio/code-quality/ca2014). Если проект содержит код, нарушающий это правило и настроенный на обработку предупреждений как ошибок, это изменение может нарушить сборку.
 
 Правило CA2014 ищет код C#, в котором выражение [stackalloc](../../../../csharp/language-reference/operators/stackalloc.md) используется внутри цикла. [stackalloc](../../../../csharp/language-reference/operators/stackalloc.md) выделяет память из текущего кадра стека. Память не освобождается до тех пор, пока не будет возвращен текущий вызов метода, что может привести к переполнению стека. Так как вы не можете перехватывать исключения переполнения стека, в таком случае работа приложения будет завершена.
 

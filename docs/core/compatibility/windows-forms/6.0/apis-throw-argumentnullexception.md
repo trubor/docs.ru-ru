@@ -1,13 +1,13 @@
 ---
 title: Критическое изменение. Некоторые API создают исключение ArgumentNullException
-description: 'Сведения о критическом изменении в .NET 6.0: некоторые API проверяют аргументы и теперь создают исключение ArgumentNullException.'
+description: 'Сведения о критическом изменении в .NET 6: некоторые API проверяют аргументы и теперь создают исключение ArgumentNullException.'
 ms.date: 01/29/2021
-ms.openlocfilehash: f9d7dc8bb57ed8dc5b4ff41bda9b3bde7db7b880
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: ca7f32739237715657350f52d2523b0ce378364d
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99804154"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102255741"
 ---
 # <a name="some-apis-throw-argumentnullexception"></a>Некоторые API создают исключение ArgumentNullException
 
@@ -17,7 +17,7 @@ ms.locfileid: "99804154"
 
 В предыдущих версиях .NET при вызове с аргументом `null` затронутые API создают исключение <xref:System.NullReferenceException>.
 
-Начиная с версии .NET 6.0, при вызове с аргументом `null` затронутые API создают исключение <xref:System.ArgumentNullException>.
+Начиная с версии .NET 6, при вызове с аргументом `null` затронутые API создают исключение <xref:System.ArgumentNullException>.
 
 ## <a name="reason-for-change"></a>Причина изменения
 

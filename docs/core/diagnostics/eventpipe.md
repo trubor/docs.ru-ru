@@ -3,12 +3,12 @@ title: Общие сведения об EventPipe
 description: Узнайте об EventPipe и о том, как использовать его для трассировки приложений .NET для диагностики проблем с производительностью.
 ms.date: 11/09/2020
 ms.topic: overview
-ms.openlocfilehash: f315beafabbd99bf78647b3f714fd76d93fcac28
-ms.sourcegitcommit: f0fc5db7bcbf212e46933e9cf2d555bb82666141
+ms.openlocfilehash: 213d15e48ac9d50af0c87565738f952295c4f041
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100582979"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102105301"
 ---
 # <a name="eventpipe"></a>Каналы событий
 
@@ -77,10 +77,11 @@ EventPipe можно использовать для трассировки пр
 
 * `COMPlus_EventPipeOutputPath`: Путь к выходному файлу трассировки EventPipe, когда он настроен для выполнения через `COMPlus_EnableEventPipe`. Значение по умолчанию — `trace.nettrace`, которое будет создано в том же каталоге, из которого выполняется приложение.
 
-* `COMPlus_CircularBufferMB`: Размер внутреннего буфера, используемого EventPipe, когда он настроен для выполнения через `COMPlus_EnableEventPipe`.
+* `COMPlus_EventPipeCircularMB`: шестнадцатеричное значение, представляющее размер внутреннего буфера EventPipe в мегабайтах. Это значение конфигурации используется только в том случае, если EventPipe настроен для выполнения через `COMPlus_EnableEventPipe`. Размер буфера по умолчанию — 1024 МБ, который для этой переменной среды преобразуется в значение `400`, поскольку `0x400` == `1024`.
+
+* `COMPlus_EventPipeProcNumbers`: установите значение `1`, чтобы включить захват номеров процессоров в заголовках событий EventPipe. Значение по умолчанию — `0`.
 
 * `COMPlus_EventPipeConfig`: Настраивает конфигурацию сеанса EventPipe при запуске сеанса EventPipe с `COMPlus_EnableEventPipe`.
-
   Синтаксис выглядит следующим образом:
 
   `<provider>:<keyword>:<level>`
