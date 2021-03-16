@@ -1,13 +1,13 @@
 ---
 title: Критическое изменение. Значение FrameworkDescription изменено с .NET Core на .NET
-description: Сведения о критическом изменении .NET 5.0 в основных библиотеках .NET, где RuntimeInformation.FrameworkDescription теперь возвращает ".NET" вместо ".NET Core".
+description: Сведения о критическом изменении .NET 5 в основных библиотеках .NET, где RuntimeInformation.FrameworkDescription теперь возвращает ".NET" вместо ".NET Core".
 ms.date: 11/01/2020
-ms.openlocfilehash: 3925fb092135c26291e1e60b99f359974d21553c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 18aa9a30a149b3c38d4bbfe4a0c99446f4372f07
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759832"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102257522"
 ---
 # <a name="frameworkdescriptions-value-is-net-instead-of-net-core"></a>Значение FrameworkDescription изменено с .NET Core на .NET
 
@@ -17,7 +17,7 @@ ms.locfileid: "95759832"
 
 В предыдущих версиях .NET <xref:System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription?displayProperty=nameWithType> возвращает ".NET Core" в составе строки описания, например `.NET Core 3.1.1`.
 
-Начиная с .NET 5.0 <xref:System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription?displayProperty=nameWithType> возвращает ".NET" в составе строки описания, например `.NET 5.0.0`.
+Начиная с .NET 5 <xref:System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription?displayProperty=nameWithType> возвращает ".NET" в составе строки описания, например `.NET 5.0.0`.
 
 ## <a name="reason-for-change"></a>Причина изменения
 

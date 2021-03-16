@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Ngen.exe
 - Ngen.exe, profilers and native images
 ms.assetid: f6976502-a000-4fbe-aaf5-a7aab9ce4ec2
-ms.openlocfilehash: 328c085035927b3f271a39a0ea3992dde29f5119
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 050822d12ef4e0a7dfa752e4789f9861c4894cfa
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96279107"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102259386"
 ---
 # <a name="mpgoexe-managed-profile-guided-optimization-tool"></a>Mpgo.exe (управляемое средство профильной оптимизации)
 
@@ -24,7 +24,9 @@ ms.locfileid: "96279107"
 
 При возникновении ошибок производительности, связанных с временем запуска и размером рабочего набора IL-сборок, рекомендуется сначала применить Ngen.exe, чтобы исключить расходы на JIT-компиляцию и создать возможность совместного использования кода. Затем можно оптимизировать приложение с помощью средства Mpgo.exe. Данные о производительности неоптимизированных сборок машинных образов можно использовать в качестве базовых показателей при оценке прироста производительности. Оптимизация с помощью средства Mpgo.exe, возможно, позволит сократить время холодного запуска и размер рабочего набора. Mpgo.exe добавляет информацию в IL-сборки, которые используются программой Ngen.exe для создания оптимизированных сборок машинных образов. Дополнительные сведения см. в статье [Повышение производительности при запуске классических приложений](https://devblogs.microsoft.com/dotnet/improving-launch-performance-for-your-desktop-applications/) в блоге .NET.
 
-Эта программа автоматически устанавливается вместе с Visual Studio. Средство запускается из командной строки разработчика для Visual Studio (или командной строки Visual Studio в Windows 7) с использованием учетных данных администратора с помощью следующей команды. Дополнительные сведения см. в разделе [Командные строки](developer-command-prompt-for-vs.md).
+Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы запустить средство, используйте [оболочку командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell) с учетными данными администратора.
+
+Введите следующую команду в командной строке:
 
 Для классических приложений:
 
@@ -33,8 +35,6 @@ mpgo –Scenario <command> [-Import <directory>] –AssemblyList <assembly1>  <a
 ```
 
 Для приложений Магазина Windows 8.x:
-
-## <a name="syntax"></a>Синтаксис
 
 ```console
 mpgo –Scenario <packageName> -AppID <appId> -Timeout <seconds>
@@ -133,6 +133,6 @@ mpgo.exe -import "C:\Optimized" -assemblylist "C:\MyApp\MyTax.dll" "C:\MyApp\MyT
 ## <a name="see-also"></a>См. также
 
 - [Ngen.exe (генератор образов в машинном коде)](ngen-exe-native-image-generator.md)
-- [Командные строки](developer-command-prompt-for-vs.md)
+- [Оболочки командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell)
 - [Повышение производительности при запуске классических приложений](https://devblogs.microsoft.com/dotnet/improving-launch-performance-for-your-desktop-applications/)
 - [Обзор средств повышения производительности в .NET Framework4.5](/archive/msdn-magazine/2012/april/clr-an-overview-of-performance-improvements-in-net-4-5)

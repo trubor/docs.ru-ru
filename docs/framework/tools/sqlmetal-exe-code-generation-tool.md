@@ -10,12 +10,12 @@ helpviewer_keywords:
 - LINQ to SQL, DBML files
 - LINQ to SQL, SQLMetal
 ms.assetid: 819e5a96-7646-4fdb-b14b-fe31221b0614
-ms.openlocfilehash: 4edf11315892ed8267bee17d69a70033348eca5c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: b3d52e5ce070f1a86554a2c8b8cd581b2e4bc685
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96272570"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102258768"
 ---
 # <a name="sqlmetalexe-code-generation-tool"></a>SqlMetal.exe (средство создания кода)
 
@@ -27,15 +27,13 @@ ms.locfileid: "96272570"
   
 - Создание кода и атрибутов сопоставления или файла сопоставления на основе DBML-файла.  
   
- Эта программа автоматически устанавливается вместе с Visual Studio. По умолчанию файл располагается в папке `drive`:\Program Files\Microsoft SDKs\Windows\v`n.nn`\bin. Если Visual Studio не установлена, файл SQLMetal можно получить, скачав [Windows SDK](https://go.microsoft.com/fwlink/?LinkId=142225).  
+Эта программа автоматически устанавливается вместе с Visual Studio. По умолчанию файл располагается в папке `drive`:\Program Files\Microsoft SDKs\Windows\v`n.nn`\bin. Если Visual Studio не установлена, файл SQLMetal можно получить, скачав [Windows SDK](https://go.microsoft.com/fwlink/?LinkId=142225).  
   
 > [!NOTE]
 > Разработчики, работающие в Visual Studio, также могут использовать реляционный конструктор объектов для создания классов сущностей. Командная строка удобна при работе с большими базами данных. Поскольку SqlMetal представляет собой программу командной строки, ее можно использовать в процессе построения.  
   
- Чтобы применить этот инструмент, воспользуйтесь командной строкой разработчика для Visual Studio (или командной строкой Visual Studio в Windows 7). Подробнее см. в разделе [Командная строка](developer-command-prompt-for-vs.md). В командной строке введите следующее:  
-  
-## <a name="syntax"></a>Синтаксис  
-  
+Чтобы запустить инструмент, используйте [оболочку командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell). В командной строке введите следующую команду:
+
 ```console  
 sqlmetal [options] [<input file>]  
 ```  

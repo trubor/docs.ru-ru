@@ -9,18 +9,18 @@ helpviewer_keywords:
 - stores, current user
 - removing stores
 ms.assetid: b81202b8-d91d-4b23-9c53-4a112f74a44a
-ms.openlocfilehash: 974f3c464ff686a486657d08e77c97299cc94732
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e6c2fc15ba2b6fef27bb57344628638a99103916
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96283839"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102258742"
 ---
 # <a name="storeadmexe-isolated-storage-tool"></a>Storeadm.exe (средство изолированного хранилища)
 
 Программа изолированного хранилища выводит список или удаляет все существующие хранилища для текущего пользователя.  
   
- Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы применить этот инструмент, воспользуйтесь командной строкой разработчика для Visual Studio (или командной строкой Visual Studio в Windows 7). Дополнительные сведения см. в разделе [Командные строки](developer-command-prompt-for-vs.md).  
+ Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы запустить инструмент, используйте [оболочку командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell).
   
  В командной строке введите следующее.  
   
@@ -65,4 +65,4 @@ storeadm [/list][/machine][/remove][/roaming][/quiet]
 
 - [Инструменты](index.md)
 - [Изолированное хранилище](../../standard/io/isolated-storage.md)
-- [Командные строки](developer-command-prompt-for-vs.md)
+- [Оболочки командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell)

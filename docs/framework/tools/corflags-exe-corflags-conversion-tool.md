@@ -7,18 +7,18 @@ helpviewer_keywords:
 - CorFlags.exe
 - portable executable files, CorFlags section
 ms.assetid: ef900f8f-71ca-4dde-9b8c-95ddb0d7d89c
-ms.openlocfilehash: 3f9f2a71a7a33de13264ce60fa7ff6ea5832aace
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4481e6718372fe7b58dbc05ab7cfe35e6d3047ce
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96247191"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102258056"
 ---
 # <a name="corflagsexe-corflags-conversion-tool"></a>CorFlags.exe (средство преобразования CorFlags)
 
 Средство преобразования CorFlags позволяет настраивать раздел CorFlags в заголовке переносимого исполняемого образа.  
   
- Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы применить этот инструмент, воспользуйтесь командной строкой разработчика для Visual Studio (или командной строкой Visual Studio в Windows 7). Дополнительные сведения см. в разделе [Командные строки](developer-command-prompt-for-vs.md).  
+ Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы запустить инструмент, используйте [оболочку командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell).  
   
  В командной строке введите следующее.  
   
@@ -57,4 +57,4 @@ CorFlags.exe assembly [options]
 
 - [Инструменты](index.md)
 - [64-разрядные приложения](../64-bit-apps.md)
-- [Командные строки](developer-command-prompt-for-vs.md)
+- [Оболочки командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell)

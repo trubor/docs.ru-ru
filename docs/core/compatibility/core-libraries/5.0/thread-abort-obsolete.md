@@ -1,23 +1,23 @@
 ---
 title: Критическое изменение. Thread.Abort устарел
-description: Сведения о критическом изменении .NET 5.0 в основных библиотеках .NET, в которых устарел API Thread.Abort.
+description: Сведения о критическом изменении .NET 5 в основных библиотеках .NET, в которых устарел API Thread.Abort.
 ms.date: 11/01/2020
-ms.openlocfilehash: 6d7dfce8fda393bfd88c9b4cf0c59d53942cee25
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 29c688250593801bab9b32b9e787911e561ec000
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759637"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102257067"
 ---
 # <a name="threadabort-is-obsolete"></a>Thread.Abort устарел
 
-API <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> являются устаревшими. В проектах, предназначенных для .NET 5.0 или более поздней версии, можно столкнуться с предупреждениями во время компиляции `SYSLIB0006` при вызове этих методов.
+API <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> являются устаревшими. В проектах, предназначенных для .NET 5 или более поздней версии, можно столкнуться с предупреждениями во время компиляции `SYSLIB0006` при вызове этих методов.
 
 ## <a name="change-description"></a>Описание изменений
 
 Ранее вызовы <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> не создавали предупреждения во время компиляции, однако метод вызывал <xref:System.PlatformNotSupportedException> во время выполнения.
 
-Начиная с .NET 5.0 <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> помечен как устаревший с отображением соответствующего предупреждения. При вызове этого метода выдается предупреждение компилятора `SYSLIB0006`. Реализация метода остается неизменной, и по-прежнему возникнет исключение <xref:System.PlatformNotSupportedException>.
+Начиная с .NET 5 <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> помечен как устаревший с отображением соответствующего предупреждения. При вызове этого метода выдается предупреждение компилятора `SYSLIB0006`. Реализация метода остается неизменной, и по-прежнему возникнет исключение <xref:System.PlatformNotSupportedException>.
 
 ## <a name="reason-for-change"></a>Причина изменения
 

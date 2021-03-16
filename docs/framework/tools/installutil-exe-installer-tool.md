@@ -14,18 +14,18 @@ helpviewer_keywords:
 - progress information for installation
 - reporting installation progress
 ms.assetid: 3f9d0533-f895-4897-b4ea-528284e0241d
-ms.openlocfilehash: 042e5f64a7a863173db9c4e601d3152b0df46d97
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 0e03a2a7033d3e210727e2eb080140ad87240dba
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87164448"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102259945"
 ---
 # <a name="installutilexe-installer-tool"></a>Installutil.exe (инструмент для установки)
 
 Программа для установки является программой командной строки, с помощью которой можно устанавливать и удалять ресурсы сервера путем выполнения компонентов установщика в соответствующих сборках. Эта программа работает совместно с классами в пространстве имен <xref:System.Configuration.Install>.
 
-Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы применить этот инструмент, воспользуйтесь командной строкой разработчика для Visual Studio (или командной строкой Visual Studio в Windows 7). Дополнительные сведения см. в разделе [Командные строки](developer-command-prompt-for-vs.md).
+Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы запустить инструмент, используйте [оболочку командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell).
 
 В командной строке введите следующее.
 
@@ -45,7 +45,7 @@ installutil [/u[ninstall]] [options] assembly [[options] assembly] ...
 
 ## <a name="options"></a>Параметры
 
-|Параметр|Описание:|
+|Параметр|Описание|
 |------------|-----------------|
 |`/h[elp]`<br /><br /> -или-<br /><br /> `/?`|Отображает синтаксис команд и параметров программы.|
 |`/help` *сборка*<br /><br /> -или-<br /><br /> `/?` *сборка*|Отображает дополнительные параметры, распознаваемые отдельными установщиками в пределах указанной сборки, вместе с синтаксисом команд и параметров для программы InstallUtil.exe. Этот параметр добавляет текст, возвращенный каждым свойством компонента установщика <xref:System.Configuration.Install.Installer.HelpText%2A?displayProperty=nameWithType>, в текст справки программы InstallUtil.exe.|
@@ -170,4 +170,4 @@ installutil /LogFile=myLog.InstallLog myAssembly.exe /LogFile=myTestLog.InstallL
 
 - <xref:System.Configuration.Install>
 - [Инструменты](index.md)
-- [Командные строки](developer-command-prompt-for-vs.md)
+- [Оболочки командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell)
