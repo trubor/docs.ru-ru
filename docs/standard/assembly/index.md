@@ -13,12 +13,12 @@ helpviewer_keywords:
 - assemblies [.NET Framework]
 - version boundaries
 - type boundaries
-ms.openlocfilehash: 364a1a8c0fbaae93a02495aaf2e8c519ffb46451
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: f5703377782977bb69815255d04cf1ee5a274c18
+ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84290945"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103477221"
 ---
 # <a name="assemblies-in-net"></a>Сборки в .NET
 
@@ -64,7 +64,7 @@ ms.locfileid: "84290945"
 
 Существует несколько способов создания сборок. Можно использовать средства разработки, такие как Visual Studio, позволяющие создавать файлы *DLL* или *EXE*. Чтобы создать сборки с использованием модулей из других средств разработки, можно воспользоваться средствами из Windows SDK. Для создания динамических сборок также можно использовать интерфейсы CLR такие, как <xref:System.Reflection.Emit?displayProperty=nameWithType>.
 
-Скомпилируйте сборки, выполнив сборку в Visual Studio, с помощью средств интерфейса командной строки .NET Core или создав сборки .NET Framework с помощью компилятора командной строки. Дополнительные сведения о компиляции сборок с помощью .NET Core CLI см. в [этой статье](../../core/tools/index.md). Дополнительные сведения о компиляции сборок с помощью компиляторов командной строки см. в статье [Сборка из командной строки с помощью csc.exe](../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md) для C# или [Построение из командной строки](../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) для Visual Basic.
+Скомпилируйте сборки, выполнив сборку в Visual Studio, с помощью средств интерфейса командной строки .NET Core или создав сборки .NET Framework с помощью компилятора командной строки. Дополнительные сведения о компиляции сборок с помощью .NET Core CLI см. в [этой статье](../../core/tools/index.md).
 
 > [!NOTE]
 > Чтобы создать сборку в Visual Studio, выберите пункт **Сборка** в меню **Сборка**.
@@ -86,7 +86,7 @@ ms.locfileid: "84290945"
 Чтобы использовать сборку в приложении, нужно добавить ссылку на нее. Когда вы добавите ссылку на сборку, в вашем приложении станут доступны все предоставленные в сборке типы, свойства, методы и другие члены пространств имен, как если бы их код являлся частью файла с исходным кодом вашего приложения.
 
 > [!NOTE]
-> Ссылки на большинство сборок из библиотеки классов .NET создаются автоматически. Если системная сборка не упоминается в ссылке автоматически, для .NET Core можно добавить ссылку на пакет NuGet, содержащий эту сборку. Используйте диспетчер пакетов NuGet в Visual Studio или добавьте элемент [\<PackageReference>](../../core/tools/dependencies.md#the-packagereference-element) для сборки в файл проекта с расширением *.csproj* или *.vbproj*. В .NET Framework можно добавить ссылку на сборку с помощью диалогового окна **Добавить ссылку** в Visual Studio или параметра командной строки `-reference` для компиляторов [C#](../../csharp/language-reference/compiler-options/reference-compiler-option.md) или [Visual Basic](../../visual-basic/reference/command-line-compiler/reference.md).
+> Ссылки на большинство сборок из библиотеки классов .NET создаются автоматически. Если системная сборка не упоминается в ссылке автоматически, для .NET Core можно добавить ссылку на пакет NuGet, содержащий эту сборку. Используйте диспетчер пакетов NuGet в Visual Studio или добавьте элемент [\<PackageReference>](../../core/tools/dependencies.md#the-packagereference-element) для сборки в файл проекта с расширением *.csproj* или *.vbproj*. В .NET Framework можно добавить ссылку на сборку с помощью диалогового окна **Добавить ссылку** в Visual Studio или параметра командной строки `-reference` для компиляторов [C#](../../csharp/language-reference/compiler-options/inputs.md#references) или [Visual Basic](../../visual-basic/reference/command-line-compiler/reference.md).
 
 На C# вы можете использовать две версии одной и той же сборки в одном приложении. Дополнительные сведения см. в разделе [Псевдоним extern](../../csharp/language-reference/keywords/extern-alias.md).
 

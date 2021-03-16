@@ -3,12 +3,12 @@ title: Средство установки .NET для авторов расши
 description: Обзор средства установки .NET для авторов расширений, которое представляет собой расширение Visual Studio Code для установки среды выполнения .NET.
 author: sfoslund
 ms.date: 11/18/2020
-ms.openlocfilehash: 37be1b9dcdb9fba99554800fea23f28443efb5fa
-ms.sourcegitcommit: 9d525bb8109216ca1dc9e39c149d4902f4b43da5
+ms.openlocfilehash: 4be931a254e4ce969f9eaf2efde7939cb54e1d5f
+ms.sourcegitcommit: 46cfed35d79d70e08c313b9c664c7e76babab39e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96599902"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102605156"
 ---
 # <a name="net-install-tool-for-extension-authors"></a>Средство установки .NET для авторов расширений
 
@@ -33,4 +33,4 @@ ms.locfileid: "96599902"
 
 ## <a name="getting-started-end-users"></a>Начало работы. Пользователи
 
-Как правило, пользователю не нужно взаимодействовать со средством установки .NET для авторов расширений. Если у вас возникли проблемы с расширением, ознакомьтесь со страницей с инструкциями по [устранению неполадок](https://github.com/dotnet/vscode-dotnet-runtime/blob/master/Documentation/troubleshooting.md) или сообщите о проблеме на нашей странице [GitHub](https://github.com/dotnet/vscode-dotnet-runtime/issues).
+Как правило, пользователю не нужно взаимодействовать со средством установки .NET для авторов расширений. Если у вас возникли проблемы с расширением, ознакомьтесь со страницей с инструкциями по [устранению неполадок](https://github.com/dotnet/vscode-dotnet-runtime/blob/master/Documentation/troubleshooting-runtime.md) или сообщите о проблеме на нашей странице [GitHub](https://github.com/dotnet/vscode-dotnet-runtime/issues).
