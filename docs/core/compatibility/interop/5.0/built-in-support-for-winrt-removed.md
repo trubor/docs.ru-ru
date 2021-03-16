@@ -1,13 +1,13 @@
 ---
 title: Критическое изменение. Из .NET удалена встроенная поддержка WinRT
-description: Узнайте о критических изменениях взаимодействия в .NET 5.0, где из .NET удалена встроенная поддержка WinRT.
+description: Узнайте о критических изменениях взаимодействия в .NET 5, где из .NET удалена встроенная поддержка WinRT.
 ms.date: 10/13/2020
-ms.openlocfilehash: 61d8e26d06c232a7bfa1891a2159f5232f747b8a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 986b810b74c7e7d7514ec2b734bfab45e29b87fa
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759823"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102256690"
 ---
 # <a name="built-in-support-for-winrt-is-removed-from-net"></a>Из .NET удалена встроенная поддержка WinRT
 
@@ -19,7 +19,7 @@ ms.locfileid: "95759823"
 
 ## <a name="change-description"></a>Описание изменений
 
-Ранее CoreCLR поддерживал использование [файлов метаданных Windows (WinMD)](/uwp/winrt-cref/winmd-files) для активации и использования типов WinRT. Начиная с версии .NET 5.0 поддержка прямого использования файлов WinMD в CoreCLR прекращена.
+Ранее CoreCLR поддерживал использование [файлов метаданных Windows (WinMD)](/uwp/winrt-cref/winmd-files) для активации и использования типов WinRT. Начиная с версии .NET 5 поддержка прямого использования файлов WinMD в CoreCLR прекращена.
 
 При попытке добавить ссылку на неподдерживаемую сборку отображается <xref:System.IO.FileNotFoundException>. При активации класса WinRT отображается <xref:System.PlatformNotSupportedException>.
 
@@ -38,7 +38,7 @@ ms.locfileid: "95759823"
   <TargetFramework>net5.0-windows10.0.19041</TargetFramework>
   ```
 
-- Используйте цепочку инструментов [C#/WinRT](/windows/uwp/csharp-winrt/) для создания или настройки API-интерфейсов и типов WinRT в .NET 5.0 и более поздних версий.
+- Используйте цепочку инструментов [C#/WinRT](/windows/uwp/csharp-winrt/) для создания или настройки API-интерфейсов и типов WinRT в .NET 5 и более поздних версий.
 
 ## <a name="affected-apis"></a>Затронутые API
 

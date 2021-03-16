@@ -7,12 +7,12 @@ helpviewer_keywords:
 - 64-bit applications [C++]
 - 64-bit programming [C++]
 ms.assetid: fd4026bc-2c3d-4b27-86dc-ec5e96018181
-ms.openlocfilehash: 2a44d4a7ec9de1747fd8e7321d5c88c2a9e8ac20
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8274fe8f5d32b0f6258e450cc7d649fe3e184d78
+ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96285087"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103477212"
 ---
 # <a name="64-bit-applications"></a>64-разрядные приложения
 
@@ -56,7 +56,7 @@ ms.locfileid: "96285087"
 |Компилятор|Параметр компилятора|  
 |--------------|---------------------|  
 |Visual Basic|[-platform (Visual Basic)](../visual-basic/reference/command-line-compiler/platform.md)|  
-|Visual C#|[-platform (параметры компилятора C#)](../csharp/language-reference/compiler-options/platform-compiler-option.md)|  
+|Visual C#|[-platform (параметры компилятора C#)](../csharp/language-reference/compiler-options/output.md#platformtarget)|  
 |Visual C++|Вы можете создавать платформенно-независимые приложения MSIL с помощью **/clr:safe**. Дополнительные сведения см. в разделе [-clr (компиляция среды CLR)](/cpp/build/reference/clr-common-language-runtime-compilation).<br /><br /> Visual C++ содержит отдельные компиляторы для каждой 64-разрядной операционной системы. Дополнительные сведения об использовании Visual C++ для создания приложений, выполняемых как собственные в 64-разрядной операционной системе Windows, см. в разделе [64-разрядное программирование](/cpp/build/configuring-programs-for-64-bit-visual-cpp).|  
   
 ## <a name="determining-the-status-of-an-exe-file-or-dll-file"></a>Определение состояния EXE- или DLL-файлов  

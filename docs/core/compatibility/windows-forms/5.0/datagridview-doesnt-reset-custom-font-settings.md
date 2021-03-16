@@ -1,13 +1,13 @@
 ---
 title: Критическое изменение. Элемент DataGridView больше не сбрасывает шрифты для настраиваемых стилей ячеек
-description: Сведения о критическом изменении в .NET 5.0, где элемент DataGridView больше не сбрасывает шрифты стиля ячейки по умолчанию, чтобы они совпадали со шрифтом окружения, если шрифт стиля ячейки был настроен.
+description: Сведения о критическом изменении в .NET 5, где элемент DataGridView больше не сбрасывает шрифты стиля ячейки по умолчанию, чтобы они совпадали со шрифтом окружения, если шрифт стиля ячейки был настроен.
 ms.date: 10/18/2020
-ms.openlocfilehash: 708b12ba1305681f5c38eb605861d02e3b2c8eb1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fd28fb5a0b508157289dde1b720522ed49163e31
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95760284"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102256133"
 ---
 # <a name="datagridview-no-longer-resets-fonts-for-customized-cell-styles"></a>Элемент DataGridView больше не сбрасывает шрифты для настраиваемых стилей ячеек
 
@@ -17,7 +17,7 @@ ms.locfileid: "95760284"
 
 В предыдущих версиях .NET при изменении шрифта окружения <xref:System.Windows.Forms.DataGridViewElement.DataGridView> сбрасывал и переопределял пользовательские шрифты в свойствах <xref:System.Windows.Forms.DataGridView.DefaultCellStyle>, <xref:System.Windows.Forms.DataGridView.ColumnHeadersDefaultCellStyle> и <xref:System.Windows.Forms.DataGridView.RowHeadersDefaultCellStyle>.
 
-Начиная с .NET 5.0 при настройке параметров шрифтов в свойствах <xref:System.Windows.Forms.DataGridView.DefaultCellStyle>, <xref:System.Windows.Forms.DataGridView.ColumnHeadersDefaultCellStyle> или <xref:System.Windows.Forms.DataGridView.RowHeadersDefaultCellStyle> эти параметры сохраняются даже при изменении шрифта окружения. Для всех свойств, для которых шрифт не был настроен, шрифт изменится в соответствии с параметрами шрифта окружения.
+Начиная с .NET 5 при настройке параметров шрифтов в свойствах <xref:System.Windows.Forms.DataGridView.DefaultCellStyle>, <xref:System.Windows.Forms.DataGridView.ColumnHeadersDefaultCellStyle> или <xref:System.Windows.Forms.DataGridView.RowHeadersDefaultCellStyle> эти параметры сохраняются даже при изменении шрифта окружения. Для всех свойств, для которых шрифт не был настроен, шрифт изменится в соответствии с параметрами шрифта окружения.
 
 ## <a name="reason-for-change"></a>Причина изменения
 

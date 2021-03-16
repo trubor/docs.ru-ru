@@ -1,13 +1,13 @@
 ---
 title: Критическое изменение. Алгоритмы обработки путей класса Cookie приведены в соответствие с RFC 6265
-description: Узнайте о критическом изменении в .NET 5.0, где алгоритмы обработки путей, определенные в RFC 6265, реализованы для классов cookie и CookieContainer.
+description: Узнайте о критическом изменении в .NET 5, где алгоритмы обработки путей, определенные в RFC 6265, реализованы для классов cookie и CookieContainer.
 ms.date: 08/18/2020
-ms.openlocfilehash: 4aea06f434c4bbbef7d94b4b39ff647dd954745e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5ee1bccc79a5ac271904dd3223b58cc168f18cfa
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759701"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102256469"
 ---
 # <a name="cookie-path-handling-now-conforms-to-rfc-6265"></a>Алгоритмы обработки путей класса Cookie приведены в соответствие с RFC 6265
 

@@ -3,12 +3,12 @@ title: Учебник по выполнению отладки утечки па
 description: Узнайте, как выполнить отладку утечки памяти в .NET Core.
 ms.topic: tutorial
 ms.date: 04/20/2020
-ms.openlocfilehash: 6764663eedc28cd75f9f68927a12ae5b2255d11b
-ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
+ms.openlocfilehash: 2cdc6e2f27ac04b6057aca3787564024d084fe63
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100431455"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102255676"
 ---
 # <a name="debug-a-memory-leak-in-net-core"></a>Отладка утечки памяти в .NET Core
 
@@ -32,8 +32,7 @@ ms.locfileid: "100431455"
 
 В этом учебнике используется:
 
-- [Пакет SDK для .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core) или более поздней версии.
-- [dotnet-trace](dotnet-trace.md) для отображения списка процессов.
+- [Пакет SDK для .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet) или более поздней версии.
 - [dotnet-counters](dotnet-counters.md) для проверки использования управляемой памяти.
 - [dotnet-dump](dotnet-dump.md) для сбора и анализа файла дампа.
 - [Пример целевого приложения отладки](/samples/dotnet/samples/diagnostic-scenarios/) для диагностики.
@@ -50,10 +49,10 @@ ms.locfileid: "100431455"
 dotnet run
 ```
 
-В отдельном окне консоли найдите идентификатор процесса с помощью инструмента [dotnet-trace](dotnet-trace.md).
+В отдельном окне консоли найдите идентификатор процесса:
 
 ```console
-dotnet-trace ps
+dotnet-counters ps
 ```
 
 Результат должен выглядеть следующим образом:

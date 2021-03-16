@@ -3,12 +3,12 @@ title: Предупреждение SYSLIB0004
 description: Сведения об устаревших элементах, которые приводят к появлению предупреждения во время компиляции SYSLIB0004.
 ms.topic: reference
 ms.date: 10/20/2020
-ms.openlocfilehash: 03be8bb54f71f74ed94ee2c3f8489397ae1e99b5
-ms.sourcegitcommit: e301979e3049ce412d19b094c60ed95b316a8f8c
+ms.openlocfilehash: 76726e233e2900c82dce1b0872533e5356e91c8c
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97596341"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102256375"
 ---
 # <a name="syslib0004-the-constrained-execution-region-cer-feature-is-not-supported"></a>SYSLIB0004. Функция области ограниченного выполнения (CER) не поддерживается
 
@@ -28,7 +28,7 @@ ms.locfileid: "97596341"
 
 ## <a name="workarounds"></a>Обходные пути
 
-- Если вы применили к методу атрибут CER, удалите атрибут. Эти атрибуты не действуют в .NET 5.0 и более поздних версиях.
+- Если вы применили к методу атрибут CER, удалите атрибут. Эти атрибуты не действуют в .NET 5 и более поздних версиях.
 
   ```csharp
   // REMOVE the attribute below.
@@ -44,7 +44,7 @@ ms.locfileid: "97596341"
   }
   ```
 
-- При вызове `RuntimeHelpers.ProbeForSufficientStack` или `RuntimeHelpers.PrepareContractedDelegate` удалите вызов. Эти вызовы не действуют в .NET 5.0 и более поздних версиях.
+- При вызове `RuntimeHelpers.ProbeForSufficientStack` или `RuntimeHelpers.PrepareContractedDelegate` удалите вызов. Эти вызовы не действуют в .NET 5 и более поздних версиях.
 
   ```csharp
   public void DoSomething()
@@ -56,7 +56,7 @@ ms.locfileid: "97596341"
   }
   ```
 
-- При вызове `RuntimeHelpers.PrepareConstrainedRegions` удалите вызов. Этот вызов не действует в .NET 5.0 и более поздних версиях.
+- При вызове `RuntimeHelpers.PrepareConstrainedRegions` удалите вызов. Этот вызов не действует в .NET 5 и более поздних версиях.
 
   ```csharp
   public void DoSomething_Old()

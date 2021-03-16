@@ -1,23 +1,23 @@
 ---
 title: Критическое изменение. Приложения ASP.NET Core поддерживают десериализацию заключенных в кавычки чисел
-description: Узнайте о критическом изменении в .NET 5.0, после которого приложения ASP.NET Core будут успешно выполнять десериализацию чисел, представленных в виде строк JSON, вместо того, чтобы создавать исключение.
+description: Узнайте о критическом изменении в .NET 5, после которого приложения ASP.NET Core будут успешно выполнять десериализацию чисел, представленных в виде строк JSON, вместо того, чтобы создавать исключение.
 ms.date: 10/21/2020
-ms.openlocfilehash: fc8a4c6638be391c22c7cfb2fc7c216c88377f29
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f541af5bf5f0a519fd5205f44d68a9b401569909
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759673"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102256313"
 ---
 # <a name="aspnet-core-apps-allow-deserializing-quoted-numbers"></a>Приложения ASP.NET Core поддерживают десериализацию заключенных в кавычки чисел
 
-Начиная с версии .NET 5.0, приложения ASP.NET Core используют параметры десериализации по умолчанию, которые задаются в <xref:System.Text.Json.JsonSerializerDefaults.Web?displayProperty=nameWithType>. Набор параметров <xref:System.Text.Json.JsonSerializerDefaults.Web> включает параметр <xref:System.Text.Json.JsonSerializerOptions.NumberHandling> для <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString?displayProperty=nameWithType>. Это изменение означает, что приложения ASP.NET Core будут успешно выполнять десериализацию чисел, представленных в виде строк JSON, вместо того, чтобы создавать исключение.
+Начиная с версии .NET 5 приложения ASP.NET Core используют параметры десериализации по умолчанию, которые задаются в <xref:System.Text.Json.JsonSerializerDefaults.Web?displayProperty=nameWithType>. Набор параметров <xref:System.Text.Json.JsonSerializerDefaults.Web> включает параметр <xref:System.Text.Json.JsonSerializerOptions.NumberHandling> для <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString?displayProperty=nameWithType>. Это изменение означает, что приложения ASP.NET Core будут успешно выполнять десериализацию чисел, представленных в виде строк JSON, вместо того, чтобы создавать исключение.
 
 ## <a name="change-description"></a>Описание изменений
 
 В .NET Core версий с 3.0 по 3.1 <xref:System.Text.Json.JsonSerializer> во время десериализации вызывает исключение <xref:System.Text.Json.JsonException>, если в полезных данных JSON обнаруживается число в кавычках. Заключенные в кавычки числа используются для сопоставления с числовыми свойствами в графах объектов. В .NET Core версий с 3.0 по 3.1 числа считываются только из токенов <xref:System.Text.Json.JsonTokenType.Number?displayProperty=nameWithType>.
 
-Начиная с версии .NET 5.0, заключенные в кавычки числа в полезных данных JSON считаются допустимыми по умолчанию для приложений ASP.NET Core. Во время десериализации заключенных в кавычки чисел исключение не создается.
+Начиная с версии .NET 5 заключенные в кавычки числа в полезных данных JSON считаются допустимыми по умолчанию для приложений ASP.NET Core. Во время десериализации заключенных в кавычки чисел исключение не создается.
 
 > [!TIP]
 >

@@ -1,18 +1,18 @@
 ---
 title: Неподдерживаемые API в .NET Core и .NET версии 5 и более поздних
 titleSuffix: ''
-description: Узнайте, какие интерфейсы API .NET всегда вызывают исключение в .NET Core и .NET 5.0 и более поздних версиях.
+description: Узнайте, какие интерфейсы API .NET всегда вызывают исключение в .NET Core и .NET 5 и более поздних версиях.
 ms.date: 10/13/2020
-ms.openlocfilehash: 1bd41192d0d6752d2b659da9fb6387dac321b2c3
-ms.sourcegitcommit: e301979e3049ce412d19b094c60ed95b316a8f8c
+ms.openlocfilehash: b0dc425bf5f7d8f2a44f51ffe75ffcb0c8a5a7ae
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97593270"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102256261"
 ---
 # <a name="apis-that-always-throw-exceptions-on-net-core-and-net-5"></a>API, которые всегда создают исключения в .NET Core и .NET версии 5 и более поздних
 
-Следующие API всегда будут вызывать исключение <xref:System.PlatformNotSupportedException> в .NET версии 5.0 и более поздних (включая все версии .NET Core) на всех платформах или на их подмножестве.
+Следующие API всегда будут вызывать исключение <xref:System.PlatformNotSupportedException> в .NET версии 5 и более поздних (включая все версии .NET Core) на всех платформах или на их подмножестве.
 
 В этой статье затронутые API упорядочиваются по пространствам имен.
 

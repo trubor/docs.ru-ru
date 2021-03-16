@@ -3,12 +3,12 @@ title: Пустые переменные — руководство по язы
 description: В этой статье приведены сведения о поддержке в C# пустых переменных (переменных, которым не присваиваются значения) и описаны способы их использования.
 ms.technology: csharp-fundamentals
 ms.date: 09/22/2020
-ms.openlocfilehash: 3c18fbb0bbb80c2c29c9f5d8334a5dd711b68cc5
-ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
+ms.openlocfilehash: eefa81d3bd8d56c9296e01533aaf93c4725323a3
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100432638"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102104956"
 ---
 # <a name="discards---c-guide"></a>Пустые переменные — руководство по языку C#
 
@@ -42,9 +42,9 @@ ms.locfileid: "100432638"
 
 ## <a name="pattern-matching-with-switch"></a>Сопоставление шаблонов с `switch`
 
-*Шаблон пустой переменной* можно использовать при сопоставлении шаблонов с ключевым словом [switch](language-reference/keywords/switch.md). Каждое выражение всегда соответствует шаблону пустой переменной. (Его можно использовать с выражениями [is](language-reference/keywords/is.md). Но это случается редко, так как пустую переменную можно удалить без изменения ее значения.)
+*Шаблон пустой переменной* можно использовать при сопоставлении шаблонов с выражением [switch](language-reference/operators/switch-expression.md). Каждое выражение, включая `null`, всегда соответствует шаблону пустой переменной.
 
-В следующем примере определяется метод `ProvidesFormatInfo`, который использует операторы [is](language-reference/keywords/is.md), чтобы узнать, предоставляет ли объект реализацию <xref:System.IFormatProvider> и не является ли он `null`. В примере также используется шаблон пустой переменной для обработки объектов любого другого типа с определенным значением.
+В следующем примере определяется метод `ProvidesFormatInfo`, который использует выражение `switch`, чтобы узнать, предоставляет ли объект реализацию <xref:System.IFormatProvider> и не является ли он `null`. В примере также используется шаблон пустой переменной для обработки объектов любого другого типа с определенным значением.
 
 :::code language="csharp" source="snippets/discards/discard-pattern2.cs" ID="DiscardSwitchExample" :::
 

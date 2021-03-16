@@ -6,20 +6,20 @@ helpviewer_keywords:
 - Clrver.exe
 - CLR Version tool
 ms.assetid: cbc2ee86-bdc8-4a65-a8f1-ba23bce3a699
-ms.openlocfilehash: 3a7a585d990051553aa8fdc0e99b2dc206273cf4
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8205b92f3997f6abacc566e2e6f2b37604fbda07
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96247230"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102255253"
 ---
 # <a name="clrverexe-clr-version-tool"></a>Clrver.exe (средство проверки версий среды CLR)
 
 Программа версий среды CLR (Clrver.exe) выводит отчет обо всех установленных версиях среды CLR на компьютере.  
   
- Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы применить этот инструмент, воспользуйтесь командной строкой разработчика для Visual Studio (или командной строкой Visual Studio в Windows 7). Дополнительные сведения см. в разделе [Командные строки](developer-command-prompt-for-vs.md).  
+ Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы запустить инструмент, используйте [оболочку командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell).  
   
- В командной строке введите следующее.  
+ В командной строке введите следующую команду:  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -61,4 +61,4 @@ clrver [option]
 ## <a name="see-also"></a>См. также
 
 - [Инструменты](index.md)
-- [Командные строки](developer-command-prompt-for-vs.md)
+- [Оболочки командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell)

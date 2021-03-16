@@ -4,12 +4,12 @@ description: Это руководство раскроет для вас нек
 ms.date: 03/06/2017
 ms.technology: csharp-fundamentals
 ms.assetid: 883cd93d-50ce-4144-b7c9-2df28d9c11a0
-ms.openlocfilehash: 4c32b08c3e7eeaedce687ea5bc572e6a7bee0d3e
-ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
+ms.openlocfilehash: fc5e8a929dfe0b7a3f55174e38e596331900edc7
+ms.sourcegitcommit: b27645cb378d4e8137a267e5467ff31409acf6c0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91804898"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103231385"
 ---
 # <a name="console-app"></a>Консольное приложение
 
@@ -55,7 +55,7 @@ namespace TeleprompterConsole
 
 ## <a name="reading-and-echoing-the-file"></a>Чтение и вывод файла
 
-Первая функция, которую мы добавим, будет считывать данные из текстового файла и выводить полученный текст в консоль. Сначала нам нужно добавить текстовый файл. Скопируйте в каталог проекта файл [sampleQuotes.txt](https://github.com/dotnet/samples/raw/master/csharp/getting-started/console-teleprompter/sampleQuotes.txt) из репозитория GitHub для этого [примера](https://github.com/dotnet/samples/tree/master/csharp/getting-started/console-teleprompter). Он будет источником текста для вашего приложения. Чтобы скачать пример приложения для этого раздела, воспользуйтесь инструкциями в разделе [Примеры и руководства](../../samples-and-tutorials/index.md#view-and-download-samples).
+Первая функция, которую мы добавим, будет считывать данные из текстового файла и выводить полученный текст в консоль. Сначала нам нужно добавить текстовый файл. Скопируйте в каталог проекта файл [sampleQuotes.txt](https://github.com/dotnet/samples/raw/main/csharp/getting-started/console-teleprompter/sampleQuotes.txt) из репозитория GitHub для этого [примера](https://github.com/dotnet/samples/tree/master/csharp/getting-started/console-teleprompter). Он будет источником текста для вашего приложения. Чтобы скачать пример приложения для этого раздела, воспользуйтесь инструкциями в разделе [Примеры и руководства](../../samples-and-tutorials/index.md#view-and-download-samples).
 
 Теперь добавьте в класс `Program` (он расположен сразу за методом `Main`) следующий метод:
 
