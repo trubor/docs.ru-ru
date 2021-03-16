@@ -1,13 +1,13 @@
 ---
 title: Критическое изменение. Пути к коду в кодировке UTF-7 устарели
-description: Ознакомьтесь с критическим изменением .NET 5.0 в основных библиотеках .NET, где конструкторы UTF7 и UTF7Encoding теперь считаются устаревшими.
+description: Ознакомьтесь с критическим изменением .NET 5 в основных библиотеках .NET, где конструкторы UTF7 и UTF7Encoding теперь считаются устаревшими.
 ms.date: 11/01/2020
-ms.openlocfilehash: d58305f59a30cdf31a525c3789bd6497201c50ba
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7a0ba771e0fac2908ca37f16afb10118e1537161
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759654"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102256989"
 ---
 # <a name="utf-7-code-paths-are-obsolete"></a>Пути к коду в кодировке UTF-7 устарели
 
@@ -26,7 +26,7 @@ Encoding enc2 = Encoding.GetEncoding(65000); // By code page.
 
 Кроме того, экземпляр, представляющий кодировку UTF-7, перечислялся методом <xref:System.Text.Encoding.GetEncodings?displayProperty=nameWithType>, который перечисляет все зарегистрированные в системе экземпляры <xref:System.Text.Encoding>.
 
-Начиная с .NET 5.0, свойство <xref:System.Text.Encoding.UTF7?displayProperty=nameWithType> и конструкторы <xref:System.Text.UTF7Encoding.%23ctor%2A> являются устаревшими и выдают предупреждение `SYSLIB0001` (или `MSLIB0001` в предварительных версиях). Но чтобы уменьшить число предупреждений, получаемых вызывающими объектами при использовании класса <xref:System.Text.UTF7Encoding>, сам тип <xref:System.Text.UTF7Encoding> не помечен как устаревший.
+Начиная с .NET 5, свойство <xref:System.Text.Encoding.UTF7?displayProperty=nameWithType> и конструкторы <xref:System.Text.UTF7Encoding.%23ctor%2A> являются устаревшими и выдают предупреждение `SYSLIB0001` (или `MSLIB0001` в предварительных версиях). Но чтобы уменьшить число предупреждений, получаемых вызывающими объектами при использовании класса <xref:System.Text.UTF7Encoding>, сам тип <xref:System.Text.UTF7Encoding> не помечен как устаревший.
 
 ```csharp
 // The next line generates warning SYSLIB0001.

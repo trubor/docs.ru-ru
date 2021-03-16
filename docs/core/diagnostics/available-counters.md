@@ -3,12 +3,12 @@ title: Стандартные счетчики событий в .NET
 description: Сведения о счетчиках событий, публикуемых в библиотеках и среде выполнения .NET.
 ms.topic: reference
 ms.date: 12/17/2020
-ms.openlocfilehash: 8bd14c7caf004cefe73d5b0676b9fa3280840442
-ms.sourcegitcommit: c3093e9d106d8ca87cc86eef1f2ae4ecfb392118
+ms.openlocfilehash: db7417993786eae18c9d7b6cc3bb79284d543dd3
+ms.sourcegitcommit: e3cf8227573e13b8e1f4e3dc007404881cdafe47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97737298"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103189947"
 ---
 # <a name="well-known-eventcounters-in-net"></a>Стандартные счетчики событий в .NET
 
@@ -16,7 +16,7 @@ ms.locfileid: "97737298"
 
 ## <a name="systemruntime-counters"></a>Счетчики "System.Runtime"
 
-Следующие счетчики публикуются как часть среды выполнения .NET (CoreCLR) и поддерживаются в [`RuntimeEventSource.cs`](https://github.com/dotnet/coreclr/blob/master/src/System.Private.CoreLib/src/System/Diagnostics/Eventing/RuntimeEventSource.cs).
+Следующие счетчики публикуются как часть среды выполнения .NET (CoreCLR) и поддерживаются в [`RuntimeEventSource.cs`](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Private.CoreLib/src/System/Diagnostics/Tracing/RuntimeEventSource.cs).
 
 | Счетчик | Описание |
 |--|--|

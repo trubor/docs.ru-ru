@@ -4,12 +4,12 @@ description: Узнайте, как создать приложение для �
 ms.date: 12/04/2020
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: f001cb912bb695a7edb0917f3306ca9bfbe311ac
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: 7edb84ae53f1da7903cf4b3f77d215206ffbf1ef
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98187786"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102259828"
 ---
 # <a name="tutorial-detect-anomalies-in-time-series-with-mlnet"></a>Учебник. Обнаружение аномалий во временном ряду с помощью ML.NET
 
@@ -32,7 +32,7 @@ ms.locfileid: "98187786"
 
 ## <a name="create-a-console-application"></a>Создание консольного приложение
 
-1. Создайте **консольное приложение C# .NET Core** с именем ProductSalesAnomalyDetection.
+1. Создайте **консольное приложение C# .NET Core** с именем PhoneCallsAnomalyDetection.
 
 2. Создайте каталог с именем *Data* в проекте, чтобы сохранять файлы набора данных.
 

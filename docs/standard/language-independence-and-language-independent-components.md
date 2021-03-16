@@ -13,12 +13,12 @@ helpviewer_keywords:
 - runtime, language interoperability
 - common language runtime, language interoperability
 ms.assetid: 4f0b77d0-4844-464f-af73-6e06bedeafc6
-ms.openlocfilehash: 69fd1a1944987d08a6ce1aee2790d0dbe06b9452
-ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
+ms.openlocfilehash: 4080cb38ca3b7d79c0ad4291198b13567511093c
+ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102106375"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103480843"
 ---
 # <a name="language-independence-and-language-independent-components"></a>Независимость от языка и независимые от языка компоненты
 
@@ -594,8 +594,6 @@ vbc /t:module StringUtil.vb
 ```console
 csc /t:module NumberUtil.cs
 ```
-
-Дополнительные сведения о синтаксисе командной строки для компилятора C# см. в разделе [Сборка из командной строки с помощью csc.exe](../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md).
 
 Затем используйте [параметры компоновщика](/cpp/build/reference/linker-options), чтобы скомпилировать оба модуля в сборку:
 

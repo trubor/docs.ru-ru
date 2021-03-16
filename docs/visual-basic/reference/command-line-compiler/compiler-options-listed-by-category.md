@@ -5,12 +5,12 @@ ms.date: 04/12/2018
 helpviewer_keywords:
 - Visual Basic compiler, options
 ms.assetid: fbe36f7a-7cfa-4f77-a8d4-2be5958568e3
-ms.openlocfilehash: f0535e2aa94cda96610acb0edb24f6d46cc4afa0
-ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
+ms.openlocfilehash: 015be752e5c98ec732e1b95130979446071810f1
+ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100474178"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103478053"
 ---
 # <a name="visual-basic-compiler-options-listed-by-category"></a>Параметры компилятора Visual Basic по категориям
 
@@ -26,7 +26,7 @@ ms.locfileid: "100474178"
 |[-utf8output](utf8output.md)|Отображает выходные данные компилятора в кодировке UTF-8.|  
 |[-verbose](verbose.md)|Отображает дополнительные сведения во время компиляции.|  
 |`-modulename:<string>`|Укажите имя исходного модуля.|  
-|[/preferreduilang](../../../csharp/language-reference/compiler-options/preferreduilang-compiler-option.md)|Укажите язык для выходных данных компилятора.|
+|[/preferreduilang](../../../csharp/language-reference/compiler-options/advanced.md#preferreduilang)|Укажите язык для выходных данных компилятора.|
   
 ## <a name="optimization"></a>Оптимизация  
   

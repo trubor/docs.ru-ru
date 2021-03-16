@@ -10,18 +10,18 @@ helpviewer_keywords:
 - text files produced by MSIL Disassembler
 - disassembling file for MSIL Assembler input
 ms.assetid: db27f6b2-f1ec-499e-be3a-7eecf95ca42b
-ms.openlocfilehash: e94e80d0342f68098a08e184b6bf3f48c14e817b
-ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
+ms.openlocfilehash: efa07ee4166d3f02ca3885c5efc4373be8eac2fd
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94440885"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102258537"
 ---
 # <a name="ildasmexe-il-disassembler"></a>Ildasm.exe (дизассемблер IL)
 
 Дизассемблер IL является сопутствующим инструментом ассемблера IL (*Ilasm.exe*). *Ildasm.exe* принимает переносимый исполняемый файл (PE-файл), содержащий код на промежуточном языке (IL), и создает на его основе текстовый файл, который может служить входным файлом для *Ilasm.exe*.
 
-Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы применить этот инструмент, воспользуйтесь командной строкой разработчика для Visual Studio (или командной строкой Visual Studio в Windows 7). Дополнительные сведения см. в разделе [Командные строки](developer-command-prompt-for-vs.md).
+Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы запустить инструмент, используйте [оболочку командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell).
 
 В командной строке введите следующее.
 
@@ -188,4 +188,4 @@ ildasm /item:"MyClass::MyMethod(class [mscorlib]System.AppDomain(class [mscorlib
 - [Инструменты](index.md)
 - [Ilasm.exe (ассемблер IL)](ilasm-exe-il-assembler.md)
 - [Процесс управляемого выполнения](../../standard/managed-execution-process.md)
-- [Командные строки](developer-command-prompt-for-vs.md)
+- [Оболочки командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell)

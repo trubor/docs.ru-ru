@@ -1,13 +1,13 @@
 ---
 title: Критическое изменение. PrincipalPermissionAttribute устарел и является ошибочным
-description: Сведения о критическом изменении .NET 5.0 в основных библиотеках .NET, где конструктор PrincipalPermissionAttribute устарел и вызывает ошибку во время компиляции.
+description: Сведения о критическом изменении .NET 5 в основных библиотеках .NET, где конструктор PrincipalPermissionAttribute устарел и вызывает ошибку во время компиляции.
 ms.date: 11/01/2020
-ms.openlocfilehash: 138bbf25fd493c1bb9c2b3f10b62681c735ea7b3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7568883935633e98b884b553efccf50504448b77
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759757"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102257236"
 ---
 # <a name="principalpermissionattribute-is-obsolete-as-error"></a>PrincipalPermissionAttribute устарел и является ошибочным
 
@@ -25,13 +25,13 @@ public void MyMethod()
 }
 ```
 
-Начиная с .NET 5.0 к методу нельзя применить атрибут <xref:System.Security.Permissions.PrincipalPermissionAttribute>. Конструктор атрибута устарел и вызывает ошибку во время компиляции. В отличие от других устаревших предупреждений, эту ошибку нельзя обойти.
+Начиная с .NET 5 к методу нельзя применить атрибут <xref:System.Security.Permissions.PrincipalPermissionAttribute>. Конструктор атрибута устарел и вызывает ошибку во время компиляции. В отличие от других устаревших предупреждений, эту ошибку нельзя обойти.
 
 ## <a name="reason-for-change"></a>Причина изменения
 
-Тип <xref:System.Security.Permissions.PrincipalPermissionAttribute>, как и другие типы, являющиеся подклассом <xref:System.Security.Permissions.SecurityAttribute>, является частью инфраструктуры .NET по управлению доступом для кода (CAS). В .NET Framework 2.x-4.x среда выполнения применяет заметки <xref:System.Security.Permissions.PrincipalPermissionAttribute> к записи метода, даже если приложение выполняется с полным доверием. В .NET Core и .NET 5.0 и более поздних версий не поддерживаются атрибуты CAS, и среда выполнения их игнорирует.
+Тип <xref:System.Security.Permissions.PrincipalPermissionAttribute>, как и другие типы, являющиеся подклассом <xref:System.Security.Permissions.SecurityAttribute>, является частью инфраструктуры .NET по управлению доступом для кода (CAS). В .NET Framework 2.x-4.x среда выполнения применяет заметки <xref:System.Security.Permissions.PrincipalPermissionAttribute> к записи метода, даже если приложение выполняется с полным доверием. В .NET Core и .NET 5 и более поздних версий не поддерживаются атрибуты CAS, и среда выполнения их игнорирует.
 
-Это различие в поведении .NET Framework по отношению к .NET Core и .NET 5.0 может привести к ситуации "ошибочное открытие", когда доступ должен быть заблокирован, а вместо этого он был разрешен. Чтобы не допустить ситуации "ошибочное открытие", больше нельзя применять этот атрибут в коде, предназначенном для .NET 5.0 и более поздних версий.
+Это различие в поведении .NET Framework по отношению к .NET Core и .NET 5 может привести к ситуации "ошибочного открытия", когда доступ должен быть заблокирован, а вместо этого он был разрешен. Чтобы не допустить ситуации "ошибочного открытия", больше нельзя применять этот атрибут в коде, предназначенном для .NET 5 и более поздних версий.
 
 ## <a name="version-introduced"></a>Представленная версия
 

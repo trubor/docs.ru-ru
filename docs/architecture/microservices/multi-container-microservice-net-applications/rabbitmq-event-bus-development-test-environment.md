@@ -2,12 +2,12 @@
 title: Реализация шины событий с помощью RabbitMQ для среды разработки или тестирования
 description: Архитектура микрослужб .NET для упакованных в контейнеры приложений .NET | Использование RabbitMQ для реализации сообщений шины событий для событий интеграции для сред разработки или тестирования.
 ms.date: 01/13/2021
-ms.openlocfilehash: a1e7d11e376080a03269f202fa6ae24ffeb0f4d2
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: b67b6cf92ac2c29b9eff07c2c9603206e42968a3
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98188085"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102258082"
 ---
 # <a name="implementing-an-event-bus-with-rabbitmq-for-the-development-or-test-environment"></a>Реализация шины событий с помощью RabbitMQ для среды разработки или тестирования
 
@@ -35,7 +35,7 @@ public class EventBusRabbitMQ : IEventBus, IDisposable
 
 ## <a name="implementing-a-simple-publish-method-with-rabbitmq"></a>Реализация простого метода публикации с помощью RabbitMQ
 
-Следующий код является **_упрощенной_* _ версией реализации шины событий для RabbitMQ, демонстрирующей весь сценарий. Вам необязательно обрабатывать подключение таким образом. Чтобы увидеть полную реализацию, просмотрите фактический код в репозитории [dotnet-architecture/eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/BuildingBlocks/EventBus/EventBusRabbitMQ/EventBusRabbitMQ.cs).
+Следующий код является ***упрощенной*** версией реализации шины событий для RabbitMQ, демонстрирующей весь сценарий. Вам необязательно обрабатывать подключение таким образом. Чтобы увидеть полную реализацию, просмотрите фактический код в репозитории [dotnet-architecture/eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/BuildingBlocks/EventBus/EventBusRabbitMQ/EventBusRabbitMQ.cs).
 
 ```csharp
 public class EventBusRabbitMQ : IEventBus, IDisposable
@@ -116,12 +116,14 @@ public class EventBusRabbitMQ : IEventBus, IDisposable
 
 Готовое к работе решение с поддержкой RabbitMQ.
 
-- _ *EasyNetQ** — клиент API .NET для RabbitMQ с открытым кодом \
+- **EasyNetQ** — клиент API .NET для RabbitMQ с открытым кодом \
   <https://easynetq.com/>
 
 - **MassTransit** \
   <https://masstransit-project.com/>
   
+- **Rebus** — служебная шина .NET с открытым кодом <https://github.com/rebus-org/Rebus>
+
 > [!div class="step-by-step"]
 > [Назад](integration-event-based-microservice-communications.md)
 > [Вперед](subscribe-events.md)

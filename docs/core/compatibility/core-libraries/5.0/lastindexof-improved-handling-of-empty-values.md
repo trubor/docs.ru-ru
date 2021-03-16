@@ -1,13 +1,13 @@
 ---
 title: Критическое изменение. Улучшена обработка пустых строк поиска с помощью LastIndexOf
-description: Сведения о критическом изменении .NET 5.0 в основных библиотеках .NET, где LastIndexOf и связанные API теперь возвращают правильные значения при поиске подстроки нулевой длины.
+description: Сведения о критическом изменении .NET 5 в основных библиотеках .NET, где LastIndexOf и связанные API теперь возвращают правильные значения при поиске подстроки нулевой длины.
 ms.date: 11/01/2020
-ms.openlocfilehash: 6d1a676eb2b9ed3de6a745db27d53bd43560a32f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9dc34300d867fe1bb9264494b3f2261bad2c1eea
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759630"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102257431"
 ---
 # <a name="lastindexof-has-improved-handling-of-empty-search-strings"></a>Улучшена обработка пустых строк поиска с помощью LastIndexOf
 
@@ -24,7 +24,7 @@ ReadOnlySpan<char> span = "Hello";
 Console.WriteLine(span.LastIndexOf("")); // prints '0' (incorrect)
 ```
 
-Начиная с .NET 5.0 эти API возвращают правильное значение для `LastIndexOf`.
+Начиная с .NET 5 эти API возвращают правильное значение для `LastIndexOf`.
 
 ```csharp
 Console.WriteLine("Hello".LastIndexOf("")); // prints '5' (correct)
@@ -45,7 +45,7 @@ Console.WriteLine(span.LastIndexOf("")); // prints '5' (correct)
 
 ## <a name="recommended-action"></a>Рекомендованное действие
 
-Никаких дополнительных действий от вас не требуется. Среда выполнения .NET 5.0 автоматически предоставляет новые варианты поведения.
+Никаких дополнительных действий от вас не требуется. Среда выполнения .NET 5 автоматически предоставляет новые варианты поведения.
 
 Отсутствует параметр совместимости для восстановления старого поведения.
 

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Global Assembly Cache tool
 - windows installer, global assembly cache
 ms.assetid: a7e6f091-d02c-49ba-b736-7295cb0eb743
-ms.openlocfilehash: 08a5475d74327265f28b65676ae56be15afb57d3
-ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
+ms.openlocfilehash: 581736d27d8b90430838fc78aa192a3efa21cbb5
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85104662"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102258303"
 ---
 # <a name="how-to-install-an-assembly-into-the-global-assembly-cache"></a>Практическое руководство. установку сборки в глобальный кэш сборок
 
@@ -46,7 +46,7 @@ gacutil -i <assembly name>
 
 В этой команде *\<assembly name>* представляет собой имя сборки, устанавливаемой в глобальный кэш сборок.
 
-Если *gacutil.exe* не находится в системном пути, используйте [командную строку разработчика для VS *\<version>* ](../tools/developer-command-prompt-for-vs.md).
+Если *gacutil.exe* нет в системном пути, используйте [оболочку командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell).
 
 В следующем примере выполняется установка сборки с именем файла *hello.dll* в глобальный кэш сборок.
 

@@ -1,13 +1,13 @@
 ---
 title: Критическое изменение. Создание экземпляров реализаций по умолчанию для криптографических абстракций не поддерживается
-description: Сведения о критическом изменении в .NET 5.0, в котором перегрузки Create() для криптографических абстракций устарели.
+description: Сведения о критическом изменении в .NET 5, в котором перегрузки Create() для криптографических абстракций устарели.
 ms.date: 10/16/2020
-ms.openlocfilehash: 8ed7d0b72347ec41ec65ccd9e4004266619c84f7
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b75f3568317d1db8ae1bb629f760aaec7e69776a
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759889"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102256794"
 ---
 # <a name="instantiating-default-implementations-of-cryptographic-abstractions-is-not-supported"></a>Создание экземпляров реализаций по умолчанию для криптографических абстракций не поддерживается
 
@@ -41,7 +41,7 @@ Console.WriteLine(alg.GetType());
 HashAlgorithm alg = HashAlgorithm.Create();
 ```
 
-В .NET 5.0 и более поздних версий фабрики абстрактных примитивов шифрования, такие как <xref:System.Security.Cryptography.HashAlgorithm.Create?displayProperty=nameWithType>, не рекомендуются для использования и во время компиляции с создают предупреждение идентификатором `SYSLIB0007`. Во время выполнения эти методы продолжают создавать исключение <xref:System.PlatformNotSupportedException>.
+В .NET 5 и более поздних версий фабрики абстрактных примитивов шифрования, такие как <xref:System.Security.Cryptography.HashAlgorithm.Create?displayProperty=nameWithType>, не рекомендуются для использования и во время компиляции с создают предупреждение идентификатором `SYSLIB0007`. Во время выполнения эти методы продолжают создавать исключение <xref:System.PlatformNotSupportedException>.
 
 ```csharp
 // Throws PlatformNotSupportedException.

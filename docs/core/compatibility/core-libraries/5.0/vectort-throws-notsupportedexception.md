@@ -1,13 +1,13 @@
 ---
 title: Критическое изменение. Vector<T> создает исключение NotSupportedException
-description: Сведения о критическом изменении .NET 5.0 в основных библиотеках .NET, где Vector<T> всегда вызывает исключение для неподдерживаемых параметров типа.
+description: Сведения о критическом изменении .NET 5 в основных библиотеках .NET, где Vector<T> всегда вызывает исключение для неподдерживаемых параметров типа.
 ms.date: 11/01/2020
-ms.openlocfilehash: 63db7c6b720735b180ed11098227b31a14008f74
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: dccd39c01f4debd7d1432195e7f3cb14aeda5f65
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759769"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102257015"
 ---
 # <a name="vectort-always-throws-notsupportedexception-for-unsupported-types"></a>Vector\<T> всегда вызывает исключение NotSupportedException для неподдерживаемых типов
 
@@ -17,7 +17,7 @@ ms.locfileid: "95759769"
 
 Ранее члены <xref:System.Numerics.Vector%601> не всегда вызывали <xref:System.NotSupportedException>, если у `T` был [неподдерживаемый тип](#unsupported-types). Исключение не всегда вызывалось из-за путей к коду, поддерживающих аппаратное ускорение. Например, для `Vector<bool> + Vector<bool>` возвращалось `default` вместо вызова исключения на платформах без аппаратного ускорения, например ARM32. Для неподдерживаемых типов члены <xref:System.Numerics.Vector%601> демонстрируют несогласованное поведение на разных платформах и с разными конфигурациями оборудования.
 
-Начиная с .NET 5.0, члены <xref:System.Numerics.Vector%601> всегда вызывают <xref:System.NotSupportedException> во всех конфигурациях оборудования, если `T` не является поддерживаемым типом.
+Начиная с .NET 5, члены <xref:System.Numerics.Vector%601> всегда вызывают <xref:System.NotSupportedException> во всех конфигурациях оборудования, если `T` не является поддерживаемым типом.
 
 ### <a name="unsupported-types"></a>Неподдерживаемые типы
 

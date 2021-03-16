@@ -6,18 +6,18 @@ helpviewer_keywords:
 - Manifest Generation and Editing tool
 - MageUI.exe
 ms.assetid: f9e130a6-8117-49c4-839c-c988f641dc14
-ms.openlocfilehash: 28a84814d1df96935f7533fa00f0bb50cf84def8
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 3f08c1d8aabae3e698dbf2fcd0a52511136ba899
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96279185"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102259919"
 ---
 # <a name="mageuiexe-manifest-generation-and-editing-tool-graphical-client"></a>MageUI.exe (средство создания и редактирования манифестов, графический клиент)
 
 Средство MageUI.exe поддерживает те же функциональные возможности, что и средство командной строки Mage.exe, но имеет пользовательский интерфейс Windows. С его помощью можно создавать, редактировать и подписывать манифесты развертывания и приложения. Целевой платформой новых манифестов, созданных с помощью MageUI.exe, является клиентский профиль NET Framework 4. Для предыдущих версий .NET Framework следует использовать предыдущие версии MageUI.exe. При добавлении и удалении сборок из манифеста, а также повторной подписи существующих манифестов MageUI.exe не обновляет манифест для использования клиентского профиля NET Framework 4. Дополнительные сведения см. в разделе [Mage.exe (средство создания и редактирования манифеста)](mage-exe-manifest-generation-and-editing-tool.md).
 
- Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы применить этот инструмент, воспользуйтесь командной строкой разработчика для Visual Studio (или командной строкой Visual Studio в Windows 7). Дополнительные сведения см. в разделе [Командные строки](developer-command-prompt-for-vs.md).
+ Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы запустить инструмент, используйте [оболочку командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell).
 
  Две версии программ Mage.exe и MageUI.exe включены в Visual Studio в качестве компонентов. Чтобы просмотреть сведения о версии, запустите программу MageUI.exe, откройте меню **Справка** и выберите пункт **О программе**. В данной документации представлено описание программ Mage.exe и MageUI.exe версии 4.0.x.x.
 
