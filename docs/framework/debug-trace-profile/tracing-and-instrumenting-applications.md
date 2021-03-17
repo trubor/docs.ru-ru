@@ -14,12 +14,12 @@ helpviewer_keywords:
 - performance monitoring, tracing code
 - Trace class, instrumentation for .NET applications
 ms.assetid: 773b6fc4-9013-4322-b728-5dec7a72e743
-ms.openlocfilehash: 63fdf49ba688c0b3c4ee6653e1c2960c49f526ce
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e477a474ab850239068246057e94b94c983a99c8
+ms.sourcegitcommit: d623f686701b94bef905ec5e93d8b55d031c5d6f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96257123"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103624205"
 ---
 # <a name="tracing-and-instrumenting-applications"></a>Трассировка и оборудование приложений
 
@@ -33,7 +33,7 @@ ms.locfileid: "96257123"
   
 - **Счетчики производительности** — компоненты, позволяющие отслеживать производительность приложения. Дополнительные сведения см. в статье [Performance Counters](performance-counters.md).  
   
-- **Журналы событий** — компоненты, позволяющие получать и отслеживать основные события при выполнении приложения. Дополнительные сведения см. в описании класса <xref:System.Diagnostics.EventLog>.  
+- **Журналы событий** — компоненты, которые позволяют принимать и относить основные события при выполнении приложения. Дополнительные сведения см. в описании класса <xref:System.Diagnostics.EventLog>.  
   
  Инструментирование приложения путем добавления операторов трассировки в стратегически важных местах кода особенно полезно для распределенных приложений. С помощью операторов трассировки можно инструментировать приложение не только для отображения сведений о неправильных моментах, но также отслеживать, насколько хорошо работает приложение.  
   
@@ -45,7 +45,7 @@ ms.locfileid: "96257123"
   
 ## <a name="code-tracing-and-debugging"></a>Отладка и трассировка кода  
 
- Использование методов вывода класса <xref:System.Diagnostics.Debug> при разработке приложения позволяет отображать сообщения в окне вывода, доступном в интегрированной среде разработки Visual Studio. Пример:  
+ Использование методов вывода класса <xref:System.Diagnostics.Debug> при разработке приложения позволяет отображать сообщения в окне вывода, доступном в интегрированной среде разработки Visual Studio. Например:  
   
 ```vb  
 Trace.WriteLine("Hello World!")  
@@ -144,14 +144,14 @@ System.Diagnostics.Debug.WriteLine("Hello World!");
 
  Если не отключить трассировку и отладку перед развертыванием приложения ASP.NET, то приложение может отображать сведения о себе, которые могут использоваться вредоносными программами. Дополнительные сведения см. в разделах [Практическое руководство. Условная компиляция с использованием атрибутов Trace и Debug](how-to-compile-conditionally-with-trace-and-debug.md), [Компиляция и сборка](/visualstudio/ide/compiling-and-building-in-visual-studio) и [Практическое руководство. Создание, инициализация и настройка переключателей трассировки](how-to-create-initialize-and-configure-trace-switches.md). Отладка также настраивается через службы IIS.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Diagnostics.Trace>
 - <xref:System.Diagnostics.TraceSource>
 - [Контракты для кода](code-contracts.md)
 - [Типы проектов C#, F# и Visual Basic](/visualstudio/debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types)
 - [Практическое руководство. Добавление операторов трассировки в код приложения](how-to-add-trace-statements-to-application-code.md)
-- [Практическое руководство. Условная компиляция с использованием атрибутов Trace и Debug](how-to-compile-conditionally-with-trace-and-debug.md)
+- [Практическое руководство. Условная компиляция с использованием атрибутов Trace и Debug](how-to-compile-conditionally-with-trace-and-debug.md).
 - [Практическое руководство. Создание, инициализация и настройка переключателей трассировки](how-to-create-initialize-and-configure-trace-switches.md)
 - [Практическое руководство. Создание и инициализация источников трассировки](how-to-create-and-initialize-trace-sources.md)
 - [Практическое руководство. Использование TraceSource и фильтров с прослушивателями трассировки](how-to-use-tracesource-and-filters-with-trace-listeners.md)

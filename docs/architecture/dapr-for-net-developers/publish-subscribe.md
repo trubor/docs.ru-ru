@@ -2,13 +2,13 @@
 title: Стандартный блок ДАПР Publishing & Subscribe
 description: Описание ДАПР Publishing & Subscribe, а также способы его применения
 author: edwinvw
-ms.date: 02/07/2021
-ms.openlocfilehash: 4cb249bafc8241eb54153be2605c33d0a3adb619
-ms.sourcegitcommit: 46cfed35d79d70e08c313b9c664c7e76babab39e
+ms.date: 02/17/2021
+ms.openlocfilehash: 11898430d897ec85b7e367fa0e93ca912279784b
+ms.sourcegitcommit: d623f686701b94bef905ec5e93d8b55d031c5d6f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102604688"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103623828"
 ---
 # <a name="the-dapr-publish--subscribe-building-block"></a>Стандартный блок ДАПР Publishing & Subscribe
 

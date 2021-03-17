@@ -2,13 +2,13 @@
 title: Стандартный блок привязок ДАПР
 description: Описание стандартного блока привязок, его функций, преимуществ и способов применения
 author: edwinvw
-ms.date: 02/07/2021
-ms.openlocfilehash: 757d2560016407119fe9244c100a971977852cc5
-ms.sourcegitcommit: bdbf6472de867a0a11aaa5b9384a2506c24f27d2
+ms.date: 02/17/2021
+ms.openlocfilehash: d6f8b2aa90b15e5b9cd7b5c29938660d1b2907e9
+ms.sourcegitcommit: d623f686701b94bef905ec5e93d8b55d031c5d6f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102401889"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103623958"
 ---
 # <a name="the-dapr-bindings-building-block"></a>Стандартный блок привязок ДАПР
 

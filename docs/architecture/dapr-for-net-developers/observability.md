@@ -2,14 +2,14 @@
 title: Стандартный блок наблюдаемых ДАПР
 description: Описание стандартного блока наблюдаемых элементов, его функций, преимуществ и способов его применения
 author: edwinvw
-ms.date: 02/07/2021
+ms.date: 02/17/2021
 ms.reviewer: robvet
-ms.openlocfilehash: 6add36b2030c3061ee522604b2e07f05875b98a9
-ms.sourcegitcommit: 46cfed35d79d70e08c313b9c664c7e76babab39e
+ms.openlocfilehash: 745b9c07c31cc3ee11d5df945f2ccb87d0c9c2ed
+ms.sourcegitcommit: d623f686701b94bef905ec5e93d8b55d031c5d6f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102604714"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103623984"
 ---
 # <a name="the-dapr-observability-building-block"></a>Стандартный блок наблюдаемых ДАПР
 

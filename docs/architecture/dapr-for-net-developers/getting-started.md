@@ -3,12 +3,12 @@ title: Начало работы с ДАПР
 description: Рекомендации по подготовке локальной среды разработки и созданию своих первых приложений .NET с помощью ДАПР.
 author: amolenk
 ms.date: 02/25/2021
-ms.openlocfilehash: 68b1982c7283e0717ff7e1e254e5f313cd480d7b
-ms.sourcegitcommit: bdbf6472de867a0a11aaa5b9384a2506c24f27d2
+ms.openlocfilehash: 1b6ecd2cc2bf077375262155f0866cfef2dab708
+ms.sourcegitcommit: d623f686701b94bef905ec5e93d8b55d031c5d6f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102401906"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103623815"
 ---
 # <a name="get-started-with-dapr"></a>Начало работы с ДАПР
 
@@ -255,7 +255,7 @@ spec:
     }
     ```
 
-    Вызов функции `AddDapr` регистрирует класс в `DaprClient` ASP.NET Core системе внедрения зависимостей. Класс будет использоваться `DaprClient` позже для взаимодействия с ДАПР расширения.
+    Вызов функции `AddDapr` регистрирует класс в `DaprClient` ASP.NET Core системе внедрения зависимостей. После регистрации клиента можно внедрить экземпляр `DaprClient` в код службы для взаимодействия с ДАПР расширения, стандартными блоками и компонентами.
 
 1. Добавьте в проект новый файл класса C#  с именем веасерфорекаст `DaprFrontEnd` :
 

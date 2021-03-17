@@ -2,14 +2,14 @@
 title: Стандартный блок управления состоянием ДАПР
 description: Описание стандартного блока управления состоянием, его функций, преимуществ и способов его применения.
 author: amolenk
-ms.date: 02/07/2021
+ms.date: 02/17/2021
 ms.reviewer: robvet
-ms.openlocfilehash: 05daf18ece1da377f3d5d6a91c4839f196f14f80
-ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
+ms.openlocfilehash: 67b7f839ccbe24752281fb537b0473d4984d9e37
+ms.sourcegitcommit: d623f686701b94bef905ec5e93d8b55d031c5d6f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102401835"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103623932"
 ---
 # <a name="the-dapr-state-management-building-block"></a>Стандартный блок управления состоянием ДАПР
 
@@ -19,7 +19,7 @@ ms.locfileid: "102401835"
 
 ## <a name="what-it-solves"></a>Решение
 
-Отслеживание состояния в распределенном приложении может быть непростой задачей. Пример:
+Отслеживание состояния в распределенном приложении может быть непростой задачей. Например:
 
 - Приложению могут потребоваться различные типы хранилищ данных.
 - Для доступа к данным и их обновления могут потребоваться различные уровни согласованности.
@@ -265,7 +265,7 @@ public async Task Put(WeatherForecast updatedForecast, [FromState("statestore", 
 - Memcached
 - Zookeeper
 
-### <a name="configuration"></a>Конфигурация
+### <a name="configuration"></a>Параметр Configuration
 
 При инициализации для локальной, автономной разработки ДАПР регистрирует Redis в качестве хранилища состояний по умолчанию. Ниже приведен пример конфигурации хранилища состояний по умолчанию. Запишите имя по умолчанию `statestore` :
 

@@ -2,13 +2,13 @@
 title: Введение в Справочное приложение Ешопондапр
 description: Обзор эталонного приложения Ешопондапр и его журнала.
 author: amolenk
-ms.date: 02/07/2021
-ms.openlocfilehash: d05d47399b9be539597778a4f7856e06d3b16a6c
-ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
+ms.date: 02/17/2021
+ms.openlocfilehash: 8fd0ccade45f4f6609046e00d22ffd5693c4a529
+ms.sourcegitcommit: d623f686701b94bef905ec5e93d8b55d031c5d6f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102401864"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103623893"
 ---
 # <a name="dapr-reference-application"></a>Эталонное приложение ДАПР
 
