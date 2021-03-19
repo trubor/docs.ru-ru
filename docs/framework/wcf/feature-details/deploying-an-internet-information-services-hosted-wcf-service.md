@@ -3,12 +3,12 @@ title: Развертывание службы WCF, размещенной в II
 description: Сведения о задачах, необходимых для разработки и развертывания службы WCF, размещенной в службах IIS, начиная с проверки установки компонента.
 ms.date: 03/30/2017
 ms.assetid: 04ebd329-3fbd-44c3-b3ab-1de3517e27d7
-ms.openlocfilehash: ae01533efbeddba75efd159d187a896e2d97ec1a
-ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
+ms.openlocfilehash: a51cf09309a5a5c9ac8c8a4cc4fecc0a203b7b3c
+ms.sourcegitcommit: 1dbe25ff484a02025d5c34146e517c236f7161fb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102259893"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104653482"
 ---
 # <a name="deploying-an-internet-information-services-hosted-wcf-service"></a>Развертывание службы WCF, размещенной в IIS
 
@@ -36,7 +36,7 @@ ms.locfileid: "102259893"
 
 Процесс установки платформа .NET Framework автоматически регистрирует WCF в службах IIS, если службы IIS уже имеются на компьютере. Если службы IIS установлены после платформа .NET Framework, для регистрации WCF в IIS и ASP.NET требуется дополнительный шаг. Это можно выполнить указанным ниже способом в зависимости от операционной системы.
 
-- Windows 7 и Windows Server 2003. Используйте средство [регистрации ServiceModel (ServiceModelReg.exe)](../servicemodelreg-exe.md) для регистрации WCF в службах IIS. Чтобы использовать это средство, введите `ServiceModelReg.exe /i /x` [оболочку командной строки разработчика](/visualstudio/ide/reference/command-prompt-powershell).
+- Windows 7 и Windows Server 2003. Используйте средство [регистрации ServiceModel (ServiceModelReg.exe)](../servicemodelreg-exe.md) для регистрации WCF в службах IIS. Чтобы использовать это средство, введите `ServiceModelReg.exe /i /x` в [visual Studio Командная строка разработчика или Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell).
 
 - Windows 7. Наконец, необходимо убедиться, что ASP.NET настроен для использования платформа .NET Framework версии 4 или более поздней. Это можно сделать, запустив средство ASPNET_Regiis с `–i` параметром. Дополнительные сведения см. в разделе [ASP.NET IIS Registration Tool](/previous-versions/dotnet/netframework-3.5/k6h9cz8h(v=vs.90)).
 

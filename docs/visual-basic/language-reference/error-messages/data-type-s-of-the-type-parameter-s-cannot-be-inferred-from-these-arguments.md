@@ -1,6 +1,6 @@
 ---
-description: 'Дополнительные сведения: BC36647 и BC36644: типы данных параметров типа не могут выводиться из этих аргументов'
 title: Типы данных параметров-типов не могут быть определены из этих аргументов
+description: 'Дополнительные сведения: BC36647 и BC36644: типы данных параметров типа не могут выводиться из этих аргументов'
 ms.date: 07/20/2015
 f1_keywords:
 - bc36644
@@ -11,12 +11,12 @@ helpviewer_keywords:
 - BC36644
 - BC36647
 ms.assetid: 0e0050f2-2039-4311-b260-f0ebfde84189
-ms.openlocfilehash: 8689a0b95ed11a2eee5814e0171ae8ecd8b206b2
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 26b4358dc2059aaff0a6a72d1489216c854f79a6
+ms.sourcegitcommit: 1dbe25ff484a02025d5c34146e517c236f7161fb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99796695"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104653677"
 ---
 # <a name="bc36647-and-bc36644-data-types-of-the-type-parameters-cannot-be-inferred-from-these-arguments"></a>BC36647 и BC36644: типы данных параметров типа не могут выводиться из этих аргументов
 
@@ -59,7 +59,7 @@ End Interface
 
 Попробуйте указать тип данных для параметра или параметров типа, вместо того чтобы полагаться на определение типа.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Неявное преобразование делегата](../../programming-guide/language-features/delegates/relaxed-delegate-conversion.md)
 - [Generic Procedures in Visual Basic](../../programming-guide/language-features/data-types/generic-procedures.md)
