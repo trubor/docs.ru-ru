@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: dbab7d90-d515-4dc9-8195-294d5d04bab6
 topic_type:
 - apiref
-ms.openlocfilehash: 6995c6cda168b5be5815e6f7b2b4d900ae0d4d67
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 51ed9ba19d96fd6ea05d05b07fe329aa9c01f290
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99648367"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104760760"
 ---
 # <a name="icorprofilercallbackappdomaincreationfinished-method"></a>Метод ICorProfilerCallback::AppDomainCreationFinished
 
@@ -37,13 +37,9 @@ HRESULT AppDomainCreationFinished(
   
 ## <a name="parameters"></a>Параметры
 
-- `appDomainId`
+`appDomainId` окне Идентифицирует созданный домен.
 
-  \[в] определяет домен, который был создан.
-
-- `hrStatus`
-
-  \[в] значение HRESULT, указывающее, успешно ли создана область приложения.
+`hrStatus` окне Значение HRESULT, указывающее, успешно ли выполнено создание домена приложения.
 
 ## <a name="remarks"></a>Remarks  
 
@@ -61,6 +57,6 @@ HRESULT AppDomainCreationFinished(
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)

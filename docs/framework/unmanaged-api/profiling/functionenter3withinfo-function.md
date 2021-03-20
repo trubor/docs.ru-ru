@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 277c3344-d0cb-431e-beae-eb1eeeba8eea
 topic_type:
 - apiref
-ms.openlocfilehash: 573326c05275192a7b324377237ba057fb54bffb
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 9bcebba724f7ebb405bb3d404f028e3ebca3e0d7
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99648744"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104759316"
 ---
 # <a name="functionenter3withinfo-function"></a>Функция FunctionEnter3WithInfo
 
@@ -36,13 +36,9 @@ void __stdcall FunctionEnter3WithInfo(
   
 ## <a name="parameters"></a>Параметры
 
-- `functionIDOrClientID`
+`functionIDOrClientID` окне Идентификатор функции, которой передается элемент управления.
 
-  \[in] идентификатор функции, для которой передается элемент управления.
-
-- `eltInfo`
-
-  \[in] непрозрачный маркер, представляющий сведения об заданном кадре стека. Этот маркер действителен только во время обратного вызова, к которому он передается.
+`eltInfo` окне Непрозрачный маркер, представляющий сведения об заданном кадре стека. Этот маркер действителен только во время обратного вызова, к которому он передается.
 
 ## <a name="remarks"></a>Remarks  
 
@@ -70,7 +66,7 @@ void __stdcall FunctionEnter3WithInfo(
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [GetFunctionEnter3Info](icorprofilerinfo3-getfunctionenter3info-method.md)
 - [FunctionEnter3](functionenter3-function.md)

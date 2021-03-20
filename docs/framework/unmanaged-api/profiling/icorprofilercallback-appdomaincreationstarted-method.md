@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b2a8240b-07fe-4859-bb2b-7d3adbfa0a9f
 topic_type:
 - apiref
-ms.openlocfilehash: 00ebbe35f6f4446caeee5ebcd56b853d6e6dc80c
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: b783bb652bed3b600c1e4524810620bab68f5f7a
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99648263"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104760708"
 ---
 # <a name="icorprofilercallbackappdomaincreationstarted-method"></a>Метод ICorProfilerCallback::AppDomainCreationStarted
 
@@ -36,9 +36,7 @@ HRESULT AppDomainCreationStarted(
   
 ## <a name="parameters"></a>Параметры
 
-- `appDomainId`
-
-  \[в] определяет создаваемый домен.
+`appDomainId` окне Определяет создаваемый домен.
   
 ## <a name="remarks"></a>Remarks  
 
@@ -54,6 +52,6 @@ HRESULT AppDomainCreationStarted(
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)

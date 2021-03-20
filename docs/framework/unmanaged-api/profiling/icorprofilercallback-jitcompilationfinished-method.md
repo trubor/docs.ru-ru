@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 8dcd7537-d0c6-498c-8a56-2c060310ef65
 topic_type:
 - apiref
-ms.openlocfilehash: f0308bfb5f81d7305ab36acbb9144142232ef8c4
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 32a47860ae2e973d32ef12b2bd9002bb1de45ee9
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99705789"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104760331"
 ---
 # <a name="icorprofilercallbackjitcompilationfinished-method"></a>Метод ICorProfilerCallback::JITCompilationFinished
 
@@ -38,19 +38,13 @@ HRESULT JITCompilationFinished(
   
 ## <a name="parameters"></a>Параметры
 
-- `functionId`
+`functionId` окне Идентификатор скомпилированной функции.
 
-  \[in] идентификатор скомпилированной функции.
+`hrStatus` окне Значение, указывающее, успешно ли выполнена компиляция.
 
-- `hrStatus`
+`fIsSafeToBlock` окне Значение, указывающее профилировщику, будет ли блокировка влиять на работу среды выполнения. Значение равно `true` , если блокировка может привести к тому, что среда выполнения будет ожидать возврата вызывающим потоком из этого обратного вызова; в противном случае — `false` .
 
-  \[в] значение, указывающее, успешно ли выполнена компиляция.
-
-- `fIsSafeToBlock`
-
-  \[в] значение, указывающее профилировщику, будет ли блокировка влиять на работу среды выполнения. Значение равно `true` , если блокировка может привести к тому, что среда выполнения будет ожидать возврата вызывающим потоком из этого обратного вызова; в противном случае — `false` .
-
-  Хотя значение `true` не будет нанести вред среде выполнения, оно может наклонять результаты профилирования.
+Хотя значение `true` не будет нанести вред среде выполнения, оно может наклонять результаты профилирования.
 
 ## <a name="requirements"></a>Требования  
 
@@ -62,7 +56,7 @@ HRESULT JITCompilationFinished(
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Метод JITCompilationStarted](icorprofilercallback-jitcompilationstarted-method.md)

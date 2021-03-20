@@ -12,12 +12,12 @@ api_type:
 - COM
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: 96c502dba5b2807f9cd9c3c5cceb6b3b9985a406
-ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
+ms.openlocfilehash: 7dca887f6d0ff5f9360b0edaa1568bc4b1bb42ac
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102106960"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104759772"
 ---
 # <a name="icorprofilerinfo10getlohobjectsizethreshold-method"></a>Метод ICorProfilerInfo10:: Жетлохобжектсизесрешолд
 
@@ -31,11 +31,9 @@ HRESULT GetLOHObjectSizeThreshold( [out] DWORD *pThreshold );
 
 ## <a name="parameters"></a>Параметры
 
-- `pThreshold`
+`pThreshold` заполняет Пороговое значение кучи больших объектов в байтах.
 
-  \[out] пороговое значение кучи больших объектов в байтах.
-
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Объекты, превышающие пороговое значение кучи больших объектов, будут выделены в куче больших объектов. Начиная с .NET Core 3,0, порог кучи больших объектов можно настроить, он `pThreshold` будет содержать пороговое значение активной кучи больших объектов в байтах.
 

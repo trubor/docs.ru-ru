@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 5cba642c-0d80-48ee-889d-198c5044d821
 topic_type:
 - apiref
-ms.openlocfilehash: 1faaf8fbc1e0fee9ce76850cfedcd4e8cf934371
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 3f384c1a02da1747b28701d2eba994b56a85c18f
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99705776"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104759963"
 ---
 # <a name="icorprofilercallbackjitcachedfunctionsearchstarted-method"></a>Метод ICorProfilerCallback::JITCachedFunctionSearchStarted
 
@@ -37,13 +37,9 @@ HRESULT JITCachedFunctionSearchStarted(
   
 ## <a name="parameters"></a>Параметры
 
-- `functionId`
+`functionId` окне Идентификатор функции, для которой выполняется поиск.
 
-  \[in] идентификатор функции, для которой выполняется поиск.
-
-- `pbUseCachedFunction`
-
-  \[out], `true` если подсистема выполнения должна использовать кэшированную версию функции (если она доступна); в противном случае — `false` . Если значение равно `false` , подсистема выполнения JIT-компилирует функцию вместо использования версии, которая не является JIT-скомпилированной.
+`pbUseCachedFunction` [out] `true` значение, если подсистема выполнения должна использовать кэшированную версию функции (если она доступна); в противном случае — значение `false` . Если значение равно `false` , подсистема выполнения JIT-компилирует функцию вместо использования версии, которая не является JIT-скомпилированной.
 
 ## <a name="remarks"></a>Remarks  
 
@@ -65,6 +61,6 @@ HRESULT JITCachedFunctionSearchStarted(
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 249f9892-b5a9-41e1-b329-28a925904df6
 topic_type:
 - apiref
-ms.openlocfilehash: 03547537d43a76f26d6946666589f38ca4e02ec4
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: e06c3bde7ad0700de3d7f08b33159032b31eae8a
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99687432"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104760071"
 ---
 # <a name="functiontailcall2-function"></a>Функция FunctionTailcall2
 
@@ -38,19 +38,13 @@ void __stdcall FunctionTailcall2 (
   
 ## <a name="parameters"></a>Параметры
 
-- `funcId`
+`funcId` окне Идентификатор выполняемой в данный момент функции, которая собирается выполнить вызов с префиксом tail.
 
-  \[in] идентификатор выполняемой в данный момент функции, которая собирается выполнить вызов с префиксом tail.
-
-- `clientData`
-
-  \[in] повторно сопоставленный идентификатор функции, который ранее был указан с помощью [FunctionIDMapper](functionidmapper-function.md), для выполняемой в данный момент функции, которая собирается выполнить вызов с префиксом tail.
+`clientData` окне Идентификатор повторно сопоставленной функции, который ранее был указан с помощью [FunctionIDMapper](functionidmapper-function.md), для выполняемой в данный момент функции, которая собирается выполнить вызов с префиксом tail.
   
-- `func`
+`func` окне `COR_PRF_FRAME_INFO` Значение, указывающее на сведения о кадре стека.
 
-  \[в] `COR_PRF_FRAME_INFO` значение, указывающее на сведения о кадре стека.
-
-  Профилировщик должен рассматривать это как непрозрачный маркер, который можно передать обратно в подсистему выполнения метода [ICorProfilerInfo2:: GetFunctionInfo2](icorprofilerinfo2-getfunctioninfo2-method.md) .
+Профилировщик должен рассматривать это как непрозрачный маркер, который можно передать обратно в подсистему выполнения метода [ICorProfilerInfo2:: GetFunctionInfo2](icorprofilerinfo2-getfunctioninfo2-method.md) .
 
 ## <a name="remarks"></a>Remarks  
 
@@ -80,7 +74,7 @@ void __stdcall FunctionTailcall2 (
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Функция FunctionEnter2](functionenter2-function.md)
 - [Функция FunctionLeave2](functionleave2-function.md)

@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 41462329-a648-46f0-ae6d-728b94c31aa9
 topic_type:
 - apiref
-ms.openlocfilehash: 3a813936a7d1f3a5041e192c85d02b37976e3388
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: f9ea2b44e7a783f9b21f4aa385585dfebc48b1d4
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99657636"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104760526"
 ---
 # <a name="icorprofilercallbackexceptioncatcherenter-method"></a>Метод ICorProfilerCallback::ExceptionCatcherEnter
 
@@ -37,13 +37,9 @@ HRESULT ExceptionCatcherEnter(
   
 ## <a name="parameters"></a>Параметры
 
-- `functionId`
-
-  \[in] идентификатор функции, содержащей `catch` блок.
+`functionId` окне Идентификатор функции, содержащей `catch` блок.
   
-- `objectId`
-
-  \[в] идентификатор обрабатываемого исключения.
+`objectId` окне Идентификатор обрабатываемого исключения.
 
 ## <a name="remarks"></a>Remarks  
 
@@ -63,7 +59,7 @@ HRESULT ExceptionCatcherEnter(
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Метод ExceptionCatcherLeave](icorprofilercallback-exceptioncatcherleave-method.md)

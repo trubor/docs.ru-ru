@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 466ad51b-8f0c-41d9-81f7-371aac3374cb
 topic_type:
 - apiref
-ms.openlocfilehash: 1fd6680ffaa7b28e679dc3eaeb9840981ead5c45
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 8d1b2de62e75665de7116b28a4aa68246dda7bbd
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99648575"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104759538"
 ---
 # <a name="functionidmapper2-function"></a>Функция FunctionIDMapper2
 
@@ -38,17 +38,11 @@ UINT_PTR __stdcall FunctionIDMapper2 (
   
 ## <a name="parameters"></a>Параметры
 
-- `funcId`
+`funcId` окне Идентификатор функции для повторного сопоставления.
 
-  \[in] идентификатор функции для повторного сопоставления.
+`clientData` окне Указатель на данные, используемые для однозначного определения между средами выполнения.
 
-- `clientData`
-
-  \[in] указатель на данные, которые используются для однозначного определения между средами выполнения.
-
-- `pbHookFunction`
-
-  \[out] указатель на значение, которое задает профилировщик `true` , если он хочет получить `FunctionEnter3` `FunctionLeave3` обратные вызовы,, и, `FunctionTailcall3` или `FunctionEnter3WithInfo` , `FunctionLeave3WithInfo` и, `FunctionTailcall3WithInfo` в противном случае, присваивает этому значению значение `false` .
+`pbHookFunction` заполняет Указатель на значение, которое задает профилировщик, `true` если он хочет получать `FunctionEnter3` `FunctionLeave3` обратные вызовы,, и, `FunctionTailcall3` или `FunctionEnter3WithInfo` , `FunctionLeave3WithInfo` и, `FunctionTailcall3WithInfo` в противном случае, присваивает этому свойству значение `false` .
 
 ## <a name="return-value"></a>Возвращаемое значение  
 
@@ -68,7 +62,7 @@ UINT_PTR __stdcall FunctionIDMapper2 (
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [ICorProfilerInfo::SetFunctionIDMapper](icorprofilerinfo-setfunctionidmapper-method.md)
 - [ICorProfilerInfo3::SetFunctionIDMapper2](icorprofilerinfo3-setfunctionidmapper2-method.md)

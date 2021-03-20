@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f1a23f3b-ac21-4905-8abf-8ea59f15af53
 topic_type:
 - apiref
-ms.openlocfilehash: 77ebca8fbc52ed0c46a4f76fb5cdf6cb2923edaf
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: aed3d6c4c3c45b546fa8af1db918a6f68eda9bde
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99706140"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104760409"
 ---
 # <a name="icorprofilercallbackexceptionthrown-method"></a>Метод ICorProfilerCallback::ExceptionThrown
 
@@ -39,9 +39,7 @@ HRESULT ExceptionThrown(
   
 ## <a name="parameters"></a>Параметры
 
-- `thrownObjectId`
-
-  \[in] идентификатор объекта, который вызвал исключение.
+`thrownObjectId` окне Идентификатор объекта, который вызвал исключение.
   
 ## <a name="remarks"></a>Remarks  
 
@@ -59,6 +57,6 @@ HRESULT ExceptionThrown(
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)

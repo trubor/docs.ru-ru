@@ -3,12 +3,12 @@ description: 'Дополнительные сведения о методе: ICo
 title: Метод ICorProfilerInfo6::EnumNgenModuleMethodsInliningThisMethod
 ms.date: 03/30/2017
 ms.assetid: b933dfe6-7833-40cb-aad8-40842dc3034f
-ms.openlocfilehash: bd43dcecabe9a75f7ce3a94996727b192574e321
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 236aaa820162dcc1d5c6c8ade1e8da78f5f4acb0
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99737172"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104759134"
 ---
 # <a name="icorprofilerinfo6enumngenmodulemethodsinliningthismethod-method"></a>Метод ICorProfilerInfo6::EnumNgenModuleMethodsInliningThisMethod
 
@@ -28,20 +28,15 @@ HRESULT EnumNgenModuleMethodsInliningThisMethod(
 
 ## <a name="parameters"></a>Параметры
 
-`inlinersModuleId`\
-окне Идентификатор модуля NGen.
+`inlinersModuleId` окне Идентификатор модуля NGen.
 
-`inlineeModuleId`\
-окне Идентификатор модуля, который определяет `inlineeMethodId` . Дополнительные сведения см. в разделе "Примечания".
+`inlineeModuleId` окне Идентификатор модуля, который определяет `inlineeMethodId` . Дополнительные сведения см. в разделе "Примечания".
 
-`inlineeMethodId`\
-окне Идентификатор встроенного метода. Дополнительные сведения см. в разделе "Примечания".
+`inlineeMethodId` окне Идентификатор встроенного метода. Дополнительные сведения см. в разделе "Примечания".
 
-`incompleteData`\
-заполняет Флаг, указывающий, `ppEnum` содержит ли все методы выравнивание данного метода.  Дополнительные сведения см. в разделе "Примечания".
+`incompleteData` заполняет Флаг, указывающий, `ppEnum` содержит ли все методы выравнивание данного метода.  Дополнительные сведения см. в разделе "Примечания".
 
-`ppEnum`\
-заполняет Указатель на адрес перечислителя
+`ppEnum` заполняет Указатель на адрес перечислителя
 
 ## <a name="remarks"></a>Remarks
 
@@ -82,6 +77,6 @@ Simple.Add(int a, int b)
 
 **Платформа .NET Framework версии:**[!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerInfo6](icorprofilerinfo6-interface.md)

@@ -9,12 +9,12 @@ api_location:
 - corprof.idl
 api_type:
 - COM
-ms.openlocfilehash: 243660d3159e3c8c1d052c08e9c7499e7065d301
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: bc7f95b5101658c93eeb9fcef51e9c0f1bd2f2bd
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99753332"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104760201"
 ---
 # <a name="icorprofilercallback9dynamicmethodunloaded-method"></a>ICorProfilerCallback9: метод:D Инамикмесодунлоадед
 
@@ -32,8 +32,7 @@ HRESULT DynamicMethodUnloaded(
   
 ## <a name="parameters"></a>Параметры  
 
-[in] `functionId`  
-Идентификатор функции в памяти, которая была собрана и выгружена сборщиком мусора.
+`functionId` окне Идентификатор функции в памяти, которая была собрана и выгружена сборщиком мусора.
 
 ## <a name="requirements"></a>Требования  
 
@@ -45,7 +44,7 @@ HRESULT DynamicMethodUnloaded(
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [ICorProfilerCallback8. Динамикмесоджиткомпилатионстартед, метод](icorprofilercallback8-dynamicmethodjitcompilationstarted-method.md)
 - [ICorProfilerCallback8. Динамикмесоджиткомпилатионфинишед, метод](icorprofilercallback8-dynamicmethodjitcompilationfinished-method.md)

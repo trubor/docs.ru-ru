@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d23a3408-b525-4aec-a186-2ac7ca65d7a4
 topic_type:
 - apiref
-ms.openlocfilehash: 16545142a512ca1c5f4167f61b81ea949e3d14e4
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: f43997dca1d34b9fbaae34da4dabe2c6d926052c
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99648120"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104760617"
 ---
 # <a name="icorprofilercallbackappdomainshutdownstarted-method"></a>Метод ICorProfilerCallback::AppDomainShutdownStarted
 
@@ -36,9 +36,7 @@ HRESULT AppDomainShutdownStarted(
   
 ## <a name="parameters"></a>Параметры
 
-- `appDomainId`
-
-  \[в] определяет домен, в котором хранятся сборки приложения.
+`appDomainId` окне Определяет домен, в котором хранятся сборки приложения.
 
 ## <a name="remarks"></a>Remarks  
 
@@ -54,6 +52,6 @@ HRESULT AppDomainShutdownStarted(
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)

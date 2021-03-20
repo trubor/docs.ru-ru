@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 9f728de8-45c2-45a5-ac4a-45660bd36ecf
 topic_type:
 - apiref
-ms.openlocfilehash: 2474f8041b0858cbcb81d3f4042f1748cb99df3e
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 4950f1d806efb304a860fa6fce18f8655bdc0976
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99706478"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104759261"
 ---
 # <a name="icorprofilercallbackclassloadstarted-method"></a>Метод ICorProfilerCallback::ClassLoadStarted
 
@@ -36,9 +36,7 @@ HRESULT ClassLoadStarted(
   
 ## <a name="parameters"></a>Параметры
 
-- `classId`
-
-  \[в] определяет класс, который загружается.
+`classId` окне Определяет загружаемый класс.
 
 ## <a name="remarks"></a>Remarks  
 
@@ -54,6 +52,6 @@ HRESULT ClassLoadStarted(
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)

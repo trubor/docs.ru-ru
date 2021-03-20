@@ -12,12 +12,12 @@ api_type:
 - COM
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: 1ca686cef4a45ebb9e05190fa790ed5300c0d816
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 062aebf6d5bed208ea71b215bd9f857b82483673
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99646495"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104759054"
 ---
 # <a name="icorprofilerinfo9getnativecodestartaddresses-method"></a>Метод ICorProfilerInfo9:: Жетнативекодестартаддрессес
 
@@ -35,25 +35,15 @@ HRESULT GetNativeCodeStartAddresses( [in]  FunctionID functionID,
 
 ## <a name="parameters"></a>Параметры
 
-- `functionId`
+`functionId` окне Идентификатор функции, для которой должны возвращаться начальные адреса машинного кода.
 
-  \[in] идентификатор функции, для которой должны возвращаться начальные адреса машинного кода.
+`reJitId` окне Удостоверение JIT-повторно скомпилированной функции.
 
-- `reJitId`
+`cCodeStartAddresses` окне Максимальный размер `codeStartAddresses` массива.
 
-  \[in] Идентификация JIT-повторно скомпилированной функции.
+`pcCodeStartAddresses` заполняет Количество доступных адресов.
 
-- `cCodeStartAddresses`
-
-  \[in] максимальный размер `codeStartAddresses` массива.
-
-- `pcCodeStartAddresses`
-
-  \[out] количество доступных адресов.
-
-- `codeStartAddresses`
-
-  \[out] массив `UINT_PTR` , каждый из которых является начальным адресом для собственного тела для указанной функции.
+`codeStartAddresses` заполняет Массив `UINT_PTR` , каждый из которых является начальным адресом для заданной функции в машинном тексте.
 
 ## <a name="remarks"></a>Remarks
 
@@ -67,8 +57,8 @@ HRESULT GetNativeCodeStartAddresses( [in]  FunctionID functionID,
 
 **Библиотека:** CorGuids.lib
 
-**Версии .NET:**[!INCLUDE[net_core_22](../../../../includes/net-core-22-md.md)]
+**Версии .NET:**[!INCLUDE[net_core_21](../../../../includes/net-core-21-md.md)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerInfo9](icorprofilerinfo9-interface.md)

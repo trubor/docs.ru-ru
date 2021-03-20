@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 66347e03-9a97-41e8-8f9d-89b80803f7b5
 topic_type:
 - apiref
-ms.openlocfilehash: 8da3efde7d925fdb02232ca98662f8d6a6fd0adf
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: aeb6e7dcbf52fc57ebb7b6dca22331c27cadc186
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99687315"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104760032"
 ---
 # <a name="functiontailcall-function"></a>Функция FunctionTailcall
 
@@ -39,9 +39,7 @@ void __stdcall FunctionTailcall (
   
 ## <a name="parameters"></a>Параметры
 
-- `funcID`
-
-  \[in] идентификатор выполняемой в данный момент функции, которая собирается выполнить вызов с префиксом tail.
+`funcID` окне Идентификатор выполняемой в данный момент функции, которая собирается выполнить вызов с префиксом tail.
 
 ## <a name="remarks"></a>Remarks  
 
@@ -69,7 +67,7 @@ void __stdcall FunctionTailcall (
   
  **Платформа .NET Framework версии:** 1,1, 1,0  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Функция FunctionEnter2](functionenter2-function.md)
 - [Функция FunctionLeave2](functionleave2-function.md)

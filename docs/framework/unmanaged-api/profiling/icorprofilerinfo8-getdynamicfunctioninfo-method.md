@@ -12,12 +12,12 @@ api_type:
 - COM
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: 48c8dbe20ccafb3fb23e9e289f728d5e3370613a
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: b38bd7a4f440edba0a7156176f223ba38c9807cf
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99646586"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104759121"
 ---
 # <a name="icorprofilerinfo8getdynamicfunctioninfo-method"></a>Метод ICorProfilerInfo8:: Жетдинамикфунктионинфо
 
@@ -37,33 +37,19 @@ HRESULT GetDynamicFunctionInfo( [in]  FunctionID              functionId,
 
 ## <a name="parameters"></a>Параметры
 
-- `functionId`
+`functionId` окне Идентификатор функции, для которой требуется получить сведения.
 
-  \[in] идентификатор функции, для которой требуется получить сведения.
+`moduleId` окне Указатель на модуль, в котором определен родительский класс функции.
 
-- `moduleId`
+`ppvSig` заполняет Указатель на сигнатуру для функции.
 
-  \[in] указатель на модуль, в котором определен родительский класс функции.
+`pbSig` заполняет Указатель на число байтов для сигнатуры функции.
 
-- `ppvSig`
+`cchName` окне Максимальный размер `wszName` массива.
 
-  \[out] указатель на сигнатуру для функции.
+`pcchName` заполняет Число символов в `wszName` массиве.
 
-- `pbSig`
-
-  \[out] указатель на число байтов для сигнатуры функции.
-
-- `cchName`
-
-  \[in] максимальный размер `wszName` массива.
-
-- `pcchName`
-
-  \[out] число символов в `wszName` массиве.
-
-- `wszName`
-
-  \[out] массив, `WCHAR` представляющий собой имя функции, если она существует.
+`wszName` заполняет Массив, содержащий `WCHAR` имя функции, если таковое существует.
 
 ## <a name="remarks"></a>Remarks
 
@@ -81,6 +67,6 @@ HRESULT GetDynamicFunctionInfo( [in]  FunctionID              functionId,
 
 **Платформа .NET Framework версии:**[!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerInfo8](icorprofilerinfo8-interface.md)

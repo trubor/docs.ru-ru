@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 52794819-0a59-4bb1-a265-0f158cd5cd65
 topic_type:
 - apiref
-ms.openlocfilehash: e08a4f7e03bfd18d9c6a2fdf56bfab8c68f9c379
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 8cd45f73741bd26cb54fa85d7d6a186ebaeab5d8
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99648258"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104760695"
 ---
 # <a name="icorprofilercallbackappdomainshutdownfinished-method"></a>Метод ICorProfilerCallback::AppDomainShutdownFinished
 
@@ -37,13 +37,9 @@ HRESULT AppDomainShutdownFinished(
   
 ## <a name="parameters"></a>Параметры
 
-- `appDomainId`
+`appDomainId` окне Определяет домен, в котором хранятся сборки приложения.
 
-  \[в] определяет домен, в котором хранятся сборки приложения.
-
-- `hrStatus`
-
-  \[in] значение HRESULT, указывающее, успешно ли выгружен домен приложения.
+`hrStatus` окне Значение HRESULT, указывающее, успешно ли выгружен домен приложения.
 
 ## <a name="remarks"></a>Remarks  
 
@@ -61,6 +57,6 @@ HRESULT AppDomainShutdownFinished(
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)

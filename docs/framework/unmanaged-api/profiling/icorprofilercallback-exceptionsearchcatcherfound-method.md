@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 190f424d-5e37-4163-a191-0895686e9476
 topic_type:
 - apiref
-ms.openlocfilehash: b222e629cbfce2fde27c2d266b3a343466a1419c
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 080e9be61e4f10cbfb60696a5089aca0c3f2843f
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99706322"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104759993"
 ---
 # <a name="icorprofilercallbackexceptionsearchcatcherfound-method"></a>Метод ICorProfilerCallback::ExceptionSearchCatcherFound
 
@@ -36,9 +36,7 @@ RESULT ExceptionSearchCatcherFound(
   
 ## <a name="parameters"></a>Параметры
 
-- `functionId`
-
-  \[in] идентификатор функции, которая содержит обработчик исключений.
+`functionId` окне Идентификатор функции, которая содержит обработчик исключений.
 
 ## <a name="requirements"></a>Требования  
 
@@ -50,6 +48,6 @@ RESULT ExceptionSearchCatcherFound(
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)

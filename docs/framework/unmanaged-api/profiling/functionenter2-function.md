@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: ce7a21f9-0ca3-4b92-bc4b-bb803cae3f51
 topic_type:
 - apiref
-ms.openlocfilehash: 8b8061b213d02efd845e214c1177db4e5351869b
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: f68aeffdd63222cd78d7dc361f09e0b4c3e5af51
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99788986"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104759395"
 ---
 # <a name="functionenter2-function"></a>Функция FunctionEnter2
 
@@ -39,25 +39,17 @@ void __stdcall FunctionEnter2 (
   
 ## <a name="parameters"></a>Параметры
 
-- `funcId`
+`funcId` окне Идентификатор функции, которой передается элемент управления.
 
-  \[in] идентификатор функции, для которой передается элемент управления.
-
-- `clientData`
-
-  \[in] идентификатор повторно сопоставленной функции, который профилировщик ранее указал с помощью функции [FunctionIDMapper](functionidmapper-function.md) .
+`clientData` окне Идентификатор повторно сопоставленной функции, заданный ранее профилировщиком с помощью функции [FunctionIDMapper](functionidmapper-function.md) .
   
-- `func`
-
-  \[в] `COR_PRF_FRAME_INFO` значение, указывающее на сведения о кадре стека.
+`func` окне `COR_PRF_FRAME_INFO` Значение, указывающее на сведения о кадре стека.
   
-  Профилировщик должен рассматривать это как непрозрачный маркер, который можно передать обратно в подсистему выполнения метода [ICorProfilerInfo2:: GetFunctionInfo2](icorprofilerinfo2-getfunctioninfo2-method.md) .  
+Профилировщик должен рассматривать это как непрозрачный маркер, который можно передать обратно в подсистему выполнения метода [ICorProfilerInfo2:: GetFunctionInfo2](icorprofilerinfo2-getfunctioninfo2-method.md) .  
   
-- `argumentInfo`
+`argumentInfo` окне Указатель на структуру [COR_PRF_FUNCTION_ARGUMENT_INFO](cor-prf-function-argument-info-structure.md) , указывающую расположения в памяти аргументов функции.
 
-  \[in] указатель на структуру [COR_PRF_FUNCTION_ARGUMENT_INFO](cor-prf-function-argument-info-structure.md) , указывающую расположения в памяти аргументов функции.
-
-  Чтобы получить доступ к сведениям об аргументах, `COR_PRF_ENABLE_FUNCTION_ARGS` необходимо установить флаг. Профилировщик может использовать метод [ICorProfilerInfo:: SetEventMask](icorprofilerinfo-seteventmask-method.md) для установки флагов событий.
+Чтобы получить доступ к сведениям об аргументах, `COR_PRF_ENABLE_FUNCTION_ARGS` необходимо установить флаг. Профилировщик может использовать метод [ICorProfilerInfo:: SetEventMask](icorprofilerinfo-seteventmask-method.md) для установки флагов событий.
 
 ## <a name="remarks"></a>Remarks  
 
@@ -85,7 +77,7 @@ void __stdcall FunctionEnter2 (
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Функция FunctionLeave2](functionleave2-function.md)
 - [Функция FunctionTailcall2](functiontailcall2-function.md)

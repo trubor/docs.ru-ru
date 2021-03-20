@@ -12,12 +12,12 @@ api_type:
 - COM
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: 3b47204630056e2797b5cf126bd7c291830cea05
-ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
+ms.openlocfilehash: c4d31c96fd7470a153437ffb0125e81ca8ea77bd
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102103456"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104759759"
 ---
 # <a name="icorprofilerinfo10isfrozenobject-method"></a>Метод ICorProfilerInfo10:: Исфрозенобжект
 
@@ -32,13 +32,9 @@ HRESULT IsFrozenObject( [in]  ObjectID objectId,
 
 ## <a name="parameters"></a>Параметры
 
-- `objectId`
+`objectId` окне Объект для проверки.
 
-  \[в] объект для проверки.
-
-- `pbFrozen`
-
-  \[out] значение `BOOL` , указывающее, находится ли объект в сегменте, доступном только для чтения.
+`pbFrozen` заполняет Значение типа `BOOL` , указывающее, находится ли объект в сегменте, доступном только для чтения.
 
 ## <a name="requirements"></a>Требования
 

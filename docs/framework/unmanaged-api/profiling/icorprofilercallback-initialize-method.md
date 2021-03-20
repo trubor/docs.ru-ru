@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: dc5fab2a-4b45-4b12-8727-b89c9915f23e
 topic_type:
 - apiref
-ms.openlocfilehash: b3ff579dee384b331450aa54aace39890febfe30
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: c7138a1a39a1d32c751c205a86c00e6070a236b3
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99705945"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104760422"
 ---
 # <a name="icorprofilercallbackinitialize-method"></a>Метод ICorProfilerCallback::Initialize
 
@@ -36,9 +36,7 @@ HRESULT Initialize(
   
 ## <a name="parameters"></a>Параметры
 
-- `pICorProfilerInfoUnk`
-
-  \[в] указатель на интерфейс [IUnknown](/cpp/atl/iunknown) , который профилировщик должен запрашивать для указателя интерфейса [ICorProfilerInfo](icorprofilerinfo-interface.md) .  
+`pICorProfilerInfoUnk` окне Указатель на интерфейс [IUnknown](/cpp/atl/iunknown) , который профилировщик должен запрашивать для указателя интерфейса [ICorProfilerInfo](icorprofilerinfo-interface.md) .  
 
 ## <a name="remarks"></a>Remarks  
 
@@ -54,7 +52,7 @@ HRESULT Initialize(
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Метод Shutdown](icorprofilercallback-shutdown-method.md)

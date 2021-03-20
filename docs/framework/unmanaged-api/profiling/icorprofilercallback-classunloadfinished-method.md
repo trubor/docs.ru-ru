@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 55674b68-678a-4747-ae06-4e91519c7305
 topic_type:
 - apiref
-ms.openlocfilehash: ae1ef56a1eb3b9b45c2165ecceb0af826cc7a2ea
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 7d4fd1c85d496b7adea0096b03520a14c2fab11c
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99657740"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104759262"
 ---
 # <a name="icorprofilercallbackclassunloadfinished-method"></a>Метод ICorProfilerCallback::ClassUnloadFinished
 
@@ -37,13 +37,9 @@ HRESULT ClassUnloadFinished(
   
 ## <a name="parameters"></a>Параметры
 
-- `classId`
+`classId` окне Идентифицирует выгруженный класс.
 
-  \[в] определяет класс, который был выгружен.
-
-- `hrStatus`
-
-  \[in] значение HRESULT, указывающее, успешно ли выгружен класс.
+`hrStatus` окне Значение HRESULT, указывающее, успешно ли выгружен класс.
   
 ## <a name="remarks"></a>Remarks  
 
@@ -59,7 +55,7 @@ HRESULT ClassUnloadFinished(
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Метод ClassUnloadStarted](icorprofilercallback-classunloadstarted-method.md)

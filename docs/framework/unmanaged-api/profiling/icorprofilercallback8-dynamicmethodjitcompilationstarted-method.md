@@ -9,12 +9,12 @@ api_location:
 - corprof.idl
 api_type:
 - COM
-ms.openlocfilehash: 186b41564e0aabb069b06356b8eccbe90296ec4b
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: c03251ab3120fd93cbb8e6c2f1bb62a4527a92bb
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99781705"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104759928"
 ---
 # <a name="icorprofilercallback8dynamicmethodjitcompilationstarted-method"></a>ICorProfilerCallback8: метод:D Инамикмесоджиткомпилатионстартед
 
@@ -35,15 +35,14 @@ HRESULT DynamicMethodJITCompilationStarted(
   
 ## <a name="parameters"></a>Параметры  
 
-[in] `functionId`  
-Идентификатор функции в памяти, для которой запускается JIT-компиляция.
+`functionId`  
+окне Идентификатор функции в памяти, для которой запускается JIT-компиляция.
 
-[входные] `fIsSafeToBlock` 
- `true` чтобы указать, что блокировка может привести к тому, что среда выполнения будет ожидать возврата вызывающим потоком из этого обратного вызова. `false`чтобы указать, что блокировка не повлияет на работу среды выполнения.  
+`fIsSafeToBlock` [входные] `true` чтобы указать, что блокировка может привести к тому, что среда выполнения будет ожидать возврата вызывающим потоком из этого обратного вызова. `false` чтобы указать, что блокировка не повлияет на работу среды выполнения.  
 
-[входные] `pILHeader` Указатель на первый байт заголовка IL метода.
+`pILHeader` окне Указатель на первый байт заголовка IL метода.
 
-[входные] `cbILHeader` Число байтов в заголовке IL.
+`cbILHeader` окне Число байтов в заголовке IL.
 
 ## <a name="remarks"></a>Remarks  
 
@@ -64,7 +63,7 @@ HRESULT DynamicMethodJITCompilationStarted(
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Метод DynamicMethodJITCompilationFinished](icorprofilercallback8-dynamicmethodjitcompilationfinished-method.md)
 - [Интерфейс ICorProfilerCallback8](icorprofilercallback8-interface.md)

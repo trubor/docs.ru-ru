@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 532c7a02-a9de-4cea-bb2b-7f470da594de
 topic_type:
 - apiref
-ms.openlocfilehash: 40114f6e1d80719eceaf2dbc398b74c1e790c76a
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: ded43da029fe0b4c2a645823e62ca66b480f095c
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99788674"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104760279"
 ---
 # <a name="icorprofilercallback5conditionalweaktableelementreferences-method"></a>Метод ICorProfilerCallback5::ConditionalWeakTableElementReferences
 
@@ -40,17 +40,13 @@ HRESULT ConditionalWeakTableElementReferences(
 
 ## <a name="parameters"></a>Параметры
 
-`cRootRefs`\
-[в] Количество элементов в массивах `keyRefIds`, `valueRefIds` и `rootIds`.
+`cRootRefs` окне Число элементов в `keyRefIds` `valueRefIds` `rootIds` массивах, и.
 
-`keyRefIds`\
-[в] Массив идентификаторов объектов, каждый из которых содержит `ObjectID` для основного элемента в зависимости пары дескриптора.
+`keyRefIds` окне Массив идентификаторов объектов, каждый из которых содержит `ObjectID` для первичного элемента в паре зависимых маркеров.
 
-`valueRefIds`\
-[в] Массив идентификаторов объектов, каждый из которых содержит `ObjectID` для дополнительного элемента в зависимости пары дескриптора. ( `keyRefIds[i]` продолжает `valueRefIds[i]` существовать.)
+`valueRefIds` окне Массив идентификаторов объектов, каждый из которых содержит `ObjectID` для вторичного элемента в паре зависимых маркеров. ( `keyRefIds[i]` продолжает `valueRefIds[i]` существовать.)
 
-`rootIds`\
-[в] Массив значений `GCHandleID`, указывающий на целое число, который содержит дополнительные сведения о корне сборки мусора.
+`rootIds` окне Массив `GCHandleID` значений, указывающий на целое число, которое содержит дополнительные сведения об корне сборки мусора.
 
 Ни одно из значений `ObjectID`, возвращаемых методом `ConditionalWeakTableElementReferences` во время обратного вызова самого себя, не является допустимым, потому что сборка мусора может находиться в процессе перемещения объектов из старого в новое расположение. В связи с этим профилировщикам не следует пытаться проверять объекты во время вызова `ConditionalWeakTableElementReferences`. Вызов `GarbageCollectionFinished` означает, что все объекты перемещены в новые расположения и можно проводить проверку.
 
@@ -91,6 +87,6 @@ HRESULT Callback5Impl::ConditionalWeakTableElementReferences(
 
 **Платформа .NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback5](icorprofilercallback5-interface.md)

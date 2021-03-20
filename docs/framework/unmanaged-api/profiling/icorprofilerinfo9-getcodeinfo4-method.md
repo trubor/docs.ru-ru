@@ -12,12 +12,12 @@ api_type:
 - COM
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: 765f3dfee6c56148eb7807b0606e79d4b3a2e7a1
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: c7897e266fbb84d44df719c127e24bd375b560bb
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99783811"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104759095"
 ---
 # <a name="icorprofilerinfo9getcodeinfo4-method"></a>Метод ICorProfilerInfo9:: GetCodeInfo4
 
@@ -34,21 +34,13 @@ HRESULT GetCodeInfo4( [in]  UINT_PTR pNativeCodeStartAddress,
 
 ## <a name="parameters"></a>Параметры
 
-- `pNativeCodeStartAddress`
+`pNativeCodeStartAddress` окне Указатель на начало собственной функции.
 
-  \[in] указатель на начало собственной функции.
+`cCodeInfos` окне Размер `codeInfos` массива.
 
-- `cCodeInfos`
+`pcCodeInfos` заполняет Указатель на общее число доступных структур [COR_PRF_CODE_INFO](cor-prf-code-info-structure.md) .
 
-  \[in] размер `codeInfos` массива.
-
-- `pcCodeInfos`
-
-  \[out] указатель на общее число доступных структур [COR_PRF_CODE_INFO](cor-prf-code-info-structure.md) .
-
-- `codeInfos`
-
-  \[out] буфер, предоставленный вызывающей стороной. После возврата метода он содержит массив структур `COR_PRF_CODE_INFO`, каждая из которых описывает блок машинного кода.
+`codeInfos` заполняет Предоставленный вызывающим объектом буфер. После возврата метода он содержит массив структур `COR_PRF_CODE_INFO`, каждая из которых описывает блок машинного кода.
 
 ## <a name="remarks"></a>Remarks
 
@@ -71,8 +63,8 @@ HRESULT GetCodeInfo4( [in]  UINT_PTR pNativeCodeStartAddress,
 
 **Библиотека:** CorGuids.lib
 
-**Версии .NET:**[!INCLUDE[net_core_22](../../../../includes/net-core-22-md.md)]
+**Версии .NET:**[!INCLUDE[net_core_21](../../../../includes/net-core-21-md.md)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerInfo9](ICorProfilerInfo9-interface.md)

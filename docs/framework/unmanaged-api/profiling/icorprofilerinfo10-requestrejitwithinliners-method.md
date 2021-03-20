@@ -12,12 +12,12 @@ api_type:
 - COM
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: 925a61bf2521950cad7fb0dce8f1484198f3f806
-ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
+ms.openlocfilehash: 3d85537030e042d53bb4ff859eb1d2c3a24a45a5
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102106518"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104760786"
 ---
 # <a name="icorprofilerinfo10requestrejitwithinliners-method"></a>Метод ICorProfilerInfo10:: Рекуестрежитвисинлинерс
 
@@ -34,23 +34,15 @@ HRESULT RequestReJITWithInliners( [in]                       DWORD       dwRejit
 
 ## <a name="parameters"></a>Параметры
 
-- `dwRejitFlags`
+`dwRejitFlags` окне Битовая маска [COR_PRF_REJIT_FLAGS](cor-prf-rejit-flags-enumeration.md).
 
-  \[in] битовая маска [COR_PRF_REJIT_FLAGS](cor-prf-rejit-flags-enumeration.md).
+`cFunctions` окне Число функций для повторной компиляции.
 
-- `cFunctions`
+`moduleIds` окне Задает `moduleId` часть `module` пар (, `methodDef` ), определяющих функции для повторной компиляции.
 
-  \[в] число функций для повторной компиляции.
+`methodIds` окне Задает `methodId` часть `module` пар (, `methodDef` ), определяющих функции для повторной компиляции.
 
-- `moduleIds`
-
-  \[в] задает `moduleId` часть `module` пар (, `methodDef` ), определяющих функции для повторной компиляции.
-
-- `methodIds`
-
-  \[в] задает `methodId` часть `module` пар (, `methodDef` ), определяющих функции для повторной компиляции.
-
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 [Рекуестрежит](icorprofilerinfo4-requestrejit-method.md) не выполняет отслеживание встроенных методов. Профилировщик ожидал блокировать встраивание или отслеживание встраивания, а также вызов `RequestReJIT` всех строк, чтобы гарантировать, что каждый экземпляр встроенного метода был режиттед. Это создает проблему с ReJIT при присоединении, так как профилировщик отсутствует для мониторинга встраивания. Этот метод может быть вызван, чтобы гарантировать, что полный набор Режиттед также будет недоступен.
 

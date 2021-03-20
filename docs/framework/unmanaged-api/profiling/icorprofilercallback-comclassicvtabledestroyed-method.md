@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 29da20ca-bf39-4356-8099-d9c3ac3423a9
 topic_type:
 - apiref
-ms.openlocfilehash: 91ed5bb65d3a64f1f85a09a710b507974f51c79b
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: e8ed6be2519a9f8959ac4f59313f73f13d6c569b
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99706387"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104760565"
 ---
 # <a name="icorprofilercallbackcomclassicvtabledestroyed-method"></a>Метод ICorProfilerCallback::COMClassicVTableDestroyed
 
@@ -41,17 +41,11 @@ HRESULT COMClassicVTableDestroyed(
   
 ## <a name="parameters"></a>Параметры
 
-- `wrappedClassId`
+`wrappedClassId` окне Идентификатор класса, для которого была создана эта таблица vtable.
 
-  \[in] идентификатор класса, для которого была создана эта таблица vtable.
+`implementedIID` окне Идентификатор интерфейса, реализуемого классом. Это значение может быть равно NULL, если интерфейс является только внутренним.
 
-- `implementedIID`
-
-  \[in] идентификатор интерфейса, реализуемого классом. Это значение может быть равно NULL, если интерфейс является только внутренним.
-
-- `pVTable`
-
-  \[in] указатель на начало таблицы vtable.
+`pVTable` окне Указатель на начало таблицы vtable.
 
 ## <a name="remarks"></a>Remarks  
 
@@ -69,7 +63,7 @@ HRESULT COMClassicVTableDestroyed(
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Метод COMClassicVTableCreated](icorprofilercallback-comclassicvtablecreated-method.md)

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 5fa68a67-ced6-41c6-a2c0-467060fd0692
 topic_type:
 - apiref
-ms.openlocfilehash: 6a861f455e827258368764b80547c3b3e9c986cd
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 617ca023f58a180c198751fea9752fe737249331
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99687419"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104760084"
 ---
 # <a name="functionleave3withinfo-function"></a>Функция FunctionLeave3WithInfo
 
@@ -36,13 +36,9 @@ void __stdcall FunctionLeave3WithInfo(
   
 ## <a name="parameters"></a>Параметры
 
-- `functionIDOrClientID`
+`functionIDOrClientID` окне Идентификатор функции, из которой возвращается элемент управления.
 
-  \[in] идентификатор функции, из которой возвращается элемент управления.
-
-- `eltInfo`
-
-  \[in] непрозрачный маркер, представляющий сведения об заданном кадре стека. Этот маркер действителен только во время обратного вызова, к которому он передается.
+`eltInfo` окне Непрозрачный маркер, представляющий сведения об заданном кадре стека. Этот маркер действителен только во время обратного вызова, к которому он передается.
 
 ## <a name="remarks"></a>Remarks  
 
@@ -70,7 +66,7 @@ void __stdcall FunctionLeave3WithInfo(
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [GetFunctionLeave3Info](icorprofilerinfo3-getfunctionleave3info-method.md)
 - [FunctionEnter3](functionenter3-function.md)

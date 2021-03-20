@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b8205b60-1893-4303-8cff-7ac5a00892aa
 topic_type:
 - apiref
-ms.openlocfilehash: dca39d9d5269148fda12c50130f35bdeb10cb19d
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 2db616509bf5dcb5b8aee9cea76a9841369ec49d
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99648653"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104759257"
 ---
 # <a name="functionidmapper-function"></a>Функция FunctionIDMapper
 
@@ -37,13 +37,9 @@ UINT_PTR __stdcall FunctionIDMapper (
   
 ## <a name="parameters"></a>Параметры
 
-- `funcId`
+`funcId` окне Идентификатор функции для повторного сопоставления.
 
-  \[in] идентификатор функции для повторного сопоставления.
-
-- `pbHookFunction`
-
-  \[out] указатель на значение, которое задает профилировщик `true` , если он хочет получить `FunctionEnter2` `FunctionLeave2` `FunctionTailcall2` обратные вызовы, и, в противном случае присваивает этому параметру значение `false` .
+`pbHookFunction` заполняет Указатель на значение, которое задает профилировщик `true` , если он хочет получать `FunctionEnter2` `FunctionLeave2` `FunctionTailcall2` обратные вызовы, и, в противном случае присваивает этому параметру значение `false` .
 
 ## <a name="return-value"></a>Возвращаемое значение  
 
@@ -69,7 +65,7 @@ UINT_PTR __stdcall FunctionIDMapper (
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Метод SetFunctionIDMapper](icorprofilerinfo-setfunctionidmapper-method.md)
 - [Функция FunctionIDMapper2](functionidmapper2-function.md)

@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 53fca564-84b1-44d4-9e21-17a492d2aae7
 topic_type:
 - apiref
-ms.openlocfilehash: 30d6bd805a1466d6a65728b22f677ba00e09ffb6
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: c3c87644602ede3b849d13624b0cc0a2df71e2fd
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99648029"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104760673"
 ---
 # <a name="icorprofilercallbackassemblyunloadfinished-method"></a>Метод ICorProfilerCallback::AssemblyUnloadFinished
 
@@ -37,13 +37,9 @@ HRESULT AssemblyUnloadFinished(
   
 ## <a name="parameters"></a>Параметры
 
-- `assemblyId`
+`assemblyId` окне Определяет выгрузку сборки.
 
-  \[в] определяет сборку, которая выгружается.
-
-- `hrStatus`
-
-  \[in] значение HRESULT, указывающее, успешно ли выгружена сборка.
+`hrStatus` окне Значение HRESULT, указывающее, успешно ли выгружена сборка.
 
 ## <a name="remarks"></a>Remarks  
 
@@ -61,6 +57,6 @@ HRESULT AssemblyUnloadFinished(
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)

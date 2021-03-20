@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 46380fcc-0198-43ae-a1f5-2d4939425886
 topic_type:
 - apiref
-ms.openlocfilehash: efa8b2e965ba4a365bbd72db4c5af69db006f6d5
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: d84cac19acb8a1d696030fe372d29c655c5f97a6
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99648510"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104760799"
 ---
 # <a name="functiontailcall3withinfo-function"></a>Функция FunctionTailcall3WithInfo
 
@@ -36,13 +36,9 @@ void __stdcall FunctionTailcall3WithInfo(
   
 ## <a name="parameters"></a>Параметры  
 
-- `functionIDOrClientID`
+`functionIDOrClientID` окне Идентификатор выполняемой в данный момент функции, которая собирается выполнить вызов с префиксом tail.
 
-  \[in] идентификатор выполняемой в данный момент функции, которая собирается выполнить вызов с префиксом tail.
-
-- `eltInfo`
-
-  \[in] непрозрачный маркер, представляющий сведения об заданном кадре стека. Этот маркер действителен только во время обратного вызова, к которому он передается.
+`eltInfo` окне Непрозрачный маркер, представляющий сведения об заданном кадре стека. Этот маркер действителен только во время обратного вызова, к которому он передается.
 
 ## <a name="remarks"></a>Remarks  
 
@@ -70,7 +66,7 @@ void __stdcall FunctionTailcall3WithInfo(
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [FunctionEnter3](functionenter3-function.md)
 - [FunctionLeave3](functionleave3-function.md)

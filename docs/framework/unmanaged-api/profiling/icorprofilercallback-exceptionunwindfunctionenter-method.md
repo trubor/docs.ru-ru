@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ea3dc625-5650-4bf4-8e67-01e42be065b1
 topic_type:
 - apiref
-ms.openlocfilehash: 3f0376e01263290596aa722b37f6a796ab919139
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 665684b08ec272f26a468f5635c40cf64ce4981a
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99706023"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104760500"
 ---
 # <a name="icorprofilercallbackexceptionunwindfunctionenter-method"></a>Метод ICorProfilerCallback::ExceptionUnwindFunctionEnter
 
@@ -36,9 +36,7 @@ HRESULT ExceptionUnwindFunctionEnter(
   
 ## <a name="parameters"></a>Параметры
 
-- `functionId`
-
-  \[in] идентификатор функции, которая будет развернута.
+`functionId` окне Идентификатор перевернутой функции.
 
 ## <a name="remarks"></a>Remarks  
 
@@ -56,7 +54,7 @@ HRESULT ExceptionUnwindFunctionEnter(
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Метод ExceptionUnwindFunctionLeave](icorprofilercallback-exceptionunwindfunctionleave-method.md)

@@ -13,12 +13,12 @@ api_type:
 ms.assetid: 3d5af8e7-c337-48f4-9fa6-97c83878b9b1
 topic_type:
 - apiref
-ms.openlocfilehash: 343e76dd64329c88bf4b52e24d45a1e7c8b639bd
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: e73a6d59b76744dcf9f4991be2589220669e154d
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99648380"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104760748"
 ---
 # <a name="icorprofilerassemblyreferenceprovideraddassemblyreference-method"></a>Метод ICorProfilerAssemblyReferenceProvider::AddAssemblyReference
 
@@ -36,9 +36,7 @@ HRESULT AddAssemblyReference(
   
 ## <a name="parameters"></a>Параметры
 
-- `pAssemblyRefInfo`
-
-  Указатель на структуру [COR_PRF_ASSEMBLY_REFERENCE_INFO](cor-prf-assembly-reference-info-structure.md) , которая предоставляет среде CLR сведения о ссылке на сборку, которую следует учитывать при выполнении анализа закрытия ссылок на сборки.
+`pAssemblyRefInfo` Указатель на структуру [COR_PRF_ASSEMBLY_REFERENCE_INFO](cor-prf-assembly-reference-info-structure.md) , которая предоставляет среде CLR сведения о ссылке на сборку, которую следует учитывать при выполнении анализа закрытия ссылок на сборки.
   
 ## <a name="remarks"></a>Remarks  
 
@@ -54,7 +52,7 @@ HRESULT AddAssemblyReference(
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerAssemblyReferenceProvider](icorprofilerassemblyreferenceprovider-interface.md)
 - [Метод GetAssemblyReferences](icorprofilercallback6-getassemblyreferences-method.md)

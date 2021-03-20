@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 3dd80fbe-d62d-4d4d-acf8-5b7d0efe607e
 topic_type:
 - apiref
-ms.openlocfilehash: ba0a6a643ab49a4e7a0ed10dda0dadff5741234d
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 52fd26c1efaf9b85caeb5af7184ae70e1d29b9ff
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99706427"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104760225"
 ---
 # <a name="icorprofilercallbackclassloadfinished-method"></a>Метод ICorProfilerCallback::ClassLoadFinished
 
@@ -37,13 +37,9 @@ HRESULT ClassLoadFinished(
   
 ## <a name="parameters"></a>Параметры
 
-- `classId`
+`classId` окне Идентифицирует загруженный класс.
 
-  \[в] определяет класс, который был загружен.
-
-- `hrStatus`
-
-  \[in] значение HRESULT, указывающее, успешно ли загружен класс.
+`hrStatus` окне Значение HRESULT, указывающее, успешно ли загружен класс.
 
 ## <a name="remarks"></a>Remarks  
 
@@ -61,7 +57,7 @@ HRESULT ClassLoadFinished(
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Метод ClassLoadStarted](icorprofilercallback-classloadstarted-method.md)

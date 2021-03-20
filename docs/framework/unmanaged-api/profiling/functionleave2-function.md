@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 8cdac941-8b94-4497-b874-4e571785f3fe
 topic_type:
 - apiref
-ms.openlocfilehash: 475def9af448182003ef36782a84d501a9f2661d
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: a9a97b84c70fd50044e8340b6f59fdbefe1d1a60
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99687575"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104760149"
 ---
 # <a name="functionleave2-function"></a>Функция FunctionLeave2
 
@@ -39,25 +39,17 @@ void __stdcall FunctionLeave2 (
   
 ## <a name="parameters"></a>Параметры
 
-- `funcId`
+`funcId` окне Идентификатор возвращаемой функции.
 
-  \[in] Идентификатор возвращаемой функции.
+`clientData` окне Идентификатор повторно сопоставленной функции, который профилировщик ранее указал с помощью функции [FunctionIDMapper](functionidmapper-function.md) .
 
-- `clientData`
+`func` окне `COR_PRF_FRAME_INFO` Значение, указывающее на сведения о кадре стека.
 
-  \[in] идентификатор повторно сопоставленной функции, который профилировщик ранее указал с помощью функции [FunctionIDMapper](functionidmapper-function.md) .
-
-- `func`
-
-  \[в] `COR_PRF_FRAME_INFO` значение, указывающее на сведения о кадре стека.
-
-  Профилировщик должен рассматривать это как непрозрачный маркер, который можно передать обратно в подсистему выполнения метода [ICorProfilerInfo2:: GetFunctionInfo2](icorprofilerinfo2-getfunctioninfo2-method.md) .  
+Профилировщик должен рассматривать это как непрозрачный маркер, который можно передать обратно в подсистему выполнения метода [ICorProfilerInfo2:: GetFunctionInfo2](icorprofilerinfo2-getfunctioninfo2-method.md) .  
   
-- `retvalRange`
+`retvalRange` окне Указатель на структуру [COR_PRF_FUNCTION_ARGUMENT_RANGE](cor-prf-function-argument-range-structure.md) , указывающую расположение в памяти возвращаемого значения функции.
 
-  \[in] указатель на структуру [COR_PRF_FUNCTION_ARGUMENT_RANGE](cor-prf-function-argument-range-structure.md) , указывающую расположение в памяти возвращаемого значения функции.
-
-  Чтобы получить доступ к сведениям о возвращаемом значении, `COR_PRF_ENABLE_FUNCTION_RETVAL` необходимо установить флаг. Профилировщик может использовать метод [ICorProfilerInfo:: SetEventMask](icorprofilerinfo-seteventmask-method.md) для установки флагов событий.
+Чтобы получить доступ к сведениям о возвращаемом значении, `COR_PRF_ENABLE_FUNCTION_RETVAL` необходимо установить флаг. Профилировщик может использовать метод [ICorProfilerInfo:: SetEventMask](icorprofilerinfo-seteventmask-method.md) для установки флагов событий.
 
 ## <a name="remarks"></a>Remarks  
 
@@ -85,7 +77,7 @@ void __stdcall FunctionLeave2 (
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Функция FunctionEnter2](functionenter2-function.md)
 - [Функция FunctionTailcall2](functiontailcall2-function.md)

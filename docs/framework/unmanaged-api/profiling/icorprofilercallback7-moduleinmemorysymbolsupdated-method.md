@@ -10,12 +10,12 @@ api_location:
 api_type:
 - COM
 ms.assetid: f362a896-3247-4894-9727-e48dbbcd2c78
-ms.openlocfilehash: 74adf7edc5269824a924933eb3284a5964e1bac1
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: fa6056beb5685ca9ce9545efea567ca0df6029ce
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99781731"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104759863"
 ---
 # <a name="icorprofilercallback7moduleinmemorysymbolsupdated-method"></a>Метод ICorProfilerCallback7:: Модулеинмеморисимболсупдатед
 
@@ -33,8 +33,8 @@ HRESULT ModuleInMemorySymbolsUpdated(
   
 ## <a name="parameters"></a>Параметры  
 
- [in] `moduleId`  
- Идентификатор модуля в памяти, чей поток символов обновлен.  
+ `moduleId`  
+ окне Идентификатор модуля в памяти, чей поток символов обновлен.  
   
 ## <a name="remarks"></a>Remarks  
 
@@ -55,7 +55,7 @@ HRESULT ModuleInMemorySymbolsUpdated(
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v461plus](../../../../includes/net-current-v461plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Метод ModuleLoadFinished](icorprofilercallback-moduleloadfinished-method.md)
 - [Метод SetEventMask2](icorprofilerinfo5-seteventmask2-method.md)

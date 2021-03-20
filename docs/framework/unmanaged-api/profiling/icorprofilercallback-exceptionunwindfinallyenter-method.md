@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c7fab986-b69f-4ec8-b7b7-91dcfc239cd0
 topic_type:
 - apiref
-ms.openlocfilehash: e4a701597b318a387405a152f2c3b4758d616eb0
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: a142aa39f1c601c8c814d2f760cb6414d84b8494
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99706088"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104759447"
 ---
 # <a name="icorprofilercallbackexceptionunwindfinallyenter-method"></a>Метод ICorProfilerCallback::ExceptionUnwindFinallyEnter
 
@@ -36,9 +36,7 @@ HRESULT ExceptionUnwindFinallyEnter(
   
 ## <a name="parameters"></a>Параметры
 
-- `functionId`
-
-  \[in] идентификатор функции, которая содержит `finally` предложение.
+`functionId` окне Идентификатор функции, содержащей `finally` предложение.
 
 ## <a name="remarks"></a>Remarks  
 
@@ -56,7 +54,7 @@ HRESULT ExceptionUnwindFinallyEnter(
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Метод GetNotifiedExceptionClauseInfo](icorprofilerinfo2-getnotifiedexceptionclauseinfo-method.md)

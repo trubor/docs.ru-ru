@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 86d98f39-52e6-4c61-a625-9760f695ff12
 topic_type:
 - apiref
-ms.openlocfilehash: 19c0871808455e64ad8a4eb002806a87030f7882
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: accddef08f3cb76ef2cb1b70993aee24cf83ae50
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99648042"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104760674"
 ---
 # <a name="icorprofilercallbackassemblyloadfinished-method"></a>Метод ICorProfilerCallback::AssemblyLoadFinished
 
@@ -37,13 +37,9 @@ HRESULT AssemblyLoadFinished(
   
 ## <a name="parameters"></a>Параметры
 
-- `assemblyId`
+`assemblyId` окне Определяет загруженную сборку.
 
-  \[в] определяет сборку, которая была загружена.
-
-- `hrStatus`
-
-  \[in] значение HRESULT, указывающее, успешно ли завершена загрузка сборки.
+`hrStatus` окне Значение HRESULT, указывающее, успешно ли завершена загрузка сборки.
 
 ## <a name="remarks"></a>Remarks  
 
@@ -61,6 +57,6 @@ HRESULT AssemblyLoadFinished(
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)

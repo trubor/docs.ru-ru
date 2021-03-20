@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: bf4ffa50-4506-4dd4-aa13-a0457b47ca74
 topic_type:
 - apiref
-ms.openlocfilehash: 07b91a81480e453be16e840b89fa822cb91002ba
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 0f5c9f0dde405aaadf50a7da476bbae664ef8ef7
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99788960"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104759382"
 ---
 # <a name="functionenter-function"></a>Функция FunctionEnter
 
@@ -39,9 +39,7 @@ void __stdcall FunctionEnter (
   
 ## <a name="parameters"></a>Параметры
 
-- `funcID`
-
-  \[in] идентификатор функции, для которой передается элемент управления.
+`funcID` окне Идентификатор функции, которой передается элемент управления.
 
 ## <a name="remarks"></a>Remarks  
 
@@ -67,7 +65,7 @@ void __stdcall FunctionEnter (
   
  **Платформа .NET Framework версии:** 1,1, 1,0  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Функция FunctionEnter2](functionenter2-function.md)
 - [Функция FunctionLeave2](functionleave2-function.md)

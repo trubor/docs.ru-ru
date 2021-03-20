@@ -12,12 +12,12 @@ api_type:
 - COM
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: 8ab942e6919f8029ef0d1c20336917622a1d22ad
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 139edeed3e078668974382f1719c8e03f83e2a09
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99646534"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104759082"
 ---
 # <a name="icorprofilerinfo8isfunctiondynamic-method"></a>Метод ICorProfilerInfo8:: Исфунктиондинамик
 
@@ -32,13 +32,9 @@ HRESULT IsFunctionDynamic( [in]  FunctionID  functionId,
 
 ## <a name="parameters"></a>Параметры
 
-- `functionId`
+`functionId` окне  Объект `FunctionID` , определяющий рассматриваемую функцию.
 
-  \[в] `FunctionID` , который определяет рассматриваемую функцию.
-
-- `isDynamic`
-
-  \[out] указатель на объект `BOOL` , который будет содержать значение, указывающее, имеет ли функция метаданные.
+`isDynamic` заполняет Указатель на объект `BOOL` , который будет содержать значение, указывающее, имеет ли функция метаданные.
 
 ## <a name="remarks"></a>Remarks
 
@@ -54,6 +50,6 @@ HRESULT IsFunctionDynamic( [in]  FunctionID  functionId,
 
 **Платформа .NET Framework версии:**[!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerInfo8](icorprofilerinfo8-interface.md)
