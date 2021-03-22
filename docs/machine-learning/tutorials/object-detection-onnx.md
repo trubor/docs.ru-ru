@@ -6,12 +6,12 @@ ms.author: luquinta
 ms.date: 06/30/2020
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: 49817f9ad712e50669bab958296946c06d5c19eb
-ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
+ms.openlocfilehash: 305a440634120395dba6881584b2ff46646da211
+ms.sourcegitcommit: 1dbe25ff484a02025d5c34146e517c236f7161fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90679420"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104653586"
 ---
 # <a name="tutorial-detect-objects-using-onnx-in-mlnet"></a>Учебник. Обнаружение объектов с помощью ONNX в ML.NET
 
@@ -39,7 +39,7 @@ ms.locfileid: "90679420"
 
 ## <a name="onnx-object-detection-sample-overview"></a>Обзор примера обнаружения объектов в ONNX
 
-В этом примере создается консольное приложение .NET Core, которое обнаруживает объекты на изображении с помощью предварительно обученной модели ONNX для глубокого обучения. Код для этого примера можно найти в репозитории [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx) на сайте GitHub.
+В этом примере создается консольное приложение .NET Core, которое обнаруживает объекты на изображении с помощью предварительно обученной модели ONNX для глубокого обучения. Код для этого примера можно найти в репозитории [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx) на сайте GitHub.
 
 ## <a name="what-is-object-detection"></a>Что такое обнаружение объектов?
 
@@ -100,7 +100,7 @@ Open Neural Network Exchange (ONNX) — это формат с открытым 
 
 ### <a name="prepare-your-data-and-pre-trained-model"></a>Подготовка данных и предварительно обученной модели
 
-1. Скачайте [ZIP-файл каталога с ресурсами проекта](https://github.com/dotnet/machinelearning-samples/raw/master/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/assets.zip) и распакуйте его.
+1. Скачайте [ZIP-файл каталога с ресурсами проекта](https://github.com/dotnet/machinelearning-samples/raw/main/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/assets.zip) и распакуйте его.
 
 1. Скопируйте каталог `assets` в каталог проекта *ObjectDetection*. Этот каталог и его подкаталоги содержат файлы изображений (за исключением модели Tiny YOLOv2, которую вы скачаете и добавите на следующем шаге), необходимые для работы с этим руководством.
 
@@ -709,7 +709,7 @@ person and its Confidence score: 0.5551759
 
 Поздравляем! Вы успешно создали модель машинного обучения для обнаружения объектов на основе предварительно обученной модели `ONNX` в ML.NET.
 
-Исходный код для этого руководства можно найти в репозитории [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx).
+Исходный код для этого руководства можно найти в репозитории [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx).
 
 В этом руководстве вы узнали, как:
 > [!div class="checklist"]
@@ -722,4 +722,4 @@ person and its Confidence score: 0.5551759
 
 Ознакомьтесь с примерами машинного обучения в репозитории GitHub, чтобы подробнее изучить расширенный пример обнаружения объектов.
 > [!div class="nextstepaction"]
-> [Репозиторий GitHub dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx)
+> [Репозиторий GitHub dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx)

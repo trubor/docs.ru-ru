@@ -7,12 +7,12 @@ no-loc:
 - dotnet list package
 ms.topic: how-to
 ms.date: 01/28/2021
-ms.openlocfilehash: 9f5f814d0b4dc7aa3ff1a938c172475169a55bf2
-ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
+ms.openlocfilehash: 03311902e99962553b5b740a285021f27d94bfbc
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99216132"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104759707"
 ---
 # <a name="manage-dependencies-in-net-applications"></a>Управление зависимостями в приложениях .NET
 
@@ -79,5 +79,5 @@ dotnet remove package Microsoft.EntityFrameworkCore
 
 ## <a name="see-also"></a>См. также
 
-* [Ссылки на пакеты в файлах проекта](../project-sdk/msbuild-props.md#reference-properties-and-items)
+* [Ссылки на пакеты в файлах проекта](../project-sdk/msbuild-props.md#reference-properties)
 * [Команда dotnet list package](dotnet-list-package.md)

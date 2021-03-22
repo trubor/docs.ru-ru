@@ -2,12 +2,12 @@
 title: Критическое изменение. Приложения ASP.NET Core поддерживают десериализацию заключенных в кавычки чисел
 description: Узнайте о критическом изменении в .NET 5, после которого приложения ASP.NET Core будут успешно выполнять десериализацию чисел, представленных в виде строк JSON, вместо того, чтобы создавать исключение.
 ms.date: 10/21/2020
-ms.openlocfilehash: f541af5bf5f0a519fd5205f44d68a9b401569909
-ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
+ms.openlocfilehash: bc1531bb9b159bfd9e80eafacafb50aa509973cc
+ms.sourcegitcommit: d623f686701b94bef905ec5e93d8b55d031c5d6f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102256313"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103624153"
 ---
 # <a name="aspnet-core-apps-allow-deserializing-quoted-numbers"></a>Приложения ASP.NET Core поддерживают десериализацию заключенных в кавычки чисел
 
@@ -41,7 +41,7 @@ ms.locfileid: "102256313"
 
 ```csharp
 services.AddControllers()
-   .AddJsonOptions(options.NumberHandling = JsonNumberHandling.Strict);
+   .AddJsonOptions(options => options.JsonSerializerOptions.NumberHandling = JsonNumberHandling.Strict);
 ```
 
 ## <a name="affected-apis"></a>Затронутые API
