@@ -12,18 +12,18 @@ helpviewer_keywords:
 - command line [C#], arguments
 - command-line arguments [C#], Main method
 ms.assetid: 73a17231-cf96-44ea-aa8a-54807c6fb1f4
-ms.openlocfilehash: 35117642f38885aab08a5c0249d1f65ec76c59f3
-ms.sourcegitcommit: e3cf8227573e13b8e1f4e3dc007404881cdafe47
+ms.openlocfilehash: 05b2030133ca83cf87de7110f820eaad38fad756
+ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "103190207"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103480190"
 ---
 # <a name="main-and-command-line-arguments-c-programming-guide"></a>Main() и аргументы командной строки (Руководство по программированию на C#)
 
 Метод `Main` — это точка входа приложения C#. (Библиотекам и службам точка входа в виде метода `Main` не требуется.) Когда приложение запускается, первым вызывается именно метод `Main`.
 
-В программе на C# может существовать только одна точка входа. Если у вас есть несколько классов с методом `Main`, программу нужно компилировать с параметром `-main`, чтобы указать, какой из методов `Main` будет использоваться в качестве точки входа. Дополнительные сведения см. в разделе [-main (параметры компилятора C#)](../../language-reference/compiler-options/main-compiler-option.md).
+В программе на C# может существовать только одна точка входа. Если у вас есть несколько классов с методом `Main`, программу нужно компилировать с параметром компилятора **StartupObject**, чтобы указать, какой из методов `Main` будет использоваться в качестве точки входа. Дополнительные сведения см. в разделе [**StartupObject** (параметры компилятора C#)](../../language-reference/compiler-options/advanced.md#mainentrypoint-or-startupobject).
 
 [!code-csharp[csProgGuideMain#17](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class1.cs#17)]
 
@@ -64,7 +64,6 @@ public static async Task<int> Main(string[] args) { }
 
 ## <a name="see-also"></a>См. также
 
-- [Сборка из командной строки с помощью csc.exe](../../language-reference/compiler-options/command-line-building-with-csc-exe.md)
 - [Руководство по программированию на C#](../index.md)
 - [Методы](../classes-and-structs/methods.md)
 - [Структура программы C#](../inside-a-program/index.md)

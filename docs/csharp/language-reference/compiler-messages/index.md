@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Visual C# compiler, errors
 - errors [C#]
 ms.assetid: 57262ab1-6c50-4f9c-81ad-9fba48477416
-ms.openlocfilehash: a7c0290c799a7ae4a371578396d2d2d747d00d28
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: ecc040fb0c19ac19b7a4a922702b70ac2d9a426e
+ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89126246"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103479541"
 ---
 # <a name="c-compiler-errors"></a>Ошибки компилятора C#
 
@@ -33,7 +33,6 @@ ms.locfileid: "89126246"
 ## <a name="see-also"></a>См. также раздел
 
 - [Параметры компилятора C# ](../compiler-options/index.md)
-- [К сожалению, конкретные сведения об этой ошибке C# отсутствуют.](../../misc/sorry-we-don-t-have-specifics-on-this-csharp-error.md)
 - [Страница "Сборка" в конструкторе проектов (C#)](/visualstudio/ide/reference/build-page-project-designer-csharp)
-- [-warn (параметры компилятора C#)](../compiler-options/warn-compiler-option.md)
-- [-nowarn (параметры компилятора C#)](../compiler-options/nowarn-compiler-option.md)
+- [**WarningLevel** (параметры компилятора C#)](../compiler-options/errors-warnings.md#warninglevel)
+- [**DisabledWarnings** (параметры компилятора C#)](../compiler-options/errors-warnings.md#disabledwarnings)

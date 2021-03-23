@@ -2,12 +2,12 @@
 title: Управление производительностью приложений — gRPC для разработчиков WCF
 description: Ведение журнала, метрики и трассировка для ASP.NET Core gRPC приложений.
 ms.date: 12/15/2020
-ms.openlocfilehash: 8a2a89e268e3b2dffdcc945ac71b2de85b4d4964
-ms.sourcegitcommit: 655f8a16c488567dfa696fc0b293b34d3c81e3df
+ms.openlocfilehash: 06515762e3e5febf2d11dea14524d5e3f586a760
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97938459"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104874554"
 ---
 # <a name="application-performance-management"></a>Управление производительностью приложений
 
@@ -51,7 +51,7 @@ public class StockData : Stocks.StocksBase
 
 ## <a name="metrics-in-aspnet-core-grpc"></a>Метрики в ASP.NET Core gRPC
 
-Среда выполнения .NET Core предоставляет набор компонентов для выдачи и наблюдения за метриками. К ним относятся интерфейсы API, такие как <xref:System.Diagnostics.Tracing.EventSource> <xref:System.Diagnostics.Tracing.EventCounter> классы и. Эти API-интерфейсы могут выдавать базовые числовые данные, которые могут использоваться внешними процессами, например, [глобальным инструментом DotNet-Counters](../../core/diagnostics/dotnet-counters.md)или трассировкой событий для Windows. Дополнительные сведения об использовании `EventCounter` в собственном коде см. в разделе [евенткаунтер введение](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Diagnostics.Tracing/documentation/EventCounterTutorial.md).
+Среда выполнения .NET Core предоставляет набор компонентов для выдачи и наблюдения за метриками. К ним относятся интерфейсы API, такие как <xref:System.Diagnostics.Tracing.EventSource> <xref:System.Diagnostics.Tracing.EventCounter> классы и. Эти API-интерфейсы могут выдавать базовые числовые данные, которые могут использоваться внешними процессами, например, [глобальным инструментом DotNet-Counters](../../core/diagnostics/dotnet-counters.md)или трассировкой событий для Windows. Дополнительные сведения об использовании `EventCounter` в собственном коде см. в разделе [евенткаунтер введение](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Diagnostics.Tracing/documentation/EventCounterTutorial.md).
 
 Для более сложных метрик и для записи данных метрик в более широкий спектр хранилищ данных можно попробовать проект с открытым исходным кодом, именуемый [метриками приложения](https://www.app-metrics.io). Этот набор библиотек предоставляет обширный набор типов для инструментирования кода. Он также предоставляет пакеты для записи метрик в различные типы целевых объектов, которые включают базы данных временных рядов, такие как Prometheus и InfluxDB, и [Application Insights](/azure/azure-monitor/app/app-insights-overview). Пакет NuGet [app. Metrics. AspNetCore. MVC](https://www.nuget.org/packages/App.Metrics.AspNetCore.Mvc/) даже добавляет всеобъемлющий набор базовых метрик, которые автоматически создаются с помощью интеграции с ASP.NET Core Framework. Веб-сайт проекта содержит [шаблоны](https://www.app-metrics.io/samples/grafana/) для отображения этих метрик с помощью платформы визуализации [Grafana](https://grafana.com/) .
 
@@ -120,7 +120,7 @@ public class StockData : Stocks.StocksBase
 
 ### <a name="distributed-tracing-with-diagnosticsource"></a>Распределенная трассировка с помощью `DiagnosticSource`
 
-.NET имеет внутренний модуль, который хорошо сопоставляется с распределенными трассировками и охватывает диапазоны: [DiagnosticSource](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Diagnostics.DiagnosticSource/src/DiagnosticSourceUsersGuide.md#diagnosticsource-users-guide). Кроме простого способа создания и использования диагностики внутри процесса, `DiagnosticSource` модуль имеет концепцию *действия*. Действие фактически является реализацией распределенной трассировки или диапазоном в трассировке. Внутренние компоненты модуля принимают на себя действия родительских и дочерних элементов, включая выделение идентификаторов. Дополнительные сведения об использовании `Activity` типа см. в разделе [действие пользователя в GitHub](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Diagnostics.DiagnosticSource/src/ActivityUserGuide.md#activity-user-guide).
+.NET имеет внутренний модуль, который хорошо сопоставляется с распределенными трассировками и охватывает диапазоны: [DiagnosticSource](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Diagnostics.DiagnosticSource/src/DiagnosticSourceUsersGuide.md#diagnosticsource-users-guide). Кроме простого способа создания и использования диагностики внутри процесса, `DiagnosticSource` модуль имеет концепцию *действия*. Действие фактически является реализацией распределенной трассировки или диапазоном в трассировке. Внутренние компоненты модуля принимают на себя действия родительских и дочерних элементов, включая выделение идентификаторов. Дополнительные сведения об использовании `Activity` типа см. в разделе [действие пользователя в GitHub](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Diagnostics.DiagnosticSource/src/ActivityUserGuide.md#activity-user-guide).
 
 Поскольку `DiagnosticSource` является частью основной платформы и более поздних версий, она поддерживается несколькими основными компонентами. К ним относятся <xref:System.Net.Http.HttpClient> , Entity Framework Core и ASP.NET Core, включая явную поддержку в gRPC Framework. Когда ASP.NET Core получает запрос, он проверяет наличие пары HTTP-заголовков, соответствующих стандарту [контекста трассировки W3C](https://www.w3.org/TR/trace-context) . Если заголовки найдены, действие запускается с использованием значений идентификаторов и контекста из заголовков. Если заголовки не найдены, действие запускается с созданными значениями идентификаторов, которые соответствуют стандартному формату. Любая диагностика, создаваемая платформой или кодом приложения в течение времени существования этого действия, может быть помечена идентификаторами трассировки и диапазона. `HttpClient`Поддержка этой функции расширяется за счет проверки текущего действия при каждом запросе и автоматического добавления заголовков трассировки к исходящему запросу.
 
@@ -131,7 +131,7 @@ public class StockData : Stocks.StocksBase
 
 ### <a name="add-your-own-diagnosticsource-and-activity"></a>Добавьте собственные `DiagnosticSource` и `Activity`
 
-Чтобы добавить собственную диагностику или создать явные диапазоны в коде приложения, ознакомьтесь с руководством [пользователя DiagnosticSource](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Diagnostics.DiagnosticSource/src/DiagnosticSourceUsersGuide.md#instrumenting-with-diagnosticsourcediagnosticlistener) и сведениями о [действии](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Diagnostics.DiagnosticSource/src/ActivityUserGuide.md#activity-usage).
+Чтобы добавить собственную диагностику или создать явные диапазоны в коде приложения, ознакомьтесь с руководством [пользователя DiagnosticSource](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Diagnostics.DiagnosticSource/src/DiagnosticSourceUsersGuide.md#instrumenting-with-diagnosticsourcediagnosticlistener) и сведениями о [действии](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Diagnostics.DiagnosticSource/src/ActivityUserGuide.md#activity-usage).
 
 ### <a name="store-distributed-trace-data"></a>Хранение распределенных данных трассировки
 

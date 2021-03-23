@@ -12,12 +12,12 @@ helpviewer_keywords:
 - C# language, XML code comments
 - XML documentation comments [C#]
 ms.assetid: 803b7f7b-7428-4725-b5db-9a6cff273199
-ms.openlocfilehash: fbdeb53331d9fc63d24a3322ea13863d7c0a3630
-ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
+ms.openlocfilehash: d784ec58096e44cf010edd279f682555df58a8ef
+ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87381883"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103478400"
 ---
 # <a name="xml-documentation-comments-c-programming-guide"></a>Руководство по программированию на C#. Комментарии XML-документации
 
@@ -30,7 +30,7 @@ ms.locfileid: "87381883"
 public class MyClass {}
 ```
 
-При выполнении компиляции с параметром [-doc](../../language-reference/compiler-options/doc-compiler-option.md) компилятор осуществляет поиск всех тегов XML в исходном коде и создает XML-файл документации. Для создания окончательной документации на основе сгенерированного компилятором файла можно создать пользовательское средство или применить такие средства, как [DocFX](https://dotnet.github.io/docfx/) или [Sandcastle](https://github.com/EWSoftware/SHFB).
+При выполнении компиляции с параметром [**DocumentationFile**](../../language-reference/compiler-options/output.md#documentationfile) компилятор ищет все теги XML в исходном коде и создает XML-файл документации. Для создания окончательной документации на основе сгенерированного компилятором файла можно создать пользовательское средство или применить такие средства, как [DocFX](https://dotnet.github.io/docfx/) или [Sandcastle](https://github.com/EWSoftware/SHFB).
 
 Для ссылки на XML-элементы (например, если функция обрабатывает определенные XML-элементы, которые требуется включить в комментарии XML-документации) можно использовать стандартный механизм заключения в скобки (`<` и `>`).  Для ссылки на универсальные идентификаторы в элементах ссылок кода (`cref`) можно использовать escape-символы (например, `cref="List&lt;T&gt;"`) или фигурные скобки (`cref="List{T}"`).  В особом случае компилятор анализирует фигурные скобки, как угловые, чтобы при ссылке на универсальные идентификаторы сделать комментарий документации менее громоздким.
 
@@ -51,7 +51,7 @@ public class MyClass {}
 
 Дополнительные сведения можно найти в разделе
 
-- [-doc (обработка комментариев документации)](../../language-reference/compiler-options/doc-compiler-option.md)
+- [**DocumentationFile** (обработка комментариев в документации)](../../language-reference/compiler-options/output.md#documentationfile)
 
 ## <a name="c-language-specification"></a>Спецификация языка C#
 
