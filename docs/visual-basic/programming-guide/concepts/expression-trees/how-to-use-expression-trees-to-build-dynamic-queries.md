@@ -1,14 +1,14 @@
 ---
 title: Выполнение запросов на основе состояния среды выполнения (Visual Basic)
-description: Описывает различные методы, которые код может использовать для динамического запроса в зависимости от состояния среды выполнения, путем изменения либо вызовов методов LINQ, либо деревьев выражений, переданных в эти методы.
+description: Описание различных методов, которые код может использовать для динамического запроса в зависимости от состояния среды выполнения, путем изменения либо вызовов методов LINQ, либо деревьев выражений, переданных в эти методы.
 ms.date: 02/14/2021
 ms.assetid: 16278787-7532-4b65-98b2-7a412406c4ee
-ms.openlocfilehash: c9f57950b2c26c0cca798ab632da90bf9f6c519a
-ms.sourcegitcommit: f0fc5db7bcbf212e46933e9cf2d555bb82666141
+ms.openlocfilehash: fe59fc8287e67247884cfdcf1bacc6ed2a447e5a
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100584853"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104875880"
 ---
 # <a name="querying-based-on-runtime-state-visual-basic"></a>Выполнение запросов на основе состояния среды выполнения (Visual Basic)
 
@@ -16,60 +16,60 @@ ms.locfileid: "100584853"
 
 :::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/dynamic-linq-expression-trees/Program.vb" id="Initialize":::
 
-Каждый раз при выполнении этого кода будет выполнен тот же точный запрос. Это часто не очень полезно, так как может потребоваться, чтобы код выполнял различные запросы в зависимости от условий во время выполнения. В этой статье описывается, как можно выполнить другой запрос на основе состояния среды выполнения.
+Каждый раз при выполнении этого кода выполняется один и тот же запрос. Зачастую это неэффективно, поскольку может потребоваться, чтобы код выполнял различные запросы в зависимости от условий во время выполнения. В этой статье описывается, как можно выполнить другой запрос на основе состояния среды выполнения.
 
 ## <a name="iqueryable--iqueryableof-t-and-expression-trees"></a>IQueryable и IQueryable (Of T) и деревья выражений
 
-По сути, <xref:System.Linq.IQueryable> компонент имеет два компонента:
+В своей основе <xref:System.Linq.IQueryable> имеет два компонента:
 
-* <xref:System.Linq.IQueryable.Expression>&mdash;представление компонентов текущего запроса, зависящее от языка и источника данных, в виде дерева выражения.
-* <xref:System.Linq.IQueryable.Provider>&mdash;экземпляр поставщика LINQ, который знает, как материализовать текущий запрос в значение или набор значений.
+* <xref:System.Linq.IQueryable.Expression>&mdash;представление компонентов текущего запроса с учетом языка и источника данных в виде дерева выражения.
+* <xref:System.Linq.IQueryable.Provider>&mdash;экземпляр поставщика LINQ, которому известно, как материализовать текущий запрос в значение или набор значений.
 
-В контексте динамической запросов поставщик обычно остается неизменным. дерево выражения запроса будет отличаться от запроса к запросу.
+В контексте динамических запросов поставщик обычно остается неизменным; дерево выражения запроса будет отличаться от запроса к запросу.
 
-Деревья выражений являются неизменяемыми; Если требуется другое дерево выражения и, &mdash; таким же, другой запрос &mdash; , необходимо перевести существующее дерево выражения в новое, а значит новое <xref:System.Linq.IQueryable> .
+Деревья выражений являются неизменяемыми; если вы хотите использовать другое дерево выражения &mdash;и, таким образом, другой запрос&mdash;, вам потребуется перевести существующее дерево выражения в новое, а значит в новое <xref:System.Linq.IQueryable>.
 
-В следующих разделах описываются конкретные методы запроса по-разному в ответ на состояние среды выполнения.
+В следующих разделах описываются конкретные методы запроса в зависимости от состояния среды выполнения.
 
-- Использовать состояние среды выполнения из дерева выражений
-- Вызов дополнительных методов LINQ
-- Изменение дерева выражения, переданного в методы LINQ
+- Использование состояния среды выполнения из дерева выражений
+- Вызов дополнительных методов LINQ
+- Изменение дерева выражения, переданного в методы LINQ
 - Создайте дерево выражения [Expression (из тделегате)](xref:System.Linq.Expressions.Expression%601) с помощью методов фабрики <xref:System.Linq.Expressions.Expression>
-- Добавление узлов вызова метода в <xref:System.Linq.IQueryable> дерево выражения
+- Добавление узлов вызова метода в дерево выражения <xref:System.Linq.IQueryable>.
 - Создание строк и использование [динамической библиотеки LINQ](https://dynamic-linq.net/)
 
-## <a name="use-runtime-state-from-within-the-expression-tree"></a>Использовать состояние среды выполнения из дерева выражений
+## <a name="use-runtime-state-from-within-the-expression-tree"></a>Использование состояния среды выполнения из дерева выражений
 
-При условии, что поставщик LINQ поддерживает его, самый простой способ динамического запроса заключается в ссылке на состояние среды выполнения непосредственно в запросе через закрытую переменную, как `length` в следующем примере кода:
+Предположив, что поставщик LINQ поддерживает его, самый простой способ динамического запроса будет заключаться в ссылке на состояние среды выполнения непосредственно в запросе с помощью закрытой переменной, такой как `length` в следующем примере кода:
 
 :::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/dynamic-linq-expression-trees/Program.vb" id="Runtime_state_from_within_expression_tree":::
 
-Внутреннее дерево выражения &mdash; и, таким образом, запрос &mdash; не был изменен; запрос возвращает разные значения, так как значение `length` было изменено.
+Внутреннее дерево выражения, &mdash;а соответственно и запрос&mdash;, не были изменены; запрос возвращает разные значения только из-за изменения значения `length`.
 
-## <a name="call-additional-linq-methods"></a>Вызов дополнительных методов LINQ
+## <a name="call-additional-linq-methods"></a>Вызов дополнительных методов LINQ
 
-Как правило, [встроенные методы LINQ](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Linq.Queryable/src/System/Linq/Queryable.cs) выполняются в <xref:System.Linq.Queryable> два этапа:
+Как правило, [встроенные методы LINQ](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Linq.Queryable/src/System/Linq/Queryable.cs) в <xref:System.Linq.Queryable> выполняют два действия:
 
-* Заключите текущее дерево выражения в оболочку, <xref:System.Linq.Expressions.MethodCallExpression> представляющую вызов метода.
-* Передайте инкапсулированное дерево выражения обратно в поставщик, чтобы вернуть значение через <xref:System.Linq.IQueryProvider.Execute%2A?displayProperty=nameWithType> метод поставщика или вернуть объект переведенного запроса через <xref:System.Linq.IQueryProvider.CreateQuery%2A?displayProperty=nameWithType> метод.
+* Заключение текущего дерево выражения в оболочку в <xref:System.Linq.Expressions.MethodCallExpression>, который представляет вызов метода.
+* Передача инкапсулированного дерева выражения в поставщик, чтобы вернуть значение через метод <xref:System.Linq.IQueryProvider.Execute%2A?displayProperty=nameWithType> поставщика, либо чтобы вернуть объект переведенного запроса с помощью метода <xref:System.Linq.IQueryProvider.CreateQuery%2A?displayProperty=nameWithType>.
 
-Чтобы получить новый запрос, можно заменить исходный запрос результатом метода [IQueryable (Of T)](xref:System.Linq.IQueryable%601), возвращающего значение. Это условие можно выполнять в зависимости от состояния среды выполнения, как показано в следующем примере:
+Чтобы получить новый запрос, можно заменить исходный запрос результатом метода [IQueryable (Of T)](xref:System.Linq.IQueryable%601), возвращающего значение. Это можно сделать по условию на основе состояния среды выполнения, как показано в следующем примере:
 
 :::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/dynamic-linq-expression-trees/Program.vb" id="Added_method_calls":::
 
-## <a name="vary-the-expression-tree-passed-into-the-linq-methods"></a>Изменение дерева выражения, переданного в методы LINQ
+## <a name="vary-the-expression-tree-passed-into-the-linq-methods"></a>Изменение дерева выражения, переданного в методы LINQ
 
-К методам LINQ можно передать разные выражения в зависимости от состояния среды выполнения:
+В методы LINQ можно передать разные выражения в зависимости от состояния среды выполнения:
 
 :::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/dynamic-linq-expression-trees/Program.vb" id="Varying_expressions":::
 
-Также может потребоваться составить различные подвыражения, используя сторонние библиотеки, например [Линккит](http://www.albahari.com/nutshell/linqkit.aspx) [предикатебуилдер](http://www.albahari.com/nutshell/predicatebuilder.aspx):
+Также может потребоваться составить различные подвыражения, используя сторонние библиотеки, такие как [PredicateBuilder](http://www.albahari.com/nutshell/predicatebuilder.aspx) от [LinqKit](http://www.albahari.com/nutshell/linqkit.aspx):
 
 :::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/dynamic-linq-expression-trees/Program.vb" id="Compose_expression":::
 
-## <a name="construct-expression-trees-and-queries-using-factory-methods"></a>Создание деревьев выражений и запросов с помощью методов фабрики
+## <a name="construct-expression-trees-and-queries-using-factory-methods"></a>Создание деревьев выражений и запросов с помощью фабричных методов
 
-Во всех примерах мы определили тип элемента во время компиляции и, таким же, &mdash; `String` &mdash; тип запроса &mdash; `IQueryable(Of String)` . Может потребоваться добавить компоненты в запрос любого типа элемента или добавить различные компоненты в зависимости от типа элемента. Вы можете создавать деревья выражений с нуля с помощью методов фабрики <xref:System.Linq.Expressions.Expression?displayProperty=fullName> и, таким образом, адаптировать выражение во время выполнения к определенному типу элемента.
+Во всех примерах нам известен тип элемента во время компиляции,&mdash;`String`&mdash;а соответственно и тип запроса&mdash;`IQueryable(Of String)`. Может потребоваться добавить компоненты в запрос любого типа элемента или добавить различные компоненты в зависимости от типа элемента. Можно создавать деревья выражений с нуля, используя фабричные методы в <xref:System.Linq.Expressions.Expression?displayProperty=fullName> и таким образом адаптировать выражение в среде выполнения к определенному типу элемента.
 
 ### <a name="constructing-an-expressionof-tdelegate"></a>Построение [выражения (Of тделегате)](xref:System.Linq.Expressions.Expression%601)
 
@@ -79,18 +79,18 @@ ms.locfileid: "100584853"
 
 :::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/dynamic-linq-expression-trees/Program.vb" id="Compiler_generated":::
 
-<xref:System.Linq.Expressions.LambdaExpression>Компонент имеет два компонента:
+<xref:System.Linq.Expressions.LambdaExpression> имеет два компонента:
 
-* список параметров, &mdash; `(x As String)` &mdash; представленный <xref:System.Linq.Expressions.LambdaExpression.Parameters> свойством
-* тело, &mdash; `x.StartsWith("a")` &mdash; представленное <xref:System.Linq.Expressions.LambdaExpression.Body> свойством.
+* список параметров,&mdash;`(x As String)`&mdash;представленных свойством <xref:System.Linq.Expressions.LambdaExpression.Parameters>;
+* тело,&mdash;`x.StartsWith("a")`&mdash;представленное свойством <xref:System.Linq.Expressions.LambdaExpression.Body>.
 
 Ниже приведены основные шаги создания [выражения (Of тделегате)](xref:System.Linq.Expressions.Expression%601) .
 
-* Определите <xref:System.Linq.Expressions.ParameterExpression> объекты для каждого из параметров (если таковые имеются) в лямбда-выражении с помощью <xref:System.Linq.Expressions.Expression.Parameter%2A> метода Factory.
+* Определите объекты <xref:System.Linq.Expressions.ParameterExpression> для каждого из параметров (если таковые имеются) в лямбда-выражении с помощью фабричного метода <xref:System.Linq.Expressions.Expression.Parameter%2A>.
 
     :::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/dynamic-linq-expression-trees/Program.vb" id="Factory_method_parameter":::
 
-* Создайте текст <xref:System.Linq.Expressions.LambdaExpression> , используя <xref:System.Linq.Expressions.ParameterExpression> заданные вами (s), и фабричные методы в <xref:System.Linq.Expressions.Expression> . Например, выражение, представляющее, `x.StartsWith("a")` может быть построено следующим образом:
+* Создайте текст <xref:System.Linq.Expressions.LambdaExpression>, используя заданные вами выражения <xref:System.Linq.Expressions.ParameterExpression> и фабричные методы в <xref:System.Linq.Expressions.Expression>. Например, выражение, представляющее `x.StartsWith("a")`, может быть построено следующим образом:
 
     :::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/dynamic-linq-expression-trees/Program.vb" id="Factory_method_body":::
 
@@ -102,19 +102,19 @@ ms.locfileid: "100584853"
 
 ### <a name="scenario"></a>Сценарий
 
-Допустим, у вас есть несколько типов сущностей:
+Допустим, у вас есть несколько типов сущностей:
 
 :::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/dynamic-linq-expression-trees/Entities.vb":::
 
-Для любого из этих типов сущностей необходимо отфильтровать и возвратить только те сущности, которые имеют заданный текст в одном из `string` полей. Для нужно `Person` выполнить поиск по `FirstName` `LastName` свойствам и:
+Для любого из этих типов сущностей необходимо отфильтровать и возвратить только те сущности, которые имеют заданный текст в одном из полей `string`. Для `Person` необходимо найти свойства `FirstName` и `LastName`:
 
 :::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/dynamic-linq-expression-trees/Program.vb" id="PersonsQry":::
 
-но для нужно `Car` найти только `Model` свойство:
+но для `Car` требуется найти только свойство `Model`:
 
 :::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/dynamic-linq-expression-trees/Program.vb" id="CarsQry":::
 
-Хотя можно написать одну пользовательскую функцию для `IQueryable(Of Person)` и другую для `IQueryable(Of Car)` , следующая функция добавляет эту фильтрацию к любому существующему запросу независимо от конкретного типа элемента.
+Несмотря на то что можно написать одну настраиваемую функцию для `IQueryable(Of Person)` и другую для `IQueryable(Of Car)`, следующая функция добавляет эту фильтрацию в любой существующий запрос независимо от конкретного типа элемента.
 
 ### <a name="example"></a>Пример
 
@@ -124,25 +124,25 @@ ms.locfileid: "100584853"
 
 :::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/dynamic-linq-expression-trees/Program.vb" id="Factory_methods_expression_of_tdelegate_usage":::
 
-## <a name="add-method-call-nodes-to-the-xrefsystemlinqiqueryables-expression-tree"></a>Добавление узлов вызова метода в <xref:System.Linq.IQueryable> дерево выражения
+## <a name="add-method-call-nodes-to-the-xrefsystemlinqiqueryables-expression-tree"></a>Добавление узлов вызова метода в дерево выражения <xref:System.Linq.IQueryable>
 
-Если у вас есть <xref:System.Linq.IQueryable> вместо [IQueryable (Of T)](xref:System.Linq.IQueryable%601), вы не можете напрямую вызывать универсальные методы LINQ. В качестве альтернативы можно создать внутреннее дерево выражения, как показано выше, и использовать отражение для вызова соответствующего метода LINQ при передаче в дерево выражения.
+Если у вас есть <xref:System.Linq.IQueryable> вместо [IQueryable (Of T)](xref:System.Linq.IQueryable%601), вы не можете напрямую вызывать универсальные методы LINQ. В качестве альтернативы можно создать внутреннее дерево выражения, как показано выше, и использовать отражение для вызова соответствующего метода LINQ при передаче в дерево выражения.
 
-Можно также дублировать функциональность метода LINQ, заключив все дерево в, <xref:System.Linq.Expressions.MethodCallExpression> которое представляет вызов метода LINQ:
+Можно также дублировать функциональность метода LINQ, заключив все дерево в <xref:System.Linq.Expressions.MethodCallExpression>, который представляет вызов метода LINQ:
 
 :::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/dynamic-linq-expression-trees/Program.vb" id="Factory_methods_lambdaexpression":::
 
 Обратите внимание, что в этом случае нет `T` универсального заполнителя времени компиляции, поэтому вы будете использовать <xref:System.Linq.Expressions.Expression.Lambda%2A> перегрузку, для которой не требуются сведения о типе времени компиляции, и что создает <xref:System.Linq.Expressions.LambdaExpression> вместо [выражения (Of тделегате)](xref:System.Linq.Expressions.Expression%601).
 
-## <a name="the-dynamic-linq-library"></a>Динамическая библиотека LINQ
+## <a name="the-dynamic-linq-library"></a>Динамическая библиотека LINQ
 
-Построение деревьев выражений с помощью фабричных методов относительно сложно; проще создавать строки. [Динамическая библиотека LINQ](https://dynamic-linq.net/) предоставляет набор методов расширения <xref:System.Linq.IQueryable> , соответствующих стандартным методам LINQ в <xref:System.Linq.Queryable> , и который принимает строки в [специальном синтаксисе](https://dynamic-linq.net/expression-language) вместо деревьев выражений. Библиотека создает соответствующее дерево выражения из строки и может возвращать полученный преобразованный результат <xref:System.Linq.IQueryable> .
+Построение деревьев выражений с помощью фабричных методов достаточно сложное занятие; проще создавать строки. [Динамическая библиотека LINQ](https://dynamic-linq.net/) предоставляет набор методов расширения для <xref:System.Linq.IQueryable>, соответствующих стандартным методам LINQ в <xref:System.Linq.Queryable>, и который принимает строки в [специальном синтаксисе](https://dynamic-linq.net/expression-language) вместо деревьев выражений. Библиотека создает соответствующее дерево выражения из строки и может возвращать результирующий преобразованный <xref:System.Linq.IQueryable>.
 
 Например, предыдущий пример (включая построение дерева выражения) может быть переписан следующим образом:
 
 :::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/dynamic-linq-expression-trees/Program.vb" id="Dynamic_linq":::
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Expression Trees (Visual Basic)](index.md) (Деревья выражений (Visual Basic))
 - [Практическое руководство. Выполнение деревьев выражений (Visual Basic)](how-to-execute-expression-trees.md)

@@ -1,6 +1,6 @@
 ---
-title: HttpWebRequest. _CoreResponse поле
-description: Прочитайте о поле HttpWebRequest. _CoreResponse в .NET. Это поле является объектом Коререспонседата или Exception, содержащим результат синтаксического анализа ответа HTTP.
+title: HttpWebRequest._CoreResponse поле
+description: Прочитайте о поле HttpWebRequest._CoreResponse в .NET. Это поле является объектом Коререспонседата или Exception, содержащим результат синтаксического анализа ответа HTTP.
 ms.date: 01/29/2018
 topic_type:
 - apiref
@@ -11,16 +11,16 @@ api_location:
 api_type:
 - Assembly
 author: stevewhims
-ms.openlocfilehash: 5093ec7ed2c3b94931dcd622ae9ccdb42feffa18
-ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
+ms.openlocfilehash: f5fb71c21922285c0e18c2d1f28eeaf2353dcaee
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84989754"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104873839"
 ---
 # <a name="httpwebrequest_coreresponse-field"></a>HttpWebRequest. \_ Поле Коререспонсе
 
-`HttpWebRequest._CoreResponse`— Это объект ( [коререспонседата](coreresponsedata.md) или <xref:System.Exception> ), содержащий результат синтаксического анализа ответа HTTP.
+`HttpWebRequest._CoreResponse` — Это объект ( [коререспонседата](coreresponsedata.md) или <xref:System.Exception> ), содержащий результат синтаксического анализа ответа HTTP.
 
 ## <a name="syntax"></a>Синтаксис
   
@@ -29,7 +29,7 @@ private object _CoreResponse
 ```
 
 > [!WARNING]
-> Этот API не предназначен для непосредственного использования в коде. Вместо этого следует использовать <xref:System.Diagnostics.DiagnosticSource> для подключения сетевого кода. Ознакомьтесь с [руководством пользователя DiagnosticSource](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Diagnostics.DiagnosticSource/src/DiagnosticSourceUsersGuide.md).
+> Этот API не предназначен для непосредственного использования в коде. Вместо этого следует использовать <xref:System.Diagnostics.DiagnosticSource> для подключения сетевого кода. Ознакомьтесь с [руководством пользователя DiagnosticSource](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Diagnostics.DiagnosticSource/src/DiagnosticSourceUsersGuide.md).
 >
 > Корпорация Майкрософт не поддерживает использование этого класса в рабочем приложении при каких-либо обстоятельствах.
 
@@ -39,4 +39,4 @@ private object _CoreResponse
 
 **Сборка:** Система (в System.dll)
 
-**.NET Framework версии:** Доступно с 2,0.
+**Платформа .NET Framework версии:** Доступно с 2,0.

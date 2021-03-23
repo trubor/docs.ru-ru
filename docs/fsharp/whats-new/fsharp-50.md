@@ -2,12 +2,12 @@
 title: 'Новые возможности в F # 5,0-F # Guide'
 description: 'Ознакомьтесь с обзором новых функций, доступных в F # 5,0.'
 ms.date: 11/06/2020
-ms.openlocfilehash: 9b138e4801a3e599db650990acd53c0f956b78b8
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: c686bcf5df18d24ac35bbafb2b2d90f768ef7947
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98190732"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104876712"
 ---
 # <a name="whats-new-in-f-50"></a>Новые возможности F# 5.0
 
@@ -237,12 +237,14 @@ F # 5,0 предоставляет поддержку среза с фиксир
 Чтобы проиллюстрировать это, рассмотрим следующий трехмерный массив:
 
 *z = 0*
+
 | кс\и   | 0 | 1 |
 |-------|---|---|
 | **0** | 0 | 1 |
 | **1** | 2 | 3 |
 
 *z = 1*
+
 | кс\и   | 0 | 1 |
 |-------|---|---|
 | **0** | 4 | 5 |
@@ -366,7 +368,7 @@ iaString.Get() // "hello"
 
 ## <a name="default-interface-member-consumption"></a>Использование элементов интерфейса по умолчанию
 
-F # 5 позволяет использовать [интерфейсы с реализациями по умолчанию](../../csharp/tutorials/default-interface-methods-versions.md).
+F # 5 позволяет использовать [интерфейсы с реализациями по умолчанию](../../csharp/whats-new/tutorials/default-interface-methods-versions.md).
 
 Рассмотрим интерфейс, определенный в C# следующим образом:
 

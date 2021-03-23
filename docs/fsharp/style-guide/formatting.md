@@ -2,12 +2,12 @@
 title: Рекомендации по форматированию кода F#
 description: 'Ознакомьтесь с рекомендациями по форматированию кода F #.'
 ms.date: 08/31/2020
-ms.openlocfilehash: 74ab483a501dd5135ad5d98fd6dce988cf207ef8
-ms.sourcegitcommit: 46cfed35d79d70e08c313b9c664c7e76babab39e
+ms.openlocfilehash: 22020d69c13fbf8317cbf5e871073a290f8967b7
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102605455"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104876361"
 ---
 # <a name="f-code-formatting-guidelines"></a>Рекомендации по форматированию кода F#
 
@@ -306,6 +306,17 @@ let myFunBad (a: decimal) b c:decimal = a + b + c
 ```fsharp
 let f x = x + 1 // Increment by one.
 ```
+
+## <a name="formatting-string-literals-and-interpolated-strings"></a>Форматирование строковых литералов и интерполяции строк
+
+Строковые литералы и интерполяция строк можно оставить только в одной строке, независимо от того, насколько длинна строка.
+
+```fsharp
+let serviceStorageConnection =
+    $"DefaultEndpointsProtocol=https;AccountName=%s{serviceStorageAccount.Name};AccountKey=%s{serviceStorageAccountKey.Value}"
+```
+
+Многострочные интерполяции выражений настоятельно не рекомендуются. Вместо этого привяжите результат выражения к значению и используйте его в строке с интерполяцией.
 
 ## <a name="naming-conventions"></a>Соглашения об именах
 
@@ -1144,6 +1155,50 @@ Option.traverse(
     create
     >> Result.setError [ invalidHeader "Content-Checksum" ]
 )
+```
+
+## <a name="formatting-generic-type-arguments-and-constraints"></a>Форматирование аргументов и ограничений универсального типа
+
+Приведенные ниже рекомендации применимы как к функциям, членам, так и к определениям типов.
+
+Используйте аргументы универсального типа и ограничения для одной строки, если она имеет слишком большую длину:
+
+```fsharp
+let f<'a, 'b when 'a : equality and 'b : comparison> param =
+    // function body
+```
+
+Если аргументы универсального типа, ограничения и параметры функции не умещаются, но параметры типа и ограничения действуют отдельно, поместите параметры на новые строки:
+
+```fsharp
+let f<'a, 'b when 'a : equality and 'b : comparison>
+    param
+    =
+    // function body
+```
+
+Если параметры или ограничения типа слишком длинные, прерывать и выровняйте их, как показано ниже. Не заключайте список параметров типа в той же строке, что и функция, независимо от ее длины. Для ограничений разместите `when` на первой строке и не замещайте каждое ограничение на одну строку, независимо от ее длины. Поместите `>` в конец последней строки. Установка отступа для ограничений на один уровень.
+
+```fsharp
+let inline f< ^a, ^b
+    when ^a : (static member Foo1: unit -> ^b)
+    and ^b : (member Foo2: unit -> int)
+    and ^b : (member Foo3: string -> ^a option)>
+    arg1
+    arg2
+    =
+    // function body
+```
+
+Если параметры или ограничения типа разбиваются, но нет обычных параметров функции, размещайте их `=` на новой строке независимо от того, что:
+
+```f#
+let inline f<^a, ^b
+    when ^a : (static member Foo1: unit -> ^b)
+    and ^b : (member Foo2: unit -> int)
+    and ^b : (member Foo3: string -> ^a option)>
+    =
+    // function body
 ```
 
 ## <a name="formatting-attributes"></a>Атрибуты форматирования

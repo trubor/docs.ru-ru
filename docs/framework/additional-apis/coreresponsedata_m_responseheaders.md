@@ -1,6 +1,6 @@
 ---
-title: Поле Коререспонседата. m_ResponseHeaders
-description: Изучите поле Коререспонседата. m_ResponseHeaders в .NET. Это поле является типом Вебхеадерколлектион, который содержит заголовки, связанные с ответом сервера.
+title: CoreResponseData.m_ResponseHeaders поле
+description: Изучите поле CoreResponseData.m_ResponseHeaders в .NET. Это поле является типом Вебхеадерколлектион, который содержит заголовки, связанные с ответом сервера.
 ms.date: 01/29/2018
 topic_type:
 - apiref
@@ -11,16 +11,16 @@ api_location:
 api_type:
 - Assembly
 author: stevewhims
-ms.openlocfilehash: 7c7b896193cb81e9fc9e3ec28110359003a36728
-ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
+ms.openlocfilehash: 6e0203094376de6ec2870649dd3c025e88639bb8
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84989785"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104875932"
 ---
 # <a name="coreresponsedatam_responseheaders-field"></a>Поле ResponseHeaders Коререспонседата. m \_
 
-`CoreResponseData.m_ResponseHeaders`— Это <xref:System.Net.WebHeaderCollection> заголовок, связанный с ответом сервера.
+`CoreResponseData.m_ResponseHeaders` — Это <xref:System.Net.WebHeaderCollection> заголовок, связанный с ответом сервера.
 
 ## <a name="syntax"></a>Синтаксис
   
@@ -29,7 +29,7 @@ public WebHeaderCollection m_ResponseHeaders
 ```
 
 > [!WARNING]
-> Этот API не предназначен для непосредственного использования в коде. Вместо этого следует использовать <xref:System.Diagnostics.DiagnosticSource> для подключения сетевого кода. Ознакомьтесь с [руководством пользователя DiagnosticSource](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Diagnostics.DiagnosticSource/src/DiagnosticSourceUsersGuide.md).
+> Этот API не предназначен для непосредственного использования в коде. Вместо этого следует использовать <xref:System.Diagnostics.DiagnosticSource> для подключения сетевого кода. Ознакомьтесь с [руководством пользователя DiagnosticSource](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Diagnostics.DiagnosticSource/src/DiagnosticSourceUsersGuide.md).
 >
 > Корпорация Майкрософт не поддерживает использование этого класса в рабочем приложении при каких-либо обстоятельствах.
 
@@ -39,4 +39,4 @@ public WebHeaderCollection m_ResponseHeaders
 
 **Сборка:** Система (в System.dll)
 
-**.NET Framework версии:** Доступно с 2,0.
+**Платформа .NET Framework версии:** Доступно с 2,0.

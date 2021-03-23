@@ -8,12 +8,12 @@ ms.custom: updateeachrelease
 helpviewer_keywords:
 - code analysis
 - code analyzers
-ms.openlocfilehash: 9fbeee7475b49a5b6514d4983142ae3be5a2f026
-ms.sourcegitcommit: 46cfed35d79d70e08c313b9c664c7e76babab39e
+ms.openlocfilehash: 1a0b31f7aca6415510ed0fcd08e9f9a0f8f39bf5
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102605299"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104876608"
 ---
 # <a name="overview-of-net-source-code-analysis"></a>Обзор анализа исходного кода .NET
 
@@ -53,7 +53,7 @@ ms.locfileid: "102605299"
 
 Вы можете изменить важность этих правил, чтобы отключить их или повысить их до уровня ошибок. Вы также можете [включить большее количество правил](#enable-additional-rules).
 
-- Список правил, включенных в каждую версию пакета SDK для .NET, см. на странице[Выпуски анализатора](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md).
+- Список правил, включенных в каждую версию пакета SDK для .NET, см. на странице[Выпуски анализатора](https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md).
 - Список всех правил качества кода см. на [этой странице](quality-rules/index.md).
 
 ### <a name="enable-additional-rules"></a>Включение дополнительных правил
@@ -66,7 +66,7 @@ ms.locfileid: "102605299"
 | `AllEnabledByDefault` | Это самый агрессивный режим. Все правила включены как предупреждения сборки. Вы можете выборочно [отказаться от](configuration-options.md) отдельных правил, чтобы отключить их.<br /><br />`<AnalysisMode>AllEnabledByDefault</AnalysisMode>` |
 | `Default` | Режим по умолчанию, в котором одни правила включены как предупреждения, другие — только как предложения IDE Visual Studio с соответствующими исправлениями кода, а третьи — полностью отключены. Вы можете выборочно [принять отдельные правила или отключить их](configuration-options.md).<br /><br />`<AnalysisMode>Default</AnalysisMode>` |
 
-Чтобы узнать уровень важности по умолчанию для каждого доступного правила и определить, включено ли правило в режиме анализа по умолчанию, см. [полный список правил](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md).
+Чтобы узнать уровень важности по умолчанию для каждого доступного правила и определить, включено ли правило в режиме анализа по умолчанию, см. [полный список правил](https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md).
 
 ### <a name="treat-warnings-as-errors"></a>Рассматривать предупреждения как ошибки
 

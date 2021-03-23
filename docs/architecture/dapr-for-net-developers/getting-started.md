@@ -3,12 +3,12 @@ title: Начало работы с ДАПР
 description: Рекомендации по подготовке локальной среды разработки и созданию своих первых приложений .NET с помощью ДАПР.
 author: amolenk
 ms.date: 02/25/2021
-ms.openlocfilehash: 1b6ecd2cc2bf077375262155f0866cfef2dab708
-ms.sourcegitcommit: d623f686701b94bef905ec5e93d8b55d031c5d6f
+ms.openlocfilehash: 1c60f731138911d7d22ff871c9a3849704d81dd6
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "103623815"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104874385"
 ---
 # <a name="get-started-with-dapr"></a>Начало работы с ДАПР
 
@@ -244,7 +244,7 @@ spec:
     > [!NOTE]
     > Если целевая версия `Dapr.AspNetCore` предназначена для предварительной версии, необходимо указать `-Prerelease` флаг.
 
-1. В `DaprFrontEnd` проекте откройте файл *Startup.CS* и замените `ConfigureServices` метод следующим кодом:
+1. В `DaprFrontEnd` проекте откройте файл *Startup. CS* и замените `ConfigureServices` метод следующим кодом:
 
     ```csharp
     // This method gets called by the runtime. Use this method to add services to the container.
@@ -277,7 +277,7 @@ spec:
     }
     ```
 
-1. Откройте файл *index.cshtml.CS* в папке *pages* и замените его содержимое следующим кодом:
+1. Откройте файл *index. cshtml. CS* в папке *pages* и замените его содержимое следующим кодом:
 
     ```csharp
     using System;
@@ -462,7 +462,7 @@ spec:
 
     ```yaml
     version: '3.4'
-    
+
     services:
       daprfrontend:
         image: ${DOCKER_REGISTRY-}daprfrontend
@@ -509,7 +509,7 @@ spec:
 
     Дополнительные сведения о стандартном блоке вызова службы ДАПР, используемом в этом пошаговом руководстве, см. в [главе 6](service-invocation.md).
 
-## <a name="summary"></a>Итоги
+## <a name="summary"></a>Сводка
 
 В этой главе вы имели возможность *протестировать ДАПР диска* . С помощью пакета SDK для ДАПР .NET вы узнали, как ДАПР интегрируется с платформой приложений .NET.
 
