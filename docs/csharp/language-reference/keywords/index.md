@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Visual C#, keywords
 - '@ keyword'
 ms.custom: updateeachrelease
-ms.openlocfilehash: 9c539574f7a1af15bb0d775ec85a2fd8b2327b95
-ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
+ms.openlocfilehash: 6a48d2e44a9d74bd1a756dd9e6059f57d4aa3d6d
+ms.sourcegitcommit: 5ce37699c2a51ed173171813be68ef7577b1aba5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104759629"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104881032"
 ---
 # <a name="c-keywords"></a>Ключевые слова C#
 
@@ -56,14 +56,14 @@ ms.locfileid: "104759629"
 |[async](async.md)|[await](../operators/await.md)|[by](by.md)|
 |[descending](descending.md)|[dynamic](../builtin-types/reference-types.md)|[equals](equals.md)|
 |[from](from-clause.md)|[get](get.md)|[global](../operators/namespace-alias-qualifier.md)|
-|[group](group-clause.md)|[into](into.md)|[join](join-clause.md)|
-|[let](let-clause.md)|[nameof](../operators/nameof.md)|[nint](../builtin-types/nint-nuint.md)|
-|[notnull](../../programming-guide/generics/constraints-on-type-parameters.md#notnull-constraint)|[nuint](../builtin-types/nint-nuint.md)|[on](on.md)|
-|[orderby](orderby-clause.md)|[partial (тип)](partial-type.md)|[partial (метод)](partial-method.md)|
-|[remove](remove.md)|[select](select-clause.md)|[set](set.md)|
-|[unmanaged (ограничение универсального типа)](../../programming-guide/generics/constraints-on-type-parameters.md#unmanaged-constraint)|[value](value.md)|[var](var.md)|
-|[when (условие фильтра)](when.md)|[where (ограничение универсального типа)](where-generic-type-constraint.md)|[where (предложение запроса)](where-clause.md)|
-|[with](../operators/with-expression.md)|[yield](yield.md)||
+|[group](group-clause.md)|[init](init.md)|[into](into.md)|
+|[join](join-clause.md)|[let](let-clause.md)|[nameof](../operators/nameof.md)|
+|[nint](../builtin-types/nint-nuint.md)|[notnull](../../programming-guide/generics/constraints-on-type-parameters.md#notnull-constraint)|[nuint](../builtin-types/nint-nuint.md)|
+|[on](on.md)|[orderby](orderby-clause.md)|[partial (тип)](partial-type.md)|
+|[partial (метод)](partial-method.md)|[remove](remove.md)|[select](select-clause.md)|
+|[set](set.md)|[unmanaged (ограничение универсального типа)](../../programming-guide/generics/constraints-on-type-parameters.md#unmanaged-constraint)|[value](value.md)|
+|[var](var.md)|[when (условие фильтра)](when.md)|[where (ограничение универсального типа)](where-generic-type-constraint.md)|
+|[where (предложение запроса)](where-clause.md)|[with](../operators/with-expression.md)|[yield](yield.md)||
 
 ## <a name="see-also"></a>См. также
 

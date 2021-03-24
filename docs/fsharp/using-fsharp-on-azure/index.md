@@ -4,12 +4,12 @@ description: Руководство по использованию служб A
 author: sylvanc
 ms.date: 07/29/2020
 ms.custom: devx-track-fsharp
-ms.openlocfilehash: 16599aa48776acee05edf8201cdd148a87507cdb
-ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
+ms.openlocfilehash: 406de0cdef67631ddaaa13f686c9b2093ba5d2ff
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98899415"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104873268"
 ---
 # <a name="using-f-on-azure"></a>Использование языка F# в Azure
 
@@ -60,7 +60,7 @@ Azure поддерживает широкий спектр конфигурац�
 
 [Apache Spark для Azure HDInsight](/azure/hdinsight/spark/apache-spark-overview) — это платформа обработки с открытым исходным кодом, в которой выполняются крупномасштабные приложения для анализа данных. [Azure Databricks](/azure/databricks/scenarios/what-is-azure-databricks) — это платформа аналитики на основе Apache Spark, оптимизированная для платформы облачных служб Microsoft Azure. Azure делает развертывание Apache Spark простым и экономичным. Разрабатывайте приложения Spark на языке F# с помощью [.NET для Apache Spark](../../spark/what-is-apache-spark-dotnet.md), набора привязок .NET для Apache Spark.
 
-* [Примеры .NET для Apache Spark на языке F#](https://github.com/dotnet/spark/tree/master/examples/Microsoft.Spark.FSharp.Examples)
+* [Примеры .NET для Apache Spark на языке F#](https://github.com/dotnet/spark/tree/main/examples/Microsoft.Spark.FSharp.Examples)
 * [Установка записных книжек .NET Interactive Jupyter на платформе Azure HDInsight](../../spark/how-to-guides/hdinsight-notebook-installation.md)
 * [Отправка заданий Apache Spark в Azure HDInsight](../../spark/how-to-guides/hdinsight-deploy-methods.md)
 * [Отправка заданий Apache Spark в Azure Databricks](../../spark/how-to-guides/databricks-deploy-methods.md)

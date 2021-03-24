@@ -2,12 +2,12 @@
 title: Ресурсы по .NET для Apache Spark
 description: Следующие ресурсы по .NET для Apache Spark помогут вам создавать специализированные решения по обработке и анализу данных и интегрировать их в свои .NET-приложения.
 ms.date: 10/09/2020
-ms.openlocfilehash: bc7f36b13eaf28b9e6808a8490f92f38531a883b
-ms.sourcegitcommit: b59237ca4ec763969a0dd775a3f8f39f8c59fe24
+ms.openlocfilehash: 1174358385226a8593a141f67683c773553afc48
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91955503"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104876933"
 ---
 # <a name="net-for-apache-spark-resources"></a>Ресурсы по .NET для Apache Spark
 
@@ -21,4 +21,4 @@ ms.locfileid: "91955503"
 
 ### <a name="how-to-engage-contribute-and-provide-feedback"></a>Как принимать участие в добавлении данных и оставлять отзывы
 
-Команда .NET для Apache Spark поощряет [участие](https://github.com/dotnet/spark/blob/master/docs/contributing.md) пользователей как в виде открытия проблем и работы над ними, так и в виде использования запросов на вытягивание. Сначала нужно найти существующую [проблему](https://github.com/dotnet/spark/issues), в решении которой вы хотите принять участие. Если проблема отсутствует, откройте [новую](https://github.com/dotnet/spark/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+).
+Команда .NET для Apache Spark поощряет [участие](https://github.com/dotnet/spark/blob/main/docs/contributing.md) пользователей как в виде открытия проблем и работы над ними, так и в виде использования запросов на вытягивание. Сначала нужно найти существующую [проблему](https://github.com/dotnet/spark/issues), в решении которой вы хотите принять участие. Если проблема отсутствует, откройте [новую](https://github.com/dotnet/spark/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+).

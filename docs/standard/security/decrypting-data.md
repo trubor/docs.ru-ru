@@ -1,7 +1,7 @@
 ---
 title: Расшифровка данных
 description: Узнайте, как расшифровать данные в .NET с помощью симметричного алгоритма или асимметричного алгоритма.
-ms.date: 07/16/2020
+ms.date: 03/22/2021
 dev_langs:
 - csharp
 - vb
@@ -11,12 +11,12 @@ helpviewer_keywords:
 - asymmetric decryption
 - decryption
 ms.assetid: 9b266b6c-a9b2-4d20-afd8-b3a0d8fd48a0
-ms.openlocfilehash: cf286eeca8a9372c6532c56701e4775d5e09d786
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 14d8b6185c1c5b3aaee4f2041f98c500f2d3c313
+ms.sourcegitcommit: 26721a2260deabb3318cc98af8619306711153cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94831108"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105027913"
 ---
 # <a name="decrypting-data"></a>Расшифровка данных
 
@@ -30,12 +30,14 @@ ms.locfileid: "94831108"
 
 ```vb
 Dim aes As Aes = Aes.Create()
-Dim cryptStream As New CryptoStream(myStream, aes.CreateDecryptor(key, iv), CryptoStreamMode.Read)
+Dim cryptStream As New CryptoStream(
+    myStream, aes.CreateDecryptor(key, iv), CryptoStreamMode.Read)
 ```
 
 ```csharp
 Aes aes = Aes.Create();
-CryptoStream cryptStream = new CryptoStream(myStream, aes.CreateDecryptor(key, iv), CryptoStreamMode.Read);
+CryptoStream cryptStream = new CryptoStream(
+    myStream, aes.CreateDecryptor(key, iv), CryptoStreamMode.Read);
 ```
 
 В следующем примере показан весь процесс создания потока, расшифровки потока, чтения из потока и закрытия потока. Создается объект файлового потока, который считывает файл с именем *TestData.txt*. Затем файловый поток расшифровывается с помощью класса **CryptoStream** и класса **AES** . В этом примере указывается значение ключа, которое используется в примере симметричного шифрования для [шифрования данных](encrypting-data.md). Он не показывает код, необходимый для шифрования и передачи этих значений.
@@ -77,12 +79,12 @@ symmetricKey = rsa.Decrypt(encryptedSymmetricKey, RSAEncryptionPadding.Pkcs1);
 symmetricIV = rsa.Decrypt(encryptedSymmetricIV , RSAEncryptionPadding.Pkcs1);
 ```
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Создание ключей для шифрования и расшифровки](generating-keys-for-encryption-and-decryption.md)
 - [Шифрование данных](encrypting-data.md)
-- [службы шифрования](cryptographic-services.md)
-- [Модель криптографии](cryptography-model.md)
-- [Кросс-платформенная криптография](cross-platform-cryptography.md)
+- [Службы шифрования](cryptographic-services.md)
+- [Модель шифрования](cryptography-model.md)
+- [Кроссплатформенное шифрование](cross-platform-cryptography.md)
 - [Уязвимости в учете времени при симметричной расшифровке в режиме CBC с использованием заполнения](vulnerabilities-cbc-mode.md)
 - [ASP.NET Core Защита данных](/aspnet/core/security/data-protection/introduction)

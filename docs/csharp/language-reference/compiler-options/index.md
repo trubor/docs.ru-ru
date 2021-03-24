@@ -11,12 +11,12 @@ helpviewer_keywords:
 - Visual C# compiler
 - Visual C#, compiler options
 ms.assetid: d3403556-1816-4546-a782-e8223a772e44
-ms.openlocfilehash: cbe4db51652e8bfd00c555b6ddd230e124a08360
-ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
+ms.openlocfilehash: e9fc2fccdb48ab8646cdbf02db14b6ec1b9842df
+ms.sourcegitcommit: 5ce37699c2a51ed173171813be68ef7577b1aba5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103478478"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104881163"
 ---
 # <a name="c-compiler-options"></a>Параметры компилятора C#
 
@@ -45,6 +45,6 @@ ms.locfileid: "103478478"
 
 Кроме того, для проектов .NET Framework *csc.exe* можно запустить из командной строки. Каждый параметр компилятора можно использовать в двух формах записи: **-параметр** или **/параметр**. В проектах .NET Framework параметры для компиляции кода программной части указываются в файле *web.config*. Дополнительные сведения см. в разделе [\<compiler>Element](../../../framework/configure-apps/file-schema/compiler/compiler-element.md).
 
-Если используется окно **Командная строка разработчика для Visual Studio**, все необходимые переменные среды устанавливаются автоматически. Дополнительные сведения о получении доступа к этому инструменту см. в статье [Командная строка разработчика и PowerShell для разработчиков](../../../framework/tools/developer-command-prompt-for-vs.md).
+Если используется окно **Командная строка разработчика для Visual Studio**, все необходимые переменные среды устанавливаются автоматически. Дополнительные сведения о получении доступа к этому инструменту см. в статье [Командная строка разработчика и PowerShell для разработчиков](/visualstudio/ide/reference/command-prompt-powershell).
 
 Обычно исполняемый файл *csc.exe* расположен в папке Microsoft.NET\Framework\\ *\<Version>* в каталоге *Windows*. Расположение файла может зависеть от конкретной конфигурации компьютера. Если на компьютере установлено несколько версий .NET Framework, будет несколько версий этого файла. Дополнительные сведения о подобных вариантах установки см. в разделе [Практическое руководство. Определение установленных версий платформы .NET Framework](../../../framework/migration-guide/how-to-determine-which-versions-are-installed.md).
