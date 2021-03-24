@@ -2,12 +2,12 @@
 title: Публикация приложений
 description: Узнайте способы публикации приложений .NET. .NET позволяет публиковать приложения для конкретной платформы и кроссплатформенные приложения. Приложение можно опубликовать как автономное или как зависимое от среды. Каждый режим влияет на то, как пользователь запускает приложение.
 ms.date: 02/05/2021
-ms.openlocfilehash: 3f10aae139626bd2b09f71b32eaf2d680890e100
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: ca0fa4ff5e17a3fa4c636604ae81b63ffbbc99f6
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99699783"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104874294"
 ---
 # <a name="net-application-publishing-overview"></a>Общие сведения о публикации приложений .NET
 
@@ -129,7 +129,7 @@ dotnet publish -r linux-x64 --self-contained false
 Так как приложение включает среду выполнения .NET и все зависимости приложения, размер скачиваемого файла и требуемого пространства на жестком диске будет больше, чем для версии, [зависящей от среды](#publish-framework-dependent).
 
   > [!TIP]
-  > Вы можете уменьшить размер развертывания в системах Linux примерно на 28 МБ с помощью [*инвариантного режима глобализации*](https://github.com/dotnet/runtime/blob/master/docs/design/features/globalization-invariant-mode.md) .NET. С его помощью приложение будет обрабатывать все языки и региональные параметры как [инвариантные языки и региональные параметры](xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType).
+  > Вы можете уменьшить размер развертывания в системах Linux примерно на 28 МБ с помощью [*инвариантного режима глобализации*](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md) .NET. С его помощью приложение будет обрабатывать все языки и региональные параметры как [инвариантные языки и региональные параметры](xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType).
 
   > [!TIP]
   > Существует [предварительная версия функция усечения](trim-self-contained.md) позволяющая еще больше уменьшить размер развертывания.
