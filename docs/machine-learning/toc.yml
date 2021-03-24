@@ -25,6 +25,8 @@
           href: tutorials/sentiment-analysis-model-builder.md
         - name: Категоризация нарушения санитарных норм (построитель моделей и многоклассовая классификация)
           href: tutorials/health-violation-classification-model-builder.md
+        - name: Обнаружение дорожных знаков (Model Builder и обнаружение объектов)
+          href: tutorials/object-detection-model-builder.md
     - name: API
       items:
         - name: Обзор
@@ -115,6 +117,8 @@
               href: how-to-guides/serve-model-web-api-ml-net.md
             - name: Использование модели ONNX Машинного обучения Azure
               href: /azure/machine-learning/how-to-use-automl-onnx-model-dotnet?toc=/dotnet/machine-learning/how-to-guides/toc.json&bc=/dotnet/machine-learning/how-to-guides/toc.json
+            - name: Создание пакетных прогнозов с помощью .NET для Apache Spark
+              href: ../spark/tutorials/ml-sentiment-analysis.md
 - name: Справочник
   items:
     - name: Справочник по API ML.NET
