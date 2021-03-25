@@ -1,87 +1,99 @@
 ---
 title: Руководство по программированию на C#. Аргументы командной строки
 description: Сведения об аргументах командной строки. Изучите пример, в котором используются аргументы командной строки в консольном приложении.
-ms.date: 07/20/2015
+ms.date: 03/11/2021
 helpviewer_keywords:
 - command-line arguments [C#]
 ms.assetid: 0e597e0d-ea7a-41ba-a38a-0198122f3c26
-ms.openlocfilehash: 35ff0425d3f09cf4ad116cf688b943cef3ef02e3
-ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
+ms.openlocfilehash: f495efb3bc2c76a98f74c173d5b777ebe383edcb
+ms.sourcegitcommit: e3cf8227573e13b8e1f4e3dc007404881cdafe47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87381922"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103190415"
 ---
-# <a name="command-line-arguments-c-programming-guide"></a><span data-ttu-id="c5711-104">Аргументы командной строки (Руководство по программированию на C#)</span><span class="sxs-lookup"><span data-stu-id="c5711-104">Command-Line Arguments (C# Programming Guide)</span></span>
+# <a name="command-line-arguments-c-programming-guide"></a><span data-ttu-id="50217-104">Аргументы командной строки (Руководство по программированию на C#)</span><span class="sxs-lookup"><span data-stu-id="50217-104">Command-Line Arguments (C# Programming Guide)</span></span>
 
-<span data-ttu-id="c5711-105">Вы можете передавать аргументы в метод `Main`, определив метод одним из следующих способов:</span><span class="sxs-lookup"><span data-stu-id="c5711-105">You can send arguments to the `Main` method by defining the method in one of the following ways:</span></span>
+<span data-ttu-id="50217-105">Вы можете передавать аргументы в метод `Main`, определив метод одним из следующих способов:</span><span class="sxs-lookup"><span data-stu-id="50217-105">You can send arguments to the `Main` method by defining the method in one of the following ways:</span></span>
 
-[!code-csharp[csProgGuideMain#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#2)]  
+| <span data-ttu-id="50217-106">Код метода `Main`</span><span class="sxs-lookup"><span data-stu-id="50217-106">`Main` method code</span></span>                 | <span data-ttu-id="50217-107">Сигнатура `Main`</span><span class="sxs-lookup"><span data-stu-id="50217-107">`Main` signature</span></span>                             |
+|------------------------------------|----------------------------------------------|
+| <span data-ttu-id="50217-108">Без возвращаемого значения, без использования `await`</span><span class="sxs-lookup"><span data-stu-id="50217-108">No return value, no use of `await`</span></span> | `static void Main(string[] args)`            |
+| <span data-ttu-id="50217-109">С возвращаемым значением, без использования `await`</span><span class="sxs-lookup"><span data-stu-id="50217-109">Return value, no use of `await`</span></span>    | `static int Main(string[] args)`             |
+| <span data-ttu-id="50217-110">Без возвращаемого значения, с использованием `await`</span><span class="sxs-lookup"><span data-stu-id="50217-110">No return value, uses `await`</span></span>      | `static async Task Main(string[] args)`      |
+| <span data-ttu-id="50217-111">С возвращаемым значением, с использованием `await`</span><span class="sxs-lookup"><span data-stu-id="50217-111">Return value, uses `await`</span></span>         | `static async Task<int> Main(string[] args)` |
 
-[!code-csharp[csProgGuideMain#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#3)]
+<span data-ttu-id="50217-112">Если аргументы не используются, можно опустить `args` в сигнатуре метода, чтобы немного упростить код:</span><span class="sxs-lookup"><span data-stu-id="50217-112">If the arguments are not used, you can omit `args` from the method signature for slightly simpler code:</span></span>
+
+| <span data-ttu-id="50217-113">Код метода `Main`</span><span class="sxs-lookup"><span data-stu-id="50217-113">`Main` method code</span></span>                 | <span data-ttu-id="50217-114">Сигнатура `Main`</span><span class="sxs-lookup"><span data-stu-id="50217-114">`Main` signature</span></span>                |
+|------------------------------------|---------------------------------|
+| <span data-ttu-id="50217-115">Без возвращаемого значения, без использования `await`</span><span class="sxs-lookup"><span data-stu-id="50217-115">No return value, no use of `await`</span></span> | `static void Main()`            |
+| <span data-ttu-id="50217-116">С возвращаемым значением, без использования `await`</span><span class="sxs-lookup"><span data-stu-id="50217-116">Return value, no use of `await`</span></span>    | `static int Main()`             |
+| <span data-ttu-id="50217-117">Без возвращаемого значения, с использованием `await`</span><span class="sxs-lookup"><span data-stu-id="50217-117">No return value, uses `await`</span></span>      | `static async Task Main()`      |
+| <span data-ttu-id="50217-118">С возвращаемым значением, с использованием `await`</span><span class="sxs-lookup"><span data-stu-id="50217-118">Return value, uses `await`</span></span>         | `static async Task<int> Main()` |
 
 > [!NOTE]
-> <span data-ttu-id="c5711-106">Чтобы включить аргументы командной строки в методе `Main` в приложении Windows Forms, необходимо вручную изменить сигнатуру `Main` в файле *program.cs*.</span><span class="sxs-lookup"><span data-stu-id="c5711-106">To enable command-line arguments in the `Main` method in a Windows Forms application, you must manually modify the signature of `Main` in *program.cs*.</span></span> <span data-ttu-id="c5711-107">Код, созданный с помощью конструктора Windows Forms, создает `Main` без входного параметра.</span><span class="sxs-lookup"><span data-stu-id="c5711-107">The code generated by the Windows Forms designer creates a `Main` without an input parameter.</span></span> <span data-ttu-id="c5711-108">Также можно использовать <xref:System.Environment.CommandLine%2A?displayProperty=nameWithType> или <xref:System.Environment.GetCommandLineArgs%2A?displayProperty=nameWithType> для доступа к аргументам командной строки из любой точки в консоли или приложении Windows.</span><span class="sxs-lookup"><span data-stu-id="c5711-108">You can also use <xref:System.Environment.CommandLine%2A?displayProperty=nameWithType> or <xref:System.Environment.GetCommandLineArgs%2A?displayProperty=nameWithType> to access the command-line arguments from any point in a console or Windows application.</span></span>
+> <span data-ttu-id="50217-119">Чтобы включить аргументы командной строки в методе `Main` в приложении Windows Forms, необходимо вручную изменить сигнатуру `Main` в файле *program.cs*.</span><span class="sxs-lookup"><span data-stu-id="50217-119">To enable command-line arguments in the `Main` method in a Windows Forms application, you must manually modify the signature of `Main` in *program.cs*.</span></span> <span data-ttu-id="50217-120">Код, созданный с помощью конструктора Windows Forms, создает `Main` без входного параметра.</span><span class="sxs-lookup"><span data-stu-id="50217-120">The code generated by the Windows Forms designer creates a `Main` without an input parameter.</span></span> <span data-ttu-id="50217-121">Также можно использовать <xref:System.Environment.CommandLine%2A?displayProperty=nameWithType> или <xref:System.Environment.GetCommandLineArgs%2A?displayProperty=nameWithType> для доступа к аргументам командной строки из любой точки в консоли или приложении Windows.</span><span class="sxs-lookup"><span data-stu-id="50217-121">You can also use <xref:System.Environment.CommandLine%2A?displayProperty=nameWithType> or <xref:System.Environment.GetCommandLineArgs%2A?displayProperty=nameWithType> to access the command-line arguments from any point in a console or Windows application.</span></span>
 
-<span data-ttu-id="c5711-109">Параметр метода `Main` — это массив <xref:System.String>, представляющий аргументы командной строки.</span><span class="sxs-lookup"><span data-stu-id="c5711-109">The parameter of the `Main` method is a <xref:System.String> array that represents the command-line arguments.</span></span> <span data-ttu-id="c5711-110">Как правило, определить, существуют ли аргументы, можно, проверив свойство `Length`, например:</span><span class="sxs-lookup"><span data-stu-id="c5711-110">Usually you determine whether arguments exist by testing the `Length` property, for example:</span></span>
+<span data-ttu-id="50217-122">Параметр метода `Main` — это массив <xref:System.String>, представляющий аргументы командной строки.</span><span class="sxs-lookup"><span data-stu-id="50217-122">The parameter of the `Main` method is a <xref:System.String> array that represents the command-line arguments.</span></span> <span data-ttu-id="50217-123">Как правило, определить, существуют ли аргументы, можно, проверив свойство `Length`, например:</span><span class="sxs-lookup"><span data-stu-id="50217-123">Usually you determine whether arguments exist by testing the `Length` property, for example:</span></span>
 
 [!code-csharp[csProgGuideMain#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#4)]
 
 > [!TIP]
-> <span data-ttu-id="c5711-111">Массив `args` не может иметь значение NULL.</span><span class="sxs-lookup"><span data-stu-id="c5711-111">The `args` array cannot be null.</span></span> <span data-ttu-id="c5711-112">Поэтому доступ к свойству `Length` можно получить без проверки значения NULL.</span><span class="sxs-lookup"><span data-stu-id="c5711-112">So, it's safe to access the `Length` property without null checking.</span></span>
+> <span data-ttu-id="50217-124">Массив `args` не может иметь значение NULL.</span><span class="sxs-lookup"><span data-stu-id="50217-124">The `args` array cannot be null.</span></span> <span data-ttu-id="50217-125">Поэтому доступ к свойству `Length` можно получить без проверки значения NULL.</span><span class="sxs-lookup"><span data-stu-id="50217-125">So, it's safe to access the `Length` property without null checking.</span></span>
 
-<span data-ttu-id="c5711-113">Строковые аргументы также можно преобразовать в числовые типы с помощью класса <xref:System.Convert> или метода `Parse`.</span><span class="sxs-lookup"><span data-stu-id="c5711-113">You can also convert the string arguments to numeric types by using the <xref:System.Convert> class or the `Parse` method.</span></span> <span data-ttu-id="c5711-114">Например, следующая инструкция преобразует `string` в число `long` с помощью метода <xref:System.Int64.Parse%2A>:</span><span class="sxs-lookup"><span data-stu-id="c5711-114">For example, the following statement converts the `string` to a `long` number by using the <xref:System.Int64.Parse%2A> method:</span></span>
+<span data-ttu-id="50217-126">Строковые аргументы также можно преобразовать в числовые типы с помощью класса <xref:System.Convert> или метода `Parse`.</span><span class="sxs-lookup"><span data-stu-id="50217-126">You can also convert the string arguments to numeric types by using the <xref:System.Convert> class or the `Parse` method.</span></span> <span data-ttu-id="50217-127">Например, следующая инструкция преобразует `string` в число `long` с помощью метода <xref:System.Int64.Parse%2A>:</span><span class="sxs-lookup"><span data-stu-id="50217-127">For example, the following statement converts the `string` to a `long` number by using the <xref:System.Int64.Parse%2A> method:</span></span>
 
 ```csharp
 long num = Int64.Parse(args[0]);
 ```
 
-<span data-ttu-id="c5711-115">Можно также использовать тип C# `long`, который является псевдонимом `Int64`:</span><span class="sxs-lookup"><span data-stu-id="c5711-115">It is also possible to use the C# type `long`, which aliases `Int64`:</span></span>
+<span data-ttu-id="50217-128">Можно также использовать тип C# `long`, который является псевдонимом `Int64`:</span><span class="sxs-lookup"><span data-stu-id="50217-128">It is also possible to use the C# type `long`, which aliases `Int64`:</span></span>
 
 ```csharp
 long num = long.Parse(args[0]);
 ```
 
-<span data-ttu-id="c5711-116">Кроме того, можно использовать метод класса `Convert`, `ToInt64`:</span><span class="sxs-lookup"><span data-stu-id="c5711-116">You can also use the `Convert` class method `ToInt64` to do the same thing:</span></span>
+<span data-ttu-id="50217-129">Кроме того, можно использовать метод класса `Convert`, `ToInt64`:</span><span class="sxs-lookup"><span data-stu-id="50217-129">You can also use the `Convert` class method `ToInt64` to do the same thing:</span></span>
 
 ```csharp
 long num = Convert.ToInt64(s);
 ```
 
-<span data-ttu-id="c5711-117">Дополнительные сведения см. в разделах <xref:System.Int64.Parse%2A> и <xref:System.Convert>.</span><span class="sxs-lookup"><span data-stu-id="c5711-117">For more information, see <xref:System.Int64.Parse%2A> and <xref:System.Convert>.</span></span>
+<span data-ttu-id="50217-130">Дополнительные сведения см. в разделах <xref:System.Int64.Parse%2A> и <xref:System.Convert>.</span><span class="sxs-lookup"><span data-stu-id="50217-130">For more information, see <xref:System.Int64.Parse%2A> and <xref:System.Convert>.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c5711-118">Пример</span><span class="sxs-lookup"><span data-stu-id="c5711-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="50217-131">Пример</span><span class="sxs-lookup"><span data-stu-id="50217-131">Example</span></span>
 
-<span data-ttu-id="c5711-119">В следующем примере показано использование аргументов командной строки в консольном приложении.</span><span class="sxs-lookup"><span data-stu-id="c5711-119">The following example shows how to use command-line arguments in a console application.</span></span> <span data-ttu-id="c5711-120">Приложение принимает один аргумент времени выполнения, преобразует аргумент в целое число и вычисляет факториал числа.</span><span class="sxs-lookup"><span data-stu-id="c5711-120">The application takes one argument at run time, converts the argument to an integer, and calculates the factorial of the number.</span></span> <span data-ttu-id="c5711-121">Если не указано никаких аргументов, приложение выдает сообщение, поясняющее правильное использование программы.</span><span class="sxs-lookup"><span data-stu-id="c5711-121">If no arguments are supplied, the application issues a message that explains the correct usage of the program.</span></span>
+<span data-ttu-id="50217-132">В следующем примере показано использование аргументов командной строки в консольном приложении.</span><span class="sxs-lookup"><span data-stu-id="50217-132">The following example shows how to use command-line arguments in a console application.</span></span> <span data-ttu-id="50217-133">Приложение принимает один аргумент времени выполнения, преобразует аргумент в целое число и вычисляет факториал числа.</span><span class="sxs-lookup"><span data-stu-id="50217-133">The application takes one argument at run time, converts the argument to an integer, and calculates the factorial of the number.</span></span> <span data-ttu-id="50217-134">Если не указано никаких аргументов, приложение выдает сообщение, поясняющее правильное использование программы.</span><span class="sxs-lookup"><span data-stu-id="50217-134">If no arguments are supplied, the application issues a message that explains the correct usage of the program.</span></span>
 
-<span data-ttu-id="c5711-122">Чтобы скомпилировать и запустить приложение из командной строки, выполните следующие действия.</span><span class="sxs-lookup"><span data-stu-id="c5711-122">To compile and run the application from a command prompt, follow these steps:</span></span>
+<span data-ttu-id="50217-135">Чтобы скомпилировать и запустить приложение из командной строки, выполните следующие действия.</span><span class="sxs-lookup"><span data-stu-id="50217-135">To compile and run the application from a command prompt, follow these steps:</span></span>
 
-1. <span data-ttu-id="c5711-123">Вставьте следующий код в любой текстовый редактор и сохраните файл как текстовый файл с именем *Factorial.cs*.</span><span class="sxs-lookup"><span data-stu-id="c5711-123">Paste the following code into any text editor, and then save the file as  a text file with the name *Factorial.cs*.</span></span>
+1. <span data-ttu-id="50217-136">Вставьте следующий код в любой текстовый редактор и сохраните файл как текстовый файл с именем *Factorial.cs*.</span><span class="sxs-lookup"><span data-stu-id="50217-136">Paste the following code into any text editor, and then save the file as  a text file with the name *Factorial.cs*.</span></span>
 
      [!code-csharp[csProgGuideMain#16](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class1.cs#16)]
 
-2. <span data-ttu-id="c5711-124">На **начальном** экране или в меню **Пуск** откройте окно **командной строки разработчика** Visual Studio и перейдите к папке, содержащей файл, который вы только что создали.</span><span class="sxs-lookup"><span data-stu-id="c5711-124">From the **Start** screen or **Start** menu, open a Visual Studio **Developer Command Prompt** window, and then navigate to the folder that contains the file that you just created.</span></span>
+2. <span data-ttu-id="50217-137">На **начальном** экране или в меню **Пуск** откройте окно **командной строки разработчика** Visual Studio и перейдите к папке, содержащей файл, который вы только что создали.</span><span class="sxs-lookup"><span data-stu-id="50217-137">From the **Start** screen or **Start** menu, open a Visual Studio **Developer Command Prompt** window, and then navigate to the folder that contains the file that you just created.</span></span>
 
-3. <span data-ttu-id="c5711-125">Введите следующую команду для компиляции приложения.</span><span class="sxs-lookup"><span data-stu-id="c5711-125">Enter the following command to compile the application.</span></span>
+3. <span data-ttu-id="50217-138">Введите следующую команду для компиляции приложения.</span><span class="sxs-lookup"><span data-stu-id="50217-138">Enter the following command to compile the application.</span></span>
   
      `csc Factorial.cs`  
   
-     <span data-ttu-id="c5711-126">Если для приложения не выдаются ошибки компиляции, создается исполняемый файл с именем *Factorial.exe*.</span><span class="sxs-lookup"><span data-stu-id="c5711-126">If your application has no compilation errors, an executable file that's named *Factorial.exe* is created.</span></span>
+     <span data-ttu-id="50217-139">Если для приложения не выдаются ошибки компиляции, создается исполняемый файл с именем *Factorial.exe*.</span><span class="sxs-lookup"><span data-stu-id="50217-139">If your application has no compilation errors, an executable file that's named *Factorial.exe* is created.</span></span>
   
-4. <span data-ttu-id="c5711-127">Введите приведенную ниже команду для вычисления факториала числа 3:</span><span class="sxs-lookup"><span data-stu-id="c5711-127">Enter the following command to calculate the factorial of 3:</span></span>
+4. <span data-ttu-id="50217-140">Введите приведенную ниже команду для вычисления факториала числа 3:</span><span class="sxs-lookup"><span data-stu-id="50217-140">Enter the following command to calculate the factorial of 3:</span></span>
   
      `Factorial 3`  
   
-5. <span data-ttu-id="c5711-128">Код создает следующие выходные данные: `The factorial of 3 is 6.`</span><span class="sxs-lookup"><span data-stu-id="c5711-128">The command produces this output: `The factorial of 3 is 6.`</span></span>
+5. <span data-ttu-id="50217-141">Код создает следующие выходные данные: `The factorial of 3 is 6.`</span><span class="sxs-lookup"><span data-stu-id="50217-141">The command produces this output: `The factorial of 3 is 6.`</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="c5711-129">При выполнении приложения в Visual Studio аргументы командной строки можно указать на [странице "Отладка" в конструкторе проектов](/visualstudio/ide/reference/debug-page-project-designer).</span><span class="sxs-lookup"><span data-stu-id="c5711-129">When running an application in Visual Studio, you can specify command-line arguments in the [Debug Page, Project Designer](/visualstudio/ide/reference/debug-page-project-designer).</span></span>
+> <span data-ttu-id="50217-142">При выполнении приложения в Visual Studio аргументы командной строки можно указать на [странице "Отладка" в конструкторе проектов](/visualstudio/ide/reference/debug-page-project-designer).</span><span class="sxs-lookup"><span data-stu-id="50217-142">When running an application in Visual Studio, you can specify command-line arguments in the [Debug Page, Project Designer](/visualstudio/ide/reference/debug-page-project-designer).</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="c5711-130">См. также</span><span class="sxs-lookup"><span data-stu-id="c5711-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="50217-143">См. также</span><span class="sxs-lookup"><span data-stu-id="50217-143">See also</span></span>
 
 - <xref:System.Environment?displayProperty=nameWithType>
-- [<span data-ttu-id="c5711-131">Руководство по программированию на C#</span><span class="sxs-lookup"><span data-stu-id="c5711-131">C# Programming Guide</span></span>](../index.md)
-- [<span data-ttu-id="c5711-132">Main() и аргументы командной строки</span><span class="sxs-lookup"><span data-stu-id="c5711-132">Main() and Command-Line Arguments</span></span>](index.md)
-- [<span data-ttu-id="c5711-133">Отображение аргументов командной строки</span><span class="sxs-lookup"><span data-stu-id="c5711-133">How to display command line arguments</span></span>](how-to-display-command-line-arguments.md)
-- [<span data-ttu-id="c5711-134">Значения, возвращаемые методом main()</span><span class="sxs-lookup"><span data-stu-id="c5711-134">Main() Return Values</span></span>](main-return-values.md)
-- [<span data-ttu-id="c5711-135">Классы</span><span class="sxs-lookup"><span data-stu-id="c5711-135">Classes</span></span>](../classes-and-structs/classes.md)
+- [<span data-ttu-id="50217-144">Руководство по программированию на C#</span><span class="sxs-lookup"><span data-stu-id="50217-144">C# Programming Guide</span></span>](../index.md)
+- [<span data-ttu-id="50217-145">Main() и аргументы командной строки</span><span class="sxs-lookup"><span data-stu-id="50217-145">Main() and Command-Line Arguments</span></span>](index.md)
+- [<span data-ttu-id="50217-146">Отображение аргументов командной строки</span><span class="sxs-lookup"><span data-stu-id="50217-146">How to display command line arguments</span></span>](how-to-display-command-line-arguments.md)
+- [<span data-ttu-id="50217-147">Значения, возвращаемые методом main()</span><span class="sxs-lookup"><span data-stu-id="50217-147">Main() Return Values</span></span>](main-return-values.md)
+- [<span data-ttu-id="50217-148">Классы</span><span class="sxs-lookup"><span data-stu-id="50217-148">Classes</span></span>](../classes-and-structs/classes.md)

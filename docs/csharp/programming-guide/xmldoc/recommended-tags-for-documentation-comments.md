@@ -6,25 +6,25 @@ helpviewer_keywords:
 - XML [C#], tags
 - XML documentation [C#], tags
 ms.assetid: 6e98f7a9-38f4-4d74-b644-1ff1b23320fd
-ms.openlocfilehash: 65bca6f979c5ffd91507b571a4f049377315192d
-ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
+ms.openlocfilehash: 74fd18a09458c399aa135552e5f6f0bca359f09e
+ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87381519"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103477835"
 ---
-# <a name="recommended-tags-for-documentation-comments-c-programming-guide"></a><span data-ttu-id="1b238-104">Руководство по программированию на C#. Рекомендуемые теги для комментариев документации</span><span class="sxs-lookup"><span data-stu-id="1b238-104">Recommended tags for documentation comments (C# programming guide)</span></span>
+# <a name="recommended-tags-for-documentation-comments-c-programming-guide"></a><span data-ttu-id="18e52-104">Руководство по программированию на C#. Рекомендуемые теги для комментариев документации</span><span class="sxs-lookup"><span data-stu-id="18e52-104">Recommended tags for documentation comments (C# programming guide)</span></span>
 
-<span data-ttu-id="1b238-105">Компилятор C# обрабатывает комментарии документации в коде и форматирует их в виде XML-файла, имя которого задается с помощью параметра командной строки **/doc**.</span><span class="sxs-lookup"><span data-stu-id="1b238-105">The C# compiler processes documentation comments in your code and formats them as XML in a file whose name you specify in the **/doc** command-line option.</span></span> <span data-ttu-id="1b238-106">Для создания окончательной документации на основе сгенерированного компилятором файла можно создать пользовательское средство или применить такие средства, как [DocFX](https://dotnet.github.io/docfx/) или [Sandcastle](https://github.com/EWSoftware/SHFB).</span><span class="sxs-lookup"><span data-stu-id="1b238-106">To create the final documentation based on the compiler-generated file, you can create a custom tool, or use a tool such as [DocFX](https://dotnet.github.io/docfx/) or [Sandcastle](https://github.com/EWSoftware/SHFB).</span></span>
+<span data-ttu-id="18e52-105">Компилятор C# обрабатывает комментарии документации в коде и форматирует их в виде XML-файла, имя которого задается с помощью параметра командной строки **/doc**.</span><span class="sxs-lookup"><span data-stu-id="18e52-105">The C# compiler processes documentation comments in your code and formats them as XML in a file whose name you specify in the **/doc** command-line option.</span></span> <span data-ttu-id="18e52-106">Для создания окончательной документации на основе сгенерированного компилятором файла можно создать пользовательское средство или применить такие средства, как [DocFX](https://dotnet.github.io/docfx/) или [Sandcastle](https://github.com/EWSoftware/SHFB).</span><span class="sxs-lookup"><span data-stu-id="18e52-106">To create the final documentation based on the compiler-generated file, you can create a custom tool, or use a tool such as [DocFX](https://dotnet.github.io/docfx/) or [Sandcastle](https://github.com/EWSoftware/SHFB).</span></span>
 
-<span data-ttu-id="1b238-107">Теги обрабатываются в конструкциях кода, таких как типы и члены типов.</span><span class="sxs-lookup"><span data-stu-id="1b238-107">Tags are processed on code constructs such as types and type members.</span></span>
+<span data-ttu-id="18e52-107">Теги обрабатываются в конструкциях кода, таких как типы и члены типов.</span><span class="sxs-lookup"><span data-stu-id="18e52-107">Tags are processed on code constructs such as types and type members.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="1b238-108">Комментарии документации не применяются к пространству имен.</span><span class="sxs-lookup"><span data-stu-id="1b238-108">Documentation comments cannot be applied to a namespace.</span></span>  
+> <span data-ttu-id="18e52-108">Комментарии документации не применяются к пространству имен.</span><span class="sxs-lookup"><span data-stu-id="18e52-108">Documentation comments cannot be applied to a namespace.</span></span>  
   
- <span data-ttu-id="1b238-109">Компилятор обрабатывает любые теги, имеющие допустимый формат XML.</span><span class="sxs-lookup"><span data-stu-id="1b238-109">The compiler will process any tag that is valid XML.</span></span> <span data-ttu-id="1b238-110">С помощью следующих тегов реализуются часто используемые в пользовательской документации возможности.</span><span class="sxs-lookup"><span data-stu-id="1b238-110">The following tags provide generally used functionality in user documentation.</span></span>  
+ <span data-ttu-id="18e52-109">Компилятор обрабатывает любые теги, имеющие допустимый формат XML.</span><span class="sxs-lookup"><span data-stu-id="18e52-109">The compiler will process any tag that is valid XML.</span></span> <span data-ttu-id="18e52-110">С помощью следующих тегов реализуются часто используемые в пользовательской документации возможности.</span><span class="sxs-lookup"><span data-stu-id="18e52-110">The following tags provide generally used functionality in user documentation.</span></span>  
   
-## <a name="tags"></a><span data-ttu-id="1b238-111">Tags</span><span class="sxs-lookup"><span data-stu-id="1b238-111">Tags</span></span>  
+## <a name="tags"></a><span data-ttu-id="18e52-111">Tags</span><span class="sxs-lookup"><span data-stu-id="18e52-111">Tags</span></span>  
   
 |||||  
 |---|---|---|---|
@@ -35,9 +35,9 @@ ms.locfileid: "87381519"
 |[\<include>](./include.md)*|[\<remarks>](./remarks.md)|[\<typeparamref>](./typeparamref.md)|  
 |[\<list>](./list.md)|[\<inheritdoc>](./inheritdoc.md)|[\<returns>](./returns.md)|
   
-<span data-ttu-id="1b238-112">(\* указывает, что компилятор проверяет синтаксис.)</span><span class="sxs-lookup"><span data-stu-id="1b238-112">(\* denotes that the compiler verifies syntax.)</span></span>
+<span data-ttu-id="18e52-112">(\* указывает, что компилятор проверяет синтаксис.)</span><span class="sxs-lookup"><span data-stu-id="18e52-112">(\* denotes that the compiler verifies syntax.)</span></span>
 
-<span data-ttu-id="1b238-113">Чтобы ввести в текст комментария документации угловые скобки, используйте для символов `<` и `>` коды HTML `&lt;` и `&gt;` соответственно.</span><span class="sxs-lookup"><span data-stu-id="1b238-113">If you want angle brackets to appear in the text of a documentation comment, use the HTML encoding of `<` and `>` which is `&lt;` and `&gt;` respectively.</span></span> <span data-ttu-id="1b238-114">Это показано в следующем примере.</span><span class="sxs-lookup"><span data-stu-id="1b238-114">This encoding is shown in the following example.</span></span>
+<span data-ttu-id="18e52-113">Чтобы ввести в текст комментария документации угловые скобки, используйте для символов `<` и `>` коды HTML `&lt;` и `&gt;` соответственно.</span><span class="sxs-lookup"><span data-stu-id="18e52-113">If you want angle brackets to appear in the text of a documentation comment, use the HTML encoding of `<` and `>` which is `&lt;` and `&gt;` respectively.</span></span> <span data-ttu-id="18e52-114">Это показано в следующем примере.</span><span class="sxs-lookup"><span data-stu-id="18e52-114">This encoding is shown in the following example.</span></span>
 
 ```csharp
 /// <summary>
@@ -45,8 +45,8 @@ ms.locfileid: "87381519"
 /// </summary>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="1b238-115">См. также</span><span class="sxs-lookup"><span data-stu-id="1b238-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="18e52-115">См. также</span><span class="sxs-lookup"><span data-stu-id="18e52-115">See also</span></span>
 
-- [<span data-ttu-id="1b238-116">Руководство по программированию на C#</span><span class="sxs-lookup"><span data-stu-id="1b238-116">C# programming guide</span></span>](../index.md)
-- [<span data-ttu-id="1b238-117">-doc (параметры компилятора C#)</span><span class="sxs-lookup"><span data-stu-id="1b238-117">-doc (C# compiler options)</span></span>](../../language-reference/compiler-options/doc-compiler-option.md)
-- [<span data-ttu-id="1b238-118">Комментарии XML-документации</span><span class="sxs-lookup"><span data-stu-id="1b238-118">XML documentation comments</span></span>](./index.md)
+- [<span data-ttu-id="18e52-116">Руководство по программированию на C#</span><span class="sxs-lookup"><span data-stu-id="18e52-116">C# programming guide</span></span>](../index.md)
+- [<span data-ttu-id="18e52-117">**DocumentationFile** (параметры компилятора C#)</span><span class="sxs-lookup"><span data-stu-id="18e52-117">**DocumentationFile** (C# compiler options)</span></span>](../../language-reference/compiler-options/output.md#documentationfile)
+- [<span data-ttu-id="18e52-118">Комментарии XML-документации</span><span class="sxs-lookup"><span data-stu-id="18e52-118">XML documentation comments</span></span>](./index.md)
