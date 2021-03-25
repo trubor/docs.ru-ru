@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - unsafe keyword [C#]
 ms.assetid: 7e818009-1c6e-4b9e-b769-3728a01586a0
-ms.openlocfilehash: 2e047a4cff77877862c5cbbb5e49eb1a75b42499
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 5be895621966dd10b2b1b0f53ebf0f3c688f1ef0
+ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89141963"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103480653"
 ---
 # <a name="unsafe-c-reference"></a>unsafe (Справочник по C#)
 
@@ -43,7 +43,7 @@ unsafe
 }
 ```
 
-Чтобы скомпилировать небезопасный код, необходимо указать параметр компилятора [`-unsafe`](../compiler-options/unsafe-compiler-option.md). Небезопасный код не проверяется средой CLR.
+Для компиляции небезопасного кода нужно задать параметр [**AllowUnsafeBlocks**](../compiler-options/language.md#allowunsafeblocks). Небезопасный код не проверяется средой CLR.
 
 ## <a name="example"></a>Пример
 

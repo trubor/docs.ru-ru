@@ -4,12 +4,12 @@ description: Справочник по свойствам и элементам 
 ms.date: 02/14/2020
 ms.topic: reference
 ms.custom: updateeachrelease
-ms.openlocfilehash: 9cd387a4a8ad7f5b31a797d4d019a53799d926ff
-ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
+ms.openlocfilehash: 18f2be734fa10e2fd4977166ab4334332b120a91
+ms.sourcegitcommit: 46cfed35d79d70e08c313b9c664c7e76babab39e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100432706"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102604766"
 ---
 # <a name="msbuild-reference-for-net-sdk-projects"></a>Справочник по MSBuild для проектов пакета SDK для .NET
 
@@ -409,6 +409,9 @@ ms.locfileid: "100432706"
   <EnableNETAnalyzers>true</EnableNETAnalyzers>
 </PropertyGroup>
 ```
+
+> [!NOTE]
+> Это свойство применяется к встроенным анализаторам в пакете SDK для .NET 5+. Его не следует использовать при установке пакета NuGet для анализа кода.
 
 ### <a name="enforcecodestyleinbuild"></a>EnforceCodeStyleInBuild
 

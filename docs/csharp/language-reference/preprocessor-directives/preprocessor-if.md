@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - '#if directive [C#]'
 ms.assetid: 48cabbff-ca82-491f-a56a-eeccd528c7c2
-ms.openlocfilehash: dc3e235db49279691203a0db4d124239fb972c69
-ms.sourcegitcommit: a69d548f90a03e105ee6701236c38390ecd9ccd1
+ms.openlocfilehash: a3f72719ba4ce722aef33bbd5de338d3d06b2aa0
+ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90065242"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103480369"
 ---
 # <a name="if-c-reference"></a>Справочник по C#. #if
 
@@ -34,7 +34,7 @@ ms.locfileid: "90065242"
 
 `#define` позволяет определить символ, чтобы директива `#if`, которой передается этот символ, возвращала значение `true`.
 
-Также символ можно определить с помощью параметра компилятора [-define](../compiler-options/define-compiler-option.md). Для отмены определения символа служит директива [#undef](preprocessor-undef.md).
+Символ также можно определить с помощью параметра компилятора [**DefineConstants**](../compiler-options/language.md#defineconstants). Для отмены определения символа служит директива [#undef](preprocessor-undef.md).
 
 Символ, определенный с помощью `-define` или `#define`, не конфликтует с одноименной переменной. Соответственно, имя переменной не должно передаваться директиве препроцессора, а символ может использоваться только в директиве препроцессора.
 

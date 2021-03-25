@@ -3,12 +3,12 @@ title: Изучение кода с помощью визуализатора с
 description: Визуализатор синтаксиса предоставляет визуальное средство для изучения моделей, создаваемых для кода пакетом SDK .NET Compiler Platform.
 ms.date: 03/07/2018
 ms.custom: mvc, vs-dotnet
-ms.openlocfilehash: a911a99e78ad5a5f4c6771b91a3c541b1812d67c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 43c69bce93db490fccc3500784623f5736ed935d
+ms.sourcegitcommit: 46cfed35d79d70e08c313b9c664c7e76babab39e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91167578"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102605429"
 ---
 # <a name="explore-code-with-the-roslyn-syntax-visualizer-in-visual-studio"></a>Изучение кода с помощью визуализатора синтаксиса Roslyn в Visual Studio
 
@@ -93,7 +93,7 @@ ms.locfileid: "91167578"
 
 Сетка свойств в визуализаторе обновляется, как показано на рисунке ниже. Символом для выражения является **SynthesizedIntrinsicOperatorSymbol**, у которого **Вид = Метод**.
 
-![Свойства символов](media/syntax-visualizer/symbol-properties.png)
+![Свойства символов в Syntax Visualizer](media/syntax-visualizer/symbol-properties.png)
 
 Попробуйте выбрать команду **View TypeSymbol (if any)** (Просмотреть символ типа (при наличии)) для того же узла **AddExpression**. Сетка свойств в визуализаторе обновляется, как показано на рисунке ниже, указывая, что выбранное выражение имеет тип `Int32`.
 
@@ -123,7 +123,7 @@ End Module
 
 Этот код представляет псевдоним `C`, сопоставляемый с типом `System.Console` в начале файла, и использует его внутри `Main()`. Выберите использование этого псевдонима — `C` в `C.WriteLine()` — внутри метода `Main()`. Визуализатор выбирает соответствующий узел **IdentifierName**. Щелкните этот узел правой кнопкой мыши и выберите команду **View Symbol (if any)** (Просмотреть символ, если есть). Сетка свойств указывает, что этот идентификатор привязан к типу `System.Console`, как показано на следующем рисунке:
 
-![Свойства символов](media/syntax-visualizer/symbol-visual-basic.png)
+![Свойства символа "C" в Syntax Visualizer](media/syntax-visualizer/symbol-visual-basic.png)
 
 Попробуйте выбрать команду **View AliasSymbol (if any)** (Просмотреть символ псевдонима (при наличии)) для того же узла **IdentifierName**. Сетка свойств указывает, что этот идентификатор является псевдонимом с именем `C`, который привязан к целевому объекту `System.Console`. Другими словами, сетка свойств предоставляет сведения о **AliasSymbol**, соответствующем идентификатору `C`.
 

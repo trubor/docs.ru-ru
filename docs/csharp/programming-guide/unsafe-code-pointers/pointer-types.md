@@ -5,12 +5,12 @@ ms.date: 04/20/2018
 helpviewer_keywords:
 - unsafe code [C#], pointers
 - pointers [C#]
-ms.openlocfilehash: 9c62a31f9a4a090fe56fb10ac45fe2f93f1b036e
-ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
+ms.openlocfilehash: 0e384084ef1fbb9139c11880ffa8a79bad23b32e
+ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87382039"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103480580"
 ---
 # <a name="pointer-types-c-programming-guide"></a>Типы указателей (Руководство по программированию на C#)
 
@@ -52,7 +52,7 @@ int* myVariable;
 
 Выражение `*myVariable` обозначает переменную `int`, находящуюся по адресу, содержащемуся в `myVariable`.
 
-Разделы [Оператор fixed](../../language-reference/keywords/fixed-statement.md) и [Преобразования указателей](./pointer-conversions.md) содержат несколько примеров. В следующем примере используются ключевое слово `unsafe` и оператор `fixed`, а также демонстрируется способ инкрементирования внутреннего указателя.  Этот код можно вставить в функцию Main консольного приложения для его запуска. Эти примеры должны быть скомпилированы с заданным параметром компилятора [-unsafe](../../language-reference/compiler-options/unsafe-compiler-option.md).
+Разделы [Оператор fixed](../../language-reference/keywords/fixed-statement.md) и [Преобразования указателей](./pointer-conversions.md) содержат несколько примеров. В следующем примере используются ключевое слово `unsafe` и оператор `fixed`, а также демонстрируется способ инкрементирования внутреннего указателя.  Этот код можно вставить в функцию Main консольного приложения для его запуска. Эти примеры должны быть скомпилированы с заданным параметром [**AllowUnsafeBlocks**](../../language-reference/compiler-options/language.md#allowunsafeblocks).
 
 [!code-csharp[Using pointer types](snippets/FixedKeywordExamples.cs#5)]
 

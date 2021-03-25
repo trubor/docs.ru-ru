@@ -6,12 +6,12 @@ helpviewer_keywords:
 - XML [C#], tags
 - XML documentation [C#], tags
 ms.assetid: 6e98f7a9-38f4-4d74-b644-1ff1b23320fd
-ms.openlocfilehash: 65bca6f979c5ffd91507b571a4f049377315192d
-ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
+ms.openlocfilehash: 74fd18a09458c399aa135552e5f6f0bca359f09e
+ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87381519"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103477835"
 ---
 # <a name="recommended-tags-for-documentation-comments-c-programming-guide"></a>Руководство по программированию на C#. Рекомендуемые теги для комментариев документации
 
@@ -48,5 +48,5 @@ ms.locfileid: "87381519"
 ## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../index.md)
-- [-doc (параметры компилятора C#)](../../language-reference/compiler-options/doc-compiler-option.md)
+- [**DocumentationFile** (параметры компилятора C#)](../../language-reference/compiler-options/output.md#documentationfile)
 - [Комментарии XML-документации](./index.md)

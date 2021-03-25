@@ -2,12 +2,12 @@
 title: Тестирование библиотеки классов .NET с помощью Visual Studio Code
 description: Узнайте, как использовать Visual Studio Code и CLI .NET для создания и запуска проекта модульного теста для библиотеки классов .NET.
 ms.date: 11/17/2020
-ms.openlocfilehash: 4528bd203ae03988a1d1d80a7e904e94e68c1d04
-ms.sourcegitcommit: 5114e7847e0ff8ddb8c266802d47af78567949cf
+ms.openlocfilehash: bc8741e11504f94e54ccc45a5ad93408a3fe9309
+ms.sourcegitcommit: 1d3af230ec30d8d061be7a887f6ba38a530c4ece
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94915860"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102511818"
 ---
 # <a name="tutorial-test-a-net-class-library-using-visual-studio-code"></a>Учебник. Тестирование библиотеки классов .NET с помощью Visual Studio Code
 

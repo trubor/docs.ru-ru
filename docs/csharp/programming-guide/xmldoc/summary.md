@@ -9,12 +9,12 @@ helpviewer_keywords:
 - <summary> C# XML tag
 - summary C# XML tag
 ms.assetid: b4c43d92-2067-4eac-a59a-d32f5248c08b
-ms.openlocfilehash: f9243e598aaf0c12dd48b48045f461b4b307c18f
-ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
+ms.openlocfilehash: e20970971636f13357c165f3065050fcf5914ada
+ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87380609"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103477713"
 ---
 # <a name="summary-c-programming-guide"></a>\<summary> (руководство по программированию на C#)
 
@@ -36,7 +36,7 @@ ms.locfileid: "87380609"
 
 Текст в теге `<summary>` является единственным источником сведений о типе для технологии IntelliSense и также отображается в окне обозревателя объектов.
 
-Чтобы обработать комментарии документации и сохранить их в файл, выполняйте сборку с параметром [-doc](../../language-reference/compiler-options/doc-compiler-option.md). Для создания окончательной документации на основе сгенерированного компилятором файла можно создать пользовательское средство или применить такие средства, как [DocFX](https://dotnet.github.io/docfx/) или [Sandcastle](https://github.com/EWSoftware/SHFB).
+Чтобы обработать комментарии в документации и сохранить их в файл, выполните компиляцию с использованием параметра [**DocumentationFile**](../../language-reference/compiler-options/output.md#documentationfile). Для создания окончательной документации на основе сгенерированного компилятором файла можно создать пользовательское средство или применить такие средства, как [DocFX](https://dotnet.github.io/docfx/) или [Sandcastle](https://github.com/EWSoftware/SHFB).
 
 ## <a name="example"></a>Пример
 
@@ -67,7 +67,7 @@ ms.locfileid: "87380609"
 </doc>
 ```
 
-## <a name="example"></a>Пример
+## <a name="cref-example"></a>Пример cref
 
 В следующем примере показано, как создать ссылку `cref` на универсальный тип.
 

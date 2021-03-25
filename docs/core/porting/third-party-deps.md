@@ -1,28 +1,30 @@
 ---
-title: Анализ зависимостей для переноса кода в .NET Core
-description: Научитесь анализировать внешние зависимости, чтобы перенести свой проект из .NET Framework в .NET Core.
+title: Анализ зависимостей для переноса кода
+description: Сведения о том, как анализировать внешние зависимости для переноса проекта из .NET Framework в .NET.
 author: cartermp
-ms.date: 10/22/2019
-ms.openlocfilehash: 430da45052e3953ab49f182b1773fc6d74bd2221
-ms.sourcegitcommit: 67ebdb695fd017d79d9f1f7f35d145042d5a37f7
+ms.date: 03/04/2021
+ms.openlocfilehash: 4619243cf300e248be45e4b2a4d5541c3b3e1cb5
+ms.sourcegitcommit: 46cfed35d79d70e08c313b9c664c7e76babab39e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92223606"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102604922"
 ---
-# <a name="analyze-your-dependencies-to-port-code-to-net-core"></a>Анализ зависимостей для переноса кода в .NET Core
+# <a name="analyze-your-dependencies-to-port-code-from-net-framework-to-net"></a>Анализ зависимостей для переноса кода из .NET Framework в .NET
 
-Для переноса кода в .NET Core или .NET Standard требуется понимать свои зависимости. Внешними зависимостями являются пакеты NuGet или файлы `.dll`, на которые вы ссылаетесь в своем проекте, но не собираете.
+Для переноса кода в .NET или .NET Standard требуется понимать существующие зависимости. Внешними зависимостями являются пакеты NuGet или файлы `.dll`, на которые вы ссылаетесь в своем проекте, но не собираете.
+
+Перенос кода в .NET Standard 2.0 или более ранней версии гарантирует, что его можно будет использовать как с .NET Framework, так и с .NET. Но если вам не нужно использовать библиотеку с .NET Framework, рекомендуется ориентироваться на последнюю версию .NET.
 
 ## <a name="migrate-your-nuget-packages-to-packagereference"></a>Перенос пакетов NuGet в `PackageReference`
 
-[PackageReference](/nuget/consume-packages/package-references-in-project-files) используется в .NET Core для указания зависимостей пакета. Если вы используете файл [packages.config](/nuget/reference/packages-config) для указания пакетов в проекте, преобразуйте его в формат `PackageReference`, так как `packages.config` не поддерживается в .NET Core.
+.NET не может использовать файл [_packages.config_](/nuget/reference/packages-config) для ссылок NuGet. Как .NET, так и .NET Framework могут использовать [PackageReference](/nuget/consume-packages/package-references-in-project-files) для указания зависимостей пакета. Если вы используете файл _packages.config_ для указания пакетов в проекте, преобразуйте его в формат `PackageReference`.
 
 Сведения о том, как выполнить миграцию, см. в статье [Преобразование packages.config в PackageReference](/nuget/reference/migrate-packages-config-to-package-reference).
 
 ## <a name="upgrade-your-nuget-packages"></a>Обновление пакетов NuGet
 
-После переноса проекта в формат `PackageReference` проверьте, совместимы ли пакеты с .NET Core.
+После переноса проекта в формат `PackageReference` проверьте, совместимы ли пакеты с .NET.
 
 Сначала обновите свои пакеты до последней доступной версии. Это можно сделать с помощью пользовательского интерфейса диспетчера пакетов NuGet в Visual Studio. Скорее всего, новые версии зависимостей пакета уже совместимы с .NET Core.
 
@@ -43,18 +45,17 @@ ms.locfileid: "92223606"
 Проще всего просматривать папки пакета NuGet с помощью инструмента [Обозреватель пакетов NuGet](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer). После установки выполните следующие действия, чтобы увидеть имена папок:
 
 1. Откройте обозреватель пакетов NuGet.
-2. Щелкните **Открыть пакет из веб-канала** .
+2. Щелкните **Открыть пакет из веб-канала**.
 3. Выполните поиск по имени пакета.
-4. Выберите имя пакета в результатах поиска и нажмите кнопку **Открыть** .
+4. Выберите имя пакета в результатах поиска и нажмите кнопку **Открыть**.
 5. Разверните папку *lib* в правой части окна и просмотрите имена папок.
 
-Найдите папку с именами, используя один из следующих шаблонов: `netstandardX.Y` или `netcoreappX.Y`.
+Найдите папку с именами, используя один из следующих шаблонов: `netstandardX.Y`, `netX.Y` или `netcoreappX.Y`.
 
-Эти значения — [моникеры целевых платформ (TFM)](../../standard/frameworks.md), которые соответствуют версиям [.NET Standard](../../standard/net-standard.md), .NET Core и традиционным профилям переносимой библиотеки классов (PCL), совместимым с .NET Core.
+Эти значения — [моникеры целевых платформ (TFM)](../../standard/frameworks.md), соответствующие версиям [.NET Standard](../../standard/net-standard.md), .NET и .NET Core, которые совместимы с .NET.
 
 > [!IMPORTANT]
-> При просмотре поддерживаемых пакетом моникеров TFM обратите внимание, что, несмотря на совместимость, `netcoreapp*` предназначен только для проектов .NET Core, но не для проектов .NET Standard.
-> Библиотека, предназначенная только для `netcoreapp*`, но не для `netstandard*`, может использоваться только другими приложениями .NET Core.
+> При просмотре TFM, поддерживаемых пакетом, обратите внимание, что моникеры TFM, отличающиеся от `netstandard*`, ориентируются на конкретную реализацию .NET, например .NET 5, .NET Core или .NET Framework. Начиная с .NET 5, моникер `net*` (без заданной операционной системы) фактически заменяет `netstandard*` как [переносимый целевой объект](../../standard/net-standard.md#net-5-and-net-standard). Например, `net5.0` ориентируется на область API .NET 5 и поддерживает разные платформы, но `net5.0-windows` ориентируется на область API .NET 5, реализованную в операционной системе Windows.
 
 ## <a name="net-framework-compatibility-mode"></a>Режим совместимости .NET Framework
 
@@ -62,7 +63,7 @@ ms.locfileid: "92223606"
 
 Начиная с .NET Standard 2.0, доступен режим совместимости .NET Framework. Этот режим совместимости позволяет проектам .NET Standard и .NET Core ссылаться на библиотеки .NET Framework. Создание ссылок на библиотеки .NET Framework не работает для всех проектов, например, если библиотека использует API WPF, то делает возможным разблокировку множества сценариев переноса.
 
-Ссылаясь в своем проекте на пакеты NuGet, предназначенные для .NET Framework, например [Huitian.PowerCollections](https://www.nuget.org/packages/Huitian.PowerCollections), вы получаете предупреждение об откате пакета ([NU1701](/nuget/reference/errors-and-warnings/nu1701)), как в следующем примере:
+Ссылаясь в своем проекте на пакеты NuGet, ориентирующиеся на .NET Framework, например [`Huitian.PowerCollections`](https://www.nuget.org/packages/Huitian.PowerCollections), вы получаете предупреждение об откате пакета ([NU1701](/nuget/reference/errors-and-warnings/nu1701)), как в следующем примере:
 
 `NU1701: Package ‘Huitian.PowerCollections 1.0.0’ was restored using ‘.NETFramework,Version=v4.6.1’ instead of the project target framework ‘.NETStandard,Version=v2.0’. This package may not be fully compatible with your project.`
 
@@ -78,7 +79,7 @@ ms.locfileid: "92223606"
 
 Дополнительные сведения о том, как отключить предупреждения компилятора в Visual Studio, см. в разделе [Подавление предупреждений для пакетов NuGet](/visualstudio/ide/how-to-suppress-compiler-warnings#suppress-warnings-for-nuget-packages).
 
-## <a name="what-to-do-when-your-nuget-package-dependency-doesnt-run-on-net-core"></a>Что делать, если зависимость пакета NuGet не работает в .NET Core
+## <a name="if-nuget-packages-wont-run-on-net"></a>Если пакеты NuGet не запускаются в .NET
 
 Если пакет NuGet, от которого зависит ваш проект, не работает в .NET Core, можно предпринять ряд мер:
 
@@ -94,11 +95,11 @@ ms.locfileid: "92223606"
 
 Команда разработчиков .NET хотела бы узнать, поддержку каких библиотек в .NET Core следует реализовать в первую очередь. Сообщить о нужных вам библиотеках можно в электронном сообщении по адресу dotnet@microsoft.com.
 
-## <a name="analyze-dependencies-that-arent-nuget-packages"></a>Анализ зависимостей, которые не являются пакетами NuGet
+## <a name="analyze-non-nuget-dependencies"></a>Анализ зависимостей, не относящихся к NuGet
 
 Возможно, вы используете зависимость, которая не является пакетом NuGet, например библиотеку DLL в файловой системе. Единственный способ определить переносимость такой зависимости — запустить [средство .NET Portability Analyzer](https://github.com/Microsoft/dotnet-apiport). Это средство анализирует сборки, предназначенные для .NET Framework, и идентифицирует API, которые невозможно перенести на другие платформы .NET, например .NET Core. Можно запустить средство в качестве консольного приложения или [расширения Visual Studio](../../standard/analyzers/portability-analyzer.md).
 
 ## <a name="next-steps"></a>Следующие шаги
 
->[!div class="nextstepaction"]
->[Перенос библиотек](libraries.md)
+- [Общие сведения о переносе кода в .NET Framework из .NET](index.md)
+- [Перенос библиотек](libraries.md)

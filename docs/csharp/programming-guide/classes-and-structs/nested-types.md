@@ -5,16 +5,16 @@ ms.date: 02/08/2020
 helpviewer_keywords:
 - nested types [C#]
 ms.assetid: f2e1b315-e3d1-48ce-977f-7bae0960ba99
-ms.openlocfilehash: 0741ae88103b16ce34fd5a38b789beaf428e734a
-ms.sourcegitcommit: 0014aa4d5cb2da56a70e03fc68f663d64df5247a
+ms.openlocfilehash: 853138beed6ad9ddffa789f0080ca1fd2ba9d700
+ms.sourcegitcommit: 1d3af230ec30d8d061be7a887f6ba38a530c4ece
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96918584"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102511922"
 ---
 # <a name="nested-types-c-programming-guide"></a>Вложенные типы (Руководство по программированию на C#)
 
-Тип, определенный в [классе](../../language-reference/keywords/class.md), [структуре](../../language-reference/builtin-types/struct.md), [делегате](../../language-reference/builtin-types/reference-types.md#the-delegate-type) или [интерфейсе](../../language-reference/keywords/interface.md), называется вложенным типом. Пример
+Тип, определенный внутри [класса](../../language-reference/keywords/class.md), [структуры](../../language-reference/builtin-types/struct.md) или [интерфейса](../../language-reference/keywords/interface.md), называется вложенным типом. Пример
 
 [!code-csharp[DeclareNestedClass](~/samples/snippets/csharp/objectoriented/nestedtypes.cs#DeclareNestedClass)]
 
@@ -25,7 +25,9 @@ ms.locfileid: "96918584"
 - Вложенные типы **класса** могут иметь модификаторы [public](../../language-reference/keywords/public.md), [protected](../../language-reference/keywords/protected.md), [internal](../../language-reference/keywords/internal.md), [protected internal](../../language-reference/keywords/protected-internal.md), [private](../../language-reference/keywords/private.md) или [private protected](../../language-reference/keywords/private-protected.md).
 
    Тем не менее при определении вложенного класса `protected`, `protected internal` или `private protected` внутри [запечатанного класса](../../language-reference/keywords/sealed.md) возникает предупреждение компилятора [CS0628](../../misc/cs0628.md) "Новый защищенный член объявлен в запечатанном классе".
-  
+
+   Также учитывайте, что внешняя доступность вложенного типа нарушает правило качества кода [CA1034](../../../fundamentals/code-analysis/quality-rules/ca1034.md) "Вложенные типы не должны быть видимыми".
+
 - Вложенные типы **структуры** могут иметь модификаторы [public](../../language-reference/keywords/public.md), [internal](../../language-reference/keywords/internal.md) или [private](../../language-reference/keywords/private.md).
 
 В следующем примере класс `Nested` определяется как открытый:
@@ -48,3 +50,4 @@ ms.locfileid: "96918584"
 - [Классы и структуры](./index.md)
 - [Модификаторы доступа](./access-modifiers.md)
 - [Конструкторы](./constructors.md)
+- [Правило CA1034](../../../fundamentals/code-analysis/quality-rules/ca1034.md)

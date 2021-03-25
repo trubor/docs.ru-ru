@@ -1,24 +1,36 @@
 ---
 title: Руководство по программированию на C#. Аргументы командной строки
 description: Сведения об аргументах командной строки. Изучите пример, в котором используются аргументы командной строки в консольном приложении.
-ms.date: 07/20/2015
+ms.date: 03/11/2021
 helpviewer_keywords:
 - command-line arguments [C#]
 ms.assetid: 0e597e0d-ea7a-41ba-a38a-0198122f3c26
-ms.openlocfilehash: 35ff0425d3f09cf4ad116cf688b943cef3ef02e3
-ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
+ms.openlocfilehash: f495efb3bc2c76a98f74c173d5b777ebe383edcb
+ms.sourcegitcommit: e3cf8227573e13b8e1f4e3dc007404881cdafe47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87381922"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103190415"
 ---
 # <a name="command-line-arguments-c-programming-guide"></a>Аргументы командной строки (Руководство по программированию на C#)
 
 Вы можете передавать аргументы в метод `Main`, определив метод одним из следующих способов:
 
-[!code-csharp[csProgGuideMain#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#2)]  
+| Код метода `Main`                 | Сигнатура `Main`                             |
+|------------------------------------|----------------------------------------------|
+| Без возвращаемого значения, без использования `await` | `static void Main(string[] args)`            |
+| С возвращаемым значением, без использования `await`    | `static int Main(string[] args)`             |
+| Без возвращаемого значения, с использованием `await`      | `static async Task Main(string[] args)`      |
+| С возвращаемым значением, с использованием `await`         | `static async Task<int> Main(string[] args)` |
 
-[!code-csharp[csProgGuideMain#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#3)]
+Если аргументы не используются, можно опустить `args` в сигнатуре метода, чтобы немного упростить код:
+
+| Код метода `Main`                 | Сигнатура `Main`                |
+|------------------------------------|---------------------------------|
+| Без возвращаемого значения, без использования `await` | `static void Main()`            |
+| С возвращаемым значением, без использования `await`    | `static int Main()`             |
+| Без возвращаемого значения, с использованием `await`      | `static async Task Main()`      |
+| С возвращаемым значением, с использованием `await`         | `static async Task<int> Main()` |
 
 > [!NOTE]
 > Чтобы включить аргументы командной строки в методе `Main` в приложении Windows Forms, необходимо вручную изменить сигнатуру `Main` в файле *program.cs*. Код, созданный с помощью конструктора Windows Forms, создает `Main` без входного параметра. Также можно использовать <xref:System.Environment.CommandLine%2A?displayProperty=nameWithType> или <xref:System.Environment.GetCommandLineArgs%2A?displayProperty=nameWithType> для доступа к аргументам командной строки из любой точки в консоли или приложении Windows.

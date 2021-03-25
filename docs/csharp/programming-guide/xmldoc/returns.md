@@ -9,12 +9,12 @@ helpviewer_keywords:
 - <returns> C# XML tag
 - returns C# XML tag
 ms.assetid: bb2d9958-62fc-47c7-9511-6311171f119f
-ms.openlocfilehash: e461d46df619a351048ae7942e59847d39e490f9
-ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
+ms.openlocfilehash: 6a098208a51ca31fe2278b7c696deb15a13f8e1e
+ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87381402"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103477805"
 ---
 # <a name="returns-c-programming-guide"></a>\<returns> (руководство по программированию на C#)
 
@@ -34,7 +34,7 @@ ms.locfileid: "87381402"
 
 Тег `<returns>` следует использовать в комментариях к объявлению метода для описания возвращаемого значения.
 
-Чтобы обработать комментарии документации и сохранить их в файл, выполняйте сборку с параметром [-doc](../../language-reference/compiler-options/doc-compiler-option.md).
+Чтобы обработать комментарии в документации и сохранить их в файл, выполните компиляцию с использованием параметра [**DocumentationFile**](../../language-reference/compiler-options/output.md#documentationfile).
 
 ## <a name="example"></a>Пример
 

@@ -1,6 +1,6 @@
 ---
 title: <permission> Руководство по программированию на C#.
-description: Узнайте о теге <permission> XML. Этот тег позволяет документировать доступ члена, а класс PermissionSet позволяет определить доступ к члену.
+description: Сведения о теге <permission> XML. Этот тег позволяет документировать доступ члена, а класс PermissionSet позволяет определить доступ к члену.
 ms.date: 07/20/2015
 f1_keywords:
 - permission
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - <permission> C# XML tag
 - permission C# XML tag
 ms.assetid: 769e93fe-8404-443f-bf99-577aa42b6a49
-ms.openlocfilehash: 38c87505b8b2973875e474ffd296dc02b7fb9de6
-ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
+ms.openlocfilehash: 379d3fda06c50e9e988784e671061d604e6e5b36
+ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87381727"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103477849"
 ---
 # <a name="permission-c-programming-guide"></a>\<permission> (руководство по программированию на C#)
 
@@ -40,7 +40,7 @@ ms.locfileid: "87381727"
 
 Тег `<permission>` позволяет документировать уровень доступа для элемента. Задать уровень доступа для члена можно с помощью класса <xref:System.Security.PermissionSet>.
 
-Чтобы обработать комментарии документации и сохранить их в файл, выполняйте сборку с параметром [-doc](../../language-reference/compiler-options/doc-compiler-option.md).
+Чтобы обработать комментарии в документации и сохранить их в файл, выполните компиляцию с использованием параметра [**DocumentationFile**](../../language-reference/compiler-options/output.md#documentationfile).
 
 ## <a name="example"></a>Пример
 

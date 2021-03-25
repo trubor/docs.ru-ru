@@ -2,12 +2,12 @@
 title: Создание консольного приложения .NET в Visual Studio Code
 description: Узнайте, как создать консольное приложение .NET с помощью Visual Studio Code и .NET CLI.
 ms.date: 11/17/2020
-ms.openlocfilehash: dbbdf88b0c84089249eb7e446c25eddc11543c1a
-ms.sourcegitcommit: 5114e7847e0ff8ddb8c266802d47af78567949cf
+ms.openlocfilehash: 51e5a897985af7576de03659efdd8520cb8e58e6
+ms.sourcegitcommit: 1d3af230ec30d8d061be7a887f6ba38a530c4ece
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94915873"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102511870"
 ---
 # <a name="tutorial-create-a-net-console-application-using-visual-studio-code"></a>Учебник. Создание консольного приложения .NET в Visual Studio Code
 
@@ -93,7 +93,7 @@ dotnet run
 
    Этот код отображает запрос в окне консоли и ожидает, чтобы пользователь ввел строку текста и нажал клавишу <kbd>ВВОД</kbd>. Приложение сохраняет полученную строку в переменной с именем `name`. Оно также получает значение свойства <xref:System.DateTime.Now?displayProperty=nameWithType>, которое содержит текущее локальное время, и присваивает его переменной с именем `date`. Затем оно отображает эти значения в окне консоли. Наконец, приложение выводит запрос в окне консоли и вызывает метод <xref:System.Console.ReadKey(System.Boolean)?displayProperty=nameWithType> для ожидания ввода данных пользователем.
 
-   `\n` — это символ новой строки.
+   <xref:System.Environment.NewLine> — это независимый от платформы и языка способ для представления разрыва строки. Его альтернативами являются `\n` в C# и `vbCrLf` в Visual Basic.
 
    Знак доллара (`$`) перед строкой позволяет вставить такие выражения, как имена переменных, в фигурные скобки в строке. Значение выражения вставляется в строку вместо выражения. Такой синтаксис называется [интерполированными строками](../../csharp/language-reference/tokens/interpolated.md).
 

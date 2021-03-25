@@ -8,23 +8,26 @@ helpviewer_keywords:
 ms.topic: how-to
 ms.custom: contperf-fy21q2
 ms.assetid: 1dc5a8ad-a4f7-4f32-8506-3fc6d8c8bfed
-ms.openlocfilehash: 4b28ee17f4be2b933373cce0d3670cbfa9a12895
-ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
+ms.openlocfilehash: 1d80cb2391a94c21360117c8217ecc4514fd666e
+ms.sourcegitcommit: e3cf8227573e13b8e1f4e3dc007404881cdafe47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97513046"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103190272"
 ---
 # <a name="how-to-implement-a-lightweight-class-with-auto-implemented-properties-c-programming-guide"></a>Практическое руководство. Реализация облегченного класса с автоматически реализуемыми свойствами (руководство по программированию на C#)
 
 В этом примере показано, как создать неизменяемый упрощенный класс, служащий исключительно для инкапсуляции набора автоматически реализуемых свойств. Используйте такую конструкцию вместо структуры, когда требуется использовать семантику ссылочного типа.
 
-Неизменяемое свойство можно создать двумя способами.
+Неизменяемое свойство можно создать следующими способами:
 
-- Можно объявить метод доступа [set](../../language-reference/keywords/set.md) как [private](../../language-reference/keywords/private.md).  Свойство можно задать только в типе, но оно является неизменяемым для потребителей.
+- Объявить только метод доступа [get](../../language-reference/keywords/get.md), который делает свойство неизменяемым везде, кроме конструктора типа.
+
+- Объявить метод доступа [init](../../language-reference/keywords/init.md) вместо `set`, который делает свойство изменяемым только в конструкторе или с помощью [инициализатора объектов](object-and-collection-initializers.md).
+
+- Объявить метод доступа [set](../../language-reference/keywords/set.md) как [private](../../language-reference/keywords/private.md).  Свойство можно задать в типе, но оно является неизменяемым для потребителей.
 
   При объявлении закрытого метода доступа `set` для инициализации свойства нельзя использовать инициализатор объекта. Необходимо использовать конструктор или фабричный метод.
-- Вы можете объявить только метод доступа [get](../../language-reference/keywords/get.md), который делает свойство неизменяемым везде, кроме конструктора типа.
 
 В следующем примере показано, как свойство с методом доступа get, отличается от свойства с методами доступа get и private set.
 

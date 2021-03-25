@@ -2,20 +2,20 @@
 title: Обновление приложений WPF до .NET 5
 description: Используйте помощник по обновлению .NET, чтобы обновить существующее приложение WPF до .NET 5. Помощник по обновлению .NET — это средство CLI, которое помогает перенести приложение с .NET Framework на .NET 5.
 author: ardalis
-ms.date: 02/25/2021
-ms.openlocfilehash: e71cdc0ef5b72fcb7ae3985a26672e23ed0c1f12
-ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
+ms.date: 03/08/2021
+ms.openlocfilehash: b0c9baa25be6da4e7849f28c875a1d8f5f5a5d07
+ms.sourcegitcommit: 46cfed35d79d70e08c313b9c664c7e76babab39e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102108295"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102604844"
 ---
 # <a name="upgrade-a-wpf-app-to-net-5-with-the-net-upgrade-assistant"></a>Обновление приложения WPF до .NET 5 с помощью помощника по обновлению .NET
 
 [Помощник по обновлению .NET](upgrade-assistant-overview.md) — это средство командной строки, которое может помочь при обновлении приложений WPF до .NET 5. В этой статье приводится следующее:
 
-* Демонстрация запуска средства для приложения WPF
-* Советы по устранению неполадок
+- Демонстрация запуска средства для приложения WPF
+- Советы по устранению неполадок
 
 ## <a name="upgrade-net-framework-wpf-apps"></a>Обновление приложений .NET Framework WPF
 
@@ -59,13 +59,13 @@ upgrade-assistant .\WpfTest.csproj
 
 После изменения формата проекта следующим шагом является обновление TFM проекта.
 
-:::image type="content" source="media/upgrade-assistant-wpf-framework/update-tfm.png" alt-text="Помощник по обновлению .NET: преобразование проекта в стиль пакета SDK":::
+:::image type="content" source="media/upgrade-assistant-wpf-framework/update-tfm.png" alt-text="Помощник по обновлению .NET: обновление TFM":::
 
 Затем средство обновляет пакеты NuGet проекта.
 
 :::image type="content" source="media/upgrade-assistant-wpf-framework/update-nuget-packages.png" alt-text="Помощник по обновлению .NET: обновление пакетов NuGet":::
 
-После обновления пакетов следующим шагом будет добавление файлов шаблонов (если они есть). В этом примере отсутствуют файлы шаблонов, которые нужно добавить. Этот шаг продолжит выполнение и перенесет файлы конфигурации приложения и обновит исходный код C#, чтобы применить исправления, как показано ниже. Для этого проекта не требуется вносить изменения в файл конфигурации или исходный код, поэтому этот шаг пройдет автоматически.
+После обновления пакетов следующим шагом будет добавление файлов шаблонов (если они есть). В этом примере отсутствуют файлы шаблонов, которые нужно добавить. Этот шаг продолжит выполнение, перенесет файлы конфигурации приложения и обновит исходный код C#, чтобы применить исправления, как показано ниже. Для этого проекта не требуется вносить изменения в файл конфигурации или исходный код, поэтому этот шаг пройдет автоматически.
 
 :::image type="content" source="media/upgrade-assistant-wpf-framework/add-template-files.png" alt-text="Помощник по обновлению .NET: добавление файлов шаблонов и миграция конфигурации":::
 

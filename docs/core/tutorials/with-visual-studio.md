@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.custom: vs-dotnet
-ms.openlocfilehash: a3a27c1baaab135108ef475d77c35d607c45fa82
-ms.sourcegitcommit: 4d5e25a46aa7cd0d29b4b9227b92987354d444c4
+ms.openlocfilehash: 3986ef4083b964799be33d2876570ac4cf2082b8
+ms.sourcegitcommit: 1d3af230ec30d8d061be7a887f6ba38a530c4ece
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98794788"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102511857"
 ---
 # <a name="tutorial-create-a-net-console-application-using-visual-studio"></a>Учебник. Создание консольного приложения .NET в Visual Studio
 
@@ -46,7 +46,7 @@ ms.locfileid: "98794788"
    > [!TIP]
    > Если вы не видите шаблоны .NET, вероятно, у вас не установлена требуемая рабочая нагрузка. В сообщении **Не удается найти то, что ищете?** выберите ссылку **Установка других средств и компонентов**. Откроется Visual Studio Installer. Убедитесь, что у вас установлена рабочая нагрузка **Кроссплатформенная разработка .NET Core**.
 
-1. В диалоговом окне **Настройка нового проекта** в поле **Имя проекта** введите **HelloWorld**. Затем нажмите кнопку **Создать**.
+1. В диалоговом окне **Настройка нового проекта** в поле **Имя проекта** введите **HelloWorld**. Нажмите кнопку **Далее**.
 
    :::image type="content" source="./media/with-visual-studio/configure-new-project.png" alt-text="Окно настройки нового проекта с полями имени проекта, расположения и имени решения":::
 
@@ -108,7 +108,7 @@ End Module
 
    Этот код отображает запрос в окне консоли и ожидает, чтобы пользователь ввел строку текста и нажал клавишу <kbd>ВВОД</kbd>. Приложение сохраняет полученную строку в переменной с именем `name`. Оно также получает значение свойства <xref:System.DateTime.Now?displayProperty=nameWithType>, которое содержит текущее локальное время, и присваивает его переменной с именем `date` (`currentDate` в Visual Basic). Затем оно отображает эти значения в окне консоли. Наконец, приложение выводит запрос в окне консоли и вызывает метод <xref:System.Console.ReadKey(System.Boolean)?displayProperty=nameWithType> для ожидания ввода данных пользователем.
 
-   `\n` (или `vbCrLf` в коде Visual Basic) представляет сбой символ новой строки.
+   <xref:System.Environment.NewLine> — это независимый от платформы и языка способ для представления разрыва строки. Его альтернативами являются `\n` в C# и `vbCrLf` в Visual Basic.
 
    Знак доллара (`$`) перед строкой позволяет вставить такие выражения, как имена переменных, в фигурные скобки в строке. Значение выражения вставляется в строку вместо выражения. Такой синтаксис называется [интерполированными строками](../../csharp/language-reference/tokens/interpolated.md).
 

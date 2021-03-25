@@ -20,12 +20,12 @@ helpviewer_keywords:
 - pointer increment [C#]
 - pointer decrement [C#]
 - pointer comparison [C#]
-ms.openlocfilehash: 3728778b31a4b4adc51933e8fdc6287f28e03d83
-ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
+ms.openlocfilehash: 2d522e9357fb6da7b8d66a663e99e8858c9dd521
+ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87916716"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103480381"
 ---
 # <a name="pointer-related-operators-c-reference"></a>Операторы, связанные с указателем (справочник по C#)
 
@@ -40,7 +40,7 @@ ms.locfileid: "87916716"
 Сведения о типах указателей см. в разделе [Типы указателей](../../programming-guide/unsafe-code-pointers/pointer-types.md).
 
 > [!NOTE]
-> Для всех операций с указателями требуется [небезопасный](../keywords/unsafe.md) контекст. Код, содержащий небезопасные блоки, должен компилироваться с параметром компилятора [`-unsafe`](../compiler-options/unsafe-compiler-option.md).
+> Для всех операций с указателями требуется [небезопасный](../keywords/unsafe.md) контекст. Код, содержащий небезопасные блоки, должен компилироваться с параметром компилятора [**AllowUnsafeBlocks**](../compiler-options/language.md#allowunsafeblocks).
 
 ## <a name="address-of-operator-amp"></a><a name="address-of-operator-"></a> Оператор address-of &amp;
 

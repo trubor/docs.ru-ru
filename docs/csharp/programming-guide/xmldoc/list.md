@@ -13,12 +13,12 @@ helpviewer_keywords:
 - <item> C# XML tag
 - <list> C# XML tag
 ms.assetid: c9620b1b-c2e6-43f1-ab88-8ab47308ffec
-ms.openlocfilehash: 361c2e6f343554a9b8519c3b2e41219b209e682d
-ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
+ms.openlocfilehash: 39674e3c07444e454dfeeceff6c99e65f34bb02f
+ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87381870"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103478379"
 ---
 # <a name="list-c-programming-guide"></a>\<list> (руководство по программированию на C#)
 
@@ -55,7 +55,7 @@ ms.locfileid: "87381870"
 
 Число блоков `<item>` в списке или таблице не ограничено.
 
-Чтобы обработать комментарии документации и сохранить их в файл, выполняйте сборку с параметром [-doc](../../language-reference/compiler-options/doc-compiler-option.md).
+Чтобы обработать комментарии в документации и сохранить их в файл, выполните компиляцию с использованием параметра [**DocumentationFile**](../../language-reference/compiler-options/output.md#documentationfile).
 
 ## <a name="example"></a>Пример
 

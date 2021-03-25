@@ -11,12 +11,12 @@ helpviewer_keywords:
 - cross-references [C#]
 - see C# XML tag
 ms.assetid: 0200de01-7e2f-45c4-9094-829d61236383
-ms.openlocfilehash: 1cc4982d1ebe9d6896404218a6d200b10cc6503f
-ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
+ms.openlocfilehash: 154feca5e7e4f4d3f5313c4ae05cd991e69e298f
+ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87381935"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103477777"
 ---
 # <a name="see-c-programming-guide"></a>\<see> (руководство по программированию на C#)
 
@@ -36,7 +36,7 @@ ms.locfileid: "87381935"
 
 Тег `<see>` позволяет задать ссылку из текста. С помощью тега [\<seealso>](./seealso.md) можно указать, что текст должен быть размещен в разделе "См. также". Используйте [cref Attribute](./cref-attribute.md) для создания внутренних гиперссылок на страницы документации для элементов кода. Кроме того, ``href`` является допустимым атрибутом, который будет функционировать как гиперссылка.
 
-Чтобы обработать комментарии документации и сохранить их в файл, выполняйте сборку с параметром [-doc](../../language-reference/compiler-options/doc-compiler-option.md).
+Чтобы обработать комментарии в документации и сохранить их в файл, выполните компиляцию с использованием параметра [**DocumentationFile**](../../language-reference/compiler-options/output.md#documentationfile).
 
 В следующем примере показан тег `<see>` в разделе сводки.
 

@@ -2,20 +2,20 @@
 title: Обновление приложений ASP.NET MVC до .NET 5
 description: Используйте помощник по обновлению .NET, чтобы обновить существующее приложение ASP.NET MVC до .NET 5. Помощник по обновлению .NET — это средство CLI, которое помогает перенести приложение с .NET Framework на .NET 5.
 author: ardalis
-ms.date: 02/25/2021
-ms.openlocfilehash: 0c9af9e12b78df7c4a2aaed18155f7ee9f02870d
-ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
+ms.date: 03/08/2021
+ms.openlocfilehash: 421d8ce16bc1800451ee39c20c4746ea321fafd0
+ms.sourcegitcommit: 46cfed35d79d70e08c313b9c664c7e76babab39e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102108361"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102604961"
 ---
 # <a name="upgrade-an-aspnet-mvc-app-to-net-5-with-the-net-upgrade-assistant"></a>Обновление приложения ASP.NET MVC до .NET 5 с помощью помощника по обновлению .NET
 
 [Помощник по обновлению .NET](upgrade-assistant-overview.md) — это средство командной строки, которое может помочь при обновлении приложений ASP.NET MVC до .NET 5. В этой статье приводится следующее:
 
-* Демонстрация запуска средства для приложения ASP.NET MVC
-* Советы по устранению неполадок
+- Демонстрация запуска средства для приложения ASP.NET MVC
+- Советы по устранению неполадок
 
 ## <a name="upgrade-net-framework-aspnet-mvc-apps"></a>Обновление приложений .NET Framework ASP.NET MVC
 
@@ -63,7 +63,7 @@ upgrade-assistant .\AspNetMvcTest.csproj
 
 После изменения формата проекта следующим шагом является обновление TFM проекта.
 
-:::image type="content" source="media/upgrade-assistant-aspnetmvc/update-tfm.png" alt-text="Помощник по обновлению .NET: преобразование проекта в стиль пакета SDK":::
+:::image type="content" source="media/upgrade-assistant-aspnetmvc/update-tfm.png" alt-text="Помощник по обновлению .NET: обновление TFM":::
 
 Затем средство обновляет пакеты NuGet проекта. В обновлении нуждаются несколько пакетов, поэтому добавляется новый пакет анализатора.
 
@@ -86,7 +86,7 @@ upgrade-assistant .\AspNetMvcTest.csproj
 
 В завершение переноса файлов конфигурации выполняется миграция `system.web.webPages.razor/pages/namespaces`.
 
-:::image type="content" source="media/upgrade-assistant-aspnetmvc/migrate-config2.png" alt-text="Помощник по обновлению .NET: перенос конфигурации":::
+:::image type="content" source="media/upgrade-assistant-aspnetmvc/migrate-config2.png" alt-text="Помощник по обновлению .NET: перенос конфигурации завершен":::
 
 Помощник применяет известные исправления для замены ссылок C# на новые аналоги.
 
@@ -113,7 +113,7 @@ upgrade-assistant .\AspNetMvcTest.csproj
   </ItemGroup>
 ```
 
-Статические файлы, которые должны обслуживаться веб-сервером, должны быть перемещены в соответствующую папку в папке корневого уровня с именем `wwwroot`. Дополнительные сведения см. в разделе [Статические файлы в ASP.NET Core](/aspnet/core/fundamentals/static-files?view=aspnetcore-5.0). После перемещения файлов можно удалить в файле проекта элементы `<Content>`, соответствующие этим файлам. Фактически все элементы `<Content>` и содержащиеся в них группы можно удалить. Кроме того, необходимо удалить все ссылки `<PackageReference>` на клиентские библиотеки, такие как `bootstrap` или `jQuery`.
+Статические файлы, которые должны обслуживаться веб-сервером, должны быть перемещены в соответствующую папку в папке корневого уровня с именем `wwwroot`. Дополнительные сведения см. в разделе [Статические файлы в ASP.NET Core](/aspnet/core/fundamentals/static-files?view=aspnetcore-5.0&preserve-view=true). После перемещения файлов можно удалить в файле проекта элементы `<Content>`, соответствующие этим файлам. Фактически все элементы `<Content>` и содержащиеся в них группы можно удалить. Кроме того, необходимо удалить все ссылки `<PackageReference>` на клиентские библиотеки, такие как `bootstrap` или `jQuery`.
 
 По умолчанию проект будет преобразован в вид библиотеки классов. Измените атрибут первой строки `Sdk` на `Microsoft.NET.Sdk.Web` и присвойте свойству `<TargetFramework>` значение `net5.0`. Скомпилируйте проект. На этом этапе количество ошибок не должно быть большим. При переносе нового проекта ASP.NET 4.6.1 MVC, оставшиеся ошибки относятся к файлам в папке `App_Start`:
 
@@ -123,7 +123,7 @@ upgrade-assistant .\AspNetMvcTest.csproj
 
 Эти файлы и всю папку `App_Start` можно удалить. Аналогично можно удалить файлы `Global.asax` и `Global.asax.cs`.
 
-На этом этапе остались только ошибки, связанные с объединением. Существует [несколько способов настройки объединения и минификации в ASP.NET Core](/aspnet/core/migration/mvc?view=aspnetcore-5.0#configure-bundling-and-minification). Выберите наиболее подходящий для вашего проекта.
+На этом этапе остались только ошибки, связанные с объединением. Существует [несколько способов настройки объединения и минификации в ASP.NET Core](/aspnet/core/migration/mvc?view=aspnetcore-5.0&preserve-view=true#configure-bundling-and-minification). Выберите наиболее подходящий для вашего проекта.
 
 ## <a name="troubleshooting-tips"></a>Советы по устранению неполадок
 

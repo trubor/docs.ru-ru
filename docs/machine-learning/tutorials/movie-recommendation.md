@@ -5,12 +5,12 @@ author: briacht
 ms.date: 06/30/2020
 ms.custom: mvc, title-hack-0516
 ms.topic: tutorial
-ms.openlocfilehash: 39c4aeef0b02a6bf47d78e6bf53cd42b4f592946
-ms.sourcegitcommit: 97ce5363efa88179dd76e09de0103a500ca9b659
+ms.openlocfilehash: 2df774110d3355bf75a14e211555984a12cf7fa4
+ms.sourcegitcommit: b27645cb378d4e8137a267e5467ff31409acf6c0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86282103"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103231398"
 ---
 # <a name="tutorial-build-a-movie-recommender-using-matrix-factorization-with-mlnet"></a>Учебник. Создание приложения для рекомендации фильмов с использованием матричной факторизации и ML.NET
 
@@ -169,20 +169,6 @@ public static (IDataView training, IDataView test) LoadData(MLContext mlContext)
 
 ## <a name="build-and-train-your-model"></a>Создание и обучение модели
 
-В ML.NET есть три основных понятия: [данные](../resources/glossary.md#data), [преобразователи](../resources/glossary.md#transformer) и [средства оценки](../resources/glossary.md#estimator).
-
-Алгоритмам машинного обучения требуются данные в определенном формате. Преобразователи (`Transformers`) приводят данные к совместимому формату.
-
-![Схема потока данных преобразователя.](./media/movie-recommendation/data-transformer-transformed.png)
-
-Преобразователи (`Transformers`) в ML.NET создаются с помощью средств оценки (`Estimators`). Средства оценки (`Estimators`) принимают данные и возвращают преобразователи (`Transformers`).
-
-![Схема потока данных средства оценки.](./media/movie-recommendation/data-estimator-transformer.png)
-
-Алгоритм рекомендаций, который вы будете использовать для обучения модели, — это пример средства оценки (`Estimator`).
-
-Чтобы создать средство оценки (`Estimator`), выполните указанные ниже действия.
-
 Создайте метод `BuildAndTrainModel()` сразу после метода `LoadData()`, вставив в него следующий код:
 
 ```csharp
@@ -229,6 +215,8 @@ public static ITransformer BuildAndTrainModel(MLContext mlContext, IDataView tra
 [!code-csharp[FitModel](./snippets/movie-recommendation/csharp/Program.cs#FitModel "Call the Fit method and return back the trained model")]
 
 Метод [Fit()](xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Fit%28Microsoft.ML.IDataView,Microsoft.ML.IDataView%29) обучает модель с помощью предоставленных наборов обучающих данных. С технической точки зрения, он выполняет определения средств оценки (`Estimator`), преобразовывая данные и применяя алгоритм обучения, а затем возвращает обученную модель, то есть преобразователь (`Transformer`).
+
+Дополнительные сведения о рабочем процессе обучения модели в ML.NET см. в статье [Что такое ML.NET и принципы работы этой системы](../how-does-mldotnet-work.md#code-workflow).
 
 Добавьте в метод `Main()` следующую строку кода для вызова метода `BuildAndTrainModel()` и получения обученной модели:
 

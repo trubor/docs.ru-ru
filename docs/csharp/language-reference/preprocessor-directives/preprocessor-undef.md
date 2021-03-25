@@ -7,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - '#undef directive [C#]'
 ms.assetid: 686c92d2-7194-4be4-b2f4-80091712d513
-ms.openlocfilehash: 7db79be7ea9d8462e09b6ae874bf0ae7d265afe2
-ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
+ms.openlocfilehash: ecbf8f5793e70c7dd6e602a3992ee3783a76c7ca
+ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "91150561"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103477975"
 ---
 # <a name="undef-c-reference"></a>#undef (Справочник по C#)
 
 `#undef` позволяет отменить определение символа таким образом, чтобы при использовании этого символа в качестве выражения в директиве [#if](./preprocessor-if.md) возвращалось значение `false`.  
   
- Символ можно определить с помощью директивы [#define](./preprocessor-define.md) или параметра компилятора [-define](../compiler-options/define-compiler-option.md). Директива `#undef` должна находиться в файле перед использованием любых инструкций, которые также не являются директивами.  
+ Символ можно определить с помощью директивы [#define](./preprocessor-define.md) или параметра компилятора [**DefineConstants**](../compiler-options/language.md#defineconstants). Директива `#undef` должна находиться в файле перед использованием любых инструкций, которые также не являются директивами.  
   
 ## <a name="example"></a>Пример  
 

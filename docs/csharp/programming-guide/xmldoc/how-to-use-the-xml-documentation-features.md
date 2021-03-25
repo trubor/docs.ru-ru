@@ -6,12 +6,12 @@ helpviewer_keywords:
 - XML documentation [C#]
 - C# language, XML documentation features
 ms.assetid: 8f33917b-9577-4c9a-818a-640dbbb0b399
-ms.openlocfilehash: 9ad2cfe62c70174eec9020ad4c8ce11608aca36d
-ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
+ms.openlocfilehash: 3a030e07e6f0e48a37c1682ef1d93b33932bbaaa
+ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87380674"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103478421"
 ---
 # <a name="how-to-use-the-xml-documentation-features"></a>Практическое руководство. Использование XML-документации
 
@@ -135,7 +135,7 @@ ms.locfileid: "87380674"
 ## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../index.md)
-- [-doc (параметры компилятора C#)](../../language-reference/compiler-options/doc-compiler-option.md)
+- [**DocumentationFile** (параметры компилятора C#)](../../language-reference/compiler-options/output.md#documentationfile)
 - [Комментарии XML-документации](./index.md)
 - [Обработчик документации DocFX](https://dotnet.github.io/docfx/)
 - [Обработчик документации Sandcastle](https://github.com/EWSoftware/SHFB)

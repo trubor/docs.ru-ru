@@ -10,12 +10,12 @@ helpviewer_keywords:
 - named arguments [C#], Office programming
 - Office programming [C#]
 ms.assetid: 041b25c2-3512-4e0f-a4ea-ceb2999e4d5e
-ms.openlocfilehash: bc4b5755bf56a013a0deb4efdb821df18db5a18e
-ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
+ms.openlocfilehash: 6c2c49a9fd55c406b69c02586a9b0e4a1d16ccd4
+ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87303027"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103479924"
 ---
 # <a name="how-to-access-office-interop-objects-c-programming-guide"></a>Руководство по программированию на C#. Получение доступа к объектам взаимодействия
 
@@ -95,7 +95,7 @@ ms.locfileid: "87303027"
 
      [!code-csharp[csProgGuideOfficeHowTo#14](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideofficehowto/cs/program.cs#14)]
 
-     C# 4 и более поздние версии преобразуют возвращаемое значение `Object` в `dynamic` автоматически, если ссылка на сборку задана с помощью параметра компилятора [-link](../../language-reference/compiler-options/link-compiler-option.md) или, что эквивалентно, если свойство Excel **Внедрить типы взаимодействия** имеет значение true. True является значением по умолчанию для этого свойства.
+     C# 4 и более поздних версий преобразует возвращаемое значение `Object` в `dynamic` автоматически, если ссылка на сборку задана с помощью параметра компилятора [**EmbedInteropTypes**](../../language-reference/compiler-options/inputs.md#embedinteroptypes) или, что эквивалентно, если свойство Excel **Внедрить типы взаимодействия** имеет значение true. True является значением по умолчанию для этого свойства.
 
 ## <a name="to-run-the-project"></a>Запуск проекта
 
@@ -149,7 +149,7 @@ ms.locfileid: "87303027"
 
 3. Если окно **Свойства** не отображается, нажмите клавишу **F4**.
 
-4. В списке свойств найдите свойство **Внедрить типы взаимодействия** и измените его значение на **False**. Также можно выполнить компиляцию с помощью командной строки с использованием параметра компилятора [-reference](../../language-reference/compiler-options/reference-compiler-option.md) вместо [-link](../../language-reference/compiler-options/link-compiler-option.md).
+4. В списке свойств найдите свойство **Внедрить типы взаимодействия** и измените его значение на **False**. Также можно выполнить компиляцию с помощью командной строки с использованием параметра компилятора [**References**](../../language-reference/compiler-options/inputs.md#references) вместо [**EmbedInteropTypes**](../../language-reference/compiler-options/inputs.md#embedinteroptypes).
 
 ## <a name="to-add-additional-formatting-to-the-table"></a>Дополнительное форматирование таблицы
 

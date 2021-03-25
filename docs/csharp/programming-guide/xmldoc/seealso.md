@@ -13,12 +13,12 @@ helpviewer_keywords:
 - cross-references [C#], tags
 - <seealso> C# XML tag
 ms.assetid: 8e157f3f-f220-4fcf-9010-88905b080b18
-ms.openlocfilehash: e8618ef352a4fa7f0fd4c88733c6568b0e12e376
-ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
+ms.openlocfilehash: c5baefbfca3a94095a90eb43c2bf13eb924c8cdc
+ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87380648"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103477754"
 ---
 # <a name="seealso-c-programming-guide"></a>\<seealso> (руководство по программированию на C#)
 
@@ -40,7 +40,7 @@ ms.locfileid: "87380648"
 
 С помощью тега `<seealso>` можно указать текст, который должен отображаться в разделе "См. также". Тег [\<see>](./see.md) позволяет задать ссылку из текста.
 
-Чтобы обработать комментарии документации и сохранить их в файл, выполняйте сборку с параметром [-doc](../../language-reference/compiler-options/doc-compiler-option.md).
+Чтобы обработать комментарии в документации и сохранить их в файл, выполните компиляцию с использованием параметра [**DocumentationFile**](../../language-reference/compiler-options/output.md#documentationfile).
 
 ## <a name="example"></a>Пример
 

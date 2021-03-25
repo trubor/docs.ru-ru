@@ -2,12 +2,12 @@
 title: Средство диагностики dotnet-symbol — .NET CLI
 description: Узнайте, как установить и использовать средство CLI dotnet-symbol для загрузки файлов, необходимых для отладки дампов и минидампов .NET.
 ms.date: 11/17/2020
-ms.openlocfilehash: 5cc304a3917921a964ceb61bc2c58e942b0baa85
-ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
+ms.openlocfilehash: 4543bd965c889d93d7dc0b89ff2d6f62c4343e5f
+ms.sourcegitcommit: e3cf8227573e13b8e1f4e3dc007404881cdafe47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102105327"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103189908"
 ---
 # <a name="symbol-downloader-dotnet-symbol"></a>Загрузчик символов (dotnet-symbol)
 
@@ -102,4 +102,4 @@ dotnet-symbol --host-only --debugging <dump file path>
 ## <a name="see-also"></a>См. также раздел
 
 * [Отладка с помощью символов](/windows/win32/dxtecharts/debugging-with-symbols)
-* [Переносимые PDB](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md)
+* [Символы и переносимые PDB](./symbols.md)

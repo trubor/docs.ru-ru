@@ -4,12 +4,12 @@ description: Узнайте, как установить .NET для Apache Spar
 ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
-ms.openlocfilehash: ff6b3a64c01fb9148d3abe3d04579233d11a4f73
-ms.sourcegitcommit: 9d525bb8109216ca1dc9e39c149d4902f4b43da5
+ms.openlocfilehash: b84d61c29d2b2aa7a9fee20a8af9f3eee23f7e8b
+ms.sourcegitcommit: 46cfed35d79d70e08c313b9c664c7e76babab39e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96599659"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102605481"
 ---
 # <a name="install-net-for-apache-spark-on-jupyter-notebooks-on-azure-hdinsight-spark-clusters"></a>Установка .NET для Apache Spark в записных книжках Jupyter Notebook в кластерах Spark Azure HDInsight
 
@@ -38,20 +38,20 @@ ms.locfileid: "96599659"
 
 1. На портале щелкните **Обзор**, а затем выберите **Домашняя страница Ambari**. При появлении запроса введите учетные данные для входа в кластер.
 
-   ![Остановка работы сервера Livy](./media/hdinsight-notebook-installation/select-ambari.png)
+   ![Выбор домашней страницы Ambari в панели мониторинга кластеров](./media/hdinsight-notebook-installation/select-ambari.png)
 
 2. Выберите **Spark2** в меню навигации слева, а затем — **LIVY FOR SPARK2 SERVER** (LIVY для сервера SPARK2).
 
-   ![Остановка работы сервера Livy](./media/hdinsight-notebook-installation/select-livyserver.png)
+   ![Выбор Livy для сервера Spark2](./media/hdinsight-notebook-installation/select-livyserver.png)
 
 3. Выберите узел **hn0…**
 
-   ![Остановка работы сервера Livy](./media/hdinsight-notebook-installation/select-host.png)
+   ![Узлы, с выбранным именем "hno..."](./media/hdinsight-notebook-installation/select-host.png)
 
 4. Щелкните многоточие рядом с **Livy for Spark2 Server** (Сервер Livy для Spark2), а затем выберите **Остановить**. При появлении запроса щелкните **ОК**, чтобы продолжить.
 
    Остановка работы сервера Livy для Spark2.
-   ![Остановка работы сервера Livy](./media/hdinsight-notebook-installation/stop-server.png)
+   ![Выбор знака многоточия и пункта "Остановить"](./media/hdinsight-notebook-installation/stop-server.png)
 
 5. Повторите предыдущие шаги для узла **hn1…**
 
@@ -87,9 +87,9 @@ ms.locfileid: "96599659"
 
 2. Выберите **Spark2** и **CONFIGS** (Конфигурации). Затем выберите группу **Custom spark2-defaults**.
 
-   ![Настройка конфигураций](./media/hdinsight-notebook-installation/spark-configs.png)
+   ![Вкладка конфигураций в Ambari](./media/hdinsight-notebook-installation/spark-configs.png)
 
-3. Выберите **Добавить свойство…** , чтобы добавить параметры Spark по умолчанию.
+3. Выберите **Добавить свойство** , чтобы добавить параметры Spark по умолчанию.
 
    ![Добавление свойства](./media/hdinsight-notebook-installation/add-property.png)
 
@@ -109,7 +109,7 @@ ms.locfileid: "96599659"
 
    Например, на следующем рисунке показан параметр для добавления свойства 1:
 
-   ![Настройка конфигураций](./media/hdinsight-notebook-installation/add-sparkconfig.png)
+   ![Добавления текстового свойства](./media/hdinsight-notebook-installation/add-sparkconfig.png)
 
    После добавления трех свойств выберите **SAVE** (Сохранить). Если появится экран предупреждения с рекомендациями конфигурации, выберите **PROCEED ANYWAY** (Продолжить).
 
@@ -117,7 +117,7 @@ ms.locfileid: "96599659"
 
    После добавления новых свойств необходимо перезапустить компоненты, которые были затронуты изменениями. В верхней части выберите **RESTART** (Перезапустить), а затем — **Restart All Affected** (Перезапустить все затронутые) из раскрывающегося списка.
 
-   ![Настройка конфигураций](./media/hdinsight-notebook-installation/restart-affected.png)
+   ![Вкладка конфигураций с выделенным пунктом "Перезапустить" > "Перезапустить все затронутые"](./media/hdinsight-notebook-installation/restart-affected.png)
 
    При появлении запроса выберите **CONFIRM RESTART ALL** (Подтвердить перезапуск всех), чтобы продолжить, а затем нажмите кнопку **ОК** для завершения работы.
 
@@ -142,7 +142,7 @@ ms.locfileid: "96599659"
    df.Show();
    ```
 
-   ![Отправка задания Spark](./media/hdinsight-notebook-installation/create-df.png)
+   ![Создание DataFrame с демонстрацией выполнения команды](./media/hdinsight-notebook-installation/create-df.png)
 
    Используйте следующий фрагмент кода, чтобы зарегистрировать определяемую пользователем функцию (UDF) и использовать ее с кадрами данных:
 
@@ -151,7 +151,7 @@ ms.locfileid: "96599659"
    df.Select(myawesomeudf(df["id"])).Show();
    ```
 
-   ![Отправка задания Spark](./media/hdinsight-notebook-installation/run-udf.png)
+   ![Регистрация определяемой пользователем функции и ее использование](./media/hdinsight-notebook-installation/run-udf.png)
 
 ## <a name="next-steps"></a>Следующие шаги
 

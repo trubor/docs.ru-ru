@@ -2,12 +2,12 @@
 title: Перенос существующих приложений .NET в Azure IaaS (в готовом для облачной инфраструктуры виде)
 description: Модернизация существующих приложений .NET с помощью облака Azure и контейнеров Windows.
 ms.date: 12/21/2020
-ms.openlocfilehash: fb875c38cac236826007bba217189238b7c00898
-ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
+ms.openlocfilehash: 69e89702b41cd7388ee6c90e77efafc7cd2bebe8
+ms.sourcegitcommit: 46cfed35d79d70e08c313b9c664c7e76babab39e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98025398"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102605117"
 ---
 # <a name="lift-and-shift-existing-net-apps-to-azure-iaas-cloud-infrastructure-ready"></a>Перенос существующих приложений .NET в Azure IaaS (в готовом для облачной инфраструктуры виде)
 
@@ -63,7 +63,7 @@ ms.locfileid: "98025398"
 
 На рис. 2-2 показано встроенное сопоставление зависимостей для всех подключений сервера и приложения, выполняемых службой "Миграция Azure".
 
-![Позиционирование приложений, готовых для облачной инфраструктуры](./media/image2-2.png)
+![Зависимости подключений сервера и приложения](./media/image2-2.png)
 
 **Рис. 2-2.** Позиционирование приложений, готовых для облачной инфраструктуры
 
@@ -75,7 +75,7 @@ ms.locfileid: "98025398"
 
 На рис. 2-3 показано выполнение нескольких миграций виртуальных машин с помощью Azure Site Recovery.
 
-![Позиционирование приложений, готовых для облачной инфраструктуры](./media/image2-3.png)
+![Миграции виртуальных машин с помощью Azure Site Recovery](./media/image2-3.png)
 
 **Рис. 2-3.** Позиционирование приложений, готовых для облачной инфраструктуры
 

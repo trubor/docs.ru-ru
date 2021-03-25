@@ -2,12 +2,12 @@
 title: Создание консольного приложения .NET с помощью Visual Studio для Mac
 description: Узнайте, как создать консольное приложение .NET с помощью Visual Studio для Mac.
 ms.date: 11/30/2020
-ms.openlocfilehash: 1351b06eec32cd8d3d9d44926655405fe2246f58
-ms.sourcegitcommit: 9d525bb8109216ca1dc9e39c149d4902f4b43da5
+ms.openlocfilehash: 4add8309338b8618265a66b9e71dab2df38ca8d0
+ms.sourcegitcommit: 1d3af230ec30d8d061be7a887f6ba38a530c4ece
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96599490"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102511831"
 ---
 # <a name="tutorial-create-a-net-console-application-using-visual-studio-for-mac"></a>Учебник. Создание консольного приложения .NET с помощью Visual Studio для Mac
 
@@ -84,7 +84,7 @@ namespace HelloWorld
 
    Этот код отображает запрос в окне консоли и ожидает, чтобы пользователь ввел строку текста и нажал клавишу <kbd>ВВОД</kbd>. Приложение сохраняет полученную строку в переменной с именем `name`. Оно также получает значение свойства <xref:System.DateTime.Now?displayProperty=nameWithType>, которое содержит текущее локальное время, и присваивает его переменной с именем `date`. Затем оно отображает эти значения в окне консоли. Наконец, приложение выводит запрос в окне консоли и вызывает метод <xref:System.Console.ReadKey(System.Boolean)?displayProperty=nameWithType> для ожидания ввода данных пользователем.
 
-   `\n` — это символ новой строки.
+   <xref:System.Environment.NewLine> — это независимый от платформы и языка способ для представления разрыва строки. Его альтернативами являются `\n` в C# и `vbCrLf` в Visual Basic.
 
    Знак доллара (`$`) перед строкой позволяет вставить такие выражения, как имена переменных, в фигурные скобки в строке. Значение выражения вставляется в строку вместо выражения. Такой синтаксис называется [интерполированными строками](../../csharp/language-reference/tokens/interpolated.md).
 

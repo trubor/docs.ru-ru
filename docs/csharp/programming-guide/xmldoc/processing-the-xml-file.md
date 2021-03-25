@@ -6,12 +6,12 @@ helpviewer_keywords:
 - XML processing [C#]
 - XML [C#], processing
 ms.assetid: 60c71193-9dac-4cd3-98c5-100bd0edcc42
-ms.openlocfilehash: 6f8a278ed842cd9c4176f3efff423ee048f7e9b9
-ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
+ms.openlocfilehash: 5ce0f311ccc16b4eca8d499578c217d93cc93165
+ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87381545"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103477863"
 ---
 # <a name="process-the-xml-file-c-programming-guide"></a>Обработка XML-файла (руководство по программированию на C#)
 
@@ -88,5 +88,5 @@ XML-файл не является иерархическим представл
 ## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../index.md)
-- [-doc (параметры компилятора C#)](../../language-reference/compiler-options/doc-compiler-option.md)
+- [**DocumentationFile** (параметры компилятора C#)](../../language-reference/compiler-options/output.md#documentationfile)
 - [Комментарии XML-документации](./index.md)

@@ -2,12 +2,12 @@
 title: Критическое изменение. CA1416. Совместимость платформ
 description: Сведения о критическом изменении в .NET 5, вызванном включением правила анализа кода CA1416.
 ms.date: 09/29/2020
-ms.openlocfilehash: 0464e7bb5a494543c0201efa4630e82897b464c0
-ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
+ms.openlocfilehash: fa03e1f0bfa8438b3b2899aaf7c97f42533c7c02
+ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102257860"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103477545"
 ---
 # <a name="warning-ca1416-platform-compatibility"></a>Предупреждение CA1416: Совместимость платформ
 
@@ -94,7 +94,7 @@ public void PlayCMajor()
 
 Если вы не хотите исправлять все места вызовов, можно выбрать один из следующих вариантов, чтобы отключить предупреждение.
 
-- Если требуется отключить правило CA1416, это можно сделать с помощью `#pragma` или флага компилятора [-nowarn](../../../../csharp/language-reference/compiler-options/nowarn-compiler-option.md) или путем [установки серьезности правила](../../../../fundamentals/code-analysis/configuration-options.md#severity-level) `none` в файле EDITORCONFIG.
+- Если требуется отключить правило CA1416, это можно сделать с помощью `#pragma` или флага компилятора [**DisabledWarnings**](../../../../csharp/language-reference/compiler-options/errors-warnings.md#disabledwarnings) либо путем [установки серьезности правила](../../../../fundamentals/code-analysis/configuration-options.md#severity-level) `none` в файле EDITORCONFIG.
 
   ```csharp
   public void PlayCMajor()
