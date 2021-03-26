@@ -1372,6 +1372,11 @@ items:
             href: ../core/docker/build-container.md
           - name: "Средства Visual\_Studio для контейнеров"
             href: /visualstudio/containers/overview
+  - name: DevOps
+    items:
+      - name: Создание действия GitHub с помощью .NET
+        href: ../devops/create-dotnet-github-action.md
+        displayName: 'continuous integration, continuous deployment, ci, cd, ci/cd, github, github action, github actions, lifecycle'
   - name: Основные компоненты программирования
     items:
       - name: Обзор базовых типов

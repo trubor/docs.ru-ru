@@ -35,41 +35,55 @@ items:
                 href: tour-of-csharp/tutorials/branches-and-loops-local.md
               - name: Коллекции списков
                 href: tour-of-csharp/tutorials/arrays-and-collections.md
+  - name: Новые возможности C#
+    items:
+      - name: C# 9.0
+        displayName: what's new
+        href: whats-new/csharp-9.md
+      - name: C# 8.0
+        href: whats-new/csharp-8.md
+      - name: C# 7.0–7.3
+        href: whats-new/csharp-7.md
+      - name: Критические изменения компилятора
+        href: whats-new/breaking-changes.md
+      - name: Журнал версий C#
+        href: whats-new/csharp-version-history.md
+      - name: Связи с библиотекой .NET
+        href: whats-new/relationships-between-language-and-library.md
+      - name: Совместимость версий
+        href: whats-new/version-update-considerations.md
+      - name: Учебники
+        items:
+          - name: Подробнее о типах записей
+            href: whats-new/tutorials/records.md
+          - name: Подробнее об инструкциях верхнего уровня
+            href: whats-new/tutorials/top-level-statements.md
+          - name: Поиск закономерностей в объектах
+            href: whats-new/tutorials/patterns-objects.md
+          - name: Безопасное обновление интерфейсов с помощью методов интерфейса по умолчанию
+            href: whats-new/tutorials/default-interface-methods-versions.md
+          - name: Создание функциональных возможностей смешения с помощью методов интерфейса по умолчанию
+            href: whats-new/tutorials/mixins-with-default-interface-methods.md
+          - name: Индексы и диапазоны
+            href: whats-new/tutorials/ranges-indexes.md
+          - name: 'Использование ссылочных типов, допускающих значение NULL'
+            href: whats-new/tutorials/nullable-reference-types.md
+          - name: "Перевод приложения на ссылочные типы, допускающие значение\_NULL"
+            href: whats-new/tutorials/upgrade-to-nullable-references.md
+          - name: Создание и использование асинхронных потоков
+            href: whats-new/tutorials/generate-consume-asynchronous-stream.md
   - name: Учебники
     items:
-      - name: Обзор
-        displayName: tutorials
-        href: tutorials/index.md
       - name: Общие сведения о классах
         href: tutorials/intro-to-csharp/introduction-to-classes.md
       - name: Объектно-ориентированное программирование
         href: tutorials/intro-to-csharp/object-oriented-programming.md
-      - name: Подробнее о типах записей
-        href: tutorials/exploration/records.md
-      - name: Подробнее об инструкциях верхнего уровня
-        href: tutorials/exploration/top-level-statements.md
-      - name: Поиск закономерностей в объектах
-        href: tutorials/exploration/patterns-objects.md
       - name: Интерполяция строк. Интерактивное руководство
         href: tutorials/exploration/interpolated-strings.yml
       - name: Интерполяция строк. В вашей среде
         href: tutorials/exploration/interpolated-strings-local.md
       - name: Расширенные сценарии для интерполяции строки
         href: tutorials/string-interpolation.md
-      - name: Безопасное обновление интерфейсов с помощью методов интерфейса по умолчанию
-        href: tutorials/default-interface-methods-versions.md
-      - name: Создание функциональных возможностей смешения с помощью методов интерфейса по умолчанию
-        href: tutorials/mixins-with-default-interface-methods.md
-      - name: Индексы и диапазоны
-        href: tutorials/ranges-indexes.md
-      - name: 'Использование ссылочных типов, допускающих значение NULL'
-        href: tutorials/nullable-reference-types.md
-      - name: "Перевод приложения на ссылочные типы, допускающие значение\_NULL"
-        href: tutorials/upgrade-to-nullable-references.md
-      - name: Создание и использование асинхронных потоков
-        href: tutorials/generate-consume-asynchronous-stream.md
-      - name: Создание алгоритмов на основе данных с сопоставлением шаблонов
-        href: tutorials/pattern-matching.md
       - name: Консольное приложение
         href: tutorials/console-teleprompter.md
       - name: Клиент REST
@@ -80,23 +94,8 @@ items:
         href: tutorials/working-with-linq.md
       - name: Использование атрибутов
         href: tutorials/attributes.md
-  - name: Новые возможности C#
-    items:
-      - name: C# 9.0
-        displayName: what's new
-        href: whats-new/csharp-9.md
-      - name: C# 8.0
-        href: whats-new/csharp-8.md
-      - name: C# 7.0–7.3
-        href: whats-new/csharp-7.md
-      - name: Критические изменения в компиляторе
-        href: whats-new/breaking-changes.md
-      - name: Журнал версий C#
-        href: whats-new/csharp-version-history.md
-      - name: Связи между языком и платформой
-        href: whats-new/relationships-between-language-and-library.md
-      - name: Соображения относительно версии и обновления
-        href: whats-new/version-update-considerations.md
+      - name: Создание алгоритмов на основе данных с сопоставлением шаблонов
+        href: tutorials/pattern-matching.md
   - name: Основные понятия C#
     items:
       - name: Система типов C#
