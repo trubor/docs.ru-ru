@@ -6,18 +6,18 @@ helpviewer_keywords:
 - Sign tool
 - SignTool.exe
 ms.assetid: 0c25ff6c-bff3-422e-b017-146a3ee86cb9
-ms.openlocfilehash: 6c810a7116f88f2eb7fc25efbfc6f44b60f2768b
-ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
+ms.openlocfilehash: 3b4bfa70ed91f98ae49b6df3a5a29f68b30f1e0a
+ms.sourcegitcommit: 1dbe25ff484a02025d5c34146e517c236f7161fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102259129"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104653859"
 ---
 # <a name="signtoolexe-sign-tool"></a>SignTool.exe (программа подписывания)
 
 Sign Tool — это программа командной строки, которая присваивает цифровые подписи файлам, проверяет подписи файлов и создает отметки времени для файлов.  
   
- Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы запустить инструмент, используйте [оболочку командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell).
+ Эта программа автоматически устанавливается вместе с Visual Studio. Для запуска этого средства используйте [Командную строку разработчика или PowerShell для разработчиков в Visual Studio](/visualstudio/ide/reference/command-prompt-powershell).
 
 > [!Note]  
 > Пакеты SDK, HLK, WDK и ADK для Windows 10 **сборок 20236 и более поздних версий** требуют указания алгоритма хэш-кода. Для команды SignTool `sign` при подписывании и отметке времени потребуется параметр `/fd` **алгоритм хэш-кода файлов** и `/td` **алгоритм хэш-кода метки времени** соответственно. Если не указать `/fd` во время подписывания или `/td` при отметке времени, появится предупреждение (код ошибки 0, изначально). В более поздних версиях средства SignTool предупреждение станет ошибкой. В отрасли рекомендуется использовать SHA256, поскольку он более безопасный, чем SHA1.  

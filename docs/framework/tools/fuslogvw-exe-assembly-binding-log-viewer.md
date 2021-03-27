@@ -10,12 +10,12 @@ helpviewer_keywords:
 - locating assemblies
 - Assembly Binding Log Viewer
 ms.assetid: e32fa443-0778-4cc3-bf36-5c8ea297d296
-ms.openlocfilehash: d9c028507c19ef8599e58b38dcdf15af2ede1dee
-ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
+ms.openlocfilehash: 6d6482edd3b8c78ad230cfc34ed84bd5db712fde
+ms.sourcegitcommit: 1dbe25ff484a02025d5c34146e517c236f7161fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102259282"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104654158"
 ---
 # <a name="fuslogvwexe-assembly-binding-log-viewer"></a>Fuslogvw.exe (средство просмотра журнала привязки сборок)
 
@@ -24,7 +24,7 @@ ms.locfileid: "102259282"
 > [!IMPORTANT]
 > Средство просмотра Fuslogvw.exe необходимо запускать с правами администратора.
 
-Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы запустить средство, используйте [оболочку командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell) с учетными данными администратора.
+Эта программа автоматически устанавливается вместе с Visual Studio. Для запуска этого средства используйте [Командную строку разработчика или PowerShell для разработчиков в Visual Studio](/visualstudio/ide/reference/command-prompt-powershell) с учетными данными администратора.
 
 В командной строке введите следующую команду:
 

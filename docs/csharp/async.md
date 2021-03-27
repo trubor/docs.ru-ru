@@ -5,12 +5,12 @@ author: cartermp
 ms.date: 05/20/2020
 ms.technology: csharp-async
 ms.assetid: b878c34c-a78f-419e-a594-a2b44fa521a4
-ms.openlocfilehash: 58f650e7932d4f5862d545429376b3e417bb433c
-ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
+ms.openlocfilehash: c3fbcdec2bf181a5211e89024855967d687388ff
+ms.sourcegitcommit: d623f686701b94bef905ec5e93d8b55d031c5d6f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97512246"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103623737"
 ---
 # <a name="asynchronous-programming"></a>Асинхронное программирование
 
@@ -268,5 +268,5 @@ public static async Task<User[]> GetUsersAsync(IEnumerable<int> userIds)
 ## <a name="other-resources"></a>Другие источники
 
 * В статье [Подробный обзор асинхронного программирования](../standard/async-in-depth.md) приводятся дополнительные сведения о принципах работы задач.
-* [Асинхронное программирование с использованием ключевых слов Async и Await (C#)](./programming-guide/concepts/async/index.md)
+* [Асинхронная модель программирования задач (C#)](./programming-guide/concepts/async/task-asynchronous-programming-model.md)
 * Эпизод [Six Essential Tips for Async](https://channel9.msdn.com/Series/Three-Essential-Tips-for-Async) (Шесть важных советов по асинхронному программированию) с Лусианом Вышиком (Lucian Wischik) — это отличный ресурс по асинхронному программированию.

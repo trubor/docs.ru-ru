@@ -6,12 +6,12 @@ helpviewer_keywords:
 - SecAnnotate.exe
 - Security Annotator tool
 ms.assetid: 8104d208-7813-4a1d-8a75-58f9a7bcb8c9
-ms.openlocfilehash: 467a1d7ba06862b37002e5db75bf6a6ef2a9e65a
-ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
+ms.openlocfilehash: 07c41a50292e55af57effec821756f0ffbc2142d
+ms.sourcegitcommit: 1dbe25ff484a02025d5c34146e517c236f7161fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102259106"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104653833"
 ---
 # <a name="secannotateexe-net-security-annotator-tool"></a>SecAnnotate.exe (средство создания заметок безопасности .NET)
 
@@ -19,7 +19,7 @@ ms.locfileid: "102259106"
   
  Расширение Visual Studio [Security Annotator](https://marketplace.visualstudio.com/items?itemName=sheldonb.SecurityAnnotator) обеспечивает графический пользовательский интерфейс для программы SecAnnotate.exe и позволяет запускать эту программу из Visual Studio.  
   
- Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы запустить инструмент, используйте [оболочку командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell).  
+ Эта программа автоматически устанавливается вместе с Visual Studio. Для запуска этого средства используйте [Командную строку разработчика или PowerShell для разработчиков в Visual Studio](/visualstudio/ide/reference/command-prompt-powershell).  
   
  В командной строке введите следующий текст, где *параметры* описаны в следующем разделе, а *сборки* состоят из одного имени сборок или нескольких, разделенных пробелами.  
   

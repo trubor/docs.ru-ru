@@ -16,12 +16,12 @@ helpviewer_keywords:
 - binary resources files
 - embedding files in runtime binary executable
 ms.assetid: 8ef159de-b660-4bec-9213-c3fbc4d1c6f4
-ms.openlocfilehash: 61ae4503876718e63993af5a180dead34540afde
-ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
+ms.openlocfilehash: f1ed2fd327511b84ea2751e82c23bf02e283324d
+ms.sourcegitcommit: 1dbe25ff484a02025d5c34146e517c236f7161fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102259115"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104653872"
 ---
 # <a name="resgenexe-resource-file-generator"></a>Resgen.exe (генератор файлов ресурсов)
 
@@ -55,7 +55,7 @@ resgen /?
   
  При использовании программы Resgen.exe для создания двоичных RESOURCES-файлов можно воспользоваться языковым компилятором, чтобы внедрить двоичные файлы в исполняемые сборки, или [Компоновщиком сборок (Al.exe)](al-exe-assembly-linker.md), чтобы скомпилировать их во вспомогательные сборки.  
   
- Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы запустить инструмент, используйте [оболочку командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell).  
+ Эта программа автоматически устанавливается вместе с Visual Studio. Для запуска этого средства используйте [Командную строку разработчика или PowerShell для разработчиков в Visual Studio](/visualstudio/ide/reference/command-prompt-powershell).  
   
  В командной строке введите следующее.  
   

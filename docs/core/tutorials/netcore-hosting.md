@@ -4,12 +4,12 @@ description: Узнайте, как разместить среду выполн
 author: mjrousos
 ms.topic: how-to
 ms.date: 12/21/2018
-ms.openlocfilehash: db458e9ebb0c6ad930f82e1d67619632a493ae3b
-ms.sourcegitcommit: 46cfed35d79d70e08c313b9c664c7e76babab39e
+ms.openlocfilehash: d7568c377e09b95fbc863610ec6bdc444f924976
+ms.sourcegitcommit: 1dbe25ff484a02025d5c34146e517c236f7161fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102604701"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104652715"
 ---
 # <a name="write-a-custom-net-core-host-to-control-the-net-runtime-from-your-native-code"></a>Написание пользовательского хост-приложения NET Core для управления средой выполнения .NET из машинного кода
 
@@ -84,7 +84,7 @@ public delegate int ComponentEntryPoint(IntPtr args, int sizeBytes);
 
 Следующая процедура описывает применение API `coreclrhost.h` для запуска среды выполнения .NET Core в нативном приложении и вызова управляемого статического метода. Фрагменты кода в этом документе могут использовать некоторые API-интерфейсы Windows, но [полный пример основного приложения](https://github.com/dotnet/samples/tree/master/core/hosting/HostWithCoreClrHost) содержит пути кода для Windows и Linux.
 
-[Узел Unix CoreRun](https://github.com/dotnet/runtime/tree/master/src/coreclr/hosts/unixcorerun) демонстрирует более сложный и приближенный к реальности пример размещения с использованием `coreclrhost.h`.
+[Узел corerun](https://github.com/dotnet/runtime/tree/main/src/coreclr/hosts/corerun) демонстрирует более сложный и приближенный к реальности кроссплатформенный пример размещения с применением файла `coreclrhost.h`.
 
 ### <a name="step-1---find-and-load-coreclr"></a>Шаг 1. Поиск и загрузка CoreCLR
 

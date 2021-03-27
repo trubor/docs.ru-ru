@@ -1,24 +1,16 @@
 ---
 title: Справочник по C#. Целочисленные типы
 description: Сведения о диапазоне значений, размере занимаемой памяти и способах использования каждого из целочисленных типов.
-ms.date: 10/22/2019
+ms.date: 03/17/2021
 f1_keywords:
-- byte
 - byte_CSharpKeyword
 - sbyte_CSharpKeyword
-- sbyte
-- short
 - short_CSharpKeyword
-- ushort
 - ushort_CSharpKeyword
 - int_CSharpKeyword
-- int
-- uint
 - uint_CSharpKeyword
 - long_CSharpKeyword
-- long
 - ulong_CSharpKeyword
-- ulong
 helpviewer_keywords:
 - integral types, C#
 - Visual C#, integral types
@@ -32,12 +24,12 @@ helpviewer_keywords:
 - uint keyword [C#]
 - long keyword [C#]
 - ulong keyword [C#]
-ms.openlocfilehash: 51ea64065ea8422e5885022105545780bc916f06
-ms.sourcegitcommit: 465547886a1224a5435c3ac349c805e39ce77706
+ms.openlocfilehash: 02b1451dc3aa22dfe27181b0e9160d198349107c
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81739009"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104760175"
 ---
 # <a name="integral-numeric-types--c-reference"></a>Целочисленные типы (справочник по C#)
 
@@ -57,15 +49,21 @@ C# поддерживает следующие предварительно оп
 |`uint`|От 0 до 4 294 967 295|32-разрядное целое число без знака|<xref:System.UInt32?displayProperty=nameWithType>|
 |`long`|От -9 223 372 036 854 775 808 до 9 223 372 036 854 775 807|64-разрядное целое число со знаком|<xref:System.Int64?displayProperty=nameWithType>|
 |`ulong`|От 0 до 18 446 744 073 709 551 615|64-разрядное целое число без знака|<xref:System.UInt64?displayProperty=nameWithType>|
+|`nint`|Зависит от платформы|32- или 64-разрядное целое число со знаком|<xref:System.IntPtr?displayProperty=nameWithType>|
+|`nuint`|Зависит от платформы|32- или 64-разрядное целое число без знака|<xref:System.UIntPtr?displayProperty=nameWithType>|
 
-В приведенной выше таблице каждый тип ключевого слова C# из крайнего левого столбца является псевдонимом для соответствующего типа .NET. Они взаимозаменяемые. Например, следующие объявления объявляют переменные одного типа:
+Во всех строках таблицы, кроме двух последних, каждое ключевое слово типа C# из крайнего левого столбца является псевдонимом для соответствующего типа .NET. Ключевое слово и имя типа .NET являются взаимозаменяемыми. Например, следующие объявления объявляют переменные одного типа:
 
 ```csharp
 int a = 123;
 System.Int32 b = 123;
 ```
 
-По умолчанию все целочисленные типы имеют значение `0`. Все целочисленные типы имеют константы `MinValue` и `MaxValue` с минимальным и максимальными итоговыми значениями этого типа.
+Типы `nint` и `nuint` в последних двух строках таблицы являются целыми числами собственного размера. В коде такие числа представлены определенными типами .NET, но в каждом случае ключевое слово и тип .NET не взаимозаменяемы. Для `nint` и `nuint` компилятор предоставляет преобразования и операции, как для целочисленных типов. Они отличаются от преобразований и операций для типов указателей `System.IntPtr` и `System.UIntPtr`. Дополнительные сведения см. в статье о [типах `nint` и `nuint`](nint-nuint.md).
+
+Дополнительные сведения о целочисленных типах собственного размера см. в статье о [`nint` и `nuint`](nint-nuint.md).
+
+По умолчанию все целочисленные типы имеют значение `0`. Все целочисленные типы, кроме целых чисел собственного размера, имеют константы `MinValue` и `MaxValue` с минимальным и максимальным значением этого типа.
 
 Используйте структуру <xref:System.Numerics.BigInteger?displayProperty=nameWithType>, чтобы представить целое число со знаком без верхней и нижней границ.
 
@@ -100,7 +98,7 @@ var binaryLiteral = 0b_0010_1010;
 
 Если значение, представленное целочисленным литералом, превышает <xref:System.UInt64.MaxValue?displayProperty=nameWithType>, происходит ошибка компиляции [CS1021](../../misc/cs1021.md).
 
-Если определенный тип целочисленного литерала — `int`, а значение, представленное литералом, находится в диапазоне целевого типа, значение можно неявно преобразовать в `sbyte`, `byte`, `short`, `ushort`, `uint` или `ulong`:
+Если определенный тип целочисленного литерала — `int`, а значение, представленное литералом, находится в диапазоне целевого типа, значение можно неявно преобразовать в `sbyte`, `byte`, `short`, `ushort`, `uint`, `ulong`, `nint` или `nuint`:
 
 ```csharp
 byte a = 17;

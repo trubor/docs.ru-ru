@@ -10,12 +10,12 @@ helpviewer_keywords:
 - LINQ to SQL, DBML files
 - LINQ to SQL, SQLMetal
 ms.assetid: 819e5a96-7646-4fdb-b14b-fe31221b0614
-ms.openlocfilehash: b3d52e5ce070f1a86554a2c8b8cd581b2e4bc685
-ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
+ms.openlocfilehash: 57229ce767a140e1756fddb2c19fb31893a0ab90
+ms.sourcegitcommit: 1dbe25ff484a02025d5c34146e517c236f7161fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102258768"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104653625"
 ---
 # <a name="sqlmetalexe-code-generation-tool"></a>SqlMetal.exe (средство создания кода)
 
@@ -32,7 +32,7 @@ ms.locfileid: "102258768"
 > [!NOTE]
 > Разработчики, работающие в Visual Studio, также могут использовать реляционный конструктор объектов для создания классов сущностей. Командная строка удобна при работе с большими базами данных. Поскольку SqlMetal представляет собой программу командной строки, ее можно использовать в процессе построения.  
   
-Чтобы запустить инструмент, используйте [оболочку командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell). В командной строке введите следующую команду:
+Для запуска этого средства используйте [Командную строку разработчика или PowerShell для разработчиков в Visual Studio](/visualstudio/ide/reference/command-prompt-powershell). В командной строке введите следующую команду:
 
 ```console  
 sqlmetal [options] [<input file>]  

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Manifest Generation and Editing tool
 - Mage.exe
 ms.assetid: 77dfe576-2962-407e-af13-82255df725a1
-ms.openlocfilehash: ce3724271663163f26a34b6710b28503f7b0c52e
-ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
+ms.openlocfilehash: df329d121009e519d2e9efd77dc4d2fbc37d198e
+ms.sourcegitcommit: 1dbe25ff484a02025d5c34146e517c236f7161fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102259932"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104654015"
 ---
 # <a name="mageexe-manifest-generation-and-editing-tool"></a>Mage.exe (средство создания и редактирования манифеста)
 
@@ -19,7 +19,7 @@ ms.locfileid: "102259932"
 
 Вместо программы *Mage.exe* можно также использовать графическое приложение *MageUI.exe*. Для получения дополнительной информации см. [MageUI.exe (средство создания и редактирования манифестов, графический клиент)](mageui-exe-manifest-generation-and-editing-tool-graphical-client.md).
 
-Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы запустить инструмент, используйте [оболочку командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell).
+Эта программа автоматически устанавливается вместе с Visual Studio. Для запуска этого средства используйте [Командную строку разработчика или PowerShell для разработчиков в Visual Studio](/visualstudio/ide/reference/command-prompt-powershell).
 
 В Visual Studio входят две версии *Mage.exe* и *MageUI.exe*. Чтобы просмотреть сведения о версии, запустите программу *MageUI.exe*, откройте меню **Справка** и выберите пункт **О программе**. В данной документации представлено описание программ *Mage.exe* и *MageUI.exe* версии 4.0.x.x.
 

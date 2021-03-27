@@ -1,7 +1,7 @@
 ---
 description: Сведения о неявных и явных преобразованиях между встроенными числовыми типами в C#
 title: Встроенные числовые преобразования — справочник по C#
-ms.date: 10/22/2019
+ms.date: 03/17/2021
 helpviewer_keywords:
 - implicit numeric conversions [C#]
 - explicit numeric conversion [C#]
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - numeric conversions [C#], explicit
 - conversions [C#], implicit numeric
 - conversions [C#], explicit numeric
-ms.openlocfilehash: ee5def3b5e0e067919a8c8335db701dbb6dd4d88
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 5ff0289f5365a7d3d334dd0130b3b0efcdf34c60
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89142249"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104759694"
 ---
 # <a name="built-in-numeric-conversions-c-reference"></a>Встроенные числовые преобразования (справочник по C#)
 
@@ -26,18 +26,20 @@ C# предоставляет набор [целочисленных](integral-n
 
 |Исходный тип|Кому|
 |----------|--------|
-|[sbyte](integral-numeric-types.md)|`short`, `int`, `long`, `float`, `double` или `decimal`|
-|[byte](integral-numeric-types.md)|`short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double` или `decimal`|
-|[short](integral-numeric-types.md)|`int`, `long`, `float`, `double` или `decimal`|
-|[ushort](integral-numeric-types.md)|`int`, `uint`, `long`, `ulong`, `float`, `double` или `decimal`|
-|[int](integral-numeric-types.md)|`long`, `float`, `double` или `decimal`|
-|[uint](integral-numeric-types.md)|`long`, `ulong`, `float`, `double` или `decimal`|
+|[sbyte](integral-numeric-types.md)|`short`, `int`, `long`, `float`, `double`, `decimal` или `nint`|
+|[byte](integral-numeric-types.md)|`short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `decimal`, `nint` или `nuint`|
+|[short](integral-numeric-types.md)|`int`, `long`, `float`, `double` или `decimal` либо `nint`|
+|[ushort](integral-numeric-types.md)|`int`, `uint`, `long`, `ulong`, `float`, `double` или `decimal`, `nint` или `nuint`|
+|[int](integral-numeric-types.md)|`long`, `float`, `double` или `decimal`, `nint`|
+|[uint](integral-numeric-types.md)|`long`, `ulong`, `float`, `double` или `decimal` либо `nuint`|
 |[long](integral-numeric-types.md)|`float`, `double`или `decimal`|
 |[ulong](integral-numeric-types.md)|`float`, `double`или `decimal`|
 |[float](floating-point-numeric-types.md)|`double`|
+|[nint](nint-nuint.md)|`long`, `float`, `double` или `decimal`|
+|[nuint](nint-nuint.md)|`ulong`, `float`, `double` или `decimal`|
 
 > [!NOTE]
-> Неявные преобразования из `int`, `uint`, `long` или `ulong` в `float` и из `long` или `ulong` в `double` могут приводить к потере точности, но не к потере порядка величин. Другие неявные числовые преобразования никогда не теряют никаких сведений.
+> Неявные преобразования из `int`, `uint`, `long`, `ulong`, `nint` или `nuint` в `float` и из `long`, `ulong`, `nint` или `nuint` в `double` могут приводить к потере точности, но не к потере порядка величин. Другие неявные числовые преобразования никогда не теряют никаких сведений.
 
 Также обратите внимание на следующее.
 
@@ -47,7 +49,7 @@ C# предоставляет набор [целочисленных](integral-n
 
 - Не поддерживается неявное преобразование между типом `decimal` и типами `float` или `double`.
 
-- Значение константного выражения типа `int` (например, значение, представленное целочисленным литералом) может быть неявно преобразовано в `sbyte`, `byte`, `short`, `ushort`, `uint` или `ulong`, если оно находится в диапазоне целевого типа:
+- Значение константного выражения типа `int` (например, значение, представленное целочисленным литералом) может быть неявно преобразовано в `sbyte`, `byte`, `short`, `ushort`, `uint`, `ulong`, `nint` или `nuint`, если оно находится в диапазоне целевого типа:
 
   ```csharp
   byte a = 13;
@@ -62,17 +64,19 @@ C# предоставляет набор [целочисленных](integral-n
 
 |Исходный тип|Кому|
 |----------|--------|
-|[sbyte](integral-numeric-types.md)|`byte`, `ushort`, `uint` или `ulong`|
+|[sbyte](integral-numeric-types.md)|`byte`, `ushort`, `uint` или `ulong` либо `nuint`|
 |[byte](integral-numeric-types.md)|`sbyte`|
-|[short](integral-numeric-types.md)|`sbyte`, `byte`, `ushort`, `uint` или `ulong`|
+|[short](integral-numeric-types.md)|`sbyte`, `byte`, `ushort`, `uint`, `ulong` или `nuint`|
 |[ushort](integral-numeric-types.md)|`sbyte`, `byte`или `short`|
-|[int](integral-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `uint` или `ulong`|
+|[int](integral-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `uint`, `ulong` или `nuint`|
 |[uint](integral-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort` или `int`|
-|[long](integral-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint` или `ulong`|
-|[ulong](integral-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint` или `long`|
-|[float](floating-point-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong` или `decimal`|
-|[double](floating-point-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float` или `decimal`|
-|[decimal](floating-point-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float` или `double`|
+|[long](integral-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `ulong`, `nint` или `nuint`|
+|[ulong](integral-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `nint` или `nuint`|
+|[float](floating-point-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `decimal`, `nint` или `nuint`|
+|[double](floating-point-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `decimal`, `nint` или `nuint`|
+|[decimal](floating-point-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `nint` или `nuint`|
+|[nint](nint-nuint.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `ulong` или `nuint`|
+|[nuint](nint-nuint.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long` или `nint`|
 
 > [!NOTE]
 > Явное числовое преобразование может привести к утрате данных или созданию исключения, обычно <xref:System.OverflowException>.

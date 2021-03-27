@@ -5,12 +5,12 @@ ms.date: 03/07/2017
 helpviewer_keywords:
 - contextual keywords [C#]
 ms.assetid: 7c76bc29-a754-4389-b0ab-f6b441018298
-ms.openlocfilehash: 6f3c1e2d4d6a0b8e794863f2c0b4fd947ac12836
-ms.sourcegitcommit: e3cf8227573e13b8e1f4e3dc007404881cdafe47
+ms.openlocfilehash: 917932e208851763cc75244e08b081a7acf1f3a7
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "103190090"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104759616"
 ---
 # <a name="contextual-keywords-c-reference"></a>Контекстные ключевые слова (Справочник по C#)
 
@@ -25,6 +25,8 @@ ms.locfileid: "103190090"
 |[get](./get.md)|Определяет метод доступа для свойства или индексатора.|  
 |[global](../operators/namespace-alias-qualifier.md)|Псевдоним глобального пространства имен, которое в противном случае не имеет имени.|  
 |[init](./init.md)|Определяет метод доступа для свойства или индексатора.|  
+|[nint](../builtin-types/nint-nuint.md)|Определяет такой тип данных, как целое число собственного размера.|  
+|[nuint](../builtin-types/nint-nuint.md)|Определяет такой тип данных, как целое число собственного размера без знака.|  
 |[partial](./partial-type.md)|Определяет разделяемые классы, структуры и интерфейсы в одном блоке компиляции.|  
 |[remove](./remove.md)|Определяет метод доступа настраиваемого события, который вызывается, когда клиентский код отменяет подписку на событие.|  
 |[set](./set.md)|Определяет метод доступа для свойства или индексатора.|  

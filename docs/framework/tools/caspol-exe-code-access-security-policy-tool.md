@@ -16,12 +16,12 @@ helpviewer_keywords:
 - security policy [.NET Framework], modifying
 - manually editing security configuration files
 ms.assetid: d2bf6123-7b0c-4e60-87ad-a39a1c3eb2e0
-ms.openlocfilehash: d26443d07dd76d8d18e0d21112d1e40de5b83c83
-ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
+ms.openlocfilehash: 402f9e2c4ca378af4b6ed0cc0c8c39e2d337876d
+ms.sourcegitcommit: 1dbe25ff484a02025d5c34146e517c236f7161fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102258287"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104652897"
 ---
 # <a name="caspolexe-code-access-security-policy-tool"></a>Caspol.exe (средство настройки политики управления доступом для кода)
 
@@ -33,7 +33,7 @@ ms.locfileid: "102258287"
 > [!NOTE]
 > На 64-разрядных компьютерах присутствуют и 64-разрядная, и 32-разрядная версии политики безопасности. Чтобы проверить возможность применения политики к 32-разрядным и 64-разрядным приложениям, запустите 32-разрядную и 64-разрядную версии программы Caspol.exe.  
   
- Средство настройки политики управления доступом для кода автоматически устанавливается вместе с .NET Framework и Visual Studio. Программа Caspol.exe находится в каталоге %windir%\Microsoft.NET\Framework\\*версия* в 32-разрядных системах или в каталоге %windir%\Microsoft.NET\Framework64\\*версия* в 64-разрядных системах. (Например, в 64-разрядной системе расположение для .NET Framework 4 будет следующим: %windir%\Microsoft.NET\Framework64\v4.030319\caspol.exe.) Если на компьютере одновременно работает несколько версий .NET Framework, на нем могут быть установлены разные версии программы. Программу можно запустить из каталога установки. При этом [оболочка командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell) является рекомендуемым способом запуска, так как для этого не нужно переходить в каталог установки.  
+ Средство настройки политики управления доступом для кода автоматически устанавливается вместе с .NET Framework и Visual Studio. Программа Caspol.exe находится в каталоге %windir%\Microsoft.NET\Framework\\*версия* в 32-разрядных системах или в каталоге %windir%\Microsoft.NET\Framework64\\*версия* в 64-разрядных системах. (Например, в 64-разрядной системе расположение для .NET Framework 4 будет следующим: %windir%\Microsoft.NET\Framework64\v4.030319\caspol.exe.) Если на компьютере одновременно работает несколько версий .NET Framework, на нем могут быть установлены разные версии программы. Программу можно запустить из каталога установки. Но мы рекомендуем использовать [Командную строку разработчика или PowerShell для разработчиков в Visual Studio](/visualstudio/ide/reference/command-prompt-powershell), так как для этого не требуется переходить в папку установки.  
   
  В командной строке введите следующее.  
   

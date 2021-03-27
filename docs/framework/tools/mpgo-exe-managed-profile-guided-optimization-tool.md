@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Ngen.exe
 - Ngen.exe, profilers and native images
 ms.assetid: f6976502-a000-4fbe-aaf5-a7aab9ce4ec2
-ms.openlocfilehash: 050822d12ef4e0a7dfa752e4789f9861c4894cfa
-ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
+ms.openlocfilehash: 0336c3a98fb93a3b3d3689048e5c313b811630d9
+ms.sourcegitcommit: 1dbe25ff484a02025d5c34146e517c236f7161fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102259386"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104653911"
 ---
 # <a name="mpgoexe-managed-profile-guided-optimization-tool"></a>Mpgo.exe (управляемое средство профильной оптимизации)
 
@@ -24,7 +24,7 @@ ms.locfileid: "102259386"
 
 При возникновении ошибок производительности, связанных с временем запуска и размером рабочего набора IL-сборок, рекомендуется сначала применить Ngen.exe, чтобы исключить расходы на JIT-компиляцию и создать возможность совместного использования кода. Затем можно оптимизировать приложение с помощью средства Mpgo.exe. Данные о производительности неоптимизированных сборок машинных образов можно использовать в качестве базовых показателей при оценке прироста производительности. Оптимизация с помощью средства Mpgo.exe, возможно, позволит сократить время холодного запуска и размер рабочего набора. Mpgo.exe добавляет информацию в IL-сборки, которые используются программой Ngen.exe для создания оптимизированных сборок машинных образов. Дополнительные сведения см. в статье [Повышение производительности при запуске классических приложений](https://devblogs.microsoft.com/dotnet/improving-launch-performance-for-your-desktop-applications/) в блоге .NET.
 
-Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы запустить средство, используйте [оболочку командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell) с учетными данными администратора.
+Эта программа автоматически устанавливается вместе с Visual Studio. Для запуска этого средства используйте [Командную строку разработчика или PowerShell для разработчиков](/visualstudio/ide/reference/command-prompt-powershell) с учетными данными администратора.
 
 Введите следующую команду в командной строке:
 

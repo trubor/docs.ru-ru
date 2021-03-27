@@ -2,12 +2,12 @@
 title: Средство диагностики dotnet-trace — .NET CLI
 description: Узнайте, как установить и использовать средство CLI dotnet-trace для получения трассировки .NET для запущенного процесса без собственного профилировщика с помощью .NET EventPipe.
 ms.date: 11/17/2020
-ms.openlocfilehash: abf98df6e31747ea3e8013fc77b246613a3402ad
-ms.sourcegitcommit: f0fc5db7bcbf212e46933e9cf2d555bb82666141
+ms.openlocfilehash: e4e5bf91a7e6a9bf98e8cb006864b4cbc5ca17a2
+ms.sourcegitcommit: d623f686701b94bef905ec5e93d8b55d031c5d6f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100583003"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103624192"
 ---
 # <a name="dotnet-trace-performance-analysis-utility"></a>Программа анализа производительности dotnet-trace
 
@@ -91,6 +91,9 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 - **`--buffersize <size>`**
 
   Задает размер кольцевого буфера в памяти (в мегабайтах). По умолчанию используется значение 256 МБ.
+
+  > [!NOTE]
+  > Если для целевого процесса события записываются слишком часто, это может привести к переполнению буфера и удалению некоторых событий. Если удаляется слишком много событий, увеличьте размер буфера и посмотрите, уменьшается ли число удаленных событий. Если не уменьшается, причиной может быть медленная работа средства чтения, из-за чего целевой буфер процесса не освобождается.
 
 - **`--clreventlevel <clreventlevel>`**
 

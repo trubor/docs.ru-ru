@@ -1290,15 +1290,15 @@ items:
           - name: Глобальные атрибуты
             displayName: 'AssemblyName, AssemblyVersion, AssemblyCulture, AssemblyFlags, AssemblyProduct, AssemblyTrademark, AssemblyInformationalVersion, AssemblyCompany, AssemblyCopyright, AssemblyFileVersion, CLSCompliant, AssemblyTitle, AssemblyDescription, AssemblyConfiguration, AssemblyDefaultAlias'
             href: language-reference/attributes/global.md
-          - name: Общее
-            displayName: 'Conditional, Obsolete, AttributeUsage'
-            href: language-reference/attributes/general.md
           - name: Сведения о вызывающем объекте
             displayName: 'CallerFilePath, CallerLineNumber, CallerMemberName'
             href: language-reference/attributes/caller-information.md
           - name: 'Статический анализ типов, допускающих значения NULL'
             displayName: 'AllowNull, DisallowNull, MaybeNull, NotNull, MaybeNullWhen, NotNullWhen, NotNullIfNotNull, DoesNotReturn, DoesNotReturnIf'
             href: language-reference/attributes/nullable-analysis.md
+          - name: Разное
+            displayName: 'Conditional, Obsolete, AttributeUsage, ModuleInitializer, SkipLocalsInit'
+            href: language-reference/attributes/general.md
       - name: Директивы препроцессора
         items:
           - name: Обзор

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - strong-named assemblies, signing files
 - key pairs for signing files
 ms.assetid: c1d2b532-1b8e-4c7a-8ac5-53b801135ec6
-ms.openlocfilehash: 76999ab305f9924bafaa95884b634e2a59251ff0
-ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
+ms.openlocfilehash: ca985d808da4f048376774f413cb779b967f3c2c
+ms.sourcegitcommit: 1dbe25ff484a02025d5c34146e517c236f7161fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102259051"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104653781"
 ---
 # <a name="snexe-strong-name-tool"></a>Sn.exe (средство строгих имен)
 
@@ -27,7 +27,7 @@ ms.locfileid: "102259051"
 
  Дополнительные сведения о строгом именовании и сборках со строгими именами см. в разделах [Сборки со строгими именами](../../standard/assembly/strong-named.md) и [Практическое руководство. Подписание сборки строгим именем](../../standard/assembly/sign-strong-name.md).  
   
- Программа строгих имен автоматически устанавливается вместе с Visual Studio. Чтобы запустить инструмент, используйте [оболочку командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell).  
+ Программа строгих имен автоматически устанавливается вместе с Visual Studio. Для запуска этого средства используйте [Командную строку разработчика или PowerShell для разработчиков в Visual Studio](/visualstudio/ide/reference/command-prompt-powershell).  
 
 > [!NOTE]
 > На 64-разрядных компьютерах можно запустить 32-разрядную версию программы Sn.exe через командную строку разработчика для Visual Studio и 64-разрядную версию через командную строку Visual Studio x64 Win64.

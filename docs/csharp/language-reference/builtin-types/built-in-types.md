@@ -1,17 +1,16 @@
 ---
 title: Справочник по C#. Встроенные типы
 description: Сведения о встроенных типах значений и ссылочных типах C#.
-ms.date: 02/04/2020
+ms.date: 03/15/2021
 helpviewer_keywords:
 - types [C#], built-in
 - built-in C# types
-ms.assetid: 54f901f2-bf2f-472c-ae8d-73e8ecfc57fe
-ms.openlocfilehash: 3366f718cd83a28f475fae9b4e65ce37fe7d8c7b
-ms.sourcegitcommit: 1eae045421d9ea2bfc82aaccfa5b1ff1b8c9e0e4
+ms.openlocfilehash: c2b1c736e17e55913ef1c593813717dd33efd6c3
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84803193"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104759720"
 ---
 # <a name="built-in-types-c-reference"></a>Встроенные типы (справочник по C#)
 
@@ -28,6 +27,8 @@ ms.locfileid: "84803193"
 |[`float`](floating-point-numeric-types.md)|<xref:System.Single?displayProperty=nameWithType>|
 |[`int`](integral-numeric-types.md)|<xref:System.Int32?displayProperty=nameWithType>|
 |[`uint`](integral-numeric-types.md)|<xref:System.UInt32?displayProperty=nameWithType>|
+|[`nint`](nint-nuint.md)|<xref:System.IntPtr?displayProperty=nameWithType>|
+|[`nuint`](nint-nuint.md)|<xref:System.UIntPtr?displayProperty=nameWithType>|
 |[`long`](integral-numeric-types.md)|<xref:System.Int64?displayProperty=nameWithType>|
 |[`ulong`](integral-numeric-types.md)|<xref:System.UInt64?displayProperty=nameWithType>|
 |[`short`](integral-numeric-types.md)|<xref:System.Int16?displayProperty=nameWithType>|
@@ -41,12 +42,14 @@ ms.locfileid: "84803193"
 |[`string`](reference-types.md#the-string-type)|<xref:System.String?displayProperty=nameWithType>|
 |[`dynamic`](reference-types.md#the-dynamic-type)|<xref:System.Object?displayProperty=nameWithType>|
 
-В таблицах выше каждое ключевое слово типа C# в левом столбце является псевдонимом для соответствующего типа .NET. Они взаимозаменяемые. Например, следующие объявления объявляют переменные одного типа:
+В таблицах выше каждое ключевое слово типа C# в левом столбце (кроме [nint и nuint](nint-nuint.md)) является псевдонимом для соответствующего типа .NET. Они взаимозаменяемые. Например, следующие объявления объявляют переменные одного типа:
 
 ```csharp
 int a = 123;
 System.Int32 b = 123;
 ```
+
+Типы `nint` и `nuint` в последних двух строках первой таблицы являются целыми числами собственного размера. В коде такие числа представлены определенными типами .NET, но в каждом случае ключевое слово и тип .NET не взаимозаменяемы. Для `nint` и `nuint` компилятор предоставляет преобразования и операции, как для целочисленных типов. Они отличаются от преобразований и операций для типов указателей `System.IntPtr` и `System.UIntPtr`. Дополнительные сведения см. в статье о [типах `nint` и `nuint`](nint-nuint.md).
 
 Ключевое слово [`void`](void.md) представляет отсутствие типа. Оно используется в качестве возвращаемого типа метода, который не возвращает значение.
 

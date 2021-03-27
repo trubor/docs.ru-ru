@@ -2,12 +2,12 @@
 title: Символы в .NET
 description: Общие сведения о символах и переносимых файлах PDB в .NET
 ms.date: 02/08/2021
-ms.openlocfilehash: da59a07166cd1f73160da8d9ac53b5823bf13e7b
-ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
+ms.openlocfilehash: 8f217bf8b62ff12a6ea1dc6a5b14b34d8037dd2d
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102108380"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104759902"
 ---
 # <a name="symbols"></a>Символы
 
@@ -39,7 +39,7 @@ PDB-файл — это вспомогательный файл, создава
 
 * Могут существовать более старые версии профилировщиков, которые не поддерживают переносимые PDB-файлы.
 
-Для использования переносимых PDB-файлов в тех средствах, которые не поддерживают их, можно попробовать использовать средство Pdb2Pdb[https://github.com/dotnet/symreader-converter#pdb2pdb ], которое преобразует файлы между форматами "переносимый PDB" и "PDB Windows".
+Для использования переносимых PDB-файлов в тех средствах, которые не поддерживают их, можно попробовать использовать средство [Pdb2Pdb](https://github.com/dotnet/symreader-converter#pdb2pdb), которое преобразует файлы между форматами "переносимый PDB" и "PDB Windows".
 
 ### <a name="support-for-windows-pdbs"></a>Поддержка файлов PDB Windows
 

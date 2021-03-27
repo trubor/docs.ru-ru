@@ -4,12 +4,12 @@ description: Здесь приводятся различные способы �
 author: adegeo
 ms.author: adegeo
 ms.date: 01/06/2021
-ms.openlocfilehash: 6adaa905c400b45526ebbc3d8e2606522863eec3
-ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
+ms.openlocfilehash: 19cae3c6237dc9f1a23087ec654e8f24ca13cd66
+ms.sourcegitcommit: 1dbe25ff484a02025d5c34146e517c236f7161fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97970854"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104653443"
 ---
 # <a name="install-the-net-sdk-or-the-net-runtime-on-alpine"></a>Установка пакета SDK для .NET или среды выполнения .NET в Alpine
 
@@ -51,16 +51,30 @@ ms.locfileid: "97970854"
 
 Для .NET в Alpine Linux необходимо установить следующие зависимости:
 
+- bash
 - icu-libs
 - krb5-libs
 - libgcc
+- libgdiplus (если для приложения .NET требуется сборка *System.Drawing.Common*)
 - libintl
 - libssl 1.1 (Alpine версии 3.9 или более поздней)
 - libssl1.0 (Alpine версии 3.8 или более ранней)
 - libstdc++
 - zlib
 
-## <a name="next-steps"></a>Дальнейшие действия
+Чтобы установить необходимые требования, выполните следующую команду:
+
+```bash
+apk add bash icu-libs krb5-libs libgcc libintl libssl1.1 libstdc++ zlib
+```
+
+Для установки **libgdiplus**, возможно, потребуется указать репозиторий:
+
+```bash
+apk add libgdiplus --repository https://dl-3.alpinelinux.org/alpine/edge/testing/
+```
+
+## <a name="next-steps"></a>Следующие шаги
 
 - [Включение заполнения клавишей TAB для .NET CLI](../tools/enable-tab-autocomplete.md)
 - [Учебник. Создание консольного приложения с помощью пакета SDK для .NET в Visual Studio Code](../tutorials/with-visual-studio-code.md)

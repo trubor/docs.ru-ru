@@ -8,18 +8,18 @@ helpviewer_keywords:
 - Regasm.exe
 - registering assemblies
 ms.assetid: e190e342-36ef-4651-a0b4-0e8c2c0281cb
-ms.openlocfilehash: 14dbaf0e100204718e78292b038bf016b5607bc8
-ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
+ms.openlocfilehash: 81d835d280a3a55efc7644b2a081d033afe73349
+ms.sourcegitcommit: 1dbe25ff484a02025d5c34146e517c236f7161fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102259194"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104653326"
 ---
 # <a name="regasmexe-assembly-registration-tool"></a>Regasm.exe (средство регистрации сборок)
 
 Средство регистрации сборки считывает метаданные сборки и добавляет в реестр необходимые записи, что позволяет COM-клиентам прозрачно создавать классы .NET Framework. Зарегистрированные классы могут использоваться любыми COM-клиентами так же, как COM-классы. Класс регистрируется только один раз, при установке сборки. Экземпляры классов внутри сборки не могут создаваться на основе COM-классов до их фактической регистрации.
 
-Чтобы запустить инструмент, используйте [оболочку командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell).
+Для запуска этого средства используйте [Командную строку разработчика или PowerShell для разработчиков в Visual Studio](/visualstudio/ide/reference/command-prompt-powershell).
 
 В командной строке введите следующее.
 

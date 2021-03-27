@@ -19,12 +19,12 @@ helpviewer_keywords:
 - BypassNGenAttribute
 - System.Runtime.BypassNGenAttribute
 ms.assetid: 44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66
-ms.openlocfilehash: a553be6877af5875692e5c0745b6b9ee766e143e
-ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
+ms.openlocfilehash: dcf22b1840be5dd91b8ad2224871b8a22efb1183
+ms.sourcegitcommit: 1dbe25ff484a02025d5c34146e517c236f7161fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102259269"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104653885"
 ---
 # <a name="ngenexe-native-image-generator"></a>Ngen.exe (генератор образов в машинном коде)
 
@@ -58,7 +58,7 @@ ms.locfileid: "102259269"
 > [!NOTE]
 > Синтаксис Ngen.exe для .NET Framework версий 1.0 и 1.1 см. в разделе [Генератор образов в машинном коде (Ngen.exe), традиционный синтаксис](/previous-versions/dotnet/netframework-4.0/ms165073(v=vs.100)).
 
-Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы запустить инструмент, используйте [оболочку командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell).
+Эта программа автоматически устанавливается вместе с Visual Studio. Для запуска этого средства используйте [Командную строку разработчика или PowerShell для разработчиков в Visual Studio](/visualstudio/ide/reference/command-prompt-powershell).
 
 В командной строке введите следующее.
 

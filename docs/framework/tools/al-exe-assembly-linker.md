@@ -8,12 +8,12 @@ helpviewer_keywords:
 - modules, Assembly Linker
 - assembly manifest, Assembly Linker
 ms.assetid: b5382965-0053-47cf-b92f-862860275a01
-ms.openlocfilehash: 112e3880e76d4e81ab42cece592fcfd0f4dff312
-ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
+ms.openlocfilehash: dff7ab7ccc6543b1c13cb2b49cbdf712eba301ae
+ms.sourcegitcommit: 1dbe25ff484a02025d5c34146e517c236f7161fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103480804"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104652962"
 ---
 # <a name="alexe-assembly-linker"></a>Al.exe (компоновщик сборок)
 
@@ -22,7 +22,7 @@ ms.locfileid: "103480804"
 > [!NOTE]
 > Начиная с Visual Studio 2008, компиляторы C# и Visual Basic автоматически внедряют манифест Win32 в сборку. Дополнительные сведения см. в разделе [-win32manifest (параметры компилятора C#)](../../csharp/language-reference/compiler-options/resources.md#win32manifest).
 
-Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы запустить инструмент, используйте [оболочку командной строки для разработчиков](/visualstudio/ide/reference/command-prompt-powershell).
+Эта программа автоматически устанавливается вместе с Visual Studio. Для запуска этого средства используйте [Командную строку разработчика или PowerShell для разработчиков в Visual Studio](/visualstudio/ide/reference/command-prompt-powershell).
 
 В командной строке введите следующее.
 
