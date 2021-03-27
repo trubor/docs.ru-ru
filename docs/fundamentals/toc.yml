@@ -426,7 +426,15 @@ items:
               - name: Стандартные поставщики событий
                 href: ../core/diagnostics/well-known-event-providers.md
               - name: Распределенная трассировка
-                href: ../core/diagnostics/distributed-tracing.md
+                items:
+                  - name: Обзор
+                    href: ../core/diagnostics/distributed-tracing.md
+                  - name: Основные понятия
+                    href: ../core/diagnostics/distributed-tracing-concepts.md
+                  - name: Инструментирование
+                    href: ../core/diagnostics/distributed-tracing-instrumentation-walkthroughs.md
+                  - name: Коллекция
+                    href: ../core/diagnostics/distributed-tracing-collection-walkthroughs.md
           - name: Символы
             href: ../core/diagnostics/symbols.md
           - name: События среды выполнения
