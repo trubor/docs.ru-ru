@@ -12,12 +12,12 @@ helpviewer_keywords:
 - C# language, reference
 - reference, C# language
 ms.assetid: 06de3167-c16c-4e1a-b3c5-c27841d4569a
-ms.openlocfilehash: dfbf7a2548f403bce895d388fe2cd1483e092b2e
-ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
+ms.openlocfilehash: 1e0dff24bb581a27f55b047d5f6351993ba58cdb
+ms.sourcegitcommit: 05d0087dfca85aac9ca2960f86c5efd218bf833f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102104067"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105637498"
 ---
 # <a name="c-reference"></a>Справочник по C#
 
@@ -34,7 +34,7 @@ ms.locfileid: "102104067"
  [Специальные символы в C#](./tokens/index.md)  
  Предоставляет ссылки на сведения о специальных контекстные символов в C# и их использовании.  
 
- [Директивы препроцессора C#](./preprocessor-directives/index.md)  
+ [Директивы препроцессора C#](preprocessor-directives.md)  
  Ссылки на сведения о командах компилятора для внедрения в исходном коде C#.  
   
  [Параметры компилятора C# ](./compiler-options/index.md)  
