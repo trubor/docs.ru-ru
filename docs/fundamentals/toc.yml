@@ -2316,8 +2316,6 @@ items:
       - name: Критические изменения
         displayName: app compatibility
         href: ../core/compatibility/
-      - name: Сопоставление атрибутов проекта AssemblyInfo со свойствами
-        href: ../core/migration/assembly-info.md
       - name: Анализ зависимостей сторонних производителей
         href: ../core/porting/third-party-deps.md
       - name: Перенос библиотек
