@@ -4,12 +4,12 @@ description: Справочник по свойствам и элементам 
 ms.date: 02/14/2020
 ms.topic: reference
 ms.custom: updateeachrelease
-ms.openlocfilehash: 18f2be734fa10e2fd4977166ab4334332b120a91
-ms.sourcegitcommit: 46cfed35d79d70e08c313b9c664c7e76babab39e
+ms.openlocfilehash: f6a49a0040bcb38dbaf433f6ea53bb8aad24c65b
+ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102604766"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104759889"
 ---
 # <a name="msbuild-reference-for-net-sdk-projects"></a>Справочник по MSBuild для проектов пакета SDK для .NET
 
@@ -19,6 +19,8 @@ ms.locfileid: "102604766"
 > Работа над этой страницей еще не завершена, поэтому здесь приведены лишь некоторые полезные свойства MSBuild для пакета SDK для .NET. Список стандартных свойств см. в статье [Общие свойства MSBuild](/visualstudio/msbuild/common-msbuild-project-properties).
 
 ## <a name="framework-properties"></a>Свойства платформы
+
+В этом разделе описаны следующие свойства MSBuild:
 
 - [TargetFramework](#targetframework)
 - [TargetFrameworks](#targetframeworks)
@@ -79,45 +81,18 @@ ms.locfileid: "102604766"
 </PropertyGroup>
 ```
 
-## <a name="publish-properties-items-and-metadata"></a>Публикация свойств, элементов и метаданных
+## <a name="publish-related-properties"></a>Свойства, связанные с публикацией
+
+В этом разделе описаны следующие свойства MSBuild:
 
 - [AppendRuntimeIdentifierToOutputPath](#appendruntimeidentifiertooutputpath)
 - [AppendTargetFrameworkToOutputPath](#appendtargetframeworktooutputpath)
 - [CopyLocalLockFileAssemblies](#copylocallockfileassemblies)
-- [CopyToPublishDirectory](#copytopublishdirectory)
-- [LinkBase](#linkbase)
 - [PreserveCompilationContext](#preservecompilationcontext)
 - [PreserveCompilationReferences](#preservecompilationreferences)
 - [RuntimeIdentifier](#runtimeidentifier)
 - [RuntimeIdentifiers](#runtimeidentifiers)
-- [TrimmerRootAssembly](#trimmerrootassembly)
 - [UseAppHost](#useapphost)
-
-### <a name="copytopublishdirectory"></a>CopyToPublishDirectory
-
-Метаданные `CopyToPublishDirectory` в элементах управления MSBuild, когда элемент копируется в каталог публикации. Допустимые значения: `PreserveNewest`, при котором копируется только элемент, если он был изменен, `Always`, при котором всегда копируется элемент, и `Never`, при котором элемент никогда не копируется. С точки зрения производительности `PreserveNewest` предпочтительнее, поскольку включает инкрементную сборку.
-
-```xml
-<ItemGroup>
-  <None Update="appsettings.Development.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
-</ItemGroup>
-```
-
-### <a name="linkbase"></a>LinkBase
-
-Для элемента, находящегося за пределами каталога проекта и его подкаталогов, целевой объект публикации использует [метаданные Link](/visualstudio/msbuild/common-msbuild-item-metadata) элемента, чтобы определить, куда копировать элемент. `Link` также определяет, как элементы за пределами дерева проекта отображаются в окне обозревателя решений Visual Studio.
-
-Если для элемента, находящегося за пределами проекта, `Link` не указан, по умолчанию используется `%(LinkBase)\%(RecursiveDir)%(Filename)%(Extension)`. `LinkBase` позволяет указать допустимую базовую папку для элементов за пределами проекта. Иерархия папок в базовой папке обеспечивается с помощью `RecursiveDir`. Если параметр `LinkBase` не указан, он опускается в пути `Link`.
-
-```xml
-<ItemGroup>
-  <Content Include="..\Extras\**\*.cs" LinkBase="Shared"/>
-</ItemGroup>
-```
-
-На следующем рисунке показано, как файл, который включен с помощью стандартной маски предыдущего элемента `Include`, отображается в обозревателе решений.
-
-:::image type="content" source="media/solution-explorer-linkbase.png" alt-text="Обозреватель решений: элемент с метаданными LinkBase.":::
 
 ### <a name="appendtargetframeworktooutputpath"></a>AppendTargetFrameworkToOutputPath
 
@@ -203,18 +178,6 @@ ms.locfileid: "102604766"
 </PropertyGroup>
 ```
 
-### <a name="trimmerrootassembly"></a>TrimmerRootAssembly
-
-Элемент `TrimmerRootAssembly` позволяет исключить сборку из [*обрезки*](../deploying/trim-self-contained.md). Обрезка — это процесс удаления неиспользуемых частей среды выполнения из упакованного приложения. В некоторых случаях при обрезке могут неправильно удаляться необходимые ссылки.
-
-Следующий код XML исключает сборку `System.Security` из обрезки.
-
-```xml
-<ItemGroup>
-  <TrimmerRootAssembly Include="System.Security" />
-</ItemGroup>
-```
-
 ### <a name="useapphost"></a>UseAppHost
 
 Свойство `UseAppHost` контролирует создание собственного исполняемого файла для развертывания. Этот файл требуется для автономных развертываний.
@@ -229,7 +192,9 @@ ms.locfileid: "102604766"
 
 Дополнительные сведения см. в статье о [развертывании приложений .NET](../deploying/index.md).
 
-## <a name="compile-properties"></a>Свойства компиляции
+## <a name="compilation-related-properties"></a>Свойства, связанные с компиляцией
+
+В этом разделе описаны следующие свойства MSBuild:
 
 - [EmbeddedResourceUseDependentUponConvention](#embeddedresourceusedependentuponconvention)
 - [LangVersion](#langversion)
@@ -262,6 +227,8 @@ ms.locfileid: "102604766"
 Дополнительные сведения см. в статье [Управление версиями языка C#](../../csharp/language-reference/configure-language-version.md#override-a-default).
 
 ## <a name="default-item-inclusion-properties"></a>Свойства включения элементов по умолчанию
+
+В этом разделе описаны следующие свойства MSBuild:
 
 - [DefaultExcludesInProjectFolder](#defaultexcludesinprojectfolder)
 - [DefaultItemExcludes](#defaultitemexcludes)
@@ -335,6 +302,8 @@ ms.locfileid: "102604766"
 ```
 
 ## <a name="code-analysis-properties"></a>Свойства анализа кода
+
+В этом разделе описаны следующие свойства MSBuild:
 
 - [AnalysisLevel](#analysislevel)
 - [AnalysisMode](#analysismode)
@@ -532,13 +501,12 @@ ms.locfileid: "102604766"
 </PropertyGroup>
 ```
 
-## <a name="reference-properties-and-items"></a>Справочники по свойствам и элементам
+## <a name="reference-properties"></a>Свойства ссылки
+
+В этом разделе описаны следующие свойства MSBuild:
 
 - [AssetTargetFallback](#assettargetfallback)
 - [DisableImplicitFrameworkReferences](#disableimplicitframeworkreferences)
-- [PackageReference](#packagereference)
-- [ProjectReference](#projectreference)
-- [Ссылки](#reference)
 - [Свойства, связанные с восстановлением](#restore-related-properties)
 
 ### <a name="assettargetfallback"></a>AssetTargetFallback
@@ -565,74 +533,6 @@ ms.locfileid: "102604766"
 </PropertyGroup>
 ```
 
-### <a name="packagereference"></a>PackageReference
-
-Элемент `PackageReference` определяет ссылку на пакет NuGet.
-
-Атрибут `Include` указывает идентификатор пакета. Атрибут `Version` указывает версию или диапазон версий. Сведения о том, как указать минимальную версию, максимальную версию, диапазон или точное соответствие, см. в разделе [Диапазоны версий](/nuget/concepts/package-versioning#version-ranges). [Атрибуты ресурса](#asset-attributes) можно также добавить в ссылку на пакет.
-
-Фрагмент файла проекта в следующем примере ссылается на пакет [System.Runtime](https://www.nuget.org/packages/System.Runtime/).
-
-```xml
-<ItemGroup>
-  <PackageReference Include="System.Runtime" Version="4.3.0" />
-</ItemGroup>
-```
-
-Дополнительные сведения см. в статье [Ссылки на пакеты в файлах проекта](/nuget/consume-packages/package-references-in-project-files).
-
-#### <a name="asset-attributes"></a>Атрибуты ресурса
-
-Метаданные `IncludeAssets`, `ExcludeAssets` и `PrivateAssets` можно добавить в ссылку на пакет.
-
-| attribute | Описание |
-| - | - |
-| `IncludeAssets` | Указывает, какие ресурсы пакета, указанные `<PackageReference>`, следует использовать. По умолчанию включаются все ресурсы пакета. |
-| `ExcludeAssets`| Указывает, какие ресурсы пакета, указанные `<PackageReference>`, не следует использовать. |
-| `PrivateAssets` | Указывает, какие ресурсы пакета, указанные `<PackageReference>`, следует использовать, но не следует передавать в следующий проект. Если этот атрибут отсутствует, ресурсы `Analyzers`, `Build` и `ContentFiles` по умолчанию являются частными. |
-
-Эти атрибуты могут содержать один или несколько следующих элементов (если их больше одного, они разделяются точкой с запятой `;`):
-
-- `Compile` — содержимое папки *lib* доступно для компиляции.
-- `Runtime` — содержимое папки *runtime* распределяется.
-- `ContentFiles` — используется содержимое папки *contentfiles*.
-- `Build` — используются свойства и целевые объекты в папке *build*.
-- `Native` — содержимое копируется из основных ресурсов в папку *output* среды выполнения.
-- `Analyzers` — используются анализаторы.
-
-Кроме того, атрибут может содержать следующие значения.
-
-- `None` — не используется ни один ресурс.
-- `All` — используются все ресурсы.
-
-### <a name="projectreference"></a>СсылкаНаПроект
-
-Элемент `ProjectReference` определяет ссылку на другой проект. Проект, на который указывает ссылка, добавляется как зависимость пакета NuGet, то есть обрабатывается так же, как `PackageReference`.
-
-Атрибут `Include` задает путь к проекту. Вы также можете добавить в ссылку на проект следующие метаданные: `IncludeAssets`, `ExcludeAssets` и `PrivateAssets`.
-
-Фрагмент файла проекта в следующем примере ссылается на проект `Project2`.
-
-```xml
-<ItemGroup>
-  <ProjectReference Include="..\Project2.csproj" />
-</ItemGroup>
-```
-
-### <a name="reference"></a>Справочник
-
-Элемент `Reference` определяет ссылку на файл сборки.
-
-Атрибут `Include` задает имя файла, а метаданные `HintPath` указывают путь к этой сборке.
-
-```xml
-<ItemGroup>
-  <Reference Include="MyAssembly">
-    <HintPath>..\..\Assemblies\MyAssembly.dll</HintPath>
-  </Reference>
-</ItemGroup>
-```
-
 ### <a name="restore-related-properties"></a>Свойства, связанные с восстановлением
 
 При восстановлении пакета, на который указывает ссылка, устанавливаются все его прямые зависимости и все зависимости этих зависимостей. Можно настроить восстановление пакетов, указав такие свойства, как `RestorePackagesPath` и `RestoreIgnoreFailedSources`. Дополнительные сведения об этих и других свойствах см. в разделе [целевой объект восстановления](/nuget/reference/msbuild-targets#restore-target).
@@ -643,7 +543,7 @@ ms.locfileid: "102604766"
 </PropertyGroup>
 ```
 
-## <a name="run-properties"></a>Свойства запуска
+## <a name="run-related-properties"></a>Свойства, связанные с запуском
 
 Следующие свойства используются для запуска приложения с помощью команды [`dotnet run`](../tools/dotnet-run.md):
 
@@ -673,7 +573,9 @@ ms.locfileid: "102604766"
 </PropertyGroup>
 ```
 
-## <a name="hosting-properties"></a>Свойства размещения
+## <a name="hosting-related-properties"></a>Свойства, связанные с размещением
+
+В этом разделе описаны следующие свойства MSBuild:
 
 - [EnableComHosting](#enablecomhosting)
 - [EnableDynamicLoading](#enabledynamicloading)
@@ -703,6 +605,86 @@ ms.locfileid: "102604766"
   <EnableDynamicLoading>true</EnableDynamicLoading>
 </PropertyGroup>
 ```
+
+## <a name="items"></a>Элементы
+
+[Элементы MSBuild](/visualstudio/msbuild/msbuild-items) — это входные данные для системы сборки. Элементы указываются в соответствии с их типом, который является именем элемента. Например, `Compile` и `Reference` — [два распространенных типа элементов](/visualstudio/msbuild/common-msbuild-project-items). Пакет SDK для .NET предоставляет следующие дополнительные типы элементов:
+
+- [PackageReference](#packagereference)
+- [TrimmerRootAssembly](#trimmerrootassembly)
+
+Для этих элементов можно использовать любой из стандартных [атрибутов элемента](/visualstudio/msbuild/item-element-msbuild#attributes-and-elements), например `Include` и `Update`. Чтобы добавить новый элемент, используйте `Include`. Для изменения существующего элемента используйте `Update`. Например, `Update` часто используется для изменения элемента, который неявно был добавлен пакетом SDK для .NET.
+
+### <a name="packagereference"></a>PackageReference
+
+Элемент `PackageReference` определяет ссылку на пакет NuGet.
+
+Атрибут `Include` указывает идентификатор пакета. Атрибут `Version` указывает версию или диапазон версий. Сведения о том, как указать минимальную версию, максимальную версию, диапазон или точное соответствие, см. в разделе [Диапазоны версий](/nuget/concepts/package-versioning#version-ranges).
+
+Фрагмент файла проекта в следующем примере ссылается на пакет [System.Runtime](https://www.nuget.org/packages/System.Runtime/).
+
+```xml
+<ItemGroup>
+  <PackageReference Include="System.Runtime" Version="4.3.0" />
+</ItemGroup>
+```
+
+Также можно [управлять ресурсами зависимостей](/nuget/consume-packages/package-references-in-project-files#controlling-dependency-assets) с помощью таких метаданных, как `PrivateAssets`.
+
+```xml
+<ItemGroup>
+  <PackageReference Include="Contoso.Utility.UsefulStuff" Version="3.6.0">
+    <PrivateAssets>all</PrivateAssets>
+  </PackageReference>
+</ItemGroup>
+```
+
+Дополнительные сведения см. в статье [Ссылки на пакеты в файлах проекта](/nuget/consume-packages/package-references-in-project-files).
+
+### <a name="trimmerrootassembly"></a>TrimmerRootAssembly
+
+Элемент `TrimmerRootAssembly` позволяет исключить сборку из [*обрезки*](../deploying/trim-self-contained.md). Обрезка — это процесс удаления неиспользуемых частей среды выполнения из упакованного приложения. В некоторых случаях при обрезке могут неправильно удаляться необходимые ссылки.
+
+Следующий код XML исключает сборку `System.Security` из обрезки.
+
+```xml
+<ItemGroup>
+  <TrimmerRootAssembly Include="System.Security" />
+</ItemGroup>
+```
+
+## <a name="item-metadata"></a>Метаданные элементов
+
+Помимо стандартных [атрибутов элемента MSBuild](/visualstudio/msbuild/item-element-msbuild#attributes-and-elements), в пакете SDK для .NET доступны следующие теги метаданных элементов:
+
+- [CopyToPublishDirectory](#copytopublishdirectory)
+- [LinkBase](#linkbase)
+
+### <a name="copytopublishdirectory"></a>CopyToPublishDirectory
+
+Метаданные `CopyToPublishDirectory` в элементах управления MSBuild, когда элемент копируется в каталог публикации. Допустимые значения: `PreserveNewest`, при котором копируется только элемент, если он был изменен, `Always`, при котором всегда копируется элемент, и `Never`, при котором элемент никогда не копируется. С точки зрения производительности `PreserveNewest` предпочтительнее, поскольку включает инкрементную сборку.
+
+```xml
+<ItemGroup>
+  <None Update="appsettings.Development.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+</ItemGroup>
+```
+
+### <a name="linkbase"></a>LinkBase
+
+Для элемента, находящегося за пределами каталога проекта и его подкаталогов, целевой объект публикации использует [метаданные Link](/visualstudio/msbuild/common-msbuild-item-metadata) элемента, чтобы определить, куда копировать элемент. `Link` также определяет, как элементы за пределами дерева проекта отображаются в окне обозревателя решений Visual Studio.
+
+Если для элемента, находящегося за пределами проекта, `Link` не указан, по умолчанию используется `%(LinkBase)\%(RecursiveDir)%(Filename)%(Extension)`. `LinkBase` позволяет указать допустимую базовую папку для элементов за пределами проекта. Иерархия папок в базовой папке обеспечивается с помощью `RecursiveDir`. Если параметр `LinkBase` не указан, он опускается в пути `Link`.
+
+```xml
+<ItemGroup>
+  <Content Include="..\Extras\**\*.cs" LinkBase="Shared"/>
+</ItemGroup>
+```
+
+На следующем рисунке показано, как файл, который включен с помощью стандартной маски предыдущего элемента `Include`, отображается в обозревателе решений.
+
+:::image type="content" source="media/solution-explorer-linkbase.png" alt-text="Обозреватель решений: элемент с метаданными LinkBase.":::
 
 ## <a name="see-also"></a>См. также
 
