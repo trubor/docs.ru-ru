@@ -5,12 +5,12 @@ author: mamccrea
 ms.author: mamccrea
 ms.date: 10/09/2020
 ms.topic: tutorial
-ms.openlocfilehash: 1c2c966a4ff50a9d2f6951e20d909c5c20c75bfb
-ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
+ms.openlocfilehash: a21b92f910d82cbddd2976adeb292cea5f7bc78b
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94688245"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104876868"
 ---
 # <a name="tutorial-sentiment-analysis-with-net-for-apache-spark-and-mlnet"></a>Учебник. Анализ тональности с помощью .NET для Apache Spark и ML.NET
 
@@ -33,11 +33,11 @@ ms.locfileid: "94688245"
 
 * [Скачайте и установите](https://marketplace.visualstudio.com/items?itemName=MLNET.07) построитель моделей ML.NET (предварительная версия).
 
-* Скачайте файлы [yelptest.csv](https://github.com/dotnet/spark/blob/master/examples/Microsoft.Spark.CSharp.Examples/MachineLearning/Sentiment/Resources/yelptest.csv) и [yelptrain.csv](https://github.com/dotnet/spark/blob/master/examples/Microsoft.Spark.CSharp.Examples/MachineLearning/Sentiment/Resources/yelptrain.csv) наборов данных отзывов Yelp.
+* Скачайте файлы [yelptest.csv](https://github.com/dotnet/spark/blob/main/examples/Microsoft.Spark.CSharp.Examples/MachineLearning/Sentiment/Resources/yelptest.csv) и [yelptrain.csv](https://github.com/dotnet/spark/blob/main/examples/Microsoft.Spark.CSharp.Examples/MachineLearning/Sentiment/Resources/yelptrain.csv) наборов данных отзывов Yelp.
 
 ## <a name="review-the-data"></a>Изучение данных
 
-Набор данных отзывов Yelp содержит онлайн-отзывы о различных службах. Откройте файл [elptrain.csv](https://github.com/dotnet/spark/blob/master/examples/Microsoft.Spark.CSharp.Examples/MachineLearning/Sentiment/Resources/yelptrain.csv) и обратите внимание на структуру данных. Первый столбец содержит текст отзывов, а второй столбец — оценки тональности. Если оценка тональности равна 1, то отзыв положительный, а если показатель тональности равен 0, то отзыв отрицательный.
+Набор данных отзывов Yelp содержит онлайн-отзывы о различных службах. Откройте файл [elptrain.csv](https://github.com/dotnet/spark/blob/main/examples/Microsoft.Spark.CSharp.Examples/MachineLearning/Sentiment/Resources/yelptrain.csv) и обратите внимание на структуру данных. Первый столбец содержит текст отзывов, а второй столбец — оценки тональности. Если оценка тональности равна 1, то отзыв положительный, а если показатель тональности равен 0, то отзыв отрицательный.
 
 В следующей таблице содержатся образцы данных.
 
@@ -203,7 +203,7 @@ dotnet publish
 
 ## <a name="get-the-code"></a>Получите код
 
-Код в этом учебнике похож на код, используемый в примере [анализа тональности с большими данными](https://github.com/dotnet/spark/tree/master/examples/Microsoft.Spark.CSharp.Examples/MachineLearning/Sentiment).
+Код в этом учебнике похож на код, используемый в примере [анализа тональности с большими данными](https://github.com/dotnet/spark/tree/main/examples/Microsoft.Spark.CSharp.Examples/MachineLearning/Sentiment).
 
 ## <a name="next-steps"></a>Следующие шаги
 

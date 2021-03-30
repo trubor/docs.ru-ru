@@ -6,12 +6,12 @@ ms.topic: tutorial
 ms.custom: mvc
 ms.author: luquinta
 author: luisquintanilla
-ms.openlocfilehash: 51041f5a9076ad360a84cc39704aedb50b77d40a
-ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
+ms.openlocfilehash: aea264036ab4766696699980f464cca3d8229499
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90679394"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104875594"
 ---
 # <a name="tutorial-forecast-bike-rental-service-demand-with-time-series-analysis-and-mlnet"></a>Учебник. Прогнозирование спроса для службы проката велосипедов с помощью анализа временных рядов и ML.NET
 
@@ -33,7 +33,7 @@ ms.locfileid: "90679394"
 
 ## <a name="time-series-forecasting-sample-overview"></a>Общие сведения о примере прогнозирования по временным рядам
 
-Этот пример содержит **консольное приложение .NET Core на языке C#** , которое прогнозирует спрос для службы проката велосипедов с помощью алгоритма одномерного анализа временных рядов, называемого анализом сингулярного спектра. Код для этого примера можно найти в репозитории [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/Forecasting_BikeSharingDemand) на сайте GitHub.
+Этот пример содержит **консольное приложение .NET Core на языке C#** , которое прогнозирует спрос для службы проката велосипедов с помощью алгоритма одномерного анализа временных рядов, называемого анализом сингулярного спектра. Код для этого примера можно найти в репозитории [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/getting-started/Forecasting_BikeSharingDemand) на сайте GitHub.
 
 ## <a name="understand-the-problem"></a>Определение проблемы
 
@@ -60,7 +60,7 @@ ms.locfileid: "90679394"
 ### <a name="prepare-and-understand-the-data"></a>Подготовка и анализ данных
 
 1. Создайте каталог с именем *Data*.
-1. Скачайте [файл базы данных *DailyDemand.mdf*](https://github.com/dotnet/machinelearning-samples/raw/master/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Data/DailyDemand.mdf) и сохраните его в каталоге *Data*.
+1. Скачайте [файл базы данных *DailyDemand.mdf*](https://github.com/dotnet/machinelearning-samples/raw/main/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Data/DailyDemand.mdf) и сохраните его в каталоге *Data*.
 
 > [!NOTE]
 > Данные, используемые в этом руководстве, получены из [набора данных UCI по аренде велосипедов](http://archive.ics.uci.edu/ml/datasets/bike+sharing+dataset). Хади Фанаит (Hadi Fanaee-T) и Жуан Гама (Joao Gama), 'Event labeling combining ensemble detectors and background knowledge' (Маркировка событий по сочетанию множества датчиков и предварительных знаний), Progress in Artificial Intelligence (2013): стр. 1–15, Springer Berlin Heidelberg, [ссылка на веб-страницу](https://link.springer.com/article/10.1007%2Fs13748-013-0040-3).
@@ -285,7 +285,7 @@ CREATE TABLE [Rentals] (
 
 Поздравляем! Вы успешно создали модель машинного обучения для прогнозирования спроса на прокат велосипедов.
 
-Исходный код для этого руководства можно найти в репозитории [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/Forecasting_BikeSharingDemand).
+Исходный код для этого руководства можно найти в репозитории [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/getting-started/Forecasting_BikeSharingDemand).
 
 ## <a name="next-steps"></a>Следующие шаги
 

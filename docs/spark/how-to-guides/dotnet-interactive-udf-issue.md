@@ -6,12 +6,12 @@ author: Niharikadutta
 ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
-ms.openlocfilehash: 8fb729a0b8220d15af641f916383bbd6146e2e33
-ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
+ms.openlocfilehash: c29c3a9f6269a342d1051d6d979a4e3adb42da02
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94441080"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104875555"
 ---
 # <a name="write-and-call-udfs-in-net-for-apache-spark-interactive-environments"></a>Написание и вызов определяемых пользователем функций в .NET для интерактивных сред Apache Spark
 
@@ -69,8 +69,8 @@ ms.locfileid: "94441080"
 
     ![Сбой широковещательных переменных](./media/dotnet-interactive/broadcast-fails.png)
 
-    Как рекомендуется в предыдущих разделах, мы определим UDF и объект, на который она ссылается (в данном случае это широковещательная переменная), в одной и той же ячейке, однако по-прежнему отображается ошибка `SerializationException`, в которой указывается, что `Microsoft.Spark.Sql.Session` не помечен как сериализуемый. Это происходит потому, что когда компилятор пытается сериализовать объект широковещательной переменной `bv`, он находит имя, которое добавляется к `spark` объекта [`SparkSession`](https://github.com/dotnet/spark/blob/master/src/csharp/Microsoft.Spark/Sql/SparkSession.cs#L20), который требуется пометить как сериализуемый. Это можно продемонстрировать с помощью декомпилированной сборки этой ячейки:
+    Как рекомендуется в предыдущих разделах, мы определим UDF и объект, на который она ссылается (в данном случае это широковещательная переменная), в одной и той же ячейке, однако по-прежнему отображается ошибка `SerializationException`, в которой указывается, что `Microsoft.Spark.Sql.Session` не помечен как сериализуемый. Это происходит потому, что когда компилятор пытается сериализовать объект широковещательной переменной `bv`, он находит имя, которое добавляется к `spark` объекта [`SparkSession`](https://github.com/dotnet/spark/blob/main/src/csharp/Microsoft.Spark/Sql/SparkSession.cs#L20), который требуется пометить как сериализуемый. Это можно продемонстрировать с помощью декомпилированной сборки этой ячейки:
 
     ![Код декомпилированной сборки](./media/dotnet-interactive/decompiledAssembly.png)
 
-    Если пометить класс [`SparkSession`](https://github.com/dotnet/spark/blob/master/src/csharp/Microsoft.Spark/Sql/SparkSession.cs#L20) как `[Serializable]`, то его можно будет использовать, но это не идеальное решение, поскольку мы не хотим дать пользователю возможности сериализовать объект SparkSession, так как это может привести к нежелательному поведению. Это [известная проблема](https://github.com/dotnet/spark/issues/619), и она будет устранена в будущих версиях.
+    Если пометить класс [`SparkSession`](https://github.com/dotnet/spark/blob/main/src/csharp/Microsoft.Spark/Sql/SparkSession.cs#L20) как `[Serializable]`, то его можно будет использовать, но это не идеальное решение, поскольку мы не хотим дать пользователю возможности сериализовать объект SparkSession, так как это может привести к нежелательному поведению. Это [известная проблема](https://github.com/dotnet/spark/issues/619), и она будет устранена в будущих версиях.

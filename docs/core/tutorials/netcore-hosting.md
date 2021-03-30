@@ -4,12 +4,12 @@ description: Узнайте, как разместить среду выполн
 author: mjrousos
 ms.topic: how-to
 ms.date: 12/21/2018
-ms.openlocfilehash: d7568c377e09b95fbc863610ec6bdc444f924976
-ms.sourcegitcommit: 1dbe25ff484a02025d5c34146e517c236f7161fb
+ms.openlocfilehash: a05e1e1d09f1f988ad8354f98521681e3f6cbea8
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104652715"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104875854"
 ---
 # <a name="write-a-custom-net-core-host-to-control-the-net-runtime-from-your-native-code"></a>Написание пользовательского хост-приложения NET Core для управления средой выполнения .NET из машинного кода
 
@@ -27,24 +27,24 @@ ms.locfileid: "104652715"
 
 ## <a name="hosting-apis"></a>Размещение API
 
-Есть два разных API, которые могут использоваться для размещения .NET Core. В этой статье (и связанных с ней [примерах](https://github.com/dotnet/samples/tree/master/core/hosting)) рассматриваются два возможных варианта.
+Есть два разных API, которые могут использоваться для размещения .NET Core. В этой статье (и связанных с ней [примерах](https://github.com/dotnet/samples/tree/main/core/hosting)) рассматриваются два возможных варианта.
 
 * Предпочтительный способ для размещения среды выполнения .NET Core в .NET Core 3.0 и более поздних версиях — это библиотеки API `nethost` и `hostfxr`. Эти точки входа решают все сложности по поиску и настройке среды выполнения для инициализации, а также поддерживают как запуск управляемого приложения, так и вызов статического управляемого метода.
-* Предпочтительный способ размещения среды выполнения .NET Core в версиях до .NET Core 3.0 — API [`coreclrhost.h`](https://github.com/dotnet/runtime/blob/master/src/coreclr/hosts/inc/coreclrhost.h). Этот API предоставляет функции для облегчения запуска и остановки среды выполнения и вызова управляемого кода (либо путем запуска управляемого EXE-файла, либо путем вызова статических управляемых методов).
+* Предпочтительный способ размещения среды выполнения .NET Core в версиях до .NET Core 3.0 — API [`coreclrhost.h`](https://github.com/dotnet/runtime/blob/main/src/coreclr/hosts/inc/coreclrhost.h). Этот API предоставляет функции для облегчения запуска и остановки среды выполнения и вызова управляемого кода (либо путем запуска управляемого EXE-файла, либо путем вызова статических управляемых методов).
 
 ## <a name="sample-hosts"></a>Примеры основного приложения
 
-[Пример основного приложения](https://github.com/dotnet/samples/tree/master/core/hosting), в котором демонстрируются описанные в учебнике ниже действия, доступны в репозитории dotnet/samples на сайте GitHub. Комментарии в примерах четко соответствуют пронумерованным шагам в этих учебниках. Инструкции по загрузке см. в разделе [Просмотр и скачивание примеров](../../samples-and-tutorials/index.md#view-and-download-samples).
+[Пример основного приложения](https://github.com/dotnet/samples/tree/main/core/hosting), в котором демонстрируются описанные в учебнике ниже действия, доступны в репозитории dotnet/samples на сайте GitHub. Комментарии в примерах четко соответствуют пронумерованным шагам в этих учебниках. Инструкции по загрузке см. в разделе [Просмотр и скачивание примеров](../../samples-and-tutorials/index.md#view-and-download-samples).
 
 Помните, что пример основного приложения предназначен для учебных целей, поэтому в нем реализована минимальная проверка ошибок, а удобочитаемость поставлена выше эффективности.
 
 ## <a name="create-a-host-using-nethosth-and-hostfxrh"></a>Создание узла с помощью `nethost.h` и `hostfxr.h`
 
-Следующая процедура описывает применение библиотек `nethost` и `hostfxr` для запуска среды выполнения .NET Core в собственном приложении и вызова управляемого статического метода. В этом [примере](https://github.com/dotnet/samples/tree/master/core/hosting/HostWithHostFxr) используются заголовок `nethost` и библиотеки, установленные в составе пакета SDK для .NET, чтобы скопировать файлы [`coreclr_delegates.h`](https://github.com/dotnet/runtime/blob/main/src/native/corehost/coreclr_delegates.h) и [`hostfxr.h`](https://github.com/dotnet/runtime/blob/master/src/native/corehost/hostfxr.h) из репозитория [dotnet/runtime](https://github.com/dotnet/runtime).
+Следующая процедура описывает применение библиотек `nethost` и `hostfxr` для запуска среды выполнения .NET Core в собственном приложении и вызова управляемого статического метода. В этом [примере](https://github.com/dotnet/samples/tree/main/core/hosting/HostWithHostFxr) используются заголовок `nethost` и библиотеки, установленные в составе пакета SDK для .NET, чтобы скопировать файлы [`coreclr_delegates.h`](https://github.com/dotnet/runtime/blob/main/src/native/corehost/coreclr_delegates.h) и [`hostfxr.h`](https://github.com/dotnet/runtime/blob/main/src/native/corehost/hostfxr.h) из репозитория [dotnet/runtime](https://github.com/dotnet/runtime).
 
 ### <a name="step-1---load-hostfxr-and-get-exported-hosting-functions"></a>Шаг 1. Загрузка `hostfxr` и получение экспортированных функций размещения
 
-Библиотека `nethost` предоставляет функцию `get_hostfxr_path` для поиска библиотеки `hostfxr`. Библиотека `hostfxr` предоставляет функции для размещения среды выполнения .NET Core. Полный список этих функций можно найти в статье [`hostfxr.h`](https://github.com/dotnet/runtime/blob/master/src/native/corehost/hostfxr.h) и в [документации по проектированию стандартного размещения](https://github.com/dotnet/runtime/blob/master/docs/design/features/native-hosting.md). В этом примере и руководстве в целом применяются следующие элементы.
+Библиотека `nethost` предоставляет функцию `get_hostfxr_path` для поиска библиотеки `hostfxr`. Библиотека `hostfxr` предоставляет функции для размещения среды выполнения .NET Core. Полный список этих функций можно найти в статье [`hostfxr.h`](https://github.com/dotnet/runtime/blob/main/src/native/corehost/hostfxr.h) и в [документации по проектированию стандартного размещения](https://github.com/dotnet/runtime/blob/main/docs/design/features/native-hosting.md). В этом примере и руководстве в целом применяются следующие элементы.
 
 * `hostfxr_initialize_for_runtime_config`. инициализирует контекст узла и подготавливает среду выполнения .NET Core к инициализации, используя указанную конфигурацию среды выполнения.
 * `hostfxr_get_runtime_delegate`. получает делегат для функций среды выполнения.
@@ -82,7 +82,7 @@ public delegate int ComponentEntryPoint(IntPtr args, int sizeBytes);
 
 ## <a name="create-a-host-using-coreclrhosth"></a>Создание узла с помощью `coreclrhost.h`
 
-Следующая процедура описывает применение API `coreclrhost.h` для запуска среды выполнения .NET Core в нативном приложении и вызова управляемого статического метода. Фрагменты кода в этом документе могут использовать некоторые API-интерфейсы Windows, но [полный пример основного приложения](https://github.com/dotnet/samples/tree/master/core/hosting/HostWithCoreClrHost) содержит пути кода для Windows и Linux.
+Следующая процедура описывает применение API `coreclrhost.h` для запуска среды выполнения .NET Core в нативном приложении и вызова управляемого статического метода. Фрагменты кода в этом документе могут использовать некоторые API-интерфейсы Windows, но [полный пример основного приложения](https://github.com/dotnet/samples/tree/main/core/hosting/HostWithCoreClrHost) содержит пути кода для Windows и Linux.
 
 [Узел corerun](https://github.com/dotnet/runtime/tree/main/src/coreclr/hosts/corerun) демонстрирует более сложный и приближенный к реальности кроссплатформенный пример размещения с применением файла `coreclrhost.h`.
 

@@ -3,12 +3,12 @@ title: Параметры конфигурации сборщика мусора
 description: Сведения о параметрах времени выполнения, определяющих, как сборщик мусора управляет памятью для приложений .NET Core.
 ms.date: 07/10/2020
 ms.topic: reference
-ms.openlocfilehash: 91d155b638c7e69b3d2c0216266a7c0c0410db4c
-ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
+ms.openlocfilehash: c4f55124d9f50146ceac1eea52ce60b0dd77ad1d
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87915987"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104875048"
 ---
 # <a name="run-time-configuration-options-for-garbage-collection"></a>Параметры конфигурации времени выполнения для сборки мусора
 
@@ -427,7 +427,7 @@ ms.locfileid: "87915987"
 
 | | Имя параметра | Значения | Представленная версия |
 | - | - | - | - |
-| **runtimeconfig.json** | Н/Д | Недоступно | Н/Д |
+| **runtimeconfig.json** | Н/Д | Н/Д | Н/Д |
 | **Переменная среды** | `COMPlus_GCLargePages` | `0` — отключено<br/>`1` — включено | .NET Core 3.0 |
 
 ## <a name="allow-large-objects"></a>Разрешить большие объекты
@@ -438,7 +438,7 @@ ms.locfileid: "87915987"
 
 | | Имя параметра | Значения | Представленная версия |
 | - | - | - | - |
-| **runtimeconfig.json** | Н/Д | Недоступно | Н/Д |
+| **runtimeconfig.json** | Н/Д | Н/Д | Н/Д |
 | **Переменная среды** | `COMPlus_gcAllowVeryLargeObjects` | `1` — включено<br/> `0` — отключено | .NET Core 1.0 |
 | **app.config для .NET Framework** | [gcAllowVeryLargeObjects](../../framework/configure-apps/file-schema/runtime/gcallowverylargeobjects-element.md) | `1` — включено<br/> `0` — отключено | .NET Framework 4,5 |
 
@@ -472,9 +472,9 @@ ms.locfileid: "87915987"
 ## <a name="standalone-gc"></a>Автономный сборщик мусора
 
 - Указывает путь к библиотеке, содержащей сборщик мусора, который среда выполнения намеревается загрузить.
-- Дополнительные сведения см. в статье [Проектирования загрузчика автономного сборщика мусора](https://github.com/dotnet/runtime/blob/master/docs/design/features/standalone-gc-loading.md).
+- Дополнительные сведения см. в статье [Проектирования загрузчика автономного сборщика мусора](https://github.com/dotnet/runtime/blob/main/docs/design/features/standalone-gc-loading.md).
 
 | | Имя параметра | Значения | Представленная версия |
 | - | - | - | - |
-| **runtimeconfig.json** | Н/Д | Недоступно | Н/Д |
+| **runtimeconfig.json** | Н/Д | Н/Д | Н/Д |
 | **Переменная среды** | `COMPlus_GCName` | *string_path* | .NET Core 2.0; |

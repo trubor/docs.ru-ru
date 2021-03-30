@@ -5,12 +5,12 @@ ms.date: 03/08/2021
 helpviewer_keywords:
 - C# language, top-level statements
 - C# language, Main method
-ms.openlocfilehash: 69ff5fd606f5e12f55bd3e6dfc15fc7e64d8352b
-ms.sourcegitcommit: e3cf8227573e13b8e1f4e3dc007404881cdafe47
+ms.openlocfilehash: 31a9d3bba302823015058d59ca79da45754b761f
+ms.sourcegitcommit: 5ce37699c2a51ed173171813be68ef7577b1aba5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "103190449"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104881058"
 ---
 # <a name="top-level-statements-c-programming-guide"></a>Операторы верхнего уровня (руководство по программированию на C#)
 
@@ -38,7 +38,7 @@ ms.locfileid: "103190449"
 
 > CS7022 The entry point of the program is global code; ignoring 'Main()' entry point (Точка входа программы является глобальным кодом; точка входа Main() игнорируется).
 
-В проекте с операторами верхнего уровня нельзя использовать параметр компилятора [-main](../../language-reference/compiler-options/main-compiler-option.md) для выбора точки входа, даже если в проекте есть один или несколько методов `Main`.
+В проекте с операторами верхнего уровня нельзя использовать параметр компилятора [-main](../../language-reference/compiler-options/advanced.md#mainentrypoint-or-startupobject) для выбора точки входа, даже если в проекте есть один или несколько методов `Main`.
 
 ## <a name="using-directives"></a>Директивы `using`
 

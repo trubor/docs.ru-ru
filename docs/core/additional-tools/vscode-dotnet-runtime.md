@@ -3,12 +3,12 @@ title: Средство установки .NET для авторов расши
 description: Обзор средства установки .NET для авторов расширений, которое представляет собой расширение Visual Studio Code для установки среды выполнения .NET.
 author: sfoslund
 ms.date: 11/18/2020
-ms.openlocfilehash: 4be931a254e4ce969f9eaf2efde7939cb54e1d5f
-ms.sourcegitcommit: 46cfed35d79d70e08c313b9c664c7e76babab39e
+ms.openlocfilehash: a372d0cc728956920d013dac9bc0da1bcd3edc0b
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102605156"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104872994"
 ---
 # <a name="net-install-tool-for-extension-authors"></a>Средство установки .NET для авторов расширений
 
@@ -21,9 +21,9 @@ ms.locfileid: "102605156"
 > [!NOTE]
 > С помощью этого средства можно установить только среду выполнения .NET. В настоящее время оно не поддерживает установку пакета SDK для .NET.
 
-Убедившись, что средство установки .NET для авторов расширений соответствует вашим требованиям, можете установить зависимость от него в [манифесте расширения](https://code.visualstudio.com/api/references/extension-manifest) и начать использовать команды, предоставляемые в [API VS Code](https://code.visualstudio.com/api/extension-guides/command#programmatically-executing-a-command). Список команд, предоставляемых этим расширением, можно найти [на нашей странице GitHub](https://github.com/dotnet/vscode-dotnet-runtime/blob/master/Documentation/commands.md).
+Убедившись, что средство установки .NET для авторов расширений соответствует вашим требованиям, можете установить зависимость от него в [манифесте расширения](https://code.visualstudio.com/api/references/extension-manifest) и начать использовать команды, предоставляемые в [API VS Code](https://code.visualstudio.com/api/extension-guides/command#programmatically-executing-a-command). Список команд, предоставляемых этим расширением, можно найти [на нашей странице GitHub](https://github.com/dotnet/vscode-dotnet-runtime/blob/main/Documentation/commands.md).
 
-Ознакомьтесь с этим [примером расширения](https://github.com/dotnet/vscode-dotnet-runtime/tree/master/sample), чтобы увидеть, как применяются эти инструкции.
+Ознакомьтесь с этим [примером расширения](https://github.com/dotnet/vscode-dotnet-runtime/tree/main/sample), чтобы увидеть, как применяются эти инструкции.
 
 Дополнительные примеры см. в следующих разделах с описанием расширений с открытым кодом, которые используют это средство:
 
@@ -33,4 +33,4 @@ ms.locfileid: "102605156"
 
 ## <a name="getting-started-end-users"></a>Начало работы. Пользователи
 
-Как правило, пользователю не нужно взаимодействовать со средством установки .NET для авторов расширений. Если у вас возникли проблемы с расширением, ознакомьтесь со страницей с инструкциями по [устранению неполадок](https://github.com/dotnet/vscode-dotnet-runtime/blob/master/Documentation/troubleshooting-runtime.md) или сообщите о проблеме на нашей странице [GitHub](https://github.com/dotnet/vscode-dotnet-runtime/issues).
+Как правило, пользователю не нужно взаимодействовать со средством установки .NET для авторов расширений. Если у вас возникли проблемы с расширением, ознакомьтесь со страницей с инструкциями по [устранению неполадок](https://github.com/dotnet/vscode-dotnet-runtime/blob/main/Documentation/troubleshooting-runtime.md) или сообщите о проблеме на нашей странице [GitHub](https://github.com/dotnet/vscode-dotnet-runtime/issues).

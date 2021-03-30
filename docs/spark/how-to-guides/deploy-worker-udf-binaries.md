@@ -4,12 +4,12 @@ description: Узнайте, как развернуть рабочую роль
 ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
-ms.openlocfilehash: c777fdb26045c62317b49259fdde974f43ba5c0d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d3e86d22a308c7124812f2c11742c2e18803b13d
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293771"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104875542"
 ---
 # <a name="deploy-net-for-apache-spark-worker-and-user-defined-function-binaries"></a>Развертывание рабочей роли и двоичных файлов пользовательских функций .NET для Apache Spark
 
@@ -27,7 +27,7 @@ ms.locfileid: "96293771"
 | :--------------------------- | :----------
 | DOTNET_WORKER_DIR            | Путь к месту создания двоичного файла <code>Microsoft.Spark.Worker</code>.</br>Он используется драйвером Spark и будет передан в исполнители Spark. Если эта переменная не задана, исполнители Spark будут выполнять поиск по пути, указанному в переменной среды <code>PATH</code>.</br>_Пример: "C:\bin\Microsoft.Spark.Worker"_
 | DOTNET_ASSEMBLY_SEARCH_PATHS | Разделенные запятыми пути, по которому <code>Microsoft.Spark.Worker</code> будет загружать сборки.</br>Обратите внимание, что, если путь начинается с символа ".", в начало будет добавлен рабочий каталог. В **режиме YARN** символ "." представляет рабочий каталог контейнера.</br>_Пример: "C:\Users\\&lt;имя пользователя&gt;\\&lt;mysparkapp&gt;\bin\Debug\\&lt;версия dotnet&gt;"_
-| DOTNET_WORKER_DEBUG          | Если нужно <a href="https://github.com/dotnet/spark/blob/master/docs/developer-guide.md#debugging-user-defined-function-udf">выполнить отладку пользовательской функции</a>, присвойте этой переменной среды значение <code>1</code> перед выполнением <code>spark-submit</code>.
+| DOTNET_WORKER_DEBUG          | Если нужно <a href="https://github.com/dotnet/spark/blob/main/docs/developer-guide.md#debugging-user-defined-function-udf">выполнить отладку пользовательской функции</a>, присвойте этой переменной среды значение <code>1</code> перед выполнением <code>spark-submit</code>.
 
 ### <a name="parameter-options"></a>Параметры
 

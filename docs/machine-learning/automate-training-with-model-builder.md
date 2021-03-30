@@ -3,12 +3,12 @@ title: Построитель моделей и принципы его рабо
 description: Сведения об использовании построителя моделей ML.NET для автоматического обучения модели машинного обучения
 ms.date: 06/01/2020
 ms.custom: overview, mlnet-tooling
-ms.openlocfilehash: d7566a03f83eb76999d995a39aaae408405db2e1
-ms.sourcegitcommit: b27645cb378d4e8137a267e5467ff31409acf6c0
+ms.openlocfilehash: 1e40b0da2c17db1c981bc9f796b4e3cb0c87f69e
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103231424"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104877024"
 ---
 # <a name="what-is-model-builder-and-how-does-it-work"></a>Построитель моделей и принципы его работы
 
@@ -132,11 +132,11 @@ ms.locfileid: "103231424"
 
 |Сценарий|Пример|Данные|Метка|Функции|
 |-|-|-|-|-|
-|Классификация|Прогнозирование аномалий продаж|[данные по продажам продуктов](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/AnomalyDetection_Sales/SpikeDetection/Data/product-sales.csv)|Продажи продукта|Месяц|
-||Прогнозирование тональности комментариев веб-сайта|[данные по комментариям на веб-сайте](https://raw.githubusercontent.com/dotnet/machinelearning/master/test/data/wikipedia-detox-250-line-data.tsv)|Метка (0 — отрицательная тональность, 1 — положительная)|Комментарий, год|
-||Прогнозирование мошеннических операций с кредитной картой|[данные по кредитным картам](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/BinaryClassification_CreditCardFraudDetection/CCFraudDetection.Trainer/assets/input/creditcardfraud-dataset.zip)|Класс (1 — мошенничество, 0 — нет)|Сумма, V1–V28 (анонимизированные признаки)|
-||Прогнозирование типа проблемы в репозитории GitHub|[Данные по проблемам на GitHub](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/end-to-end-apps/MulticlassClassification-GitHubLabeler/GitHubLabeler/Data/corefx-issues-train.tsv)|Область|Название, описание|
-|Прогнозирование значений|Прогнозирование платы за такси|[данные по платам за такси](https://github.com/dotnet/machinelearning-samples/blob/master/datasets/taxi-fare-train.csv)|Плата|Время поездки, расстояние|
+|Классификация|Прогнозирование аномалий продаж|[данные по продажам продуктов](https://github.com/dotnet/machinelearning-samples/blob/main/samples/csharp/getting-started/AnomalyDetection_Sales/SpikeDetection/Data/product-sales.csv)|Продажи продукта|Месяц|
+||Прогнозирование тональности комментариев веб-сайта|[данные по комментариям на веб-сайте](https://raw.githubusercontent.com/dotnet/machinelearning/main/test/data/wikipedia-detox-250-line-data.tsv)|Метка (0 — отрицательная тональность, 1 — положительная)|Комментарий, год|
+||Прогнозирование мошеннических операций с кредитной картой|[данные по кредитным картам](https://github.com/dotnet/machinelearning-samples/blob/main/samples/csharp/getting-started/BinaryClassification_CreditCardFraudDetection/CCFraudDetection.Trainer/assets/input/creditcardfraud-dataset.zip)|Класс (1 — мошенничество, 0 — нет)|Сумма, V1–V28 (анонимизированные признаки)|
+||Прогнозирование типа проблемы в репозитории GitHub|[Данные по проблемам на GitHub](https://github.com/dotnet/machinelearning-samples/blob/main/samples/csharp/end-to-end-apps/MulticlassClassification-GitHubLabeler/GitHubLabeler/Data/corefx-issues-train.tsv)|Область|Название, описание|
+|Прогнозирование значений|Прогнозирование платы за такси|[данные по платам за такси](https://github.com/dotnet/machinelearning-samples/blob/main/datasets/taxi-fare-train.csv)|Плата|Время поездки, расстояние|
 |Классификация изображений|Прогнозирование категории, к которой относится цветок |[изображения цветов](http://download.tensorflow.org/example_images/flower_photos.tgz)|Вид цветов: маргаритки, одуванчики, розы, подсолнухи, тюльпаны|Данные изображения|
 |Рекомендация|Прогнозирование фильмов, которые понравятся пользователям|[рейтинги фильмов](http://files.grouplens.org/datasets/movielens/ml-latest-small.zip)|пользователи, фильмы|Рейтинги|
 

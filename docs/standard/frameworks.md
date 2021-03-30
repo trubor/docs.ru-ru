@@ -5,12 +5,12 @@ ms.date: 03/03/2021
 ms.prod: dotnet
 ms.custom: updateeachrelease
 ms.technology: dotnet-standard
-ms.openlocfilehash: 9e831726a87493b109578a3546a8f29b7b71cb6c
-ms.sourcegitcommit: 46cfed35d79d70e08c313b9c664c7e76babab39e
+ms.openlocfilehash: f0c8c8a61aec2ee3b527d392e5460b9b77a03f26
+ms.sourcegitcommit: 05d0087dfca85aac9ca2960f86c5efd218bf833f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102604610"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105637200"
 ---
 # <a name="target-frameworks-in-sdk-style-projects"></a>Целевые платформы в проектах в стиле SDK
 
@@ -143,7 +143,7 @@ ms.locfileid: "102604610"
 </Project>
 ```
 
-В библиотеке или приложении следует написать условный код компиляции с помощью [директив препроцессора](../csharp/language-reference/preprocessor-directives/preprocessor-if.md) для каждой целевой платформы.
+В библиотеке или приложении следует написать условный код компиляции с помощью [директив препроцессора](../csharp/language-reference/preprocessor-directives.md#conditional-compilation) для каждой целевой платформы.
 
 ```csharp
 public class MyClass
@@ -184,7 +184,7 @@ public class MyClass
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Имена целевых платформ в .NET 5](https://github.com/dotnet/designs/blob/master/accepted/2020/net5/net5.md)
+- [Имена целевых платформ в .NET 5](https://github.com/dotnet/designs/blob/main/accepted/2020/net5/net5.md)
 - [Вызов API для среды выполнения Windows в классических приложениях](/windows/apps/desktop/modernize/desktop-to-uwp-enhance)
 - [Разработка библиотек с помощью кроссплатформенных средств](../core/tutorials/libraries.md)
 - [.NET Standard](net-standard.md)

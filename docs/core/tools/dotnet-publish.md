@@ -2,12 +2,12 @@
 title: Команда dotnet publish
 description: Команда dotnet publish публикует решение или проект .NET в каталоге.
 ms.date: 02/03/2021
-ms.openlocfilehash: 5391e56a88f782294c3a71c523d0fc27a09e0dd8
-ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
+ms.openlocfilehash: 64f300c415d8810badca99878e4243b37f32d86d
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99585680"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104873423"
 ---
 # <a name="dotnet-publish"></a>dotnet publish
 
@@ -155,7 +155,7 @@ dotnet publish -p:PublishProfile=FolderProfile
 
   Упаковывает приложение в однофайловый исполняемый файл для конкретной платформы. Исполняемый файл является самоизвлекаемым и содержит все зависимости (включая машинные), необходимые для запуска приложения. При первом запуске приложение извлекается в каталог, который зависит от имени и идентификатора сборки приложения. Впоследствии запуск происходит быстрее. Если версия не изменилась, приложению не нужно извлекать себя заново. Доступно, начиная с пакета SDK для .NET Core 3.0.
 
-  Дополнительные сведения о публикации однофайловых исполняемых файлов см. в [документе о разработке однофайловых пакетных установщиков](https://github.com/dotnet/designs/blob/master/accepted/2020/single-file/design.md).
+  Дополнительные сведения о публикации однофайловых исполняемых файлов см. в [документе о разработке однофайловых пакетных установщиков](https://github.com/dotnet/designs/blob/main/accepted/2020/single-file/design.md).
 
   Рекомендуется указывать этот параметр в профиле публикации, а не в командной строке. Дополнительные сведения см. в разделе [MSBuild](#msbuild).
 

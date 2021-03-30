@@ -21,12 +21,12 @@ helpviewer_keywords:
 - AdditionalLibPaths compiler option [C#]
 - ApplicationConfiguration compiler option [C#]
 - ModuleAssemblyName compiler option [C#]
-ms.openlocfilehash: 47c84968682e056acdb73805807d907c6bb7c7ee
-ms.sourcegitcommit: 1dbe25ff484a02025d5c34146e517c236f7161fb
+ms.openlocfilehash: 5c51a4dd950a33fb51c338dbd1d86bb5b03eb694
+ms.sourcegitcommit: e16315d9f1ff355f55ff8ab84a28915be0a8e42b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104652767"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105111040"
 ---
 # <a name="advanced-c-compiler-options"></a>Расширенные параметры компилятора C#
 
@@ -259,9 +259,9 @@ ms.locfileid: "104652767"
 Значение по умолчанию параметра компилятора **SubsystemVersion** зависит от условий в следующем списке:
 
 - Значение по умолчанию — 6.02, если задан любой параметр компилятора из следующего списка.
-  - [/target:appcontainerexe](./target-appcontainerexe-compiler-option.md)
-  - [/target:winmdobj](./target-winmdobj-compiler-option.md)
-  - [-platform:arm](./platform-compiler-option.md)
+  - [/target:appcontainerexe](output.md)
+  - [/target:winmdobj](output.md)
+  - [-platform:arm](output.md)
 - Значение по умолчанию — 6.00, если используется средство MSBuild, приложение предназначено для .NET Framework 4.5 и не установлены параметры компилятора, определенные ранее в этом списке.
 - Если ни одно из предыдущих условий не верно, значение по умолчанию — 4.00.
 

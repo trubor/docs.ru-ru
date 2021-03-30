@@ -2,12 +2,12 @@
 title: Работа с коллекциями. Вводное руководство по C#
 description: Это руководство по C# предоставляет для изучения примере коллекции списков.
 ms.date: 02/05/2021
-ms.openlocfilehash: 7a04a983622a6ae36ec5b12d279aa29e52c52a4f
-ms.sourcegitcommit: f0fc5db7bcbf212e46933e9cf2d555bb82666141
+ms.openlocfilehash: 0bc2b84964e8fc270fe7e9d635c4c18aa1abb390
+ms.sourcegitcommit: e16315d9f1ff355f55ff8ab84a28915be0a8e42b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100626686"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105111144"
 ---
 # <a name="learn-to-manage-data-collections-using-the-generic-list-type"></a>Научитесь управлять коллекциями данных с использованием универсального типа списка
 
@@ -207,10 +207,10 @@ foreach (var item in fibonacciNumbers)
 
 ## <a name="complete-challenge"></a>Выполнение задачи
 
-Пример решения можно [просмотреть в готовом примере кода на GitHub](https://github.com/dotnet/samples/tree/master/csharp/list-quickstart/Program.cs#L8-L16).
+Пример решения можно [просмотреть в готовом примере кода на GitHub](https://github.com/dotnet/samples/tree/main/csharp/list-quickstart/Program.cs#L8-L16).
 
 При каждой итерации цикла суммируются два последних целых числа в списке. Полученное значение добавляется в список. Цикл повторяется, пока в список не будут добавлены 20 элементов.
 
-Поздравляем! Вы выполнили задачи в руководстве по спискам. Можете продолжить изучение [дополнительных](../../tutorials/index.md) руководств в своей среде разработки.
+Поздравляем! Вы выполнили задачи в руководстве по спискам. Можете продолжить изучение [дополнительных](../../tutorials/intro-to-csharp/introduction-to-classes.md) руководств в своей среде разработки.
 
 Дополнительные сведения о работе с типом `List` см. в статье [Коллекции и структуры данных](../../../standard/collections/index.md). Также в нем описаны многие другие типы коллекций.

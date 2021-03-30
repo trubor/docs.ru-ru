@@ -4,12 +4,12 @@ description: В этом руководстве показано, как кла�
 ms.date: 06/30/2020
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: 9a2e7f72d59e31cfd7db5b89bfad55bccb063cea
-ms.sourcegitcommit: 97ce5363efa88179dd76e09de0103a500ca9b659
+ms.openlocfilehash: 0c2cfd46375406726913a83d67c45ff922a1085b
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86281411"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104877011"
 ---
 # <a name="tutorial-analyze-sentiment-of-movie-reviews-using-a-pre-trained-tensorflow-model-in-mlnet"></a>Учебник. Анализ тональности отзывов о фильмах с помощью предварительно обученной модели TensorFlow в ML.NET
 
@@ -24,7 +24,7 @@ ms.locfileid: "86281411"
 > * Преобразовать текст комментария на веб-сайте в признаки, пригодные для модели.
 > * Использование модели для прогноза
 
-Исходный код для этого руководства можно найти в репозитории [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/TextClassificationTF).
+Исходный код для этого руководства можно найти в репозитории [dotnet/samples](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/TextClassificationTF).
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -47,9 +47,9 @@ ms.locfileid: "86281411"
 ### <a name="add-the-tensorflow-model-to-the-project"></a>Добавление модели TensorFlow в проект
 
 > [!NOTE]
-> Модель для этого руководства взята из репозитория GitHub [dotnet/machinelearning-testdata](https://github.com/dotnet/machinelearning-testdata/tree/master/Microsoft.ML.TensorFlow.TestModels/sentiment_model) и сохранена в формате TensorFlow SavedModel.
+> Модель для этого руководства взята из репозитория GitHub [dotnet/machinelearning-testdata](https://github.com/dotnet/machinelearning-testdata/tree/main/Microsoft.ML.TensorFlow.TestModels/sentiment_model) и сохранена в формате TensorFlow SavedModel.
 
-1. Скачайте файл [sentiment_model zip](https://github.com/dotnet/samples/blob/master/machine-learning/models/textclassificationtf/sentiment_model.zip?raw=true) и распакуйте его.
+1. Скачайте файл [sentiment_model zip](https://github.com/dotnet/samples/blob/main/machine-learning/models/textclassificationtf/sentiment_model.zip?raw=true) и распакуйте его.
 
     ZIP-файл содержит:
 
@@ -251,7 +251,7 @@ Is sentiment/review positive ? Yes
 
 Поздравляем! Вы успешно создали модель машинного обучения для классификации и прогнозирования тональности сообщений с помощью предварительно обученной модели `TensorFlow` в ML.NET.
 
-Исходный код для этого руководства можно найти в репозитории [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/TextClassificationTF).
+Исходный код для этого руководства можно найти в репозитории [dotnet/samples](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/TextClassificationTF).
 
 В этом руководстве вы узнали, как:
 > [!div class="checklist"]

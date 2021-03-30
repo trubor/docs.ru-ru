@@ -4,12 +4,12 @@ description: Сведения о том, как использовать дос�
 author: IEvangelist
 ms.author: dapine
 ms.date: 12/17/2020
-ms.openlocfilehash: 0ec8fc2018febe4273aa646d1682be197933f925
-ms.sourcegitcommit: 3d6d6595a03915f617349781f455f838a44b0f44
+ms.openlocfilehash: 178c66a99fac4d706156894cacffa5d902cb7901
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "102402117"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104872695"
 ---
 # <a name="console-log-formatting"></a>Форматирование журнала консоли
 
@@ -130,9 +130,9 @@ API-интерфейс `AddConsoleFormatter` выполняет следующи
 
 Дополнительные идеи по настройке форматирования вы найдете в примерах реализации для пространства имен `Microsoft.Extensions.Logging.Console`:
 
-- [SimpleConsoleFormatter](https://github.com/dotnet/runtime/blob/master/src/libraries/Microsoft.Extensions.Logging.Console/src/SimpleConsoleFormatter.cs);
-- [SystemdConsoleFormatter](https://github.com/dotnet/runtime/blob/master/src/libraries/Microsoft.Extensions.Logging.Console/src/SystemdConsoleFormatter.cs);
-- [JsonConsoleFormatter](https://github.com/dotnet/runtime/blob/master/src/libraries/Microsoft.Extensions.Logging.Console/src/JsonConsoleFormatter.cs).
+- [SimpleConsoleFormatter](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.Extensions.Logging.Console/src/SimpleConsoleFormatter.cs);
+- [SystemdConsoleFormatter](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.Extensions.Logging.Console/src/SystemdConsoleFormatter.cs);
+- [JsonConsoleFormatter](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.Extensions.Logging.Console/src/JsonConsoleFormatter.cs).
 
 ## <a name="implement-custom-color-formatting"></a>Реализация пользовательского форматирования цвета
 

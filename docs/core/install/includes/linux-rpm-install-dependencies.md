@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 5a027054024d8429831d73525ab3748c51ae850e
-ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
+ms.openlocfilehash: e3f6d2d4af55e831a262a2211bf495e2f2bd772e
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102255764"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104879605"
 ---
 
 Если для установки используется диспетчер пакетов, эти библиотеки устанавливаются автоматически. Но если вы устанавливаете .NET Core вручную или публикуете автономное приложение, вам потребуется установить эти библиотеки:
@@ -16,7 +16,7 @@ ms.locfileid: "102255764"
 
 Если в целевой среде выполнения установлена версия OpenSSL 1.1 или более поздняя, необходимо установить **compat-openssl10**.
 
-Дополнительные сведения о зависимостях см. в статье об [автономных приложениях Linux](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md).
+Дополнительные сведения о зависимостях см. в статье об [автономных приложениях Linux](https://github.com/dotnet/core/blob/main/Documentation/self-contained-linux-apps.md).
 
 Для приложений .NET Core, использующих сборку *System.Drawing.Common*, необходима также следующая зависимость:
 

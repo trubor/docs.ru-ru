@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Optimize compiler option [C#]
 - Deterministic compiler option [C#]
 - ProduceOnlyReferenceAssembly compiler option [C#]
-ms.openlocfilehash: 6b66c50b408f9615bc3c63ab4dd46dbc4215c62f
-ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
+ms.openlocfilehash: a846bc515c501ec5a14069dd3b312b5e2df43d25
+ms.sourcegitcommit: 5ce37699c2a51ed173171813be68ef7577b1aba5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103482489"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104881149"
 ---
 # <a name="c-compiler-options-that-control-code-generation"></a>Параметры компилятора C#, которые управляют созданием кода
 
@@ -56,7 +56,7 @@ ms.locfileid: "103482489"
 Указывает компилятору на необходимость создания сборки, чьи побайтовые выходные данные идентичны в разных компиляциях, если входные данные идентичны.
 
 ```xml
-<Deterministic></Deterministic>
+<Deterministic>true</Deterministic>
 ```
 
 По умолчанию выходные данные компилятора из заданного набора входных данных являются уникальными, так как компилятор добавляет метку времени и идентификатор MVID, который создается из случайных чисел. Вы можете использовать параметр `<Deterministic>` для создания *детерминированной сборки*, двоичное содержимое которой идентично в разных компиляциях при условии, что входные данные не изменяются. В такой сборке поля timestamp и MVID будут заменены значениями, полученными из хэша всех входных данных компиляции. Компилятор рассматривает следующие входные данные, которые влияют на детерминированность:
@@ -88,7 +88,7 @@ ms.locfileid: "103482489"
 Параметр **ProduceOnlyReferenceAssembly** указывает на то, что в качестве основных выходных данных должна быть выведена базовая сборка, а не сборка реализации. Параметр **ProduceOnlyReferenceAssembly** автоматически отключает вывод PDB, так как базовые сборки не могут выполняться.
 
 ```xml
-<ProduceOnlyReferenceAssembly></ProduceOnlyReferenceAssembly>
+<ProduceOnlyReferenceAssembly>true</ProduceOnlyReferenceAssembly>
 ```
 
 Базовые сборки являются особым типом сборки, которая содержит только минимальный объем метаданных, необходимый для представления общедоступного API библиотеки. Такие сборки включают в себя объявления для всех элементов, которые важны при указании ссылки на сборку в средствах сборки, но исключают все реализации элементов, а также объявления закрытых элементов, не имеющих наблюдаемого влияния на их контракт API. Дополнительные сведения см. в статье [Базовые сборки](../../../standard/assembly/reference-assemblies.md).

@@ -3,12 +3,12 @@ title: Ссылочные типы, допускающие значение null
 description: В этой статье представлен обзор ссылочных типов, допускающих значение NULL, добавленных в C# 8.0. Вы узнаете, как эта функция обеспечивает безопасность от исключений, связанных со ссылочными типами, допускающими значение NULL, в новых и существующих проектах.
 ms.technology: csharp-null-safety
 ms.date: 04/21/2020
-ms.openlocfilehash: 36078031eebc1890edf04744475c330c2ba31f96
-ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
+ms.openlocfilehash: da3b75b28d7501e8436d29c0c325c550f0a44c93
+ms.sourcegitcommit: 05d0087dfca85aac9ca2960f86c5efd218bf833f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103480104"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105637172"
 ---
 # <a name="nullable-reference-types"></a>Ссылочные типы, допускающие значение null
 
@@ -96,7 +96,7 @@ name!.Length;
 > 1. Имя файла следует начинать с *TemporaryGeneratedFile_*
 > 1. В конце имени файла следует указать *.designer.cs*, *.generated.cs*, *.g.cs* или *.g.i.cs*.
 >
-> Генераторы могут явно использовать директиву препроцессора [`#nullable`](language-reference/preprocessor-directives/preprocessor-nullable.md).
+> Генераторы могут явно использовать директиву препроцессора [`#nullable`](language-reference/preprocessor-directives.md#nullable-context).
 
 По умолчанию контексты с заметками и предупреждениями о допустимости значения NULL **отключены**, включая новые проекты. Это означает, что существующий код компилируется без изменений и без создания новых предупреждений.
 
@@ -216,6 +216,6 @@ public static class Program
 ## <a name="see-also"></a>См. также
 
 - [Ссылочные типы, допускающие значение NULL. Черновик спецификации](~/_csharplang/proposals/csharp-9.0/nullable-reference-types-specification.md)
-- [Учебник "Введение в ссылки, допускающие значения NULL"](tutorials/nullable-reference-types.md)
-- [Перенос существующей базы кода на ссылки, допускающие значение NULL](tutorials/upgrade-to-nullable-references.md)
+- [Учебник "Введение в ссылки, допускающие значения NULL"](whats-new/tutorials/nullable-reference-types.md)
+- [Перенос существующей базы кода на ссылки, допускающие значение NULL](whats-new/tutorials/upgrade-to-nullable-references.md)
 - [**Nullable** (параметры компилятора C#)](language-reference/compiler-options/language.md#nullable)

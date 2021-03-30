@@ -4,12 +4,12 @@ description: Сведения об индексаторах в C# и о том, 
 ms.date: 06/20/2016
 ms.technology: csharp-fundamentals
 ms.assetid: 0e9496da-e766-45a9-b92b-91820d4a350e
-ms.openlocfilehash: 1369740404c500d8b44b4706959bf4640c26aa2d
-ms.sourcegitcommit: c4a15c6c4ecbb8a46ad4e67d9b3ab9b8b031d849
+ms.openlocfilehash: 2efd8735587c35be8e89dba7499a0a661796067d
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88656115"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104875789"
 ---
 # <a name="indexers"></a>Индексаторы
 
@@ -46,7 +46,7 @@ public int this[string key]
 Вам потребуется определить *индексаторы* в типе, если его API моделирует некоторую коллекцию, где определяются аргументы для этой коллекции. Индексаторы могут сопоставляться или не сопоставляться напрямую с типами коллекций, которые являются частью основной платформы .NET. Тип может иметь другие обязанности, помимо моделирования коллекции.
 Индексаторы позволяют предоставить API, который соответствует абстракции данного типа, не раскрывая внутренних сведений о том, как хранятся или вычисляются значения этой абстракции.
 
-Давайте рассмотрим некоторые распространенные сценарии использования *индексаторов*. Вы можете воспользоваться [папкой с примерами индексаторов](https://github.com/dotnet/samples/tree/master/csharp/indexers). Инструкции по загрузке см. в разделе [Просмотр и скачивание примеров](../samples-and-tutorials/index.md#view-and-download-samples).
+Давайте рассмотрим некоторые распространенные сценарии использования *индексаторов*. Вы можете воспользоваться [папкой с примерами индексаторов](https://github.com/dotnet/samples/tree/main/csharp/indexers). Инструкции по загрузке см. в разделе [Просмотр и скачивание примеров](../samples-and-tutorials/index.md#view-and-download-samples).
 
 ### <a name="arrays-and-vectors"></a>Массивы и векторы
 

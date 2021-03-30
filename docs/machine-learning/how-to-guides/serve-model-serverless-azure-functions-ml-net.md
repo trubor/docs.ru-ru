@@ -5,12 +5,12 @@ ms.date: 02/21/2020
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to
-ms.openlocfilehash: 74a7a5b941596ba9fffc62ef87a01763937d88c0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 90b52aa295e224eb3744d2576b9a146e4e90dced
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2020
-ms.locfileid: "91608781"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104875893"
 ---
 # <a name="deploy-a-model-to-azure-functions"></a>Развертывание модели в Функциях Azure
 
@@ -24,11 +24,11 @@ ms.locfileid: "91608781"
 - [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) или более поздняя версия либо Visual Studio 2017 версии 15.6 или более поздняя версия с установленными рабочими нагрузками "Кроссплатформенная разработка .NET Core" и "Разработка для Azure".
 - [Средства Функций Azure](/azure/azure-functions/functions-develop-vs#check-your-tools-version).
 - PowerShell
-- Предварительно обученная модель. Используйте [учебник по анализу тональности ML.NET](../tutorials/sentiment-analysis.md), чтобы создать собственную модель, или скачайте эту [предварительно обученную модель машинного обучения для анализа тональности](https://github.com/dotnet/samples/blob/master/machine-learning/models/sentimentanalysis/sentiment_model.zip)
+- Предварительно обученная модель. Используйте [учебник по анализу тональности ML.NET](../tutorials/sentiment-analysis.md), чтобы создать собственную модель, или скачайте эту [предварительно обученную модель машинного обучения для анализа тональности](https://github.com/dotnet/samples/blob/main/machine-learning/models/sentimentanalysis/sentiment_model.zip)
 
 ## <a name="azure-functions-sample-overview"></a>Обзор примера для Функций Azure
 
-В этом примере предоставляется приложение **триггера HTTP на языке C# для Функций Azure**, которое использует предварительно обученную модель двоичной классификации для выбора положительной или отрицательной тональности текста. Функции Azure предоставляют простой способ выполнять небольшие фрагменты кода в большом масштабе для управляемой бессерверной облачной среды. Код для этого примера можно найти в репозитории [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction) на сайте GitHub.
+В этом примере предоставляется приложение **триггера HTTP на языке C# для Функций Azure**, которое использует предварительно обученную модель двоичной классификации для выбора положительной или отрицательной тональности текста. Функции Azure предоставляют простой способ выполнять небольшие фрагменты кода в большом масштабе для управляемой бессерверной облачной среды. Код для этого примера можно найти в репозитории [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction) на сайте GitHub.
 
 ## <a name="create-azure-functions-project"></a>Создание проекта в Функциях Azure
 
@@ -161,7 +161,7 @@ ms.locfileid: "91608781"
 >builder.Services.AddPredictionEnginePool<SentimentData, SentimentPrediction>()
 >   .FromUri(
 >       modelName: "SentimentAnalysisModel",
->       uri:"https://github.com/dotnet/samples/raw/master/machine-learning/models/sentimentanalysis/sentiment_model.zip",
+>       uri:"https://github.com/dotnet/samples/raw/main/machine-learning/models/sentimentanalysis/sentiment_model.zip",
 >       period: TimeSpan.FromMinutes(1));
 >```
 

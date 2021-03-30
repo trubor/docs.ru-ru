@@ -4,12 +4,12 @@ titleSuffix: ''
 description: Узнайте о технологиях .NET Framework, недоступных в .NET Core и .NET 5.0 и более поздних версий.
 author: cartermp
 ms.date: 03/08/2021
-ms.openlocfilehash: cd273e95c5c889b900cb8ff744e8c49bb1ce69c4
-ms.sourcegitcommit: 46cfed35d79d70e08c313b9c664c7e76babab39e
+ms.openlocfilehash: d8eccce7e36552e0d5396779936681227cb1e28a
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102604935"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104875126"
 ---
 # <a name="net-framework-technologies-unavailable-on-net-core-and-net-5"></a>Технологии .NET Framework, недоступные в .NET Core и .NET 5 и более поздних версий
 
@@ -21,7 +21,7 @@ ms.locfileid: "102604935"
 
 Домены приложений позволяют изолировать приложения друг от друга. Для этих доменов требуется поддержка среды выполнения, при этом они требовательны к ресурсам. Создание дополнительных доменов приложений не поддерживается, и в будущем эта возможность не планируется. Для изоляции кода используйте в качестве альтернативы отдельные процессы или контейнеры. Для динамической загрузки сборок используйте класс <xref:System.Runtime.Loader.AssemblyLoadContext>.
 
-Чтобы упростить перенос кода из .NET Framework, в .NET 5 и более поздних версий предоставляются некоторые рабочие области API <xref:System.AppDomain>. Некоторые API-интерфейсы работают без изменений (например, <xref:System.AppDomain.UnhandledException?displayProperty=nameWithType>), одни элементы не выполняют никаких действий (например, <xref:System.AppDomain.SetCachePath%2A>), а другие создают исключение <xref:System.PlatformNotSupportedException> (например, <xref:System.AppDomain.CreateDomain%2A>). Проверьте типы, используемые для [`System.AppDomain` источника ссылки](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Private.CoreLib/src/System/AppDomain.cs) в [репозитории GitHub dotnet/runtime](https://github.com/dotnet/runtime). Убедитесь, что выбрана ветвь, соответствующая реализованной версии.
+Чтобы упростить перенос кода из .NET Framework, в .NET 5 и более поздних версий предоставляются некоторые рабочие области API <xref:System.AppDomain>. Некоторые API-интерфейсы работают без изменений (например, <xref:System.AppDomain.UnhandledException?displayProperty=nameWithType>), одни элементы не выполняют никаких действий (например, <xref:System.AppDomain.SetCachePath%2A>), а другие создают исключение <xref:System.PlatformNotSupportedException> (например, <xref:System.AppDomain.CreateDomain%2A>). Проверьте типы, используемые для [`System.AppDomain` источника ссылки](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Private.CoreLib/src/System/AppDomain.cs) в [репозитории GitHub dotnet/runtime](https://github.com/dotnet/runtime). Убедитесь, что выбрана ветвь, соответствующая реализованной версии.
 
 ## <a name="remoting"></a>Удаленное взаимодействие
 

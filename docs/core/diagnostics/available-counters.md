@@ -3,12 +3,12 @@ title: Стандартные счетчики событий в .NET
 description: Сведения о счетчиках событий, публикуемых в библиотеках и среде выполнения .NET.
 ms.topic: reference
 ms.date: 12/17/2020
-ms.openlocfilehash: db7417993786eae18c9d7b6cc3bb79284d543dd3
-ms.sourcegitcommit: e3cf8227573e13b8e1f4e3dc007404881cdafe47
+ms.openlocfilehash: aad4fa8b33ebf0dcb7803c77b11fb99a6b6d7b83
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "103189947"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104872838"
 ---
 # <a name="well-known-eventcounters-in-net"></a>Стандартные счетчики событий в .NET
 
@@ -46,7 +46,7 @@ ms.locfileid: "103189947"
 
 ## <a name="microsoftaspnetcorehosting-counters"></a>Счетчики "Microsoft.AspNetCore.Hosting"
 
-Следующие счетчики публикуются как часть [ASP.NET Core](/aspnet/core) и поддерживаются в [`HostingEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/master/src/Hosting/Hosting/src/Internal/HostingEventSource.cs).
+Следующие счетчики публикуются как часть [ASP.NET Core](/aspnet/core) и поддерживаются в [`HostingEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/main/src/Hosting/Hosting/src/Internal/HostingEventSource.cs).
 
 | Счетчик | Описание |
 |--|--|
@@ -57,7 +57,7 @@ ms.locfileid: "103189947"
 
 ## <a name="microsoftaspnetcorehttpconnections-counters"></a>Счетчики "Microsoft.AspNetCore.Http.Connections"
 
-Следующие счетчики публикуются как часть [ASP.NET Core SignalR](/aspnet/core/signalr/introduction) и поддерживаются в [`HttpConnectionsEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/master/src/SignalR/common/Http.Connections/src/Internal/HttpConnectionsEventSource.cs).
+Следующие счетчики публикуются как часть [ASP.NET Core SignalR](/aspnet/core/signalr/introduction) и поддерживаются в [`HttpConnectionsEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/main/src/SignalR/common/Http.Connections/src/Internal/HttpConnectionsEventSource.cs).
 
 | Счетчик | Описание |
 |--|--|
@@ -69,7 +69,7 @@ ms.locfileid: "103189947"
 
 ## <a name="microsoft-aspnetcore-server-kestrel-counters"></a>Счетчики "Microsoft-AspNetCore-Server-Kestrel"
 
-Следующие счетчики публикуются как часть [веб-сервера Kestrel ASP.NET Core](/aspnet/core/fundamentals/servers/kestrel) и поддерживаются в [`KestrelEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/master/src/Servers/Kestrel/Core/src/Internal/Infrastructure/KestrelEventSource.cs).
+Следующие счетчики публикуются как часть [веб-сервера Kestrel ASP.NET Core](/aspnet/core/fundamentals/servers/kestrel) и поддерживаются в [`KestrelEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/main/src/Servers/Kestrel/Core/src/Internal/Infrastructure/KestrelEventSource.cs).
 
 | Счетчик | Описание |
 |--|--|

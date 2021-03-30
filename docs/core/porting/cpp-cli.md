@@ -3,12 +3,12 @@ title: Перенос проектов C++/CLI в .NET Core
 description: Сведения о переносе проектов C++/CLI в .NET Core.
 author: mjrousos
 ms.date: 01/10/2020
-ms.openlocfilehash: eb03f2a5ff42e8279fd3ebd6ee6fb6d955f6798d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 1194e1ce03e5b86052d7e2584aa5c15acd01874b
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75964863"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104873696"
 ---
 # <a name="how-to-port-a-ccli-project-to-net-core"></a>Перенос проекта C++/CLI в .NET Core
 
@@ -69,14 +69,14 @@ ms.locfileid: "75964863"
 2. Создайте ссылки на необходимые базовые сборки .NET Core.
 3. При связывании укажите `LibPath` в качестве основного каталога приложения .NET Core (чтобы можно было найти файл *ijwhost.lib*).
 4. Скопируйте файл *ijwhost.dll* (из основного каталога приложения .NET Core) в выходной каталог проекта.
-5. Убедитесь, что для первого компонента приложения, который будет выполнять управляемый код, существует файл [runtimeconfig.json](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md). Если приложение имеет управляемую точку входа, файл `runtime.config` будет создан и скопирован автоматически. Тем не менее, если приложение имеет собственную точку входа, для первой библиотеки C++/CLI необходимо создать файл `runtimeconfig.json`, чтобы использовать среду выполнения .NET Core.
+5. Убедитесь, что для первого компонента приложения, который будет выполнять управляемый код, существует файл [runtimeconfig.json](https://github.com/dotnet/sdk/blob/main/documentation/specs/runtime-configuration-file.md). Если приложение имеет управляемую точку входа, файл `runtime.config` будет создан и скопирован автоматически. Тем не менее, если приложение имеет собственную точку входа, для первой библиотеки C++/CLI необходимо создать файл `runtimeconfig.json`, чтобы использовать среду выполнения .NET Core.
 
 ## <a name="known-issues"></a>Известные проблемы
 
 Существует несколько известных проблем, на которые следует обратить внимание при работе с проектами C++/CLI, ориентированными на .NET Core.
 
 * Ссылка на платформу WPF в проектах C++/CLI .NET Core в настоящее время вызывает отображение некоторых внешних предупреждений о том, что не удается импортировать символы. Эти предупреждения можно спокойно игнорировать. В скором времени это будет исправлено.
-* Если приложение имеет собственную точку входа, для библиотеки C++/CLI, которая первой выполняет управляемый код, требуется файл [runtimeconfig.json](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md). Этот файл конфигурации используется при запуске среды выполнения .NET Core. Проекты C++/CLI пока не создают файлы `runtimeconfig.json` автоматически во время сборки, поэтому файл необходимо создавать вручную. Если библиотека C++/CLI вызывается из управляемой точки входа, то библиотеке C++/CLI не требуется файл `runtimeconfig.json` (поскольку сборка точки входа будет иметь имя, используемое при запуске среды выполнения). Ниже приведен пример простого файла `runtimeconfig.json`. Дополнительные сведения см. в [спецификациях на сайте GitHub](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md).
+* Если приложение имеет собственную точку входа, для библиотеки C++/CLI, которая первой выполняет управляемый код, требуется файл [runtimeconfig.json](https://github.com/dotnet/sdk/blob/main/documentation/specs/runtime-configuration-file.md). Этот файл конфигурации используется при запуске среды выполнения .NET Core. Проекты C++/CLI пока не создают файлы `runtimeconfig.json` автоматически во время сборки, поэтому файл необходимо создавать вручную. Если библиотека C++/CLI вызывается из управляемой точки входа, то библиотеке C++/CLI не требуется файл `runtimeconfig.json` (поскольку сборка точки входа будет иметь имя, используемое при запуске среды выполнения). Ниже приведен пример простого файла `runtimeconfig.json`. Дополнительные сведения см. в [спецификациях на сайте GitHub](https://github.com/dotnet/sdk/blob/main/documentation/specs/runtime-configuration-file.md).
 
     ```json
     {

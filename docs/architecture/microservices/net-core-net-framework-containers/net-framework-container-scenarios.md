@@ -2,12 +2,12 @@
 title: Выбор .NET Framework для контейнеров Docker
 description: Архитектура микрослужб .NET для упакованных в контейнеры приложений .NET | Выбор .NET Framework для контейнеров Docker
 ms.date: 01/13/2021
-ms.openlocfilehash: 476f891a70a220172f84d8168c8492416b8e56bd
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: fa644753c3a39f285052aba7a8524ea96442c842
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98188119"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104873137"
 ---
 # <a name="when-to-choose-net-framework-for-docker-containers"></a>Выбор .NET Framework для контейнеров Docker
 
@@ -39,7 +39,7 @@ ms.locfileid: "98188119"
 
 - Службы, связанные с рабочим процессом. Службы Windows Workflow Foundation (WF), Workflow Services (WCF и WF в одной службе) и WCF Data Services (известные как службы данных ADO.NET) доступны только в среде .NET Framework. В настоящий момент не планируется их перенос в .NET 5.
 
-В дополнение к технологиям, перечисленным в официальном [Плане по .NET](https://github.com/dotnet/core/blob/master/roadmap.md), в [новую унифицированную платформу](https://devblogs.microsoft.com/dotnet/introducing-net-5/) могут быть перенесены и другие функции. Вы можете принять участие в обсуждениях на сайте GitHub и выразить свое мнение. Если вы думаете, что чего-то не хватает, отправьте новый вопрос [dotnet/runtime](https://github.com/dotnet/runtime/issues/new) в репозитории GitHub.
+В дополнение к технологиям, перечисленным в официальном [Плане по .NET](https://github.com/dotnet/core/blob/main/roadmap.md), в [новую унифицированную платформу](https://devblogs.microsoft.com/dotnet/introducing-net-5/) могут быть перенесены и другие функции. Вы можете принять участие в обсуждениях на сайте GitHub и выразить свое мнение. Если вы думаете, что чего-то не хватает, отправьте новый вопрос [dotnet/runtime](https://github.com/dotnet/runtime/issues/new) в репозитории GitHub.
 
 ## <a name="using-a-platform-or-api-that-doesnt-support-net-5"></a>Использование платформы или API, которые не поддерживают .NET 5
 

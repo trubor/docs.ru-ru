@@ -6,12 +6,12 @@ ms.author: luquinta
 ms.date: 02/09/2021
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: 8397a12d179569c2836c43ab3946a2edba3bdba8
-ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
+ms.openlocfilehash: 71d44ca3248d497b3f46d1d93c6505adcfc42021
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100469777"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104873306"
 ---
 # <a name="tutorial-automated-visual-inspection-using-transfer-learning-with-the-mlnet-image-classification-api"></a>Учебник. Автоматизированная визуальная проверка с использованием передачи обучения и API классификации изображений ML.NET
 
@@ -116,7 +116,7 @@ SDNET2018 — это набор данных изображений, котор�
 
 В этом учебнике используются только изображения эстакад моста.
 
-1. Скачайте [набор данных](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification/assets.zip) и распакуйте его.
+1. Скачайте [набор данных](https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification/assets.zip) и распакуйте его.
 1. Создайте каталог с именем "assets" в проекте, чтобы сохранять файлы набора данных.
 1. Скопируйте подкаталоги *CD* и *UD* из недавно распакованного каталога в каталог *assets*.
 

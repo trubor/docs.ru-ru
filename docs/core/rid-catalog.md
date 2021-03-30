@@ -2,12 +2,12 @@
 title: Каталог идентификаторов сред выполнения (RID) .NET
 description: Сведения об идентификаторах сред выполнения и их использовании в .NET.
 ms.date: 01/28/2021
-ms.openlocfilehash: e5e1c4712965211b25a02b14a7cf2c91d74d8306
-ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
+ms.openlocfilehash: 15a2be8d3c2a903011e298d99c838baef731b9c2
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99216009"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104875100"
 ---
 # <a name="net-rid-catalog"></a>Каталог идентификаторов сред выполнения в .NET
 
@@ -39,7 +39,7 @@ RID — это сокращение от *Runtime IDentifier* (идентифи
 
 ## <a name="rid-graph"></a>Схема RID
 
-Схема RID или резервная схема среды выполнения — это список идентификаторов RID, которые совместимы друг с другом. Идентификаторы RID определены в пакете [Microsoft.NETCore.Platforms](https://www.nuget.org/packages/Microsoft.NETCore.Platforms/). Список поддерживаемых идентификаторов RID и схема RID содержатся в файле [*runtime.json*](https://github.com/dotnet/runtime/blob/master/src/libraries/Microsoft.NETCore.Platforms/pkg/runtime.json), который находится в репозитории `dotnet/runtime`. В этом файле можно увидеть, что все идентификаторы RID, кроме основного, содержат оператор `"#import"`. Эти операторы указывают совместимые RID.
+Схема RID или резервная схема среды выполнения — это список идентификаторов RID, которые совместимы друг с другом. Идентификаторы RID определены в пакете [Microsoft.NETCore.Platforms](https://www.nuget.org/packages/Microsoft.NETCore.Platforms/). Список поддерживаемых идентификаторов RID и схема RID содержатся в файле [*runtime.json*](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/pkg/runtime.json), который находится в репозитории `dotnet/runtime`. В этом файле можно увидеть, что все идентификаторы RID, кроме основного, содержат оператор `"#import"`. Эти операторы указывают совместимые RID.
 
 Когда NuGet восстанавливает пакеты, он пытается найти точное совпадение для указанной среды выполнения.
 Если его не удается найти, NuGet проходит схему до тех пор, пока не найдет ближайшую совместимую систему в соответствии со схемой RID.
@@ -80,7 +80,7 @@ RID — это сокращение от *Runtime IDentifier* (идентифи
 ## <a name="using-rids"></a>Использование идентификаторов RID
 
 Для использования идентификаторов RID необходимо знать, какие идентификаторы RID существуют. В платформу регулярно добавляются новые идентификаторы.
-Последнюю и полную версию см. в файле [runtime.json](https://github.com/dotnet/runtime/blob/master/src/libraries/Microsoft.NETCore.Platforms/pkg/runtime.json) в репозитории `dotnet/runtime`.
+Последнюю и полную версию см. в файле [runtime.json](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/pkg/runtime.json) в репозитории `dotnet/runtime`.
 
 Переносимые идентификаторы RID — это новые значения, добавленными в схему RID, которые не привязаны к конкретной версии или дистрибутиву ОС. Они рекомендуются для работы с несколькими дистрибутивами Linux, так как большинство идентификаторов RID дистрибутивов сопоставлено с переносными идентификаторами RID.
 
@@ -88,7 +88,7 @@ RID — это сокращение от *Runtime IDentifier* (идентифи
 
 ## <a name="windows-rids"></a>Идентификаторы RID для Windows
 
-Перечислены только распространенные значения. Последнюю и полную версию см. в файле [runtime.json](https://github.com/dotnet/runtime/blob/master/src/libraries/Microsoft.NETCore.Platforms/pkg/runtime.json) в репозитории `dotnet/runtime`.
+Перечислены только распространенные значения. Последнюю и полную версию см. в файле [runtime.json](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/pkg/runtime.json) в репозитории `dotnet/runtime`.
 
 - Портативные
   - `win-x64`
@@ -112,7 +112,7 @@ RID — это сокращение от *Runtime IDentifier* (идентифи
 
 ## <a name="linux-rids"></a>Идентификаторы RID для Linux
 
-Перечислены только распространенные значения. Последнюю и полную версию см. в файле [runtime.json](https://github.com/dotnet/runtime/blob/master/src/libraries/Microsoft.NETCore.Platforms/pkg/runtime.json) в репозитории `dotnet/runtime`. Устройства с дистрибутивами, не перечисленными ниже, могут работать с одним из переносных идентификаторов RID. Например, для устройств Raspberry Pi с дистрибутивом Linux, которого нет в списке, можно использовать `linux-arm`.
+Перечислены только распространенные значения. Последнюю и полную версию см. в файле [runtime.json](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/pkg/runtime.json) в репозитории `dotnet/runtime`. Устройства с дистрибутивами, не перечисленными ниже, могут работать с одним из переносных идентификаторов RID. Например, для устройств Raspberry Pi с дистрибутивом Linux, которого нет в списке, можно использовать `linux-arm`.
 
 - Портативные
   - `linux-x64` (большинство дистрибутивов для компьютеров, например CentOS, Debian, Fedora, Ubuntu и производные от них);
@@ -131,7 +131,7 @@ RID — это сокращение от *Runtime IDentifier* (идентифи
 
 ## <a name="macos-rids"></a>Относительные идентификаторы macOS
 
-Относительные идентификаторы macOS используют старую фирменную символику "OSX". Перечислены только распространенные значения. Последнюю и полную версию см. в файле [runtime.json](https://github.com/dotnet/runtime/blob/master/src/libraries/Microsoft.NETCore.Platforms/pkg/runtime.json) в репозитории `dotnet/runtime`.
+Относительные идентификаторы macOS используют старую фирменную символику "OSX". Перечислены только распространенные значения. Последнюю и полную версию см. в файле [runtime.json](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/pkg/runtime.json) в репозитории `dotnet/runtime`.
 
 - Портативные
   - `osx-x64` (минимальная версия — macOS 10.12 Sierra).
@@ -155,4 +155,4 @@ RID — это сокращение от *Runtime IDentifier* (идентифи
 
 ## <a name="see-also"></a>См. также
 
-- [Идентификаторы среды выполнения](https://github.com/dotnet/runtime/blob/master/src/libraries/Microsoft.NETCore.Platforms/readme.md)
+- [Идентификаторы среды выполнения](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/readme.md)

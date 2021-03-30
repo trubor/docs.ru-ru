@@ -3,12 +3,12 @@ title: Начало работы с семантическим анализом
 description: В этом учебнике содержатся общие сведения о работе с семантическим анализом с помощью пакета SDK для компилятора .NET.
 ms.date: 02/06/2018
 ms.custom: mvc
-ms.openlocfilehash: a6dcaeeb86acb5c0e1602f01dc5952ffd9d5e3f5
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 3119363822328c0e5fc67c2a2a4a917a7d37cfd2
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "78240515"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104872565"
 ---
 # <a name="get-started-with-semantic-analysis"></a>Начало работы с семантическим анализом
 
@@ -32,7 +32,7 @@ ms.locfileid: "78240515"
 
 В этом учебнике мы снова обратимся к программе "Hello, World!". На этот раз вы будете запрашивать символы в программе, чтобы понять, какие типы они представляют. Вы будете запрашивать типы в пространстве имен и узнаете, как найти методы, доступные для типа.
 
-Окончательный код этого примера доступен в [репозитории на сайте GitHub](https://github.com/dotnet/samples/tree/master/csharp/roslyn-sdk/SemanticQuickStart).
+Окончательный код этого примера доступен в [репозитории на сайте GitHub](https://github.com/dotnet/samples/tree/main/csharp/roslyn-sdk/SemanticQuickStart).
 
 > [!NOTE]
 > Типы синтаксического дерева используют наследование для описания различных элементов синтаксиса, которые являются допустимыми в разных местах в программе. Применение этих API часто означает приведение свойств или элементов коллекции к конкретным производным типам. В следующих примерах назначения и приведения являются отдельными инструкциями, использующими явно типизированные переменные. Прочитайте код, чтобы увидеть типы возвращаемых значений API и тип среды выполнения возвращаемых объектов. На практике более распространено использование неявно типизированных переменных и имен API для описания типа рассматриваемых объектов.
@@ -133,7 +133,7 @@ Press any key to continue . . .
 
 [!code-csharp[build and display the results of this query.](../../../../samples/snippets/csharp/roslyn-sdk/SemanticQuickStart/Program.cs#13 "Build and display the results of the query.")]
 
-Постройте и запустите программу. Вы должны увидеть следующий результат.
+Выполните сборку и запуск программы. Вы должны увидеть следующий результат:
 
 ```output
 Join

@@ -2,12 +2,12 @@
 title: Пошаговое руководство. Сохранение объекта с помощью C#
 description: В этом примере создается базовый объект Loan в C#, а его данные сохраняются в файле, после чего создается новый объект с данными из файла.
 ms.date: 04/26/2018
-ms.openlocfilehash: 9f165addc5b9b0d056936458e8529ec1912c417b
-ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
+ms.openlocfilehash: 0fc733982b7800653a3c8c283bd0af8384d72168
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87302767"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104876452"
 ---
 # <a name="walkthrough-persisting-an-object-using-c"></a>Пошаговое руководство. Сохранение объекта с помощью C\#
 
@@ -32,7 +32,7 @@ ms.locfileid: "87302767"
 
 - Этот пример требует C# версии 7.3. См. [сведения о выборе версии языка C#](../../../language-reference/configure-language-version.md).
 
-Можно просмотреть образец кода онлайн [в репозитории GitHub с примерами .NET](https://github.com/dotnet/samples/tree/master/csharp/serialization).
+Можно просмотреть образец кода онлайн [в репозитории GitHub с примерами .NET](https://github.com/dotnet/samples/tree/main/csharp/serialization).
 
 ## <a name="creating-the-loan-object"></a>Создание объекта Loan
 

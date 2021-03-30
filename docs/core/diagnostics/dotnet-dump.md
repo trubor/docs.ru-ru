@@ -2,12 +2,12 @@
 title: Средство диагностики dotnet-dump — .NET CLI
 description: Узнайте, как установить и использовать средство CLI dotnet-dump для накопления и анализа дампов Windows и Linux без использования отладчика машинного кода.
 ms.date: 11/17/2020
-ms.openlocfilehash: 84b3796f4ee92880e6d432df606a6addfd2471b0
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: 6e9edbc8075691784028f3293750c92fe53d3782
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98189808"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104874177"
 ---
 # <a name="dump-collection-and-analysis-utility-dotnet-dump"></a>Программа для сбора и анализа дампов (dotnet-dump)
 
@@ -189,7 +189,7 @@ dotnet-dump analyze <dump_path> [-h|--help] [-c|--command]
 
 ## <a name="using-dotnet-dump"></a>Использование `dotnet-dump`
 
-Первым шагом является сборка дампа. Этот шаг можно пропустить, если уже создан основной дамп. Основные дампы могут создавать как операционная система, так и встроенная в среду выполнения .NET Core [функция создания дампа](https://github.com/dotnet/runtime/blob/master/docs/design/coreclr/botr/xplat-minidump-generation.md).
+Первым шагом является сборка дампа. Этот шаг можно пропустить, если уже создан основной дамп. Основные дампы могут создавать как операционная система, так и встроенная в среду выполнения .NET Core [функция создания дампа](https://github.com/dotnet/runtime/blob/main/docs/design/coreclr/botr/xplat-minidump-generation.md).
 
 ```console
 $ dotnet-dump collect --process-id 1902

@@ -2,12 +2,12 @@
 title: Скрипты dotnet-install
 description: Сведения о скриптах dotnet-install, которые служат для установки пакета SDK для .NET и общей среды выполнения.
 ms.date: 09/22/2020
-ms.openlocfilehash: 51482ca70d08d86e02a493f1da49b056fed8d11c
-ms.sourcegitcommit: bdbf6472de867a0a11aaa5b9384a2506c24f27d2
+ms.openlocfilehash: 45b5a15bdbaa3f3167dd434e2600e33b69dc9b85
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102206691"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104875165"
 ---
 # <a name="dotnet-install-scripts-reference"></a>Справка по скриптам dotnet-install
 
@@ -267,4 +267,4 @@ dotnet-install.sh --help
 ## <a name="see-also"></a>См. также
 
 - [Выпуски .NET](https://github.com/dotnet/core/releases)
-- [Архив загрузок пакета SDK и среды выполнения .NET](https://github.com/dotnet/core/blob/master/release-notes/download-archive.md)
+- [Архив загрузок пакета SDK и среды выполнения .NET](https://github.com/dotnet/core/blob/main/release-notes/download-archive.md)

@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.custom: vs-dotnet
-ms.openlocfilehash: 1c9aba10e27609bdf8e95d844ead60fd0ec0bd2c
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 4fe2663f7fd428035aaca61e4e47bd2bf2a4f391
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90538727"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104872916"
 ---
 # <a name="deploy-net-core-apps-with-visual-studio"></a>Развертывание приложений .NET Core с помощью Visual Studio
 
@@ -94,7 +94,7 @@ ms.locfileid: "90538727"
 
 1. Определите, хотите ли вы использовать инвариантный режим глобализации.
 
-   Особенно в том случае, если приложение предназначено для Linux, вы можете уменьшить размер развертывания, используя преимущества [инвариантного режима глобализации](https://github.com/dotnet/runtime/blob/master/docs/design/features/globalization-invariant-mode.md). Инвариантный режим глобализации подходит для приложений, которые не имеют глобальных параметров и могут использовать соглашения о форматировании, соглашения о регистре, сравнение строк и порядок сортировки для [инвариантного языка и региональных параметров](xref:System.Globalization.CultureInfo.InvariantCulture).
+   Особенно в том случае, если приложение предназначено для Linux, вы можете уменьшить размер развертывания, используя преимущества [инвариантного режима глобализации](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md). Инвариантный режим глобализации подходит для приложений, которые не имеют глобальных параметров и могут использовать соглашения о форматировании, соглашения о регистре, сравнение строк и порядок сортировки для [инвариантного языка и региональных параметров](xref:System.Globalization.CultureInfo.InvariantCulture).
 
    Чтобы включить инвариантный режим, щелкните правой кнопкой мыши проект (не решение) в **обозревателе решений** и выберите **Изменить SCD.csproj** или **Изменить SCD.vbproj**. Затем добавьте следующие выделенные строки в файл:
 

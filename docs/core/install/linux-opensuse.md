@@ -4,12 +4,12 @@ description: Здесь приводятся различные способы �
 author: adegeo
 ms.author: adegeo
 ms.date: 01/06/2021
-ms.openlocfilehash: 7a519f19f708e1f12af1e9715bad4f38a607f9c3
-ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
+ms.openlocfilehash: d238054a217a7295594db856d5497982572af377
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97970815"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104873956"
 ---
 # <a name="install-the-net-sdk-or-the-net-runtime-on-opensuse"></a>Установка пакета SDK для .NET или среды выполнения .NET в openSUSE
 
@@ -81,7 +81,7 @@ sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 
 Если в целевой среде выполнения установлена версия OpenSSL 1.1 или более поздняя, необходимо установить **compat-openssl10**.
 
-Дополнительные сведения о зависимостях см. в статье об [автономных приложениях Linux](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md).
+Дополнительные сведения о зависимостях см. в статье об [автономных приложениях Linux](https://github.com/dotnet/core/blob/main/Documentation/self-contained-linux-apps.md).
 
 Для приложений .NET, использующих сборку *System.Drawing.Common*, необходима также следующая зависимость:
 

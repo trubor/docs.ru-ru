@@ -2,12 +2,12 @@
 title: Команда dotnet
 description: Узнайте о команде dotnet (универсальном драйвере для CLI .NET) и о том, как ее использовать.
 ms.date: 11/11/2020
-ms.openlocfilehash: 7a0c8f2eb7ab407bd725db56cbf31da4689970e4
-ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
+ms.openlocfilehash: 33c5f9d22166b818f5c860c4f4632d359f686919
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "94634029"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104874541"
 ---
 # <a name="dotnet-command"></a>Команда dotnet
 
@@ -118,7 +118,7 @@ dotnet exec [--additionalprobingpath] [--additional-deps <PATH>]
 
 - **`--additional-deps <PATH>`**
 
-  Путь к дополнительному файлу *.deps.json*. Файл *deps.json* содержит список зависимостей, зависимости компиляции и сведения о версии, используемые для устранения конфликтов сборок. Дополнительные сведения см. в разделе [Файлы конфигурации среды выполнения](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md) на GitHub.
+  Путь к дополнительному файлу *.deps.json*. Файл *deps.json* содержит список зависимостей, зависимости компиляции и сведения о версии, используемые для устранения конфликтов сборок. Дополнительные сведения см. в разделе [Файлы конфигурации среды выполнения](https://github.com/dotnet/sdk/blob/main/documentation/specs/runtime-configuration-file.md) на GitHub.
 
 - **`--depsfile <PATH_TO_DEPSFILE>`**
 
@@ -345,5 +345,5 @@ dotnet myapp.dll
 
 ## <a name="see-also"></a>См. также
 
-- [Файлы конфигурации среды выполнения](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md)
+- [Файлы конфигурации среды выполнения](https://github.com/dotnet/sdk/blob/main/documentation/specs/runtime-configuration-file.md)
 - [Параметры конфигурации среды выполнения .NET](../run-time-config/index.md)

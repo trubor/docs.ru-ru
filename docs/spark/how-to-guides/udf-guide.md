@@ -6,12 +6,12 @@ author: Niharikadutta
 ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
-ms.openlocfilehash: 50e631b0c561ebdf081d4c1b7d16bf25abb322e5
-ms.sourcegitcommit: 67ebdb695fd017d79d9f1f7f35d145042d5a37f7
+ms.openlocfilehash: 13898bdbd9522730c8f0cd19bd13d4e6f3a6a10e
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92224186"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104874073"
 ---
 # <a name="create-user-defined-functions-udf-in-net-for-apache-spark"></a>Создайте определяемые пользователем функции (UDF) в .NET для Apache Spark
 
@@ -27,7 +27,7 @@ Func<Column, Column> udf = Udf<string, string>(
     str => $"{s1} {str}");
 ```
 
-Определяемая пользователем функция принимает `string` в качестве входных данных в виде [столбца](https://github.com/dotnet/spark/blob/master/src/csharp/Microsoft.Spark/Sql/Column.cs#L14) в [кадре данных](https://github.com/dotnet/spark/blob/master/src/csharp/Microsoft.Spark/Sql/DataFrame.cs#L24)) и возвращает `string` с присоединением `hello` перед входными данными.
+Определяемая пользователем функция принимает `string` в качестве входных данных в виде [столбца](https://github.com/dotnet/spark/blob/main/src/csharp/Microsoft.Spark/Sql/Column.cs#L14) в [кадре данных](https://github.com/dotnet/spark/blob/main/src/csharp/Microsoft.Spark/Sql/DataFrame.cs#L24)) и возвращает `string` с присоединением `hello` перед входными данными.
 
 Следующий кадр данных `df` содержит список имен:
 
@@ -59,11 +59,11 @@ DataFrame udfResult = df.Select(udf(df["name"]));
 +-------------+
 ```
 
-Подробные инструкции по реализации определяемой пользователем функции см. в описании [вспомогательных определяемых пользователем функций](https://github.com/dotnet/spark/blob/master/src/csharp/Microsoft.Spark/Sql/Functions.cs#L3616) и [примерах](https://github.com/dotnet/spark/blob/master/src/csharp/Microsoft.Spark.E2ETest/UdfTests/UdfSimpleTypesTests.cs#L49) на GitHub.
+Подробные инструкции по реализации определяемой пользователем функции см. в описании [вспомогательных определяемых пользователем функций](https://github.com/dotnet/spark/blob/main/src/csharp/Microsoft.Spark/Sql/Functions.cs#L3616) и [примерах](https://github.com/dotnet/spark/blob/main/src/csharp/Microsoft.Spark.E2ETest/UdfTests/UdfSimpleTypesTests.cs#L49) на GitHub.
 
 ## <a name="udf-serialization"></a>Сериализация определяемых пользователем функций
 
-Поскольку определяемые пользователем функции представляют собой функции, которые должны выполняться в рабочих ролях, их необходимо сериализовать и отправить рабочим ролям как часть полезных данных из драйвера. [Делегат](../../csharp/programming-guide/delegates/index.md), который является ссылкой на метод, должен быть сериализован, как и его [целевой объект](xref:System.Delegate.Target%2A), который является экземпляром класса, где текущий делегат вызывает метод экземпляра. Ознакомьтесь с этим [примером кода на сайте GitHub](https://github.com/dotnet/spark/blob/master/src/csharp/Microsoft.Spark/Utils/CommandSerDe.cs#L149), чтобы получить более полное представление о том, как выполняется сериализация определяемой пользователем функции.
+Поскольку определяемые пользователем функции представляют собой функции, которые должны выполняться в рабочих ролях, их необходимо сериализовать и отправить рабочим ролям как часть полезных данных из драйвера. [Делегат](../../csharp/programming-guide/delegates/index.md), который является ссылкой на метод, должен быть сериализован, как и его [целевой объект](xref:System.Delegate.Target%2A), который является экземпляром класса, где текущий делегат вызывает метод экземпляра. Ознакомьтесь с этим [примером кода на сайте GitHub](https://github.com/dotnet/spark/blob/main/src/csharp/Microsoft.Spark/Utils/CommandSerDe.cs#L149), чтобы получить более полное представление о том, как выполняется сериализация определяемой пользователем функции.
 
 .NET для Apache Spark использует .NET Core, где сериализация делегатов не поддерживается. Вместо этого для сериализации целевого объекта, в котором определен делегат, используется отражение. Если в общей области определено несколько делегатов, они имеют общее замыкание, которое становится целевым объектом отражения для сериализации.
 

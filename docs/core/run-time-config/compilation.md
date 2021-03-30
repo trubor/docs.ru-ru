@@ -3,12 +3,12 @@ title: Параметры конфигурации компиляции
 description: Сведения о параметрах времени выполнения, определяющих, как JIT-компилятор работает для приложений .NET Core.
 ms.date: 11/27/2019
 ms.topic: reference
-ms.openlocfilehash: e5f9e1245b749864787fb808527d022665197edf
-ms.sourcegitcommit: 4d45bda8cd9558ea8af4be591e3d5a29360c1ece
+ms.openlocfilehash: 1badb063ea6fd7504636d431fbdc7927129239d2
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91654846"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104873592"
 ---
 # <a name="run-time-configuration-options-for-compilation"></a>Параметры конфигурации времени выполнения для компиляции
 
@@ -19,7 +19,7 @@ ms.locfileid: "91654846"
   - Второй уровень создает оптимизированный код в фоновом режиме (JIT-компиляция с оптимизацией).
 - В .NET Core 3.0 и более поздних версий многоуровневая компиляция включена по умолчанию.
 - В .NET Core 2.1 и 2.2 многоуровневая компиляция отключена по умолчанию.
-- Дополнительные сведения см. в [руководстве по многоуровневой компиляции](https://github.com/dotnet/runtime/blob/master/docs/design/features/tiered-compilation.md).
+- Дополнительные сведения см. в [руководстве по многоуровневой компиляции](https://github.com/dotnet/runtime/blob/main/docs/design/features/tiered-compilation.md).
 
 | | Имя параметра | Значения |
 | - | - | - |

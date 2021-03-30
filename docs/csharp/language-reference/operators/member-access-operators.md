@@ -32,12 +32,12 @@ helpviewer_keywords:
 - hat operator [C#]
 - .. operator [C#]
 - range operator [C#]
-ms.openlocfilehash: 28d3d9c3261f1a852d16f2637309b21412611c10
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b3ba56c7485d27d2692a589e2a8e5b330ea0de85
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95691244"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104873904"
 ---
 # <a name="member-access-operators-and-expressions-c-reference"></a>Операторы и выражения для доступа к элементам (справочник по C#)
 
@@ -182,7 +182,7 @@ if (handler != null)
 
 В предыдущем примере выражение `^e` имеет тип <xref:System.Index?displayProperty=nameWithType>. В выражении `^e` результат `e` должен быть неявно преобразован в `int`.
 
-Можно также использовать оператор `^` с [оператором диапазона](#range-operator-) для создания диапазона индексов. См. сведения в [руководстве по диапазонам и индексам](../../tutorials/ranges-indexes.md).
+Можно также использовать оператор `^` с [оператором диапазона](#range-operator-) для создания диапазона индексов. См. сведения в [руководстве по диапазонам и индексам](../../whats-new/tutorials/ranges-indexes.md).
 
 ## <a name="range-operator-"></a>Диапазон: оператор .
 
@@ -200,7 +200,7 @@ if (handler != null)
 
 [!code-csharp[ranges with omitted operands](snippets/shared/MemberAccessOperators.cs#RangesOptional)]
 
-См. сведения в [руководстве по диапазонам и индексам](../../tutorials/ranges-indexes.md).
+См. сведения в [руководстве по диапазонам и индексам](../../whats-new/tutorials/ranges-indexes.md).
 
 ## <a name="operator-overloadability"></a>Возможность перегрузки оператора
 

@@ -5,20 +5,20 @@ author: rprouse
 ms.date: 10/04/2018
 dev_langs:
 - fsharp
-ms.openlocfilehash: 9a1b4bb7e5e705cf1c71cd44827d4a2e0a3f8cf6
-ms.sourcegitcommit: c4a15c6c4ecbb8a46ad4e67d9b3ab9b8b031d849
+ms.openlocfilehash: 54513d3063ea0a3be8da73bcbd55962e839c6e2c
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88656479"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104875061"
 ---
 # <a name="unit-testing-f-libraries-in-net-core-using-dotnet-test-and-nunit"></a>Модульное тестирование библиотек F# в .NET Core с использованием dotnet-test и NUnit
 
-Этот учебник описывает пошаговую процедуру по созданию примера решения для изучения концепций модульного тестирования. Если при изучении учебника вы предпочитаете использовать готовое решение, [просмотрите или скачайте пример кода](https://github.com/dotnet/samples/tree/master/core/getting-started/unit-testing-with-fsharp-nunit/) перед началом работы. Инструкции по загрузке см. в разделе [Просмотр и скачивание примеров](../../samples-and-tutorials/index.md#view-and-download-samples).
+Этот учебник описывает пошаговую процедуру по созданию примера решения для изучения концепций модульного тестирования. Если при изучении учебника вы предпочитаете использовать готовое решение, [просмотрите или скачайте пример кода](https://github.com/dotnet/samples/tree/main/core/getting-started/unit-testing-with-fsharp-nunit/) перед началом работы. Инструкции по загрузке см. в разделе [Просмотр и скачивание примеров](../../samples-and-tutorials/index.md#view-and-download-samples).
 
 [!INCLUDE [testing an ASP.NET Core project from .NET Core](../../../includes/core-testing-note-aspnet.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Предварительные требования
 
 - [Пакет SDK для .NET Core 2.1](https://dotnet.microsoft.com/download) или более поздней версии.
 - Текстовый редактор или редактор кода по вашему выбору.
@@ -88,13 +88,13 @@ dotnet new nunit -lang "F#"
 </ItemGroup>
 ```
 
-Тестовый проект требует других пакетов для создания и выполнения модульных тестов. Команда `dotnet new` на предыдущем шаге добавляет NUnit и адаптер тестирования NUnit. Теперь добавьте в проект библиотеку классов `MathService` в качестве еще одной зависимости. Используйте команду `dotnet add reference`:
+Тестовый проект требует других пакетов для создания и выполнения модульных тестов. Команда `dotnet new` на предыдущем шаге добавляет NUnit и адаптер тестирования NUnit. Теперь добавьте в проект библиотеку классов `MathService` в качестве еще одной зависимости. Использование команды `dotnet add reference`:
 
 ```dotnetcli
 dotnet add reference ../MathService/MathService.fsproj
 ```
 
-Все содержимое файла можно просмотреть в [репозитории образцов](https://github.com/dotnet/samples/blob/master/core/getting-started/unit-testing-with-fsharp/MathService.Tests/MathService.Tests.fsproj) на сайте GitHub.
+Все содержимое файла можно просмотреть в [репозитории образцов](https://github.com/dotnet/samples/blob/main/core/getting-started/unit-testing-with-fsharp/MathService.Tests/MathService.Tests.fsproj) на сайте GitHub.
 
 Ниже показан окончательный макет решения:
 
@@ -210,7 +210,7 @@ let squaresOfOdds xs =
 
 Вы создали небольшую библиотеку и набор модульных тестов для нее. Вы структурировали решение, чтобы сделать добавление новых пакетов и тестов частью обычного рабочего процесса и получить возможность сосредоточиться на задачах приложения.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [dotnet add reference](../tools/dotnet-add-reference.md)
 - [dotnet test](../tools/dotnet-test.md)

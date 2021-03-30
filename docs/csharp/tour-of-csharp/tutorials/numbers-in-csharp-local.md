@@ -2,12 +2,12 @@
 title: Числа в C#. Вводное руководство по C#
 description: Изучите C# на примере числовых типов, их использования, свойств и методов.
 ms.date: 02/05/2021
-ms.openlocfilehash: 5576827cc92842a2cbd5374a691d9a5c560aec25
-ms.sourcegitcommit: f0fc5db7bcbf212e46933e9cf2d555bb82666141
+ms.openlocfilehash: d6546fc8ac2609066a4f9b829749a4091fce7ce6
+ms.sourcegitcommit: 5ce37699c2a51ed173171813be68ef7577b1aba5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100626662"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104881111"
 ---
 # <a name="manipulate-integral-and-floating-point-numbers-in-c"></a>Управление целыми числами и числами с плавающей запятой в C\#
 
@@ -308,7 +308,7 @@ Console.WriteLine(c / d);
 
 Теперь, когда вы ознакомились с разными числовыми типами, напишите код, который позволяет вычислить площадь круга с радиусом 2,50 см. Помните, что площадь круга равна квадрату радиуса, умноженному на число пи. Подсказка: в .NET есть константа пи <xref:System.Math.PI?displayProperty=nameWithType>, которую можно использовать. <xref:System.Math.PI?displayProperty=nameWithType>, как и все константы, объявленные в пространстве имен `System.Math`, — это значение `double`. По этой причине вместо значений `decimal` для этой задачи следует использовать `double`.
 
-Вы должны получить ответ от 19 до 20. Ответ можно [просмотреть в готовом примере кода на GitHub](https://github.com/dotnet/samples/tree/master/csharp/numbers-quickstart/Program.cs#L104-L106).
+Вы должны получить ответ от 19 до 20. Ответ можно [просмотреть в готовом примере кода на GitHub](https://github.com/dotnet/samples/tree/main/csharp/numbers-quickstart/Program.cs#L9-L11).
 
 При желании поэкспериментируйте с другими формулами.
 

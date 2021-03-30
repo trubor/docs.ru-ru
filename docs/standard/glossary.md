@@ -2,12 +2,12 @@
 title: Глоссарий по .NET
 description: Узнайте значение выбранных терминов, используемых в документации по .NET.
 ms.date: 11/16/2020
-ms.openlocfilehash: 77ed506fb1c5bd4018b5fe0c14cc0bf37cb08113
-ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
+ms.openlocfilehash: 009ab0266a4479dfd8a37cb3261ca6fae7c78b8e
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96438186"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104873189"
 ---
 # <a name="net-glossary"></a>Глоссарий по .NET
 
@@ -92,7 +92,7 @@ API для конкретной [рабочей нагрузки](#workload). Н
 
 В отличие от среды [CLR](#clr) CoreRT не является виртуальной машиной, поэтому она не включает средства для создания и выполнения кода "на лету", так как в ней отсутствует [JIT](#jit). Но она поддерживает [сборку мусора](#gc) и возможности идентификации типа среды выполнения (RTTI) и отражения. Ее система типов разработана таким образом, что метаданные для отражения не требуется. Отсутствие необходимости в метаданных обеспечивает наличие цепочки инструментов [AOT](#aot), которая может связать лишние метаданные и (что более важно) определить код, который приложение не использует. CoreRT находится в разработке.
 
-См. сведения о [.NET Native и CoreRT](https://github.com/dotnet/corert/blob/master/Documentation/intro-to-corert.md).
+См. сведения о [.NET Native и CoreRT](https://github.com/dotnet/corert/blob/main/Documentation/intro-to-corert.md).
 
 ## <a name="cross-platform"></a>кроссплатформенный
 
@@ -219,7 +219,7 @@ Mono обычно используется с [JIT-компилятором](#ji
 
 UWP была первой платформой приложений, поддерживаемой .NET Native. Теперь мы поддерживаем построение собственных консольных приложений для Windows, macOS и Linux.
 
-См.[Введение в машинный код .NET и CoreRT](https://github.com/dotnet/corert/blob/master/Documentation/intro-to-corert.md).
+См.[Введение в машинный код .NET и CoreRT](https://github.com/dotnet/corert/blob/main/Documentation/intro-to-corert.md).
 
 ## <a name="net-sdk"></a>Пакет SDK для .NET
 

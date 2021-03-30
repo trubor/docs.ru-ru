@@ -4,12 +4,12 @@ description: Узнайте, как развернуть приложение .N
 ms.date: 10/09/2020
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: d17fd5002d47dcde804cb43fc27edb2c2c9be595
-ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
+ms.openlocfilehash: e751953937279a5f9f78f777bac8a5ca510a2f87
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94688154"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104876972"
 ---
 # <a name="tutorial-deploy-a-net-for-apache-spark-application-to-databricks"></a>Учебник. Развертывание приложения .NET для Apache Spark в Databricks
 
@@ -112,11 +112,11 @@ ms.locfileid: "94688154"
 
 2. *install-worker.sh* — это скрипт, который позволяет копировать зависимые файлы .NET для Apache Spark в узлы кластера.
 
-   Создайте новый файл с именем **install-worker.sh** на локальном компьютере и вставьте [содержимое файла install-worker.sh](https://raw.githubusercontent.com/dotnet/spark/master/deployment/install-worker.sh), расположенного на сайте GitHub.
+   Создайте новый файл с именем **install-worker.sh** на локальном компьютере и вставьте [содержимое файла install-worker.sh](https://raw.githubusercontent.com/dotnet/spark/main/deployment/install-worker.sh), расположенного на сайте GitHub.
 
 3. *db-init.sh* — это скрипт, который устанавливает зависимости на кластер Databricks Spark.
 
-   Создайте новый файл с именем **db-init.sh** на локальном компьютере и вставьте [содержимое файла db-init.sh](https://github.com/dotnet/spark/blob/master/deployment/db-init.sh), расположенного на сайте GitHub.
+   Создайте новый файл с именем **db-init.sh** на локальном компьютере и вставьте [содержимое файла db-init.sh](https://github.com/dotnet/spark/blob/main/deployment/db-init.sh), расположенного на сайте GitHub.
 
    В только что созданном файле задайте для переменной `DOTNET_SPARK_RELEASE` значение `https://github.com/dotnet/spark/releases/download/v1.0.0/Microsoft.Spark.Worker.netcoreapp3.1.linux-x64-1.0.0.tar.gz`. Оставьте остальную часть файла *db-init.sh* без изменений.
 

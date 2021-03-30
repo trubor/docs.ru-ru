@@ -6,12 +6,12 @@ ms.author: brachtma
 ms.date: 03/12/2021
 ms.topic: tutorial
 ms.custom: mlnet-tooling
-ms.openlocfilehash: 21b672b84c7f55578a76459fa9f02aca3455d719
-ms.sourcegitcommit: 1dbe25ff484a02025d5c34146e517c236f7161fb
+ms.openlocfilehash: 470849257f2a75bec9e708d8c17905f69c4d0aa7
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104658418"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104875399"
 ---
 # <a name="tutorial-detect-stop-signs-in-images-with-model-builder"></a>Руководство. Обнаружение знака STOP на изображениях с помощью Model Builder
 
@@ -51,7 +51,7 @@ ms.locfileid: "104658418"
 - Подсчет объектов
 - Распознавание активности
 
-В этом примере создается консольное приложение .NET Core на языке C#, которое определяет знак STOP на изображениях с помощью модели машинного обучения, созданной в Model Builder. Исходный код примера из этого руководства можно найти в репозитории [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/modelbuilder/ObjectDetection_StopSigns) на сайте GitHub.
+В этом примере создается консольное приложение .NET Core на языке C#, которое определяет знак STOP на изображениях с помощью модели машинного обучения, созданной в Model Builder. Исходный код примера из этого руководства можно найти в репозитории [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/main/samples/modelbuilder/ObjectDetection_StopSigns) на сайте GitHub.
 
 ## <a name="prepare-and-understand-the-data"></a>Подготовка и анализ данных
 
@@ -257,7 +257,7 @@ ms.locfileid: "104658418"
     Top: 89.453415, Left: 481.95343, Right: 724.8073, Bottom: 388.32385, Label: Stop-Sign, Score: 0.99539465
     ```
 
-Поздравляем! Вы успешно создали модель машинного обучения для обнаружения знака STOP в изображениях с помощью Model Builder. Исходный код примера из этого руководства можно найти в репозитории [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/modelbuilder/ObjectDetection_StopSigns) на сайте GitHub.
+Поздравляем! Вы успешно создали модель машинного обучения для обнаружения знака STOP в изображениях с помощью Model Builder. Исходный код примера из этого руководства можно найти в репозитории [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/main/samples/modelbuilder/ObjectDetection_StopSigns) на сайте GitHub.
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 

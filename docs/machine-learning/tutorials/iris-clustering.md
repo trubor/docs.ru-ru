@@ -5,12 +5,12 @@ author: pkulikov
 ms.date: 06/30/2020
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0516
-ms.openlocfilehash: 8ee8b177dc9cc89c4f54956b8c0a274b1d093ece
-ms.sourcegitcommit: 97ce5363efa88179dd76e09de0103a500ca9b659
+ms.openlocfilehash: 9240f365c6721baae03d8537e5e71153abf0f172
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86282090"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104875607"
 ---
 # <a name="tutorial-categorize-iris-flowers-using-k-means-clustering-with-mlnet"></a>Учебник. Категоризация цветов ириса с использованием кластеризации k-средних в ML.NET
 
@@ -55,7 +55,7 @@ ms.locfileid: "86282090"
 
 ## <a name="prepare-the-data"></a>Подготовка данных
 
-1. Скачайте набор данных [iris.data](https://github.com/dotnet/machinelearning/blob/master/test/data/iris.data) и сохраните его в папке *Data*, созданной на предыдущем шаге. Дополнительные сведения о наборе данных ирисов см. на странице Википедии [Ирисы Фишера](https://en.wikipedia.org/wiki/Iris_flower_data_set) и на странице [Набор данных ирисов](http://archive.ics.uci.edu/ml/datasets/Iris), который является источником набора данных.
+1. Скачайте набор данных [iris.data](https://github.com/dotnet/machinelearning/blob/main/test/data/iris.data) и сохраните его в папке *Data*, созданной на предыдущем шаге. Дополнительные сведения о наборе данных ирисов см. на странице Википедии [Ирисы Фишера](https://en.wikipedia.org/wiki/Iris_flower_data_set) и на странице [Набор данных ирисов](http://archive.ics.uci.edu/ml/datasets/Iris), который является источником набора данных.
 
 1. В **Обозревателе решений** щелкните правой кнопкой мыши файл *iris.data* и выберите **Свойства**. В разделе **Дополнительно** для параметра **Копировать в выходной каталог** установите значение **Копировать более позднюю версию**.
 
@@ -187,7 +187,7 @@ Cluster: 2
 Distances: 11.69127 0.02159119 25.59896
 ```
 
-Поздравляем! Вы успешно создали модель машинного обучения для кластеризации ирисов и использовали ее для прогнозирования. Исходный код для этого руководства можно найти в репозитории GitHub [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/IrisFlowerClustering).
+Поздравляем! Вы успешно создали модель машинного обучения для кластеризации ирисов и использовали ее для прогнозирования. Исходный код для этого руководства можно найти в репозитории GitHub [dotnet/samples](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/IrisFlowerClustering).
 
 ## <a name="next-steps"></a>Следующие шаги
 

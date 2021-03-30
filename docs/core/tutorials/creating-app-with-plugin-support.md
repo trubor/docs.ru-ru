@@ -4,12 +4,12 @@ description: Узнайте, как создать приложение .NET Cor
 author: jkoritzinsky
 ms.author: jekoritz
 ms.date: 10/16/2019
-ms.openlocfilehash: d3b532ae72a80eef9603fc6f3ada8c11cae966dd
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: aef91231bd4a32937d6e3cd2cb7204777c6efe96
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98187903"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104873384"
 ---
 # <a name="create-a-net-core-application-with-plugins"></a>Создание приложения .NET Core с подключаемыми модулями
 
@@ -272,7 +272,7 @@ static Assembly LoadPlugin(string relativePath)
 
 ## <a name="other-examples-in-the-sample"></a>Другие примеры в примере
 
-Полный исходный код для этого руководства можно найти в [репозитории dotnet/samples](https://github.com/dotnet/samples/tree/master/core/extensions/AppWithPlugin). Полный пример включает несколько других примеров поведения `AssemblyDependencyResolver`. Например, объект `AssemblyDependencyResolver` может разрешить собственные библиотеки, а также локализованные вспомогательные сборки, включенные в пакеты NuGet. `UVPlugin` и `FrenchPlugin` в репозитории примеров демонстрируют такие сценарии.
+Полный исходный код для этого руководства можно найти в [репозитории dotnet/samples](https://github.com/dotnet/samples/tree/main/core/extensions/AppWithPlugin). Полный пример включает несколько других примеров поведения `AssemblyDependencyResolver`. Например, объект `AssemblyDependencyResolver` может разрешить собственные библиотеки, а также локализованные вспомогательные сборки, включенные в пакеты NuGet. `UVPlugin` и `FrenchPlugin` в репозитории примеров демонстрируют такие сценарии.
 
 ## <a name="reference-a-plugin-interface-from-a-nuget-package"></a>Активация интерфейса подключаемого модуля из пакета NuGet
 

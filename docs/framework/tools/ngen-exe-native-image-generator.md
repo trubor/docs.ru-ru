@@ -19,19 +19,19 @@ helpviewer_keywords:
 - BypassNGenAttribute
 - System.Runtime.BypassNGenAttribute
 ms.assetid: 44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66
-ms.openlocfilehash: dcf22b1840be5dd91b8ad2224871b8a22efb1183
-ms.sourcegitcommit: 1dbe25ff484a02025d5c34146e517c236f7161fb
+ms.openlocfilehash: 05b77df39645b85872b07b43bcf6e8c852d6f664
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104653885"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104874372"
 ---
 # <a name="ngenexe-native-image-generator"></a>Ngen.exe (генератор образов в машинном коде)
 
 Генератор образов в машинном коде (Ngen.exe) — это средство повышения быстродействия управляемых приложений. Программа Ngen.exe создает образы в машинном коде, представляющие собой файлы, содержащие компилированный, специфический для процессора машинный код, и устанавливает их в кэш образов в машинном коде на локальном компьютере. Среда выполнения может использовать образы в машинном коде, находящиеся в кэше, вместо использования JIT-компилятора для компиляции исходной сборки.
 
 > [!NOTE]
-> Ngen.exe компилирует образы в машинном коде для сборок, предназначенных только для .NET Framework. Аналогичным генератором образов в машинном коде для .NET Core является [CrossGen](https://github.com/dotnet/runtime/blob/master/docs/workflow/building/coreclr/crossgen.md).
+> Ngen.exe компилирует образы в машинном коде для сборок, предназначенных только для .NET Framework. Аналогичным генератором образов в машинном коде для .NET Core является [CrossGen](https://github.com/dotnet/runtime/blob/main/docs/workflow/building/coreclr/crossgen.md).
 
 Изменения в программе NGen.exe для .NET Framework 4:
 

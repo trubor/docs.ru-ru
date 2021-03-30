@@ -10,12 +10,12 @@ helpviewer_keywords:
 - PlatformTarget compiler option [C#]
 - ProduceReferenceAssembly compiler option [C#]
 - TargetType compiler option [C#]
-ms.openlocfilehash: 2d8b7edbf970875d7300a394ab75756c1316ac9d
-ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
+ms.openlocfilehash: 9caa290a7c9b5fea1b0f896e9443075b4b470f7b
+ms.sourcegitcommit: 05d0087dfca85aac9ca2960f86c5efd218bf833f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103482475"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105636848"
 ---
 # <a name="c-compiler-options-that-control-compiler-output"></a>Параметры компилятора C#, которые управляют выводом компилятора
 
@@ -38,7 +38,7 @@ ms.locfileid: "103482475"
 Файл исходного кода, содержащий метод Main или инструкции верхнего уровня, выводится в XML первым. Часто вы предпочтете использовать созданный XML-файл с [IntelliSense](/visualstudio/ide/using-intellisense). Имя *XML*-файла должно совпадать с именем сборки. *XML*-файл должен находиться в том же каталоге, что и сборка. Если в проект Visual Studio добавляется ссылка на сборку, *XML*-файл также будет найден. Дополнительные сведения о создании комментариев к коду см. в статье [Вставка XML-комментариев для создания документации](/visualstudio/ide/reference/generate-xml-documentation-comments). Если при компиляции не используется параметр [`<TargetType:Module>`](#targettype), `file` будет содержать теги `<assembly>` и `</assembly>`, которые указывают имя файла, содержащего манифест сборки для выходного файла. Примеры см. в статье [Практическое руководство. Использование XML-документации](../../programming-guide/xmldoc/how-to-use-the-xml-documentation-features.md).
 
 > [!NOTE]
-> Параметр **DocumentationFile** применяется ко всем файлам в проекте. Чтобы отключить предупреждения, связанные с комментариями документации для определенного файла или раздела кода, используйте директиву [#pragma warning](../preprocessor-directives/preprocessor-pragma-warning.md).
+> Параметр **DocumentationFile** применяется ко всем файлам в проекте. Чтобы отключить предупреждения, связанные с комментариями документации для определенного файла или раздела кода, используйте директиву [#pragma warning](../preprocessor-directives.md#pragma-warning).
 
 ## <a name="outputassembly"></a>OutputAssembly
 
@@ -144,6 +144,6 @@ ms.locfileid: "103482475"
 
 ### <a name="appcontainerexe"></a>appcontainerexe
 
-Если используется параметр компилятора **appcontainerexe**, компилятор создает исполняемый файл Windows (*EXE*-файл), который должен запускаться в контейнере приложения. Этот параметр аналогичен [-target:winexe](./target-winexe-compiler-option.md), но предназначен для приложений Магазина Windows 8.x.
+Если используется параметр компилятора **appcontainerexe**, компилятор создает исполняемый файл Windows (*EXE*-файл), который должен запускаться в контейнере приложения. Этот параметр аналогичен [-target:winexe](output.md), но предназначен для приложений Магазина Windows 8.x.
 
 Этот параметр устанавливает бит в [переносимом исполняемом](/windows/desktop/Debug/pe-format) файле (PE), чтобы обеспечить запуск приложения в контейнере. Если он установлен, при попытке запустить исполняемый файл вне контейнера приложения методом CreateProcess будет возникать ошибка. Выходной файл получает имя входного файла, содержащего метод [`Main`](../../programming-guide/main-and-command-args/index.md), если только с помощью параметра [**OutputAssembly**](#outputassembly) не указано иное.

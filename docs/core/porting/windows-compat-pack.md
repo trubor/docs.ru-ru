@@ -3,12 +3,12 @@ title: Перенос кода с помощью пакета обеспечен
 description: Сведения о пакете обеспечения совместимости Windows и его использовании для переноса существующего кода .NET Framework на .NET 5 и .NET Core 3.1.
 author: terrajobst
 ms.date: 03/04/2021
-ms.openlocfilehash: c90cc960cd9ff3707877afc023f95e0e03716aab
-ms.sourcegitcommit: 46cfed35d79d70e08c313b9c664c7e76babab39e
+ms.openlocfilehash: 655657e38f564d84ea3e56b5374debc04b405eeb
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102604818"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104873644"
 ---
 # <a name="use-the-windows-compatibility-pack-to-port-code-to-net-5"></a>Перенос кода в .NET 5+ с помощью пакета обеспечения совместимости Windows
 
@@ -40,7 +40,7 @@ ms.locfileid: "102604818"
 - Кэширование среды выполнения Windows
 - службы Windows
 
-Дополнительные сведения см. в [характеристиках пакета обеспечения совместимости](https://github.com/dotnet/designs/blob/master/accepted/2018/compat-pack/compat-pack.md).
+Дополнительные сведения см. в [характеристиках пакета обеспечения совместимости](https://github.com/dotnet/designs/blob/main/accepted/2018/compat-pack/compat-pack.md).
 
 ## <a name="get-started"></a>Начало работы
 

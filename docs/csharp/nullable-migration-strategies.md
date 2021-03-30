@@ -3,12 +3,12 @@ title: Обновление базы кода для использования 
 description: Выбор оптимальной стратегии обновления базы кода для использования ссылочных типов, допускающих значения null.
 ms.technology: csharp-null-safety
 ms.date: 07/31/2019
-ms.openlocfilehash: ab0970247c7e3f3c20d7fdb40ef035c4ba1d8b01
-ms.sourcegitcommit: 30e9e11dfd90112b8eec6406186ba3533f21eba1
+ms.openlocfilehash: fff9ce4d053cc2543b0148d70435bdc793ecccd7
+ms.sourcegitcommit: 05d0087dfca85aac9ca2960f86c5efd218bf833f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "97866826"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105637167"
 ---
 # <a name="update-libraries-to-use-nullable-reference-types-and-communicate-nullable-rules-to-callers"></a>Обновление библиотек для использования ссылочных типов, допускающих значения null, и передача правил использования значений null в вызывающие объекты
 
@@ -69,7 +69,7 @@ bool TryGetMessage(string key, out string message)
 > 1. Имя файла следует начинать с *TemporaryGeneratedFile_*
 > 1. В конце имени файла следует указать *.designer.cs*, *.generated.cs*, *.g.cs* или *.g.i.cs*.
 >
-> Генераторы могут явно использовать директиву препроцессора [`#nullable`](language-reference/preprocessor-directives/preprocessor-nullable.md).
+> Генераторы могут явно использовать директиву препроцессора [`#nullable`](language-reference/preprocessor-directives.md#nullable-context).
 
 ## <a name="should-nullable-warnings-introduce-breaking-changes"></a>Приводят ли предупреждения о значениях null к внесению критических изменений?
 
@@ -216,5 +216,5 @@ public string? VehicleRegistration { get; set; }
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Перенос существующей базы кода на ссылки, допускающие значение NULL](tutorials/upgrade-to-nullable-references.md)
+- [Перенос существующей базы кода на ссылки, допускающие значение NULL](whats-new/tutorials/upgrade-to-nullable-references.md)
 - [Работа со ссылочными типами, допускающими значение null в EF Core](/ef/core/miscellaneous/nullable-reference-types)

@@ -5,12 +5,12 @@ author: mamccrea
 ms.author: mamccrea
 ms.date: 10/09/2020
 ms.topic: tutorial
-ms.openlocfilehash: 3a02ac52155971f480c7f0c338d4a2a9a7d1d81c
-ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
+ms.openlocfilehash: 29f90c43ece1f2655a15f759b473f723e712bda8
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94688024"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104873176"
 ---
 # <a name="tutorial-structured-streaming-with-net-for-apache-spark"></a>Учебник. Структурированная потоковая передача с помощью .NET для Apache Spark
 
@@ -28,7 +28,7 @@ ms.locfileid: "94688024"
 
 Если это ваше первое приложение .NET для Apache Spark, начните с [руководства по началу работы](get-started.md), чтобы ознакомиться с основами.
 
-## <a name="create-a-console-application"></a>Создание консольного приложения
+## <a name="create-a-console-application"></a>Создание консольного приложение
 
 1. В командной строке выполните следующие команды, чтобы создать новое консольное приложение:
 
@@ -55,7 +55,7 @@ ms.locfileid: "94688024"
 
 2. Чтобы создать подключение, откройте новую консоль и выполните следующую команду, которая подключается к localhost через порт 9999.
 
-   Windows:
+   В Windows:
 
    ```console
    nc -vvv -l -p 9999
@@ -158,16 +158,16 @@ spark-submit --class org.apache.spark.deploy.dotnet.DotnetRunner --master local 
 > [!NOTE]
 > Не забудьте указать в представленной выше команде фактический путь к JAR-файлу Microsoft Spark. Приведенная выше команда также предполагает, что сервер netcat использует порт localhost 9999.
 
-## <a name="get-the-code"></a>Получите код
+## <a name="get-the-code"></a>Получение кода
 
-В этом руководстве используется пример [StructuredNetworkCharacterCount.cs](https://github.com/dotnet/spark/blob/master/examples/Microsoft.Spark.CSharp.Examples/Sql/Streaming/StructuredNetworkCharacterCount.cs), но на GitHub есть еще три полных примера обработки потока:
+В этом руководстве используется пример [StructuredNetworkCharacterCount.cs](https://github.com/dotnet/spark/blob/main/examples/Microsoft.Spark.CSharp.Examples/Sql/Streaming/StructuredNetworkCharacterCount.cs), но на GitHub есть еще три полных примера обработки потока:
 
-* [StructuredNetworkWordCount.cs](https://github.com/dotnet/spark/blob/master/examples/Microsoft.Spark.CSharp.Examples/Sql/Streaming/StructuredNetworkWordCount.cs) вычисляет количество слов в потоке данных из любого источника;
-* [StructuredNetworkWordCountWindowed.cs](https://github.com/dotnet/spark/blob/master/examples/Microsoft.Spark.CSharp.Examples/Sql/Streaming/StructuredNetworkWordCountWindowed.cs) вычисляет количество слов в данных, используя логику управления окнами;
-* [StructuredKafkaWordCount.cs](https://github.com/dotnet/spark/blob/master/examples/Microsoft.Spark.CSharp.Examples/Sql/Streaming/StructuredKafkaWordCount.cs) вычисляет количество слов в данных потоковой передачи от Kafka.
+* [StructuredNetworkWordCount.cs](https://github.com/dotnet/spark/blob/main/examples/Microsoft.Spark.CSharp.Examples/Sql/Streaming/StructuredNetworkWordCount.cs) вычисляет количество слов в потоке данных из любого источника;
+* [StructuredNetworkWordCountWindowed.cs](https://github.com/dotnet/spark/blob/main/examples/Microsoft.Spark.CSharp.Examples/Sql/Streaming/StructuredNetworkWordCountWindowed.cs) вычисляет количество слов в данных, используя логику управления окнами;
+* [StructuredKafkaWordCount.cs](https://github.com/dotnet/spark/blob/main/examples/Microsoft.Spark.CSharp.Examples/Sql/Streaming/StructuredKafkaWordCount.cs) вычисляет количество слов в данных потоковой передачи от Kafka.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Переходите к следующему руководстве, чтобы научиться развертывать приложение .NET для Apache Spark в среде Databricks.
 > [!div class="nextstepaction"]
-> [Учебник. Развертывание приложения .NET для Apache Spark в Databricks.](databricks-deployment.md)
+> [Учебник. Развертывание приложения .NET для Apache Spark в Databricks](databricks-deployment.md)

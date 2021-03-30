@@ -4,16 +4,16 @@ description: Сведения о концепциях модульного те�
 author: billwagner
 ms.author: wiwagn
 ms.date: 05/18/2020
-ms.openlocfilehash: d384bf08f0b6031a519a8430c876eafc05d03a2e
-ms.sourcegitcommit: c4a15c6c4ecbb8a46ad4e67d9b3ab9b8b031d849
+ms.openlocfilehash: 67a8ea0520a0e38ff1f62cbecf82fe0b40969414
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88656427"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104875009"
 ---
 # <a name="unit-testing-visual-basic-net-core-libraries-using-dotnet-test-and-xunit"></a>Модульное тестирование библиотек .NET Core в Visual Basic с использованием dotnet test и xUnit
 
-В этом руководстве показано, как создать решение c проектом модульного теста и проектом библиотеки. Чтобы работать с руководством на примере готового решения, [просмотрите или скачайте этот пример кода](https://github.com/dotnet/samples/tree/master/core/getting-started/unit-testing-using-dotnet-test/). Инструкции по загрузке см. в разделе [Просмотр и скачивание примеров](../../samples-and-tutorials/index.md#view-and-download-samples).
+В этом руководстве показано, как создать решение c проектом модульного теста и проектом библиотеки. Чтобы работать с руководством на примере готового решения, [просмотрите или скачайте этот пример кода](https://github.com/dotnet/samples/tree/main/core/getting-started/unit-testing-using-dotnet-test/). Инструкции по загрузке см. в разделе [Просмотр и скачивание примеров](../../samples-and-tutorials/index.md#view-and-download-samples).
 
 ## <a name="create-the-solution"></a>Создание решения
 
@@ -222,7 +222,7 @@ Public Function IsPrime(candidate As Integer) As Boolean
 End Function
 ```
 
-Согласно концепции TDD, добавьте новые тесты, которые завершаются ошибкой, а затем обновите целевой код. Вы также можете изучить [готовую версию тестов](https://github.com/dotnet/samples/blob/master/core/getting-started/unit-testing-vb-dotnet-test/PrimeService.Tests/PrimeService_IsPrimeShould.vb) и [полную реализацию библиотеки](https://github.com/dotnet/samples/blob/master/core/getting-started/unit-testing-vb-dotnet-test/PrimeService/PrimeService.vb).
+Согласно концепции TDD, добавьте новые тесты, которые завершаются ошибкой, а затем обновите целевой код. Вы также можете изучить [готовую версию тестов](https://github.com/dotnet/samples/blob/main/core/getting-started/unit-testing-vb-dotnet-test/PrimeService.Tests/PrimeService_IsPrimeShould.vb) и [полную реализацию библиотеки](https://github.com/dotnet/samples/blob/main/core/getting-started/unit-testing-vb-dotnet-test/PrimeService/PrimeService.vb).
 
 Составленный нами метод `IsPrime` не является эффективным алгоритмом для тестирования простых чисел.
 

@@ -4,12 +4,12 @@ description: Узнайте, как управлять обрезкой авто
 author: sbomer
 ms.author: svbomer
 ms.date: 08/25/2020
-ms.openlocfilehash: e36aca3aadb6968f73a439ca985dc410d1bc88d8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 93fee991cf218a52ad1d9a2597b1c9b2d442110a
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95704660"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104874255"
 ---
 # <a name="trimming-options"></a>Параметры обрезки
 
@@ -162,4 +162,4 @@ ms.locfileid: "95704660"
 
     Удалите сообщения об исключениях для сборок `System.*`. При возникновении исключения из сборки `System.*` сообщение будет содержать упрощенный идентификатор ресурса вместо полного сообщения.
 
- Эти свойства приведут к усечению связанного кода, а также к отключению функций через файл [runtimeconfig](../run-time-config/index.md). Дополнительные сведения об этих свойствах, включая соответствующие параметры runtimeconfig, см. в разделе, посвященном [переключению функций](https://github.com/dotnet/runtime/blob/master/docs/workflow/trimming/feature-switches.md). Некоторые пакеты SDK могут иметь значения по умолчанию для этих свойств.
+ Эти свойства приведут к усечению связанного кода, а также к отключению функций через файл [runtimeconfig](../run-time-config/index.md). Дополнительные сведения об этих свойствах, включая соответствующие параметры runtimeconfig, см. в разделе, посвященном [переключению функций](https://github.com/dotnet/runtime/blob/main/docs/workflow/trimming/feature-switches.md). Некоторые пакеты SDK могут иметь значения по умолчанию для этих свойств.

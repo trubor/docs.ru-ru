@@ -2,12 +2,12 @@
 title: Команда dotnet add package
 description: Команду dotnet list package удобно использовать для получения списка ссылок на пакеты для проекта или решения.
 ms.date: 11/11/2020
-ms.openlocfilehash: 684b73dec553a424252e1368c265847622fb7850
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: b51ef5deb8b6418938787003b409803a3c814b08
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98189900"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104873436"
 ---
 # <a name="dotnet-list-package"></a>dotnet list package
 
@@ -31,7 +31,7 @@ dotnet list package -h|--help
 
 ## <a name="description"></a>Описание
 
-Команду `dotnet list package` удобно использовать для получения списка всех ссылок на пакеты NuGet для определенного проекта или решения. Сначала нужно создать проект, чтобы получить ресурсы, необходимые для обработки этой командой. В следующем примере показаны выходные данные команды `dotnet list package` для проекта [SentimentAnalysis](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/SentimentAnalysis):
+Команду `dotnet list package` удобно использовать для получения списка всех ссылок на пакеты NuGet для определенного проекта или решения. Сначала нужно создать проект, чтобы получить ресурсы, необходимые для обработки этой командой. В следующем примере показаны выходные данные команды `dotnet list package` для проекта [SentimentAnalysis](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/SentimentAnalysis):
 
 ```output
 Project 'SentimentAnalysis' has the following package references
@@ -58,7 +58,7 @@ Project `SentimentAnalysis` has the following updates to its packages
    > Microsoft.ML         1.4.0       1.4.0      1.5.0-preview
 ```
 
-Чтобы узнать, есть ли у проекта транзитивные зависимости, воспользуйтесь параметром `--include-transitive`. Транзитивные зависимости возникают при добавлении пакета в проект, который в свою очередь зависит от другого пакета. В следующем примере показаны выходные данные выполнения команды `dotnet list package --include-transitive` для проекта [HelloPlugin](https://github.com/dotnet/samples/tree/master/core/extensions/AppWithPlugin/HelloPlugin), в которых отображаются пакеты верхнего уровня и пакеты, от которых они зависят:
+Чтобы узнать, есть ли у проекта транзитивные зависимости, воспользуйтесь параметром `--include-transitive`. Транзитивные зависимости возникают при добавлении пакета в проект, который в свою очередь зависит от другого пакета. В следующем примере показаны выходные данные выполнения команды `dotnet list package --include-transitive` для проекта [HelloPlugin](https://github.com/dotnet/samples/tree/main/core/extensions/AppWithPlugin/HelloPlugin), в которых отображаются пакеты верхнего уровня и пакеты, от которых они зависят:
 
 ```output
 Project 'HelloPlugin' has the following package references

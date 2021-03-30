@@ -4,12 +4,12 @@ description: Узнайте, как развернуть приложение .N
 ms.date: 10/09/2020
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: f7a3b0c0d972d5cb6dbc6eea818fe794c5060eae
-ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
+ms.openlocfilehash: 0c2b7522e0e6790ded418413ef0f128aae1e0884
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94687914"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104875347"
 ---
 # <a name="tutorial-deploy-a-net-for-apache-spark-application-to-azure-hdinsight"></a>Учебник. Развертывание приложения .NET для Apache Spark в Azure HDInsight
 
@@ -71,7 +71,7 @@ ms.locfileid: "94687914"
 
 4. По завершении выберите **Next: Storage >>** (Далее: хранилище), чтобы перейти на страницу **Хранилище**. На странице **Хранилище** укажите следующие значения.
 
-    |Свойство.  |Описание  |
+    |Свойство  |Описание  |
     |---------|---------|
     |Тип первичного хранилища|Используйте значение **службы хранилища Azure** по умолчанию.|
     |Метод выбора|Используйте значение **Выбрать в списке** по умолчанию.|
@@ -130,7 +130,7 @@ ms.locfileid: "94687914"
 
 3. *install-worker.sh* — это скрипт, который позволяет копировать зависимые файлы .NET для Apache Spark в узлы кластера.
 
-   Создайте новый файл с именем **install-worker.sh** на локальном компьютере и вставьте [содержимое файла install-worker.sh](https://raw.githubusercontent.com/dotnet/spark/master/deployment/install-worker.sh), расположенного на сайте GitHub. Затем отправьте *install-worker.sh* в контейнер больших двоичных объектов.
+   Создайте новый файл с именем **install-worker.sh** на локальном компьютере и вставьте [содержимое файла install-worker.sh](https://raw.githubusercontent.com/dotnet/spark/main/deployment/install-worker.sh), расположенного на сайте GitHub. Затем отправьте *install-worker.sh* в контейнер больших двоичных объектов.
 
 4. Кластеру требуется файл *publish.zip*, содержащий опубликованные файлы приложения. Перейдите к опубликованной папке **mySparkApp/bin/Release/netcoreapp3.1/ubuntu.16.04-x64** и найдите **publish.zip**. Затем отправьте файл *publish.zip* в контейнер больших двоичных объектов.
 

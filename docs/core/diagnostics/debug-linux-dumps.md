@@ -2,12 +2,12 @@
 title: Отладка дампов Linux
 description: В этой статье вы узнаете, как выполнять сбор и анализ дампов из сред Linux.
 ms.date: 08/27/2020
-ms.openlocfilehash: e6f2eea3af718853ad7365a5209b397a66035dde
-ms.sourcegitcommit: 35ca2255c6c86968eaef9e3a251c9739ce8e4288
+ms.openlocfilehash: 42038c685c3ad0043c91df140b0133a9ddecec3b
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97753605"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104874278"
 ---
 # <a name="debug-linux-dumps"></a>Отладка дампов Linux
 
@@ -26,7 +26,7 @@ ms.locfileid: "97753605"
 
 ### <a name="core-dumps-with-createdump"></a>Дампы ядра с помощью `createdump`
 
-Вместо `dotnet-dump`, создающего только управляемые дампы, [`createdump`](https://github.com/dotnet/runtime/blob/master/docs/design/coreclr/botr/xplat-minidump-generation.md) рекомендуется для создания основных дампов в Linux, содержащих как собственные, так и управляемые данные. Другие средства, такие как gdb или gcore, можно также использовать для создания основных дампов, однако они могут не учитывать состояние, необходимое для управляемой отладки, что приводит к неизвестному типу или именам функций во время анализа.
+Вместо `dotnet-dump`, создающего только управляемые дампы, [`createdump`](https://github.com/dotnet/runtime/blob/main/docs/design/coreclr/botr/xplat-minidump-generation.md) рекомендуется для создания основных дампов в Linux, содержащих как собственные, так и управляемые данные. Другие средства, такие как gdb или gcore, можно также использовать для создания основных дампов, однако они могут не учитывать состояние, необходимое для управляемой отладки, что приводит к неизвестному типу или именам функций во время анализа.
 
 Средство `createdump` устанавливается вместе со средой выполнения .NET Core. Его можно найти рядом с libcoreclr.so (обычно в папке /usr/share/dotnet/shared/Microsoft.NETCore.App/[версия]). Средство использует идентификатор процесса для получения дампа в качестве основного аргумента, а также может принимать необязательные параметры, указывающие, какой тип дампа следует сохранять (по умолчанию используется малый дамп с кучей). Возможны следующие значения.
 
@@ -66,7 +66,7 @@ ms.locfileid: "97753605"
 
 Как управляемые дампы, собранные с помощью `dotnet-dump`, так и дампы ядра, собранные с помощью `createdump`, можно проанализировать с помощью средства `dotnet-dump`, используя команду `dotnet-dump analyze`. `dotnet dump` требует, чтобы среда, в которой анализируется дамп, использовала ту же ОС и архитектуру, что и среда, в которой был записан дамп.
 
-Кроме того, [LLDB](https://lldb.llvm.org/) можно использовать для анализа основных дампов в Linux, что позволяет выполнять анализ как управляемых, так и собственных кадров. LLDB использует расширение SOS для отладки управляемого кода. Средство [`dotnet-sos`](dotnet-sos.md) CLI можно использовать для установки SOS, в котором содержится [много полезных команд](https://github.com/dotnet/diagnostics/blob/master/documentation/sos-debugging-extension.md) для отладки управляемого кода. Чтобы проанализировать дампы .NET Core, для LLDB и SOS требуются следующие двоичные файлы .NET Core из среды, в которой был создан дамп.
+Кроме того, [LLDB](https://lldb.llvm.org/) можно использовать для анализа основных дампов в Linux, что позволяет выполнять анализ как управляемых, так и собственных кадров. LLDB использует расширение SOS для отладки управляемого кода. Средство [`dotnet-sos`](dotnet-sos.md) CLI можно использовать для установки SOS, в котором содержится [много полезных команд](https://github.com/dotnet/diagnostics/blob/main/documentation/sos-debugging-extension.md) для отладки управляемого кода. Чтобы проанализировать дампы .NET Core, для LLDB и SOS требуются следующие двоичные файлы .NET Core из среды, в которой был создан дамп.
 
 1. libmscordaccore.so
 2. libcoreclr.so
@@ -82,11 +82,11 @@ lldb --core <dump-file> <host-program>
 
 В приведенной выше командной строке `<dump-file>` — это путь к дампу для анализа, а `<host-program>` — это собственная программа, запускающая приложение .NET Core. Обычно это двоичный файл `dotnet`, если приложение не является автономным. В этом случае это имя приложения без расширения DLL.
 
-После запуска LLDB может потребоваться использовать команду `setsymbolserver`, чтобы указать правильное расположение символов (`setsymbolserver -ms`, чтобы использовать сервер символов корпорации Майкрософт, или `setsymbolserver -directory <path>` для указания локального пути). Собственные символы можно загрузить, запустив `loadsymbols`. На этом этапе для анализа дампа можно использовать [команды SOS](https://github.com/dotnet/diagnostics/blob/master/documentation/sos-debugging-extension.md).
+После запуска LLDB может потребоваться использовать команду `setsymbolserver`, чтобы указать правильное расположение символов (`setsymbolserver -ms`, чтобы использовать сервер символов корпорации Майкрософт, или `setsymbolserver -directory <path>` для указания локального пути). Собственные символы можно загрузить, запустив `loadsymbols`. На этом этапе для анализа дампа можно использовать [команды SOS](https://github.com/dotnet/diagnostics/blob/main/documentation/sos-debugging-extension.md).
 
 ## <a name="see-also"></a>См. также раздел
 
 - [dotnet-sos](dotnet-sos.md) для получения дополнительных сведений об установке расширения SOS.
 - [dotnet-symbol](dotnet-symbol.md) для получения дополнительных сведений об установке и использовании средства скачивания символов.
-- [Репозиторий диагностики .NET Core](https://github.com/dotnet/diagnostics/blob/master/documentation/) для получения дополнительных сведений об отладке, включая полезные часто задаваемые вопросы.
-- [Установка LLDB](https://github.com/dotnet/diagnostics/blob/master/documentation/sos.md#getting-lldb) для получения инструкций по установке LLDB в Linux или Mac.
+- [Репозиторий диагностики .NET Core](https://github.com/dotnet/diagnostics/blob/main/documentation/) для получения дополнительных сведений об отладке, включая полезные часто задаваемые вопросы.
+- [Установка LLDB](https://github.com/dotnet/diagnostics/blob/main/documentation/sos.md#getting-lldb) для получения инструкций по установке LLDB в Linux или Mac.

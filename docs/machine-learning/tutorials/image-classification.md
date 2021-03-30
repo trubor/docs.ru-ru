@@ -4,12 +4,12 @@ description: Узнайте, как передавать знания из су�
 ms.date: 06/30/2020
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
-ms.openlocfilehash: a4c671816dce1fe2abdf77f81da0f27236136536
-ms.sourcegitcommit: 97ce5363efa88179dd76e09de0103a500ca9b659
+ms.openlocfilehash: b3e5617979d1635248f87db6008d3e234bb3ffc5
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86282116"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104877037"
 ---
 # <a name="tutorial-generate-an-mlnet-image-classification-model-from-a-pre-trained-tensorflow-model"></a>Учебник. Создание модели классификации изображений ML.NET на основе предварительно обученной модели TensorFlow
 
@@ -27,7 +27,7 @@ ms.locfileid: "86282116"
 > * обучить и оценить модель ML.NET;
 > * классифицировать тестовое изображение.
 
-Исходный код для этого руководства можно найти в репозитории [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/TransferLearningTF). Обратите внимание на то, что по умолчанию конфигурации проекта .NET в этом руководстве предназначена для .NET Core 2.2.
+Исходный код для этого руководства можно найти в репозитории [dotnet/samples](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/TransferLearningTF). Обратите внимание на то, что по умолчанию конфигурации проекта .NET в этом руководстве предназначена для .NET Core 2.2.
 
 ## <a name="what-is-transfer-learning"></a>Что собой представляет передача обучения?
 
@@ -38,7 +38,7 @@ ms.locfileid: "86282116"
 ## <a name="prerequisites"></a>Предварительные требования
 
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) или более поздняя версия либо Visual Studio 2017 версии 15.6 или более поздняя версия с установленной рабочей нагрузкой "Кроссплатформенная разработка .NET Core".
-* [ZIP-файл каталога ресурсов руководства.](https://github.com/dotnet/samples/blob/master/machine-learning/tutorials/TransferLearningTF/image-classifier-assets.zip)
+* [ZIP-файл каталога ресурсов руководства.](https://github.com/dotnet/samples/blob/main/machine-learning/tutorials/TransferLearningTF/image-classifier-assets.zip)
 * [Модель машинного обучения Inception версии 1](https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip)
 
 ## <a name="select-the-right-machine-learning-task"></a>Выбор типа задачи машинного обучения
@@ -133,7 +133,7 @@ toaster2.png    appliance
 
 ### <a name="download-assets"></a>Скачивание ресурсов
 
-1. Скачайте [ZIP-файл каталога с ресурсами проекта](https://github.com/dotnet/samples/blob/master/machine-learning/tutorials/TransferLearningTF/image-classifier-assets.zip) и распакуйте его.
+1. Скачайте [ZIP-файл каталога с ресурсами проекта](https://github.com/dotnet/samples/blob/main/machine-learning/tutorials/TransferLearningTF/image-classifier-assets.zip) и распакуйте его.
 
 1. Скопируйте каталог `assets` в каталог проекта *TransferLearningTF*. Этот каталог и его подкаталоги содержат данные и файлы поддержки (за исключением модели Inception, которую вы скачаете и добавите на следующем шаге), необходимые для работы с этим руководством.
 
@@ -370,7 +370,7 @@ toaster2.png    appliance
 
 Поздравляем! Вы успешно создали модель машинного обучения для классификации изображений, применив передачу обучения в модель `TensorFlow` в ML.NET.
 
-Исходный код для этого руководства можно найти в репозитории [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/TransferLearningTF).
+Исходный код для этого руководства можно найти в репозитории [dotnet/samples](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/TransferLearningTF).
 
 В этом руководстве вы узнали, как:
 > [!div class="checklist"]

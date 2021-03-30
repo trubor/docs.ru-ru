@@ -4,12 +4,12 @@ description: Этом руководстве показано, как испол
 ms.date: 10/06/2020
 ms.technology: csharp-whats-new
 ms.custom: contperf-fy21q1
-ms.openlocfilehash: b0ee4ee905c130876cf201cb3a1a441d54226c52
-ms.sourcegitcommit: f0fc5db7bcbf212e46933e9cf2d555bb82666141
+ms.openlocfilehash: c081e6a75b3ea834641b050bc2450fed1e45c60c
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100582781"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104874515"
 ---
 # <a name="tutorial-use-pattern-matching-to-build-type-driven-and-data-driven-algorithms"></a>Руководство. Использование сопоставления шаблонов для создания управляемых типами и управляемых данными алгоритмов
 
@@ -43,7 +43,7 @@ ms.locfileid: "100582781"
 
 [!code-csharp[ExternalSystems](~/samples/snippets/csharp/tutorials/patterns/start/toll-calculator/ExternalSystems.cs)]
 
-Скачать начальный код можно из репозитория GitHub [dotnet/samples](https://github.com/dotnet/samples/tree/master/csharp/tutorials/patterns/start). Вы можете видеть, что классы транспортных средств принадлежат разным системам и находятся в разных пространствах имен. Вы не можете использовать другие базовые классы, кроме `System.Object`.
+Скачать начальный код можно из репозитория GitHub [dotnet/samples](https://github.com/dotnet/samples/tree/main/csharp/tutorials/patterns/start). Вы можете видеть, что классы транспортных средств принадлежат разным системам и находятся в разных пространствах имен. Вы не можете использовать другие базовые классы, кроме `System.Object`.
 
 ## <a name="pattern-matching-designs"></a>Схемы сопоставления шаблонов
 
@@ -390,4 +390,4 @@ public decimal PeakTimePremium(DateTime timeOfToll, bool inbound) =>
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Скачать готовый код можно из репозитория GitHub [dotnet/samples](https://github.com/dotnet/samples/tree/master/csharp/tutorials/patterns/finished). Изучите шаблоны самостоятельно и используйте эту методику во время написания кода. Это позволит вам подойти к решению проблем с другой стороны, чтобы создавать новые функции.
+Скачать готовый код можно из репозитория GitHub [dotnet/samples](https://github.com/dotnet/samples/tree/main/csharp/tutorials/patterns/finished). Изучите шаблоны самостоятельно и используйте эту методику во время написания кода. Это позволит вам подойти к решению проблем с другой стороны, чтобы создавать новые функции.

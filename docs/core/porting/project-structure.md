@@ -3,12 +3,12 @@ title: Организация проектов для .NET Framework и .NET Cor
 description: Эта статья поможет владельцам проектов, которые хотят скомпилировать свое решение одновременно для .NET Framework и .NET Core.
 author: conniey
 ms.date: 12/07/2018
-ms.openlocfilehash: d71cc3102846c08f4e35831921b8cc4ca82f9e1b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 0d495ce7b21b45d3fabe444f117667e5908ac81a
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75777331"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104873670"
 ---
 # <a name="organize-your-project-to-support-both-net-framework-and-net-core"></a>Организация проекта для параллельной поддержки .NET Framework и .NET Core
 
@@ -37,7 +37,7 @@ ms.locfileid: "75777331"
 
 ![Существующий проект](./media/project-structure/existing-project-structure.png)
 
-[**Исходный код**](https://github.com/dotnet/samples/tree/master/framework/libraries/migrate-library/)
+[**Исходный код**](https://github.com/dotnet/samples/tree/main/framework/libraries/migrate-library/)
 
 В зависимости от ограничений и сложности существующих проектов добавить поддержку .NET Core для этого репозитория можно несколькими способами, которые описаны ниже.
 
@@ -47,11 +47,11 @@ ms.locfileid: "75777331"
 
 ![Создание файла CSPROJ, предназначенного для нескольких платформ](./media/project-structure/multi-targeted-project.png)
 
-[**Исходный код**](https://github.com/dotnet/samples/tree/master/framework/libraries/migrate-library-csproj/)
+[**Исходный код**](https://github.com/dotnet/samples/tree/main/framework/libraries/migrate-library-csproj/)
 
 Обратите внимание на следующие изменения:
 
-- Замена файлов *packages.config* и *\*.csproj* на новый файл [.NET Core *\*.csproj*](https://github.com/dotnet/samples/tree/master/framework/libraries/migrate-library-csproj/src/Car/Car.csproj). Пакеты NuGet указываются с помощью `<PackageReference> ItemGroup`.
+- Замена файлов *packages.config* и *\*.csproj* на новый файл [.NET Core *\*.csproj*](https://github.com/dotnet/samples/tree/main/framework/libraries/migrate-library-csproj/src/Car/Car.csproj). Пакеты NuGet указываются с помощью `<PackageReference> ItemGroup`.
 
 ## <a name="keep-existing-projects-and-create-a-net-core-project"></a>Сохранение существующих проектов и создание проекта .NET Core
 
@@ -59,10 +59,10 @@ ms.locfileid: "75777331"
 
 ![Проект .NET Core с существующим проектом в другой папке](./media/project-structure/separate-projects-same-source.png)
 
-[**Исходный код**](https://github.com/dotnet/samples/tree/master/framework/libraries/migrate-library-csproj-keep-existing/)
+[**Исходный код**](https://github.com/dotnet/samples/tree/main/framework/libraries/migrate-library-csproj-keep-existing/)
 
 Проект .NET Core и существующие проекты хранятся в разных папках. Размещение проектов в разных папках позволяет обойтись без Visual Studio 2017 или более поздних версий. Вы можете создать отдельное решение, которое открывает только старые проекты.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Документация по переносу .NET Core](index.md)

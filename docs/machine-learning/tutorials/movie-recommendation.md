@@ -5,12 +5,12 @@ author: briacht
 ms.date: 06/30/2020
 ms.custom: mvc, title-hack-0516
 ms.topic: tutorial
-ms.openlocfilehash: 2df774110d3355bf75a14e211555984a12cf7fa4
-ms.sourcegitcommit: b27645cb378d4e8137a267e5467ff31409acf6c0
+ms.openlocfilehash: 9171a6ca073e6296220ebcb874258b6893b2974f
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103231398"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104875360"
 ---
 # <a name="tutorial-build-a-movie-recommender-using-matrix-factorization-with-mlnet"></a>Учебник. Создание приложения для рекомендации фильмов с использованием матричной факторизации и ML.NET
 
@@ -25,7 +25,7 @@ ms.locfileid: "103231398"
 > * оценить модель;
 > * развернуть и использовать модель.
 
-Исходный код для этого руководства можно найти в репозитории [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/MovieRecommendation).
+Исходный код для этого руководства можно найти в репозитории [dotnet/samples](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/MovieRecommendation).
 
 ## <a name="machine-learning-workflow"></a>Рабочий процесс машинного обучения
 
@@ -68,8 +68,8 @@ ms.locfileid: "103231398"
 
 1. Скачайте два набора данных и сохраните их в ранее созданную папку *Data*.
 
-   * Щелкните файл [*recommendation-ratings-train.csv*](https://raw.githubusercontent.com/dotnet/machinelearning-samples/master/samples/csharp/getting-started/MatrixFactorization_MovieRecommendation/Data/recommendation-ratings-train.csv) правой кнопкой мыши и выберите команду "Сохранить ссылку (объект) как...".
-   * Щелкните файл [*recommendation-ratings-test.csv*](https://raw.githubusercontent.com/dotnet/machinelearning-samples/master/samples/csharp/getting-started/MatrixFactorization_MovieRecommendation/Data/recommendation-ratings-test.csv) правой кнопкой мыши и выберите команду "Сохранить ссылку (объект) как...".
+   * Щелкните файл [*recommendation-ratings-train.csv*](https://raw.githubusercontent.com/dotnet/machinelearning-samples/main/samples/csharp/getting-started/MatrixFactorization_MovieRecommendation/Data/recommendation-ratings-train.csv) правой кнопкой мыши и выберите команду "Сохранить ссылку (объект) как...".
+   * Щелкните файл [*recommendation-ratings-test.csv*](https://raw.githubusercontent.com/dotnet/machinelearning-samples/main/samples/csharp/getting-started/MatrixFactorization_MovieRecommendation/Data/recommendation-ratings-test.csv) правой кнопкой мыши и выберите команду "Сохранить ссылку (объект) как...".
 
      Файлы \*.csv нужно сохранить в папке *Data*. Если вы сохранили файлы \*.csv в другом месте, переместите их в папку *Data*.
 
@@ -400,7 +400,7 @@ Movie 10 is recommended for user 6
 =============== Saving the model to a file ===============
 ```
 
-Поздравляем! Вы успешно создали модель машинного обучения для рекомендации фильмов. Исходный код для этого руководства можно найти в репозитории [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/MovieRecommendation).
+Поздравляем! Вы успешно создали модель машинного обучения для рекомендации фильмов. Исходный код для этого руководства можно найти в репозитории [dotnet/samples](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/MovieRecommendation).
 
 ## <a name="improve-your-model"></a>Улучшение модели
 
@@ -445,8 +445,8 @@ var options = new MatrixFactorizationTrainer.Options
 
 | Алгоритм       | Сценарий           | Пример  |
 | ------------- |:-------------:| -----:|
-| Разложение матрицы одного класса | Следует использовать при наличии только столбцов userId и movieId. Такой тип рекомендаций предназначен для сценария совместных покупок, то есть покупателям будет рекомендоваться набор продуктов исходя из их истории заказов. | [> Попробовать](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/MatrixFactorization_ProductRecommendation) |
-| Факторизационные машины с полями | Следует использовать для рекомендаций при наличии дополнительных признаков, помимо userId, productId и rating (таких как описание или цена продукта). Этот алгоритм также использует метод совместной фильтрации. | [> Попробовать](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/end-to-end-apps/Recommendation-MovieRecommender) |
+| Разложение матрицы одного класса | Следует использовать при наличии только столбцов userId и movieId. Такой тип рекомендаций предназначен для сценария совместных покупок, то есть покупателям будет рекомендоваться набор продуктов исходя из их истории заказов. | [> Попробовать](https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/getting-started/MatrixFactorization_ProductRecommendation) |
+| Факторизационные машины с полями | Следует использовать для рекомендаций при наличии дополнительных признаков, помимо userId, productId и rating (таких как описание или цена продукта). Этот алгоритм также использует метод совместной фильтрации. | [> Попробовать](https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/end-to-end-apps/Recommendation-MovieRecommender) |
 
 ### <a name="new-user-scenario"></a>Проблема нового пользователя
 

@@ -4,12 +4,12 @@ description: В этом учебнике описано, как с помощь
 ms.date: 06/30/2020
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0516
-ms.openlocfilehash: beb48c9252b83cd693c351d39882b7ac9d08d882
-ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
+ms.openlocfilehash: f8f7146241368edaca31afd970af54a098d1aafa
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86309720"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104874645"
 ---
 # <a name="tutorial-predict-prices-using-regression-with-mlnet"></a>Учебник. Прогнозирование цен с помощью регрессии с ML.NET
 
@@ -43,7 +43,7 @@ ms.locfileid: "86309720"
 
 ## <a name="prepare-and-understand-the-data"></a>Подготовка и анализ данных
 
-1. Скачайте наборы данных [taxi-fare-train.csv](https://github.com/dotnet/machinelearning/blob/master/test/data/taxi-fare-train.csv) и [taxi-fare-test.csv](https://github.com/dotnet/machinelearning/blob/master/test/data/taxi-fare-test.csv), сохранив их в созданной на предыдущем шаге папке *Data*. Эти наборы данных используются для обучения модели машинного обучения и последующей оценки точности этой модели. Эти наборы данных взяты из [наборов данных NYC TLC Taxi Trip](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page).
+1. Скачайте наборы данных [taxi-fare-train.csv](https://github.com/dotnet/machinelearning/blob/main/test/data/taxi-fare-train.csv) и [taxi-fare-test.csv](https://github.com/dotnet/machinelearning/blob/main/test/data/taxi-fare-test.csv), сохранив их в созданной на предыдущем шаге папке *Data*. Эти наборы данных используются для обучения модели машинного обучения и последующей оценки точности этой модели. Эти наборы данных взяты из [наборов данных NYC TLC Taxi Trip](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page).
 
 1. В **обозревателе решений** щелкните правой кнопкой мыши каждый из файлов \*.csv и выберите **Свойства**. В разделе **Дополнительно** для параметра **Копировать в выходной каталог** установите значение **Копировать более позднюю версию**.
 
@@ -268,7 +268,7 @@ private static void TestSinglePrediction(MLContext mlContext, ITransformer model
 
 Запустите программу, чтобы узнать прогноз платы за такси для тестового примера.
 
-Поздравляем! Вы успешно создали модель машинного обучения для прогнозирования платы за проезд в такси, оценили ее точность и использовали ее для получения прогнозов. Исходный код для этого руководства можно найти в репозитории GitHub [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/TaxiFarePrediction).
+Поздравляем! Вы успешно создали модель машинного обучения для прогнозирования платы за проезд в такси, оценили ее точность и использовали ее для получения прогнозов. Исходный код для этого руководства можно найти в репозитории GitHub [dotnet/samples](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/TaxiFarePrediction).
 
 ## <a name="next-steps"></a>Следующие шаги
 

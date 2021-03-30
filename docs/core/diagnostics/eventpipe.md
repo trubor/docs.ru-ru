@@ -3,12 +3,12 @@ title: Общие сведения об EventPipe
 description: Узнайте об EventPipe и о том, как использовать его для трассировки приложений .NET для диагностики проблем с производительностью.
 ms.date: 11/09/2020
 ms.topic: overview
-ms.openlocfilehash: 0b4782306c85590d74b521edd254659fb162b0c2
-ms.sourcegitcommit: d623f686701b94bef905ec5e93d8b55d031c5d6f
+ms.openlocfilehash: de00f448dea9752c3dff2af35977d97c07aec6f3
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "103624166"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104874164"
 ---
 # <a name="eventpipe"></a>Каналы событий
 
@@ -22,7 +22,7 @@ EventPipe — это механизм для многих средств диа
 
 EventPipe объединяет события, созданные компонентами среды выполнения, например JIT-компилятором или сборщиком мусора, а также события, записанные из экземпляров [EventSource](xref:System.Diagnostics.Tracing.EventSource) в библиотеках и пользовательском коде.
 
-Затем события сериализуются и могут быть записаны непосредственно в файл или использованы через порт диагностики вне процесса. В Windows порты диагностики реализуются как `NamedPipe`. На платформах, отличных от Windows, таких как Linux или macOS, это реализуется с помощью сокетов доменов UNIX. Дополнительные сведения о порте диагностики и о том, как взаимодействовать с ним через свой настраиваемый протокол межпроцессного взаимодействия, см. в [документации по протоколу диагностики IPC](https://github.com/dotnet/diagnostics/blob/master/documentation/design-docs/ipc-protocol.md).
+Затем события сериализуются и могут быть записаны непосредственно в файл или использованы через порт диагностики вне процесса. В Windows порты диагностики реализуются как `NamedPipe`. На платформах, отличных от Windows, таких как Linux или macOS, это реализуется с помощью сокетов доменов UNIX. Дополнительные сведения о порте диагностики и о том, как взаимодействовать с ним через свой настраиваемый протокол межпроцессного взаимодействия, см. в [документации по протоколу диагностики IPC](https://github.com/dotnet/diagnostics/blob/main/documentation/design-docs/ipc-protocol.md).
 
 Затем EventPipe записывает сериализованные события в файл `.nettrace` в виде потока через диагностические порты или непосредственно в файл. Дополнительные сведения о формате сериализации EventPipe см. в [документации по формату EventPipe](https://github.com/microsoft/perfview/blob/master/src/TraceEvent/EventPipe/EventPipeFormat.md).
 
@@ -49,7 +49,7 @@ EventPipe можно использовать для трассировки пр
 
 * Используйте одно из [средств диагностики](#tools-that-use-eventpipe), созданных на основе EventPipe.
 
-* Используйте библиотеку [Microsoft.Diagnostics.NETCore.Client](https://github.com/dotnet/diagnostics/blob/master/documentation/diagnostics-client-library-instructions.md), чтобы написать собственное средство для самостоятельной настройки и запуска сеансов EventPipe.
+* Используйте библиотеку [Microsoft.Diagnostics.NETCore.Client](https://github.com/dotnet/diagnostics/blob/main/documentation/diagnostics-client-library-instructions.md), чтобы написать собственное средство для самостоятельной настройки и запуска сеансов EventPipe.
 
 * Для запуска EventPipe используйте [переменные среды](#trace-using-environment-variables).
 

@@ -10,18 +10,18 @@ f1_keywords:
 - enumconstraint_CSharpKeyword
 helpviewer_keywords:
 - where (generic type constraint) [C#]
-ms.openlocfilehash: ff2d50b2148ea62e5bef5eceda547a976e4abf02
-ms.sourcegitcommit: 279fb6e8d515df51676528a7424a1df2f0917116
+ms.openlocfilehash: 83fb5b562d9e1e4caaef179ca2911adb60fc01fa
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92687313"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104872630"
 ---
 # <a name="where-generic-type-constraint-c-reference"></a>where (ограничение универсального типа) (справочник по C#)
 
 Предложение `where` в универсальном определении задает ограничения на типы, которые используются в качестве аргументов для параметров типа в универсальном типе, методе, делегате или локальной функции. Ограничения могут задавать интерфейсы, базовые классы или требовать, чтобы универсальный тип был ссылочным типом, типом значения или неуправляемым типом. Они объявляют характеристики, которыми должен обладать аргумент типа.
 
-Например, можно объявить универсальный класс `MyGenericClass` так, чтобы параметр типа `T` реализовывал интерфейс <xref:System.IComparable%601>:
+Например, можно объявить универсальный класс `AGenericClass` так, чтобы параметр типа `T` реализовывал интерфейс <xref:System.IComparable%601>:
 
 [!code-csharp[using an interface constraint](snippets/GenericWhereConstraints.cs#1)]
 

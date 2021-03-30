@@ -8,19 +8,19 @@ helpviewer_keywords:
 ms.topic: how-to
 ms.custom: contperf-fy21q2
 ms.assetid: 43f511be-346c-4b8a-995e-aded94542ece
-ms.openlocfilehash: 4ee1b04cf30b7602ae563cb02daed49f82c04de7
-ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
+ms.openlocfilehash: 54b8a335279c8bb81bc75d182ec653e434ab45a0
+ms.sourcegitcommit: 05d0087dfca85aac9ca2960f86c5efd218bf833f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98899000"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105636861"
 ---
 # <a name="how-to-define-constants-in-c"></a>Определение констант в C\#
 
 Константы — это поля, значения которых устанавливаются во время компиляции и не изменяются. С помощью констант можно присвоить особым значениям значащие имена вместо числовых литералов.  
   
 > [!NOTE]
-> В C# с помощью директивы препроцессора [#define](../../language-reference/preprocessor-directives/preprocessor-define.md) нельзя определять константы так, как это было реализовано в C и C++.  
+> В C# с помощью директивы препроцессора [#define](../../language-reference/preprocessor-directives.md#defining-symbols) нельзя определять константы так, как это было реализовано в C и C++.  
   
  Чтобы определить значения константы целочисленного типа (`int`, `byte` и т. д.), используйте перечисляемый тип. Дополнительные сведения см. в разделе [Перечисление](../../language-reference/builtin-types/enum.md).  
   

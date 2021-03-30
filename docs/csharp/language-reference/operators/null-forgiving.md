@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - null-forgiving operator [C#]
 - '! operator [C#]'
-ms.openlocfilehash: 7b8c634404cf2f214cc4bee5d754443e9302a723
-ms.sourcegitcommit: ecd9e9bb2225eb76f819722ea8b24988fe46f34c
+ms.openlocfilehash: 14bc4501dfed515e162a6e30137c9def89bb3651
+ms.sourcegitcommit: e16315d9f1ff355f55ff8ab84a28915be0a8e42b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96739520"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105111079"
 ---
 # <a name="-null-forgiving-operator-c-reference"></a>!  — оператор (допускающий значение NULL) (справочник по C#)
 
@@ -54,4 +54,4 @@ ms.locfileid: "96739520"
 
 - [справочник по C#](../index.md)
 - [Операторы и выражения C#](index.md)
-- [Учебник. Разработка с использованием ссылочных типов, допускающих значение NULL](../../tutorials/nullable-reference-types.md)
+- [Учебник. Разработка с использованием ссылочных типов, допускающих значение NULL](../../whats-new/tutorials/nullable-reference-types.md)

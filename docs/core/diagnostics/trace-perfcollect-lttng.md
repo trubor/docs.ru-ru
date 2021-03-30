@@ -3,12 +3,12 @@ title: Трассировка приложений .NET с помощью PerfCo
 description: Руководство по сбору трассировки с помощью PerfCollect в .NET.
 ms.topic: tutorial
 ms.date: 10/23/2020
-ms.openlocfilehash: 20e1bf56714fb32b5231d45b0ba35cdfcedaea2e
-ms.sourcegitcommit: e3cf8227573e13b8e1f4e3dc007404881cdafe47
+ms.openlocfilehash: d6ee77fea5c419e00e684e8b1472278f752544b0
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "103189934"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104874190"
 ---
 # <a name="trace-net-applications-with-perfcollect"></a>Трассировка приложений .NET с помощью PerfCollect
 
@@ -225,7 +225,7 @@ export COMPlus_ZapDisable=1
 
 В большинстве случаев вы заинтересованы в своем коде, который `perfcollect` разрешает по умолчанию. Иногда бывает полезно понять, что происходит внутри библиотек DLL .NET (как указано в последнем разделе), но иногда интересно узнать, что происходит в библиотеках собственной среды выполнения (обычно это libcoreclr.so).  `perfcollect` будет разрешать символы при преобразовании данных, но только если символы для этих собственных библиотек DLL присутствуют (и находятся рядом с библиотекой, для которой они предназначены).
 
-Для этого существует глобальная команда [dotnet-symbol](https://github.com/dotnet/symstore/blob/master/src/dotnet-symbol/README.md#symbol-downloader-dotnet-cli-extension). Чтобы использовать dotnet-symbol для получения собственных символов среды выполнения:
+Для этого существует глобальная команда [dotnet-symbol](https://github.com/dotnet/symstore/blob/main/src/dotnet-symbol/README.md#symbol-downloader-dotnet-cli-extension). Чтобы использовать dotnet-symbol для получения собственных символов среды выполнения:
 
 1. Установите `dotnet-symbol`:
 

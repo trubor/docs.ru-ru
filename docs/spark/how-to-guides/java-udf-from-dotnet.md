@@ -6,12 +6,12 @@ author: Niharikadutta
 ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
-ms.openlocfilehash: 17f0ff611e68a5dab2032f78ef75912f314d88a5
-ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
+ms.openlocfilehash: f85ed5585c8daef0ca9a21275b8de71b2eead360
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94688271"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104875490"
 ---
 # <a name="call-a-java-udf-from-your-net-for-apache-spark-application"></a>Вызов определяемой пользователем функции Java из приложения .NET для Apache Spark
 
@@ -45,7 +45,7 @@ ms.locfileid: "94688271"
 ## <a name="register-and-call-java-udfs-in-net-for-apache-spark"></a>Регистрация и вызов определяемых пользователем функций Java в .NET для Apache Spark
 
 1. Используйте API [`RegisterJava`](https://github.com/dotnet/spark/blob/8dcdcdc7c60d5f42cba5a90f1346d854ab5bf7bb/src/csharp/Microsoft.Spark/Sql/UDFRegistration.cs#L424), чтобы зарегистрировать определяемую пользователем функцию Java с помощью Spark SQL.
-2. Зарегистрируйте `DataFrame`, для которой необходимо вызвать определяемую пользователем функцию в виде таблицы SQL с помощью функции [`CreateOrReplaceTempView`](https://github.com/dotnet/spark/blob/master/src/csharp/Microsoft.Spark/Sql/DataFrame.cs#L982).
+2. Зарегистрируйте `DataFrame`, для которой необходимо вызвать определяемую пользователем функцию в виде таблицы SQL с помощью функции [`CreateOrReplaceTempView`](https://github.com/dotnet/spark/blob/main/src/csharp/Microsoft.Spark/Sql/DataFrame.cs#L982).
 3. Используйте `SparkSession.Sql` для вызова определяемой пользователем функции в табличном представлении с помощью Spark SQL.
 Базовый пример, иллюстрирующий описанные выше шаги.
 

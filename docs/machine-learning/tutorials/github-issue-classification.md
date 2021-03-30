@@ -4,12 +4,12 @@ description: Узнайте, как использовать ML.NET для сц�
 ms.date: 06/30/2020
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0516
-ms.openlocfilehash: fa00306e80046097c1269533d3a3ca1e85f10288
-ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
+ms.openlocfilehash: dfc007f72fcd67f31139bc7fcbad93dde39d88fb
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90679499"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104875633"
 ---
 # <a name="tutorial-categorize-support-issues-using-multiclass-classification-with-mlnet"></a>Учебник. Классификация заявок на поддержку с использованием мультиклассовой классификации с помощью ML.NET
 
@@ -25,13 +25,13 @@ ms.locfileid: "90679499"
 > * Прогнозирование с помощью обученной модели
 > * Развертывание и прогнозирование с помощью загруженной модели
 
-Исходный код для этого руководства можно найти в репозитории [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/GitHubIssueClassification).
+Исходный код для этого руководства можно найти в репозитории [dotnet/samples](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/GitHubIssueClassification).
 
 ## <a name="prerequisites"></a>Предварительные требования
 
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) или более поздняя версия либо Visual Studio 2017 версии 15.6 или более поздняя версия с установленной рабочей нагрузкой "Кроссплатформенная разработка .NET Core".
-* [Файл задач GitHub с разделением знаками табуляции (issues_train.tsv)](https://raw.githubusercontent.com/dotnet/samples/master/machine-learning/tutorials/GitHubIssueClassification/Data/issues_train.tsv).
-* [Файл с тестовыми данными задач GitHub с разделением знаками табуляции (issues_test.tsv)](https://raw.githubusercontent.com/dotnet/samples/master/machine-learning/tutorials/GitHubIssueClassification/Data/issues_test.tsv).
+* [Файл задач GitHub с разделением знаками табуляции (issues_train.tsv)](https://raw.githubusercontent.com/dotnet/samples/main/machine-learning/tutorials/GitHubIssueClassification/Data/issues_train.tsv).
+* [Файл с тестовыми данными задач GitHub с разделением знаками табуляции (issues_test.tsv)](https://raw.githubusercontent.com/dotnet/samples/main/machine-learning/tutorials/GitHubIssueClassification/Data/issues_test.tsv).
 
 ## <a name="create-a-console-application"></a>Создание консольного приложения
 
@@ -55,7 +55,7 @@ ms.locfileid: "90679499"
 
 ### <a name="prepare-your-data"></a>подготавливать данные;
 
-1. Скачайте наборы данных [issues_train.tsv](https://raw.githubusercontent.com/dotnet/samples/master/machine-learning/tutorials/GitHubIssueClassification/Data/issues_train.tsv) и [issues_test.tsv](https://raw.githubusercontent.com/dotnet/samples/master/machine-learning/tutorials/GitHubIssueClassification/Data/issues_test.tsv) и сохраните их в ранее созданную папку *Data*. Первый из этих наборов данных обучает модель машинного обучения, а второй позволяет оценить точность полученной модели.
+1. Скачайте наборы данных [issues_train.tsv](https://raw.githubusercontent.com/dotnet/samples/main/machine-learning/tutorials/GitHubIssueClassification/Data/issues_train.tsv) и [issues_test.tsv](https://raw.githubusercontent.com/dotnet/samples/main/machine-learning/tutorials/GitHubIssueClassification/Data/issues_test.tsv) и сохраните их в ранее созданную папку *Data*. Первый из этих наборов данных обучает модель машинного обучения, а второй позволяет оценить точность полученной модели.
 
 2. В обозревателе решений щелкните правой кнопкой мыши каждый из файлов \*.tsv и выберите **Свойства**. В разделе **Дополнительно** для параметра **Копировать в выходной каталог** установите значение **Копировать более позднюю версию**.
 
@@ -373,7 +373,7 @@ private static void PredictIssue()
 =============== Single Prediction - Result: area-System.Data ===============
 ```
 
-Поздравляем! Вы успешно создали модель машинного обучения для классификации и прогнозирования метки области у задачи GitHub. Исходный код для этого руководства можно найти в репозитории [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/GitHubIssueClassification).
+Поздравляем! Вы успешно создали модель машинного обучения для классификации и прогнозирования метки области у задачи GitHub. Исходный код для этого руководства можно найти в репозитории [dotnet/samples](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/GitHubIssueClassification).
 
 ## <a name="next-steps"></a>Следующие шаги
 

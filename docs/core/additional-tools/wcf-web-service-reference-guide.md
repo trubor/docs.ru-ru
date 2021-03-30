@@ -4,12 +4,12 @@ description: Обзор инструмента Microsoft WCF Web Service Referen
 author: dasetser
 ms.date: 10/29/2019
 ms.custom: mvc
-ms.openlocfilehash: 1f7b1831a956553dbef26f58f4f257c2f3914ede
-ms.sourcegitcommit: 48466b8fb7332ececff5dc388f19f6b3ff503dd4
+ms.openlocfilehash: fcb7695c904e80d3fcb5ea68cba7ea198b3905f3
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400608"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104872981"
 ---
 # <a name="use-the-wcf-web-service-reference-provider-tool"></a>Использование инструмента WCF Web Service Reference Provider
 
@@ -31,15 +31,15 @@ ms.locfileid: "93400608"
 > - **Visual C#**  >  **.NET Standard**
 > - **Visual C#**  > **Web** > **Веб-приложение ASP.NET Core**
 
-Эта статья, где в качестве примера используется шаблон проекта **Веб-приложение ASP.NET Core** , описывает добавление ссылки на службу WCF в проект:
+Эта статья, где в качестве примера используется шаблон проекта **Веб-приложение ASP.NET Core**, описывает добавление ссылки на службу WCF в проект:
 
 1. В обозревателе решений дважды щелкните узел **Подключенные службы** проекта (для проекта .NET Core или .NET Standard этот параметр отображается, если щелкнуть правой кнопкой мыши узел **Зависимости** проекта в обозревателе решений).
 
-    Отображается страница **Подключенные службы** , как показано на следующем рисунке:
+    Отображается страница **Подключенные службы**, как показано на следующем рисунке:
 
     ![Вкладка подключенных служб в Visual Studio для .NET Core](./media/wcf-web-service-reference-guide/wcfcs-ConnectedServicesPage.png)
 
-2. На странице **Подключенные службы** выберите **Microsoft WCF Web Service Reference Provider**. Открывается мастер **Настройка ссылки на веб-службу WCF** :
+2. На странице **Подключенные службы** выберите **Microsoft WCF Web Service Reference Provider**. Открывается мастер **Настройка ссылки на веб-службу WCF**:
 
     ![Вкладка конечных точек служб в Visual Studio для .NET Core](./media/wcf-web-service-reference-guide/wcfcs-ServiceEndpointPage.png)
 
@@ -53,7 +53,7 @@ ms.locfileid: "93400608"
 
     3\.2. Выберите службу в списке результатов поиска в поле **Службы**. При необходимости введите пространство имен для сформированного кода в соответствующем текстовом поле **Пространство имен**.
 
-    3\.3. Нажмите кнопку **Далее** , чтобы открыть страницы **Параметры типа данных** и **Параметры клиента**. Можно также нажать кнопку **Готово** , чтобы использовать параметры по умолчанию.
+    3\.3. Нажмите кнопку **Далее**, чтобы открыть страницы **Параметры типа данных** и **Параметры клиента**. Можно также нажать кнопку **Готово**, чтобы использовать параметры по умолчанию.
 
 4. Форма **Параметры типа данных** позволяет уточнить созданные параметры конфигурации для ссылок на службу:
 
@@ -80,7 +80,7 @@ ms.locfileid: "93400608"
 
 - [Начало работы с приложениями Windows Communication Foundation](../../framework/wcf/getting-started-tutorial.md)
 - [Службы Windows Communication Foundation и службы данных WCF в Visual Studio](/visualstudio/data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio)
-- [Поддерживаемые функции WCF в .NET Core](https://github.com/dotnet/wcf/blob/master/release-notes/SupportedFeatures-v2.1.0.md)
+- [Поддерживаемые функции WCF в .NET Core](https://github.com/dotnet/wcf/blob/main/release-notes/SupportedFeatures-v2.1.0.md)
 
 ## <a name="feedback--questions"></a>Отзывы и вопросы
 
@@ -88,4 +88,4 @@ ms.locfileid: "93400608"
 
 ## <a name="release-notes"></a>Заметки о выпуске
 
-- Актуальные сведения о выпуске, включая описание известных проблем, см. в [заметках о выпуске](https://github.com/dotnet/wcf/blob/master/release-notes/WCF-Web-Service-Reference-notes.md).
+- Актуальные сведения о выпуске, включая описание известных проблем, см. в [заметках о выпуске](https://github.com/dotnet/wcf/blob/main/release-notes/WCF-Web-Service-Reference-notes.md).

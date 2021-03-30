@@ -4,12 +4,12 @@ description: Узнайте, как отправить задание .NET дл�
 ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
-ms.openlocfilehash: 4d37383ccb3c9b311e0fbd0ada195ac20113e505
-ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
+ms.openlocfilehash: 39be961ad67da3f8593cb98e1bad8df354f28893
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94688206"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104875581"
 ---
 # <a name="submit-a-net-for-apache-spark-job-to-databricks"></a>Отправка задания .NET для Apache Spark в Databricks
 
@@ -71,7 +71,7 @@ ms.locfileid: "94688206"
     databricks fs cp <assembly>.dll dbfs:/apps/dependencies
     ```
 
-    Раскомментируйте и измените раздел зависимостей приложения в файле [db-init.sh](https://github.com/dotnet/spark/blob/master/deployment/db-init.sh), указав путь к зависимостям приложения. После этого отправьте обновленный файл *db-init.sh* в кластер:
+    Раскомментируйте и измените раздел зависимостей приложения в файле [db-init.sh](https://github.com/dotnet/spark/blob/main/deployment/db-init.sh), указав путь к зависимостям приложения. После этого отправьте обновленный файл *db-init.sh* в кластер:
 
     ```console
     cd <path-to-db-init-and-install-worker>

@@ -4,12 +4,12 @@ description: Узнайте подробнее о .NET, бесплатной п�
 author: tdykstra
 ms.date: 11/16/2020
 ms.custom: updateeachrelease
-ms.openlocfilehash: 7997346c9b248962b36688592d357247ec0ce6aa
-ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
+ms.openlocfilehash: 78713ee08fadd7a947ee26997b8abe6373ab98d8
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102105093"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104875139"
 ---
 # <a name="introduction-to-net"></a>Введение в .NET
 
@@ -54,13 +54,13 @@ ms.locfileid: "102105093"
 
 .NET позволяет использовать специальные возможности платформы, такие как API операционной системы. Примерами являются Windows Forms и WPF в Windows и собственные привязки к каждой мобильной платформе из Xamarin.
 
-Дополнительные сведения см. в разделах [Поддерживаемая политика жизненного цикла ОС](https://github.com/dotnet/core/blob/master/os-lifecycle-policy.md) и [Каталог .NET RID](rid-catalog.md).
+Дополнительные сведения см. в разделах [Поддерживаемая политика жизненного цикла ОС](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md) и [Каталог .NET RID](rid-catalog.md).
 
 ## <a name="open-source"></a>Открытый исходный код
 
-Платформа .NET имеет открытый код и распространяется по [лицензиям MIT и Apache 2](https://github.com/dotnet/runtime/blob/master/LICENSE.TXT). .NET — это проект [.NET Foundation](https://dotnetfoundation.org/).
+Платформа .NET имеет открытый код и распространяется по [лицензиям MIT и Apache 2](https://github.com/dotnet/runtime/blob/main/LICENSE.TXT). .NET — это проект [.NET Foundation](https://dotnetfoundation.org/).
 
-Дополнительные сведения см. в [списке репозиториев проекта на сайте GitHub.com](https://github.com/dotnet/core/blob/master/Documentation/core-repos.md).
+Дополнительные сведения см. в [списке репозиториев проекта на сайте GitHub.com](https://github.com/dotnet/core/blob/main/Documentation/core-repos.md).
 
 ## <a name="support"></a>Поддержка
 
@@ -283,7 +283,7 @@ GC — это одна из служб CLR, которая помогает о�
 * Служебные типы [сериализации](../standard/serialization/index.md), такие как <xref:System.Text.Json.JsonSerializer?displayProperty=nameWithType> и <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>.
 * Высокопроизводительные типы, такие как <xref:System.Span%601?displayProperty=nameWithType>, <xref:System.Numerics.Vector?displayProperty=nameWithType> и [Pipelines](../standard/io/pipelines.md).
 
-Подробнее см. в статье [Общие сведения о библиотеках среды выполнения](../standard/runtime-libraries-overview.md). Исходный код для библиотек находится в [репозитории GitHub dotnet/runtime](https://github.com/dotnet/runtime/tree/master/src/libraries).
+Подробнее см. в статье [Общие сведения о библиотеках среды выполнения](../standard/runtime-libraries-overview.md). Исходный код для библиотек находится в [репозитории GitHub dotnet/runtime](https://github.com/dotnet/runtime/tree/main/src/libraries).
 
 ### <a name="extensions-to-the-runtime-libraries"></a>Расширения библиотек среды выполнения
 

@@ -2,12 +2,12 @@
 title: Подписка на события
 description: Архитектура микрослужб .NET для контейнерных приложений .NET | Общие сведения о публикации событий интеграции и подписке на них.
 ms.date: 01/13/2021
-ms.openlocfilehash: c9146ddbdfbf00e743108c07af1f74d7690a17a8
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: d7b68f5c01c21564724e3a00a048a9fa58bb4fb6
+ms.sourcegitcommit: 05d0087dfca85aac9ca2960f86c5efd218bf833f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98188729"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105637377"
 ---
 # <a name="subscribing-to-events"></a>Подписка на события
 
@@ -201,9 +201,7 @@ public async Task<IActionResult> UpdateProduct([FromBody]CatalogItem productToUp
            _catalogContext.CatalogItems.Update(catalogItem);
            await _catalogContext.SaveChangesAsync();
 
-           // Save to EventLog only if product price changed
-           if(raiseProductPriceChangedEvent)
-               await _integrationEventLogService.SaveEventAsync(priceChangedEvent);
+           await _integrationEventLogService.SaveEventAsync(priceChangedEvent);
 
            transaction.Commit();
         }

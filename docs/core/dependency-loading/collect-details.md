@@ -4,12 +4,12 @@ description: Узнайте, как выполнить сбор сведений
 author: elinor-fung
 ms.author: elfung
 ms.date: 11/17/2020
-ms.openlocfilehash: b121982995b440ade6d72190f44f9b9d237c8af6
-ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
+ms.openlocfilehash: 505fc827021fe4d34675b2ef5a7fc5746ada1af6
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99506504"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104872942"
 ---
 # <a name="collect-detailed-assembly-loading-information"></a>Сбор подробных сведений о загрузке сборок
 
@@ -36,7 +36,7 @@ dotnet-trace collect --providers Microsoft-Windows-DotNETRuntime:4 --process-id 
 
 ## <a name="example-on-windows"></a>Пример (в Windows)
 
-Здесь используется [пример точек расширения загрузки сборок](https://github.com/dotnet/samples/tree/master/core/extensions/AssemblyLoading). Приложение пытается загрузить сборку `MyLibrary`, на которую не ссылается приложение и которая поэтому требует обработки в точке расширения загрузки сборок для успешной загрузки.
+Здесь используется [пример точек расширения загрузки сборок](https://docs.microsoft.com/samples/dotnet/samples/assembly-loading-extension-points/). Приложение пытается загрузить сборку `MyLibrary`, на которую не ссылается приложение и которая поэтому требует обработки в точке расширения загрузки сборок для успешной загрузки.
 
 ### <a name="collect-the-trace"></a>Сбор трассировки
 

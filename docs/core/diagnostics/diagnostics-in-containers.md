@@ -2,12 +2,12 @@
 title: Сбор диагностики в контейнерах
 description: Из этой статьи вы узнаете, как использовать средства диагностики .NET Core в контейнерах Docker.
 ms.date: 09/01/2020
-ms.openlocfilehash: cf4bbdf75e943f093a2202f91303a2eea7125487
-ms.sourcegitcommit: 5114e7847e0ff8ddb8c266802d47af78567949cf
+ms.openlocfilehash: 1d0c9eadca348dad5c4fc0a395c8b371e3821262
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94916213"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104872760"
 ---
 # <a name="collect-diagnostics-in-containers"></a>Сбор диагностики в контейнерах
 
@@ -68,7 +68,7 @@ COPY --from=build /tools .
 
 **Область применения: ✔** ️ .NET Core 2.1 и более поздних версий
 
-Как альтернативу `dotnet-dump` можно использовать [`createdump`](https://github.com/dotnet/runtime/blob/master/docs/design/coreclr/botr/xplat-minidump-generation.md) для создания основных дампов в Linux, содержащих как нативные, так и управляемые данные. Средство `createdump` устанавливается вместе со средой выполнения .NET Core. Его можно найти рядом с libcoreclr.so (обычно в папке /usr/share/dotnet/shared/Microsoft.NETCore.App/[версия]). Это средство работает в контейнере так же, как и в неконтейнерных средах Linux. Но есть одно исключение: для работы средства требуется [возможность `SYS_PTRACE`](https://man7.org/linux/man-pages/man7/capabilities.7.html). Поэтому контейнер Docker нужно [запускать с этой возможностью](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities).
+Как альтернативу `dotnet-dump` можно использовать [`createdump`](https://github.com/dotnet/runtime/blob/main/docs/design/coreclr/botr/xplat-minidump-generation.md) для создания основных дампов в Linux, содержащих как нативные, так и управляемые данные. Средство `createdump` устанавливается вместе со средой выполнения .NET Core. Его можно найти рядом с libcoreclr.so (обычно в папке /usr/share/dotnet/shared/Microsoft.NETCore.App/[версия]). Это средство работает в контейнере так же, как и в неконтейнерных средах Linux. Но есть одно исключение: для работы средства требуется [возможность `SYS_PTRACE`](https://man7.org/linux/man-pages/man7/capabilities.7.html). Поэтому контейнер Docker нужно [запускать с этой возможностью](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities).
 
 ### <a name="using-createdump-in-a-sidecar-container"></a>Использование `createdump` в контейнере расширения
 

@@ -4,12 +4,12 @@ description: В этом разделе описывается установк�
 author: adegeo
 ms.author: adegeo
 ms.date: 01/06/2021
-ms.openlocfilehash: 414246e472c3d58a6768311bd7a4635100f3b618
-ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
+ms.openlocfilehash: 6840814627be0124d7b3855f08a433eab76eac4a
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102105184"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104873917"
 ---
 # <a name="install-the-net-sdk-or-the-net-runtime-manually"></a>Установка пакета SDK для .NET или среды выполнения .NET вручную
 
@@ -45,7 +45,7 @@ ms.locfileid: "102105184"
 - [SLES](linux-sles.md#dependencies)
 - [Ubuntu](linux-ubuntu.md#dependencies)
 
-Общие сведения о зависимостях см. в статье об [автономных приложениях Linux](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md).
+Общие сведения о зависимостях см. в статье об [автономных приложениях Linux](https://github.com/dotnet/core/blob/main/Documentation/self-contained-linux-apps.md).
 
 ### <a name="rpm-dependencies"></a>Зависимости RPM
 

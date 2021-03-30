@@ -3,12 +3,12 @@ title: Создание клиента REST с использованием .NET
 description: В этом руководстве описаны некоторые возможности .NET Core и языка C#.
 ms.date: 01/09/2020
 ms.assetid: 51033ce2-7a53-4cdd-966d-9da15c8204d2
-ms.openlocfilehash: a8490efbc954ca585a2a0fa9d571191095a4b24c
-ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
+ms.openlocfilehash: 4d36cdafd232de9bbd0fac12e894f905b4808419
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98024981"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104876153"
 ---
 # <a name="rest-client"></a>Клиент REST
 
@@ -25,7 +25,7 @@ ms.locfileid: "98024981"
 
 В этом руководстве описано множество функций. Попробуем собрать их по одному.
 
-Если вы хотите работать с [готовым примером кода](https://github.com/dotnet/samples/tree/master/csharp/getting-started/console-webapiclient) для этой статьи, можете скачать его. Инструкции по загрузке см. в разделе [Просмотр и скачивание примеров](../../samples-and-tutorials/index.md#view-and-download-samples).
+Если вы хотите работать с [готовым примером кода](https://github.com/dotnet/samples/tree/main/csharp/getting-started/console-webapiclient) для этой статьи, можете скачать его. Инструкции по загрузке см. в разделе [Просмотр и скачивание примеров](../../samples-and-tutorials/index.md#view-and-download-samples).
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -304,7 +304,7 @@ public DateTime LastPush => LastPushUtc.ToLocalTime();
 Console.WriteLine(repo.LastPush);
 ```
 
-Теперь версия вашего приложения должна совпадать с [полной версией примера](https://github.com/dotnet/samples/tree/master/csharp/getting-started/console-webapiclient).
+Теперь версия вашего приложения должна совпадать с [полной версией примера](https://github.com/dotnet/samples/tree/main/csharp/getting-started/console-webapiclient).
 
 ## <a name="conclusion"></a>Заключение
 

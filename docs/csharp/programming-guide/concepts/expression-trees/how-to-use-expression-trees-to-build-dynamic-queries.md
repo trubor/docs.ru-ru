@@ -3,12 +3,12 @@ title: Выполнение запросов на основе состояни�
 description: Описание различных методов, которые код может использовать для динамического запроса в зависимости от состояния среды выполнения, путем изменения либо вызовов методов LINQ, либо деревьев выражений, переданных в эти методы.
 ms.date: 02/11/2021
 ms.assetid: 52cd44dd-a3ec-441e-b93a-4eca388119c7
-ms.openlocfilehash: 5e015bbc69b61b783abd7eba9cfcf13c29d5c3be
-ms.sourcegitcommit: f0fc5db7bcbf212e46933e9cf2d555bb82666141
+ms.openlocfilehash: 1a3bbe8c9ba6752c541d69502b7c4ac020fd9708
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100581946"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104876725"
 ---
 # <a name="querying-based-on-runtime-state-c"></a>Выполнение запросов на основе состояния среды выполнения (C#)
 
@@ -48,7 +48,7 @@ ms.locfileid: "100581946"
 
 ## <a name="call-additional-linq-methods"></a>Вызов дополнительных методов LINQ
 
-Как правило, [встроенные методы LINQ](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Linq.Queryable/src/System/Linq/Queryable.cs) в <xref:System.Linq.Queryable> выполняют два действия:
+Как правило, [встроенные методы LINQ](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Linq.Queryable/src/System/Linq/Queryable.cs) в <xref:System.Linq.Queryable> выполняют два действия:
 
 * Заключение текущего дерево выражения в оболочку в <xref:System.Linq.Expressions.MethodCallExpression>, который представляет вызов метода.
 * Передача инкапсулированного дерева выражения в поставщик, чтобы вернуть значение через метод <xref:System.Linq.IQueryProvider.Execute%2A?displayProperty=nameWithType> поставщика, либо чтобы вернуть объект переведенного запроса с помощью метода <xref:System.Linq.IQueryProvider.CreateQuery%2A?displayProperty=nameWithType>.

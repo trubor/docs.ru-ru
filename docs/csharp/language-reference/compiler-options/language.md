@@ -10,12 +10,12 @@ helpviewer_keywords:
 - DefineConstants compiler option [C#]
 - LangVersion compiler option [C#]
 - Nullable compiler option [C#]
-ms.openlocfilehash: 7d1d00a52bd2ca1608d4059d7d217e763defa7b9
-ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
+ms.openlocfilehash: fe3b7b8c06aa86e406757feb7635a5e9ca1032e9
+ms.sourcegitcommit: 05d0087dfca85aac9ca2960f86c5efd218bf833f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103482479"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105637030"
 ---
 # <a name="c-compiler-options-for-language-feature-rules"></a>Параметры компилятора C# для правил языковых функций
 
@@ -55,7 +55,7 @@ ms.locfileid: "103482479"
 <DefineConstants>name;name2</DefineConstants>
 ```
 
-Этот параметр задает имена одного или нескольких символов, которые необходимо определить. Параметр **DefineConstants** действует так же, как директива препроцессора [#define](../preprocessor-directives/preprocessor-define.md), но применяется ко всем файлам проекта. Символ остается определенным в файле исходного кода до тех пор, пока определение не будет отменено с помощью директивы [#undef](../preprocessor-directives/preprocessor-undef.md) в файле исходного кода. При использовании параметра `-define` директива `#undef` в одном файле не действует для других файлов исходного кода в проекте. Вы можете использовать символы, созданные этим параметром, с директивами [#if](../preprocessor-directives/preprocessor-if.md), [#else](../preprocessor-directives/preprocessor-else.md), [#elif](../preprocessor-directives/preprocessor-elif.md) и [#endif](../preprocessor-directives/preprocessor-endif.md) для условной компиляции исходных файлов. Компилятор C# сам по себе не определяет символы и макросы, которые можно использовать в исходном коде. Все такие определения задаются пользователем.
+Этот параметр задает имена одного или нескольких символов, которые необходимо определить. Параметр **DefineConstants** действует так же, как директива препроцессора [#define](../preprocessor-directives.md#defining-symbols), но применяется ко всем файлам проекта. Символ остается определенным в файле исходного кода до тех пор, пока определение не будет отменено с помощью директивы [#undef](../preprocessor-directives.md#defining-symbols) в файле исходного кода. При использовании параметра `-define` директива `#undef` в одном файле не действует для других файлов исходного кода в проекте. Вы можете использовать символы, созданные этим параметром, с директивами [#if](../preprocessor-directives.md#conditional-compilation), [#else](../preprocessor-directives.md), [#elif](../preprocessor-directives.md#conditional-compilation) и [#endif](../preprocessor-directives.md#conditional-compilation) для условной компиляции исходных файлов. Компилятор C# сам по себе не определяет символы и макросы, которые можно использовать в исходном коде. Все такие определения задаются пользователем.
 
 > [!NOTE]
 > Директива C# `#define` не поддерживает присваивание значения символу, как, например, в языке C++. Например, с помощью директивы `#define` нельзя создать макрос или определить константу. Чтобы определить константу, используйте переменную `enum`. Для создания макросов в стиле C++ необходимо использовать альтернативные способы, например универсальные шаблоны. Поскольку макросы по своей природе подвержены ошибкам, в C# они запрещены, однако вместо них предлагаются более безопасные альтернативы.
@@ -152,4 +152,4 @@ ms.locfileid: "103482479"
 > 1. Имя файла следует начинать с *TemporaryGeneratedFile_*
 > 1. В конце имени файла следует указать *.designer.cs*, *.generated.cs*, *.g.cs* или *.g.i.cs*.
 >
-> Генераторы могут явно использовать директиву препроцессора [`#nullable`](../preprocessor-directives/preprocessor-nullable.md).
+> Генераторы могут явно использовать директиву препроцессора [`#nullable`](../preprocessor-directives.md#nullable-context).

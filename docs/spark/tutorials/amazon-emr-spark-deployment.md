@@ -4,12 +4,12 @@ description: Узнайте, как развернуть приложение .N
 ms.date: 10/09/2020
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: dd1cfdf12266b55d9dbc0210479b89ba68c59a38
-ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
+ms.openlocfilehash: a0904b5b692e1c32ba12a685f2c3a3f7d86c2c58
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94688076"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104874060"
 ---
 # <a name="deploy-a-net-for-apache-spark-application-to-amazon-emr-spark"></a>Развертывание приложения .NET для Apache Spark в Amazon EMR Spark
 
@@ -32,7 +32,7 @@ ms.locfileid: "94688076"
 Прежде чем начать, сделайте следующее:
 
 * Скачайте [интерфейс командной строки AWS](https://aws.amazon.com/cli/).
-* Скачайте файл [install-worker.sh](https://github.com/dotnet/spark/blob/master/deployment/install-worker.sh) на локальный компьютер. Это вспомогательный скрипт, который будет использоваться позже для копирования зависимых файлов .NET для Apache Spark в рабочие узлы кластера Spark.
+* Скачайте файл [install-worker.sh](https://github.com/dotnet/spark/blob/main/deployment/install-worker.sh) на локальный компьютер. Это вспомогательный скрипт, который будет использоваться позже для копирования зависимых файлов .NET для Apache Spark в рабочие узлы кластера Spark.
 
 ## <a name="prepare-worker-dependencies"></a>Подготовка зависимостей рабочей роли
 
@@ -42,7 +42,7 @@ ms.locfileid: "94688076"
 
    Например, чтобы использовать `.NET for Apache Spark v1.0.0` с `netcoreapp3.1`, скачайте выпуск [Microsoft.Spark.Worker.netcoreapp3.1.linux-x64-1.0.0.tar.gz](https://github.com/dotnet/spark/releases/download/v1.0.0/Microsoft.Spark.Worker.netcoreapp3.1.linux-x64-1.0.0.tar.gz).
 
-2. Передайте файлы `Microsoft.Spark.Worker.<release>.tar.gz` и [install-worker.sh](https://github.com/dotnet/spark/blob/master/deployment/install-worker.sh) в распределенную файловую систему (например, S3), к которой есть доступ у кластера.
+2. Передайте файлы `Microsoft.Spark.Worker.<release>.tar.gz` и [install-worker.sh](https://github.com/dotnet/spark/blob/main/deployment/install-worker.sh) в распределенную файловую систему (например, S3), к которой есть доступ у кластера.
 
 ## <a name="prepare-your-net-for-apache-spark-app"></a>Подготовка приложения .NET для Apache Spark
 
@@ -135,4 +135,4 @@ aws emr add-steps \
 В этом руководстве вы развернули приложение .NET для Apache Spark в Amazon EMR Spark. Примеры проектов .NET для Apache Spark можно найти в GitHub.
 
 > [!div class="nextstepaction"]
-> [Примеры .NET для Apache Spark](https://github.com/dotnet/spark/tree/master/examples)
+> [Примеры .NET для Apache Spark](https://github.com/dotnet/spark/tree/main/examples)

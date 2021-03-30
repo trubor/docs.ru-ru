@@ -3,12 +3,12 @@ title: Отладка взаимоблокировки в .NET Core
 description: Руководство по отладке проблемы блокировки в .NET Core.
 ms.topic: tutorial
 ms.date: 07/20/2020
-ms.openlocfilehash: 0f5862c9acc4c1ae892caf29cea2ca484116cabf
-ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
+ms.openlocfilehash: a268884740ff38d7975303a5a5e5f2c24f16778d
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102105588"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104874279"
 ---
 # <a name="debug-a-deadlock-in-net-core"></a>Отладка взаимоблокировки в .NET Core
 
@@ -267,7 +267,7 @@ OS Thread Id: 0x5634 (28)
 - [dotnet-trace](dotnet-trace.md) для отображения списка процессов
 - [dotnet-counters](dotnet-counters.md) для проверки использования управляемой памяти
 - [dotnet-dump](dotnet-dump.md) для сбора и анализа файла дампа
-- [dotnet/diagnostics](https://github.com/dotnet/diagnostics/tree/master/documentation/tutorial)
+- [dotnet/diagnostics](https://github.com/dotnet/diagnostics/tree/main/documentation/tutorial)
 
 ## <a name="next-steps"></a>Следующие шаги
 

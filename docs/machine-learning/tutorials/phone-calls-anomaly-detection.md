@@ -4,12 +4,12 @@ description: Узнайте, как создать приложение для �
 ms.date: 12/04/2020
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: 7edb84ae53f1da7903cf4b3f77d215206ffbf1ef
-ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
+ms.openlocfilehash: 52ce0a60c91ef7a82f7ef1a0709701302b9e11d9
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102259828"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104874775"
 ---
 # <a name="tutorial-detect-anomalies-in-time-series-with-mlnet"></a>Учебник. Обнаружение аномалий во временном ряду с помощью ML.NET
 
@@ -22,13 +22,13 @@ ms.locfileid: "102259828"
 > * Определение периода для временных рядов
 > * Обнаружение аномалий для периодических временных рядов
 
-Исходный код для этого руководства можно найти в репозитории [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/PhoneCallsAnomalyDetection).
+Исходный код для этого руководства можно найти в репозитории [dotnet/samples](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/PhoneCallsAnomalyDetection).
 
 ## <a name="prerequisites"></a>Предварительные требования
 
 * [Visual Studio 2019 версии 16.7.8 или более поздней](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) с установленной рабочей нагрузкой "Кроссплатформенная разработка .NET Core".
 
-* [Набор данных phone-calls.csv](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/AnomalyDetection_PhoneCalls/SrEntireDetection/Data/phone-calls.csv).
+* [Набор данных phone-calls.csv](https://github.com/dotnet/machinelearning-samples/blob/main/samples/csharp/getting-started/AnomalyDetection_PhoneCalls/SrEntireDetection/Data/phone-calls.csv).
 
 ## <a name="create-a-console-application"></a>Создание консольного приложение
 
@@ -50,7 +50,7 @@ ms.locfileid: "102259828"
 
 1. Скачайте набор данных и сохраните его в ранее созданную папку *Data*:
 
-    Щелкните файл [*phone-sales.csv*](https://raw.githubusercontent.com/dotnet/machinelearning-samples/master/samples/csharp/getting-started/AnomalyDetection_PhoneCalls/SrEntireDetection/Data/phone-calls.csv) правой кнопкой мыши и выберите команду "Сохранить ссылку (объект) как...".
+    Щелкните файл [*phone-sales.csv*](https://raw.githubusercontent.com/dotnet/machinelearning-samples/main/samples/csharp/getting-started/AnomalyDetection_PhoneCalls/SrEntireDetection/Data/phone-calls.csv) правой кнопкой мыши и выберите команду "Сохранить ссылку (объект) как...".
 
      Файл \*.csv нужно сохранить в папке *Data*. Если вы сохранили файл \*.csv в другом месте, переместите его в папку *Data*.
 
@@ -249,7 +249,7 @@ Index   Data    Anomaly AnomalyScore    Mag     ExpectedValue   BoundaryUnit    
 
 Поздравляем! Вы успешно создали модели машинного обучения для обнаружения периодов и аномалий в периодических рядах.
 
-Исходный код для этого руководства можно найти в репозитории [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/PhoneCallsAnomalyDetection).
+Исходный код для этого руководства можно найти в репозитории [dotnet/samples](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/PhoneCallsAnomalyDetection).
 
 В этом руководстве вы узнали, как:
 > [!div class="checklist"]
@@ -262,4 +262,4 @@ Index   Data    Anomaly AnomalyScore    Mag     ExpectedValue   BoundaryUnit    
 
 Ознакомьтесь с примерами машинного обучения в репозитории GitHub, чтобы подробнее изучить расширенный пример с обнаружением аномалий для энергопотребления.
 > [!div class="nextstepaction"]
-> [Репозиторий GitHub dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/AnomalyDetection_PowerMeterReadings)
+> [Репозиторий GitHub dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/getting-started/AnomalyDetection_PowerMeterReadings)

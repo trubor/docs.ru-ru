@@ -2,12 +2,12 @@
 title: Ветви и циклы. Вводное руководство по C#
 description: В рамках этого руководства, посвященного ветвям и циклам, вы создадите пример кода на C#, который демонстрирует возможности языка для организации условного ветвления и циклического выполнения операторов.
 ms.date: 02/05/2021
-ms.openlocfilehash: c609286f0c60432f9df7c1174f6fda699e2d0fbc
-ms.sourcegitcommit: f0fc5db7bcbf212e46933e9cf2d555bb82666141
+ms.openlocfilehash: ae57b370022bfc86200ca20a913d44f64e46d68d
+ms.sourcegitcommit: 5ce37699c2a51ed173171813be68ef7577b1aba5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100626675"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104881124"
 ---
 # <a name="learn-conditional-logic-with-branch-and-loop-statements"></a>Изучение условной логики с операторами ветви и цикла
 
@@ -278,7 +278,7 @@ for (int row = 1; row < 11; row++)
 - оператор `if` предоставляет условие, которое позволяет определить, будет ли число учитываться в сумме;
 - цикл `for` позволяет повторить последовательность шагов для всех чисел от 1 до 20.
 
-Попробуйте самостоятельно. Затем проверьте результат. Вы должны получить ответ "63". Один из возможных ответов можно увидеть в [полном примере кода в GitHub](https://github.com/dotnet/samples/tree/master/csharp/branches-quickstart/Program.cs#L46-L54).
+Попробуйте самостоятельно. Затем проверьте результат. Вы должны получить ответ "63". Один из возможных ответов можно увидеть в [полном примере кода в GitHub](https://github.com/dotnet/samples/blob/main/csharp/branches-quickstart/Program.cs#L87-L95).
 
 Вы ознакомились с руководством по ветвям и циклам.
 

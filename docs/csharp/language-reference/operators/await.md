@@ -8,12 +8,12 @@ helpviewer_keywords:
 - await keyword [C#]
 - await [C#]
 ms.assetid: 50725c24-ac76-4ca7-bca1-dd57642ffedb
-ms.openlocfilehash: 8dc85bfeaab12d17af4a3e045559e268b228f736
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 7b5f4147968ec928a768d973c4a8cd4e2e7ed02e
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90536474"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104875750"
 ---
 # <a name="await-operator-c-reference"></a>Оператор await (справочник по C#)
 
@@ -61,4 +61,4 @@ ms.locfileid: "90536474"
 - [Асинхронное программирование](../../async.md)
 - [Подробный обзор асинхронного программирования](../../../standard/async-in-depth.md)
 - [Пошаговое руководство. Получение доступа к Интернету с помощью async и await](../../programming-guide/concepts/async/index.md)
-- [Учебник. Создание и использование асинхронных потоков с использованием C# 8.0 и .NET Core 3.0](../../tutorials/generate-consume-asynchronous-stream.md)
+- [Учебник. Создание и использование асинхронных потоков с использованием C# 8.0 и .NET Core 3.0](../../whats-new/tutorials/generate-consume-asynchronous-stream.md)

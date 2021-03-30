@@ -2,12 +2,12 @@
 title: Критическое изменение. Изменение поведения PublishDepsFilePath
 description: Сведения о критическом изменении в .NET 5, где свойство MSBuild PublishDepsFilePath пусто для однофайловых приложений.
 ms.date: 09/17/2020
-ms.openlocfilehash: 3a32f733ceaa2a24eb55d5e89f2eb1791c277f0d
-ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
+ms.openlocfilehash: 845073e73ec6bdf820f28ace487d9ae4d04d0790
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102256508"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104872929"
 ---
 # <a name="publishdepsfilepath-behavior-change"></a>Изменение поведения PublishDepsFilePath
 
@@ -27,7 +27,7 @@ ms.locfileid: "102256508"
 
 Это изменение было внесено по нескольким причинам.
 
-- Из-за рефакторинга логики публикации для поддержки [улучшенных однофайловых приложений](https://github.com/dotnet/designs/blob/master/accepted/2020/single-file/design.md) в .NET 5.
+- Из-за рефакторинга логики публикации для поддержки [улучшенных однофайловых приложений](https://github.com/dotnet/designs/blob/main/accepted/2020/single-file/design.md) в .NET 5.
 
 - Для защиты однофайловых приложений от целевых объектов, которые пытаются перезаписать файл *deps.json* уже после его объединения в пакет, без влияния на приложение. Поэтому свойство MSBuild `PublishDepsFilePath` пусто для однофайловых приложений.
 

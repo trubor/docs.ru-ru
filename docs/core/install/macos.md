@@ -4,12 +4,12 @@ description: Сведения о версиях macOS, в которых воз�
 author: adegeo
 ms.author: adegeo
 ms.date: 11/10/2020
-ms.openlocfilehash: fe42a1593d4e8249252d2bd964dbfd52cdcd81a9
-ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
+ms.openlocfilehash: 9961d3e3ddb5f38be1c9c13c01af2e41815f50c9
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102105197"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104875256"
 ---
 # <a name="install-net-on-macos"></a>Установка .NET в macOS
 
@@ -77,11 +77,11 @@ ms.locfileid: "102105197"
 
 | Версия .NET Core | macOS                 | Архитектуры | Дополнительные сведения    |
 | ----------------- | --------------------- | --------------| --- |
-| 5,0               | High Sierra (10.13+)  | X64 | [Дополнительные сведения](https://github.com/dotnet/core/blob/master/release-notes/5.0/5.0-supported-os.md) |
-| 3.1               | High Sierra (10.13+)  | X64 | [Дополнительные сведения](https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1-supported-os.md) |
-| 3.0               | High Sierra (10.13+)  | X64 | [Дополнительные сведения](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md) |
-| 2.2               | Sierra (10.12+)       | X64 | [Дополнительные сведения](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md) |
-| 2.1               | Sierra (10.12+)       | X64 | [Дополнительные сведения](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md) |
+| 5,0               | High Sierra (10.13+)  | X64 | [Дополнительные сведения](https://github.com/dotnet/core/blob/main/release-notes/5.0/5.0-supported-os.md) |
+| 3.1               | High Sierra (10.13+)  | X64 | [Дополнительные сведения](https://github.com/dotnet/core/blob/main/release-notes/3.1/3.1-supported-os.md) |
+| 3.0               | High Sierra (10.13+)  | X64 | [Дополнительные сведения](https://github.com/dotnet/core/blob/main/release-notes/3.0/3.0-supported-os.md) |
+| 2.2               | Sierra (10.12+)       | X64 | [Дополнительные сведения](https://github.com/dotnet/core/blob/main/release-notes/2.2/2.2-supported-os.md) |
+| 2.1               | Sierra (10.12+)       | X64 | [Дополнительные сведения](https://github.com/dotnet/core/blob/main/release-notes/2.1/2.1-supported-os.md) |
 
 Начиная с macOS Catalina (версия 10.15) все программное обеспечение, созданное после 1 июня 2019 года и распространяемое с идентификатором разработчика, должно быть заверено. Это требование относится к среде выполнения .NET, пакету SDK для .NET и программному обеспечению, созданному с помощью .NET.
 
@@ -194,7 +194,7 @@ Visual Studio Code — это эффективный и облегченный 
 
 Корпорация Майкрософт предоставляет образы, которые предназначены для конкретных сценариев. Например [репозиторий ASP.NET Core](https://hub.docker.com/_/microsoft-dotnet-aspnet) содержит образы, которые предназначены для запуска приложений ASP.NET Core в рабочей среде.
 
-Дополнительные сведения об использовании .NET Core в контейнере Docker см. в статьях [Введение в .NET и Docker](../docker/introduction.md) и [Примеры](https://github.com/dotnet/dotnet-docker/blob/master/samples/README.md).
+Дополнительные сведения об использовании .NET Core в контейнере Docker см. в статьях [Введение в .NET и Docker](../docker/introduction.md) и [Примеры](https://github.com/dotnet/dotnet-docker/blob/main/samples/README.md).
 
 ## <a name="next-steps"></a>Следующие шаги
 
@@ -204,9 +204,9 @@ Visual Studio Code — это эффективный и облегченный 
 - [Учебник. Создание приложения с помощью Visual Studio Code](../tutorials/with-visual-studio-code.md).
 - [Учебник. Контейнеризация приложения .NET Core](../docker/build-container.md).
 
-[release-notes-21]: https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md
-[release-notes-31]: https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1-supported-os.md
-[release-notes-50]: https://github.com/dotnet/core/blob/master/release-notes/5.0/5.0-supported-os.md
-[release-notes-20]: https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md
-[release-notes-22]: https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md
-[release-notes-30]: https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md
+[release-notes-21]: https://github.com/dotnet/core/blob/main/release-notes/2.1/2.1-supported-os.md
+[release-notes-31]: https://github.com/dotnet/core/blob/main/release-notes/3.1/3.1-supported-os.md
+[release-notes-50]: https://github.com/dotnet/core/blob/main/release-notes/5.0/5.0-supported-os.md
+[release-notes-20]: https://github.com/dotnet/core/blob/main/release-notes/2.0/2.0-supported-os.md
+[release-notes-22]: https://github.com/dotnet/core/blob/main/release-notes/2.2/2.2-supported-os.md
+[release-notes-30]: https://github.com/dotnet/core/blob/main/release-notes/3.0/3.0-supported-os.md

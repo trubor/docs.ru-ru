@@ -3,12 +3,12 @@ title: Установка средства ML.NET CLI
 description: Узнайте, как установить, обновить, удалить средство ML.NET CLI, или вернутся к его предыдущей версии.
 ms.date: 06/08/2020
 ms.custom: mlnet-tooling
-ms.openlocfilehash: a99ffa30dcbacba3341125fd0e37e617e0f4cd1e
-ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
+ms.openlocfilehash: a2fdaa06c1602a2c3986b2f034cd1840e39d16a3
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102103950"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104876777"
 ---
 # <a name="how-to-install-the-mlnet-command-line-interface-cli-tool"></a>Установка средства ML.NET CLI
 
@@ -108,9 +108,9 @@ dotnet tool update -g mlnet
 
 2. Добавьте соответствующую оболочку совместимости к профилю оболочки. Может потребоваться создать файл профиля оболочки. Скрипт оболочки совместимости перенаправит запрос завершения из оболочки в средство `dotnet-suggest`, которое делегирует его в соответствующее `System.CommandLine`-приложение.
 
-    - Для bash следует добавить содержимое [dotnet-suggest-shim.bash](https://github.com/dotnet/System.CommandLine/blob/master/src/System.CommandLine.Suggest/dotnet-suggest-shim.bash) в `~/.bash_profile`.
+    - Для bash следует добавить содержимое [dotnet-suggest-shim.bash](https://github.com/dotnet/System.CommandLine/blob/main/src/System.CommandLine.Suggest/dotnet-suggest-shim.bash) в `~/.bash_profile`.
 
-    - Для PowerShell следует добавить содержимое [dotnet-suggest-shim.ps1](https://github.com/dotnet/System.CommandLine/blob/master/src/System.CommandLine.Suggest/dotnet-suggest-shim.ps1) в свой профиль PowerShell. Ожидаемый путь к профилю PowerShell можно получить, выполнив следующую команду в консоли:
+    - Для PowerShell следует добавить содержимое [dotnet-suggest-shim.ps1](https://github.com/dotnet/System.CommandLine/blob/main/src/System.CommandLine.Suggest/dotnet-suggest-shim.ps1) в свой профиль PowerShell. Ожидаемый путь к профилю PowerShell можно получить, выполнив следующую команду в консоли:
 
     ```console
     echo $profile

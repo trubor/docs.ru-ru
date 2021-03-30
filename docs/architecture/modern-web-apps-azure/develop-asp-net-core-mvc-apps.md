@@ -7,12 +7,12 @@ ms.date: 12/01/2020
 no-loc:
 - Blazor
 - WebAssembly
-ms.openlocfilehash: c0fc92b2dbc25a1a48e0264b64c79fc8631fa8f0
-ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
+ms.openlocfilehash: 494e73bd32ac6793d355b6828408b61bb09ca880
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97009668"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104873124"
 ---
 # <a name="develop-aspnet-core-mvc-apps"></a>Разработка приложений MVC ASP.NET Core
 
@@ -303,7 +303,7 @@ services.AddMvc(o => o.Conventions.Add(new FeatureConvention()));
 
 Модель MVC ASP.NET Core также использует соглашение для поиска представлений. Вы можете переопределить его с использованием настраиваемого соглашения, чтобы задать поиск представлений в папках компонентов (будет использоваться имя компонента, предоставленное ранее с помощью FeatureConvention). Узнать больше об этом подходе и скачать рабочий пример можно в статье MSDN Magazine, посвященной [срезам компонентов для модели MVC ASP.NET Core](/archive/msdn-magazine/2016/september/asp-net-core-feature-slices-for-asp-net-core-mvc).
 
-### <a name="apis-and-no-locblazor-applications"></a>API и приложения Blazor
+### <a name="apis-and-blazor-applications"></a>API и приложения Blazor
 
 Если приложение включает набор веб-API, которые необходимо защитить, в идеале они должны быть настроены в виде отдельного проекта из представления или приложения Razor Pages. Разделение API, особенно общедоступных API, из веб-приложения на стороне сервера имеет ряд преимуществ. Эти приложения часто будут иметь уникальные характеристики развертывания и загрузки. Кроме того, они, вероятно, применяют различные механизмы безопасности, благодаря приложениям на основе файлов, основанным на файлах cookie, и интерфейсам API, которые, скорее всего, используют проверку подлинности на основе маркеров.
 
@@ -495,7 +495,7 @@ services.AddAuthentication(config =>
 
 Хотя можно настроить несколько различных схем проверки подлинности в рамках одного проекта, гораздо проще настроить одну схему по умолчанию. По этой причине в эталонном приложении eShopOnWeb интерфейсы API разделены по собственным проектам, `PublicApi`отдельным от главного проекта `Web`, который включает представления и приложения Razor Pages.
 
-#### <a name="authentication-in-no-locblazor-apps"></a>Проверка подлинности в приложениях Blazor
+#### <a name="authentication-in-blazor-apps"></a>Проверка подлинности в приложениях Blazor
 
 Приложения Blazor Server могут использовать те же функции проверки подлинности, что и любое другое приложение ASP.NET Core. Однако приложения Blazor WebAssembly не могут использовать встроенные поставщики удостоверений и проверки подлинности, так как они выполняются в браузере. Приложения Blazor WebAssembly могут сохранять состояние проверки подлинности пользователя локально и получать доступ к утверждениям, чтобы определить, какие действия пользователи должны выполнять. Однако все проверки подлинности и авторизации должны выполняться на сервере независимо от логики, реализованной в приложении Blazor WebAssembly, так как пользователи могут без труда обходить приложение и взаимодействовать с API напрямую.
 
@@ -654,7 +654,7 @@ public class Program
 > ### <a name="references--client-communication"></a>Ссылки — взаимодействие с клиентом
 >
 > - **ASP.NET Core SignalR**\
->   <https://github.com/dotnet/aspnetcore/tree/master/src/SignalR>
+>   <https://github.com/dotnet/aspnetcore/tree/main/src/SignalR>
 > - **WebSocket Manager**\
 >   <https://github.com/radu-matei/websocket-manager>
 

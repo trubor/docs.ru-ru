@@ -4,12 +4,12 @@ description: Сведения о .NET для Apache Spark, бесплатной 
 author: mamccrea
 ms.topic: overview
 ms.date: 10/09/2020
-ms.openlocfilehash: 533a4d3b497ad499edcf3accf250477c03f98714
-ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
+ms.openlocfilehash: 1fa3ae16334176f0e3e888087078d5b98de9d869
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94688037"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104873202"
 ---
 # <a name="what-is-net-for-apache-spark"></a>Что такое .NET для Apache Spark?
 
@@ -41,11 +41,11 @@ ms.locfileid: "94688037"
 
 По данным [сравнительного тестирования TPC-H](http://www.tpc.org/tpch/), .NET для Apache Spark в большинстве случаев работает лучше, чем Python и Scala, и вдвое быстрее Python в тех случаях, когда важна производительность определяемой пользователем функции. Постоянно ведется работа по улучшению и тестированию производительности.
 
-Вы можете выполнить собственное сравнительное тестирование, используя предлагаемые тесты из репозитория [.NET для Apache Spark](https://github.com/dotnet/spark/tree/master/benchmark) на сайте GitHub.
+Вы можете выполнить собственное сравнительное тестирование, используя предлагаемые тесты из репозитория [.NET для Apache Spark](https://github.com/dotnet/spark/tree/main/benchmark) на сайте GitHub.
 
 ## <a name="net-for-apache-spark-roadmap"></a>Программа развития .NET для Apache Spark
 
-Узнайте о краткосрочных и долгосрочных планах, которые включены в официальную [программу развития .NET для Apache Spark](https://github.com/dotnet/spark/blob/master/ROADMAP.md).
+Узнайте о краткосрочных и долгосрочных планах, которые включены в официальную [программу развития .NET для Apache Spark](https://github.com/dotnet/spark/blob/main/ROADMAP.md).
 
 ## <a name="net-foundation"></a>.NET Foundation
 
