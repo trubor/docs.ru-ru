@@ -3,12 +3,12 @@ title: Пример миграции Ешоп в ASP.NET Core
 description: Пошаговое руководство по переносу существующего приложения ASP.NET MVC в ASP.NET Core с помощью примера приложения Интернет-магазина в качестве ссылки.
 author: ardalis
 ms.date: 11/13/2020
-ms.openlocfilehash: 498eb3b11c44381ff6d261b37caed15a2698b166
-ms.sourcegitcommit: 46cfed35d79d70e08c313b9c664c7e76babab39e
+ms.openlocfilehash: 119ba64134813fa17848cf9f5fe02cb1a14f8a5d
+ms.sourcegitcommit: b5d2290673e1c91260c9205202dd8b95fbab1a0b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102605260"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106122980"
 ---
 # <a name="example-migration-of-eshop-to-aspnet-core"></a>Пример миграции Ешоп в ASP.NET Core
 
@@ -58,7 +58,7 @@ ms.locfileid: "102605260"
 
 ## <a name="update-project-files-and-nuget-reference-syntax"></a>Обновление файлов проекта и синтаксиса ссылок NuGet
 
-Затем выполните миграцию из старой структуры файлов *. csproj* в более новую, более простую структуру, появившуюся в .NET Core. При этом вы также выполняете миграцию с помощью файла *packages.config* для ссылок NuGet на использование `<PackageReference>` элементов в файле проекта.
+Затем выполните миграцию из старой структуры файлов *. csproj* в более новую, более простую структуру, появившуюся в .NET Core. При этом вы также выполняете миграцию с помощью файла *packages.config* для ссылок NuGet на использование `<PackageReference>` элементов в файле проекта. Файлы проектов в старом стиле также могут использовать `<PackageReference>` элементы, поэтому обычно имеет смысл сначала перенести все ссылки на пакеты NuGet в этот формат, прежде чем выполнять обновление до нового формата файла проекта.
 
 Файл *ешоплегацимвк. csproj* исходного проекта имеет длину 418 строк. Пример файла проекта показан на рис. 4-6. Чтобы получить представление об общем размере и сложности, в правой части изображения содержится миниатюра всего файла.
 
@@ -74,7 +74,7 @@ ms.locfileid: "102605260"
 
 **Рис. 4-7**. Файл *packages.config* .
 
-После обновления до нового файла *. csproj* можно выполнить миграцию *packages.config* в проектах библиотеки классов с помощью Visual Studio. Однако эта функциональность не работает с проектами ASP.NET. Дополнительные [сведения о миграции *packages.config* в `<PackageReference>` Visual Studio](/nuget/consume-packages/migrate-packages-config-to-package-reference). При наличии большого количества проектов для миграции [это средство сообщества может помочь](https://github.com/MarkKharitonov/NuGetPCToPRMigrator).
+*packages.config* можно перенести в проекты библиотеки классов с помощью Visual Studio. Однако эта функциональность не работает с проектами ASP.NET. Дополнительные [сведения о миграции *packages.config* в `<PackageReference>` Visual Studio](/nuget/consume-packages/migrate-packages-config-to-package-reference). При наличии большого количества проектов для миграции [это средство сообщества может помочь](https://github.com/MarkKharitonov/NuGetPCToPRMigrator). Если вы используете средство для переноса файла проекта в новый формат, это следует сделать после завершения переноса всех ссылок NuGet для использования `<PackageReverence>` .
 
 ## <a name="create-new-aspnet-core-project"></a>Создание нового ASP.NET Core проекта
 
@@ -135,7 +135,7 @@ iwr https://git.io/vdKar -OutFile  Convert-ToPackageReference.xsl
 
 Добавьте версию 2.2.0 `Microsoft.AspNetCore.StaticFiles` пакета NuGet.
 
-В *Startup.CS* добавьте вызов `app.UseStaticFiles()` в `Configure` методе:
+В *Startup. CS* добавьте вызов `app.UseStaticFiles()` в `Configure` методе:
 
 ```csharp
 public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -296,7 +296,7 @@ public ActionResult Create([Bind("Id,Name,Description,Price,PictureFileName,Cata
 <link rel="stylesheet" href="~/Content/Site.css" />
 ```
 
-Чтобы определить порядок, в котором `<link>` должны отображаться элементы, просмотрите код HTML, отображаемый в исходном приложении. Кроме того, проверьте *BundleConfig.CS*, который в образце *ешоп* включает следующий код, указывающий соответствующую последовательность:
+Чтобы определить порядок, в котором `<link>` должны отображаться элементы, просмотрите код HTML, отображаемый в исходном приложении. Кроме того, ознакомьтесь с *бундлеконфиг. CS*, который в образце *ешоп* содержит следующий код, указывающий соответствующую последовательность:
 
 ```csharp
 bundles.Add(new StyleBundle("~/Content/css").Include(
@@ -312,20 +312,13 @@ bundles.Add(new StyleBundle("~/Content/css").Include(
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js" integrity="sha512-O/nUTF5mdFkhEoQHFn9N5wmgYyW323JO6v8kr6ltSRKriZyTr/8417taVWeabVS4iONGk2V444QD0P2cwhuTkg==" crossorigin="anonymous"></script>
 ```
 
-Последнее, что нужно исправить в представлениях, — это ссылка на, `Session` чтобы показать, как долго выполняется приложение и на какой компьютер. Эти данные можно получить в `Startup` виде статических переменных и отобразить переменные на странице макета. Добавьте следующие свойства в *Startup.CS*:
-
-```csharp
-public static DateTime StartTime { get; } = DateTime.UtcNow;
-public static string MachineName { get; } = Environment.MachineName;
-```
-
-Затем замените содержимое нижнего колонтитула в макете следующим кодом:
+Последнее, что нужно исправить в представлениях, — это ссылка на, `Session` чтобы показать, как долго выполняется приложение и на какой компьютер. Эти данные можно отобразить непосредственно в *_layout. cshtml* сайта с помощью `System.Environment.MachineName` и `System.Diagnostics.Process.GetCurrentProcess().StartTime` :
 
 ```razor
 <section class="col-sm-6">
     <img class="esh-app-footer-text hidden-xs" src="~/images/main_footer_text.png" width="335" height="26" alt="footer text image" />
     <br />
-<small>@eShopPorted.Startup.MachineName - @eShopPorted.Startup.StartTime.ToString() UTC</small>
+<small>@Environment.MachineName - @System.Diagnostics.Process.GetCurrentProcess().StartTime.ToString() UTC</small>
 </section>
 ```
 
@@ -333,7 +326,7 @@ public static string MachineName { get; } = Environment.MachineName;
 
 ## <a name="migrate-app-startup-components"></a>Перенос компонентов запуска приложений
 
-Последний шаг миграции заключается в том, чтобы выполнить задачи запуска приложения из *Global. asax* и классов, которые он вызывает, и перенести их в ASP.NET Core эквиваленты. Эти задачи включают в себя настройку модели MVC, настройку внедрения зависимостей и работу с новой системой конфигурации. В ASP.NET Core эти задачи обрабатываются в файле *Startup.CS* .
+Последний шаг миграции заключается в том, чтобы выполнить задачи запуска приложения из *Global. asax* и классов, которые он вызывает, и перенести их в ASP.NET Core эквиваленты. Эти задачи включают в себя настройку модели MVC, настройку внедрения зависимостей и работу с новой системой конфигурации. В ASP.NET Core эти задачи обрабатываются в файле *Startup. CS* .
 
 ### <a name="configure-mvc"></a>Настройка MVC
 
@@ -364,7 +357,7 @@ public static void RegisterGlobalFilters(GlobalFilterCollection filters)
 }
 ```
 
-Единственным атрибутом, добавленным в приложение, является фильтр MVC ASP.NET `HandleErrorAttribute` . Этот фильтр гарантирует, что при возникновении исключения в составе запроса отображаются действие и представление по умолчанию, а не сведения об исключении. В ASP.NET Core эти же функции выполняются по `UseExceptionHandler` промежуточного слоя. Подробные сообщения об ошибках по умолчанию не включены. Они должны быть настроены с использованием по `UseDeveloperExceptionPage` промежуточного слоя. Чтобы настроить такое поведение в соответствии с исходным приложением, в начало `Configure` метода в *Startup.CS* необходимо добавить следующий код:
+Единственным атрибутом, добавленным в приложение, является фильтр MVC ASP.NET `HandleErrorAttribute` . Этот фильтр гарантирует, что при возникновении исключения в составе запроса отображаются действие и представление по умолчанию, а не сведения об исключении. В ASP.NET Core эти же функции выполняются по `UseExceptionHandler` промежуточного слоя. Подробные сообщения об ошибках по умолчанию не включены. Они должны быть настроены с использованием по `UseDeveloperExceptionPage` промежуточного слоя. Чтобы настроить такое поведение в соответствии с исходным приложением, необходимо добавить следующий код в начало `Configure` метода в *Startup. CS*:
 
 ```csharp
 public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -401,7 +394,7 @@ public static void RegisterRoutes(RouteCollection routes)
 
 Переводя этот код в построчную, первая строка настраивает поддержку для маршрутов атрибутов. Эта возможность встроена в ASP.NET Core, поэтому ее не нужно настраивать отдельно. Аналогично, файлы *{Resource}. axd* не используются с ASP.NET Core, поэтому нет необходимости пропускать такие маршруты. `MapRoute`Метод настраивает значение по умолчанию для MVC, в котором используется стандартный `{controller}/{action}/{id}` шаблон маршрута. Он также задает значения по умолчанию для этого шаблона, так что используется `CatalogController` контроллером по умолчанию, а `Index` метод является действием по умолчанию. Большие приложения часто содержат дополнительные вызовы для `MapRoute` настройки дополнительных маршрутов.
 
-ASP.NET Core MVC поддерживает [обычную маршрутизацию и маршрутизацию атрибутов](/aspnet/core/mvc/controllers/routing?preserve-view=true&view=aspnetcore-2.2). Обычная маршрутизация аналогична настройке таблицы маршрутов в `RegisterRoutes` приведенном выше методе. Чтобы настроить стандартную маршрутизацию с использованием маршрута по умолчанию, аналогичного используемому в приложении *ешоп* , добавьте следующий код в нижнюю часть `Configure` метода в *Startup.CS*:
+ASP.NET Core MVC поддерживает [обычную маршрутизацию и маршрутизацию атрибутов](/aspnet/core/mvc/controllers/routing?preserve-view=true&view=aspnetcore-2.2). Обычная маршрутизация аналогична настройке таблицы маршрутов в `RegisterRoutes` приведенном выше методе. Чтобы настроить стандартную маршрутизацию с использованием маршрута по умолчанию, аналогичного используемому в приложении *ешоп* , добавьте следующий код в конец `Configure` метода в *Startup. CS*:
 
 ```csharp
 app.UseMvc(routes =>
@@ -447,7 +440,7 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-Приведенный выше код является минимальной конфигурацией, необходимой для получения работоспособных компонентов MVC. Существует множество дополнительных функций, которые можно настроить из этого вызова, но пока это будет достаточно для сборки приложения. Теперь он правильно направляет запрос по умолчанию, но, поскольку мы еще не настроили DI, во время активации возникает ошибка `CatalogController` , поскольку реализация типа `ICatalogService` еще не предоставлена. Сейчас мы вернемся к настройке MVC. Сейчас выполним миграцию внедрения зависимостей приложения.
+Приведенный выше код является минимальной конфигурацией, необходимой для получения работоспособных компонентов MVC. Существует множество дополнительных функций, которые можно настроить на основе этого вызова (некоторые из которых подробно описаны далее в этой главе), но теперь для этого достаточно будет создать приложение. Теперь он правильно направляет запрос по умолчанию, но, поскольку мы еще не настроили DI, во время активации возникает ошибка `CatalogController` , поскольку реализация типа `ICatalogService` еще не предоставлена. Сейчас мы вернемся к настройке MVC. Сейчас выполним миграцию внедрения зависимостей приложения.
 
 #### <a name="migrate-dependency-injection-configuration"></a>Миграция конфигурации внедрения зависимостей
 
@@ -505,7 +498,7 @@ public IServiceProvider ConfigureServices(IServiceCollection services)
 
 #### <a name="migrate-app-settings"></a>Перенос параметров приложения
 
-В ASP.NET Core используется новая [система конфигурации](/aspnet/core/fundamentals/configuration/?preserve-view=true&view=aspnetcore-2.2), которая по умолчанию использует *appsettings.jsв* файле. При использовании `CreateDefaultBuilder` в *Program.CS* конфигурация по умолчанию уже настроена в приложении. Для доступа к конфигурации классы просто должны запросить его в своем конструкторе. `Startup`Класс не является исключением. Чтобы начать доступ к конфигурации в `Startup` и остальной части приложения, запросите экземпляр `IConfiguration` из своего конструктора:
+В ASP.NET Core используется новая [система конфигурации](/aspnet/core/fundamentals/configuration/?preserve-view=true&view=aspnetcore-2.2), которая по умолчанию использует *appsettings.jsв* файле. При использовании `CreateDefaultBuilder` в *Program. CS* конфигурация по умолчанию уже настроена в приложении. Для доступа к конфигурации классы просто должны запросить его в своем конструкторе. `Startup`Класс не является исключением. Чтобы начать доступ к конфигурации в `Startup` и остальной части приложения, запросите экземпляр `IConfiguration` из своего конструктора:
 
 ```csharp
 public Startup(IConfiguration configuration)

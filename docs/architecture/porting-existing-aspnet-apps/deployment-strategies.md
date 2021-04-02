@@ -3,12 +3,12 @@ title: Стратегии развертывания
 description: Какие стратегии развертывания могут использовать команды при переходе с ASP.NET на ASP.NET Core? Может ли добавочная миграция разрешать параллельное развертывание платформа .NET Framework и приложений .NET Core, обеспечивая удобство работы пользователей?
 author: ardalis
 ms.date: 11/13/2020
-ms.openlocfilehash: 6691a4878205d6422cf8b6153353abefd9764d18
-ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
+ms.openlocfilehash: 4c69f049611e4995cdb1905c89afe6973994f20d
+ms.sourcegitcommit: b5d2290673e1c91260c9205202dd8b95fbab1a0b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102401769"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106122941"
 ---
 # <a name="deployment-strategies"></a>Стратегии развертывания
 

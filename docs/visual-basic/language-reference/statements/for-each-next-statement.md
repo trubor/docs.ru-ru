@@ -23,12 +23,12 @@ helpviewer_keywords:
 - Exit statement [Visual Basic], For Each...Next statements
 - iteration
 ms.assetid: ebce3120-95c3-42b1-b70b-fa7da40c75e2
-ms.openlocfilehash: ff7afb5e3b505ebe2326343063a7884dc4f567b1
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 85fb426fdc2d7961603a3ddcc882f9fdce0c70a2
+ms.sourcegitcommit: 109507b6c16704ed041efe9598c70cd3438a9fbc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99769108"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106079626"
 ---
 # <a name="for-eachnext-statement-visual-basic"></a>Оператор For Each...Next (Visual Basic)
 
@@ -52,11 +52,11 @@ Next [ element ]
 |---|---|
 |`element`|Требуется в `For Each` инструкции. Необязательный в `Next` инструкции. Переменная. Используется для прохода по элементам коллекции.|
 |`datatype`|Необязательный [`Option Infer`](option-infer-statement.md) параметр, если имеет значение On (по умолчанию) или `element` уже объявлен; требуется, если `Option Infer` параметр имеет значение OFF и `element` еще не объявлен. Тип данных `element`.|
-|`group`|Обязательный элемент. Переменная типа, которая является типом коллекции или объектом. Ссылается на коллекцию, для которой `statements` повторяются.|
+|`group`|Обязательный. Переменная типа, которая является типом коллекции или объектом. Ссылается на коллекцию, для которой `statements` повторяются.|
 |`statements`|Необязательный элемент. Одна или несколько инструкций между `For Each` и `Next` выполняются для каждого элемента в `group` .|
 |`Continue For`|Необязательный элемент. Передает управление в начало `For Each` цикла.|
 |`Exit For`|Необязательный элемент. Передает управление за пределы `For Each` цикла.|
-|`Next`|Обязательный элемент. Завершает определение `For Each` цикла.|
+|`Next`|Обязательный. Завершает определение `For Each` цикла.|
 
 ## <a name="simple-example"></a>Простой пример
 
@@ -67,7 +67,7 @@ Next [ element ]
 
 В следующем примере `For Each` ...`Next` выполняет перебор всех элементов коллекции списков.
 
-[!code-vb[VbVbalrStatements#121](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class9.vb#121)]
+:::code language="vb" source="./snippets/for-each-next-statement/vb/Examples.vb" id="init":::
 
 Дополнительные примеры см. в разделе [коллекции](../../../standard/collections/index.md) и [массивы](../../programming-guide/language-features/arrays/index.md).
 
@@ -77,7 +77,7 @@ Next [ element ]
 
 В следующем примере демонстрируется вложенное `For Each` ...`Next` сотрудник.
 
-[!code-vb[VbVbalrStatements#122](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class9.vb#122)]
+:::code language="vb" source="./snippets/for-each-next-statement/vb/Examples.vb" id="nested":::
 
 При вложении циклов каждый цикл должен иметь уникальную `element` переменную.
 
@@ -91,7 +91,7 @@ Next [ element ]
 
 В следующем примере показано, как использовать `Continue For` операторы и `Exit For` .
 
-[!code-vb[VbVbalrStatements#123](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class9.vb#123)]
+:::code language="vb" source="./snippets/for-each-next-statement/vb/Examples.vb" id="exitcontinue":::
 
 В цикле можно разместить любое количество `Exit For` операторов `For Each` . При использовании внутри вложенных `For Each` циклов `Exit For` выполнение вызывает выход из внутреннего цикла и передает управление следующему более высокому уровню вложенности.
 
@@ -111,7 +111,7 @@ Next [ element ]
 
 В следующем примере используется функция итератора. Функция итератора содержит `Yield` оператор, который находится внутри блока [for... Следующий](for-next-statement.md) цикл. В `ListEvenNumbers` методе каждая итерация `For Each` тела оператора создает вызов функции итератора, который переходит к следующему `Yield` оператору.
 
-[!code-vb[VbVbalrStatements#127](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class9.vb#127)]
+:::code language="vb" source="./snippets/for-each-next-statement/vb/Examples.vb" id="iterator":::
 
 Дополнительные сведения см. в разделе [итераторы](../../programming-guide/concepts/iterators.md), [оператор yield](yield-statement.md)и [итератор](../modifiers/iterator.md).
 
@@ -141,7 +141,7 @@ Next [ element ]
 
 В следующем примере присваивание в `m` качестве начального значения для `n` не компилируется, если `Option Strict` имеет значение ON, так как преобразование `Long` в в `Integer` представляет собой понижающие преобразования. Однако в `For Each` инструкции не сообщается об ошибке компилятора, даже если для назначения `number` требуется такое же преобразование из `Long` в `Integer` . В `For Each` инструкции, содержащей большое число, при <xref:Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger%2A> применении к большому числу возникает ошибка времени выполнения.
 
-[!code-vb[VbVbalrStatements#89](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class3.vb#89)]
+:::code language="vb" source="./snippets/for-each-next-statement/vb/Program.vb":::
 
 ### <a name="ienumerator-calls"></a>Вызовы IEnumerator
 
@@ -171,7 +171,7 @@ End Sub
 
 В следующем примере выводится список всех папок в папке C:\. каталог с помощью <xref:System.IO.DirectoryInfo> класса.
 
-[!code-vb[VbVbalrStatements#124](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class9.vb#124)]
+:::code language="vb" source="./snippets/for-each-next-statement/vb/Examples.vb" id="foreachdir":::
 
 ## <a name="example"></a>Пример
 
@@ -181,9 +181,9 @@ End Sub
 
 В методе `ListCars` оператор `cars.Sort()` сортирует список. Этот вызов метода <xref:System.Collections.Generic.List%601.Sort%2A><xref:System.Collections.Generic.List%601> приводит к тому, что метод `CompareTo` вызывается автоматически для объектов `Car` в `List`.
 
-[!code-vb[VbVbalrStatements#125](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class9.vb#125)]
+:::code language="vb" source="./snippets/for-each-next-statement/vb/Examples.vb" id="sort":::
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Коллекции](../../../standard/collections/index.md)
 - [Оператор For…Next](for-next-statement.md)

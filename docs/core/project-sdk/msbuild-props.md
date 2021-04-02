@@ -4,12 +4,12 @@ description: Справочник по свойствам и элементам 
 ms.date: 02/14/2020
 ms.topic: reference
 ms.custom: updateeachrelease
-ms.openlocfilehash: f6a49a0040bcb38dbaf433f6ea53bb8aad24c65b
-ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
+ms.openlocfilehash: effcb704056f553b2986ee4a61f73c0dc58af599
+ms.sourcegitcommit: 05d0087dfca85aac9ca2960f86c5efd218bf833f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104759889"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105636770"
 ---
 # <a name="msbuild-reference-for-net-sdk-projects"></a>Справочник по MSBuild для проектов пакета SDK для .NET
 
@@ -64,6 +64,174 @@ ms.locfileid: "104759889"
 <PropertyGroup>
   <TargetFramework>netstandard1.3</TargetFramework>
   <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
+</PropertyGroup>
+```
+
+## <a name="assembly-info-generation-properties"></a>Свойства создания сведений о сборке
+
+- [GenerateAssemblyCompanyAttribute](#generateassemblycompanyattribute)
+- [GenerateAssemblyConfigurationAttribute](#generateassemblyconfigurationattribute)
+- [GenerateAssemblyCopyrightAttribute](#generateassemblycopyrightattribute)
+- [GenerateAssemblyDescriptionAttribute](#generateassemblydescriptionattribute)
+- [GenerateAssemblyFileVersionAttribute](#generateassemblyfileversionattribute)
+- [GenerateAssemblyInfo](#generateassemblyinfo)
+- [GenerateAssemblyInformationalVersionAttribute](#generateassemblyinformationalversionattribute)
+- [GenerateAssemblyProductAttribute](#generateassemblyproductattribute)
+- [GenerateAssemblyTitleAttribute](#generateassemblytitleattribute)
+- [GenerateAssemblyVersionAttribute](#generateassemblyversionattribute)
+- [GeneratedAssemblyInfoFile](#generatedassemblyinfofile)
+- [GenerateNeutralResourcesLanguageAttribute](#generateneutralresourceslanguageattribute)
+
+### <a name="generateassemblycompanyattribute"></a>GenerateAssemblyCompanyAttribute
+
+Это свойство определяет, создает ли свойство `Company` атрибут <xref:System.Reflection.AssemblyCompanyAttribute> для сборки. Значение по умолчанию — `true`.
+
+```xml
+<PropertyGroup>
+  <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+</PropertyGroup>
+```
+
+### <a name="generateassemblyconfigurationattribute"></a>GenerateAssemblyConfigurationAttribute
+
+Это свойство определяет, создает ли свойство `Configuration` атрибут <xref:System.Reflection.AssemblyConfigurationAttribute> для сборки. Значение по умолчанию — `true`.
+
+```xml
+<PropertyGroup>
+  <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+</PropertyGroup>
+```
+
+### <a name="generateassemblycopyrightattribute"></a>GenerateAssemblyCopyrightAttribute
+
+Это свойство определяет, создает ли свойство `Copyright` атрибут <xref:System.Reflection.AssemblyCopyrightAttribute> для сборки. Значение по умолчанию — `true`.
+
+```xml
+<PropertyGroup>
+  <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+</PropertyGroup>
+```
+
+### <a name="generateassemblydescriptionattribute"></a>GenerateAssemblyDescriptionAttribute
+
+Это свойство определяет, создает ли свойство `Description` атрибут <xref:System.Reflection.AssemblyDescriptionAttribute> для сборки. Значение по умолчанию — `true`.
+
+```xml
+<PropertyGroup>
+  <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+</PropertyGroup>
+```
+
+### <a name="generateassemblyfileversionattribute"></a>GenerateAssemblyFileVersionAttribute
+
+Это свойство определяет, создает ли свойство `FileVersion` атрибут <xref:System.Reflection.AssemblyFileVersionAttribute> для сборки. Значение по умолчанию — `true`.
+
+```xml
+<PropertyGroup>
+  <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
+</PropertyGroup>
+```
+
+### <a name="generateassemblyinfo"></a>GenerateAssemblyInfo
+
+Управляет созданием атрибута `AssemblyInfo` для проекта. Значение по умолчанию — `true`. Используйте `false`, чтобы отключить создание файла:
+
+```xml
+<PropertyGroup>
+  <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+</PropertyGroup>
+```
+
+Параметр [GeneratedAssemblyInfoFile](#generatedassemblyinfofile) определяет имя создаваемого файла.
+
+Если значение `GenerateAssemblyInfo` равно `true`, свойства проекта преобразуются в атрибуты `AssemblyInfo`. В следующей таблице перечислены свойства проекта, которые создают атрибуты, а также свойства, которые могут отключить возможность создания:
+
+| Свойство               | attribute                                                      | Свойство, используемое для отключения                                                                               |
+|------------------------|----------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| `Company`              | <xref:System.Reflection.AssemblyCompanyAttribute>              | [`GenerateAssemblyCompanyAttribute`](#generateassemblycompanyattribute)                           |
+| `Configuration`        | <xref:System.Reflection.AssemblyConfigurationAttribute>        | [`GenerateAssemblyConfigurationAttribute`](#generateassemblyconfigurationattribute)               |
+| `Copyright`            | <xref:System.Reflection.AssemblyCopyrightAttribute>            | [`GenerateAssemblyCopyrightAttribute`](#generateassemblycopyrightattribute)                       |
+| `Description`          | <xref:System.Reflection.AssemblyDescriptionAttribute>          | [`GenerateAssemblyDescriptionAttribute`](#generateassemblydescriptionattribute)                   |
+| `FileVersion`          | <xref:System.Reflection.AssemblyFileVersionAttribute>          | [`GenerateAssemblyFileVersionAttribute`](#generateassemblyfileversionattribute)                   |
+| `InformationalVersion` | <xref:System.Reflection.AssemblyInformationalVersionAttribute> | [`GenerateAssemblyInformationalVersionAttribute`](#generateassemblyinformationalversionattribute) |
+| `Product`              | <xref:System.Reflection.AssemblyProductAttribute>              | [`GenerateAssemblyProductAttribute`](#generateassemblyproductattribute)                           |
+| `AssemblyTitle`        | <xref:System.Reflection.AssemblyTitleAttribute>                | [`GenerateAssemblyTitleAttribute`](#generateassemblytitleattribute)                               |
+| `AssemblyVersion`      | <xref:System.Reflection.AssemblyVersionAttribute>              | [`GenerateAssemblyVersionAttribute`](#generateassemblyversionattribute)                           |
+| `NeutralLanguage`      | <xref:System.Resources.NeutralResourcesLanguageAttribute>      | [`GenerateNeutralResourcesLanguageAttribute`](#generateneutralresourceslanguageattribute)         |
+
+Примечания об этих параметрах:
+
+- `AssemblyVersion` и `FileVersion` по умолчанию имеют значение `$(Version)` без суффикса. Например, если для `$(Version)` нужно указать `1.2.3-beta.4`, то значением будет `1.2.3`.
+- По умолчанию для `InformationalVersion` используется значение `$(Version)`.
+- Если имеется свойство `$(SourceRevisionId)`, оно добавляется к `InformationalVersion`. Такое поведение можно отключить с помощью `IncludeSourceRevisionInInformationalVersion`.
+- Свойства `Copyright` и `Description` также используются для метаданных NuGet.
+- Свойство `Configuration`, которое по умолчанию имеет значение `Debug`, является общим для всех целевых объектов MSBuild. Его можно задать с помощью параметра `--configuration` команды `dotnet` (например, [dotnet pack](../tools/dotnet-pack.md)).
+- Некоторые свойства используются при создании пакета NuGet. Дополнительные сведения см. в разделе [Свойства пакетов](#package-properties).
+
+#### <a name="migrating-from-net-framework"></a>Миграция из .NET Framework
+
+Шаблоны проектов .NET Framework создают файл кода со следующими заданными атрибутами сведений о сборке. Обычно файл расположен здесь: *.\Properties\AssemblyInfo.cs* или *.\Properties\AssemblyInfo.vb*. Проекты в стиле пакета SDK создают этот файл на основе параметров проекта. **Оба варианта не поддерживаются.** При переносе кода в .NET 5 (и .NET Core 3.1) или более поздней версии выполните одно из следующих действий:
+
+- Отключите возможность создания временного файла кода, который содержит атрибуты сведений о сборке, задав для `GenerateAssemblyInfo` значение `false`. Так вы сохраните свой файл *AssemblyInfo*.
+- Перенесите параметры из файла `AssemblyInfo` в файл проекта и удалите файл `AssemblyInfo`.
+
+### <a name="generateassemblyinformationalversionattribute"></a>GenerateAssemblyInformationalVersionAttribute
+
+Это свойство определяет, создает ли свойство `InformationalVersion` атрибут <xref:System.Reflection.AssemblyInformationalVersionAttribute> для сборки. Значение по умолчанию — `true`.
+
+```xml
+<PropertyGroup>
+  <GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
+</PropertyGroup>
+```
+
+### <a name="generateassemblyproductattribute"></a>GenerateAssemblyProductAttribute
+
+Это свойство определяет, создает ли свойство `Product` атрибут <xref:System.Reflection.AssemblyProductAttribute> для сборки. Значение по умолчанию — `true`.
+
+```xml
+<PropertyGroup>
+  <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+</PropertyGroup>
+```
+
+### <a name="generateassemblytitleattribute"></a>GenerateAssemblyTitleAttribute
+
+Это свойство определяет, создает ли свойство `AssemblyTitle` атрибут <xref:System.Reflection.AssemblyTitleAttribute> для сборки. Значение по умолчанию — `true`.
+
+```xml
+<PropertyGroup>
+  <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+</PropertyGroup>
+```
+
+### <a name="generateassemblyversionattribute"></a>GenerateAssemblyVersionAttribute
+
+Это свойство определяет, создает ли свойство `AssemblyVersion` атрибут <xref:System.Reflection.AssemblyVersionAttribute> для сборки. Значение по умолчанию — `true`.
+
+```xml
+<PropertyGroup>
+  <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+</PropertyGroup>
+```
+
+### <a name="generatedassemblyinfofile"></a>GeneratedAssemblyInfoFile
+
+Это свойство определяет относительный или абсолютный путь к файлу сведений о созданной сборке. По умолчанию используется файл с именем *[имя_проекта].AssemblyInfo.[cs|vb]* в каталоге `$(IntermediateOutputPath)` (обычно это *obj*).
+
+```xml
+<PropertyGroup>
+  <GeneratedAssemblyInfoFile>assemblyinfo.cs</GeneratedAssemblyInfoFile>
+</PropertyGroup>
+```
+
+### <a name="generateneutralresourceslanguageattribute"></a>GenerateNeutralResourcesLanguageAttribute
+
+Это свойство определяет, создает ли свойство `NeutralLanguage` атрибут <xref:System.Resources.NeutralResourcesLanguageAttribute> для сборки. Значение по умолчанию — `true`.
+
+```xml
+<PropertyGroup>
+  <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
 </PropertyGroup>
 ```
 

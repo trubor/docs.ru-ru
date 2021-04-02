@@ -3,16 +3,16 @@ title: Миграция на ASP.NET Core 2.1
 description: Как последняя версия .NET Core для поддержки нацеливания платформа .NET Framework среды выполнения, выполняет миграцию на .NET Core 2,1 в качестве промежуточного шага в некоторых планах миграции приложений?
 author: ardalis
 ms.date: 11/13/2020
-ms.openlocfilehash: 0c478ae194c6d9118bfbca73f8933d7623246e2c
-ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
+ms.openlocfilehash: e4db85405edc7e7f51ab6f8b422451cf7acc065e
+ms.sourcegitcommit: b5d2290673e1c91260c9205202dd8b95fbab1a0b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102401732"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106122850"
 ---
 # <a name="migrate-to-aspnet-core-21"></a>Миграция на ASP.NET Core 2.1
 
-ASP.NET Core 2,1 — это интересный выпуск, так как он является единственным поддерживаемым в настоящее время выпуском .NET Core для поддержки сред выполнения .NET Core и платформа .NET Framework. Таким образом, он может предложить более простой способ обновления для некоторых приложений по сравнению с обновлением всех частей приложения до .NET Core одновременно. В качестве выпуска LTS поддержка .NET Core 2,1 будет продолжаться до 2021 августа. Поддержка ASP.NET Core 2,1, выполняющихся на платформа .NET Framework, будет продолжаться до тех пор, пока поддерживается ее базовый платформа .NET Framework.
+ASP.NET Core 2,1 — это интересный выпуск, так как это единственный поддерживаемый в настоящее время ASP.NET Core выпуск для поддержки сред выполнения .NET Core и платформа .NET Framework. Таким образом, он может предложить более простой способ обновления для некоторых приложений по сравнению с обновлением всех частей приложения до .NET Core одновременно. В качестве выпуска LTS поддержка .NET Core 2,1 будет продолжаться до 2021 августа. Поддержка ASP.NET Core 2,1, выполняющихся на платформа .NET Framework, будет продолжаться до тех пор, пока поддерживается ее базовый платформа .NET Framework.
 
 ## <a name="should-apps-run-on-net-framework-with-aspnet-core-21"></a>Должны ли приложения запускаться на платформа .NET Framework с ASP.NET Core 2,1
 
