@@ -1,54 +1,54 @@
 ---
 title: Предопределенные файлы конфигурации (анализ кода)
-description: Узнайте, как использовать предопределенные файлы editorconfig и наборов правил для назначения конкретных типов анализа кода.
+description: Сведения о том, как использовать предопределенные файлы EditorConfig и наборов правил для применения конкретных типов анализа кода.
 ms.date: 09/24/2020
 ms.topic: conceptual
-ms.openlocfilehash: 4937dcab1183fa3f63be4afc71627a7c7c08c6bd
-ms.sourcegitcommit: 665f8fc55258356f4d2f4a6585b750c974b26675
-ms.translationtype: MT
+ms.openlocfilehash: 748ab8a9ddfcfcadeb33da877769cedac901655a
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "96593137"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104876595"
 ---
 # <a name="predefined-configuration-files"></a>Предопределенные файлы конфигурации
 
-Доступны предопределенные файлы EditorConfig и [наборов правил](/visualstudio/code-quality/using-rule-sets-to-group-code-analysis-rules) , которые позволяют быстро и легко включить категорию правил качества кода, например правила безопасности или разработки. Включив определенную категорию правил, можно вычислить целевые проблемы и конкретные условия. Чтобы получить доступ к этим предопределенным файлам, установите пакет анализатора NuGet [Microsoft. CodeAnalysis. нетанализерс](https://github.com/dotnet/roslyn-analyzers#microsoftcodeanalysisnetanalyzers) .
+Предопределенные файлы EditorConfig и [наборов правил](/visualstudio/code-quality/using-rule-sets-to-group-code-analysis-rules) позволяют быстро и легко включить конкретную категорию правил качества кода, например правил безопасности или разработки. Включая определенную категорию правил, вы сможете выявлять соответствующие проблемы и проверять условия. Чтобы использовать предопределенные файлы, установите пакет NuGet [Microsoft.CodeAnalysis.NetAnalyzers](https://github.com/dotnet/roslyn-analyzers#microsoftcodeanalysisnetanalyzers) для анализатора.
 
-[Microsoft. CodeAnalysis. нетанализерс](https://github.com/dotnet/roslyn-analyzers#microsoftcodeanalysisnetanalyzers) включает предопределенные файлы EditorConfig и наборы правил для следующих категорий правил:
+[Microsoft.CodeAnalysis.NetAnalyzers](https://github.com/dotnet/roslyn-analyzers#microsoftcodeanalysisnetanalyzers) содержит предопределенные файлы EditorConfig и наборы правил для следующих категорий правил:
 
 - Все правила
 - Поток данных
 - Конструирование
 - Документация
 - Глобализация
-- Совместимость
+- Взаимодействие
 - Удобство обслуживания
 - Именование
 - Производительность
-- Перенесено из FxCop
+- Перенесенные из FxCop
 - надежность;
 - Безопасность
 - Использование
 
-Каждая из этих категорий правил имеет файл EditorConfig или набора правил:
+Для каждой из этих категорий правил предоставляется файл EditorConfig или набора правил, который позволяет выполнить следующее:
 
-- Включить все правила в категории (и отключить все остальные правила)
-- Используйте уровень серьезности по умолчанию для каждого правила и параметр включен по умолчанию (и отключите все остальные правила).
+- включить все правила в категории (и отключить все остальные правила);
+- указать для каждого правила уровень серьезности по умолчанию и состояние включения по умолчанию (и отключите все остальные правила).
 
 > [!TIP]
-> Категория "все правила" имеет дополнительный файл EditorConfig или набора правил для отключения всех правил. Используйте этот файл, чтобы быстро избавиться от любых предупреждений или ошибок анализатора в проекте.
+> Для категории "Все правила" есть дополнительный файл EditorConfig или набора правил, который отключает все правила. Этот файл поможет вам быстро избавиться от всех предупреждений и ошибок анализатора в проекте.
 
 ## <a name="predefined-editorconfig-files"></a>Предопределенные файлы EditorConfig
 
-Предопределенные файлы EditorConfig для пакета анализатора Microsoft. CodeAnalysis. Нетанализерс находятся в подкаталоге *EditorConfig* , где установлен пакет NuGet. Например, файл EditorConfig для включения всех правил безопасности находится в папке *EditorConfig/секуритирулесенаблед/. EditorConfig*.
+Предопределенные файлы EditorConfig для пакета анализатора Microsoft.CodeAnalysis.NetAnalyzers размещены в подкаталоге *editorconfig* того каталога, где установлен пакет NuGet. Например, файл EditorConfig для включения всех правил безопасности находится в папке *editorconfig/SecurityRulesEnabled/.editorconfig*.
 
-Скопируйте выбранный файл *. editorconfig* в корневой каталог проекта.
+Скопируйте нужный файл с расширением *.editorconfig* в корневой каталог проекта.
 
 ## <a name="predefined-rule-sets"></a>Предопределенные наборы правил
 
-Стандартные файлы набора правил для пакета анализатора Microsoft. CodeAnalysis. Нетанализерс находятся в подкаталоге *набора правил* , в котором установлен пакет NuGet. Например, файл набора правил для включения всех правил безопасности находится в папке *RuleSets/секуритирулесенаблед. RuleSet*. Скопируйте один или несколько наборов правил и вставьте их в каталог, содержащий проект.
+Предопределенные файлы наборов правил для пакета анализатора Microsoft.CodeAnalysis.NetAnalyzers размещены в подкаталоге *rulesets* того каталога, где установлен пакет NuGet. Например, файл набора правил для включения всех правил безопасности находится в папке *rulesets/SecurityRulesEnabled.ruleset*. Скопируйте один или несколько наборов правил и вставьте их в каталог со своим проектом.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Конфигурация анализатора](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md)
-- [Параметры правила стиля кода .NET для EditorConfig](code-style-rule-options.md)
+- [Конфигурация анализатора](https://github.com/dotnet/roslyn-analyzers/blob/main/docs/Analyzer%20Configuration.md)
+- [Параметры правила стиля кода для .NET в EditorConfig](code-style-rule-options.md)

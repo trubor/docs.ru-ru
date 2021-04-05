@@ -1,28 +1,28 @@
 ---
-title: Параметры правила стиля кода .NET
-description: Узнайте, как задать параметры стиля кода .NET.
+title: Параметры правил стиля кода для .NET
+description: Сведения о том, как задать параметры стиля кода для .NET.
 ms.date: 09/25/2020
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-ms.openlocfilehash: 5e4d80ec55f7fbcd01e364bb2b9e2b4f49f820d5
-ms.sourcegitcommit: b59237ca4ec763969a0dd775a3f8f39f8c59fe24
-ms.translationtype: MT
+ms.openlocfilehash: dce31e7b8976caecfc7fb1dd50da7f246093b1e4
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "96593795"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104876686"
 ---
-# <a name="code-style-rule-options"></a>Параметры правила стиля кода
+# <a name="code-style-rule-options"></a>Параметры правил стиля кода
 
-Вы можете определить и поддерживать единообразный *стиль кода* в базе кода, определив параметры правил стиля кода .NET в файле [EditorConfig](/visualstudio/ide/create-portable-custom-editor-options) . Эти правила выводятся различными Ideами разработки, такими как Visual Studio, при редактировании кода. Для проектов .NET эти правила также могут быть [применены во время сборки](overview.md#code-style-analysis). Можно включить или отключить отдельные правила и настроить степень, в которой каждое правило должно применяться, с помощью уровня серьезности.
+Вы можете определить и поддерживать в базе кода единообразный *стиль кода*, определив параметры правил стиля кода для .NET в файле [EditorConfig](/visualstudio/ide/create-portable-custom-editor-options). Эти правила применяются при редактировании кода в разных IDE, например Visual Studio. Для проектов .NET эти правила также можно [принудительно применить во время сборки](overview.md#code-style-analysis). Вы можете включить или отключить отдельные правила и настроить строгость применения каждого правила с помощью уровней серьезности.
 
 > [!TIP]
 >
-> - При определении параметров стиля кода в файле EditorConfig вы настраиваете способ анализа кода [анализаторами стиля кода](overview.md#code-style-analysis) . Файл EditorConfig — это файл конфигурации для таких анализаторов.
+> - Определяя параметры стиля кода в файле EditorConfig, вы создаете конфигурацию, на основе которой [анализаторы стиля кода](overview.md#code-style-analysis) будут проверять ваш код. Файл EditorConfig — это файл конфигурации для таких анализаторов.
 >
-> - Параметры стиля кода также можно задать в Visual Studio в диалоговом окне [Параметры текстового редактора](/visualstudio/ide/code-styles-and-code-cleanup) . Это параметры для отдельных пользователей, которые учитываются только при редактировании в Visual Studio. Эти параметры не учитываются во время сборки или другими IDE. Кроме того, если проект или решение, открываемое в Visual Studio, имеют файл EditorConfig, то приоритет имеет параметры из файла EditorConfig.
+> - Параметры стиля кода также можно задать в диалоговом окне [параметров текстового редактора](/visualstudio/ide/code-styles-and-code-cleanup) Visual Studio. Эти параметры применяются только для пользователя и только при редактировании в Visual Studio. Они не учитываются во время сборки и в других IDE. Кроме того, если открываемые в Visual Studio проекты или решения содержат файл EditorConfig, то приоритет отдается параметрам из этого файла EditorConfig.
 
-Правила стиля кода делятся на следующие подкатегории:
+Различают следующие подкатегории правил стиля кода:
 
 - [Правила языка](style-rules/language-rules.md)
 
@@ -32,7 +32,7 @@ ms.locfileid: "96593795"
 
 - [Правила именования](style-rules/naming-rules.md)
 
-Каждая из этих подкатегорий определяет собственный синтаксис для указания параметров. Дополнительные сведения об этих правилах и соответствующих параметрах см. в разделе [Справочник по правилам стиля кода](style-rules/index.md).
+Каждая из этих подкатегорий определяет собственный синтаксис для указания параметров. Дополнительные сведения об этих правилах и параметрах для них см. в [справочнике по правилам стиля кода](style-rules/index.md).
 
 ## <a name="example-editorconfig-file"></a>Пример файла EditorConfig
 
@@ -251,11 +251,11 @@ dotnet_naming_style.begins_with_i.capitalization = pascal_case
 
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Справочник по правилам анализа стиля кода](style-rules/index.md)
-- [Принудительно применять стиль кода при сборке](overview.md#code-style-analysis)
+- [Принудительное применение стиля кода при сборке](overview.md#code-style-analysis)
 - [Быстрые действия в Visual Studio](/visualstudio/ide/quick-actions)
-- [Создание переносимых параметров настраиваемого редактора в Visual Studio](/visualstudio/ide/create-portable-custom-editor-options)
-- [Файл EDITORCONFIG для .NET Compiler Platform "Roslyn"](https://github.com/dotnet/roslyn/blob/master/.editorconfig)
-- [Файл EDITORCONFIG для среды выполнения .NET Compiler Platform](https://github.com/dotnet/runtime/blob/master/.editorconfig)
+- [Создание параметров для переносимого специализированного редактора с помощью Visual Studio](/visualstudio/ide/create-portable-custom-editor-options)
+- [Файл EDITORCONFIG для .NET Compiler Platform "Roslyn"](https://github.com/dotnet/roslyn/blob/main/.editorconfig)
+- [Файл EditorConfig в среде выполнения .NET](https://github.com/dotnet/runtime/blob/main/.editorconfig)
