@@ -1,15 +1,15 @@
 ---
-title: 'Зарезервированные атрибуты C#: Conditional, Obsolete, AttributeUsage'
-ms.date: 04/09/2020
-description: Компилятор интерпретирует эти атрибуты, чтобы они могли влиять на создаваемый им код.
-ms.openlocfilehash: c6d697dd08233ffc88900949998047137ee170a9
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+title: 'Зарезервированные атрибуты C#: разное'
+ms.date: 03/18/2021
+description: 'Сведения об атрибутах, влияющих на создаваемый компилятором код: атрибуты Conditional, Obsolete, AttributeUsage, ModuleInitializer и SkipLocalsInit.'
+ms.openlocfilehash: 6b8cda658ec5b3f81a7f903d8cadae0fe30e8ac2
+ms.sourcegitcommit: e16315d9f1ff355f55ff8ab84a28915be0a8e42b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2020
-ms.locfileid: "82021765"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105111323"
 ---
-# <a name="reserved-attributes-conditionalattribute-obsoleteattribute-attributeusageattribute"></a>Зарезервированные атрибуты: ConditionalAttribute, ObsoleteAttribute, AttributeUsageAttribute
+# <a name="reserved-attributes-miscellaneous"></a>Зарезервированные атрибуты: разное
 
 Эти атрибуты можно применять к элементам в коде. Они добавляют к ним семантическое значение. Компилятор использует эти семантические значения для изменения выходных данных и сообщения о возможных ошибках разработчиков, использующих код.
 
@@ -95,6 +95,51 @@ ms.locfileid: "82021765"
 :::code language="csharp" source="snippets/NonInheritedAttribute.cs" id="SnippetNonInherited" :::
 
 В этом случае `NonInheritedAttribute` не применяется к `DClass` путем наследования.
+
+## <a name="moduleinitializer-attribute"></a>Атрибут `ModuleInitializer`
+
+Начиная с C# 9, атрибут `ModuleInitializer` помечает метод, который среда выполнения вызывает при загрузке сборки. `ModuleInitializer` является псевдонимом для <xref:System.Runtime.CompilerServices.ModuleInitializerAttribute>.
+
+Атрибут `ModuleInitializer` может применяться только к методу, который:
+
+* является статическим;
+* не имеет параметров;
+* Возвращает `void`.
+* доступен из содержащего модуля, а именно `internal` или `public`;
+* не является универсальным методом;
+* не содержится в универсальном классе;
+* не является локальной функцией.
+
+Атрибут `ModuleInitializer` можно применить к нескольким методам. В этом случае порядок, в котором среда выполнения вызывает их, является детерминированным, но не задан.
+
+В следующем примере показано использование нескольких методов инициализатора модуля. Методы `Init1` и `Init2` выполняются до `Main`, и каждый добавляет строку в свойство `Text`. Поэтому при выполнении `Main` свойство `Text` уже имеет строки из обоих методов инициализатора.
+
+:::code language="csharp" source="snippets/ModuleInitializerExampleMain.cs" :::
+
+:::code language="csharp" source="snippets/ModuleInitializerExampleModule.cs" :::
+
+Иногда генераторам исходного кода требуется создать код инициализации. Инициализаторы модулей предоставляют стандартное расположение для этого кода.
+
+## <a name="skiplocalsinit-attribute"></a>Атрибут `SkipLocalsInit`
+
+Начиная с C# 9, атрибут `SkipLocalsInit` не позволяет компилятору устанавливать флаг `.locals init` при выводе в метаданные. Атрибут `SkipLocalsInit` является одноразовым и может применяться к методу, свойству, классу, структуре, интерфейсу или модулю, но не к сборке. `SkipLocalsInit` является псевдонимом для <xref:System.Runtime.CompilerServices.SkipLocalsInitAttribute>.
+
+Флаг `.locals init` заставляет среду CLR инициализировать все локальные переменные, объявленные в методе, со значениями по умолчанию. Так как компилятор также гарантирует, что вы никогда не используете переменную, прежде чем назначить ей какое-либо значение, `.locals init` обычно не требуется. Однако дополнительная нулевая инициализация может привести к снижению производительности в некоторых сценариях, например при использовании [stackalloc](../operators/stackalloc.md) для выделения массива в стеке. В таких случаях можно добавить атрибут `SkipLocalsInit`. При применении напрямую к методу атрибут воздействует на него и все его вложенные функции, включая лямбда-выражения и локальные функции. При применении к типу или модулю он влияет на все вложенные внутрь методы. Этот атрибут не воздействует на абстрактные методы, но воздействует на код, созданный для реализации.
+
+Для этого атрибута требуется параметр компилятора [AllowUnsafeBlocks](../compiler-options/language.md#allowunsafeblocks). Он указывает, что в некоторых случаях код может просматривать неназначенную память (например, осуществлять чтение из неинициализированной памяти, выделенной в стеке).
+
+В следующем примере показано воздействие атрибута `SkipLocalsInit` на метод, использующий `stackalloc`. Метод отображает все, что было в памяти на момент выделения массива целых чисел.
+
+:::code language="csharp" source="snippets/SkipLocalsInitExample.cs" id="ReadUninitializedMemory":::
+
+Чтобы выполнить этот код самостоятельно, задайте параметр компилятора `AllowUnsafeBlocks` в файле *CSPROJ*.
+
+```xml
+<PropertyGroup>
+  ...
+  <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+</PropertyGroup>
+```
 
 ## <a name="see-also"></a>См. также
 

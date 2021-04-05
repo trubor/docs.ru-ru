@@ -1,18 +1,18 @@
 ---
 title: Руководство по программированию на C#. Разделяемые классы и методы
 description: Разделяемые классы и методы в C# разделяют определение класса, структуры, интерфейса или метода между двумя исходными файлами или более.
-ms.date: 07/20/2015
+ms.date: 03/23/2021
 helpviewer_keywords:
 - partial methods [C#]
 - partial classes [C#]
 - C# language, partial classes and methods
 ms.assetid: 804cecb7-62db-4f97-a99f-60975bd59fa1
-ms.openlocfilehash: cfda3b89bfd9dc046274dfa53d62a0789d4d597e
-ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
+ms.openlocfilehash: 2132dd8e729725f0dd9bcb4477a3a604aa7065a0
+ms.sourcegitcommit: e16315d9f1ff355f55ff8ab84a28915be0a8e42b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98899104"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105111053"
 ---
 # <a name="partial-classes-and-methods-c-programming-guide"></a>Разделяемые классы и методы (Руководство по программированию в C#)
 
@@ -133,7 +133,7 @@ ms.locfileid: "98899104"
 
 ## <a name="partial-methods"></a>Разделяемые методы
 
-Разделяемый класс или структура могут содержать разделяемый метод. Одна часть класса содержит сигнатуру метода. В той же или в другой части можно определить дополнительную реализацию. Если реализация не предоставлена, метод и все вызовы метода удаляются во время компиляции.
+Разделяемый класс или структура могут содержать разделяемый метод. Одна часть класса содержит сигнатуру метода. В той же или в другой части можно определить реализацию. Если реализация не предоставлена, метод и все вызовы метода удаляются во время компиляции. Реализация может потребоваться в зависимости от сигнатуры метода.
 
 Разделяемые методы позволяют разработчику одной части класса определить метод, схожий с событием. Разработчик другой части класса может решить, реализовывать этот метод или нет. Если метод не реализован, то компилятор удаляет сигнатуру метода и все вызовы этого метода. Вызовы метода, включая любые результаты, которые могли бы произойти от оценки аргументов в вызовах, не имеют эффекта во время выполнения. Таким образом, любой код в разделяемом классе может свободно использовать разделяемый метод, даже если реализация не предоставлена. Во время компиляции и выполнения программы не возникнут никакие ошибки, если метод будет вызван, но не реализован.
 
@@ -143,28 +143,36 @@ ms.locfileid: "98899104"
 
 ```csharp
 // Definition in file1.cs
-partial void onNameChanged();
+partial void OnNameChanged();
 
 // Implementation in file2.cs
-partial void onNameChanged()
+partial void OnNameChanged()
 {
   // method body
 }
 ```
 
-- Объявления разделяемого метода должны начинаться с контекстно-зависимого ключевого слова [partial](../../language-reference/keywords/partial-type.md), а метод должен возвращать значение типа [void](../../language-reference/builtin-types/void.md).
+- Объявления разделяемого метода должны начинаться с контекстного ключевого слова [partial](../../language-reference/keywords/partial-type.md).
 
-- Разделяемые методы могут иметь параметры [in](../../language-reference/keywords/in-parameter-modifier.md) или [ref](../../language-reference/keywords/ref.md), но не [out](../../language-reference/keywords/out-parameter-modifier.md).
-
-- Разделяемые методы неявно имеют модификатор [private](../../language-reference/keywords/private.md) и поэтому не могут иметь модификатор [virtual](../../language-reference/keywords/virtual.md).
-
-- Разделяемые методы не могут иметь модификатор [extern](../../language-reference/keywords/extern.md), поскольку наличие тела определяет, выполняется ли их определение или реализация.
+- Сигнатуры разделяемого метода в обеих частях разделяемого типа должны совпадать.
 
 - Разделяемые методы могут иметь модификаторы [static](../../language-reference/keywords/static.md) и [unsafe](../../language-reference/keywords/unsafe.md).
 
 - Разделяемые методы могут быть универсальными. Ограничения налагаются на ту часть объявления разделяемого метода, где находится определение, и могут дополнительно повторяться в разделе реализации. Имена параметров и типов параметров необязательно должны совпадать в объявлении реализации и в объявлении определения.
 
 - Можно использовать [делегат](../../language-reference/builtin-types/reference-types.md) в качестве определенного и реализованного разделяемого метода, но его нельзя использовать в качестве разделяемого метода, который только определен.
+
+Разделяемый метод может не иметь реализацию в следующих случаях.
+
+- У него нет модификаторов доступа (включая [private](../../language-reference/keywords/private.md) по умолчанию).
+
+- Он возвращает значение [void](../../language-reference/builtin-types/void.md).
+
+- У него нет параметров [out](../../language-reference/keywords/out-parameter-modifier.md).
+
+- У него нет ни одного из следующих модификаторов: [virtual](../../language-reference/keywords/virtual.md), [override](../../language-reference/keywords/override.md), [sealed](../../language-reference/keywords/sealed.md), [new](../../language-reference/keywords/new-modifier.md) или [extern](../../language-reference/keywords/extern.md).
+
+Любой метод, не соответствующий всем этим ограничениям (например, метод `public virtual partial void`), должен предоставлять реализацию.
 
 ## <a name="c-language-specification"></a>Спецификация языка C#
 

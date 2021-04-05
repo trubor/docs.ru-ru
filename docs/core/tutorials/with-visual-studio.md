@@ -1,17 +1,17 @@
 ---
 title: Создание консольного приложения .NET в Visual Studio
 description: Узнайте, как создать консольное приложение .NET с помощью C# или Visual Basic в Visual Studio.
-ms.date: 06/08/2020
+ms.date: 03/26/2021
 dev_langs:
 - csharp
 - vb
-ms.custom: vs-dotnet
-ms.openlocfilehash: 3986ef4083b964799be33d2876570ac4cf2082b8
-ms.sourcegitcommit: 1d3af230ec30d8d061be7a887f6ba38a530c4ece
+ms.custom: vs-dotnet,contperf-fy21q3
+ms.openlocfilehash: e55927080ab30e7a24c54656b7f11a94a023bd65
+ms.sourcegitcommit: 05d0087dfca85aac9ca2960f86c5efd218bf833f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102511857"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105636809"
 ---
 # <a name="tutorial-create-a-net-console-application-using-visual-studio"></a>Учебник. Создание консольного приложения .NET в Visual Studio
 
@@ -19,7 +19,7 @@ ms.locfileid: "102511857"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-- [Visual Studio 2019 версии 16.8 или более поздней](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) с установленной рабочей нагрузкой **Кроссплатформенная разработка .NET Core**. Пакет SDK для .NET 5.0 устанавливается автоматически при выборе этой рабочей нагрузки.
+- [Visual Studio 2019 версии 16.9.2 или более поздней](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) с установленной рабочей нагрузкой **Кроссплатформенная разработка .NET Core**. Пакет SDK для .NET 5.0 устанавливается автоматически при выборе этой рабочей нагрузки.
 
   См. раздел [Установка пакета SDK для .NET с помощью Visual Studio](../install/windows.md#install-with-visual-studio).
 
@@ -28,12 +28,6 @@ ms.locfileid: "102511857"
 Создайте проект консольного приложения .NET с именем HelloWorld.
 
 1. Запустите Visual Studio 2019.
-
-1. Выберите **Сервис** > **Параметры** > **Среда** > **Предварительная версия функций**, а затем выберите **Показывать все шаблоны .NET Core в новом проекте (требуется перезапуск)** .
-
-   :::image type="content" source="media/with-visual-studio/dotnet-options.png" alt-text="Параметр &quot;Показывать все шаблоны .NET&quot;":::
-
-1. Закройте и снова откройте Visual Studio.
 
 1. На начальной странице выберите **Создать проект**.
 
@@ -106,7 +100,7 @@ End Module
    :::code language="csharp" source="./snippets/with-visual-studio/csharp/Program.cs" id="MainMethod":::
    :::code language="vb" source="./snippets/with-visual-studio/vb/Program.vb" id="MainMethod":::
 
-   Этот код отображает запрос в окне консоли и ожидает, чтобы пользователь ввел строку текста и нажал клавишу <kbd>ВВОД</kbd>. Приложение сохраняет полученную строку в переменной с именем `name`. Оно также получает значение свойства <xref:System.DateTime.Now?displayProperty=nameWithType>, которое содержит текущее локальное время, и присваивает его переменной с именем `date` (`currentDate` в Visual Basic). Затем оно отображает эти значения в окне консоли. Наконец, приложение выводит запрос в окне консоли и вызывает метод <xref:System.Console.ReadKey(System.Boolean)?displayProperty=nameWithType> для ожидания ввода данных пользователем.
+   Этот код отображает запрос в окне консоли и ожидает, чтобы пользователь ввел строку текста и нажал клавишу <kbd>ВВОД</kbd>. Приложение сохраняет полученную строку в переменной с именем `name`. Оно также получает значение свойства <xref:System.DateTime.Now?displayProperty=nameWithType>, которое содержит текущее локальное время, и присваивает его переменной с именем `currentDate`. Затем оно отображает эти значения в окне консоли. Наконец, приложение выводит запрос в окне консоли и вызывает метод <xref:System.Console.ReadKey(System.Boolean)?displayProperty=nameWithType> для ожидания ввода данных пользователем.
 
    <xref:System.Environment.NewLine> — это независимый от платформы и языка способ для представления разрыва строки. Его альтернативами являются `\n` в C# и `vbCrLf` в Visual Basic.
 

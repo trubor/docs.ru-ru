@@ -2,12 +2,12 @@
 title: Действия в рабочем процессе внешнего цикла DevOps для приложения Docker
 description: Сведения об этапах, относящихся к "внешнему циклу" рабочего процесса DevOps
 ms.date: 01/06/2021
-ms.openlocfilehash: bfac2d2c7866bfd11cd18201a93cb17a72cae588
-ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
+ms.openlocfilehash: 8bca36d5aa0fef95d684a96a5c6017ec15956358
+ms.sourcegitcommit: 5ce37699c2a51ed173171813be68ef7577b1aba5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97970301"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104881098"
 ---
 # <a name="steps-in-the-outer-loop-devops-workflow-for-a-docker-application"></a>Действия в рабочем процессе внешнего цикла DevOps для приложения Docker
 
@@ -77,7 +77,7 @@ Azure DevOps Services и Team Foundation Server поддерживают Git и 
 
 Используя эти задачи Visual Studio Team Services, узел или виртуальную машину сборки Linux-Docker, подготовленные в Azure, а также предпочтительный реестр Docker (реестр контейнеров Azure, Docker Hub, закрытый доверенный реестр Docker DTR или любой другой реестр Docker), вы можете обеспечить максимально согласованное построение конвейера непрерывной интеграции Docker.
 
-**_Требования:_* _
+***Требования:***
 
 - Службы Azure DevOps Services либо (для локальной установки) Team Foundation Server 2015 с обновлением 3 или более поздней версии.
 
@@ -85,7 +85,8 @@ Azure DevOps Services и Team Foundation Server поддерживают Git и 
 
   Простой способ создать один из таких агентов заключается в использовании Docker для запуска контейнера на основе образа Docker агента Azure DevOps Services.
 
-> [!ИНФОРМАЦИЯ] Дополнительные сведения о построении контейнера непрерывной интеграции Docker для Azure DevOps Services и соответствующие пошаговые руководства см. на следующих веб-сайтах:
+> [!TIP]
+> Дополнительные сведения о сборке конвейера непрерывной интеграции Docker для Azure DevOps Services и соответствующие пошаговые руководства см. на следующих веб-сайтах.
 >
 > - Запуск агента Visual Studio Team Services (теперь Azure DevOps Services) в качестве контейнера Docker: \
 >   <https://hub.docker.com/_/microsoft-azure-pipelines-vsts-agent>
@@ -126,7 +127,7 @@ Azure DevOps Services и Team Foundation Server поддерживают Git и 
 
 ![Схема, на которой показана отправка пользовательских образов в реестр контейнеров.](./media/docker-application-outer-loop-devops-workflow/docker-push-custom-images.png)
 
-_*Рис. 5-4**. Публикация пользовательских образов в реестре Docker
+**Рис. 5-4**. Публикация пользовательских образов в реестре Docker
 
 На этапе 3 при построении интеграции и тестирования (непрерывная интеграция) вы можете публиковать полученные образы Docker в закрытом или общедоступном реестре. На рынке представлены реестры Docker, предлагаемые целым рядом поставщиков облачных решений, в том числе реестр контейнеров Azure, Amazon Web Services Container Registry, Google Container Registry, Quay Registry и другие.
 
@@ -136,7 +137,8 @@ _*Рис. 5-4**. Публикация пользовательских обра
 
 **Рис. 5-5**. Использование служб Azure DevOps Services для публикации пользовательских образов в реестр Docker
 
-> [!ИНФОРМАЦИЯ] Дополнительные сведения о реестре контейнеров Azure см. в статье <https://aka.ms/azurecontainerregistry>.
+> [!TIP]
+> Дополнительные сведения о Реестре контейнеров Azure см. на странице <https://aka.ms/azurecontainerregistry>.
 
 ## <a name="step-4-cd-deploy"></a>Шаг 4. Непрерывное развертывание и развертывание
 
@@ -196,7 +198,8 @@ _*Рис. 5-4**. Публикация пользовательских обра
 
 **Рис. 5-11**. Определение задачи Docker Deploy для развертывания в ACS DC/OS
 
-> [!ИНФОРМАЦИЯ] Дополнительные сведения о контейнере непрерывного развертывания для Azure DevOps Services и Docker см. на странице <https://azure.microsoft.com/services/devops/pipelines>
+> [!TIP]
+> Дополнительные сведения о конвейере непрерывного развертывания для Azure DevOps Services и Docker см. на странице <https://azure.microsoft.com/services/devops/pipelines>.
 
 ## <a name="step-5-run-and-manage"></a>Шаг 5. Запуск и управление
 

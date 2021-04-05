@@ -3,12 +3,12 @@ title: Команда dotnet nuget push
 description: Команда dotnet nuget push отправляет пакет на сервер и публикует его.
 author: karann-msft
 ms.date: 02/14/2020
-ms.openlocfilehash: 92e2593633343bda6990ca51d593455ff13f0df7
-ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
+ms.openlocfilehash: 71bc14fa729945b3d1e1508d014287cc5355f8cc
+ms.sourcegitcommit: 05d0087dfca85aac9ca2960f86c5efd218bf833f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103478182"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105637563"
 ---
 # <a name="dotnet-nuget-push"></a>dotnet nuget push
 
@@ -92,7 +92,7 @@ dotnet nuget push -h|--help
 
 - **`-t|--timeout <TIMEOUT>`**
 
-  Указывает время ожидания для передачи на сервер в секундах. Значение по умолчанию — 300 секунд (5 минут). При указании 0 (ноль секунд) применяется значение по умолчанию.
+  Указывает время ожидания для передачи на сервер в секундах. Значение по умолчанию — 300 секунд (5 минут). При указании 0 применяется значение по умолчанию.
 
 ## <a name="examples"></a>Примеры
 

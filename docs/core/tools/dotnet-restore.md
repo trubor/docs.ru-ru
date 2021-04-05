@@ -2,12 +2,12 @@
 title: Команда dotnet restore
 description: Вы узнаете, как восстановить зависимости и связанные с проектом средства при помощи команды dotnet restore.
 ms.date: 02/27/2020
-ms.openlocfilehash: dcb68d6c690f2e12b61cfdfa6dc288bd474721c1
-ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
+ms.openlocfilehash: 14bcf65bb78e6d1d96604c8a10a3ba94fab80db8
+ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "94634407"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104874840"
 ---
 # <a name="dotnet-restore"></a>dotnet restore
 
@@ -79,7 +79,7 @@ dotnet restore -h|--help
 
 - [trustedSigners](/nuget/schema/nuget-config-file#trustedsigners-section)
 
-  Этот параметр не применяется, так как [NuGet пока не поддерживает кроссплатформенную проверку](https://github.com/NuGet/Home/issues/7939) доверенных пакетов.
+  В пакете SDK для .NET 5.0.100 добавлена поддержка кроссплатформенной проверки подписей пакетов.
 
 ## <a name="arguments"></a>Аргументы
 

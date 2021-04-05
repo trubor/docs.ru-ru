@@ -2,12 +2,12 @@
 title: Ведение журнала и трассировка (.NET Core)
 description: Общие сведения о ведении журнала и трассировке в .NET Core.
 ms.date: 10/12/2020
-ms.openlocfilehash: 70cff297688270d30b9850d123ffc8bb27ef7fbe
-ms.sourcegitcommit: f0fc5db7bcbf212e46933e9cf2d555bb82666141
+ms.openlocfilehash: dfecdad4518c79b605eb4fbe991af07fcba7db1c
+ms.sourcegitcommit: e16315d9f1ff355f55ff8ab84a28915be0a8e42b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100582965"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105111092"
 ---
 # <a name="net-core-logging-and-tracing"></a>Ведение журнала и трассировка в .NET Core
 
@@ -72,7 +72,7 @@ ms.locfileid: "100582965"
 
 ## <a name="distributed-tracing"></a>Распределенная трассировка
 
-[Распределенная трассировка](./distributed-tracing.md) — это способ публикации и наблюдения за данными трассировки в распределенной системе.
+[Распределенная трассировка](./distributed-tracing.md) — это диагностическая методика, помогающая инженерам локализовать сбои и проблемы с производительностью в приложениях, особенно те, которые могут охватывать несколько компьютеров или процессов. Эта методика отслеживает запросы через приложение, сопоставляя работу различных компонентов приложения и отделяя ее от другой работы, которую приложение может выполнять для параллельных запросов.
 
 ## <a name="ilogger-and-logging-frameworks"></a>ILogger и платформы ведения журналов
 

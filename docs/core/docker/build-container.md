@@ -1,15 +1,15 @@
 ---
 title: Руководство "Контейнеризация приложений с помощью Docker"
 description: Из этого руководства вы узнаете, как контейнеризировать приложение .NET Core с помощью Docker.
-ms.date: 04/27/2020
+ms.date: 03/22/2021
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: c92f5823f56f74941afdd28638d30e759b2c51c9
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 0a64743046d31badb10b5240a172b6e47c76d3cc
+ms.sourcegitcommit: 26721a2260deabb3318cc98af8619306711153cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99740760"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105027898"
 ---
 # <a name="tutorial-containerize-a-net-core-app"></a>Учебник. Контейнеризация приложения .NET Core
 
@@ -239,6 +239,13 @@ ENTRYPOINT ["dotnet", "NetCore.Docker.dll"]
 Команда `WORKDIR` изменяет **текущий каталог** в контейнере на *App*.
 
 Следующая команда `ENTRYPOINT` используется, чтобы настроить с помощью Docker контейнер для запуска в качестве исполняемого файла. При запуске контейнера выполняется команда `ENTRYPOINT`. После выполнения команды контейнер автоматически остановится.
+
+> [!TIP]
+> Для повышения безопасности вы можете отказаться от конвейера диагностики. Такой отказ позволяет контейнеру выполняться в режиме только для чтения. Для этого укажите переменную среды `COMPlus_EnableDiagnostics` как `0` (непосредственно перед шагом `ENTRYPOINT`).
+>
+> ```dockerfile
+> ENV COMPlus_EnableDiagnostics=0
+> ```
 
 В окне терминала выполните команду `docker build -t counter-image -f Dockerfile .`, а после ее выполнения — команду `docker images`.
 

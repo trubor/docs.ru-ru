@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 8b6d334677991382d235fd53cd3c98e3a77d650d
-ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
+ms.openlocfilehash: b75f9ce8e878c935dcc5fd9dc292369720b895e9
+ms.sourcegitcommit: e16315d9f1ff355f55ff8ab84a28915be0a8e42b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96032694"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105152728"
 ---
 ### <a name="http-browser-samesite-changes-impact-authentication"></a>HTTP. Изменения SameSite в браузере влияют на проверку подлинности
 
@@ -26,7 +26,7 @@ ms.locfileid: "96032694"
 
 Продукт ASP.NET Core 3.1 был обновлен, чтобы реализовать новое поведение `SameSite`. Это обновление переопределяет поведение `SameSiteMode.None` для выдачи `SameSite=None` и добавляет новое значение `SameSiteMode.Unspecified`, чтобы опустить атрибут `SameSite`. Все API файлов cookie теперь по умолчанию используют `Unspecified`, хотя некоторые компоненты, использующие файлы cookie, задают более конкретные значения для соответствующих сценариев, таких как корреляция OpenID Connect и файлы cookie nonce.
 
-Сведения о последних переменах в этой области см. в разделе [HTTP. Некоторые значения по умолчанию параметра SameSite для файлов cookie изменены на None](../../../../docs/core/compatibility/2.2-3.0.md#http-some-cookie-samesite-defaults-changed-to-none). В ASP.NET Core 3.0 большинство значений по умолчанию изменились с <xref:Microsoft.AspNetCore.Http.SameSiteMode.Lax?displayProperty=nameWithType> на <xref:Microsoft.AspNetCore.Http.SameSiteMode.None?displayProperty=nameWithType> (однако по-прежнему используется более ранний стандарт).
+Сведения о последних переменах в этой области см. в разделе [HTTP. Некоторые значения по умолчанию параметра SameSite для файлов cookie изменены на None](../../../../docs/core/compatibility/3.0.md#http-some-cookie-samesite-defaults-changed-to-none). В ASP.NET Core 3.0 большинство значений по умолчанию изменились с <xref:Microsoft.AspNetCore.Http.SameSiteMode.Lax?displayProperty=nameWithType> на <xref:Microsoft.AspNetCore.Http.SameSiteMode.None?displayProperty=nameWithType> (однако по-прежнему используется более ранний стандарт).
 
 #### <a name="reason-for-change"></a>Причина изменения
 
@@ -45,7 +45,7 @@ ms.locfileid: "96032694"
 
 Протестируйте свое веб-приложение с использованием версии клиента, которая может явно согласиться на новое поведение. В Chrome, Firefox и Microsoft Edge Chromium предусмотрены флаги функции явного согласия, которые можно использовать для тестирования. Убедитесь, что ваше приложение совместимо с более старыми версиями клиента после установки исправлений, что особенно актуально для Safari. Дополнительные сведения см. в разделе [Поддержка более старых браузеров](#support-older-browsers).
 
-##### <a name="chrome"></a>Хром
+##### <a name="chrome"></a>Chrome
 
 Chrome 78 и более поздних версий дает неверные результаты тестирования. Эти версии используют временные меры исправления и позволяют использовать файлы cookie, имеющие возраст менее двух минут. При включении соответствующих флагов тестирования Chrome 76 и 77 дают более точные результаты. Чтобы проверить новое поведение, включите `chrome://flags/#same-site-by-default-cookies`. Для Chrome 75 и более ранних версий новый параметр `None` вызывает ошибку. Дополнительные сведения см. в разделе [Поддержка более старых браузеров](#support-older-browsers).
 

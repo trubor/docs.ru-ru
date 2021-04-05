@@ -5,12 +5,12 @@ ms.date: 03/15/2021
 helpviewer_keywords:
 - types [C#], built-in
 - built-in C# types
-ms.openlocfilehash: c2b1c736e17e55913ef1c593813717dd33efd6c3
-ms.sourcegitcommit: 20b4565974d185c7716656a6c63e3cfdbdf4bf41
+ms.openlocfilehash: 4b92add8189c6205408ec78c281eaacf04173047
+ms.sourcegitcommit: 05d0087dfca85aac9ca2960f86c5efd218bf833f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104759720"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105637069"
 ---
 # <a name="built-in-types-c-reference"></a>Встроенные типы (справочник по C#)
 
@@ -42,7 +42,7 @@ ms.locfileid: "104759720"
 |[`string`](reference-types.md#the-string-type)|<xref:System.String?displayProperty=nameWithType>|
 |[`dynamic`](reference-types.md#the-dynamic-type)|<xref:System.Object?displayProperty=nameWithType>|
 
-В таблицах выше каждое ключевое слово типа C# в левом столбце (кроме [nint и nuint](nint-nuint.md)) является псевдонимом для соответствующего типа .NET. Они взаимозаменяемые. Например, следующие объявления объявляют переменные одного типа:
+В таблицах выше каждое ключевое слово типа C# в левом столбце (кроме [nint, nuint](nint-nuint.md) и [dynamic](reference-types.md#the-dynamic-type)) является псевдонимом для соответствующего типа .NET. Они взаимозаменяемые. Например, следующие объявления объявляют переменные одного типа:
 
 ```csharp
 int a = 123;
