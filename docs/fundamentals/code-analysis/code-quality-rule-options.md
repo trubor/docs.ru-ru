@@ -5,12 +5,12 @@ ms.date: 09/24/2020
 ms.topic: conceptual
 no-loc:
 - EditorConfig
-ms.openlocfilehash: 1821cb7daf70a642e3fb35cebae144b097ba115c
-ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
+ms.openlocfilehash: 0be0d094739893dc74e1b5c85e686594c766cbcb
+ms.sourcegitcommit: 26721a2260deabb3318cc98af8619306711153cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104876699"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105027877"
 ---
 # <a name="code-quality-rule-configuration-options"></a>Параметры конфигурации для правил качества кода
 
@@ -107,28 +107,28 @@ ms.locfileid: "104876699"
 
 | Описание | Допустимые значения | Значение по умолчанию | Настраиваемые правила |
 | - | - | - | - |
-| Имена методов проверки на значение NULL, которые проверяют отсутствие значений NULL в аргументах, передаваемых в метод | Допустимые форматы имен методов (разделенные `|`):<br/> — только имя метода (включает все методы с этим именем, любого типа и в любом пространстве имен);<br/> — полные имена в [формате идентификатора документации](https://github.com/dotnet/csharplang/blob/main/spec/documentation-comments.md#id-string-format) для символа с необязательным префиксом `M:`. | Нет | [CA1062](quality-rules/ca1062.md) |
+| Имена методов проверки на значение NULL, которые проверяют отсутствие значений NULL в аргументах, передаваемых в метод | Допустимые форматы имен методов (разделенные `|`):<br/> — только имя метода (включает все методы с этим именем, любого типа и в любом пространстве имен);<br/> — полные имена в [формате идентификатора документации](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format) для символа с необязательным префиксом `M:`. | Отсутствуют | [CA1062](quality-rules/ca1062.md) |
 
 ### <a name="additional_string_formatting_methods"></a>additional_string_formatting_methods
 
 | Описание | Допустимые значения | Значение по умолчанию | Настраиваемые правила |
 | - | - | - | - |
-| Имена дополнительных методов форматирования строк | Допустимые форматы имен методов (разделенные `|`):<br/> — только имя метода (включает все методы с этим именем, любого типа и в любом пространстве имен);<br/> — полные имена в [формате идентификатора документации](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format) для символа с необязательным префиксом `M:`. | Нет | [CA2241](quality-rules/ca2241.md) |
+| Имена дополнительных методов форматирования строк | Допустимые форматы имен методов (разделенные `|`):<br/> — только имя метода (включает все методы с этим именем, любого типа и в любом пространстве имен);<br/> — полные имена в [формате идентификатора документации](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format) для символа с необязательным префиксом `M:`. | Отсутствуют | [CA2241](quality-rules/ca2241.md) |
 
 ### <a name="excluded_type_names_with_derived_types"></a>excluded_type_names_with_derived_types
 
 | Описание | Допустимые значения | Значение по умолчанию | Настраиваемые правила |
 | - | - | - | - |
-| Имена типов (включая все производные типы), исключаемых из анализа | Допустимые форматы имен символов (разделенные `|`):<br/> — только имя типа (включает все типы с этим именем, любого типа и в любом пространстве имен);<br/> — полные имена в [формате идентификатора документации](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format) для символа с необязательным префиксом `T:`. | Нет | [CA1303](quality-rules/ca1303.md) |
+| Имена типов (включая все производные типы), исключаемых из анализа | Допустимые форматы имен символов (разделенные `|`):<br/> — только имя типа (включает все типы с этим именем, любого типа и в любом пространстве имен);<br/> — полные имена в [формате идентификатора документации](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format) для символа с необязательным префиксом `T:`. | Отсутствуют | [CA1303](quality-rules/ca1303.md) |
 
 ### <a name="excluded_symbol_names"></a>excluded_symbol_names
 
 | Описание | Допустимые значения | Значение по умолчанию | Настраиваемые правила |
 | - | - | - | - |
-| Имена символов, исключаемых из анализа | Допустимые форматы имен символов (разделенные `|`):<br/> — только имя символа (включает все символы с этим именем, любого типа и в любом пространстве имен);<br/> — полные имена в [формате идентификатора документации](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format) для символа. Для каждого имени символа требуется префикс вида символа, например префикс `M:` для методов, префикс `T:` для типов и префикс `N:` для пространств имен.<br/> - `.ctor` используется для конструкторов, а `.cctor` — для статических конструкторов | Нет | [CA1062](quality-rules/ca1062.md) [CA1303](quality-rules/ca1303.md) [CA2000](quality-rules/ca2000.md) [CA2100](quality-rules/ca2100.md) [CA2301](quality-rules/ca2301.md) [CA2302](quality-rules/ca2302.md)<br/>[CA2311](quality-rules/ca2311.md) [CA2312](quality-rules/ca2312.md) [CA2321](quality-rules/ca2321.md) [CA2322](quality-rules/ca2322.md) [CA2327](quality-rules/ca2327.md) [CA2328](quality-rules/ca2328.md)<br/>[CA2329](quality-rules/ca2329.md) [CA2330](quality-rules/ca2330.md) [CA3001](quality-rules/ca3001.md) [CA3002](quality-rules/ca3002.md) [CA3003](quality-rules/ca3003.md) [CA3004](quality-rules/ca3004.md)<br/>[CA3005](quality-rules/ca3005.md) [CA3006](quality-rules/ca3006.md) [CA3007](quality-rules/ca3007.md) [CA3008](quality-rules/ca3008.md) [CA3009](quality-rules/ca3009.md) [CA3010](quality-rules/ca3010.md)<br/>[CA3011](quality-rules/ca3011.md) [CA3012](quality-rules/ca3012.md) [CA5361](quality-rules/ca5361.md) CA5376 CA5377 [CA5378](quality-rules/ca5378.md)<br/>[CA5380](quality-rules/ca5380.md) [CA5381](quality-rules/ca5381.md) CA5382 CA5383 CA5384 CA5387<br/>CA5388 [CA5389](quality-rules/ca5389.md) CA5390 |
+| Имена символов, исключаемых из анализа | Допустимые форматы имен символов (разделенные `|`):<br/> — только имя символа (включает все символы с этим именем, любого типа и в любом пространстве имен);<br/> — полные имена в [формате идентификатора документации](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format) для символа. Для каждого имени символа требуется префикс вида символа, например префикс `M:` для методов, префикс `T:` для типов и префикс `N:` для пространств имен.<br/> - `.ctor` используется для конструкторов, а `.cctor` — для статических конструкторов | Отсутствуют | [CA1062](quality-rules/ca1062.md) [CA1303](quality-rules/ca1303.md) [CA2000](quality-rules/ca2000.md) [CA2100](quality-rules/ca2100.md) [CA2301](quality-rules/ca2301.md) [CA2302](quality-rules/ca2302.md)<br/>[CA2311](quality-rules/ca2311.md) [CA2312](quality-rules/ca2312.md) [CA2321](quality-rules/ca2321.md) [CA2322](quality-rules/ca2322.md) [CA2327](quality-rules/ca2327.md) [CA2328](quality-rules/ca2328.md)<br/>[CA2329](quality-rules/ca2329.md) [CA2330](quality-rules/ca2330.md) [CA3001](quality-rules/ca3001.md) [CA3002](quality-rules/ca3002.md) [CA3003](quality-rules/ca3003.md) [CA3004](quality-rules/ca3004.md)<br/>[CA3005](quality-rules/ca3005.md) [CA3006](quality-rules/ca3006.md) [CA3007](quality-rules/ca3007.md) [CA3008](quality-rules/ca3008.md) [CA3009](quality-rules/ca3009.md) [CA3010](quality-rules/ca3010.md)<br/>[CA3011](quality-rules/ca3011.md) [CA3012](quality-rules/ca3012.md) [CA5361](quality-rules/ca5361.md) CA5376 CA5377 [CA5378](quality-rules/ca5378.md)<br/>[CA5380](quality-rules/ca5380.md) [CA5381](quality-rules/ca5381.md) CA5382 CA5383 CA5384 CA5387<br/>CA5388 [CA5389](quality-rules/ca5389.md) CA5390 |
 
 ### <a name="disallowed_symbol_names"></a>disallowed_symbol_names
 
 | Описание | Допустимые значения | Значение по умолчанию | Настраиваемые правила |
 | - | - | - | - |
-| Имена символов, запрещенных в контексте анализа | Допустимые форматы имен символов (разделенные `|`):<br/> — только имя символа (включает все символы с этим именем, любого типа и в любом пространстве имен);<br/> — полные имена в [формате идентификатора документации](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format) для символа. Для каждого имени символа требуется префикс вида символа, например префикс `M:` для методов, префикс `T:` для типов и префикс `N:` для пространств имен.<br/> - `.ctor` используется для конструкторов, а `.cctor` — для статических конструкторов | Нет | [CA1031](quality-rules/ca1031.md) |
+| Имена символов, запрещенных в контексте анализа | Допустимые форматы имен символов (разделенные `|`):<br/> — только имя символа (включает все символы с этим именем, любого типа и в любом пространстве имен);<br/> — полные имена в [формате идентификатора документации](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format) для символа. Для каждого имени символа требуется префикс вида символа, например префикс `M:` для методов, префикс `T:` для типов и префикс `N:` для пространств имен.<br/> - `.ctor` используется для конструкторов, а `.cctor` — для статических конструкторов | Отсутствуют | [CA1031](quality-rules/ca1031.md) |
