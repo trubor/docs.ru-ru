@@ -6,12 +6,12 @@ ms.author: brachtma
 ms.date: 03/12/2021
 ms.topic: tutorial
 ms.custom: mlnet-tooling
-ms.openlocfilehash: 470849257f2a75bec9e708d8c17905f69c4d0aa7
-ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
+ms.openlocfilehash: 3a773f7364e3fd6c8ad0073eac091fa38716afa6
+ms.sourcegitcommit: 44af69720863bd09bd7a4509bf1ec119466ba6e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104875399"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106231275"
 ---
 # <a name="tutorial-detect-stop-signs-in-images-with-model-builder"></a>Руководство. Обнаружение знака STOP на изображениях с помощью Model Builder
 
@@ -253,7 +253,7 @@ ms.locfileid: "104875399"
 
     ```bash
     Predicted Boxes:
-    
+
     Top: 89.453415, Left: 481.95343, Right: 724.8073, Bottom: 388.32385, Label: Stop-Sign, Score: 0.99539465
     ```
 
