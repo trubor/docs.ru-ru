@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Visual C#, programming concepts
 - C# language, concepts
 ms.assetid: ac0f23a2-6bf3-4077-be99-538ae5fd3bc5
-ms.openlocfilehash: 59928ce89dacc47534a1e7cb5ed0603d259b5a4e
-ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
+ms.openlocfilehash: c7746b623ea8428935f81736f704a8606219a273
+ms.sourcegitcommit: 089068389671f6f9e15fd67dcbfb0145bf72f1fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102104810"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106496687"
 ---
 # <a name="c-programming-guide"></a>Руководство по программированию на C#
 
@@ -61,7 +61,7 @@ ms.locfileid: "102104810"
   
  [Пространства имен](./namespaces/index.md)  
   
- [Небезопасный код и указатели](./unsafe-code-pointers/index.md)  
+ [Небезопасный код и указатели](../language-reference/unsafe-code.md)  
   
  [Комментарии XML-документации](./xmldoc/index.md)  
   
