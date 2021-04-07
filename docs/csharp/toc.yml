@@ -767,22 +767,6 @@ items:
             href: programming-guide/namespaces/using-namespaces.md
           - name: Практическое руководство. Использование пространства имен My
             href: programming-guide/namespaces/how-to-use-the-my-namespace.md
-      - name: Небезопасный код и указатели
-        items:
-          - name: Обзор и ограничения
-            displayName: unsafe code pointers
-            href: programming-guide/unsafe-code-pointers/index.md
-          - name: Буферы фиксированного размера
-            href: programming-guide/unsafe-code-pointers/fixed-size-buffers.md
-          - name: типы указателей
-            items:
-              - name: Обзор
-                displayName: pointer types
-                href: programming-guide/unsafe-code-pointers/pointer-types.md
-              - name: Преобразования указателей
-                href: programming-guide/unsafe-code-pointers/pointer-conversions.md
-              - name: Практическое руководство. Использование указателей для копирования массива байтов
-                href: programming-guide/unsafe-code-pointers/how-to-use-pointers-to-copy-an-array-of-bytes.md
       - name: Комментарии XML-документации
         items:
           - name: Обзор
@@ -1225,6 +1209,9 @@ items:
           - name: Лямбда-выражения
             href: language-reference/operators/lambda-expressions.md
             displayName: anonymous functions
+          - name: Шаблоны
+            href: language-reference/operators/patterns.md
+            displayName: 'pattern matching, and keyword, or keyword, not keyword, pattern reference'
           - name: + Операторы +=
             href: language-reference/operators/addition-operator.md
             displayName: 'string concatenation, delegate combination, event subscription'
@@ -1299,6 +1286,9 @@ items:
           - name: Разное
             displayName: 'Conditional, Obsolete, AttributeUsage, ModuleInitializer, SkipLocalsInit'
             href: language-reference/attributes/general.md
+      - name: Небезопасный код и указатели
+        displayName: 'unsafe code, pointers, fixed buffer, function pointer'
+        href: language-reference/unsafe-code.md
       - name: Директивы препроцессора
         href: language-reference/preprocessor-directives.md
         displayName: '\#if, \#else, \#elif, \#endif, \#define, \#undef, \#warning, \#error, \#line, \#nullable, \#region, \#endregion, \#pragma, warning, checksum'

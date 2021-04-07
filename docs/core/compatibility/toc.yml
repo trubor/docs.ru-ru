@@ -43,6 +43,8 @@ items:
                 items:
                   - name: Изменения аннотации о допустимости значений NULL
                     href: core-libraries/6.0/nullable-ref-type-annotation-changes.md
+                  - name: Новые перегрузки опрашиваемых методов
+                    href: core-libraries/6.0/additional-linq-queryable-method-overloads.md
                   - name: 'Переименованы параметры в типах, производных от Stream'
                     href: core-libraries/6.0/parameters-renamed-on-stream-derived-types.md
                   - name: Значение точности при анализе стандартных числовых форматов
@@ -51,6 +53,8 @@ items:
                 items:
                   - name: API вызывают исключение ArgumentNullException
                     href: windows-forms/6.0/apis-throw-argumentnullexception.md
+                  - name: API-интерфейсы DataGridView вызывают исключение InvalidOperationException
+                    href: windows-forms/6.0/null-owner-causes-invalidoperationexception.md
                   - name: Максимальная длина текста NotifyIcon.Text увеличена
                     href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
                   - name: Свойства TableLayoutSettings вызывают исключение InvalidEnumArgumentException
@@ -443,6 +447,8 @@ items:
                 items:
                   - name: Изменения аннотации о допустимости значений NULL
                     href: core-libraries/6.0/nullable-ref-type-annotation-changes.md
+                  - name: Новые перегрузки опрашиваемых методов
+                    href: core-libraries/6.0/additional-linq-queryable-method-overloads.md
                   - name: 'Переименованы параметры в типах, производных от Stream'
                     href: core-libraries/6.0/parameters-renamed-on-stream-derived-types.md
                   - name: Значение точности при анализе стандартных числовых форматов
@@ -619,6 +625,8 @@ items:
                 items:
                   - name: API вызывают исключение ArgumentNullException
                     href: windows-forms/6.0/apis-throw-argumentnullexception.md
+                  - name: API-интерфейсы DataGridView вызывают исключение InvalidOperationException
+                    href: windows-forms/6.0/null-owner-causes-invalidoperationexception.md
                   - name: Максимальная длина текста NotifyIcon.Text увеличена
                     href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
                   - name: Свойства TableLayoutSettings вызывают исключение InvalidEnumArgumentException
