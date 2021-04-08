@@ -5,12 +5,12 @@ ms.date: 02/26/2021
 helpviewer_keywords:
 - records [C#]
 - C# language, records
-ms.openlocfilehash: a45ed08da18e58f11793d6874d7275d9f5216be4
-ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
+ms.openlocfilehash: 99370e398d5e607def58334b33ae20aa59e21962
+ms.sourcegitcommit: 872ca41d1c26f39d0aef57cc365d09503bac780d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102260042"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106288034"
 ---
 # <a name="records-c-programming-guide"></a>Записи (Руководство по программированию в C#)
 
@@ -68,7 +68,7 @@ ms.locfileid: "102260042"
 ## <a name="see-also"></a>См. также
 
 - [Классы (Руководство по программированию на C#)](classes.md)
-- [Записи (справочник по C#)](../../language-reference/builtin-types/record.md).
+- [Записи (справочник по C#)](../../language-reference/builtin-types/record.md)
 - [Руководство по программированию на C#](../index.md)
 - [Объектно-ориентированное программирование](../../tutorials/intro-to-csharp/object-oriented-programming.md)
 - [Полиморфизм](polymorphism.md)

@@ -2,12 +2,12 @@
 title: Реализация повторных попыток вызова HTTP с экспоненциальной выдержкой с помощью библиотеки Polly
 description: Сведения о том, как обрабатывать сбои HTTP-запросов с помощью Polly и IHttpClientFactory.
 ms.date: 01/13/2021
-ms.openlocfilehash: c2831f73ed38b48fd32fa241f8fe1792b9adf3d4
-ms.sourcegitcommit: 1d3af230ec30d8d061be7a887f6ba38a530c4ece
+ms.openlocfilehash: cd209aa7f2802ffea80e14f0e3e77cc4fc29b6d5
+ms.sourcegitcommit: b5d2290673e1c91260c9205202dd8b95fbab1a0b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102511792"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106122967"
 ---
 # <a name="implement-http-call-retries-with-exponential-backoff-with-ihttpclientfactory-and-polly-policies"></a>Реализация повторных попыток вызова HTTP с экспоненциальной задержкой с помощью IHttpClientFactory и политик Polly
 
@@ -51,20 +51,16 @@ static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()
 
 ## <a name="add-a-jitter-strategy-to-the-retry-policy"></a>Добавление стратегии обработки колебания задержки в политику повтора
 
-Обычная политика повтора может влиять на работу системы в случае высокого уровня параллелизма и масштабируемости, а также в условиях интенсивного состязания за ресурсы. Чтобы решить проблему с большим числом повторных запросов, поступающих от множества клиентов в случае частичного отказа системы, можно добавить стратегию в отношении колебания задержки в алгоритм или политику повтора. Это может повысить общую производительность всей системы благодаря тому, что экспоненциальная задержка становится более случайной. При возникновении проблем пики размываются. Этот принцип проиллюстрирован в следующем примере.
+Обычная политика повтора может влиять на работу системы в случае высокого уровня параллелизма и масштабируемости, а также в условиях интенсивного состязания за ресурсы. Чтобы решить проблему с большим числом повторных запросов, поступающих от множества клиентов при частичном отказе системы, можно добавить стратегию в отношении колебания задержки в алгоритм или политику повтора. Эта стратегия может повысить общую производительность всей системы. Как рекомендуется в статье [Polly: повторы с колебаниями задержки](https://github.com/App-vNext/Polly/wiki/Retry-with-jitter), хорошая стратегия должна предусматривать плавный и равномерно распределенный интервал повторов, который применяется с контролируемой средней исходной задержкой повторов на базе экспоненциальной задержки. Такой подход способствует размытию пиков при возникновении проблем. Этот принцип проиллюстрирован в следующем примере.
 
 ```csharp
-Random jitterer = new Random();
-var retryWithJitterPolicy = HttpPolicyExtensions
-    .HandleTransientHttpError()
-    .OrResult(msg => msg.StatusCode == System.Net.HttpStatusCode.NotFound)
-    .WaitAndRetryAsync(6,    // exponential back-off plus some jitter
-        retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt))  
-                      + TimeSpan.FromMilliseconds(jitterer.Next(0, 100))
-    );
-```
 
-Polly предоставляет готовые к работе алгоритмы дрожания с помощью веб-сайта проекта.
+var delay = Backoff.DecorrelatedJitterBackoffV2(medianFirstRetryDelay: TimeSpan.FromSeconds(1), retryCount: 5);
+
+var retryPolicy = Policy
+    .Handle<FooException>()
+    .WaitAndRetryAsync(delay);
+```
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 

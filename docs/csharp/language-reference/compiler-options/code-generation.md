@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Optimize compiler option [C#]
 - Deterministic compiler option [C#]
 - ProduceOnlyReferenceAssembly compiler option [C#]
-ms.openlocfilehash: a846bc515c501ec5a14069dd3b312b5e2df43d25
-ms.sourcegitcommit: 5ce37699c2a51ed173171813be68ef7577b1aba5
+ms.openlocfilehash: 02610c9d0142643bdb553f8b8177d1a4a2237717
+ms.sourcegitcommit: 652f62fc8f3ab6a264681b6eb5211ac7539bd115
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104881149"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105964797"
 ---
 # <a name="c-compiler-options-that-control-code-generation"></a>Параметры компилятора C#, которые управляют созданием кода
 
@@ -35,8 +35,17 @@ ms.locfileid: "104881149"
 
 Для всех версий компилятора, начиная с C# 6.0, разницы между *pdbonly* и *full* нет. Выберите *pdbonly*. Чтобы изменить расположение файла с расширением *.pdb*, см. раздел [**PdbFile**](./advanced.md#pdbfile).
 
+Допустимы следующие значения.
+
+| Значение      | Значение                                                                                                 |
+|------------|---------------------------------------------------------------------------------------------------------|
+| `full`     | Выводить информацию об отладке в _PDB_-файл, используя стандартный формат для текущей платформы:<br>**Windows**: PDB-файл Windows. <br>**Linux/macOS**: [переносимый PDB-файл](https://github.com/dotnet/core/blob/main/Documentation/diagnostics/portable_pdb.md). |
+| `pdbonly`  | Эквивалентно `full`. Дополнительные сведения см. в примечании ниже. |
+| `portable` | Выводить информацию об отладке в PDB-файл, используя кроссплатформенный формат [переносимого PDB-файла](https://github.com/dotnet/core/blob/main/Documentation/diagnostics/portable_pdb.md). |
+| `embedded` | Выводить информацию об отладке в файл _DLL или EXE_ (_PDB_-файл не создается), используя формат [переносимого PDB-файла](https://github.com/dotnet/core/blob/main/Documentation/diagnostics/portable_pdb.md). |
+
 > [!IMPORTANT]
-> Этот раздел относится только к компиляторам более ранних версий, чем C# 6.0.
+> Следующая информация касается только компиляторов версии ниже C# 6.0.
 > Значение этого элемента может быть либо `full`, либо `pdbonly`. Аргумент *full*, действующий при отсутствии *pdbonly*, позволяет присоединить отладчик к выполняющейся программе. Определение *pdbonly* позволяет выполнять отладку исходного кода при запуске программы в отладчике, но при этом ассемблер отображается только при подключении выполняющейся программы к отладчику. Используйте этот параметр для создания отладочных сборок. При использовании параметра *full* нужно учитывать некоторое влияние на скорость и размер оптимизированного кода JIT и незначительное влияние на качество кода с *full*. Для создания кода выпуска рекомендуется использовать *pdbonly* или не использовать PDB. Разница между *pdbonly* и *full* заключается в том, что компилятор с *full* создает <xref:System.Diagnostics.DebuggableAttribute>, чтобы сообщить JIT-компилятору о доступности отладочных сведений. Поэтому если при использовании *full* код содержит <xref:System.Diagnostics.DebuggableAttribute> со значением false, вы получите сообщение об ошибке. Дополнительные сведения о настройке производительности отладки для приложения см. в разделе [Упрощение отладки образов](../../../framework/debug-trace-profile/making-an-image-easier-to-debug.md).
 
 ## <a name="optimize"></a>Оптимизация

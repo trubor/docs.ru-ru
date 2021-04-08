@@ -1,21 +1,23 @@
 ---
-title: Критическое изменение. API, связанные с DataGridView, вызывают исключение InvalidOperationException
+title: Критическое изменение в .NET 5. API, связанные с DataGridView, вызывают исключение InvalidOperationException
 description: Сведения о критическом изменении в .NET 5, где некоторые интерфейсы API, связанные с DataGridView, вызовут исключение, если значение DataGridViewCellAccessibleObject.Owner объекта равно NULL.
 ms.date: 09/18/2020
-ms.openlocfilehash: e49ce0ebecb5a9ab4ed7f0e0d70d994ab751bc58
-ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
+ms.openlocfilehash: 57ff50d7bdc83286d4d452746e8f64bace187edb
+ms.sourcegitcommit: 109507b6c16704ed041efe9598c70cd3438a9fbc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102256118"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106079600"
 ---
-# <a name="datagridview-related-apis-now-throw-invalidoperationexception"></a>API, связанные с DataGridView, теперь вызывают исключение InvalidOperationException
+# <a name="datagridview-related-apis-throw-invalidoperationexception"></a>API, связанные с DataGridView, вызывают исключение InvalidOperationException
 
 Некоторые API, связанные с <xref:System.Windows.Forms.DataGridView>, теперь вызывают <xref:System.InvalidOperationException>, если значение объекта <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Owner?displayProperty=nameWithType> — `null`.
 
 ## <a name="change-description"></a>Описание изменений
 
-В предыдущих версиях .NET затронутые API выдают <xref:System.NullReferenceException> при вызове, а значение <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Owner> — `null`. Начиная с .NET 5 эти API создают <xref:System.InvalidOperationException>, а не <xref:System.NullReferenceException>, если при вызове значение <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Owner> — `null`.
+В предыдущих версиях .NET затронутые API выдают <xref:System.NullReferenceException> при вызове, если для свойства <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Owner> задано значение `null`. Начиная с .NET 5 эти API создают <xref:System.InvalidOperationException>, а не <xref:System.NullReferenceException>, если при их вызове свойство <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Owner> имеет значение `null`.
+
+## <a name="reason-for-change"></a>Причина изменения
 
 Вызов <xref:System.InvalidOperationException> соответствует поведению среды выполнения .NET. Это также улучшает процесс отладки, четко указывая недопустимое свойство.
 
@@ -29,7 +31,7 @@ ms.locfileid: "102256118"
 
 ## <a name="affected-apis"></a>Затронутые API
 
-В следующей таблице перечислены затронутые свойства и параметры.
+Затронутые API перечислены в следующей таблице:
 
 > [!div class="mx-tdBreakAll"]
 > | Затронутый метод или свойство | Проверенное свойство | Добавлено в версии |
@@ -46,6 +48,10 @@ ms.locfileid: "102256118"
 > | <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.DataGridViewColumnHeaderCellAccessibleObject.Navigate(System.Windows.Forms.AccessibleNavigation)?displayProperty=nameWithType> | <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Owner> | 5.0 |
 > | <xref:System.Windows.Forms.DataGridViewImageCell.DataGridViewImageCellAccessibleObject.DoDefaultAction?displayProperty=nameWithType> | <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Owner> | 5.0 |
 > | <xref:System.Windows.Forms.DataGridViewLinkCell.DataGridViewLinkCellAccessibleObject.DoDefaultAction?displayProperty=nameWithType> | <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Owner> | 5.0 |
+
+## <a name="see-also"></a>См. также
+
+- [API, связанные с DataGridView, вызывают исключение InvalidOperationException (.NET 6)](../6.0/null-owner-causes-invalidoperationexception.md)
 
 <!--
 

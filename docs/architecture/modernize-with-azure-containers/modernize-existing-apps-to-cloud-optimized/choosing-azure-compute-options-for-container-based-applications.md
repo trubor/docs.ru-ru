@@ -2,12 +2,12 @@
 title: Выбор вычислительных платформ Azure для контейнерных приложений
 description: Модернизация существующих приложений .NET с помощью облака Azure и контейнеров Windows | Выбор вычислительных платформ Azure для контейнерных приложений
 ms.date: 02/18/2020
-ms.openlocfilehash: 9246b8dfb4e1d68fbd965d25e2e9d3272563798c
-ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
+ms.openlocfilehash: fcb9a0e7277f5ce31309f52aff63d579b0bb9a02
+ms.sourcegitcommit: 109507b6c16704ed041efe9598c70cd3438a9fbc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102257997"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106079613"
 ---
 # <a name="choosing-azure-compute-platforms-for-container-based-applications"></a>Выбор вычислительных платформ Azure для контейнерных приложений
 
@@ -38,6 +38,12 @@ ms.locfileid: "102257997"
 
 ![Значок рекомендуемого сценария](media/choosing-azure-compute-options-for-container-based-applications/recommended.png) Рекомендуемый сценарий \
 ![Значок возможного сценария](media/choosing-azure-compute-options-for-container-based-applications/possible.png) Возможна
+
+### <a name="additional-resources"></a>Дополнительные ресурсы
+
+- **Выбор вычислительной службы Azure для приложения**
+
+    <https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree>
 
 > [!div class="step-by-step"]
 > [Назад](when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md)

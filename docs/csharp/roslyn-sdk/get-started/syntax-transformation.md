@@ -3,12 +3,12 @@ title: Начало работы с синтаксическими преобр�
 description: Введение в обходы, отправка запросов и прохождение деревьев синтаксиса.
 ms.date: 06/01/2018
 ms.custom: mvc
-ms.openlocfilehash: 706e4643ecc81d252a9192dc5e8850024770628f
-ms.sourcegitcommit: 456b3cd82a87b453fa737b4661295070d1b6d684
+ms.openlocfilehash: f12727332256acd9bbe828b9149376080facd156
+ms.sourcegitcommit: 652f62fc8f3ab6a264681b6eb5211ac7539bd115
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100639407"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105964827"
 ---
 # <a name="get-started-with-syntax-transformation"></a>Начало работы с синтаксическими преобразованиями
 
