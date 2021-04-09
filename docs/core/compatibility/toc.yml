@@ -25,6 +25,8 @@ items:
                 href: 6.0.md
               - name: ASP.NET Core
                 items:
+                  - name: 'Сборки, удаленные с общей платформы'
+                    href: aspnet-core/6.0/assemblies-removed-from-shared-framework.md
                   - name: "Изменения в аннотациях ссылочного типа, допускающих значения\_NULL"
                     href: aspnet-core/6.0/nullable-reference-type-annotations-changed.md
                   - name: Устаревшие и удаленные API
@@ -331,6 +333,8 @@ items:
             items:
               - name: ".NET\_6"
                 items:
+                  - name: 'Сборки, удаленные с общей платформы'
+                    href: aspnet-core/6.0/assemblies-removed-from-shared-framework.md
                   - name: "Изменения в аннотациях ссылочного типа, допускающих значения\_NULL"
                     href: aspnet-core/6.0/nullable-reference-type-annotations-changed.md
                   - name: Устаревшие и удаленные API
