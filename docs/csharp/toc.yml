@@ -538,10 +538,10 @@ items:
             href: programming-guide/types/using-type-dynamic.md
           - name: Пошаговое руководство. Создание и использование динамических объектов (C# и Visual Basic)
             href: programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md
-      - name: 'Классы, записи и структуры'
+      - name: 'Классы, структуры и записи'
         items:
           - name: Обзор
-            displayName: 'classes, records'
+            displayName: 'classes, structs, records'
             href: programming-guide/classes-and-structs/index.md
           - name: Классы
             href: programming-guide/classes-and-structs/classes.md
