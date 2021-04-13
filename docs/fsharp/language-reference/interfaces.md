@@ -2,12 +2,12 @@
 title: Интерфейсы
 description: 'Узнайте, как интерфейсы F # определяют наборы связанных элементов, реализуемых другими классами.'
 ms.date: 08/15/2020
-ms.openlocfilehash: 0cef2932045dae401f5aa069107815543457ca4a
-ms.sourcegitcommit: f99115e12a5eb75638abe45072e023a3ce3351ac
+ms.openlocfilehash: ca6ff206758cab12f1a240c4b79ea5143a2a0b7d
+ms.sourcegitcommit: bbc724b72fb6c978905ac715e4033efa291f84dc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94557055"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107369638"
 ---
 # <a name="interfaces"></a>Интерфейсы
 
@@ -62,10 +62,10 @@ let class-name (argument-list) =
 Можно указать несколько параметров двумя способами: F #-style и. Стиль NET. Оба метода будут компилироваться одинаково для потребителей .NET, но в стиле F # будут принудительно использовать в f # приложение с параметрами и. NET-Styles вынуждает вызывающие методы F # использовать приложение аргументов кортежа.
 
 ```fsharp
-type INumeric1 =
+type INumericFSharp =
     abstract Add: x: int -> y: int -> int
 
-type INumeric2 =
+type INumericDotNet =
     abstract Add: x: int * y: int -> int
 ```
 
