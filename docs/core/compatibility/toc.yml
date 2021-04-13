@@ -37,6 +37,8 @@ items:
                     href: aspnet-core/6.0/blazor-eventargstype-property-replaced.md
                   - name: Kestrel. Атрибуты сообщения журнала изменились
                     href: aspnet-core/6.0/kestrel-log-message-attributes-changed.md
+                  - name: 'MessagePack: библиотека изменена в @microsoft/signalr-protocol-msgpack'
+                    href: aspnet-core/6.0/messagepack-library-change.md
                   - name: 'ПО промежуточного слоя: ПО промежуточного слоя перенаправления HTTPS создает исключение для неоднозначных портов HTTPS'
                     href: aspnet-core/6.0/middleware-ambiguous-https-ports-exception.md
                   - name: Razor. Интерфейсы API RazorEngine помечены как устаревшие
@@ -345,6 +347,8 @@ items:
                     href: aspnet-core/6.0/blazor-eventargstype-property-replaced.md
                   - name: Kestrel. Атрибуты сообщения журнала изменились
                     href: aspnet-core/6.0/kestrel-log-message-attributes-changed.md
+                  - name: 'MessagePack: библиотека изменена в @microsoft/signalr-protocol-msgpack'
+                    href: aspnet-core/6.0/messagepack-library-change.md
                   - name: 'ПО промежуточного слоя: ПО промежуточного слоя перенаправления HTTPS создает исключение для неоднозначных портов HTTPS'
                     href: aspnet-core/6.0/middleware-ambiguous-https-ports-exception.md
                   - name: Razor. Интерфейсы API RazorEngine помечены как устаревшие
