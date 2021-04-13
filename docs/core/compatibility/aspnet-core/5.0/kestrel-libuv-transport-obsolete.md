@@ -1,15 +1,14 @@
 ---
 title: Критическое изменение. Kestrel. Транспорт Libuv помечен как устаревший
 description: Сведения о критическом изменении в ASP.NET Core 5.0 — Kestrel. Транспорт Libuv помечен как устаревший
-author: scottaddie
 ms.author: scaddie
 ms.date: 10/01/2020
-ms.openlocfilehash: f66b9b646671e07957e6d30a95333d392eb29617
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7edec666df729edbffe60b6017a2b8ee5f46ae67
+ms.sourcegitcommit: 089068389671f6f9e15fd67dcbfb0145bf72f1fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759775"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106497636"
 ---
 # <a name="kestrel-libuv-transport-marked-as-obsolete"></a>Kestrel. Транспорт Libuv помечен как устаревший
 

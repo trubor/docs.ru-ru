@@ -1,15 +1,14 @@
 ---
 title: Критическое изменение. SignalR. Тип параметров протокола концентратора MessagePack изменился
 description: Сведения о критическом изменении в ASP.NET Core 5.0 — SignalR. Тип параметров протокола концентратора MessagePack изменился
-author: scottaddie
 ms.author: scaddie
 ms.date: 10/01/2020
-ms.openlocfilehash: b75dbec834699472f18b3058052274476bd9751d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5a1a3728e4f842074c80f5063dcfe47ad8858674
+ms.sourcegitcommit: 089068389671f6f9e15fd67dcbfb0145bf72f1fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95760027"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106497922"
 ---
 # <a name="signalr-messagepack-hub-protocol-options-type-changed"></a>SignalR. Тип параметров протокола концентратора MessagePack изменился
 

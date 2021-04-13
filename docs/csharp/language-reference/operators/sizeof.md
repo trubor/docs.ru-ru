@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - sizeof keyword [C#]
 ms.assetid: c548592c-677c-4f40-a4ce-e613f7529141
-ms.openlocfilehash: f1358cbfb6cbc2942cef12e650f7bd362ba37a78
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 6685cdb4fba2460ee4a47b004aa6911ab76235a4
+ms.sourcegitcommit: 089068389671f6f9e15fd67dcbfb0145bf72f1fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89136880"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106497376"
 ---
 # <a name="sizeof-operator-c-reference"></a>Справочник по C#. Оператор sizeof
 
@@ -54,6 +54,6 @@ ms.locfileid: "89136880"
 - [справочник по C#](../index.md)
 - [Операторы и выражения C#](index.md)
 - [Операторы, связанные с указателем](pointer-related-operators.md)
-- [Типы указателей](../../programming-guide/unsafe-code-pointers/pointer-types.md)
+- [Типы указателей](../unsafe-code.md#pointer-types)
 - [Типы, связанные с памятью и диапазонами](../../../standard/memory-and-spans/index.md)
 - [Универсальные шаблоны в .NET](../../../standard/generics/index.md)

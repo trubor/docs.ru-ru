@@ -3,12 +3,12 @@ title: Параметры конфигурации сборщика мусора
 description: Сведения о параметрах времени выполнения, определяющих, как сборщик мусора управляет памятью для приложений .NET Core.
 ms.date: 07/10/2020
 ms.topic: reference
-ms.openlocfilehash: 1bae00d2fc6e80811986bbb111f38582720f8487
-ms.sourcegitcommit: 872ca41d1c26f39d0aef57cc365d09503bac780d
+ms.openlocfilehash: 17df3ec8473750edfca4999972c56be1e8a5feec
+ms.sourcegitcommit: 089068389671f6f9e15fd67dcbfb0145bf72f1fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "106288085"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106496661"
 ---
 # <a name="run-time-configuration-options-for-garbage-collection"></a>Параметры конфигурации времени выполнения для сборки мусора
 
@@ -377,7 +377,7 @@ ms.locfileid: "106288085"
 | | Имя параметра | Значения | Представленная версия |
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.HighMemoryPercent` | *Десятичное значение* | .NET 5.0 |
-| **Переменная среды** | `COMPlus_GCHighMemPercent` | *Шестнадцатеричное значение* | |
+| **Переменная среды** | `COMPlus_GCHighMemPercent` | *Шестнадцатеричное значение* | .NET Core 3.0<br/>.NET Framework 4.7.2 |
 
 > [!TIP]
 > Если вы задаете параметр в *runtimeconfig.json*, укажите десятичное значение. Если вы задаете параметр в виде переменной среды, укажите шестнадцатеричное значение. Например, чтобы задать пороговое значение загрузки памяти в 75 %, для JSON-файла нужно указать значение 75, а для переменной среды — 0x4B или 4B.
@@ -427,7 +427,7 @@ ms.locfileid: "106288085"
 
 | | Имя параметра | Значения | Представленная версия |
 | - | - | - | - |
-| **runtimeconfig.json** | Н/Д | Н/Д | Н/Д |
+| **runtimeconfig.json** | Н/Д | Недоступно | Н/Д |
 | **Переменная среды** | `COMPlus_GCLargePages` | `0` — отключено<br/>`1` — включено | .NET Core 3.0 |
 
 ## <a name="allow-large-objects"></a>Разрешить большие объекты
@@ -438,7 +438,7 @@ ms.locfileid: "106288085"
 
 | | Имя параметра | Значения | Представленная версия |
 | - | - | - | - |
-| **runtimeconfig.json** | Н/Д | Н/Д | Н/Д |
+| **runtimeconfig.json** | Н/Д | Недоступно | Н/Д |
 | **Переменная среды** | `COMPlus_gcAllowVeryLargeObjects` | `1` — включено<br/> `0` — отключено | .NET Core 1.0 |
 | **app.config для .NET Framework** | [gcAllowVeryLargeObjects](../../framework/configure-apps/file-schema/runtime/gcallowverylargeobjects-element.md) | `1` — включено<br/> `0` — отключено | .NET Framework 4,5 |
 
@@ -476,5 +476,5 @@ ms.locfileid: "106288085"
 
 | | Имя параметра | Значения | Представленная версия |
 | - | - | - | - |
-| **runtimeconfig.json** | Н/Д | Н/Д | Н/Д |
+| **runtimeconfig.json** | Н/Д | Недоступно | Н/Д |
 | **Переменная среды** | `COMPlus_GCName` | *string_path* | .NET Core 2.0; |

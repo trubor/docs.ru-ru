@@ -1,15 +1,14 @@
 ---
 title: Критическое изменение. HTTP. Типы Kestrel и IIS BadHttpRequestException, помеченные как устаревшие и замененные
 description: Сведения о критическом изменении в ASP.NET Core 5.0 — HTTP. Типы Kestrel и IIS BadHttpRequestException, помеченные как устаревшие и замененные
-author: scottaddie
 ms.author: scaddie
 ms.date: 10/01/2020
-ms.openlocfilehash: c51b1dd9d708c04bc1bbcfb65ea2e9daea5330b4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5837018def634b732b4f273f1a794267f4d17972
+ms.sourcegitcommit: 089068389671f6f9e15fd67dcbfb0145bf72f1fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759725"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106498143"
 ---
 # <a name="http-kestrel-and-iis-badhttprequestexception-types-marked-obsolete-and-replaced"></a>HTTP. Типы Kestrel и IIS BadHttpRequestException, помеченные как устаревшие и замененные
 

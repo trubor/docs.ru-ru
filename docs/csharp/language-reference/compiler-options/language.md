@@ -10,12 +10,12 @@ helpviewer_keywords:
 - DefineConstants compiler option [C#]
 - LangVersion compiler option [C#]
 - Nullable compiler option [C#]
-ms.openlocfilehash: fe3b7b8c06aa86e406757feb7635a5e9ca1032e9
-ms.sourcegitcommit: 05d0087dfca85aac9ca2960f86c5efd218bf833f
+ms.openlocfilehash: a7767d548e41e054006fb53cad47e8ab1f14b21b
+ms.sourcegitcommit: 089068389671f6f9e15fd67dcbfb0145bf72f1fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105637030"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106496713"
 ---
 # <a name="c-compiler-options-for-language-feature-rules"></a>Параметры компилятора C# для правил языковых функций
 
@@ -45,7 +45,7 @@ ms.locfileid: "105637030"
 <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 ```
 
-Дополнительные сведения см. в разделе [Небезопасный код и указатели](../../programming-guide/unsafe-code-pointers/index.md).
+Дополнительные сведения см. в разделе [Небезопасный код и указатели](../unsafe-code.md).
 
 ## <a name="defineconstants"></a>DefineConstants
 

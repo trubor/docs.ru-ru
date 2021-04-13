@@ -1,15 +1,14 @@
 ---
 title: 'Критическое изменение. Blazor: Изменена целевая платформа для пакетов NuGet'
 description: Сведения о критическом изменении в ASP.NET Core 5.0 — Blazor. Изменена целевая платформа для пакетов NuGet
-author: scottaddie
 ms.author: scaddie
 ms.date: 10/01/2020
-ms.openlocfilehash: 5515edc66ff9786f0d8f7e24e5fc28c71502567b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 02945c223410860c9336b6046afe54cacce878dd
+ms.sourcegitcommit: 089068389671f6f9e15fd67dcbfb0145bf72f1fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759733"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106498195"
 ---
 # <a name="blazor-target-framework-of-nuget-packages-changed"></a>Blazor: Изменена целевая платформа для пакетов NuGet
 

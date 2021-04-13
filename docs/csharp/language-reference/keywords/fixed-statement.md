@@ -7,16 +7,16 @@ f1_keywords:
 - fixed
 helpviewer_keywords:
 - fixed keyword [C#]
-ms.openlocfilehash: 05505916ab3837d2c433ec420d7928a8ee883fa8
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 2af9c4311e8326d6df933ec5d4c38354fe021e5c
+ms.sourcegitcommit: 089068389671f6f9e15fd67dcbfb0145bf72f1fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89139727"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106497571"
 ---
 # <a name="fixed-statement-c-reference"></a>Оператор fixed (Справочник по C#)
 
-Оператор `fixed` не позволяет сборщику мусора переносить перемещаемую переменную. Оператор `fixed` допускается только в [небезопасном](unsafe.md) контексте. Можно также использовать ключевое слово `fixed` для создания [буферов фиксированного размера](../../programming-guide/unsafe-code-pointers/fixed-size-buffers.md).
+Оператор `fixed` не позволяет сборщику мусора переносить перемещаемую переменную. Оператор `fixed` допускается только в [небезопасном](unsafe.md) контексте. Можно также использовать ключевое слово `fixed` для создания [буферов фиксированного размера](../unsafe-code.md#fixed-size-buffers).
 
 Оператор `fixed` задает указатель на управляемую переменную и "закрепляет" эту переменную во время выполнения оператора. Указатели на перемещаемые управляемые переменные полезны только в контексте `fixed`. Без контекста `fixed` при сборке мусора эти переменные могут переноситься непредсказуемым образом. Компилятор C# позволяет присвоить указатель только управляемой переменной в операторе `fixed`.
 
@@ -75,5 +75,5 @@ fixed (byte* ps = srcarray, pd = dstarray)
 - [Руководство по программированию на C#](../../programming-guide/index.md)
 - [Ключевые слова в C#](index.md)
 - [unsafe](unsafe.md)
-- [Типы указателей](../../programming-guide/unsafe-code-pointers/pointer-types.md)
-- [Буферы фиксированного размера](../../programming-guide/unsafe-code-pointers/fixed-size-buffers.md)
+- [Типы указателей](../unsafe-code.md#pointer-types)
+- [Буферы фиксированного размера](../unsafe-code.md#fixed-size-buffers)

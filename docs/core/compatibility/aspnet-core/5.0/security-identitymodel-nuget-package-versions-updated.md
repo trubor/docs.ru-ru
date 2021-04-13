@@ -1,15 +1,14 @@
 ---
 title: Критическое изменение. Безопасность. Обновлены версии пакета NuGet IdentityModel
 description: Сведения о критическом изменении в ASP.NET Core 5.0 — безопасность. Обновлены версии пакета NuGet IdentityModel
-author: scottaddie
 ms.author: scaddie
 ms.date: 10/01/2020
-ms.openlocfilehash: e2545d90f0024c9f2f5e1b80dce69e17f11baedc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 13f143699f7118aa739bce70bd99df3b7f9ea281
+ms.sourcegitcommit: 089068389671f6f9e15fd67dcbfb0145bf72f1fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95760030"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106497584"
 ---
 # <a name="security-identitymodel-nuget-package-versions-updated"></a>Безопасность. Обновлены версии пакета NuGet IdentityModel
 

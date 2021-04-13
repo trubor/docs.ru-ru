@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - unsafe keyword [C#]
 ms.assetid: 7e818009-1c6e-4b9e-b769-3728a01586a0
-ms.openlocfilehash: 5be895621966dd10b2b1b0f53ebf0f3c688f1ef0
-ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
+ms.openlocfilehash: e7ee7e3c721a4141160b907076533effa2848085
+ms.sourcegitcommit: 089068389671f6f9e15fd67dcbfb0145bf72f1fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103480653"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106498442"
 ---
 # <a name="unsafe-c-reference"></a>unsafe (Справочник по C#)
 
-Ключевое слово `unsafe` обозначает небезопасный контекст, необходимый для выполнения любых операций с применением указателей. Дополнительные сведения см. в разделе [Небезопасный код и указатели](../../programming-guide/unsafe-code-pointers/index.md).
+Ключевое слово `unsafe` обозначает небезопасный контекст, необходимый для выполнения любых операций с применением указателей. Дополнительные сведения см. в разделе [Небезопасный код и указатели](../unsafe-code.md).
 
 В объявлении типа или члена типа можно использовать модификатор `unsafe`. Все текстовое пространство типа или члена типа считается небезопасным контекстом. Например, следующий метод объявлен с модификатором `unsafe`:
 
@@ -59,5 +59,5 @@ unsafe
 - [Руководство по программированию на C#](../../programming-guide/index.md)
 - [Ключевые слова в C#](index.md)
 - [Оператор fixed](fixed-statement.md)
-- [Небезопасный код и указатели](../../programming-guide/unsafe-code-pointers/index.md)
-- [Буферы фиксированного размера](../../programming-guide/unsafe-code-pointers/fixed-size-buffers.md)
+- [Небезопасный код и указатели](../unsafe-code.md)
+- [Буферы фиксированного размера](../unsafe-code.md#fixed-size-buffers)

@@ -6,12 +6,12 @@ f1_keywords:
 - stackalloc_CSharpKeyword
 helpviewer_keywords:
 - stackalloc expression [C#]
-ms.openlocfilehash: 72d91cf9aa67957ed8e1cad5b2c4a1f3b6382c1f
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 42867ff1b5acffaf62639a31a5bdd3b4055e252a
+ms.sourcegitcommit: 089068389671f6f9e15fd67dcbfb0145bf72f1fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89136854"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106497467"
 ---
 # <a name="stackalloc-expression-c-reference"></a>выражение stackalloc (справочник по C#)
 
@@ -36,7 +36,7 @@ ms.locfileid: "89136854"
   > [!NOTE]
   > Мы рекомендуем везде, где это возможно, использовать для работы с выделенной в стеке памятью типы <xref:System.Span%601> или <xref:System.ReadOnlySpan%601>.
 
-- [Тип указателя](../../programming-guide/unsafe-code-pointers/pointer-types.md), как показано в следующем примере.
+- [Тип указателя](../unsafe-code.md#pointer-types), как показано в следующем примере.
 
   [!code-csharp[stackalloc pointer](snippets/shared/StackallocOperator.cs#AssignToPointer)]
 
@@ -75,6 +75,6 @@ ms.locfileid: "89136854"
 - [справочник по C#](../index.md)
 - [Операторы и выражения C#](index.md)
 - [Операторы, связанные с указателем](pointer-related-operators.md)
-- [Типы указателей](../../programming-guide/unsafe-code-pointers/pointer-types.md)
+- [Типы указателей](../unsafe-code.md#pointer-types)
 - [Типы, связанные с памятью и диапазонами](../../../standard/memory-and-spans/index.md)
 - [Правила stackalloc](https://vcsjones.dev/2020/02/24/stackalloc/)

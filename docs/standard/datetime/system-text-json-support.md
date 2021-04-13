@@ -12,12 +12,12 @@ helpviewer_keywords:
 - JSON Serializer, JSON Reader, JSON Writer
 - Converter, JSON Converter, DateTime Converter
 - ISO, ISO 8601, ISO 8601-1:2019
-ms.openlocfilehash: 3f8161c40f21428a4a22bef09582754069f3a2b6
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 6b4e79e6c666731e313ed41e25f601df4158b8d4
+ms.sourcegitcommit: 4b7f6b348c986556ef805cb6baacfd5b9ec18ed0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94817540"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107075424"
 ---
 # <a name="datetime-and-datetimeoffset-support-in-systemtextjson"></a>Поддержка DateTime и DateTimeOffset в System.Text.Json
 
@@ -102,6 +102,12 @@ System.Text.Jsв библиотеке выполняет синтаксичес�
 
 [!code-csharp[example-showing-datetime-parse-as-fallback](~/samples/snippets/standard/datetime/json/csharp/datetime-converter-examples/example3/Program.cs)]
 
+#### <a name="using-unix-epoch-date-format"></a>Использование формата даты эпохи UNIX
+
+Следующий преобразователь обрабатывает эпоху UNIX с использованием формата часового пояса (значения, такие как `/Date(1590863400000-0700)/` ):
+
+:::code language="csharp" source="../serialization/snippets/system-text-json-how-to-5-0/csharp/CustomConverterUnixEpochDate.cs" id="ConverterOnly":::
+
 ### <a name="when-writing-with-xrefsystemtextjsonutf8jsonwriter"></a>При записи с помощью <xref:System.Text.Json.Utf8JsonWriter>
 
 Если вы хотите написать пользовательское <xref:System.DateTime> или <xref:System.DateTimeOffset> текстовое представление с помощью <xref:System.Text.Json.Utf8JsonWriter> , можно отформатировать пользовательское представление до <xref:System.String> , `ReadOnlySpan<Byte>` , `ReadOnlySpan<Char>` или <xref:System.Text.Json.JsonEncodedText> , а затем передать его в соответствующий <xref:System.Text.Json.Utf8JsonWriter.WriteStringValue%2A?displayProperty=nameWithType> метод или <xref:System.Text.Json.Utf8JsonWriter.WriteString%2A?displayProperty=nameWithType> .
@@ -126,12 +132,12 @@ System.Text.Jsв библиотеке выполняет синтаксичес�
 
 | Компонент       | Формат                      | Описание                                                                     |
 |-----------------|-----------------------------|---------------------------------------------------------------------------------|
-| Year;            | "yyyy"                      | 0001-9999                                                                       |
+| Year            | "yyyy"                      | 0001-9999                                                                       |
 | Месяц           | "MM"                        | 01-12                                                                           |
 | День             | "dd"                        | 01-28, 01-29, 01-30, 01-31 в зависимости от месяца/года                                  |
 | Час            | "HH"                        | 00-23                                                                           |
 | Минута          | "mm"                        | 00-59                                                                           |
-| Second          | "ss"                        | 00-59                                                                           |
+| Секунда          | "ss"                        | 00-59                                                                           |
 | Вторая дробь | "FFFFFFF"                   | Минимум одна цифра, максимум 16 цифр                                      |
 | Смещение времени     | "K"                         | "Z" или "(' + '/'-') HH ': ' mm '                                                |
 | Частичное время    | "HH": "mm": "SS [FFFFFFF]"     | Время без сведений о смещении UTC                                             |

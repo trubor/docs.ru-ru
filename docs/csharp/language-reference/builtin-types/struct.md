@@ -9,12 +9,12 @@ helpviewer_keywords:
 - struct type [C#]
 - structure type [C#]
 ms.assetid: ff3dd9b7-dc93-4720-8855-ef5558f65c7c
-ms.openlocfilehash: 2ceac94c04dd8deb169e836f09928dfd9a38ac35
-ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
+ms.openlocfilehash: 3aaba057da6214992864cf8e907b0c06ec93264c
+ms.sourcegitcommit: e7e0921d0a10f85e9cb12f8b87cc1639a6c8d3fe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98025437"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107255094"
 ---
 # <a name="structure-types-c-reference"></a>Типы структур (справочник по C#)
 
@@ -33,7 +33,7 @@ ms.locfileid: "98025437"
 Начиная с C# версии 7.2, чтобы объявить, что тип структуры является неизменяемым, используйте модификатор `readonly`. Все элементы данных структуры `readonly` должны быть доступны только для чтения:
 
 - Любое объявление поля должно иметь [`readonly` модификатор](../keywords/readonly.md).
-- Все свойства, включая автоматические реализованные, должны быть доступны только для чтения. В C# 9.0 и более поздних версий свойство может иметь [метод доступа `init`](../../whats-new/csharp-9.md#init-only-setters).
+- Все свойства, включая автоматические реализованные, должны быть доступны только для чтения. В C# 9.0 и более поздних версий свойство может иметь [метод доступа `init`](../keywords/init.md).
 
 Это гарантирует, что ни один из элементов структуры `readonly` не изменит состояние структуры. В C# 8.0 и более поздних версиях это означает, что другие члены экземпляра, кроме конструкторов, неявно [`readonly`](#readonly-instance-members).
 

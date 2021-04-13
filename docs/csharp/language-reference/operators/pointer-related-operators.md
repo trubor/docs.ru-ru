@@ -20,12 +20,12 @@ helpviewer_keywords:
 - pointer increment [C#]
 - pointer decrement [C#]
 - pointer comparison [C#]
-ms.openlocfilehash: 2d522e9357fb6da7b8d66a663e99e8858c9dd521
-ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
+ms.openlocfilehash: 22cd87a62c92dbfacd0b8ebbdd5cbafb92da73ca
+ms.sourcegitcommit: 089068389671f6f9e15fd67dcbfb0145bf72f1fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103480381"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106497363"
 ---
 # <a name="pointer-related-operators-c-reference"></a>Операторы, связанные с указателем (справочник по C#)
 
@@ -37,7 +37,7 @@ ms.locfileid: "103480381"
 - Арифметические операторы [`+`, `-`, `++` и `--`](#pointer-arithmetic-operators)
 - Операторы сравнения [`==`, `!=`, `<`, `>`, `<=` и `>=`](#pointer-comparison-operators)
 
-Сведения о типах указателей см. в разделе [Типы указателей](../../programming-guide/unsafe-code-pointers/pointer-types.md).
+Сведения о типах указателей см. в разделе [Типы указателей](../unsafe-code.md#pointer-types).
 
 > [!NOTE]
 > Для всех операций с указателями требуется [небезопасный](../keywords/unsafe.md) контекст. Код, содержащий небезопасные блоки, должен компилироваться с параметром компилятора [**AllowUnsafeBlocks**](../compiler-options/language.md#allowunsafeblocks).
@@ -189,7 +189,7 @@ x->y
 
 - [справочник по C#](../index.md)
 - [Операторы и выражения C#](index.md)
-- [Типы указателей](../../programming-guide/unsafe-code-pointers/pointer-types.md)
+- [Типы указателей](../unsafe-code.md#pointer-types)
 - [Ключевое слово unsafe](../keywords/unsafe.md)
 - [Ключевое слово fixed](../keywords/fixed-statement.md)
 - [stackalloc](stackalloc.md)
