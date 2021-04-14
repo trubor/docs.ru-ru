@@ -2,12 +2,12 @@
 title: Критическое изменение. Некоторые API создают исключение ArgumentNullException
 description: 'Сведения о критическом изменении в .NET 6: некоторые API проверяют аргументы и теперь создают исключение ArgumentNullException.'
 ms.date: 01/29/2021
-ms.openlocfilehash: 1c7b41bf5e367dca394130da66360e660173ba14
-ms.sourcegitcommit: 089068389671f6f9e15fd67dcbfb0145bf72f1fb
+ms.openlocfilehash: dd0ee33ca7335bfd6e4ddfefca0e56ab719178eb
+ms.sourcegitcommit: 109507b6c16704ed041efe9598c70cd3438a9fbc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "106496856"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106079574"
 ---
 # <a name="some-apis-throw-argumentnullexception"></a>Некоторые API создают исключение ArgumentNullException
 
@@ -39,7 +39,6 @@ ms.locfileid: "106496856"
 | Метод или свойство | Имя параметра | Версия изменена |
 |-|-|-|
 | <xref:System.Windows.Forms.TreeNodeCollection.Item(System.Int32)?displayProperty=fullName> | `index` | Предварительная версия 1 |
-| <xref:System.Windows.Forms.DrawTreeNodeEventArgs.%23ctor(System.Drawing.Graphics,System.Windows.Forms.TreeNode,System.Drawing.Rectangle,System.Windows.Forms.TreeNodeStates)> | `graphics` | Предварительная версия 3 |
 | <xref:System.Windows.Forms.DataGridViewRowStateChangedEventArgs.%23ctor(System.Windows.Forms.DataGridViewRow,System.Windows.Forms.DataGridViewElementStates)> | `dataGridViewRow` | Предварительная версия 4 |
 
 ## <a name="see-also"></a>См. также
@@ -51,7 +50,6 @@ ms.locfileid: "106496856"
 ### Affected APIs
 
 - `P:System.Windows.Forms.TreeNodeCollection.Item(System.Int32)`
-- `M:System.Windows.Forms.DrawTreeNodeEventArgs.#ctor(System.Drawing.Graphics,System.Windows.Forms.TreeNode,System.Drawing.Rectangle,System.Windows.Forms.TreeNodeStates)`
 - `M:System.Windows.Forms.DataGridViewRowStateChangedEventArgs.#ctor(System.Windows.Forms.DataGridViewRow,System.Windows.Forms.DataGridViewElementStates)`
 
 ### Category

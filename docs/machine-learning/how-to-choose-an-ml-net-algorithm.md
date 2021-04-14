@@ -2,13 +2,13 @@
 title: Выбор алгоритма ML.NET
 description: Сведения о выборе алгоритма ML.NET для модели машинного обучения
 ms.topic: overview
-ms.date: 06/05/2019
-ms.openlocfilehash: 04cf191401c7c25f1fa341acaf9312dc19752260
-ms.sourcegitcommit: e301979e3049ce412d19b094c60ed95b316a8f8c
+ms.date: 03/31/2021
+ms.openlocfilehash: c1a35f2b5b2ece2a846469f855e91b49887f0c90
+ms.sourcegitcommit: b5d2290673e1c91260c9205202dd8b95fbab1a0b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97593094"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106122629"
 ---
 # <a name="how-to-choose-an-mlnet-algorithm"></a>Выбор алгоритма ML.NET
 
@@ -36,14 +36,51 @@ ms.locfileid: "97593094"
 
 Линейные алгоритмы делают несколько проходов по данным для обучения. Если набор данных помещается в память, то добавление [контрольной точки кэша](xref:Microsoft.ML.LearningPipelineExtensions.AppendCacheCheckpoint%2A) в конвейер ML.NET перед добавлением обучающего алгоритма ускорит обучение.
 
-**Линейные обучающие алгоритмы**
+### <a name="averaged-perceptron"></a>Усредненный персептрон
 
-|Алгоритм|Свойства|Обучающие алгоритмы|
-|---------|----------|--------|
-|Усредненный персептрон|Лучше всего подходит для классификации текста.|<xref:Microsoft.ML.Trainers.AveragedPerceptronTrainer>|
-|Стохастический двойной покоординатный подъем|Не требуется настройка для обеспечения хорошей производительности.|<xref:Microsoft.ML.Trainers.SdcaLogisticRegressionBinaryTrainer> <xref:Microsoft.ML.Trainers.SdcaNonCalibratedBinaryTrainer> <xref:Microsoft.ML.Trainers.SdcaMaximumEntropyMulticlassTrainer> <xref:Microsoft.ML.Trainers.SdcaNonCalibratedMulticlassTrainer> <xref:Microsoft.ML.Trainers.SdcaRegressionTrainer>|
-|L-BFGS|Используется при большом числе признаков. Создает статистику обучения логистической регрессии, но масштабируется не так хорошо, как AveragedPerceptronTrainer|<xref:Microsoft.ML.Trainers.LbfgsLogisticRegressionBinaryTrainer> <xref:Microsoft.ML.Trainers.LbfgsMaximumEntropyMulticlassTrainer> <xref:Microsoft.ML.Trainers.LbfgsPoissonRegressionTrainer>|
-|Посимвольный стохастический градиентный спуск|Самый быстрый и точный линейный обучающий алгоритм двоичной классификации. Хорошо масштабируется по числу процессоров|<xref:Microsoft.ML.Trainers.SymbolicSgdLogisticRegressionBinaryTrainer>|
+Идеально подходит для классификации текста.
+
+|Обучающий алгоритм|Задача|Экспортируемый в ONNX|
+|---------|----------|----------|
+|<xref:Microsoft.ML.Trainers.AveragedPerceptronTrainer>|Двоичная классификация|Да|
+
+### <a name="stochastic-dual-coordinated-ascent"></a>Стохастический двойной покоординатный подъем
+
+Не требуется настройка для обеспечения хорошей производительности.
+
+|Обучающий алгоритм|Задача|Экспортируемый в ONNX|
+|---------|----------|----------|
+|<xref:Microsoft.ML.Trainers.SdcaLogisticRegressionBinaryTrainer>|Двоичная классификация|Да|
+|<xref:Microsoft.ML.Trainers.SdcaNonCalibratedBinaryTrainer>|Двоичная классификация|Да|
+|<xref:Microsoft.ML.Trainers.SdcaMaximumEntropyMulticlassTrainer>|Многоклассовая классификация|Да|
+|<xref:Microsoft.ML.Trainers.SdcaNonCalibratedMulticlassTrainer>|Многоклассовая классификация|Да|
+|<xref:Microsoft.ML.Trainers.SdcaRegressionTrainer>|Регрессия|Да|
+
+### <a name="l-bfgs"></a>L-BFGS
+
+Используется при большом числе признаков. Создает статистику обучения логистической регрессии, но масштабируется не так хорошо, как AveragedPerceptronTrainer.
+
+|Обучающий алгоритм|Задача|Экспортируемый в ONNX|
+|---------|----------|----------|
+|<xref:Microsoft.ML.Trainers.LbfgsLogisticRegressionBinaryTrainer>|Двоичная классификация|Да|
+|<xref:Microsoft.ML.Trainers.LbfgsMaximumEntropyMulticlassTrainer>|Многоклассовая классификация|Да|
+|<xref:Microsoft.ML.Trainers.LbfgsPoissonRegressionTrainer>|Регрессия|Да|
+
+### <a name="symbolic-stochastic-gradient-descent"></a>Посимвольный стохастический градиентный спуск
+
+Самый быстрый и точный линейный обучающий алгоритм двоичной классификации. Хорошо масштабируется с учетом числа процессоров.
+
+|Обучающий алгоритм|Задача|Экспортируемый в ONNX|
+|---------|----------|----------|
+|<xref:Microsoft.ML.Trainers.SymbolicSgdLogisticRegressionBinaryTrainer>|Двоичная классификация|Да|
+
+### <a name="online-gradient-descent"></a>Метод градиентного спуска в подключенном режиме
+
+Реализует стандартный (не пакетный) стохастический градиентный спуск с выбором функций потери и возможностью обновлять весовой вектор по среднему значению наблюдаемых векторов.
+
+|Обучающий алгоритм|Задача|Экспортируемый в ONNX|
+|---------|----------|----------|
+|<xref:Microsoft.ML.Trainers.OnlineGradientDescentTrainer>|Регрессия|Да|
 
 ## <a name="decision-tree-algorithms"></a>Алгоритмы дерева принятия решений
 
@@ -59,50 +96,144 @@ ms.locfileid: "97593094"
 
 Расширенные деревья принятия решений представляют собой ансамбль небольших деревьев, где каждое дерево оценивает входные данные и передает результат следующему дереву для уточнения оценки и т. д., то есть каждое следующее дерево улучшает результат предыдущего.
 
-**Обучающие алгоритмы деревьев принятия решений**
+### <a name="light-gradient-boosted-machine"></a>Машина слабого градиентного бустинга
 
-|Алгоритм|Свойства|Обучающие алгоритмы|
-|---------|----------|--------|
-|Машина слабого градиентного бустинга|Самый быстрый и точный из обучающих алгоритмов деревьев двоичной классификации. Высокие возможности настройки|<xref:Microsoft.ML.Trainers.LightGbm.LightGbmBinaryTrainer> <xref:Microsoft.ML.Trainers.LightGbm.LightGbmMulticlassTrainer> <xref:Microsoft.ML.Trainers.LightGbm.LightGbmRegressionTrainer> <xref:Microsoft.ML.Trainers.LightGbm.LightGbmRankingTrainer>|
-|Быстрое дерево|Используется для данных изображения с определенными признаками. Устойчив к несбалансированным данным. Высокие возможности настройки | <xref:Microsoft.ML.Trainers.FastTree.FastTreeBinaryTrainer> <xref:Microsoft.ML.Trainers.FastTree.FastTreeRegressionTrainer> <xref:Microsoft.ML.Trainers.FastTree.FastTreeTweedieTrainer> <xref:Microsoft.ML.Trainers.FastTree.FastTreeRankingTrainer>|
-|Быстрый лес|Отлично подходит для данных с высоким уровнем шума.|<xref:Microsoft.ML.Trainers.FastTree.FastForestBinaryTrainer> <xref:Microsoft.ML.Trainers.FastTree.FastForestRegressionTrainer>|
-|Обобщенная аддитивная модель (GAM)|Лучше всего подходит для случаев, где хорошо справляются алгоритмы дерева, но объясняемость является приоритетной задачей.|<xref:Microsoft.ML.Trainers.FastTree.GamBinaryTrainer> <xref:Microsoft.ML.Trainers.FastTree.GamRegressionTrainer>|
+Самый быстрый и точный из обучающих алгоритмов деревьев двоичной классификации. Широкие возможности настройки.
+
+|Обучающий алгоритм|Задача|Экспортируемый в ONNX|
+|---------|----------|----------|
+|<xref:Microsoft.ML.Trainers.LightGbm.LightGbmBinaryTrainer>|Двоичная классификация|Да|
+|<xref:Microsoft.ML.Trainers.LightGbm.LightGbmMulticlassTrainer>|Многоклассовая классификация|Да|
+|<xref:Microsoft.ML.Trainers.LightGbm.LightGbmRegressionTrainer>|Регрессия|Да|
+|<xref:Microsoft.ML.Trainers.LightGbm.LightGbmRankingTrainer>|Функции ранжирования|Нет|
+
+### <a name="fast-tree"></a>Быстрое дерево
+
+Используется для данных изображения с определенными признаками. Устойчив к несбалансированным данным. Широкие возможности настройки.
+
+|Обучающий алгоритм|Задача|Экспортируемый в ONNX|
+|---------|----------|----------|
+|<xref:Microsoft.ML.Trainers.FastTree.FastTreeBinaryTrainer>|Двоичная классификация|Да|
+|<xref:Microsoft.ML.Trainers.FastTree.FastTreeRegressionTrainer>|Регрессия|Да|
+|<xref:Microsoft.ML.Trainers.FastTree.FastTreeTweedieTrainer>|Регрессия|Да|
+|<xref:Microsoft.ML.Trainers.FastTree.FastTreeRankingTrainer>|Функции ранжирования|Нет|
+
+### <a name="fast-forest"></a>Быстрый лес
+
+Отлично подходит для данных с высоким уровнем шума.
+
+|Обучающий алгоритм|Задача|Экспортируемый в ONNX|
+|---------|----------|----------|
+|<xref:Microsoft.ML.Trainers.FastTree.FastForestBinaryTrainer>|Двоичная классификация|Да|
+|<xref:Microsoft.ML.Trainers.FastTree.FastForestRegressionTrainer>|Регрессия|Да|
+
+### <a name="generalized-additive-model-gam"></a>Обобщенная аддитивная модель (GAM)
+
+Лучше всего подходит для задач, с которыми хорошо справляются алгоритмы дерева, если объясняемость имеет высокий приоритет.
+
+|Обучающий алгоритм|Задача|Экспортируемый в ONNX|
+|---------|----------|----------|
+|<xref:Microsoft.ML.Trainers.FastTree.GamBinaryTrainer>|Двоичная классификация|Нет|
+|<xref:Microsoft.ML.Trainers.FastTree.GamRegressionTrainer>|Регрессия|Нет|
 
 ## <a name="matrix-factorization"></a>Факторизация матрицы
 
-|Свойства|Обучающие алгоритмы|
-|----------|--------|
-|Лучше всего подходит для разреженных категориальных данных с большими наборами данных.|<xref:Microsoft.ML.Trainers.FieldAwareFactorizationMachineTrainer>|
+### <a name="matrix-factorization"></a>Факторизация матрицы
+
+Используется для [совместной фильтрации](https://en.wikipedia.org/wiki/Collaborative_filtering) в рекомендации.
+
+|Обучающий алгоритм|Задача|Экспортируемый в ONNX|
+|---------|----------|----------|
+|<xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer>|Рекомендация|Нет|
+
+### <a name="field-aware-factorization-machine"></a>Факторизационный метод с полями
+
+ Лучше всего подходит для разреженных категориальных данных с большими наборами данных.
+
+|Обучающий алгоритм|Задача|Экспортируемый в ONNX|
+|---------|----------|----------|
+|<xref:Microsoft.ML.Trainers.FieldAwareFactorizationMachineTrainer>|Двоичная классификация|Нет|
 
 ## <a name="meta-algorithms"></a>Метаалгоритмы
 
 Эти обучающие алгоритмы создают многоклассовый обучающий алгоритм из двоичного. Используется с <xref:Microsoft.ML.Trainers.AveragedPerceptronTrainer>, <xref:Microsoft.ML.Trainers.LbfgsLogisticRegressionBinaryTrainer>, <xref:Microsoft.ML.Trainers.SymbolicSgdLogisticRegressionBinaryTrainer>, <xref:Microsoft.ML.Trainers.LightGbm.LightGbmBinaryTrainer>, <xref:Microsoft.ML.Trainers.FastTree.FastTreeBinaryTrainer>, <xref:Microsoft.ML.Trainers.FastTree.FastForestBinaryTrainer>, <xref:Microsoft.ML.Trainers.FastTree.GamBinaryTrainer>.
 
-|Алгоритм|Свойства|Обучающие алгоритмы|
-|---------|----------|--------|
-|Один против всех|Этот многоклассовый классификатор обучает один двоичный классификатор для каждого класса, который отличает этот класс от других. Масштабирование ограничено числом классов для классификации.|[OneVersusAllTrainer\<BinaryClassificationTrainer>](xref:Microsoft.ML.Trainers.OneVersusAllTrainer) |
-|Попарное соединение|Этот многоклассовый классификатор обучает алгоритм двоичной классификации для каждой пары классов. Масштабирование ограничено числом классов, так как требуется обучение для каждого сочетания из двух классов.|[PairwiseCouplingTrainer\<BinaryClassificationTrainer>](xref:Microsoft.ML.Trainers.PairwiseCouplingTrainer)|
+### <a name="one-versus-all"></a>Один против всех
+
+Этот многоклассовый классификатор обучает один двоичный классификатор для каждого класса, который отличает этот класс от других. Масштабирование ограничено числом классов для классификации.
+
+|Обучающий алгоритм|Задача|Экспортируемый в ONNX|
+|---------|----------|----------|
+|<xref:Microsoft.ML.Trainers.OneVersusAllTrainer>|Многоклассовая классификация|Да|
+
+### <a name="pairwise-coupling"></a>Попарное соединение
+
+Этот многоклассовый классификатор обучает алгоритм двоичной классификации для каждой пары классов. Масштабирование ограничено числом классов, так как требуется обучение для каждого сочетания из двух классов.
+
+|Обучающий алгоритм|Задача|Экспортируемый в ONNX|
+|---------|----------|----------|
+|<xref:Microsoft.ML.Trainers.PairwiseCouplingTrainer>|Многоклассовая классификация|Нет|
 
 ## <a name="k-means"></a>Метод k-средних
 
-|Свойства|Обучающие алгоритмы|
-|----------|--------|
-|Используется для кластеризации.|<xref:Microsoft.ML.Trainers.KMeansTrainer>|
+Используется для кластеризации.
+
+|Обучающий алгоритм|Задача|Экспортируемый в ONNX|
+|---------|----------|----------|
+|<xref:Microsoft.ML.Trainers.KMeansTrainer>|Кластеризация|Да|
 
 ## <a name="principal-component-analysis"></a>Анализ главных компонентов
 
-|Свойства|Обучающие алгоритмы|
-|----------|--------|
-|Используется для обнаружения отклонений.|<xref:Microsoft.ML.Trainers.RandomizedPcaTrainer>|
+Используется для обнаружения аномалий.
+
+|Обучающий алгоритм|Задача|Экспортируемый в ONNX|
+|---------|----------|----------|
+|<xref:Microsoft.ML.Trainers.RandomizedPcaTrainer>|Обнаружение аномалий|Нет|
 
 ## <a name="naive-bayes"></a>упрощенный алгоритм Байеса
 
-|Свойства|Обучающие алгоритмы|
-|----------|--------|
-|Этот обучающий алгоритм многоклассовой классификации используется, когда признаки являются независимыми, а набор данных невелик.|<xref:Microsoft.ML.Trainers.NaiveBayesMulticlassTrainer>|
+Этот алгоритм многоклассовой классификации используется, когда признаки являются независимыми, а набор данных небольшой.
+
+|Обучающий алгоритм|Задача|Экспортируемый в ONNX|
+|---------|----------|----------|
+|<xref:Microsoft.ML.Trainers.NaiveBayesMulticlassTrainer>|Многоклассовая классификация|Да|
 
 ## <a name="prior-trainer"></a>Базовый обучающий алгоритм
 
-|Свойства|Обучающие алгоритмы|
-|----------|--------|
-|Этот обучающий алгоритм двоичной классификации задает базовый уровень производительности для других обучающих алгоритмов. Для обеспечения эффективности метрики других обучающих алгоритмов должны быть лучше, чем у базового. |<xref:Microsoft.ML.Trainers.PriorTrainer>|
+Этот алгоритм двоичной классификации позволяет задать базовый уровень производительности для других обучающих алгоритмов. Для обеспечения эффективности метрики других обучающих алгоритмов должны быть лучше, чем у базового.
+
+|Обучающий алгоритм|Задача|Экспортируемый в ONNX|
+|---------|----------|----------|
+|<xref:Microsoft.ML.Trainers.PriorTrainer>|Двоичная классификация|Да|
+
+## <a name="support-vector-machines"></a>Метод опорных векторов
+
+Метод опорных векторов (SVM) — это невероятно популярный и хорошо изученный класс моделей для контролируемого обучения, который можно использовать в линейных и нелинейных задачах классификации.
+
+В последних исследованиях основное внимание уделяется способам оптимизации этих моделей для эффективного масштабирования до более крупных наборов обучающих данных.
+
+### <a name="linear-svm"></a>Линейный метод опорных векторов
+
+Прогнозирует целевое значение с использованием модели линейной двоичной классификации, обученной по двоичным данным с метками. Поочередно применяет этапы стохастического градиентного спуска и проекции.
+
+|Обучающий алгоритм|Задача|Экспортируемый в ONNX|
+|---------|----------|----------|
+|<xref:Microsoft.ML.Trainers.LinearSvmTrainer>|Двоичная классификация|Да|
+
+### <a name="local-deep-svm"></a>Глубокий локальный метод опорных векторов
+
+Прогнозирует целевое значение с использованием модели нелинейной двоичной классификации. Сокращает затраты времени на получение прогноза. Затраты при увеличении обучающего набора растут не линейно, а логарифмически, с допустимой потерей точности классификации.
+
+|Обучающий алгоритм|Задача|Экспортируемый в ONNX|
+|---------|----------|----------|
+|<xref:Microsoft.ML.Trainers.LdSvmTrainer>|Двоичная классификация|Да|
+
+## <a name="ordinary-least-squares"></a>Обычный метод наименьших квадратов
+
+Обычный метод наименьших квадратов является одним из самых распространенных методов линейной регрессии.
+
+Обычный метод наименьших квадратов ссылается на функцию потерь, которая вычисляет погрешность как сумму квадрата расхождения фактического значения и спрогнозированной линии и подгоняет модель, минимизируя квадратичную погрешность. Этот метод предполагает сильную линейную зависимость между входными данными и зависимой переменной.
+
+|Обучающий алгоритм|Задача|Экспортируемый в ONNX|
+|---------|----------|----------|
+|<xref:Microsoft.ML.Trainers.OlsTrainer>|Регрессия|Да|
