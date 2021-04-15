@@ -13,9 +13,9 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/14/2021
 ms.locfileid: "107494783"
 ---
-# <a name="disable-and-enable-directives-visual-basic"></a><span data-ttu-id="da44b-103">Директивы #Disable и #Enable (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="da44b-103">#Disable and #Enable directives (Visual Basic)</span></span>
+# <a name="disable-and-enable-directives-visual-basic"></a><span data-ttu-id="7d8f0-103">Директивы #Disable и #Enable (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="7d8f0-103">#Disable and #Enable directives (Visual Basic)</span></span>
 
-<span data-ttu-id="da44b-104">`#Disable` `#Enable` Директивы и являются Visual Basic директивами компилятора исходного кода.</span><span class="sxs-lookup"><span data-stu-id="da44b-104">The `#Disable` and `#Enable` directives are Visual Basic source code compiler directives.</span></span> <span data-ttu-id="da44b-105">Они используются для отключения и повторного включения всех или конкретных предупреждений для регионов кода.</span><span class="sxs-lookup"><span data-stu-id="da44b-105">They are used to disable and re-enable all or specific warnings for regions of code.</span></span>
+<span data-ttu-id="7d8f0-104">`#Disable` `#Enable` Директивы и являются Visual Basic директивами компилятора исходного кода.</span><span class="sxs-lookup"><span data-stu-id="7d8f0-104">The `#Disable` and `#Enable` directives are Visual Basic source code compiler directives.</span></span> <span data-ttu-id="7d8f0-105">Они используются для отключения и повторного включения всех или конкретных предупреждений для регионов кода.</span><span class="sxs-lookup"><span data-stu-id="7d8f0-105">They are used to disable and re-enable all or specific warnings for regions of code.</span></span>
 
 ```vb
     Dim variable1    'warning BC42024: Unused local variable: 'variable1'.
@@ -34,9 +34,9 @@ ms.locfileid: "107494783"
 #Enable Warning BC42356
 ```
 
-<span data-ttu-id="da44b-106">Можно также отключить и включить список кодов предупреждений с разделителями-запятыми.</span><span class="sxs-lookup"><span data-stu-id="da44b-106">You can also disable and enable a comma-separated list of warning codes.</span></span>
+<span data-ttu-id="7d8f0-106">Можно также отключить и включить список кодов предупреждений с разделителями-запятыми.</span><span class="sxs-lookup"><span data-stu-id="7d8f0-106">You can also disable and enable a comma-separated list of warning codes.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="da44b-107">См. также</span><span class="sxs-lookup"><span data-stu-id="da44b-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7d8f0-107">См. также</span><span class="sxs-lookup"><span data-stu-id="7d8f0-107">See also</span></span>
 
-- [<span data-ttu-id="da44b-108">Справочник по языку Visual Basic</span><span class="sxs-lookup"><span data-stu-id="da44b-108">Visual Basic Language Reference</span></span>](../index.md)
-- [<span data-ttu-id="da44b-109">Отключение предупреждений анализа кода</span><span class="sxs-lookup"><span data-stu-id="da44b-109">How to suppress code analysis warnings</span></span>](../../../fundamentals/code-analysis/suppress-warnings.md)
+- [<span data-ttu-id="7d8f0-108">Справочник по языку Visual Basic</span><span class="sxs-lookup"><span data-stu-id="7d8f0-108">Visual Basic Language Reference</span></span>](../index.md)
+- [<span data-ttu-id="7d8f0-109">Отключение предупреждений анализа кода</span><span class="sxs-lookup"><span data-stu-id="7d8f0-109">How to suppress code analysis warnings</span></span>](../../../fundamentals/code-analysis/suppress-warnings.md)
