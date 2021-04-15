@@ -43,7 +43,7 @@ ms.locfileid: "107494835"
 |[Метод SetUnmanagedHandler](icordebug-setunmanagedhandler-method.md)|Указывает объект обработчика событий для неуправляемых событий.|  
 |[Метод Terminate](icordebug-terminate-method.md)|Завершает `ICorDebug` объект.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `ICorDebug` представляет цикл обработки событий для процесса отладчика. Перед освобождением этого интерфейса отладчик должен ожидать обратного вызова [ICorDebugManagedCallback:: ExitProcess](icordebugmanagedcallback-exitprocess-method.md) для всех отлаживаемых процессов.  
   
