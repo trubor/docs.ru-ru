@@ -3,12 +3,12 @@ description: 'Дополнительные сведения о: основные
 title: Основные понятия безопасности, используемые в WCF
 ms.date: 03/30/2017
 ms.assetid: 3b9dfcf5-4bf1-4f35-9070-723171c823a1
-ms.openlocfilehash: 5ad5b80c69e5dec5675879984fbcd2585b295dd4
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 93c97bb7429e44533ad964728bbe5a0dd7989c28
+ms.sourcegitcommit: aab60b21144bf04b3057b5d59aa7c58edaef32d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99779768"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107494770"
 ---
 # <a name="security-concepts-used-in-wcf"></a>Основные понятия безопасности, используемые в WCF
 
@@ -28,7 +28,7 @@ ms.locfileid: "99779768"
   
 ### <a name="kerberos-protocol"></a>Протокол Kerberos  
 
- *Протокол Kerberos* является спецификацией для создания механизма безопасности, который проверяет подлинность пользователей в домене Windows. Благодаря этому пользователь может устанавливать защищенный контекст с другими сущностями в домене. В Windows 2000 и более поздних платформах по умолчанию используется протокол Kerberos. Понимание механизмов системы полезно при создании службы, взаимодействующей с клиентами интрасети. Кроме того, так как *привязка WS-Security Kerberos* широко опубликована, можно использовать протокол Kerberos для взаимодействия с Интернет-клиентами (то есть протокол Kerberos является взаимодействующим). Дополнительные сведения о реализации протокола Kerberos в Windows см. в разделе  [Microsoft Kerberos](/windows/win32/secauthn/microsoft-kerberos).  
+ *Протокол Kerberos* является спецификацией для создания механизма безопасности, который проверяет подлинность пользователей в домене Windows. Благодаря этому пользователь может устанавливать защищенный контекст с другими сущностями в домене. По умолчанию Windows использует протокол Kerberos. Понимание механизмов системы полезно при создании службы, взаимодействующей с клиентами интрасети. Кроме того, так как *привязка WS-Security Kerberos* широко опубликована, можно использовать протокол Kerberos для взаимодействия с Интернет-клиентами (то есть протокол Kerberos является взаимодействующим). Дополнительные сведения о реализации протокола Kerberos в Windows см. в разделе  [Microsoft Kerberos](/windows/win32/secauthn/microsoft-kerberos).  
   
 ### <a name="x509-certificates"></a>Сертификаты X.509  
 
@@ -54,7 +54,7 @@ ms.locfileid: "99779768"
   
  Дополнительные сведения об этих разделах см. в разделе [механизмы управления доступом](access-control-mechanisms.md) .  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Обзор безопасности](security-overview.md)
 - [Модель безопасности для Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

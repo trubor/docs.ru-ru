@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: f14f986e-f6ce-42bc-aa23-18150c46d28c
 topic_type:
 - apiref
-ms.openlocfilehash: 8285632725096b4e6afc85fe54a89f12fc899dd1
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: e054b7e9c5a8baf0e59fc3c9ce9bc57a4d7ea4d0
+ms.sourcegitcommit: aab60b21144bf04b3057b5d59aa7c58edaef32d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99784266"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107494588"
 ---
 # <a name="corpinvokemap-enumeration"></a>Перечисление CorPinvokeMap
 
@@ -72,7 +72,7 @@ typedef enum  CorPinvokeMap {
 |`pmCharSetNotSpec`|Зарезервировано.|  
 |`pmCharSetAnsi`|Маршалирует строки в виде строк многобайтовых символов.|  
 |`pmCharSetUnicode`|Маршалирует строки в виде 2-байтных символов Юникода.|  
-|`pmCharSetAuto`|Выполняет автоматический маршалинг строк способом, соответствующим целевой операционной системе. По умолчанию используется Юникод в Windows NT, Windows 2000, Windows XP и семействе Windows Server 2003. значение по умолчанию — ANSI в Windows 98 и Windows Me.|  
+|`pmCharSetAuto`|Выполняет автоматический маршалинг строк способом, соответствующим целевой операционной системе. По умолчанию используется Юникод в Windows.|  
 |`pmBestFitUseAssem`|Зарезервировано.|  
 |`pmBestFitEnabled`|Выполните наилучшее сопоставление символов Юникода, не имея точного соответствия в кодировке ANSI.|  
 |`pmBestFitDisabled`|Не выполняйте наилучшее соответствие символов Юникода. В этом случае все несопоставимые символы будут заменены символом "?".|  
@@ -98,6 +98,6 @@ typedef enum  CorPinvokeMap {
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисления метаданных](metadata-enumerations.md)

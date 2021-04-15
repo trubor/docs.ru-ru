@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 898f76e2-16f4-4a63-b7d9-dad2d3824d8a
 topic_type:
 - apiref
-ms.openlocfilehash: f94197598d01255c35712aa682f83ca9be1fb377
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: e687cae4d267b97d1b9eb35be1ad5aabd8aec30b
+ms.sourcegitcommit: aab60b21144bf04b3057b5d59aa7c58edaef32d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99717138"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107494120"
 ---
 # <a name="_corexemain-function"></a>Функция _CorExeMain
 
@@ -39,9 +39,7 @@ __int32 STDMETHODCALLTYPE _CorExeMain ();
 
  Эта функция вызывается загрузчиком в процессах, созданных из управляемых исполняемых сборок. Для сборок DLL загрузчик вызывает функцию [_CorDllMain](cordllmain-function.md) .  
   
- Загрузчик операционной системы вызывает этот метод независимо от точки входа, указанной в файле изображения.  
-  
- В Windows 98, Windows ME, Windows NT и Windows 2000 `_CorExeMain` функция вызывается непрямо через исправление в загрузчике операционной системы. Во всех остальных версиях Windows он вызывается непосредственно загрузчиком операционной системы.  
+ Загрузчик операционной системы вызывает этот метод независимо от точки входа, указанной в файле изображения.
   
  Дополнительные сведения см. в подразделе "Примечания" статьи [_CorValidateImage](corvalidateimage-function.md) .  
   
@@ -55,6 +53,6 @@ __int32 STDMETHODCALLTYPE _CorExeMain ();
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Глобальные статические функции метаданных](../metadata/metadata-global-static-functions.md)

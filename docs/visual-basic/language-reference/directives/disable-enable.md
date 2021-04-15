@@ -6,16 +6,24 @@ helpviewer_keywords:
 - directives, enable
 - directives, disable
 - disable directive
-ms.openlocfilehash: d600cc959639a3f70bca5678fbc81aae0806c9cc
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 14f8fbd0ac49829f99643d3eb0ac3149ddd9d647
+ms.sourcegitcommit: aab60b21144bf04b3057b5d59aa7c58edaef32d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99797267"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107494783"
 ---
 # <a name="disable-and-enable-directives-visual-basic"></a>Директивы #Disable и #Enable (Visual Basic)
 
-`#Disable` `#Enable` Директивы и являются Visual Basic директивами компилятора исходного кода. Они используются для отключения и повторного включения конкретных предупреждений для регионов кода.
+`#Disable` `#Enable` Директивы и являются Visual Basic директивами компилятора исходного кода. Они используются для отключения и повторного включения всех или конкретных предупреждений для регионов кода.
+
+```vb
+    Dim variable1    'warning BC42024: Unused local variable: 'variable1'.
+#Disable Warning
+    Dim variable2    'no warning
+#Enable Warning 
+    Dim variable3    'warning BC42024: Unused local variable: 'variable3'.
+```
 
 ```vb
 ' Suppress warning about no awaits in this method.

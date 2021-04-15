@@ -17,12 +17,12 @@ helpviewer_keywords:
 - ULong data type
 - UL literal type characters [Visual Basic]
 ms.assetid: 017e0702-774e-44ae-bedc-786b424ca84e
-ms.openlocfilehash: 5e47fc49e8e0a6df4d1fcc70174a8519752fd3e1
-ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
+ms.openlocfilehash: 107100b4992be75dab574cbf274b53f506e267f3
+ms.sourcegitcommit: aab60b21144bf04b3057b5d59aa7c58edaef32d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102104826"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107494601"
 ---
 # <a name="ulong-data-type-visual-basic"></a>Тип данных ULong (Visual Basic)
 
@@ -70,8 +70,6 @@ Dim number = &H_00_00_0A_96_2F_AC_14_D7ul
 - **Соответствие CLS.** `ULong`Тип данных не является частью [спецификации](https://www.ecma-international.org/publications-and-standards/standards/ecma-335/) CLS, поэтому CLS-совместимый код не может использовать компонент, который его использует.
 
 - **Вопросы взаимодействия.** Если вы взаимодействуете с компонентами, которые не написаны для платформа .NET Framework, например автоматизации или COM-объекты, помните, что такие типы, как, `ulong` могут иметь разную ширину данных (32 бит) в других средах. При передаче аргумента 32-bit в такой компонент объявите его как `UInteger` вместо `ULong` в управляемом коде Visual Basic.
-
-  Более того, Автоматизация не поддерживает 64-разрядные целые числа в Windows 95, Windows 98, Windows ME или Windows 2000. Невозможно передать `ULong` аргумент Visual Basic в компонент автоматизации на этих платформах.
 
 - **Расширяющие.** `ULong`Тип данных расширяется до `Decimal` , `Single` и `Double` . Это означает, что можно преобразовать `ULong` в любой из этих типов без возникновения <xref:System.OverflowException?displayProperty=nameWithType> ошибки.
 

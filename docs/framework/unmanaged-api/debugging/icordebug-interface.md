@@ -15,19 +15,19 @@ helpviewer_keywords:
 ms.assetid: 33f431d7-ab1a-494d-8af2-20ab15aba194
 topic_type:
 - apiref
-ms.openlocfilehash: b989013f7eb54e163feeb965e10448a3a1756e3a
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: db6c407e3361ebd9c39dd2c3cf7e5b53a69e0559
+ms.sourcegitcommit: aab60b21144bf04b3057b5d59aa7c58edaef32d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99772527"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107494835"
 ---
 # <a name="icordebug-interface"></a>Интерфейс ICorDebug
 
 Предоставляет методы, позволяющие разработчикам отлаживать приложения в среде среды CLR.  
   
 > [!NOTE]
-> Отладка в смешанном режиме (управляемый и машинный код) не поддерживается в Windows 95, Windows 98 или Windows ME или на платформах, отличных от x86 (например, IA64 и AMD64).  
+> Отладка в смешанном режиме (управляемый и машинный код) не поддерживается на платформах, отличных от x86 (например, IA64 и AMD64).  
   
 ## <a name="methods"></a>Методы  
   
@@ -43,7 +43,7 @@ ms.locfileid: "99772527"
 |[Метод SetUnmanagedHandler](icordebug-setunmanagedhandler-method.md)|Указывает объект обработчика событий для неуправляемых событий.|  
 |[Метод Terminate](icordebug-terminate-method.md)|Завершает `ICorDebug` объект.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
 
  `ICorDebug` представляет цикл обработки событий для процесса отладчика. Перед освобождением этого интерфейса отладчик должен ожидать обратного вызова [ICorDebugManagedCallback:: ExitProcess](icordebugmanagedcallback-exitprocess-method.md) для всех отлаживаемых процессов.  
   
@@ -62,6 +62,6 @@ ms.locfileid: "99772527"
   
  **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы отладки](debugging-interfaces.md)
