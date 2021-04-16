@@ -1,23 +1,23 @@
 ---
 title: События среды выполнения ThreadPool
-description: См. раздел События пула потоков среды выполнения .NET, собирающий диагностические сведения о пуле потоков в .NET Core. События пула потоков — это события пула рабочих потоков или события пула потоков ввода-вывода.
+description: См. события пула потоков среды выполнения .NET, которые собирают диагностические сведения о пуле потоков в .NET Core. События пула потоков — это события пула рабочих потоков или события пула потоков ввода-вывода.
 ms.date: 11/13/2020
 ms.topic: reference
 helpviewer_keywords:
 - ThreadPool events (CoreCLR)
 - ETW, thread pool events (CoreCLR)
 ms.openlocfilehash: cdd6041c5842d4922c60e33daf6db366f7d35327
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
-ms.translationtype: MT
+ms.sourcegitcommit: 05d0087dfca85aac9ca2960f86c5efd218bf833f
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "96594122"
 ---
 # <a name="net-runtime-thread-pool-events"></a>События пула потоков среды выполнения .NET
 
-Эти события собираются сведения о рабочем процессе и потоках ввода-вывода в ThreadPool. Дополнительные сведения об использовании этих событий в целях диагностики см. в разделе [ведение журнала и трассировка приложений .NET](../../core/diagnostics/logging-tracing.md) .
+Эти события собирают сведения о рабочих потоках и потоках ввода-вывода в пуле потоков. Дополнительные сведения об использовании этих событий в целях диагностики см. в статье [Ведение журнала и трассировка в приложениях .NET](../../core/diagnostics/logging-tracing.md).
 
-## <a name="iothreadcreate_v1-event"></a>IOThreadCreate_V1 событие
+## <a name="iothreadcreate_v1-event"></a>Событие IOThreadCreate_V1
 
  В таблице ниже показаны ключевое слово и уровень.
 
@@ -39,9 +39,9 @@ ms.locfileid: "96594122"
 |`NumRetired`|`win:UInt64`|Число завершенных рабочих потоков.|
 |`ClrInstanceID`|`win:UInt16`|Уникальный идентификатор экземпляра CLR или CoreCLR.|
 
-## <a name="iothreadterminate_v1-event"></a>IOThreadTerminate_V1 событие
+## <a name="iothreadterminate_v1-event"></a>Событие IOThreadTerminate_V1
 
- В следующей таблице показаны ключевое слово и уровень.
+ В таблице ниже показаны ключевое слово и уровень.
 
 |Ключевое слово для вызова события|Level
 |-----------------------------------|-----------
@@ -51,7 +51,7 @@ ms.locfileid: "96594122"
 
 |Событие|Идентификатор события|Условие вызова|
 |-----------|--------------|-----------------|
-|`IOThreadTerminate`|45|Поток ввода-вывода завершается в пуле потоков.|
+|`IOThreadTerminate`|45|Поток ввода-вывода прерывается в пуле потоков.|
 
  В таблице ниже представлены данные события.
 
@@ -61,7 +61,7 @@ ms.locfileid: "96594122"
 |`NumRetired`|`win:UInt64`|Число завершенных потоков ввода-вывода.|
 |`ClrInstanceID`|`win:UInt16`|Уникальный идентификатор экземпляра CLR или CoreCLR.|
 
-## <a name="iothreadretire_v1-event"></a>IOThreadRetire_V1 событие
+## <a name="iothreadretire_v1-event"></a>Событие IOThreadRetire_V1
 
  В таблице ниже показаны ключевое слово и уровень.
 
@@ -83,7 +83,7 @@ ms.locfileid: "96594122"
 |`NumRetired`|`win:UInt64`|Число завершенных потоков ввода-вывода.|
 |`ClrInstanceID`|`win:UInt16`|Уникальный идентификатор экземпляра CLR или CoreCLR.|
 
-## <a name="iothreadunretire_v1-event"></a>IOThreadUnretire_V1 событие
+## <a name="iothreadunretire_v1-event"></a>Событие IOThreadUnretire_V1
 
  В таблице ниже показаны ключевое слово и уровень.
 
@@ -105,7 +105,7 @@ ms.locfileid: "96594122"
 |`NumRetired`|`win:UInt64`|Число завершенных потоков ввода-вывода.|
 |`ClrInstanceID`|`Win:UInt16`|Уникальный идентификатор экземпляра CLR или CoreCLR.|
 
-## <a name="threadpoolworkerthreadstart-event"></a>Событие Среадпулворкерсреадстарт
+## <a name="threadpoolworkerthreadstart-event"></a>Событие ThreadPoolWorkerThreadStart
 
 |Ключевое слово для вызова события|Level|
 |-----------------------------------|-----------|-----------|
@@ -121,7 +121,7 @@ ms.locfileid: "96594122"
 |`RetiredWorkerThreadCount`|`win:UInt32`|Число рабочих потоков, которые недоступны для выполнения процесса, но находятся в резерве на случай, если позже понадобятся дополнительные потоки.|
 |`ClrInstanceID`|`win:UInt16`|Уникальный идентификатор экземпляра CLR или CoreCLR.|
 
-## <a name="threadpoolworkerthreadstop-event"></a>Событие Среадпулворкерсреадстоп
+## <a name="threadpoolworkerthreadstop-event"></a>Событие ThreadPoolWorkerThreadStop
 
 |Ключевое слово для вызова события|Level|
 |-----------------------------------|-----------|-----------|
@@ -137,7 +137,7 @@ ms.locfileid: "96594122"
 |`RetiredWorkerThreadCount`|`win:UInt32`|Число рабочих потоков, которые недоступны для выполнения процесса, но находятся в резерве на случай, если позже понадобятся дополнительные потоки.|
 |`ClrInstanceID`|`win:UInt16`|Уникальный идентификатор экземпляра CLR или CoreCLR.|
 
-## <a name="threadpoolworkerthreadwait-event"></a>Событие Среадпулворкерсреадваит
+## <a name="threadpoolworkerthreadwait-event"></a>Событие ThreadPoolWorkerThreadWait
 
 |Ключевое слово для вызова события|Level|
 |-----------------------------------|-----------|-----------|
@@ -153,7 +153,7 @@ ms.locfileid: "96594122"
 |`RetiredWorkerThreadCount`|`win:UInt32`|Число рабочих потоков, которые недоступны для выполнения процесса, но находятся в резерве на случай, если позже понадобятся дополнительные потоки.|
 |`ClrInstanceID`|`win:UInt16`|Уникальный идентификатор экземпляра CLR или CoreCLR.|
 
-## <a name="threadpoolworkerthreadretirementstart-event"></a>Событие Среадпулворкерсреадретирементстарт
+## <a name="threadpoolworkerthreadretirementstart-event"></a>Событие ThreadPoolWorkerThreadRetirementStart
 
 |Ключевое слово для вызова события|Level|
 |-----------------------------------|-----------|-----------|
@@ -169,7 +169,7 @@ ms.locfileid: "96594122"
 |`RetiredWorkerThreadCount`|`win:UInt32`|Число рабочих потоков, которые недоступны для выполнения процесса, но находятся в резерве на случай, если позже понадобятся дополнительные потоки.|
 |`ClrInstanceID`|`win:UInt16`|Уникальный идентификатор экземпляра CLR или CoreCLR.|
 
-## <a name="threadpoolworkerthreadretirementstop-event"></a>Событие Среадпулворкерсреадретирементстоп
+## <a name="threadpoolworkerthreadretirementstop-event"></a>Событие ThreadPoolWorkerThreadRetirementStop
 
 |Ключевое слово для вызова события|Level|
 |-----------------------------------|-----------|-----------|
@@ -185,7 +185,7 @@ ms.locfileid: "96594122"
 |`RetiredWorkerThreadCount`|`win:UInt32`|Число рабочих потоков, которые недоступны для выполнения процесса, но находятся в резерве на случай, если позже понадобятся дополнительные потоки.|
 |`ClrInstanceID`|`win:UInt16`|Уникальный идентификатор экземпляра CLR или CoreCLR.|
 
-## <a name="threadpoolworkerthreadadjustmentsample-event"></a>Событие Среадпулворкерсреададжустментсампле
+## <a name="threadpoolworkerthreadadjustmentsample-event"></a>Событие ThreadPoolWorkerThreadAdjustmentSample
 
  В таблице ниже показаны ключевое слово и уровень.
 
@@ -206,7 +206,7 @@ ms.locfileid: "96594122"
 |`Throughput`|`win:Double`|Число завершений в единицу времени.|
 |`ClrInstanceID`|`win:UInt16`|Уникальный идентификатор экземпляра CLR или CoreCLR.|
 
-## <a name="threadpoolworkerthreadadjustmentadjustment-event"></a>Событие Среадпулворкерсреададжустментаджустмент
+## <a name="threadpoolworkerthreadadjustmentadjustment-event"></a>Событие ThreadPoolWorkerThreadAdjustmentAdjustment
 
  В таблице ниже показаны ключевое слово и уровень.
 
@@ -226,10 +226,10 @@ ms.locfileid: "96594122"
 |----------------|---------------|-----------------|
 |`AverageThroughput`|`win:Double`|Средняя пропускная способность образца измерений.|
 |`NewWorkerThreadCount`|`win:UInt32`|Новое число активных рабочих потоков.|
-|`Reason`|`win:UInt32`|Причина корректировки:<br /><br /> `0x0` Прогрева.<br /><br /> `0x1` Инициализации.<br /><br /> `0x2` — Случайное перемещение.<br /><br /> `0x3` -Увеличиваться перемещение.<br /><br /> `0x4` — Точка изменения.<br /><br /> `0x5` Стабилизация.<br /><br /> `0x6` Перегрузка.<br /><br /> `0x7` -Истекло время ожидания потока.|
+|`Reason`|`win:UInt32`|Причина корректировки:<br /><br /> `0x0` — прогрев.<br /><br /> `0x1` — инициализация.<br /><br /> `0x2` — случайное движение.<br /><br /> `0x3` — движение вверх.<br /><br /> `0x4` — точка изменения.<br /><br /> `0x5` — стабилизация.<br /><br /> `0x6` — перегрузка.<br /><br /> `0x7` — истекло время ожидания потока.|
 |`ClrInstanceID`|`win:UInt16`|Уникальный идентификатор экземпляра CLR или CoreCLR.|
 
-## <a name="threadpoolworkerthreadadjustmentstats-event"></a>Событие Среадпулворкерсреададжустментстатс
+## <a name="threadpoolworkerthreadadjustmentstats-event"></a>Событие ThreadPoolWorkerThreadAdjustmentStats
 
  В таблице ниже показаны ключевое слово и уровень.
 
@@ -243,7 +243,7 @@ ms.locfileid: "96594122"
 |-----------|--------------|-----------------|
 |`ThreadPoolWorkerThreadAdjustmentStats`|56|Собирает данные по пулу потоков.|
 
- В следующей таблице показаны данные события.
+ В таблице ниже представлены данные события
 
 |Имя поля|Тип данных|Описание|
 |----------------|---------------|-----------------|
@@ -259,7 +259,7 @@ ms.locfileid: "96594122"
 |`NewThreadWaveMagnitude`|`win:UInt16`|Величина будущих изменений числа активных потоков.|
 |`ClrInstanceID`|`win:UInt16`|Уникальный идентификатор экземпляра CLR или CoreCLR.|
 
-## <a name="threadpoolenqueue-event"></a>Событие Среадпуленкуеуе
+## <a name="threadpoolenqueue-event"></a>Событие ThreadPoolEnqueue
 
  В таблице ниже показаны ключевое слово и уровень.
 
@@ -273,14 +273,14 @@ ms.locfileid: "96594122"
 |-----------|--------------|-----------------|
 |`ThreadPoolEnqueue`|61|Рабочий элемент был поставлен в очередь пула потоков.|
 
- В следующей таблице показаны данные события.
+ В таблице ниже представлены данные события
 
 |Имя поля|Тип данных|Описание|
 |----------------|---------------|-----------------|
 |`WorkID`|`win:Pointer`|Указатель на рабочий запрос.|
 |`ClrInstanceID`|`win:UInt16`|Уникальный идентификатор для экземпляра CoreCLR.|
 
-## <a name="threadpooldequeue-event"></a>Событие Среадпулдекуеуе
+## <a name="threadpooldequeue-event"></a>Событие ThreadPoolDequeue
 
  В таблице ниже показаны ключевое слово и уровень.
 
@@ -294,14 +294,14 @@ ms.locfileid: "96594122"
 |-----------|--------------|-----------------|
 |`ThreadPoolDequeue`|62|Рабочий элемент был удален из очереди пула потоков.|
 
- В следующей таблице показаны данные события.
+ В таблице ниже представлены данные события
 
 |Имя поля|Тип данных|Описание|
 |----------------|---------------|-----------------|
 |`WorkID`|`win:Pointer`|Указатель на рабочий запрос.|
 |`ClrInstanceID`|`win:UInt16`|Уникальный идентификатор для экземпляра CoreCLR.|
 
-## <a name="threadpoolioenqueue-event"></a>Событие Среадпулиоенкуеуе
+## <a name="threadpoolioenqueue-event"></a>Событие ThreadPoolIOEnqueue
 
  В таблице ниже показаны ключевое слово и уровень.
 
@@ -315,7 +315,7 @@ ms.locfileid: "96594122"
 |-----------|--------------|-----------------|
 |`ThreadPoolIOEnqueue`|63|Поток помещает в очередь уведомление о завершении ввода-вывода после выполнения асинхронного ввода-вывода.|
 
- В следующей таблице показаны данные события.
+ В таблице ниже представлены данные события
 
 |Имя поля|Тип данных|Описание|
 |----------------|---------------|-----------------|
@@ -324,7 +324,7 @@ ms.locfileid: "96594122"
 |`MultiDequeues`|`win:Boolean`|Зарезервировано для внутреннего использования.|
 |`ClrInstanceID`|`win:UInt16`|Уникальный идентификатор для экземпляра CoreCLR.|
 
-## <a name="threadpooliodequeue-event"></a>Событие Среадпулиодекуеуе
+## <a name="threadpooliodequeue-event"></a>Событие ThreadPoolIODequeue
 
  В таблице ниже показаны ключевое слово и уровень.
 
@@ -336,9 +336,9 @@ ms.locfileid: "96594122"
 
 |Событие|Идентификатор события|Описание|
 |-----------|--------------|-----------------|
-|`ThreadPoolIODequeue`|64|Поток выставит в очередь уведомление о завершении ввода-вывода.|
+|`ThreadPoolIODequeue`|64|Поток удаляет из очереди уведомление о завершении ввода-вывода.|
 
- В следующей таблице показаны данные события.
+ В таблице ниже представлены данные события
 
 |Имя поля|Тип данных|Описание|
 |----------------|---------------|-----------------|
@@ -347,7 +347,7 @@ ms.locfileid: "96594122"
 |`MultiDequeues`|`win:Boolean`|Зарезервировано для внутреннего использования.|
 |`ClrInstanceID`|`win:UInt16`|Уникальный идентификатор для экземпляра CoreCLR.|
 
-## <a name="threadpooliopack-event"></a>Событие Среадпулиопакк
+## <a name="threadpooliopack-event"></a>Событие ThreadPoolIOPack
 
  В таблице ниже показаны ключевое слово и уровень.
 
@@ -359,9 +359,9 @@ ms.locfileid: "96594122"
 
 |Событие|Идентификатор события|Описание|
 |-----------|--------------|-----------------|
-|`ThreadPoolIOPack`|65|Вызывается перекрытый пакет операций ввода-вывода с перекрытием ThreadPool.|
+|`ThreadPoolIOPack`|65|Вызывается перекрывающийся пакет операций ввода-вывода ThreadPool.|
 
- В следующей таблице показаны данные события.
+ В таблице ниже представлены данные события
 
 |Имя поля|Тип данных|Описание|
 |----------------|---------------|-----------------|
@@ -369,9 +369,9 @@ ms.locfileid: "96594122"
 |`Overlapped`|`win:Pointer`|Зарезервировано для внутреннего использования.|
 |`ClrInstanceID`|`win:UInt16`|Уникальный идентификатор для экземпляра CoreCLR.|
 
-## <a name="threadcreating-event"></a>Событие Среадкреатинг
+## <a name="threadcreating-event"></a>Событие ThreadCreating
 
- В следующей таблице показаны ключевые слова и уровень.
+ В таблице ниже показаны ключевые слова и уровень.
 
 |Ключевое слово для вызова события|Level|
 |-----------------------------------|-----------|
@@ -390,9 +390,9 @@ ms.locfileid: "96594122"
 |`ID`|`win:Pointer`|Идентификатор потока|
 |`ClrInstanceID`|`win:UInt16`|Уникальный идентификатор для экземпляра CoreCLR.|
 
-## <a name="threadrunning-event"></a>Событие Среадруннинг
+## <a name="threadrunning-event"></a>Событие ThreadRunning
 
- В следующей таблице показаны ключевые слова и уровень.
+ В таблице ниже показаны ключевые слова и уровень.
 
 |Ключевое слово для вызова события|Level|
 |-----------------------------------|-----------|

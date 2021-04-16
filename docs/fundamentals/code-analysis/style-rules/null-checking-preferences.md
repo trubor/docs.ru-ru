@@ -1,6 +1,6 @@
 ---
 title: Параметры проверки NULL
-description: Сведения о правилах языка анализа кода для параметров проверки значений NULL
+description: Сведения о правилах языка анализа кода для параметров проверки NULL
 ms.date: 09/30/2020
 ms.topic: reference
 author: gewarren
@@ -9,30 +9,30 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 86d5f4c9b640c92b11706b56a9d14955d6e24857
-ms.sourcegitcommit: b59237ca4ec763969a0dd775a3f8f39f8c59fe24
-ms.translationtype: MT
+ms.sourcegitcommit: 05d0087dfca85aac9ca2960f86c5efd218bf833f
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2020
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "96593774"
 ---
 # <a name="null-checking-preferences"></a>Параметры проверки NULL
 
-## <a name="net-null-checking-preferences"></a>Параметры проверки значений NULL .NET
+## <a name="net-null-checking-preferences"></a>Параметры проверки NULL в .NET
 
-Правила стилей в этом разделе касаются следующих параметров проверки значений NULL, которые являются общими для C# и Visual Basic.
+Правила стилей в этом разделе касаются следующих параметров проверки NULL, общих для C# и Visual Basic:
 
-- [Использовать объединенное выражение (IDE0029 и IDE0030)](ide0029-ide0030.md)
-- [Использовать распространение значений NULL (IDE0031)](ide0031.md)
-- [Использовать проверку-null (IDE0041)](ide0041.md)
+- [Использование выражения объединения (IDE0029 и IDE0030)](ide0029-ide0030.md)
+- [Использование распространения значений NULL (IDE0031)](ide0031.md)
+- [Использование проверки IS NULL (IDE0041)](ide0041.md)
 
 ## <a name="c-null-checking-preferences"></a>Параметры проверки NULL в C#
 
-Правила стилей в этом разделе касаются следующих параметров проверки значений NULL, относящихся к C#:
+Правила стилей в этом разделе касаются следующих параметров проверки NULL, относящихся к C#:
 
-- [Использовать выражение Throw (IDE0016)](ide0016.md)
-- [Использовать вызов условного делегата (IDE1005)](ide1005.md)
+- [Использование выражения throw (IDE0016)](ide0016.md)
+- [Использование условного вызова делегата (IDE1005)](ide1005.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Справочник по правилам стиля кода](index.md)
 - [Правила языка для стиля кода](language-rules.md)

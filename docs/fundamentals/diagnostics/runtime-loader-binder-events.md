@@ -1,6 +1,6 @@
 ---
-title: События времени выполнения загрузчика и связывателя
-description: Ознакомьтесь с событиями среды выполнения .NET, собирающими диагностическую информацию, относящуюся к событиям трассировки событий Windows Loader и BINDER, которые собираются сведения о загрузчике сборок и связывателе.
+title: События среды выполнения загрузчика и модуля привязки
+description: Ознакомьтесь с событиями среды выполнения .NET, собирающими диагностическую информацию, относящуюся к событиям трассировки событий Windows загрузчика и модуля привязки, которые собирают сведения о загрузчике и модуле привязки сборок.
 ms.date: 11/13/2020
 ms.topic: reference
 helpviewer_keywords:
@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Assembly Binder events (CoreCLR)
 - ETW, EventPipe, LTTng assembly loader and binder events (CoreCLR)
 ms.openlocfilehash: 2284c580482f6b93a77f44649225ff7e5485666a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
-ms.translationtype: MT
+ms.sourcegitcommit: 05d0087dfca85aac9ca2960f86c5efd218bf833f
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "96594110"
 ---
-# <a name="net-runtime-loader-and-binder-events"></a>События загрузчика и связывателя среды выполнения .NET
+# <a name="net-runtime-loader-and-binder-events"></a>События загрузчика и модуля привязки среды выполнения .NET
 
-Эти события собираются сведения, связанные с загрузкой и выгрузкой сборок и модулей. Дополнительные сведения об использовании этих событий в целях диагностики см. в разделе [ведение журнала и трассировка приложений .NET](../../core/diagnostics/logging-tracing.md) .
+Эти события собирают информацию, относящуюся к загрузке и выгрузке сборок и модулей. Дополнительные сведения об использовании этих событий в целях диагностики см. в статье [Ведение журнала и трассировка в приложениях .NET](../../core/diagnostics/logging-tracing.md).
 
 |Ключевое слово для вызова события|Событие|Level|
 |-----------------------------------|-----------|-----------|
@@ -26,7 +26,7 @@ ms.locfileid: "96594110"
 |-----------|--------------|-----------------|
 |`DomainModuleLoad_V1`|151|Вызывается при загрузке модуля для домена приложения.|
 
-## <a name="moduleload_v2-event"></a>ModuleLoad_V2 событие
+## <a name="moduleload_v2-event"></a>Событие ModuleLoad_V2
 
 |Ключевое слово для вызова события|Событие|Level|
 |-----------------------------------|-----------|-----------|
@@ -42,7 +42,7 @@ ms.locfileid: "96594110"
 |`AssemblyID`|`win:UInt64`|Идентификатор сборки, в которой находится этот модуль.|
 |`ModuleFlags`|`win:UInt32`|0x1: модуль, не зависящий от домена.<br /><br /> 0x2: модуль с образом в машинном коде.<br /><br /> 0x4: динамический модуль.<br /><br /> 0x8: модуль манифеста.|
 |`Reserved1`|`win:UInt32`|Зарезервированное поле.|
-|`ModuleILPath`|`win:UnicodeString`|Путь к образу CIL для модуля или имя динамического модуля, если это динамическая сборка (заканчивающаяся нулем).|
+|`ModuleILPath`|`win:UnicodeString`|Путь к образу языка CIL для модуля или имя динамического модуля, если это динамическая сборка (строка, заканчивающаяся нулем).|
 |`ModuleNativePath`|`win:UnicodeString`|Путь к образу модуля в машинном коде, если существует (строка, заканчивающаяся нулем).|
 |`ClrInstanceID`|`win:UInt16`|Уникальный идентификатор экземпляра CLR или CoreCLR.|
 |`ManagedPdbSignature`|`win:GUID`|Подпись GUID управляемой базы данных программы (PDB), которая соответствует этому модулю.|
@@ -52,7 +52,7 @@ ms.locfileid: "96594110"
 |`NativePdbAge`|`win:UInt32`|Значение возраста, записанное в базе данных программы NGen, соответствующей этому модулю, если применимо.|
 |`NativePdbBuildPath`|`win:UnicodeString`|Путь к расположению, где была выполнена сборка базы данных программы NGen, соответствующей этому модулю, если применимо. В некоторых случаях это просто имя файла.|
 
-## <a name="moduleunload_v2-event"></a>ModuleUnload_V2 событие
+## <a name="moduleunload_v2-event"></a>Событие ModuleUnload_V2
 
 |Ключевое слово для вызова события|Событие|Level|
 |-----------------------------------|-----------|-----------|
@@ -68,7 +68,7 @@ ms.locfileid: "96594110"
 |`AssemblyID`|`win:UInt64`|Идентификатор сборки, в которой находится этот модуль.|
 |`ModuleFlags`|`win:UInt32`|0x1: модуль, не зависящий от домена.<br /><br /> 0x2: модуль с образом в машинном коде.<br /><br /> 0x4: динамический модуль.<br /><br /> 0x8: модуль манифеста.|
 |`Reserved1`|`win:UInt32`|Зарезервированное поле.|
-|`ModuleILPath`|`win:UnicodeString`|Путь к образу CIL для модуля или имя динамического модуля, если это динамическая сборка (заканчивающаяся нулем).|
+|`ModuleILPath`|`win:UnicodeString`|Путь к образу языка CIL для модуля или имя динамического модуля, если это динамическая сборка (строка, заканчивающаяся нулем).|
 |`ModuleNativePath`|`win:UnicodeString`|Путь к образу модуля в машинном коде, если существует (строка, заканчивающаяся нулем).|
 |`ClrInstanceID`|``win:UInt16``|Уникальный идентификатор экземпляра CLR или CoreCLR.|
 |`ManagedPdbSignature`|`win:GUID`|Подпись GUID управляемой базы данных программы (PDB), которая соответствует этому модулю.|
@@ -78,7 +78,7 @@ ms.locfileid: "96594110"
 |`NativePdbAge`|`win:UInt32`|Значение возраста, записанное в базе данных программы NGen, соответствующей этому модулю, если применимо.|
 |`NativePdbBuildPath`|`win:UnicodeString`|Путь к расположению, где была выполнена сборка базы данных программы NGen, соответствующей этому модулю, если применимо. В некоторых случаях это просто имя файла.|
 
-## <a name="moduledcstart_v2-event"></a>ModuleDCStart_V2 событие
+## <a name="moduledcstart_v2-event"></a>Событие ModuleDCStart_V2
 
 |Ключевое слово для вызова события|Событие|Level|
 |-----------------------------------|-----------|-----------|
@@ -94,7 +94,7 @@ ms.locfileid: "96594110"
 |`AssemblyID`|`win:UInt64`|Идентификатор сборки, в которой находится этот модуль.|
 |`ModuleFlags`|`win:UInt32`|0x1: модуль, не зависящий от домена.<br /><br /> 0x2: модуль с образом в машинном коде.<br /><br /> 0x4: динамический модуль.<br /><br /> 0x8: модуль манифеста.|
 |`Reserved1`|`win:UInt32`|Зарезервированное поле.|
-|`ModuleILPath`|`win:UnicodeString`|Путь к образу CIL для модуля или имя динамического модуля, если это динамическая сборка (заканчивающаяся нулем).|
+|`ModuleILPath`|`win:UnicodeString`|Путь к образу языка CIL для модуля или имя динамического модуля, если это динамическая сборка (строка, заканчивающаяся нулем).|
 |`ModuleNativePath`|`win:UnicodeString`|Путь к образу модуля в машинном коде, если существует (строка, заканчивающаяся нулем).|
 |`ClrInstanceID`|`win:UInt16`|Уникальный идентификатор экземпляра CLR или CoreCLR.|
 |`ManagedPdbSignature`|`win:GUID`|Подпись GUID управляемой базы данных программы (PDB), которая соответствует этому модулю.|
@@ -104,7 +104,7 @@ ms.locfileid: "96594110"
 |`NativePdbAge`|`win:UInt32`|Значение возраста, записанное в базе данных программы NGen, соответствующей этому модулю, если применимо.|
 |`NativePdbBuildPath`|`win:UnicodeString`|Путь к расположению, где была выполнена сборка базы данных программы NGen, соответствующей этому модулю, если применимо. В некоторых случаях это просто имя файла.|
 
-## <a name="moduledcend_v2-event"></a>ModuleDCEnd_V2 событие
+## <a name="moduledcend_v2-event"></a>Событие ModuleDCEnd_V2
 
 |Ключевое слово для вызова события|Событие|Level|
 |-----------------------------------|-----------|-----------|
@@ -120,7 +120,7 @@ ms.locfileid: "96594110"
 |`AssemblyID`|`win:UInt64`|Идентификатор сборки, в которой находится этот модуль.|
 |`ModuleFlags`|`win:UInt32`|0x1: модуль, не зависящий от домена.<br /><br /> 0x2: модуль с образом в машинном коде.<br /><br /> 0x4: динамический модуль.<br /><br /> 0x8: модуль манифеста.|
 |`Reserved1`|`win:UInt32`|Зарезервированное поле.|
-|`ModuleILPath`|`win:UnicodeString`|Путь к образу CIL для модуля или имя динамического модуля, если это динамическая сборка (заканчивающаяся нулем).|
+|`ModuleILPath`|`win:UnicodeString`|Путь к образу языка CIL для модуля или имя динамического модуля, если это динамическая сборка (строка, заканчивающаяся нулем).|
 |`ModuleNativePath`|`win:UnicodeString`|Путь к образу модуля в машинном коде, если существует (строка, заканчивающаяся нулем).|
 |`ClrInstanceID`|`win:UInt16`|Уникальный идентификатор экземпляра CLR или CoreCLR.|
 |`ManagedPdbSignature`|`win:GUID`|Подпись GUID управляемой базы данных программы (PDB), которая соответствует этому модулю.|
@@ -130,7 +130,7 @@ ms.locfileid: "96594110"
 |`NativePdbAge`|`win:UInt32`|Значение возраста, записанное в базе данных программы NGen, соответствующей этому модулю, если применимо.|
 |`NativePdbBuildPath`|`win:UnicodeString`|Путь к расположению, где была выполнена сборка базы данных программы NGen, соответствующей этому модулю, если применимо. В некоторых случаях это просто имя файла.|
 
-## <a name="assemblyload_v1-event"></a>AssemblyLoad_V1 событие
+## <a name="assemblyload_v1-event"></a>Событие AssemblyLoad_V1
 
 |Ключевое слово для вызова события|Событие|Level|
 |-----------------------------------|-----------|-----------|
@@ -149,7 +149,7 @@ ms.locfileid: "96594110"
 |`AssemblyName`|`win:UnicodeString`|Полное имя сборки.|
 |`ClrInstanceID`|`win:UInt16`|Уникальный идентификатор для экземпляра CoreCLR.
 
-## <a name="assemblyunload_v1-event"></a>AssemblyUnload_V1 событие
+## <a name="assemblyunload_v1-event"></a>Событие AssemblyUnload_V1
 
 |Ключевое слово для вызова события|Событие|Level|
 |-----------------------------------|-----------|-----------|
@@ -168,7 +168,7 @@ ms.locfileid: "96594110"
 |`AssemblyName`|`win:UnicodeString`|Полное имя сборки.|
 |`ClrInstanceID`|`win:UInt16`|Уникальный идентификатор для экземпляра CoreCLR.|
 
-## <a name="assemblydcstart_v1-event"></a>AssemblyDCStart_V1 событие
+## <a name="assemblydcstart_v1-event"></a>Событие AssemblyDCStart_V1
 
 |Ключевое слово для вызова события|Событие|Level|
 |-----------------------------------|-----------|-----------|
@@ -187,11 +187,11 @@ ms.locfileid: "96594110"
 |`AssemblyName`|`win:UnicodeString`|Полное имя сборки.|
 |`ClrInstanceID`|`win:UInt16`|Уникальный идентификатор для экземпляра CoreCLR.|
 
-## <a name="assemblyloadstart-event"></a>Событие Ассемблилоадстарт
+## <a name="assemblyloadstart-event"></a>Событие AssemblyLoadStart
 
 |Ключевое слово для вызова события|Событие|Level|
 |-----------------------------------|-----------|-----------|
-|`Binder` 0x4|`AssemblyLoadStart`|Информационный (4)|
+|`Binder` (0x4)|`AssemblyLoadStart`|Информационный (4)|
 
 |Событие|Идентификатор события|Описание|
 |-----------|--------------|-----------------|
@@ -199,18 +199,18 @@ ms.locfileid: "96594110"
 
 |Имя поля|Тип данных|Описание|
 |----------------|---------------|-----------------|
-|`AssemblyName`|`win:UnicodeString`|Имя сборки.|
-|`AssemblyPath`|`win:UnicodeString`|Путь к имени сборки.|
-|`RequestingAssembly`|`win:UnicodeString`|Имя запрашиваемой ("родительской") сборки.|
+|`AssemblyName`|`win:UnicodeString`|Имя имени сборки.|
+|`AssemblyPath`|`win:UnicodeString`|Путь имени сборки.|
+|`RequestingAssembly`|`win:UnicodeString`|Имя запрашивающей ("родительской") сборки.|
 |`AssemblyLoadContext`|`win:UnicodeString`|Контекст загрузки сборки.|
 |`RequestingAssemblyLoadContext`|`win:UnicodeString`|Контекст загрузки запрашивающей ("родительской") сборки.|
 |`ClrInstanceID`|`win:UInt16`|Уникальный идентификатор для экземпляра CoreCLR.|
 
-## <a name="assemblyloadstop-event"></a>Событие Ассемблилоадстоп
+## <a name="assemblyloadstop-event"></a>Событие AssemblyLoadStop
 
 |Ключевое слово для вызова события|Событие|Level|
 |-----------------------------------|-----------|-----------|
-|`Binder` 0x4|`AssemblyLoadStart`|Информационный (4)|
+|`Binder` (0x4)|`AssemblyLoadStart`|Информационный (4)|
 
 |Событие|Идентификатор события|Описание|
 |-----------|--------------|-----------------|
@@ -218,22 +218,22 @@ ms.locfileid: "96594110"
 
 |Имя поля|Тип данных|Описание|
 |----------------|---------------|-----------------|
-|`AssemblyName`|`win:UnicodeString`|Имя сборки.|
-|`AssemblyPath`|`win:UnicodeString`|Путь к имени сборки.|
-|`RequestingAssembly`|`win:UnicodeString`|Имя запрашиваемой ("родительской") сборки.|
+|`AssemblyName`|`win:UnicodeString`|Имя имени сборки.|
+|`AssemblyPath`|`win:UnicodeString`|Путь имени сборки.|
+|`RequestingAssembly`|`win:UnicodeString`|Имя запрашивающей ("родительской") сборки.|
 |`AssemblyLoadContext`|`win:UnicodeString`|Контекст загрузки сборки.|
 |`RequestingAssemblyLoadContext`|`win:UnicodeString`|Контекст загрузки запрашивающей ("родительской") сборки.|
-|`Success`|`win:Boolean`|Указывает, была ли загрузка сборки успешной.|
+|`Success`|`win:Boolean`|Была ли загрузка сборки успешной.|
 |`ResultAssemblyName`|`win:UnicodeString`|Имя загруженной сборки.|
-|`ResultAssemblyPath`|`win:UnicodeString`|Путь к сборке, из которой был загружен.|
-|`Cached`|`win:UnicodeString`|Указывает, была ли нагрузка кэширована.|
+|`ResultAssemblyPath`|`win:UnicodeString`|Имя сборки, из которой была выполнена загрузка.|
+|`Cached`|`win:UnicodeString`|Была ли загрузка кэширована.|
 |`ClrInstanceID`|`win:UInt16`|Уникальный идентификатор для экземпляра CoreCLR.|
 
-## <a name="resolutionattempted-event"></a>Событие Ресолутионаттемптед
+## <a name="resolutionattempted-event"></a>Событие ResolutionAttempted
 
 |Ключевое слово для вызова события|Level|
 |-----------------------------------|-----------|-----------|
-|`Binder` 0x4|Информационный (4)|
+|`Binder` (0x4)|Информационный (4)|
 
 |Событие|Идентификатор события|Описание|
 |-----------|--------------|-----------------|
@@ -241,75 +241,75 @@ ms.locfileid: "96594110"
 
 |Имя поля|Тип данных|Описание|
 |----------------|---------------|-----------------|
-|`AssemblyName`|`win:UnicodeString`|Имя сборки.|
-|`Stage`|`win:UInt16`|Этап разрешения.<br/><br/>0: найти в загрузке.<br/><br/>1: контекст загрузки сборки</br><br/>2: сборки приложений.<br/><br/>3: резерв контекста загрузки сборки по умолчанию. <br/><br/>4: разрешение вспомогательной сборки. <br/><br/>5: разрешение контекста загрузки сборки.<br/><br/>6: разрешение сборки AppDomain.
+|`AssemblyName`|`win:UnicodeString`|Имя имени сборки.|
+|`Stage`|`win:UInt16`|Этап разрешения.<br/><br/>0: найти в загрузке.<br/><br/>1: контекст загрузки сборки.</br><br/>2: сборки приложения.<br/><br/>3: откат контекста загрузки сборки по умолчанию. <br/><br/>4: разрешение вспомогательной сборки. <br/><br/>5: разрешение контекста загрузки сборки.<br/><br/>6: разрешение сборки AppDomain.
 |`AssemblyLoadContext`|`win:UnicodeString`|Контекст загрузки сборки.|
-|`Result`|`win:UInt16`|Результат попытки разрешения.<br/><br/>0: успешное завершение<br/><br/>1: сборка NotFound<br/><br/>2: несовместимая версия<br/><br/>3: несовпадение имени сборки<br/><br/>4: сбой<br/><br/>5: исключение|
+|`Result`|`win:UInt16`|Результат попытки разрешения.<br/><br/>0: успешное завершение<br/><br/>1: сборка не найдена<br/><br/>2: несовместимая версия<br/><br/>3: несовпадение имени сборки<br/><br/>4: сбой<br/><br/>5: исключение|
 |`ResultAssemblyName`|`win:UnicodeString`|Имя разрешенной сборки.|
-|`ResultAssemblyPath`|`win:UnicodeString`|Путь к сборке, которая была разрешена из.|
-|`ErrorMessage`|`win:UnicodeString`|Сообщение об ошибке, если возникло исключение.|
+|`ResultAssemblyPath`|`win:UnicodeString`|Путь сборки, из которой было выполнено разрешение.|
+|`ErrorMessage`|`win:UnicodeString`|Сообщение об ошибке при исключении.|
 |`ClrInstanceID`|`win:UInt16`|Уникальный идентификатор для экземпляра CoreCLR.|
 
-## <a name="assemblyloadcontextresolvinghandlerinvoked-event"></a>Событие Ассемблилоадконтекстресолвингхандлеринвокед
+## <a name="assemblyloadcontextresolvinghandlerinvoked-event"></a>Событие AssemblyLoadContextResolvingHandlerInvoked
 
 |Ключевое слово для вызова события|Level|
 |-----------------------------------|-----------|-----------|
-|`Binder` 0x4|Информационный (4)|
+|`Binder` (0x4)|Информационный (4)|
 
 |Событие|Идентификатор события|Описание|
 |-----------|--------------|-----------------|
-|`AssemblyLoadContextResolvingHandlerInvoked`|293|Вызван обработчик [ассемблилоадконтекст. Reрешил](xref:System.Runtime.Loader.AssemblyLoadContext.Resolving) .|
+|`AssemblyLoadContextResolvingHandlerInvoked`|293|Вызван обработчик [AssemblyLoadContext.Resolving](xref:System.Runtime.Loader.AssemblyLoadContext.Resolving).|
 
 |Имя поля|Тип данных|Описание|
 |----------------|---------------|-----------------|
-|`AssemblyName`|`win:UnicodeString`|Имя сборки.|
+|`AssemblyName`|`win:UnicodeString`|Имя имени сборки.|
 |`HandlerName`|`win:UnicodeString`|Имя вызванного обработчика.|
 |`AssemblyLoadContext`|`win:UnicodeString`|Контекст загрузки сборки.|
 |`ResultAssemblyName`|`win:UnicodeString`|Имя разрешенной сборки.|
-|`ResultAssemblyPath`|`win:UnicodeString`|Путь к сборке, которая была разрешена из.|
+|`ResultAssemblyPath`|`win:UnicodeString`|Путь сборки, из которой было выполнено разрешение.|
 |`ClrInstanceID`|`win:UInt16`|Уникальный идентификатор для экземпляра CoreCLR.|
 
-## <a name="appdomainassemblyresolvehandlerinvoked-event"></a>Событие Аппдомаинассемблиресолвехандлеринвокед
+## <a name="appdomainassemblyresolvehandlerinvoked-event"></a>Событие AppDomainAssemblyResolveHandlerInvoked
 
 |Ключевое слово для вызова события|Level|
 |-----------------------------------|-----------|-----------|
-|`Binder` 0x4|Информационный (4)|
+|`Binder` (0x4)|Информационный (4)|
 
 |Событие|Идентификатор события|Описание|
 |-----------|--------------|-----------------|
-|`AppDomainAssemblyResolveHandlerInvoked`|294|<xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType>Вызван обработчик.|
+|`AppDomainAssemblyResolveHandlerInvoked`|294|Вызван обработчик <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType>.|
 
 |Имя поля|Тип данных|Описание|
 |----------------|---------------|-----------------|
-|`AssemblyName`|`win:UnicodeString`|Имя сборки.|
+|`AssemblyName`|`win:UnicodeString`|Имя имени сборки.|
 |`HandlerName`|`win:UnicodeString`|Имя вызванного обработчика.|
 |`ResultAssemblyName`|`win:UnicodeString`|Имя разрешенной сборки.|
-|`ResultAssemblyPath`|`win:UnicodeString`|Путь к сборке, которая была разрешена из.|
+|`ResultAssemblyPath`|`win:UnicodeString`|Путь сборки, из которой было выполнено разрешение.|
 |`ClrInstanceID`|`win:UInt16`|Уникальный идентификатор для экземпляра CoreCLR.|
 
-## <a name="assemblyloadfromresolvehandlerinvoked-event"></a>Событие Ассемблилоадфромресолвехандлеринвокед
+## <a name="assemblyloadfromresolvehandlerinvoked-event"></a>Событие AssemblyLoadFromResolveHandlerInvoked
 
 |Ключевое слово для вызова события|Level|
 |-----------------------------------|-----------|-----------|
-|`Binder` 0x4|Информационный (4)|
+|`Binder` (0x4)|Информационный (4)|
 
 |Событие|Идентификатор события|Описание|
 |-----------|--------------|-----------------|
-|`AssemblyLoadFromResolveHandlerInvoked`|295|<xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType>Вызван обработчик.|
+|`AssemblyLoadFromResolveHandlerInvoked`|295|Вызван обработчик <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType>.|
 
 |Имя поля|Тип данных|Описание|
 |----------------|---------------|-----------------|
-|`AssemblyName`|`win:UnicodeString`|Имя сборки.|
-|`IsTrackedLoad`|`win:Boolean`|Указывает, выполняется ли трассировка загрузки сборки.|
+|`AssemblyName`|`win:UnicodeString`|Имя имени сборки.|
+|`IsTrackedLoad`|`win:Boolean`|Указывает, выполняется ли отслеживание загрузки сборки.|
 |`RequestingAssemblyPath`|`win:UnicodeString`|Путь запрашивающей сборки.|
-|`ComputedRequestedAssemblyPath`|`win:UnicodeString`|Путь к запрошенной сборке.|
+|`ComputedRequestedAssemblyPath`|`win:UnicodeString`|Путь сборки, которая была запрошена.|
 |`ClrInstanceID`|`win:UInt16`|Уникальный идентификатор для экземпляра CoreCLR.|
 
-## <a name="knownpathprobed-event"></a>Событие Кновнпаспробед
+## <a name="knownpathprobed-event"></a>Событие KnownPathProbed
 
 |Ключевое слово для вызова события|Level|
 |-----------------------------------|-----------|-----------|
-|`Binder` 0x4|Информационный (4)|
+|`Binder` (0x4)|Информационный (4)|
 
 |Событие|Идентификатор события|Описание|
 |-----------|--------------|-----------------|
@@ -317,7 +317,7 @@ ms.locfileid: "96594110"
 
 |Имя поля|Тип данных|Описание|
 |----------------|---------------|-----------------|
-|`FilePath`|`win:UnicodeString`|Путь проверен.|
-|`Source`|`win:UInt16`|Источник проверенного пути.<br/><br/>0x0: сборки приложений.<br/><br/>0x1: путь к образу в машинном код для приложения.<br/><br/>0x2: путь к приложению.</br><br/>0x3: корневые элементы ресурсов платформы.<br/><br/>0x4: подкаталог спутниковой связи.</br>|
-|`Result`|`win:UInt32`|HRESULT для зонда.|
+|`FilePath`|`win:UnicodeString`|Путь опробован.|
+|`Source`|`win:UInt16`|Источник опробованного пути.<br/><br/>0x0: сборки приложения.<br/><br/>0x1: путь к образу в собственном коде приложения.<br/><br/>0x2: путь к приложению.</br><br/>0x3: корневые элементы ресурсов платформы.<br/><br/>0x4: вспомогательный подкаталог.</br>|
+|`Result`|`win:UInt32`|HRESULT для пробы.|
 |`ClrInstanceID`|`win:UInt16`|Уникальный идентификатор для экземпляра CoreCLR.|

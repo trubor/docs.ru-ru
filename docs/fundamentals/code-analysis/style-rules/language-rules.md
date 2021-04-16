@@ -1,6 +1,6 @@
 ---
 title: Правила языка для стиля кода
-description: Узнайте о различных правилах стиля кода для использования конструкций языка C# и Visual Basic.
+description: Сведения о различных правилах стиля кода для использования языковых конструкций C# и Visual Basic.
 ms.date: 09/25/2020
 ms.topic: reference
 author: gewarren
@@ -13,25 +13,25 @@ helpviewer_keywords:
 - language rules
 - EditorConfig language conventions
 ms.openlocfilehash: 2aa2261534363f1da6a2109f092e08d210ebd915
-ms.sourcegitcommit: 7e42488c2f8f63f6d499b5f8fb1dec5bac9ad254
-ms.translationtype: MT
+ms.sourcegitcommit: 05d0087dfca85aac9ca2960f86c5efd218bf833f
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "98957979"
 ---
 # <a name="language-rules"></a>Правила языка
 
-Правила языка стиля кода влияют на использование различных конструкций языков программирования .NET, например модификаторов и круглых скобок. Правила делятся на следующие категории:
+Правила языка для стиля кода влияют на использование различных конструкций языков программирования .NET, например модификаторов и круглых скобок. Эти правила делятся на следующие категории:
 
-- [Правила стилей .NET](#net-style-rules): правила, применяемые к C# и Visual Basic. Имена параметров EditorConfig для этих правил начинаются с `dotnet_style_` префикса.
-- [Правила для стилей c#](#c-style-rules). правила, относящиеся только к языку c#. Имена параметров EditorConfig для этих правил начинаются с `csharp_style_` префикса.
-- [Правила стилей Visual Basic](#visual-basic-style-rules): правила, относящиеся только к Visual бсик Language. Имена параметров EditorConfig для этих правил начинаются с `visual_basic_style_` префикса.
+- [Правила стиля .NET](#net-style-rules) в равной мере применяются к C# и Visual Basic. Имена параметров EditorConfig для этих правил начинаются с префикса `dotnet_style_`.
+- [Правила стиля C#](#c-style-rules) применяются только для языка C#. Имена параметров EditorConfig для этих правил начинаются с префикса `csharp_style_`.
+- [Правила стиля Visual Basic](#visual-basic-style-rules) применяются только для языка Visual Basic. Имена параметров EditorConfig для этих правил начинаются с префикса `visual_basic_style_`.
 
 ## <a name="option-format"></a>Формат параметра
 
-Параметры языковых правил можно указать в файле EditorConfig в следующем формате:
+Параметры для правил языка можно указывать в файле EditorConfig в следующем формате:
 
-`option_name = value` (Visual Studio 2019 версии 16,9, предварительная версия 2 и более поздние)
+`option_name = value` (Visual Studio 2019 версии 16.9, предварительная версия 2 и более поздние версии)
 
 или
 
@@ -39,19 +39,19 @@ ms.locfileid: "98957979"
 
 - **Значение**
 
-  Для каждого правила языка указывается значение, определяющее, следует ли предпочитать стиль. Многие правила принимают значение `true` (предпочитать этот стиль) или `false` (не предпочитать этот стиль). Другие правила принимают значения `when_on_single_line` или `never`.
+  Для каждого правила языка укажите значение, которое определяет условия выбора соответствующего стиля. Многие правила принимают значение `true` (предпочитать этот стиль) или `false` (не предпочитать этот стиль). Другие правила принимают значения `when_on_single_line` или `never`.
 
-- **Уровень серьезности** (необязательно в Visual Studio 2019 версии 16,9, предварительная версия 2 и более поздние версии)
+- **Уровень серьезности** (необязательно в Visual Studio 2019 версии 16.9, предварительная версия 2 и более поздние версии)
 
-  Вторая часть правила задает степень [серьезности](../configuration-options.md#severity-level) для правила. При указании этого способа параметр серьезности учитывается только в Ideах разработки, таких как Visual Studio. Он *не* учитывается во время сборки.
+  Вторая часть правила определяет [уровень серьезности](../configuration-options.md#severity-level) правила. Если параметр уровня серьезности задан таким образом, он учитывается только в таких средах IDE, как Visual Studio. Он *не* учитывается во время сборки.
 
-  Чтобы применить правила стиля кода во время сборки, задайте уровень серьезности с помощью синтаксиса конфигурации серьезности на основе идентификатора правила для анализаторов. Синтаксис имеет вид `dotnet_diagnostic.<rule ID>.severity = <severity>`, например `dotnet_diagnostic.IDE0040.severity = silent`. Дополнительные сведения см. в разделе [уровень серьезности](../configuration-options.md#severity-level).
+  Чтобы применить правила стиля кода во время сборки, задайте уровень серьезности с помощью синтаксиса конфигурации серьезности на основе идентификатора правила для анализаторов. Синтаксис имеет вид `dotnet_diagnostic.<rule ID>.severity = <severity>`, например `dotnet_diagnostic.IDE0040.severity = silent`. Дополнительные сведения см. в разделе об [уровне серьезности](../configuration-options.md#severity-level).
 
 > [!TIP]
 >
-> Начиная с Visual Studio 2019 версии 16.3, в меню [Быстрые действия](/visualstudio/ide/quick-actions) можно настроить правила стиля кода после нарушения стиля. Дополнительные сведения см. [в разделе Автоматическая настройка стилей кода в Visual Studio](/visualstudio/ide/editorconfig-language-conventions#automatically-configure-code-styles-in-visual-studio).
+> Начиная с Visual Studio 2019 версии 16.3, в меню [Быстрые действия](/visualstudio/ide/quick-actions) можно настроить правила стиля кода после нарушения стиля. Дополнительные сведения см. в разделе [Автоматическая настройка стилей кода в Visual Studio](/visualstudio/ide/editorconfig-language-conventions#automatically-configure-code-styles-in-visual-studio).
 
-## <a name="net-style-rules"></a>Правила стилей .NET
+## <a name="net-style-rules"></a>Правила стиля .NET
 
 Правила стилей в этом разделе относятся как к C#, так и к Visual Basic.
 
@@ -85,10 +85,10 @@ ms.locfileid: "98957979"
   - [dotnet_style_prefer_compound_assignment](ide0054-ide0074.md#dotnet_style_prefer_compound_assignment)
   - [dotnet_style_prefer_simplified_interpolation](ide0071.md#dotnet_style_prefer_simplified_interpolation)
   - [dotnet_style_prefer_simplified_boolean_expressions](ide0075.md#dotnet_style_prefer_simplified_boolean_expressions)
-  - [Добавление недостающих вариантов в инструкцию Switch](ide0010.md) . это правило не имеет параметра стиля кода.
-  - [Преобразовать анонимный тип в кортеж](ide0050.md) — это правило не имеет параметра стиля кода.
-  - [Использовать "System. хэш. Combine"](ide0070.md) — это правило не имеет параметра стиля кода.
-  - [Преобразовать "typeof" в "NameOf"](ide0082.md) — это правило не имеет параметра стиля кода.
+  - [Добавить отсутствующие варианты в оператор switch](ide0010.md). У этого правила нет параметра стиля кода.
+  - [Преобразовать анонимный тип в кортеж](ide0050.md). У этого правила нет параметра стиля кода.
+  - [Использовать "System.HashCode.Combine"](ide0070.md). У этого правила нет стиля кода.
+  - [Преобразовать "typeof" в "NameOf"](ide0082.md). У этого правила нет параметра стиля кода.
 - [Параметры проверки NULL](null-checking-preferences.md#net-null-checking-preferences)
   - [dotnet_style_coalesce_expression](ide0029-ide0030.md#dotnet_style_coalesce_expression)
   - [dotnet_style_null_propagation](ide0031.md#dotnet_style_null_propagation)
@@ -96,11 +96,11 @@ ms.locfileid: "98957979"
 - [Параметры заголовка файла](ide0073.md)
   - [file_header_template](ide0073.md#file_header_template)
 
-## <a name="c-style-rules"></a>Правила стилей C#
+## <a name="c-style-rules"></a>Правила стиля C#
 
-Правила стилей в этом разделе применимы только к языку C#.
+Правила стиля в этом разделе относятся только к C#.
 
-- [предпочтения "var"](ide0007-ide0008.md)
+- [Параметры "var"](ide0007-ide0008.md)
   - [csharp_style_var_for_built_in_types](ide0007-ide0008.md#csharp_style_var_for_built_in_types)
   - [csharp_style_var_when_type_is_apparent](ide0007-ide0008.md#csharp_style_var_when_type_is_apparent)
   - [csharp_style_var_elsewhere](ide0007-ide0008.md#csharp_style_var_elsewhere)
@@ -127,29 +127,29 @@ ms.locfileid: "98957979"
   - [csharp_style_prefer_index_operator](ide0056.md#csharp_style_prefer_index_operator)
   - [csharp_style_prefer_range_operator](ide0057.md#csharp_style_prefer_range_operator)
   - [csharp_style_implicit_object_creation_when_type_is_apparent](ide0090.md#csharp_style_implicit_object_creation_when_type_is_apparent)
-  - [Добавить недостающие варианты для переключения выражения](ide0072.md) . это правило не имеет параметра стиля кода.
+  - [Добавить отсутствующие варианты в выражение switch](ide0072.md). У этого правила нет параметра стиля кода.
 - [Настройки проверки Null](null-checking-preferences.md#c-null-checking-preferences)
   - [csharp_style_throw_expression](ide0016.md#csharp_style_throw_expression)
   - [csharp_style_conditional_delegate_call](ide1005.md#csharp_style_conditional_delegate_call)
 - [Настройки блока кода](code-block-preferences.md)
   - [csharp_prefer_braces](ide0011.md#csharp_prefer_braces)
   - [csharp_prefer_simple_using_statement](ide0063.md#csharp_prefer_simple_using_statement)
-- [предпочтения директивы "using"](ide0065.md)
+- [Параметры директивы using](ide0065.md)
   - [csharp_using_directive_placement](ide0065.md#csharp_using_directive_placement)
 - [Предпочтения для модификаторов](modifier-preferences.md#c-modifier-preferences)
   - [csharp_prefer_static_local_function](ide0062.md#csharp_prefer_static_local_function)
-  - [Сделать поля структуры доступными для записи](ide0064.md) — это правило не имеет параметра стиля кода.
+  - [Сделать поля структуры доступными для записи](ide0064.md). У этого правила нет параметра стиля кода.
 
-## <a name="visual-basic-style-rules"></a>Правила стилей Visual Basic
+## <a name="visual-basic-style-rules"></a>Правила стиля Visual Basic
 
-Правила стилей в этом разделе применимы только к языку Visual Basic.
+Правила стиля в этом разделе относятся только к языку Visual Basic.
 
 - [Настройки соответствия шаблонов](pattern-matching-preferences.md)
   - [visual_basic_style_prefer_isnot_expression](ide0084.md#visual_basic_style_prefer_isnot_expression)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Правила, касающиеся ненужного кода](unnecessary-code-rules.md)
 - [Правила форматирования](formatting-rules.md)
 - [Правила именования](naming-rules.md)
-- [Справочник по правилам стиля кода .NET](index.md)
+- [Справочник по правилам стиля кода для .NET](index.md)
