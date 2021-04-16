@@ -41,6 +41,8 @@ items:
                     href: aspnet-core/6.0/messagepack-library-change.md
                   - name: 'ПО промежуточного слоя: ПО промежуточного слоя перенаправления HTTPS создает исключение для неоднозначных портов HTTPS'
                     href: aspnet-core/6.0/middleware-ambiguous-https-ports-exception.md
+                  - name: Razor. Компилятор создает единую сборку
+                    href: aspnet-core/6.0/razor-compiler-doesnt-produce-views-assembly.md
                   - name: Razor. Интерфейсы API RazorEngine помечены как устаревшие
                     href: aspnet-core/6.0/razor-engine-apis-obsolete.md
               - name: Библиотеки Core .NET
@@ -351,6 +353,8 @@ items:
                     href: aspnet-core/6.0/messagepack-library-change.md
                   - name: 'ПО промежуточного слоя: ПО промежуточного слоя перенаправления HTTPS создает исключение для неоднозначных портов HTTPS'
                     href: aspnet-core/6.0/middleware-ambiguous-https-ports-exception.md
+                  - name: Razor. Компилятор создает единую сборку
+                    href: aspnet-core/6.0/razor-compiler-doesnt-produce-views-assembly.md
                   - name: Razor. Интерфейсы API RazorEngine помечены как устаревшие
                     href: aspnet-core/6.0/razor-engine-apis-obsolete.md
               - name: ".NET\_5"
