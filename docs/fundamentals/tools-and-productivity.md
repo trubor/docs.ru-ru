@@ -5,12 +5,12 @@ description: Узнайте о средствах разработки и диа
 ms.author: dapine
 ms.date: 10/21/2020
 ms.topic: overview
-ms.openlocfilehash: 07c1a161a0bb429403db6852fe77749d83c19ec0
-ms.sourcegitcommit: 05d0087dfca85aac9ca2960f86c5efd218bf833f
+ms.openlocfilehash: 85d64c0d5857d8603316175d18f8c2f7eab3cc93
+ms.sourcegitcommit: 089068389671f6f9e15fd67dcbfb0145bf72f1fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "96593834"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106498532"
 ---
 # <a name="tools-and-diagnostics-in-net"></a>Средства и диагностика в .NET
 
@@ -26,7 +26,7 @@ ms.locfileid: "96593834"
 
 ## <a name="ides"></a>Интегрированные среды разработки
 
-Приложения .NET можно писать в [Visual Studio Code](https://code.visualstudio.com/docs), [Visual Studio](/visualstudio/windows) или [Visual Studio для Mac](/visualstudio/mac). Сведения о средах разработки, работающих в облаке, см. в разделе по [Visual Studio Codespaces](/visualstudio/codespaces/overview/what-is-vsonline).
+Приложения .NET можно писать в [Visual Studio Code](https://code.visualstudio.com/docs), [Visual Studio](/visualstudio/windows) или [Visual Studio для Mac](/visualstudio/mac).
 
 ## <a name="additional-tools"></a>Дополнительные средства
 
