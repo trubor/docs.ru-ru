@@ -1,45 +1,44 @@
 ---
 title: Критическое изменение. Изменены заметки ссылочного типа, допускающего значение NULL
 description: Узнайте о критическом изменении в ASP.NET Core 6.0, связанном с заметками ссылочного типа, допускающего значения NULL
-author: scottaddie
 ms.author: scaddie
 ms.date: 02/24/2021
-ms.openlocfilehash: d6a43b4885a7b11669fc0eeb469c740b60d0cd4c
-ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
+ms.openlocfilehash: 5658ce359bd0d61f3e9597116fd203b89d6f0667
+ms.sourcegitcommit: e7e0921d0a10f85e9cb12f8b87cc1639a6c8d3fe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104874346"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107255068"
 ---
-# <a name="nullable-reference-type-annotations-changed"></a><span data-ttu-id="64a9c-103">Изменения в аннотациях ссылочного типа, допускающего значения NULL</span><span class="sxs-lookup"><span data-stu-id="64a9c-103">Nullable reference type annotations changed</span></span>
+# <a name="nullable-reference-type-annotations-changed"></a><span data-ttu-id="24d1a-103">Изменения в аннотациях ссылочного типа, допускающего значения NULL</span><span class="sxs-lookup"><span data-stu-id="24d1a-103">Nullable reference type annotations changed</span></span>
 
-<span data-ttu-id="64a9c-104">_**Работа над этой проблемой еще ведется. Все критические изменения, связанные с заметками о допустимости значений NULL, будут включены в это решение проблемы в ходе исправления ошибок в ASP.NET Core 6.0.**_</span><span class="sxs-lookup"><span data-stu-id="64a9c-104">_**This issue represents a work-in-progress. All breaking changes to nullability annotations will be aggregated into this issue throughout the course of ASP.NET Core 6.0.**_</span></span>
+<span data-ttu-id="24d1a-104">_**Работа над этой проблемой еще ведется. Все критические изменения, связанные с заметками о допустимости значений NULL, будут включены в это решение проблемы в ходе исправления ошибок в ASP.NET Core 6.0.**_</span><span class="sxs-lookup"><span data-stu-id="24d1a-104">_**This issue represents a work-in-progress. All breaking changes to nullability annotations will be aggregated into this issue throughout the course of ASP.NET Core 6.0.**_</span></span>
 
-<span data-ttu-id="64a9c-105">Начиная с версии ASP.NET Core 5.0, заметки о допустимости значений NULL применялись к частям кода.</span><span class="sxs-lookup"><span data-stu-id="64a9c-105">Starting in ASP.NET Core 5.0, nullability annotations have been applied to parts of the code.</span></span> <span data-ttu-id="64a9c-106">С самого начала работы над этой возможностью [ожидались проблемы](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/api-guidelines/nullability.md#breaking-change-guidance) с заметками, которые требовали исправлений.</span><span class="sxs-lookup"><span data-stu-id="64a9c-106">From the outset of this effort, [mistakes were expected](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/api-guidelines/nullability.md#breaking-change-guidance) in these annotations and fixes would need to be made.</span></span> <span data-ttu-id="64a9c-107">Мы работаем над обновлением некоторых заметок, ранее примененных в ASP.NET Core 6.0.</span><span class="sxs-lookup"><span data-stu-id="64a9c-107">In ASP.NET Core 6.0, some previously applied annotations are being updated.</span></span> <span data-ttu-id="64a9c-108">Некоторые из этих изменений представляют собой критические изменения исходного кода.</span><span class="sxs-lookup"><span data-stu-id="64a9c-108">Some of these changes are considered source breaking changes.</span></span> <span data-ttu-id="64a9c-109">Такие изменения приводят к несовместимости или большему ограничению API.</span><span class="sxs-lookup"><span data-stu-id="64a9c-109">The changes lead to the APIs being incompatible or more restrictive.</span></span> <span data-ttu-id="64a9c-110">Использование обновленных API может привести к появлению предупреждений во время сборки при использовании в проектах, в которых включены ссылочные типы, допускающие значения NULL.</span><span class="sxs-lookup"><span data-stu-id="64a9c-110">The updated APIs may result in build-time warnings when used in projects that have nullable reference types enabled.</span></span>
+<span data-ttu-id="24d1a-105">Начиная с версии ASP.NET Core 5.0, заметки о допустимости значений NULL применялись к частям кода.</span><span class="sxs-lookup"><span data-stu-id="24d1a-105">Starting in ASP.NET Core 5.0, nullability annotations have been applied to parts of the code.</span></span> <span data-ttu-id="24d1a-106">С самого начала работы над этой возможностью [ожидались проблемы](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/api-guidelines/nullability.md#breaking-change-guidance) с заметками, которые требовали исправлений.</span><span class="sxs-lookup"><span data-stu-id="24d1a-106">From the outset of this effort, [mistakes were expected](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/api-guidelines/nullability.md#breaking-change-guidance) in these annotations and fixes would need to be made.</span></span> <span data-ttu-id="24d1a-107">Мы работаем над обновлением некоторых заметок, ранее примененных в ASP.NET Core 6.0.</span><span class="sxs-lookup"><span data-stu-id="24d1a-107">In ASP.NET Core 6.0, some previously applied annotations are being updated.</span></span> <span data-ttu-id="24d1a-108">Некоторые из этих изменений представляют собой критические изменения исходного кода.</span><span class="sxs-lookup"><span data-stu-id="24d1a-108">Some of these changes are considered source breaking changes.</span></span> <span data-ttu-id="24d1a-109">Такие изменения приводят к несовместимости или большему ограничению API.</span><span class="sxs-lookup"><span data-stu-id="24d1a-109">The changes lead to the APIs being incompatible or more restrictive.</span></span> <span data-ttu-id="24d1a-110">Использование обновленных API может привести к появлению предупреждений во время сборки при использовании в проектах, в которых включены ссылочные типы, допускающие значения NULL.</span><span class="sxs-lookup"><span data-stu-id="24d1a-110">The updated APIs may result in build-time warnings when used in projects that have nullable reference types enabled.</span></span>
 
-<span data-ttu-id="64a9c-111">Обсуждение этого вопроса см. на странице GitHub [dotnet/aspnetcore#27564](https://github.com/dotnet/aspnetcore/issues/27564).</span><span class="sxs-lookup"><span data-stu-id="64a9c-111">For discussion, see GitHub issue [dotnet/aspnetcore#27564](https://github.com/dotnet/aspnetcore/issues/27564).</span></span>
+<span data-ttu-id="24d1a-111">Обсуждение этого вопроса см. на странице GitHub [dotnet/aspnetcore#27564](https://github.com/dotnet/aspnetcore/issues/27564).</span><span class="sxs-lookup"><span data-stu-id="24d1a-111">For discussion, see GitHub issue [dotnet/aspnetcore#27564](https://github.com/dotnet/aspnetcore/issues/27564).</span></span>
 
-## <a name="version-introduced"></a><span data-ttu-id="64a9c-112">Представленная версия</span><span class="sxs-lookup"><span data-stu-id="64a9c-112">Version introduced</span></span>
+## <a name="version-introduced"></a><span data-ttu-id="24d1a-112">Представленная версия</span><span class="sxs-lookup"><span data-stu-id="24d1a-112">Version introduced</span></span>
 
-<span data-ttu-id="64a9c-113">6,0</span><span class="sxs-lookup"><span data-stu-id="64a9c-113">6.0</span></span>
+<span data-ttu-id="24d1a-113">ASP.NET Core 6.0</span><span class="sxs-lookup"><span data-stu-id="24d1a-113">ASP.NET Core 6.0</span></span>
 
-## <a name="old-behavior"></a><span data-ttu-id="64a9c-114">Старое поведение</span><span class="sxs-lookup"><span data-stu-id="64a9c-114">Old behavior</span></span>
+## <a name="old-behavior"></a><span data-ttu-id="24d1a-114">Старое поведение</span><span class="sxs-lookup"><span data-stu-id="24d1a-114">Old behavior</span></span>
 
-<span data-ttu-id="64a9c-115">В затронутых API применялись неправильные заметки ссылочного типа, допускающего значения NULL.</span><span class="sxs-lookup"><span data-stu-id="64a9c-115">The affected APIs have incorrect nullable reference type annotations.</span></span> <span data-ttu-id="64a9c-116">Предупреждения при сборке не отображались или отображались неправильно.</span><span class="sxs-lookup"><span data-stu-id="64a9c-116">Build warnings are either absent or incorrect.</span></span>
+<span data-ttu-id="24d1a-115">В затронутых API применялись неправильные заметки ссылочного типа, допускающего значения NULL.</span><span class="sxs-lookup"><span data-stu-id="24d1a-115">The affected APIs have incorrect nullable reference type annotations.</span></span> <span data-ttu-id="24d1a-116">Предупреждения при сборке не отображались или отображались неправильно.</span><span class="sxs-lookup"><span data-stu-id="24d1a-116">Build warnings are either absent or incorrect.</span></span>
 
-## <a name="new-behavior"></a><span data-ttu-id="64a9c-117">Новое поведение</span><span class="sxs-lookup"><span data-stu-id="64a9c-117">New behavior</span></span>
+## <a name="new-behavior"></a><span data-ttu-id="24d1a-117">Новое поведение</span><span class="sxs-lookup"><span data-stu-id="24d1a-117">New behavior</span></span>
 
-<span data-ttu-id="64a9c-118">Создаются новые предупреждения при сборке.</span><span class="sxs-lookup"><span data-stu-id="64a9c-118">New build warnings are produced.</span></span> <span data-ttu-id="64a9c-119">Для затронутых API больше не отображаются неправильные предупреждения при сборке.</span><span class="sxs-lookup"><span data-stu-id="64a9c-119">Incorrect build warnings are no longer produced for the affected APIs.</span></span>
+<span data-ttu-id="24d1a-118">Создаются новые предупреждения при сборке.</span><span class="sxs-lookup"><span data-stu-id="24d1a-118">New build warnings are produced.</span></span> <span data-ttu-id="24d1a-119">Для затронутых API больше не отображаются неправильные предупреждения при сборке.</span><span class="sxs-lookup"><span data-stu-id="24d1a-119">Incorrect build warnings are no longer produced for the affected APIs.</span></span>
 
-## <a name="reason-for-change"></a><span data-ttu-id="64a9c-120">Причина изменения</span><span class="sxs-lookup"><span data-stu-id="64a9c-120">Reason for change</span></span>
+## <a name="reason-for-change"></a><span data-ttu-id="24d1a-120">Причина изменения</span><span class="sxs-lookup"><span data-stu-id="24d1a-120">Reason for change</span></span>
 
-<span data-ttu-id="64a9c-121">Благодаря отзывам и дальнейшему тестированию заметки, допускающие значение NULL для затрагиваемых API, были определены как неточные.</span><span class="sxs-lookup"><span data-stu-id="64a9c-121">Through feedback and further testing, the nullable annotations for the affected APIs were determined to be inaccurate.</span></span> <span data-ttu-id="64a9c-122">В обновленных заметках правильно представлены контракты допустимости значений NULL для API.</span><span class="sxs-lookup"><span data-stu-id="64a9c-122">The updated annotations now correctly represent the nullability contracts for the APIs.</span></span>
+<span data-ttu-id="24d1a-121">Благодаря отзывам и дальнейшему тестированию заметки, допускающие значение NULL для затрагиваемых API, были определены как неточные.</span><span class="sxs-lookup"><span data-stu-id="24d1a-121">Through feedback and further testing, the nullable annotations for the affected APIs were determined to be inaccurate.</span></span> <span data-ttu-id="24d1a-122">В обновленных заметках правильно представлены контракты допустимости значений NULL для API.</span><span class="sxs-lookup"><span data-stu-id="24d1a-122">The updated annotations now correctly represent the nullability contracts for the APIs.</span></span>
 
-## <a name="recommended-action"></a><span data-ttu-id="64a9c-123">Рекомендованное действие</span><span class="sxs-lookup"><span data-stu-id="64a9c-123">Recommended action</span></span>
+## <a name="recommended-action"></a><span data-ttu-id="24d1a-123">Рекомендованное действие</span><span class="sxs-lookup"><span data-stu-id="24d1a-123">Recommended action</span></span>
 
-<span data-ttu-id="64a9c-124">Обновите код вызова этих API для отражения изменений в контрактах, допускающих значения NULL.</span><span class="sxs-lookup"><span data-stu-id="64a9c-124">Update code calling these APIs to reflect the revised nullability contracts.</span></span>
+<span data-ttu-id="24d1a-124">Обновите код вызова этих API для отражения изменений в контрактах, допускающих значения NULL.</span><span class="sxs-lookup"><span data-stu-id="24d1a-124">Update code calling these APIs to reflect the revised nullability contracts.</span></span>
 
-## <a name="affected-apis"></a><span data-ttu-id="64a9c-125">Затронутые API</span><span class="sxs-lookup"><span data-stu-id="64a9c-125">Affected APIs</span></span>
+## <a name="affected-apis"></a><span data-ttu-id="24d1a-125">Затронутые API</span><span class="sxs-lookup"><span data-stu-id="24d1a-125">Affected APIs</span></span>
 
 * <xref:Microsoft.AspNetCore.Components.ParameterView.FromDictionary%2A?displayProperty=nameWithType>
 * <xref:Microsoft.AspNetCore.Components.RenderTree.Renderer.DispatchEventAsync%2A?displayProperty=nameWithType>
@@ -135,9 +134,9 @@ ms.locfileid: "104874346"
 * <xref:Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseNullableQuery(System.String)?displayProperty=nameWithType>
 * <xref:Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseQuery(System.String)?displayProperty=nameWithType>
 
-## <a name="see-also"></a><span data-ttu-id="64a9c-126">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="64a9c-126">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="24d1a-126">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="24d1a-126">See also</span></span>
 
-- [<span data-ttu-id="64a9c-127">Изменения в заметках ссылочного типа, допускающих значения NULL, в библиотеках .NET</span><span class="sxs-lookup"><span data-stu-id="64a9c-127">Nullable reference type annotation changes in core .NET libraries</span></span>](../../core-libraries/6.0/nullable-ref-type-annotation-changes.md)
+- [<span data-ttu-id="24d1a-127">Изменения в заметках ссылочного типа, допускающих значения NULL, в библиотеках .NET</span><span class="sxs-lookup"><span data-stu-id="24d1a-127">Nullable reference type annotation changes in core .NET libraries</span></span>](../../core-libraries/6.0/nullable-ref-type-annotation-changes.md)
 
 <!--
 
