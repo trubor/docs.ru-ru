@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Type Library Exporter
 - type libraries [.NET Framework], exporting
 ms.assetid: a487d61b-d166-467b-a7ca-d8b52fbff42d
-ms.openlocfilehash: 378ebda29931e38d2b9a6685d07ccbf1a7c2ad31
-ms.sourcegitcommit: 1dbe25ff484a02025d5c34146e517c236f7161fb
+ms.openlocfilehash: 49b776781a7a61db7e90b0c1f0abec6d63f50ba0
+ms.sourcegitcommit: aab60b21144bf04b3057b5d59aa7c58edaef32d1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104653521"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107494653"
 ---
 # <a name="tlbexpexe-type-library-exporter"></a>Tlbexp.exe (программа экспорта библиотек типов)
 
@@ -93,9 +93,7 @@ HRESULT StructDispSafe([out, retval] SAFEARRAY(IDispatch*)* pRetVal);
   
  Так как библиотеки типов не могут разместить все данные, найденные в сборке, программа Tlbexp.exe может пропустить некоторые данные в процессе экспорта. Описание процесса преобразования и определения для источников каждого элемента данных, передаваемого в библиотеку типов, см. в разделе [Общие сведения о преобразовании сборки в библиотеку типов](/previous-versions/dotnet/netframework-4.0/xk1120c3(v=vs.100)).  
   
- Следует иметь в виду, что программа экспорта библиотек типов экспортирует методы, для которых в качестве параметра <xref:System.TypedReference> задано `VARIANT`, несмотря на то что объект <xref:System.TypedReference> теряет смысл в неуправляемом коде. При экспорте методов с параметрами <xref:System.TypedReference> программа экспорта библиотек типов не выдает предупреждение или сообщение об ошибке, и неуправляемый код, в котором используется полученная библиотека типов, будет выполняться неправильно.  
-  
- Программа экспорта библиотек типов поддерживается в Microsoft Windows 2000 и более поздних версиях.  
+ Следует иметь в виду, что программа экспорта библиотек типов экспортирует методы, для которых в качестве параметра <xref:System.TypedReference> задано `VARIANT`, несмотря на то что объект <xref:System.TypedReference> теряет смысл в неуправляемом коде. При экспорте методов с параметрами <xref:System.TypedReference> программа экспорта библиотек типов не выдает предупреждение или сообщение об ошибке, и неуправляемый код, в котором используется полученная библиотека типов, будет выполняться неправильно.
   
 ## <a name="examples"></a>Примеры  
 

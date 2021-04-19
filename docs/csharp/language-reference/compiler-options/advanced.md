@@ -21,12 +21,12 @@ helpviewer_keywords:
 - AdditionalLibPaths compiler option [C#]
 - ApplicationConfiguration compiler option [C#]
 - ModuleAssemblyName compiler option [C#]
-ms.openlocfilehash: 5c51a4dd950a33fb51c338dbd1d86bb5b03eb694
-ms.sourcegitcommit: e16315d9f1ff355f55ff8ab84a28915be0a8e42b
+ms.openlocfilehash: 50108fa18127c55bd791d70520c8dfd90331f86f
+ms.sourcegitcommit: aab60b21144bf04b3057b5d59aa7c58edaef32d1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105111040"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107494100"
 ---
 # <a name="advanced-c-compiler-options"></a>Расширенные параметры компилятора C#
 
@@ -248,8 +248,6 @@ ms.locfileid: "105111040"
 
 |Версия Windows|Версия подсистемы|
 |---------------------|-----------------------|
-|Windows 2000|5.00|
-|Windows XP|5.01|
 |Windows Server 2003|5.02|
 |Windows Vista|6.00|
 |Windows 7|6.01|

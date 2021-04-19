@@ -3,12 +3,12 @@ title: Использование вариативности в интерфей
 description: Узнайте, как использовать ковариантные и контрвариантные интерфейсы для универсальных коллекций. См. примеры преобразования и сравнения универсальных коллекций.
 ms.date: 07/20/2015
 ms.assetid: a44f0708-10fa-4c76-82cd-daa6e6b31e8e
-ms.openlocfilehash: a896fe8fda3d9ad08de9a09c6a172f7d75335e7d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 39da866be3d1ead357485be31fee1c19f2b1ae27
+ms.sourcegitcommit: 985c603cb21a085f8a8105f34ff5b87a44b76ab4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91176309"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107564861"
 ---
 # <a name="using-variance-in-interfaces-for-generic-collections-c"></a>Использование вариативности в интерфейсах для универсальных коллекций (C#)
 
@@ -59,7 +59,7 @@ class Program
   
 ## <a name="comparing-generic-collections"></a>Сравнение универсальных коллекций  
 
- Следующий пример иллюстрирует преимущества поддержки контрвариантности в интерфейсе <xref:System.Collections.Generic.IComparer%601>. Класс `PersonComparer` реализует интерфейс `IComparer<Person>`. Тем не менее этот класс можно повторно использовать для сравнения последовательности объектов типа `Employee`, так как `Employee` наследует `Person`.  
+ Следующий пример иллюстрирует преимущества поддержки контрвариантности в интерфейсе <xref:System.Collections.Generic.IEqualityComparer%601>. Класс `PersonComparer` реализует интерфейс `IEqualityComparer<Person>`. Тем не менее этот класс можно повторно использовать для сравнения последовательности объектов типа `Employee`, так как `Employee` наследует `Person`.  
   
 ```csharp  
 // Simple hierarchy of classes.  

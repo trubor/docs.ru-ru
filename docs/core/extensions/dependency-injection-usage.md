@@ -3,19 +3,19 @@ title: Использование внедрения зависимостей в
 description: Узнайте, как использовать внедрение зависимостей в приложениях .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/13/2020
+ms.date: 04/12/2021
 ms.topic: tutorial
 no-loc:
 - Transient
 - Scoped
 - Singleton
 - Example
-ms.openlocfilehash: d6654d5d1c8f7959e96998c18a1790cce46ebf41
-ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
+ms.openlocfilehash: 03828496dfa3487ad70fac8cf32ff81844eca6fd
+ms.sourcegitcommit: aab60b21144bf04b3057b5d59aa7c58edaef32d1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102402159"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107494276"
 ---
 # <a name="tutorial-use-dependency-injection-in-net"></a>Руководство. Использование внедрения зависимостей в .NET
 
@@ -89,10 +89,10 @@ ms.locfileid: "102402159"
 
 :::code language="csharp" source="snippets/configuration/console-di/Program.cs" range="1-18,35-60" highlight="22-26":::
 
-> Каждый метод расширения `services.Add{SERVICE_NAME}` добавляет и, возможно, настраивает службы. Рекомендуем придерживаться такого подхода в приложениях. Поместите методы расширения в пространство имен <xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName>, чтобы инкапсулировать группы зарегистрированных служб. Включение части `Microsoft.Extensions.DependencyInjection` пространства имен для методов расширения внедрения зависимостей также:
->
-> - позволяет отображать их в [IntelliSense](/visualstudio/ide/using-intellisense) без добавления дополнительных блоков `using`;
-> - позволяет избежать чрезмерного количества инструкций `using` в классе `Program` или `Startup`, из которого обычно вызываются эти методы расширения.
+Каждый метод расширения `services.Add{SERVICE_NAME}` добавляет (а потенциально и настраивает) службы. Рекомендуем придерживаться такого подхода в приложениях. Поместите методы расширения в пространство имен <xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName>, чтобы инкапсулировать группы зарегистрированных служб. Включение части `Microsoft.Extensions.DependencyInjection` пространства имен для методов расширения внедрения зависимостей также:
+
+- позволяет отображать их в [IntelliSense](/visualstudio/ide/using-intellisense) без добавления дополнительных блоков `using`;
+- позволяет избежать чрезмерного количества инструкций `using` в классе `Program` или `Startup`, из которого обычно вызываются эти методы расширения.
 
 Приложение:
 
