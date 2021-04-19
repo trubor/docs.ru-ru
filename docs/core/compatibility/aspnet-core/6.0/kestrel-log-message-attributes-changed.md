@@ -1,15 +1,14 @@
 ---
 title: Критическое изменение. Kestrel. Атрибуты сообщения журнала изменились
 description: Сведения о критическом изменении в ASP.NET Core 6.0 — Kestrel. Атрибуты сообщения журнала изменились
-author: scottaddie
 ms.author: scaddie
 ms.date: 02/01/2021
-ms.openlocfilehash: 30b03c22a6c85623fec7db14b58b169f887395a0
-ms.sourcegitcommit: 4df8e005c074ceb1f978f007b222fe253be2baf3
+ms.openlocfilehash: daeb9ae418f343a00e9563ef3e2b5090a7f016a9
+ms.sourcegitcommit: e7e0921d0a10f85e9cb12f8b87cc1639a6c8d3fe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99551542"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107255172"
 ---
 # <a name="kestrel-log-message-attributes-changed"></a>Kestrel. Атрибуты сообщения журнала изменились
 
@@ -17,7 +16,7 @@ ms.locfileid: "99551542"
 
 ## <a name="version-introduced"></a>Представленная версия
 
-6,0
+ASP.NET Core 6.0
 
 ## <a name="old-behavior"></a>Старое поведение
 

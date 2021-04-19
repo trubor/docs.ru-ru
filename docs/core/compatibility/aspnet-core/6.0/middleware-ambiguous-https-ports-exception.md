@@ -1,15 +1,14 @@
 ---
 title: 'Критическое изменение. ПО промежуточного слоя: ПО промежуточного слоя перенаправления HTTPS создает исключение для неоднозначных портов HTTPS'
 description: Сведения о критическом изменении в ASP.NET Core 6.0 — ПО промежуточного слоя. ПО промежуточного слоя перенаправления HTTPS создает исключение для неоднозначных портов HTTPS
-author: scottaddie
 ms.author: scaddie
 ms.date: 02/04/2021
-ms.openlocfilehash: 1f49e0df7eaa2eecd83643c9596e745109a340b7
-ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
+ms.openlocfilehash: e299fc7d2be295d723f5389a2b4cd6896078a752
+ms.sourcegitcommit: e7e0921d0a10f85e9cb12f8b87cc1639a6c8d3fe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100488259"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107255081"
 ---
 # <a name="middleware-https-redirection-middleware-throws-exception-on-ambiguous-https-ports"></a>ПО промежуточного слоя: ПО промежуточного слоя перенаправления HTTPS создает исключение для неоднозначных портов HTTPS
 
@@ -19,7 +18,7 @@ ms.locfileid: "100488259"
 
 ## <a name="version-introduced"></a>Представленная версия
 
-6,0
+ASP.NET Core 6.0
 
 ## <a name="old-behavior"></a>Старое поведение
 

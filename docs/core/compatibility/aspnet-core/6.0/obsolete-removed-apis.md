@@ -1,15 +1,14 @@
 ---
 title: 'Критическое изменение: устаревшие и удаленные API'
 description: Сведения о критическом изменении в ASP.NET Core 6.0 "Устаревшие и удаленные API"
-author: scottaddie
 ms.author: scaddie
 ms.date: 02/16/2021
-ms.openlocfilehash: 4a4819247b7e6bb957f643b457e651cca5b4e703
-ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
+ms.openlocfilehash: b5524a6ca42972ef630f8db60cbfd67051daf9e4
+ms.sourcegitcommit: e7e0921d0a10f85e9cb12f8b87cc1639a6c8d3fe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102108405"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107255042"
 ---
 # <a name="obsoleted-and-removed-apis"></a>Устаревшие и удаленные API
 
@@ -17,7 +16,7 @@ ms.locfileid: "102108405"
 
 ## <a name="version-introduced"></a>Представленная версия
 
-6.0, предварительная версия 1
+ASP.NET Core 6.0 (предварительная версия 1)
 
 ## <a name="old-behavior"></a>Старое поведение
 

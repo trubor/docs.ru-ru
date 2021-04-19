@@ -3,12 +3,12 @@ title: Стандартные счетчики событий в .NET
 description: Сведения о счетчиках событий, публикуемых в библиотеках и среде выполнения .NET.
 ms.topic: reference
 ms.date: 12/17/2020
-ms.openlocfilehash: aad4fa8b33ebf0dcb7803c77b11fb99a6b6d7b83
-ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
+ms.openlocfilehash: fc07ace22f1580d547c33b897bcd1bb9a1de15c3
+ms.sourcegitcommit: 089068389671f6f9e15fd67dcbfb0145bf72f1fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104872838"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106496726"
 ---
 # <a name="well-known-eventcounters-in-net"></a>Стандартные счетчики событий в .NET
 
@@ -43,6 +43,7 @@ ms.locfileid: "104872838"
 | :::no-loc text="Working Set"::: (`working-set`) | Объем физической памяти, сопоставленной контексту процесса, в определенный момент времени на основе <xref:System.Environment.WorkingSet?displayProperty=nameWithType> |
 | :::no-loc text="IL Bytes Jitted"::: (`il-bytes-jitted`) | Общий размер IL, скомпилированных JIT-компилятором, в байтах (доступно в .NET 5 и более поздних версиях) |
 | :::no-loc text="Method Jitted Count"::: (`method-jitted-count`) | Общее число методов, скомпилированных JIT-компилятором (доступно в .NET 5 и более поздних версиях) |
+| :::no-loc text="GC Committed Bytes"::: (`gc-committed-bytes`) | Число байтов, зафиксированных сборщиком мусора (доступно в .NET 6 и более поздних версиях) |
 
 ## <a name="microsoftaspnetcorehosting-counters"></a>Счетчики "Microsoft.AspNetCore.Hosting"
 

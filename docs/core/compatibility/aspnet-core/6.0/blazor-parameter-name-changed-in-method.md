@@ -1,15 +1,14 @@
 ---
 title: 'Критическое изменение. Blazor: изменено имя параметра в методе RequestImageFileAsync'
 description: Сведения о критическом изменении в ASP.NET Core 6.0 — Blazor. изменено имя параметра в методе RequestImageFileAsync
-author: scottaddie
 ms.author: scaddie
 ms.date: 02/09/2021
-ms.openlocfilehash: bfaaa6bfe94c32fbc1a5b5b70db863d105d389b5
-ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
+ms.openlocfilehash: 645b53e341507ffd9f369eea1b940232b7c14770
+ms.sourcegitcommit: e7e0921d0a10f85e9cb12f8b87cc1639a6c8d3fe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100488264"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107255185"
 ---
 # <a name="blazor-parameter-name-changed-in-requestimagefileasync-method"></a>Blazor: изменено имя параметра в методе RequestImageFileAsync
 
@@ -17,7 +16,7 @@ ms.locfileid: "100488264"
 
 ## <a name="version-introduced"></a>Представленная версия
 
-6.0, предварительная версия 1
+ASP.NET Core 6.0 (предварительная версия 1)
 
 ## <a name="old-behavior"></a>Старое поведение
 

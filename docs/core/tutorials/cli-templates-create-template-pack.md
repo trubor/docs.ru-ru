@@ -2,15 +2,15 @@
 title: Создание пакета шаблонов для команды dotnet new
 description: Узнайте, как создать файл CSPROJ, с помощью которого выполняется сборка пакета шаблонов для команды dotnet new.
 author: adegeo
-ms.date: 12/11/2020
+ms.date: 03/26/2021
 ms.topic: tutorial
 ms.author: adegeo
-ms.openlocfilehash: 2aea143f1e41d580de41a9cc9e924d70b55695db
-ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
+ms.openlocfilehash: 343104f9609c59e7da24f857de6a7fc29803e2df
+ms.sourcegitcommit: e7e0921d0a10f85e9cb12f8b87cc1639a6c8d3fe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97633602"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107255393"
 ---
 # <a name="tutorial-create-a-template-pack"></a>Учебник. Создание пакета шаблонов
 
@@ -103,19 +103,27 @@ Restore succeeded.
 
 ## <a name="build-and-install"></a>Сборка и установка
 
-Сохраните этот файл, а затем выполните команду pack.
-
-```dotnetcli
-dotnet pack
-```
-
-Эта команда выполнит сборку проекта и создаст пакет NuGet в папке _working\bin\Debug_.
-
-```dotnetcli
-dotnet pack
-```
+Сохраните файл проекта. Перед созданием пакета шаблонов убедитесь, что структура папок правильная. Любой шаблон, который необходимо упаковать, должен быть помещен в отдельную папку в папке _templates_. Структура папок должна выглядеть примерно так, как показано ниже.
 
 ```console
+working
+│   templatepack.csproj
+└───templates
+    ├───extensions
+    │   └───.template.config
+    │           template.json
+    └───consoleasync
+        └───.template.config
+                template.json
+```
+
+В папке _templates_ имеются две подпапки: _extensions_ и _consoleasync_.
+
+В окне терминала, находясь в _рабочей_ папке, выполните команду `dotnet pack`. Эта команда выполнит сборку проекта и создаст пакет NuGet в папке _working\bin\Debug_, как показано ниже:
+
+```console
+C:\working> dotnet pack
+
 Microsoft (R) Build Engine version 16.8.0+126527ff1 for .NET
 Copyright (C) Microsoft Corporation. All rights reserved.
 
@@ -152,10 +160,8 @@ Class library                                     classlib                 [C#],
 Независимо от того, как был установлен пакет шаблонов (непосредственно из файла _NUPKG_ или из веб-канала NuGet), процедура удаления пакета шаблонов будет одинаковой. Определите `<PackageId>` шаблона, который требуется удалить. Вы можете отобразить список всех установленных шаблонов, выполнив команду `dotnet new -u`.
 
 ```dotnetcli
-dotnet new -u
-```
+C:\working> dotnet new -u
 
-```console
 Template Instantiation Commands for .NET Core CLI
 
 Currently installed items:

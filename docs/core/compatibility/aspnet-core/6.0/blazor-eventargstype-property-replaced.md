@@ -1,17 +1,16 @@
 ---
 title: 'Критическое изменение в Blazor: свойство WebEventDescriptor.EventArgsType заменено'
 description: 'Сведения о критическом изменении в ASP.NET Core 6.0: свойство WebEventDescriptor.EventArgsType заменено свойством EventName.'
-author: scottaddie
 ms.author: scaddie
 ms.date: 02/24/2021
 no-loc:
 - Blazor
-ms.openlocfilehash: 6df086ed234c0071ede83e9fe9d1710f011a2039
-ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
+ms.openlocfilehash: fb82e27d7ab55b78293f40debe917da2d99239a7
+ms.sourcegitcommit: e7e0921d0a10f85e9cb12f8b87cc1639a6c8d3fe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102260018"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107255216"
 ---
 # <a name="blazor-no-loc-textwebeventdescriptoreventargstype-property-replaced"></a>Blazor: свойство :::no-loc text="WebEventDescriptor.EventArgsType"::: заменено
 
@@ -21,7 +20,7 @@ ms.locfileid: "102260018"
 
 ## <a name="version-introduced"></a>Представленная версия
 
-6,0
+ASP.NET Core 6.0
 
 ## <a name="old-behavior"></a>Старое поведение
 

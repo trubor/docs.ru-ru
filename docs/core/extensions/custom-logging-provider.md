@@ -3,14 +3,14 @@ title: Реализация пользовательского поставщи�
 description: Узнайте, как реализовать пользовательского поставщика ведения журнала в приложениях .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/25/2020
+ms.date: 04/07/2021
 ms.topic: how-to
-ms.openlocfilehash: 3a0af6296c2ade15ff1b75dce5a5f99bfe235ebf
-ms.sourcegitcommit: 97405ed212f69b0a32faa66a5d5fae7e76628b68
+ms.openlocfilehash: 56dd3aa9962d2cdaf13df85960a99aab7b050477
+ms.sourcegitcommit: e7e0921d0a10f85e9cb12f8b87cc1639a6c8d3fe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "102402073"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107255133"
 ---
 # <a name="implement-a-custom-logging-provider-in-net"></a>Реализация пользовательского поставщика ведения журнала в .NET
 
@@ -33,7 +33,7 @@ ms.locfileid: "102402073"
 Предыдущий код:
 
 - создает экземпляр средства ведения журнала по имени категории;
-- проверяет `logLevel == _config.LogLevel` в `IsEnabled`, благодаря чему каждому `logLevel` соответствует уникальное средство ведения журнала. Средства ведения журнала также должны быть включены для всех более высоких уровней ведения журнала:
+- проверяет `_config.LogLevels.ContainsKey(logLevel)` в `IsEnabled`, благодаря чему каждому `logLevel` соответствует уникальное средство ведения журнала. Средства ведения журнала также должны быть включены для всех более высоких уровней ведения журнала:
 
 :::code language="csharp" source="snippets/configuration/console-custom-logging/ColorConsoleLogger.cs" range="16-17":::
 
@@ -43,26 +43,27 @@ ms.locfileid: "102402073"
 
 :::code language="csharp" source="snippets/configuration/console-custom-logging/ColorConsoleLoggerProvider.cs":::
 
-В приведенном выше коде <xref:Microsoft.Build.Logging.LoggerDescription.CreateLogger%2A> создает один экземпляр `ColorConsoleLogger` для каждого имени категории и сохраняет его в [`ConcurrentDictionary<TKey,TValue>`](/dotnet/api/system.collections.concurrent.concurrentdictionary-2).
+В приведенном выше коде <xref:Microsoft.Build.Logging.LoggerDescription.CreateLogger%2A> создает один экземпляр `ColorConsoleLogger` для каждого имени категории и сохраняет его в [`ConcurrentDictionary<TKey,TValue>`](/dotnet/api/system.collections.concurrent.concurrentdictionary-2). Кроме того, интерфейс <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> требуется для обновления изменений в базовом объекте `ColorConsoleLoggerConfiguration`.
 
 ## <a name="usage-and-registration-of-the-custom-logger"></a>Использование и регистрация пользовательского средства ведения журнала
 
 Чтобы добавить пользовательского поставщика ведения журнала и соответствующее средство ведения журнала, добавьте <xref:Microsoft.Extensions.Logging.ILoggerProvider> с помощью <xref:Microsoft.Extensions.Logging.ILoggingBuilder> из <xref:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.ConfigureLogging(Microsoft.Extensions.Hosting.IHostBuilder,System.Action{Microsoft.Extensions.Logging.ILoggingBuilder})?displayProperty=nameWithType>:
 
-:::code language="csharp" source="snippets/configuration/console-custom-logging/Program.cs" range="23-39":::
+:::code language="csharp" source="snippets/configuration/console-custom-logging/Program.cs" range="23-33":::
 
 `ILoggingBuilder` создает один или несколько экземпляров `ILogger`. Экземпляры `ILogger` используются платформой для записи данных в журнал.
 
-В приведенном выше коде необходимо указать по крайней мере один метод расширения для `ILoggerFactory`:
+По соглашению методы расширения в `ILoggingBuilder` используются для регистрации настраиваемого поставщика:
 
 :::code language="csharp" source="snippets/configuration/console-custom-logging/Extensions/ColorConsoleLoggerExtensions.cs":::
 
-Выполнение этого простого приложения будет отображено в консоли примерно следующим образом:
+При запуске этого простого приложения в окне консоли будет выведен цветной текст, как показано на следующем рисунке:
 
 :::image type="content" source="media/color-console-logger.png" alt-text="Пример вывода цветного журнала в консоль":::
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Ведение журнала в .NET](logging.md).
-- [Поставщики ведения журнала в NET](logging-providers.md).
-- [Ведение журнала с высокой производительностью в .NET](high-performance-logging.md).
+- [Ведение журнала в .NET](logging.md)
+- [Поставщики ведения журнала в NET](logging-providers.md)
+- [Внедрение зависимостей в .NET](dependency-injection.md)
+- [Ведение журнала с высокой производительностью в .NET](high-performance-logging.md)

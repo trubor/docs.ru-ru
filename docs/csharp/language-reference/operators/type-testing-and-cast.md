@@ -20,12 +20,12 @@ helpviewer_keywords:
 - cast expression [C#]
 - () operator [C#]
 - typeof operator [C#]
-ms.openlocfilehash: 0bf0c3b1cea667456780ff56deb43467fd3bbffd
-ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
+ms.openlocfilehash: f47074fda20c1bc2eda75184dd26c9de1c0e3701
+ms.sourcegitcommit: 4b7f6b348c986556ef805cb6baacfd5b9ec18ed0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87916652"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107075320"
 ---
 # <a name="type-testing-operators-and-cast-expression-c-reference"></a>Операторы проверки типа и выражения приведения (справочник по C#)
 
@@ -62,19 +62,11 @@ E is T
 
 ### <a name="type-testing-with-pattern-matching"></a>Тестирование типов с сопоставлением шаблонов
 
-Начиная с версии C# 7.0, оператор `is` также проверяет соответствие результата выражения указанному шаблону. В частности он поддерживает шаблон типа в следующем формате:
+Начиная с версии C# 7.0, оператор `is` также проверяет соответствие результата выражения указанному шаблону. В следующем примере показано, как использовать [шаблон объявления](patterns.md#declaration-and-type-patterns) для проверки типа выражения в среде выполнения:
 
-```csharp
-E is T v
-```
+[!code-csharp-interactive[is with declaration pattern](snippets/shared/TypeTestingAndConversionOperators.cs#IsDeclarationPattern)]
 
-где `E` представляет выражение, возвращающее значение, `T` содержит имя или параметр типа, а `v` является новой локальной переменной с типом `T`. Если результат выражения `E` отличен от NULL и может быть преобразован в тип `T` путем преобразования ссылки, упаковки-преобразования или распаковки-преобразования, выражение `E is T v` возвращает `true` и сохраняет преобразованное значение результата `E` в переменной `v`.
-
-В следующем примере показано использование оператора `is` с шаблоном типа:
-
-[!code-csharp-interactive[is with type pattern](snippets/shared/TypeTestingAndConversionOperators.cs#IsTypePattern)]
-
-Дополнительные сведения о шаблонах типов и других поддерживаемых шаблонах см. в разделе [Сопоставление шаблонов с is](../keywords/is.md#pattern-matching-with-is).
+Дополнительные сведения о поддерживаемых шаблонах см. в разделе [Шаблоны](patterns.md).
 
 ## <a name="as-operator"></a>Оператор as
 

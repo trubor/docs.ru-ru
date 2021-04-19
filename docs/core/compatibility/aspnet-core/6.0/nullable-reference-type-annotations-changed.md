@@ -1,15 +1,14 @@
 ---
 title: Критическое изменение. Изменены заметки ссылочного типа, допускающего значение NULL
 description: Узнайте о критическом изменении в ASP.NET Core 6.0, связанном с заметками ссылочного типа, допускающего значения NULL
-author: scottaddie
 ms.author: scaddie
 ms.date: 02/24/2021
-ms.openlocfilehash: d6a43b4885a7b11669fc0eeb469c740b60d0cd4c
-ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
+ms.openlocfilehash: 5658ce359bd0d61f3e9597116fd203b89d6f0667
+ms.sourcegitcommit: e7e0921d0a10f85e9cb12f8b87cc1639a6c8d3fe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104874346"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107255068"
 ---
 # <a name="nullable-reference-type-annotations-changed"></a>Изменения в аннотациях ссылочного типа, допускающего значения NULL
 
@@ -21,7 +20,7 @@ _**Работа над этой проблемой еще ведется. Все
 
 ## <a name="version-introduced"></a>Представленная версия
 
-6,0
+ASP.NET Core 6.0
 
 ## <a name="old-behavior"></a>Старое поведение
 
