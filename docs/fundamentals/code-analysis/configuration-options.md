@@ -2,15 +2,14 @@
 title: Настройка правил анализа кода
 description: Сведения о том, как настроить правила анализа кода в файле конфигурации анализатора.
 ms.date: 09/24/2020
-ms.topic: conceptual
 no-loc:
 - EditorConfig
-ms.openlocfilehash: c1992b32e5159e9bf7ae4d00b92a5baa7f7c1b8c
-ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
+ms.openlocfilehash: b9f934d13a510fa9e349d1cefc8131f22e9cd549
+ms.sourcegitcommit: 8f71a6c655a9c39d5223401aed76c02ba00e03ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104876621"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107740973"
 ---
 # <a name="configuration-options-for-code-analysis"></a>Параметры конфигурации для анализа кода
 

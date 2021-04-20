@@ -2,15 +2,14 @@
 title: Параметры конфигурации для правил качества кода
 description: Сведения о том, как указать дополнительные параметры конфигурации для правил качества кода.
 ms.date: 09/24/2020
-ms.topic: conceptual
 no-loc:
 - EditorConfig
-ms.openlocfilehash: 0be0d094739893dc74e1b5c85e686594c766cbcb
-ms.sourcegitcommit: 26721a2260deabb3318cc98af8619306711153cd
+ms.openlocfilehash: 982dc3bba7042083a22123b0ba4af31c1aeba889
+ms.sourcegitcommit: 8f71a6c655a9c39d5223401aed76c02ba00e03ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105027877"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107740999"
 ---
 # <a name="code-quality-rule-configuration-options"></a>Параметры конфигурации для правил качества кода
 

@@ -2,18 +2,19 @@
 title: Подавление предупреждений анализа кода
 description: Узнайте о различных способах подавления нарушений для анализа кода .NET.
 ms.date: 01/28/2021
+ms-topic: how-to
 dev_langs:
 - CSharp
 - VB
 helpviewer_keywords:
 - code analysis, suppress warnings
 - suppress code analysis warnings
-ms.openlocfilehash: a8fdfbddd2393f9c6c8cd882a63a9ecc6cb1dc95
-ms.sourcegitcommit: 05d0087dfca85aac9ca2960f86c5efd218bf833f
+ms.openlocfilehash: a2c85a032c8754be2a1c5c6c8cee06754b3231f2
+ms.sourcegitcommit: 8f71a6c655a9c39d5223401aed76c02ba00e03ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105637043"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107740557"
 ---
 # <a name="how-to-suppress-code-analysis-warnings"></a>Отключение предупреждений анализа кода
 

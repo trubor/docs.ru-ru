@@ -1,7 +1,7 @@
 ---
 title: Расшифровка данных
 description: Узнайте, как расшифровать данные в .NET с помощью симметричного алгоритма или асимметричного алгоритма.
-ms.date: 03/22/2021
+ms.date: 04/19/2021
 dev_langs:
 - csharp
 - vb
@@ -11,12 +11,12 @@ helpviewer_keywords:
 - asymmetric decryption
 - decryption
 ms.assetid: 9b266b6c-a9b2-4d20-afd8-b3a0d8fd48a0
-ms.openlocfilehash: 14d8b6185c1c5b3aaee4f2041f98c500f2d3c313
-ms.sourcegitcommit: 26721a2260deabb3318cc98af8619306711153cd
+ms.openlocfilehash: 1b12e4250f3b2345afd05dbe3c257eb3e7277634
+ms.sourcegitcommit: 8f71a6c655a9c39d5223401aed76c02ba00e03ee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105027913"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107740348"
 ---
 # <a name="decrypting-data"></a>Расшифровка данных
 
@@ -26,18 +26,18 @@ ms.locfileid: "105027913"
 
 Расшифровка данных, зашифрованных при помощи симметричных алгоритмов, похожа на процесс, используемый для шифрования данных при помощи симметричных алгоритмов. <xref:System.Security.Cryptography.CryptoStream>Класс используется с симметричными криптографическими классами, предоставляемыми .NET для расшифровки данных, считанных из любого управляемого объекта потока.
 
-В следующем примере показано, как создать новый экземпляр класса реализации по умолчанию для <xref:System.Security.Cryptography.Aes> алгоритма. Экземпляр используется для расшифровки <xref:System.Security.Cryptography.CryptoStream> объекта. В этом примере сначала создается новый экземпляр <xref:System.Security.Cryptography.Aes> класса реализации. Он считывает значение вектора инициализации (IV) из управляемой переменной потока, `myStream` . Затем он создает экземпляр <xref:System.Security.Cryptography.CryptoStream> объекта и инициализирует его значением `myStream` экземпляра. <xref:System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor%2A?displayProperty=nameWithType>Методу из <xref:System.Security.Cryptography.Aes> экземпляра передается значение IV и тот же ключ, который использовался для шифрования.
+В следующем примере показано, как создать новый экземпляр класса реализации по умолчанию для <xref:System.Security.Cryptography.Aes> алгоритма. Экземпляр используется для расшифровки <xref:System.Security.Cryptography.CryptoStream> объекта. В этом примере сначала создается новый экземпляр <xref:System.Security.Cryptography.Aes> класса реализации. Он считывает значение вектора инициализации (IV) из управляемой переменной потока, `fileStream` . Затем он создает экземпляр <xref:System.Security.Cryptography.CryptoStream> объекта и инициализирует его значением `fileStream` экземпляра. <xref:System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor%2A?displayProperty=nameWithType>Методу из <xref:System.Security.Cryptography.Aes> экземпляра передается значение IV и тот же ключ, который использовался для шифрования.
 
 ```vb
 Dim aes As Aes = Aes.Create()
 Dim cryptStream As New CryptoStream(
-    myStream, aes.CreateDecryptor(key, iv), CryptoStreamMode.Read)
+    fileStream, aes.CreateDecryptor(key, iv), CryptoStreamMode.Read)
 ```
 
 ```csharp
 Aes aes = Aes.Create();
 CryptoStream cryptStream = new CryptoStream(
-    myStream, aes.CreateDecryptor(key, iv), CryptoStreamMode.Read);
+    fileStream, aes.CreateDecryptor(key, iv), CryptoStreamMode.Read);
 ```
 
 В следующем примере показан весь процесс создания потока, расшифровки потока, чтения из потока и закрытия потока. Создается объект файлового потока, который считывает файл с именем *TestData.txt*. Затем файловый поток расшифровывается с помощью класса **CryptoStream** и класса **AES** . В этом примере указывается значение ключа, которое используется в примере симметричного шифрования для [шифрования данных](encrypting-data.md). Он не показывает код, необходимый для шифрования и передачи этих значений.

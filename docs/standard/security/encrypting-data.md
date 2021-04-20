@@ -1,7 +1,7 @@
 ---
 title: Encrypting data (Шифрование данных)
 description: Узнайте, как шифровать данные в .NET с помощью симметричного алгоритма или асимметричного алгоритма.
-ms.date: 03/22/2021
+ms.date: 04/16/2021
 dev_langs:
 - csharp
 - vb
@@ -11,12 +11,12 @@ helpviewer_keywords:
 - cryptography [.NET], asymmetric
 - asymmetric encryption
 ms.assetid: 7ecce51f-db5f-4bd4-9321-cceb6fcb2a77
-ms.openlocfilehash: 5105bf6763f89b5867ccb8908aaf6136ded29dcb
-ms.sourcegitcommit: 26721a2260deabb3318cc98af8619306711153cd
+ms.openlocfilehash: e4b006db86eda1a2a62dfd31073be9aabb7a3bb8
+ms.sourcegitcommit: 8f71a6c655a9c39d5223401aed76c02ba00e03ee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105027894"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107740336"
 ---
 # <a name="encrypting-data"></a>Encrypting data (Шифрование данных)
 
@@ -26,18 +26,18 @@ ms.locfileid: "105027894"
 
 Управляемые классы симметричного шифрования используются со специальным классом потока <xref:System.Security.Cryptography.CryptoStream> , который шифрует данные, считанные в поток. Класс **CryptoStream** инициализируется классом управляемого потока, классом, реализующим <xref:System.Security.Cryptography.ICryptoTransform> интерфейс (созданным из класса, реализующего криптографический алгоритм), и <xref:System.Security.Cryptography.CryptoStreamMode> перечислением, описывающим тип доступа, разрешенный для **CryptoStream**. Класс **CryptoStream** можно инициализировать с помощью любого класса, производного от <xref:System.IO.Stream> класса, включая <xref:System.IO.FileStream> , <xref:System.IO.MemoryStream> и <xref:System.Net.Sockets.NetworkStream> . При помощи этих классов можно осуществлять симметричное шифрование для различных объектов потока.
 
-В следующем примере показано, как создать новый экземпляр класса реализации по умолчанию для <xref:System.Security.Cryptography.Aes> алгоритма. Экземпляр используется для выполнения шифрования класса **CryptoStream** . В этом примере **CryptoStream** инициализируется при помощи объекта потока `myStream` , который может быть любым типом управляемого потока. Методу **креатинкриптор** из класса **AES** передается ключ и вектор инициализации, используемые для шифрования. В этом случае используется ключ и вектор инициализации по умолчанию, созданные из `aes` .
+В следующем примере показано, как создать новый экземпляр класса реализации по умолчанию для <xref:System.Security.Cryptography.Aes> алгоритма. Экземпляр используется для выполнения шифрования класса **CryptoStream** . В этом примере **CryptoStream** инициализируется при помощи объекта потока `fileStream` , который может быть любым типом управляемого потока. Методу **креатинкриптор** из класса **AES** передается ключ и вектор инициализации, используемые для шифрования. В этом случае используется ключ и вектор инициализации по умолчанию, созданные из `aes` .
 
 ```vb
 Dim aes As Aes = Aes.Create()
 Dim cryptStream As New CryptoStream(
-    myStream, aes.CreateEncryptor(key, iv), CryptoStreamMode.Write)
+    fileStream, aes.CreateEncryptor(key, iv), CryptoStreamMode.Write)
 ```
 
 ```csharp
 Aes aes = Aes.Create();
 CryptoStream cryptStream = new CryptoStream(
-    myStream, aes.CreateEncryptor(key, iv), CryptoStreamMode.Write);
+    fileStream, aes.CreateEncryptor(key, iv), CryptoStreamMode.Write);
 ```
 
 После выполнения этого кода все данные, записанные в объект **CryptoStream** , шифруются с помощью алгоритма AES.
