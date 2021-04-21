@@ -2,12 +2,13 @@
 title: Типы критических изменений
 description: Узнайте, как .NET пытается обеспечить совместимость для разработчиков в разных версиях .NET и какого рода изменения рассматриваются как критические.
 ms.date: 01/28/2021
-ms.openlocfilehash: d539a82b21abc4df8d726673ef728020f36551bf
-ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
+ms.topic: conceptual
+ms.openlocfilehash: a1a55a95cedca4aecba875bb44b952173327606d
+ms.sourcegitcommit: 8f71a6c655a9c39d5223401aed76c02ba00e03ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99216042"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107740622"
 ---
 # <a name="changes-that-affect-compatibility"></a>Изменения, влияющие на совместимость
 
