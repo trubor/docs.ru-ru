@@ -3,12 +3,12 @@ title: Типы критических изменений
 description: Узнайте, как .NET пытается обеспечить совместимость для разработчиков в разных версиях .NET и какого рода изменения рассматриваются как критические.
 ms.date: 01/28/2021
 ms.topic: conceptual
-ms.openlocfilehash: a1a55a95cedca4aecba875bb44b952173327606d
-ms.sourcegitcommit: 8f71a6c655a9c39d5223401aed76c02ba00e03ee
+ms.openlocfilehash: 5814aa03d89cde086c4f055f36def77d4405be6f
+ms.sourcegitcommit: 178ccefa8c454bfae844ce12ed222a54913df157
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "107740622"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107883258"
 ---
 # <a name="changes-that-affect-compatibility"></a>Изменения, влияющие на совместимость
 
@@ -151,14 +151,15 @@ ms.locfileid: "107740622"
 
 - ❌ **ЗАПРЕЩЕНО. Удаление ключевого слова [virtual](../../csharp/language-reference/keywords/virtual.md) для элемента**
 
+- ❌ **ЗАПРЕЩЕНО. Добавление ключевого слова [virtual](../../csharp/language-reference/keywords/virtual.md) к элементу**
+
   Такое изменение часто не является критическим, так как компилятор C# обычно выдает инструкции [callvirt](<xref:System.Reflection.Emit.OpCodes.Callvirt>) на промежуточном языке (IL) для вызова невиртуальных методов (`callvirt`, в отличие об обычного кода, выполняет проверку значений null). При этом такое поведение не может считаться стабильным по следующим причинам:
+  
   - .NET используется не только с C#, но и с другими языками.
 
   - Компилятор C# продолжает попытки оптимизировать `callvirt` в обычный вызов, если целевой метод не является виртуальным и с высокой вероятностью не имеет значения null (например, метод с доступом с использованием [оператора распространения значений null ?.](../../csharp/language-reference/operators/member-access-operators.md#null-conditional-operators--and-)).
 
   Преобразование метода в виртуальный означает, что код объекта-получателя будет часто вызывать его не виртуально.
-
-- ❌ **ЗАПРЕЩЕНО. Добавление ключевого слова [virtual](../../csharp/language-reference/keywords/virtual.md) к элементу**
 
 - ❌ **ЗАПРЕЩЕНО. Преобразование виртуального элемента в абстрактный**
 
