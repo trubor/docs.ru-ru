@@ -1,0 +1,27 @@
+- name: "DevOps для разработчиков ASP.NET\_Core"
+  href: index.md
+  items:
+    - name: Инструменты и файлы для скачивания
+      href: tools-and-downloads.md
+    - name: Развертывание приложения в службу приложений
+      href: deploying-to-app-service.md
+    - name: Непрерывная поставка и непрерывная интеграция (CI/CD)
+      items:
+        - name: Azure DevOps
+          href: cicd.md
+        - name: Действия GitHub
+          items:
+            - name: Обзор
+              href: actions-index.md
+            - name: "Сравнение GitHub\_Actions и Azure\_Pipelines"
+              href: actions-vs-pipelines.md
+            - name: Базовый рабочий процесс сборки
+              href: actions-build.md
+            - name: Рабочий процесс развертывания
+              href: actions-deploy.md
+            - name: "Защита кода .NET с помощью\_CodeQL"
+              href: actions-codeql.md
+    - name: Мониторинг и отладка
+      href: monitoring.md
+    - name: Дальнейшие действия
+      href: next-steps.md
