@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Visual C#, keywords
 - '@ keyword'
 ms.custom: updateeachrelease
-ms.openlocfilehash: 7fe4c82f3736232ffc5f0d32694d7c8dbb90f7a8
-ms.sourcegitcommit: 4b7f6b348c986556ef805cb6baacfd5b9ec18ed0
+ms.openlocfilehash: 08bcfcdf4f27e9b2b772db37566f03b4b174a5f5
+ms.sourcegitcommit: 02cc87f02c46e603ea5925de95af746b7ab46a35
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "107075502"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "107954514"
 ---
 # <a name="c-keywords"></a>Ключевые слова C#
 
@@ -34,7 +34,7 @@ ms.locfileid: "107075502"
 |[finally](try-finally.md)|[fixed](fixed-statement.md)|[float](../builtin-types/floating-point-numeric-types.md)|[for](for.md)|
 |[foreach](foreach-in.md)|[goto](goto.md)|[if](if-else.md)|[implicit](../operators/user-defined-conversion-operators.md)|
 |[in](in.md)|[int](../builtin-types/integral-numeric-types.md)|[interface](interface.md)|[internal](internal.md)|
-|[is](is.md)|[lock](lock-statement.md)|[long](../builtin-types/integral-numeric-types.md)|[namespace](namespace.md)|
+|[is](../operators/is.md)|[lock](lock-statement.md)|[long](../builtin-types/integral-numeric-types.md)|[namespace](namespace.md)|
 |[new](../operators/new-operator.md)|[null](null.md)|[object](../builtin-types/reference-types.md)|[operator](../operators/operator-overloading.md)|
 |[out](out.md)|[override](override.md)|[params](params.md)|[private](private.md)|
 |[protected](protected.md)|[public](public.md)|[readonly](readonly.md)|[ref](ref.md)|
