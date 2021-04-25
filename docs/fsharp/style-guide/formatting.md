@@ -2,12 +2,12 @@
 title: Рекомендации по форматированию кода F#
 description: 'Ознакомьтесь с рекомендациями по форматированию кода F #.'
 ms.date: 08/31/2020
-ms.openlocfilehash: b8997a3cd854bd89e292e1090b5ebba3f7e6ae99
-ms.sourcegitcommit: e7e0921d0a10f85e9cb12f8b87cc1639a6c8d3fe
+ms.openlocfilehash: 81956844e8f868d428d9bdfa9ed8afed1d850628
+ms.sourcegitcommit: 02cc87f02c46e603ea5925de95af746b7ab46a35
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "107255484"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "107954813"
 ---
 # <a name="f-code-formatting-guidelines"></a>Рекомендации по форматированию кода F#
 
@@ -966,6 +966,23 @@ with
     printfn "A second that was not a multiple of 3"
 | _ ->
     printfn "A second that was a multiple of 3"
+```
+
+Всегда добавляйте `|` предложение for each, даже если имеется только одно предложение.
+
+```fsharp
+// OK
+try
+    persistState currentState
+with
+| ex -> 
+    printfn "Something went wrong: %A" ex
+    
+// Not OK
+try
+    persistState currentState
+with ex ->
+    printfn "Something went wrong: %A" ex
 ```
 
 ## <a name="formatting-function-parameter-application"></a>Приложение параметров функции форматирования

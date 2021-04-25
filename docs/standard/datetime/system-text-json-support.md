@@ -12,12 +12,12 @@ helpviewer_keywords:
 - JSON Serializer, JSON Reader, JSON Writer
 - Converter, JSON Converter, DateTime Converter
 - ISO, ISO 8601, ISO 8601-1:2019
-ms.openlocfilehash: 6b4e79e6c666731e313ed41e25f601df4158b8d4
-ms.sourcegitcommit: 4b7f6b348c986556ef805cb6baacfd5b9ec18ed0
+ms.openlocfilehash: 77b83fae039321a2fe6ef6279a7cab8886484e23
+ms.sourcegitcommit: 02cc87f02c46e603ea5925de95af746b7ab46a35
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "107075424"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "107954787"
 ---
 # <a name="datetime-and-datetimeoffset-support-in-systemtextjson"></a>Поддержка DateTime и DateTimeOffset в System.Text.Json
 
@@ -31,36 +31,36 @@ System.Text.Jsв библиотеке выполняет синтаксичес�
 
 <xref:System.DateTime><xref:System.DateTimeOffset>данные и могут быть сериализованы с помощью <xref:System.Text.Json.JsonSerializer> :
 
-[!code-csharp[example-serializing-with-jsonserializer](~/samples/snippets/standard/datetime/json/csharp/serializing-with-jsonserializer/Program.cs)]
+:::code language="csharp" source="snippets/system-text-json-support/csharp/serializing-with-jsonserializer/Program.cs":::
 
 Их также можно десериализовать с помощью <xref:System.Text.Json.JsonSerializer> :
 
-[!code-csharp[example-deserializing-with-jsonserializer-valid](~/samples/snippets/standard/datetime/json/csharp/deserializing-with-jsonserializer-valid/Program.cs)]
+:::code language="csharp" source="snippets/system-text-json-support/csharp/deserializing-with-jsonserializer-valid/Program.cs":::
 
 При использовании параметров по умолчанию входные <xref:System.DateTime> и <xref:System.DateTimeOffset> текстовые представления должны соответствовать расширенному профилю ISO 8601-1:2019.
 Попытка десериализовать представления, которые не соответствуют профилю, приведет к <xref:System.Text.Json.JsonSerializer> созданию исключения <xref:System.Text.Json.JsonException> :
 
-[!code-csharp[example-deserializing-with-jsonserializer-error](~/samples/snippets/standard/datetime/json/csharp/deserializing-with-jsonserializer-error/Program.cs)]
+:::code language="csharp" source="snippets/system-text-json-support/csharp/deserializing-with-jsonserializer-error/Program.cs":::
 
 <xref:System.Text.Json.JsonDocument>Предоставляет структурированный доступ к содержимому полезных данных JSON, включая <xref:System.DateTime> представления и <xref:System.DateTimeOffset> . В приведенном ниже примере показано, как при наличии коллекции температур можно вычислить среднюю температуру по понедельникам.
 
-[!code-csharp[example-computing-with-jsondocument-valid](~/samples/snippets/standard/datetime/json/csharp/computing-with-jsondocument-valid/Program.cs)]
+:::code language="csharp" source="snippets/system-text-json-support/csharp/computing-with-jsondocument-valid/Program.cs":::
 
 Попытка вычисления средней температуры при наличии полезных данных с несоответствующими <xref:System.DateTime> представлениями вызовет <xref:System.Text.Json.JsonDocument> исключение <xref:System.FormatException> :
 
-[!code-csharp[example-computing-with-jsondocument-error](~/samples/snippets/standard/datetime/json/csharp/computing-with-jsondocument-error/Program.cs)]
+:::code language="csharp" source="snippets/system-text-json-support/csharp/computing-with-jsondocument-error/Program.cs":::
 
 <xref:System.Text.Json.Utf8JsonWriter>Записи и данные нижнего уровня <xref:System.DateTime> <xref:System.DateTimeOffset> :
 
-[!code-csharp[example-writing-with-utf8jsonwriter](~/samples/snippets/standard/datetime/json/csharp/writing-with-utf8jsonwriter/Program.cs)]
+:::code language="csharp" source="snippets/system-text-json-support/csharp/writing-with-utf8jsonwriter/Program.cs":::
 
 <xref:System.Text.Json.Utf8JsonReader> синтаксические анализы <xref:System.DateTime> и <xref:System.DateTimeOffset> данные:
 
-[!code-csharp[example-reading-with-utf8jsonreader-valid](~/samples/snippets/standard/datetime/json/csharp/reading-with-utf8jsonreader-valid/Program.cs)]
+:::code language="csharp" source="snippets/system-text-json-support/csharp/reading-with-utf8jsonreader-valid/Program.cs":::
 
 Попытка чтения несовместимых форматов с <xref:System.Text.Json.Utf8JsonReader> вызовет исключение <xref:System.FormatException> :
 
-[!code-csharp[example-reading-with-utf8jsonreader-error](~/samples/snippets/standard/datetime/json/csharp/reading-with-utf8jsonreader-error/Program.cs)]
+:::code language="csharp" source="snippets/system-text-json-support/csharp/reading-with-utf8jsonreader-error/Program.cs":::
 
 ## <a name="custom-support-for-xrefsystemdatetime-and-xrefsystemdatetimeoffset"></a>Пользовательская поддержка для <xref:System.DateTime> и <xref:System.DateTimeOffset>
 
@@ -76,7 +76,7 @@ System.Text.Jsв библиотеке выполняет синтаксичес�
 Для сериализации можно использовать `DateTime(Offset).ToString` метод в логике записи преобразователя. Это позволяет писать <xref:System.DateTime> <xref:System.DateTimeOffset> значения и использовать любые [стандартные форматы даты](../base-types/standard-date-and-time-format-strings.md)и времени, а также [пользовательские форматы даты и времени](../base-types/custom-date-and-time-format-strings.md).
 Это также значительно менее производительно, чем использование собственной реализации сериализатора.
 
-[!code-csharp[example-showing-datetime-parse](~/samples/snippets/standard/datetime/json/csharp/datetime-converter-examples/example1/Program.cs)]
+:::code language="csharp" source="snippets/system-text-json-support/csharp/datetime-converter-examples/example1/Program.cs":::
 
 > [!NOTE]
 > При реализации <xref:System.Text.Json.Serialization.JsonConverter%601> , и `T` <xref:System.DateTime> `typeToConvert` параметр всегда будет иметь значение `typeof(DateTime)` .
@@ -88,7 +88,7 @@ System.Text.Jsв библиотеке выполняет синтаксичес�
 
 В этом примере показан пользовательский преобразователь, который сериализует и десериализует <xref:System.DateTime> значения в соответствии со [стандартным форматом "R"](../base-types/standard-date-and-time-format-strings.md#the-rfc1123-r-r-format-specifier):
 
-[!code-csharp[example-showing-utf8-parser-and-formatter](~/samples/snippets/standard/datetime/json/csharp/datetime-converter-examples/example2/Program.cs)]
+:::code language="csharp" source="snippets/system-text-json-support/csharp/datetime-converter-examples/example2/Program.cs":::
 
 > [!NOTE]
 > Стандартный формат "R" всегда будет иметь длину 29 символов.
@@ -100,13 +100,15 @@ System.Text.Jsв библиотеке выполняет синтаксичес�
 Если обычно вход <xref:System.DateTime> или <xref:System.DateTimeOffset> данные должны соответствовать расширенному профилю ISO 8601-1:2019, можно использовать собственную логику синтаксического анализа сериализатора. Также можно реализовать резервный механизм, как и в случае.
 В этом примере показано, что после сбоя синтаксического анализа <xref:System.DateTime> текстового представления с помощью <xref:System.Text.Json.Utf8JsonReader.TryGetDateTime(System.DateTime@)> преобразователь успешно проанализирует данные с помощью <xref:System.DateTime.Parse(System.String)> .
 
-[!code-csharp[example-showing-datetime-parse-as-fallback](~/samples/snippets/standard/datetime/json/csharp/datetime-converter-examples/example3/Program.cs)]
+:::code language="csharp" source="snippets/system-text-json-support/csharp/datetime-converter-examples/example3/Program.cs":::
 
 #### <a name="using-unix-epoch-date-format"></a>Использование формата даты эпохи UNIX
 
-Следующий преобразователь обрабатывает эпоху UNIX с использованием формата часового пояса (значения, такие как `/Date(1590863400000-0700)/` ):
+Следующие конвертеры обрабатывали формат эпохи UNIX с часовым поясом или без него (такие значения, как `/Date(1590863400000-0700)/` или `/Date(1590863400000)/` ):
 
 :::code language="csharp" source="../serialization/snippets/system-text-json-how-to-5-0/csharp/CustomConverterUnixEpochDate.cs" id="ConverterOnly":::
+
+:::code language="csharp" source="../serialization/snippets/system-text-json-how-to-5-0/csharp/CustomConverterUnixEpochDateNoZone.cs" id="ConverterOnly":::
 
 ### <a name="when-writing-with-xrefsystemtextjsonutf8jsonwriter"></a>При записи с помощью <xref:System.Text.Json.Utf8JsonWriter>
 
@@ -114,7 +116,7 @@ System.Text.Jsв библиотеке выполняет синтаксичес�
 
 В следующем примере показано <xref:System.DateTime> , как можно создать настраиваемый формат с помощью <xref:System.DateTime.ToString(System.String,System.IFormatProvider)> , а затем написать с помощью <xref:System.Text.Json.Utf8JsonWriter.WriteStringValue(System.String)> метода:
 
-[!code-csharp[example-custom-writing-with-utf8jsonwriter](~/samples/snippets/standard/datetime/json/csharp/custom-writing-with-utf8jsonwriter/Program.cs)]
+:::code language="csharp" source="snippets/system-text-json-support/csharp/custom-writing-with-utf8jsonwriter/Program.cs":::
 
 ### <a name="when-reading-with-xrefsystemtextjsonutf8jsonreader"></a>При чтении с <xref:System.Text.Json.Utf8JsonReader>
 
@@ -122,7 +124,7 @@ System.Text.Jsв библиотеке выполняет синтаксичес�
 
 В следующем примере показано, как пользовательское <xref:System.DateTimeOffset> текстовое представление можно получить с помощью <xref:System.Text.Json.Utf8JsonReader.GetString> , а затем выполнить синтаксический анализ с помощью <xref:System.DateTimeOffset.ParseExact(System.String,System.String,System.IFormatProvider)> :
 
-[!code-csharp[example-custom-reading-with-utf8jsonreader](~/samples/snippets/standard/datetime/json/csharp/custom-reading-with-utf8jsonreader/Program.cs)]
+:::code language="csharp" source="snippets/system-text-json-support/csharp/custom-reading-with-utf8jsonreader/Program.cs":::
 
 ## <a name="the-extended-iso-8601-12019-profile-in-systemtextjson"></a>Расширенный профиль ISO 8601-1:2019 в System.Text.Jsна
 
@@ -132,12 +134,12 @@ System.Text.Jsв библиотеке выполняет синтаксичес�
 
 | Компонент       | Формат                      | Описание                                                                     |
 |-----------------|-----------------------------|---------------------------------------------------------------------------------|
-| Year            | "yyyy"                      | 0001-9999                                                                       |
+| Год            | "yyyy"                      | 0001-9999                                                                       |
 | Месяц           | "MM"                        | 01-12                                                                           |
 | День             | "dd"                        | 01-28, 01-29, 01-30, 01-31 в зависимости от месяца/года                                  |
 | Час            | "HH"                        | 00-23                                                                           |
 | Минута          | "mm"                        | 00-59                                                                           |
-| Секунда          | "ss"                        | 00-59                                                                           |
+| Second          | "ss"                        | 00-59                                                                           |
 | Вторая дробь | "FFFFFFF"                   | Минимум одна цифра, максимум 16 цифр                                      |
 | Смещение времени     | "K"                         | "Z" или "(' + '/'-') HH ': ' mm '                                                |
 | Частичное время    | "HH": "mm": "SS [FFFFFFF]"     | Время без сведений о смещении UTC                                             |
