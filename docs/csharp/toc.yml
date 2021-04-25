@@ -1089,10 +1089,6 @@ items:
                     href: language-reference/keywords/using-statement.md
               - name: Псевдоним extern
                 href: language-reference/keywords/extern-alias.md
-          - name: Ключевые слова тестирования типов
-            items:
-              - name: is
-                href: language-reference/keywords/is.md
           - name: Ключевые слова ограничений универсального типа
             items:
               - name: Ограничение new
@@ -1242,6 +1238,9 @@ items:
           - name: Оператор delegate
             href: language-reference/operators/delegate-operator.md
             displayName: anonymous
+          - name: Оператор is
+            href: language-reference/operators/is.md
+            displayName: pattern matching
           - name: Выражение nameof
             href: language-reference/operators/nameof.md
             displayName: nameof operator
@@ -1255,7 +1254,7 @@ items:
             displayName: 'stack allocation, span, stackalloc operator'
           - name: Выражение switch
             href: language-reference/operators/switch-expression.md
-            displayName: 'switch, pattern matching, patterns'
+            displayName: 'pattern matching, patterns'
           - name: Операторы true и false
             href: language-reference/operators/true-false-operators.md
           - name: Выражение with
