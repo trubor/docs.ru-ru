@@ -3,13 +3,13 @@ title: Руководство по шаблону параметров для а
 author: IEvangelist
 description: Узнайте, как реализовать шаблон параметров при разработке библиотеки в .NET.
 ms.author: dapine
-ms.date: 01/28/2021
-ms.openlocfilehash: d0da94a8f25c9e5aba6093fab07ccca6a0a7c345
-ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
+ms.date: 04/12/2021
+ms.openlocfilehash: 7e1bfeadff92f5d0d979ef2d7da11d7c1b47c58d
+ms.sourcegitcommit: bbc724b72fb6c978905ac715e4033efa291f84dc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "102402141"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107369625"
 ---
 # <a name="options-pattern-guidance-for-net-library-authors"></a>Руководство по шаблону параметров для авторов библиотек .NET
 
@@ -51,13 +51,13 @@ ms.locfileid: "102402141"
 
 При создании библиотеки, которая предоставляет потребителям большой набор параметров, может быть полезно потребовать метод расширения параметра `IConfiguration`. Ожидаемый экземпляр `IConfiguration` должен быть ограничен областью именованного раздела конфигурации путем применения функции <xref:Microsoft.Extensions.Configuration.IConfiguration.GetSection%2A?displayProperty=nameWithType>.
 
-:::code language="csharp" source="snippets/configuration/options-configparam/ServiceCollectionExtensions.cs" highlight="10,12-16":::
+:::code language="csharp" source="snippets/configuration/options-configparam/ServiceCollectionExtensions.cs" highlight="10,12-14":::
 
 Приведенный выше код `AddMyLibraryService` выполняет следующее:
 
 - расширяет экземпляр <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>;
 - определяет параметр <xref:Microsoft.Extensions.Configuration.IConfiguration> `namedConfigurationSection`;
-- вызывает <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Bind(Microsoft.Extensions.Configuration.IConfiguration,System.Object)>, передавая экземпляр параметров, к которому привязана конфигурация.
+- вызывает <xref:Microsoft.Extensions.DependencyInjection.OptionsConfigurationServiceCollectionExtensions.Configure%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)>, передавая параметр универсального типа для `LibraryOptions` и экземпляр `namedConfigurationSection` для настройки.
 
 Потребители в этом шаблоне предоставляют экземпляр именованного раздела `IConfiguration` с заданной областью.
 

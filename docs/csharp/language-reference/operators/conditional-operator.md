@@ -10,18 +10,20 @@ helpviewer_keywords:
 - '?: operator [C#]'
 - conditional operator (?:) [C#]
 ms.assetid: e83a17f1-7500-48ba-8bee-2fbc4c847af4
-ms.openlocfilehash: b6add045983619169bed0cd9f32eb27dba0a0338
-ms.sourcegitcommit: a8730298170b8d96b4272e0c3dfc9819c606947b
+ms.openlocfilehash: 84a740f3afeca94a706b4120b8cd8f191f49a048
+ms.sourcegitcommit: bbc724b72fb6c978905ac715e4033efa291f84dc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90738883"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107369573"
 ---
 # <a name="-operator-c-reference"></a>Оператор ?: (справочник по C#)
 
-Условный оператор `?:`, известный как тернарный условный оператор, вычисляет логическое выражение и возвращает результат вычисления одного из двух выражений в зависимости от того, чему равно значение логического выражения: `true` или `false`.
+Условный оператор `?:`, также называемый тернарным, вычисляет логическое выражение и в зависимости от полученного значения `true` или `false` возвращает результат одного из двух соответствующих выражений, как показано в следующем примере.
 
-Для условного оператора используется следующий синтаксис:
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ConditionalOperator.cs" id="BasicExample":::
+
+Как показано в предыдущем примере, синтаксис условного оператора выглядит следующим образом.
 
 ```csharp
 condition ? consequent : alternative
@@ -55,10 +57,6 @@ a ? b : (c ? d : e)
 > ```text
 > is this condition true ? yes : no
 > ```
-
-В следующем примере иллюстрируется использование условного оператора:
-
-[!code-csharp-interactive[non ref conditional](snippets/shared/ConditionalOperator.cs#ConditionalValue)]
 
 ## <a name="conditional-ref-expression"></a>Условное выражение REF
 

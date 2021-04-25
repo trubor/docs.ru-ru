@@ -5,12 +5,12 @@ ms.date: 03/20/2020
 ms.custom: devx-track-dotnet
 ms.author: casoper
 author: camsoper
-ms.openlocfilehash: 6adc485867e9bad401a15da19e6cb4424d2ddb13
-ms.sourcegitcommit: 3d6d6595a03915f617349781f455f838a44b0f44
+ms.openlocfilehash: b0f7bdf7eaf7db242545d43856fae8d1548bc004
+ms.sourcegitcommit: aab60b21144bf04b3057b5d59aa7c58edaef32d1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97700714"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107494341"
 ---
 # <a name="logging-with-the-azure-sdk-for-net"></a>Ведение журнала с помощью пакета Azure SDK для .NET
 
@@ -46,7 +46,8 @@ ms.locfileid: "97700714"
 Для содержимого запроса и ответа:
 
 - Поток содержимого в виде текста или байтов в зависимости от заголовка Content-Type.
-     > [!NOTE} Ведение журнала для содержимого по умолчанию отключено. Чтобы включить его, задайте для `Diagnostics.IsLoggingContentEnabled` значение `true` в `ClientOptions`.
+     > [!NOTE]
+     > Ведение журнала для содержимого по умолчанию отключено. Чтобы включить его, задайте для `Diagnostics.IsLoggingContentEnabled` значение `true` в `ClientOptions`.
 
 Обычно используется один из трех следующих уровней ведения журнала:
 

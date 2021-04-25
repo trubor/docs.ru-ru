@@ -20,16 +20,16 @@ helpviewer_keywords:
 - classes [.NET Framework], authentication
 - client authentication, NTLM
 ms.assetid: 9ef65560-f596-4469-bcce-f4d5407b55cd
-ms.openlocfilehash: 3fcd39f5414bca9bfcb368f6962ae36891458151
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 92d9175f96fa54ccc3514ed479755f1318452bbc
+ms.sourcegitcommit: aab60b21144bf04b3057b5d59aa7c58edaef32d1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262831"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107494081"
 ---
 # <a name="ntlm-and-kerberos-authentication"></a>проверка подлинности NTLM и Kerberos
 
-При проверке подлинности NTLM и Kerberos по умолчанию используются учетные данные пользователя Microsoft Windows NT, связанные с вызывающим приложением, для проверки подлинности на сервере. Если используется отличная от установленной по умолчанию проверка подлинности NTLM, приложение устанавливает тип проверки подлинности NTLM и использует объект <xref:System.Net.NetworkCredential> для передачи имени пользователя, пароля и домена узлу, как показано в следующем примере.  
+При проверке подлинности NTLM и Kerberos по умолчанию предпринимается попытка пройти проверку подлинности на сервере под учетными данными пользователя Microsoft Windows, связанными с вызывающим приложением. Если используется отличная от установленной по умолчанию проверка подлинности NTLM, приложение устанавливает тип проверки подлинности NTLM и использует объект <xref:System.Net.NetworkCredential> для передачи имени пользователя, пароля и домена узлу, как показано в следующем примере.  
   
 ```vb  
 Dim MyURI As String = "http://www.contoso.com/"  

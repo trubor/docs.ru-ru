@@ -3,14 +3,14 @@ title: Внедрение зависимостей в .NET
 description: Сведения о том, как .NET реализует внедрение зависимостей и как его использовать.
 author: IEvangelist
 ms.author: dapine
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: overview
-ms.openlocfilehash: 0b5526f24f3ac658123acd030c3adf32c346422a
-ms.sourcegitcommit: 109507b6c16704ed041efe9598c70cd3438a9fbc
+ms.openlocfilehash: 2feb8b44d7701839bd889138c1f7c8f1fb2be71a
+ms.sourcegitcommit: aab60b21144bf04b3057b5d59aa7c58edaef32d1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106079522"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107494289"
 ---
 # <a name="dependency-injection-in-net"></a>Внедрение зависимостей в .NET
 
@@ -137,16 +137,17 @@ public class Worker : BackgroundService
 
 В следующей таблице перечислены некоторые примеры этих зарегистрированных платформой служб.
 
-| Тип службы                                                                       | Время существования  |
-|------------------------------------------------------------------------------------|-----------|
-| <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime>                       | Одноэлементный |
-| <xref:Microsoft.Extensions.Logging.ILogger%601?displayProperty=fullName>           | Одноэлементный |
-| <xref:Microsoft.Extensions.Logging.ILoggerFactory?displayProperty=fullName>        | Одноэлементный |
-| <xref:Microsoft.Extensions.ObjectPool.ObjectPoolProvider?displayProperty=fullName> | Одноэлементный |
-| <xref:Microsoft.Extensions.Options.IConfigureOptions%601?displayProperty=fullName> | Временный |
-| <xref:Microsoft.Extensions.Options.IOptions%601?displayProperty=fullName>          | Одноэлементный |
-| <xref:System.Diagnostics.DiagnosticListener?displayProperty=fullName>              | Одноэлементный |
-| <xref:System.Diagnostics.DiagnosticSource?displayProperty=fullName>                | Одноэлементный |
+| Тип службы                                                                                  | Время существования  |
+|-----------------------------------------------------------------------------------------------|-----------|
+| <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory?displayProperty=fullName> | Одноэлементный |
+| <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime>                                  | Одноэлементный |
+| <xref:Microsoft.Extensions.Logging.ILogger%601?displayProperty=fullName>                      | Одноэлементный |
+| <xref:Microsoft.Extensions.Logging.ILoggerFactory?displayProperty=fullName>                   | Одноэлементный |
+| <xref:Microsoft.Extensions.ObjectPool.ObjectPoolProvider?displayProperty=fullName>            | Одноэлементный |
+| <xref:Microsoft.Extensions.Options.IConfigureOptions%601?displayProperty=fullName>            | Временный |
+| <xref:Microsoft.Extensions.Options.IOptions%601?displayProperty=fullName>                     | Одноэлементный |
+| <xref:System.Diagnostics.DiagnosticListener?displayProperty=fullName>                         | Одноэлементный |
+| <xref:System.Diagnostics.DiagnosticSource?displayProperty=fullName>                           | Одноэлементный |
 
 ## <a name="service-lifetimes"></a>Время существования служб
 
@@ -197,7 +198,7 @@ public class Worker : BackgroundService
 
 Платформа предоставляет методы расширения регистрации службы, которые полезны в определенных сценариях.
 
-| Метод | Автоматически<br>object<br>удаление | Несколько<br>реализации | Передача аргументов |
+| Метод | Автоматически<br>объект<br>удаление | Несколько<br>реализации | Передача аргументов |
 |--|:-:|:-:|:-:|
 | `Add{LIFETIME}<{SERVICE}, {IMPLEMENTATION}>()`<br><br>Пример<br><br>`services.AddSingleton<IMyDep, MyDep>();` | Да | Да | Нет |
 | `Add{LIFETIME}<{SERVICE}>(sp => new {IMPLEMENTATION})`<br><br>Примеры:<br><br>`services.AddSingleton<IMyDep>(sp => new MyDep());`<br>`services.AddSingleton<IMyDep>(sp => new MyDep(99));` | Да | Да | Да |
@@ -308,6 +309,23 @@ services.Add(descriptor);
 Корневой поставщик службы создается при вызове <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider%2A>. Время существования корневого поставщика службы соответствует времени существования приложения — поставщик запускается с приложением и удаляется, когда приложение завершает работу.
 
 Службы с заданной областью удаляются создавшим их контейнером. Если служба с заданной областью создается в корневом контейнере, время существования службы повышается до уровня одноэлементного объекта, поскольку она удаляется только корневым контейнером при завершении работы приложения. Проверка областей службы перехватывает эти ситуации при вызове `BuildServiceProvider`.
+
+## <a name="scope-scenarios"></a>Сценарии применения области
+
+Интерфейс <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory> всегда регистрируется как отдельный (singleton), но <xref:System.IServiceProvider> зависит от времени существования содержащего класса. Например, если при разрешении служб из области какая-то из служб принимает интерфейс <xref:System.IServiceProvider>, это будет экземпляр с заданной областью.
+
+Для получения служб с заданной областью в реализациях <xref:Microsoft.Extensions.Hosting.IHostedService>, например службы <xref:Microsoft.Extensions.Hosting.BackgroundService>, *не внедряйте* зависимости служб через конструктор. Вместо этого внедрите <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory>, создайте область, а затем используйте разрешение зависимостей из области, чтобы применить подходящее время существования служб.
+
+:::code language="csharp" source="snippets/configuration/worker-scope/Worker.cs" highlight="13,15-16,22":::
+
+В приведенном выше коде во время выполнения приложения фоновая служба:
+
+- зависит от <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory>;
+- создает <xref:Microsoft.Extensions.DependencyInjection.IServiceScope> для разрешения дополнительных служб;
+- разрешает службы с заданной областью для использования;
+- обрабатывает объекты, затем ретранслирует их и в итоге помечает как обработанные.
+
+В примере исходного кода можно увидеть, как реализации <xref:Microsoft.Extensions.Hosting.IHostedService> могут использовать преимущества времени существования служб с заданной областью.
 
 ## <a name="see-also"></a>См. также раздел
 

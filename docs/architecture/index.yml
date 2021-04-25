@@ -6,12 +6,12 @@ metadata:
   description: Ознакомьтесь с рекомендациями по проектированию, сборке и переносу приложений .NET.
   ms.topic: landing-page
   ms.date: 03/19/2020
-  ms.openlocfilehash: 68851c514723f6db7017c3000e88242f3fad2592
-  ms.sourcegitcommit: bdbf6472de867a0a11aaa5b9384a2506c24f27d2
+  ms.openlocfilehash: 4ab03d2da735e6c45057c2718aaee9951b3bfdb3
+  ms.sourcegitcommit: 040b745ac19e4a5d23df17422ab30e72839f5754
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/05/2021
-  ms.locfileid: "102206704"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "107809810"
 landingContent:
 - title: Разработка приложений ASP.NET Core
   linkLists:
@@ -61,8 +61,8 @@ landingContent:
     links:
     - text: Жизненный цикл контейнерного приложения Docker на основе платформы и средств Майкрософт
       url: containerized-lifecycle/index.md
-    - text: DevOps с ASP.NET Core и Azure
-      url: /aspnet/core/azure/devops/
+    - text: DevOps для разработчиков ASP.NET Core
+      url: devops-for-aspnet-developers/index.md
 - title: Модернизация классических приложений
   linkLists:
   - linkListType: concept

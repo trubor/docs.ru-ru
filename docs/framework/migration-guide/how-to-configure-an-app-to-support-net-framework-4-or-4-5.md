@@ -6,12 +6,12 @@ helpviewer_keywords:
 - configuring apps to support .NET Framework
 - .NET Framework, configuring apps
 ms.assetid: 63c6b9a8-0088-4077-9aa3-521ab7290f79
-ms.openlocfilehash: 58d71cb7fac7a3c2bef975c99cfab1ca730fb6eb
-ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
+ms.openlocfilehash: 66a6ec5f6cad0225e48f480eeae8b7d3862241dd
+ms.sourcegitcommit: bbc724b72fb6c978905ac715e4033efa291f84dc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86475467"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107369690"
 ---
 # <a name="how-to-configure-an-app-to-support-net-framework-4-or-later-versions"></a>Практическое руководство. Настройка приложения для включения поддержки .NET Framework версии 4 и выше
 
@@ -44,7 +44,7 @@ ms.locfileid: "86475467"
 
 1. Добавьте или найдите файл конфигурации проекта .NET Framework. Файл конфигурации приложения находится в том же каталоге, что и приложение, и имеет то же имя, однако с расширением .config. Например, для приложения с именем MyExecutable.exe файл конфигурации приложения называется MyExecutable.exe.config.
 
-     Чтобы добавить файл конфигурации, в строке меню Visual Studio выберите **Проект**, **Добавить новый элемент**. Выберите **Общие** в области слева, а затем выберите **Файл конфигурации**. Назовите файл конфигурации *appName*.exe.config. Для проектов приложений Магазина Windows или Windows Phone эти элементы меню недоступны, поскольку изменить политику активации на этих платформах невозможно.
+     Чтобы добавить файл конфигурации, в строке меню Visual Studio выберите **Проект**, **Добавить новый элемент**. Выберите **Общие** в области слева, а затем выберите **Файл конфигурации**. Назовите файл конфигурации *App.config*. Для проектов приложений Магазина Windows или Windows Phone эти элементы меню недоступны, так как изменить политику активации на этих платформах невозможно.
 
 2. Добавьте в файл конфигурации приложения элемент [\<supportedRuntime>](../configure-apps/file-schema/startup/supportedruntime-element.md) следующим образом:
 

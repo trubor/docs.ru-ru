@@ -3,12 +3,12 @@ title: Различия в конфигурации между ASP.NET MVC и AS
 description: Сохранение значений конфигурации и существенное считывание изменений между ASP.NET и ASP.NET Core. В этом разделе рассматриваются подробные сведения и способы миграции конфигурации из ASP.NET в ASP.NET Core.
 author: ardalis
 ms.date: 11/13/2020
-ms.openlocfilehash: 3d721c028b1e760a6227855451e2194d9e471a58
-ms.sourcegitcommit: b5d2290673e1c91260c9205202dd8b95fbab1a0b
+ms.openlocfilehash: 0e788c8606af05570d64bba257236feea11d5768
+ms.sourcegitcommit: 5cad087ed0cfc4cf632b6d8270ed311e4d8b5217
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "106122954"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "107928713"
 ---
 # <a name="configuration-differences-between-aspnet-mvc-and-aspnet-core"></a>Различия в конфигурации между ASP.NET MVC и ASP.NET Core
 
@@ -59,7 +59,7 @@ public class TestModel : PageModel
 
 **Рис. 2-2.** Доступ к значениям конфигурации с помощью `IConfiguration` .
 
-С помощью [шаблона параметров](/dotnet/core/extensions/options)доступ к параметрам аналогичен, но он строго типизирован и более специфичен для параметров, необходимых классу, как показано на рис. 2-3.
+С помощью [шаблона параметров](../../core/extensions/options.md)доступ к параметрам аналогичен, но он строго типизирован и более специфичен для параметров, необходимых классу, как показано на рис. 2-3.
 
 ```csharp
 public class PositionOptions

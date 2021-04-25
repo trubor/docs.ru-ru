@@ -11,26 +11,38 @@ helpviewer_keywords:
 - cross-references [C#]
 - see C# XML tag
 ms.assetid: 0200de01-7e2f-45c4-9094-829d61236383
-ms.openlocfilehash: 154feca5e7e4f4d3f5313c4ae05cd991e69e298f
-ms.sourcegitcommit: 0bb8074d524e0dcf165430b744bb143461f17026
+ms.openlocfilehash: 351dd2e4c7dbc76efa2edbed708fb342c553ce70
+ms.sourcegitcommit: aab60b21144bf04b3057b5d59aa7c58edaef32d1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103477777"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107494861"
 ---
 # <a name="see-c-programming-guide"></a>\<see> (руководство по программированию на C#)
 
 ## <a name="syntax"></a>Синтаксис
 
-```xml
-<see cref="member"/>
+```csharp
+/// <see cref="member"/>
+// or
+/// <see href="link">Link Text</see>
+// or
+/// <see langword="keyword"/>
 ```
 
 ## <a name="parameters"></a>Параметры
 
-- cref = "`member`"
+- `cref="member"`
 
   Ссылка на член или поле, которые доступны для вызова из текущей среды компиляции. Компилятор проверяет, существует ли элемент кода, и передает `member` в имя элемента в выходных XML-данных. *member* необходимо заключать в двойные кавычки (" ").
+
+- `href="link"`
+
+  Гиперссылка на заданный URL-адрес. Например, `<see href="https://github.com">GitHub</see>` формирует гиперссылку с текстом :::no-loc text="GitHub":::, которая ведет на сайт `https://github.com`.
+
+- `langword="keyword"`
+
+  Ключевое слово языка, например `true`.
 
 ## <a name="remarks"></a>Примечания
 

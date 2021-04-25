@@ -2,12 +2,12 @@
 title: Операторы верхнего уровня — учебник по C#
 description: В этом учебнике показано, как использовать инструкции верхнего уровня для проведения экспериментов и подтверждения концепций при анализе идей.
 ms.date: 10/28/2020
-ms.openlocfilehash: d3cd089c5681e6c06a0c63cbffcc3cf5935fbeef
-ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
+ms.openlocfilehash: 60044b58fb52302cd559d7e8802657b602f1b6eb
+ms.sourcegitcommit: 985c603cb21a085f8a8105f34ff5b87a44b76ab4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104878955"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107564835"
 ---
 # <a name="tutorial-explore-ideas-using-top-level-statements-to-build-code-as-you-learn"></a>Учебник. Анализ идей с использованием операторов верхнего уровня для создания кода по мере обучения
 
@@ -94,7 +94,7 @@ System.String[]
 
 :::code language="csharp" source="snippets/top-level-statements/ProgramSnippets.cs" ID="Answers":::
 
-Этот массив содержит двенадцать утвердительных ответов: шесть неопределенных и шесть отрицательных. Далее добавьте следующий код для выбора случайного ответа из массива и его вывода.
+Этот массив содержит десять утвердительных ответов, пять неопределенных и пять отрицательных. Далее добавьте следующий код для выбора случайного ответа из массива и его вывода.
 
 :::code language="csharp" source="snippets/top-level-statements/ProgramSnippets.cs" ID="GenerateAnswer":::
 

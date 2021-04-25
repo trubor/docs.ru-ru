@@ -2,12 +2,12 @@
 title: Новые возможности в C# 9.0. Руководство по языку C#
 description: Обзор новых функций, доступных в C# 9.0.
 ms.date: 04/07/2021
-ms.openlocfilehash: c2189d2db175a40c24d6a41d20f2ae2d9384513b
-ms.sourcegitcommit: e7e0921d0a10f85e9cb12f8b87cc1639a6c8d3fe
+ms.openlocfilehash: e43ecc02fa7fe1f9a0a76353ce0b6bce001f9dac
+ms.sourcegitcommit: 5ddbd1f65d0369b4cc8c8ff91c72f1b524c90221
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "107255341"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "107514428"
 ---
 # <a name="whats-new-in-c-90"></a>Новые возможности C# 9.0
 
@@ -18,20 +18,20 @@ ms.locfileid: "107255341"
 - [Инструкции верхнего уровня](#top-level-statements)
 - [Улучшения сопоставления шаблонов](#pattern-matching-enhancements)
 - [Производительность и взаимодействие](#performance-and-interop)
-  - Целые числа собственного размера
-  - Указатели функций
-  - Отмена создания флага localsinit
+  - [Целые числа собственного размера](~/_csharplang/proposals/csharp-9.0/native-integers.md)
+  - [Указатели функций](~/_csharplang/proposals/csharp-9.0/function-pointers.md)
+  - [Отмена создания флага localsinit](~/_csharplang/proposals/csharp-9.0/skip-localsinit.md)
 - [Функции подбора и завершения](#fit-and-finish-features)
-  - Выражения целевого типа `new`
-  - Статические анонимные функции
-  - Условное выражение с целевым типом
-  - Ковариантные возвращаемые типы
-  - Поддержка расширения `GetEnumerator` для циклов `foreach`
-  - Параметры удаления лямбда-выражения
-  - Атрибуты локальных функций
+  - [Выражения `new` с целевым типом](~/_csharplang/proposals/csharp-9.0/target-typed-new.md)
+  - [Анонимные функции `static`](~/_csharplang/proposals/csharp-9.0/static-anonymous-functions.md)
+  - [Условное выражение с целевым типом](~/_csharplang/proposals/csharp-9.0/target-typed-conditional-expression.md)
+  - [Ковариантные возвращаемые типы](~/_csharplang/proposals/csharp-9.0/covariant-returns.md)
+  - [Поддержка расширения `GetEnumerator` для циклов `foreach`](~/_csharplang/proposals/csharp-9.0/extension-getenumerator.md)
+  - [Параметры удаления лямбда-выражения](~/_csharplang/proposals/csharp-9.0/lambda-discard-parameters.md)
+  - [Атрибуты локальных функций](~/_csharplang/proposals/csharp-9.0/local-function-attributes.md)
 - [Поддержка генераторов кода](#support-for-code-generators)
-  - Инициализаторы модулей
-  - Новые функции для разделяемых методов
+  - [Инициализаторы модулей](~/_csharplang/proposals/csharp-9.0/module-initializers.md)
+  - [Новые функции для разделяемых методов](~/_csharplang/proposals/csharp-9.0/extending-partial-methods.md)
 
 C# 9.0 поддерживается в **.NET 5**. Дополнительные сведения см. в статье [Управление версиями языка C#](../language-reference/configure-language-version.md).
 
