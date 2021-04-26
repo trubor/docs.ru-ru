@@ -6,12 +6,12 @@ helpviewer_keywords:
 - arrays [C#]
 - C# language, arrays
 ms.assetid: bb79bdde-e570-4c30-adb0-1dd5759ae041
-ms.openlocfilehash: 203d8b86da4e74d8c5397132a0ba68618eedf348
-ms.sourcegitcommit: 4d5e25a46aa7cd0d29b4b9227b92987354d444c4
+ms.openlocfilehash: d55e177d18c0dc483f3419966042e42f1e41ed26
+ms.sourcegitcommit: 178ccefa8c454bfae844ce12ed222a54913df157
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98794768"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107883310"
 ---
 # <a name="arrays-c-programming-guide"></a>Массивы (Руководство по программированию на C#)
 
@@ -37,7 +37,7 @@ type[] arrayName;
 - В массиве массивов элементы являются ссылочными типами и инициализируются значением `null`.
 - Массивы индексируются от нуля: массив с `n` элементами индексируется от `0` до `n-1`.
 - Элементы массива могут иметь любой тип, в том числе тип массива.
-- Типы массивов — это [ссылочные типы](../../language-reference/keywords/reference-types.md), производные от абстрактного базового типа <xref:System.Array>. Поскольку этот тип реализует <xref:System.Collections.IEnumerable> и <xref:System.Collections.Generic.IEnumerable%601>, вы можете просматривать в цикле [foreach](../../language-reference/keywords/foreach-in.md) любые массивы C#.
+- Типы массивов — это [ссылочные типы](../../language-reference/keywords/reference-types.md), производные от абстрактного базового типа <xref:System.Array>. Все массивы реализуют <xref:System.Collections.IList> и <xref:System.Collections.IEnumerable>.  Вы можете использовать массивы итерации [foreach](../../language-reference/keywords/foreach-in.md) в C#,  так как одномерные массивы также реализуют <xref:System.Collections.Generic.IList%601> и <xref:System.Collections.Generic.IEnumerable%601>.
 
 ### <a name="arrays-as-objects"></a>Массивы как объекты
 
