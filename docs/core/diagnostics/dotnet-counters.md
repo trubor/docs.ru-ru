@@ -2,130 +2,131 @@
 title: Средство диагностики dotnet-counters — .NET CLI
 description: Узнайте, как установить и использовать средство CLI dotnet-counter для нерегламентированного мониторинга работоспособности и анализа производительности первого уровня.
 ms.date: 11/17/2020
-ms.openlocfilehash: 1c802e33602c2d8f18600b9771a1f68e722d8fdf
-ms.sourcegitcommit: f0fc5db7bcbf212e46933e9cf2d555bb82666141
+ms.topic: reference
+ms.openlocfilehash: 436db72677186b5fcc8b560451b69e616870f66e
+ms.sourcegitcommit: 8f71a6c655a9c39d5223401aed76c02ba00e03ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100583309"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107740804"
 ---
-# <a name="investigate-performance-counters-dotnet-counters"></a><span data-ttu-id="3c272-103">Исследование счетчиков производительности (dotnet-counter)</span><span class="sxs-lookup"><span data-stu-id="3c272-103">Investigate performance counters (dotnet-counters)</span></span>
+# <a name="investigate-performance-counters-dotnet-counters"></a><span data-ttu-id="b86aa-103">Исследование счетчиков производительности (dotnet-counter)</span><span class="sxs-lookup"><span data-stu-id="b86aa-103">Investigate performance counters (dotnet-counters)</span></span>
 
-<span data-ttu-id="3c272-104">**Эта статья относится к следующему.** ✔️ SDK для .NET Core 3.0 и более поздних версий</span><span class="sxs-lookup"><span data-stu-id="3c272-104">**This article applies to:** ✔️ .NET Core 3.0 SDK and later versions</span></span>
+<span data-ttu-id="b86aa-104">**Эта статья относится к следующему.** ✔️ SDK для .NET Core 3.0 и более поздних версий</span><span class="sxs-lookup"><span data-stu-id="b86aa-104">**This article applies to:** ✔️ .NET Core 3.0 SDK and later versions</span></span>
 
-## <a name="install"></a><span data-ttu-id="3c272-105">Установка</span><span class="sxs-lookup"><span data-stu-id="3c272-105">Install</span></span>
+## <a name="install"></a><span data-ttu-id="b86aa-105">Установка</span><span class="sxs-lookup"><span data-stu-id="b86aa-105">Install</span></span>
 
-<span data-ttu-id="3c272-106">Есть два способа загрузки и установки `dotnet-counters`:</span><span class="sxs-lookup"><span data-stu-id="3c272-106">There are two ways to download and install `dotnet-counters`:</span></span>
+<span data-ttu-id="b86aa-106">Есть два способа загрузки и установки `dotnet-counters`:</span><span class="sxs-lookup"><span data-stu-id="b86aa-106">There are two ways to download and install `dotnet-counters`:</span></span>
 
-- <span data-ttu-id="3c272-107">**Средство dotnet global:**</span><span class="sxs-lookup"><span data-stu-id="3c272-107">**dotnet global tool:**</span></span>
+- <span data-ttu-id="b86aa-107">**Средство dotnet global:**</span><span class="sxs-lookup"><span data-stu-id="b86aa-107">**dotnet global tool:**</span></span>
 
-  <span data-ttu-id="3c272-108">Чтобы установить последнюю версию [пакета NuGet](https://www.nuget.org/packages/dotnet-counters) `dotnet-counters`, используйте команду [dotnet tool install](../tools/dotnet-tool-install.md).</span><span class="sxs-lookup"><span data-stu-id="3c272-108">To install the latest release version of the `dotnet-counters` [NuGet package](https://www.nuget.org/packages/dotnet-counters), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:</span></span>
+  <span data-ttu-id="b86aa-108">Чтобы установить последнюю версию [пакета NuGet](https://www.nuget.org/packages/dotnet-counters) `dotnet-counters`, используйте команду [dotnet tool install](../tools/dotnet-tool-install.md).</span><span class="sxs-lookup"><span data-stu-id="b86aa-108">To install the latest release version of the `dotnet-counters` [NuGet package](https://www.nuget.org/packages/dotnet-counters), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:</span></span>
 
   ```dotnetcli
   dotnet tool install --global dotnet-counters
   ```
 
-- <span data-ttu-id="3c272-109">**Прямое скачивание:**</span><span class="sxs-lookup"><span data-stu-id="3c272-109">**Direct download:**</span></span>
+- <span data-ttu-id="b86aa-109">**Прямое скачивание:**</span><span class="sxs-lookup"><span data-stu-id="b86aa-109">**Direct download:**</span></span>
 
-  <span data-ttu-id="3c272-110">скачайте исполняемый файл средства, соответствующий вашей платформе:</span><span class="sxs-lookup"><span data-stu-id="3c272-110">Download the tool executable that matches your platform:</span></span>
+  <span data-ttu-id="b86aa-110">скачайте исполняемый файл средства, соответствующий вашей платформе:</span><span class="sxs-lookup"><span data-stu-id="b86aa-110">Download the tool executable that matches your platform:</span></span>
 
-  | <span data-ttu-id="3c272-111">OS</span><span class="sxs-lookup"><span data-stu-id="3c272-111">OS</span></span>  | <span data-ttu-id="3c272-112">Платформа</span><span class="sxs-lookup"><span data-stu-id="3c272-112">Platform</span></span> |
+  | <span data-ttu-id="b86aa-111">OS</span><span class="sxs-lookup"><span data-stu-id="b86aa-111">OS</span></span>  | <span data-ttu-id="b86aa-112">Платформа</span><span class="sxs-lookup"><span data-stu-id="b86aa-112">Platform</span></span> |
   | --- | -------- |
-  | <span data-ttu-id="3c272-113">Windows</span><span class="sxs-lookup"><span data-stu-id="3c272-113">Windows</span></span> | <span data-ttu-id="3c272-114">[x86](https://aka.ms/dotnet-counters/win-x86) \| [x64](https://aka.ms/dotnet-counters/win-x64) \| [arm](https://aka.ms/dotnet-counters/win-arm) \| [arm-x64](https://aka.ms/dotnet-counters/win-arm64)</span><span class="sxs-lookup"><span data-stu-id="3c272-114">[x86](https://aka.ms/dotnet-counters/win-x86) \| [x64](https://aka.ms/dotnet-counters/win-x64) \| [arm](https://aka.ms/dotnet-counters/win-arm) \| [arm-x64](https://aka.ms/dotnet-counters/win-arm64)</span></span> |
-  | <span data-ttu-id="3c272-115">macOS</span><span class="sxs-lookup"><span data-stu-id="3c272-115">macOS</span></span>   | [<span data-ttu-id="3c272-116">x64</span><span class="sxs-lookup"><span data-stu-id="3c272-116">x64</span></span>](https://aka.ms/dotnet-counters/osx-x64) |
-  | <span data-ttu-id="3c272-117">Linux</span><span class="sxs-lookup"><span data-stu-id="3c272-117">Linux</span></span>   | <span data-ttu-id="3c272-118">[x64](https://aka.ms/dotnet-counters/linux-x64) \| [arm](https://aka.ms/dotnet-counters/linux-arm) \| [arm64](https://aka.ms/dotnet-counters/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-counters/linux-musl-x64) \| [musl-arm64](https://aka.ms/dotnet-counters/linux-musl-arm64)</span><span class="sxs-lookup"><span data-stu-id="3c272-118">[x64](https://aka.ms/dotnet-counters/linux-x64) \| [arm](https://aka.ms/dotnet-counters/linux-arm) \| [arm64](https://aka.ms/dotnet-counters/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-counters/linux-musl-x64) \| [musl-arm64](https://aka.ms/dotnet-counters/linux-musl-arm64)</span></span> |
+  | <span data-ttu-id="b86aa-113">Windows</span><span class="sxs-lookup"><span data-stu-id="b86aa-113">Windows</span></span> | <span data-ttu-id="b86aa-114">[x86](https://aka.ms/dotnet-counters/win-x86) \| [x64](https://aka.ms/dotnet-counters/win-x64) \| [arm](https://aka.ms/dotnet-counters/win-arm) \| [arm-x64](https://aka.ms/dotnet-counters/win-arm64)</span><span class="sxs-lookup"><span data-stu-id="b86aa-114">[x86](https://aka.ms/dotnet-counters/win-x86) \| [x64](https://aka.ms/dotnet-counters/win-x64) \| [arm](https://aka.ms/dotnet-counters/win-arm) \| [arm-x64](https://aka.ms/dotnet-counters/win-arm64)</span></span> |
+  | <span data-ttu-id="b86aa-115">macOS</span><span class="sxs-lookup"><span data-stu-id="b86aa-115">macOS</span></span>   | [<span data-ttu-id="b86aa-116">x64</span><span class="sxs-lookup"><span data-stu-id="b86aa-116">x64</span></span>](https://aka.ms/dotnet-counters/osx-x64) |
+  | <span data-ttu-id="b86aa-117">Linux</span><span class="sxs-lookup"><span data-stu-id="b86aa-117">Linux</span></span>   | <span data-ttu-id="b86aa-118">[x64](https://aka.ms/dotnet-counters/linux-x64) \| [arm](https://aka.ms/dotnet-counters/linux-arm) \| [arm64](https://aka.ms/dotnet-counters/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-counters/linux-musl-x64) \| [musl-arm64](https://aka.ms/dotnet-counters/linux-musl-arm64)</span><span class="sxs-lookup"><span data-stu-id="b86aa-118">[x64](https://aka.ms/dotnet-counters/linux-x64) \| [arm](https://aka.ms/dotnet-counters/linux-arm) \| [arm64](https://aka.ms/dotnet-counters/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-counters/linux-musl-x64) \| [musl-arm64](https://aka.ms/dotnet-counters/linux-musl-arm64)</span></span> |
 
 > [!NOTE]
-> <span data-ttu-id="3c272-119">Для использования `dotnet-counters` в приложении x86 необходима соответствующая версия средства для архитектуры x86.</span><span class="sxs-lookup"><span data-stu-id="3c272-119">To use `dotnet-counters` on an x86 app, you need a corresponding x86 version of the tool.</span></span>
+> <span data-ttu-id="b86aa-119">Для использования `dotnet-counters` в приложении x86 необходима соответствующая версия средства для архитектуры x86.</span><span class="sxs-lookup"><span data-stu-id="b86aa-119">To use `dotnet-counters` on an x86 app, you need a corresponding x86 version of the tool.</span></span>
 
-## <a name="synopsis"></a><span data-ttu-id="3c272-120">Краткий обзор</span><span class="sxs-lookup"><span data-stu-id="3c272-120">Synopsis</span></span>
+## <a name="synopsis"></a><span data-ttu-id="b86aa-120">Краткий обзор</span><span class="sxs-lookup"><span data-stu-id="b86aa-120">Synopsis</span></span>
 
 ```console
 dotnet-counters [-h|--help] [--version] <command>
 ```
 
-## <a name="description"></a><span data-ttu-id="3c272-121">Описание</span><span class="sxs-lookup"><span data-stu-id="3c272-121">Description</span></span>
+## <a name="description"></a><span data-ttu-id="b86aa-121">Описание</span><span class="sxs-lookup"><span data-stu-id="b86aa-121">Description</span></span>
 
-<span data-ttu-id="3c272-122">`dotnet-counters` — это средство мониторинга производительности и первого уровня анализа производительности.</span><span class="sxs-lookup"><span data-stu-id="3c272-122">`dotnet-counters` is a performance monitoring tool for ad-hoc health monitoring and first-level performance investigation.</span></span> <span data-ttu-id="3c272-123">Оно умеет отслеживать значения счетчиков производительности, опубликованные через API <xref:System.Diagnostics.Tracing.EventCounter>.</span><span class="sxs-lookup"><span data-stu-id="3c272-123">It can observe performance counter values that are published via the <xref:System.Diagnostics.Tracing.EventCounter> API.</span></span> <span data-ttu-id="3c272-124">Например, вы можете быстро отслеживать такие параметры, как загрузка ЦП или частота возникновения исключений в приложении .NET Core, чтобы обнаружить подозрительное поведение перед началом более серьезных расследований с помощью `PerfView` или `dotnet-trace`.</span><span class="sxs-lookup"><span data-stu-id="3c272-124">For example, you can quickly monitor things like the CPU usage or the rate of exceptions being thrown in your .NET Core application to see if there's anything suspicious before diving into more serious performance investigation using `PerfView` or `dotnet-trace`.</span></span>
+<span data-ttu-id="b86aa-122">`dotnet-counters` — это средство мониторинга производительности и первого уровня анализа производительности.</span><span class="sxs-lookup"><span data-stu-id="b86aa-122">`dotnet-counters` is a performance monitoring tool for ad-hoc health monitoring and first-level performance investigation.</span></span> <span data-ttu-id="b86aa-123">Оно умеет отслеживать значения счетчиков производительности, опубликованные через API <xref:System.Diagnostics.Tracing.EventCounter>.</span><span class="sxs-lookup"><span data-stu-id="b86aa-123">It can observe performance counter values that are published via the <xref:System.Diagnostics.Tracing.EventCounter> API.</span></span> <span data-ttu-id="b86aa-124">Например, вы можете быстро отслеживать такие параметры, как загрузка ЦП или частота возникновения исключений в приложении .NET Core, чтобы обнаружить подозрительное поведение перед началом более серьезных расследований с помощью `PerfView` или `dotnet-trace`.</span><span class="sxs-lookup"><span data-stu-id="b86aa-124">For example, you can quickly monitor things like the CPU usage or the rate of exceptions being thrown in your .NET Core application to see if there's anything suspicious before diving into more serious performance investigation using `PerfView` or `dotnet-trace`.</span></span>
 
-## <a name="options"></a><span data-ttu-id="3c272-125">Параметры</span><span class="sxs-lookup"><span data-stu-id="3c272-125">Options</span></span>
+## <a name="options"></a><span data-ttu-id="b86aa-125">Параметры</span><span class="sxs-lookup"><span data-stu-id="b86aa-125">Options</span></span>
 
 - **`--version`**
 
-  <span data-ttu-id="3c272-126">Отображение версии служебной программы dotnet-counters.</span><span class="sxs-lookup"><span data-stu-id="3c272-126">Displays the version of the dotnet-counters utility.</span></span>
+  <span data-ttu-id="b86aa-126">Отображение версии служебной программы dotnet-counters.</span><span class="sxs-lookup"><span data-stu-id="b86aa-126">Displays the version of the dotnet-counters utility.</span></span>
 
 - **`-h|--help`**
 
-  <span data-ttu-id="3c272-127">Отображение справки в командной строке.</span><span class="sxs-lookup"><span data-stu-id="3c272-127">Shows command-line help.</span></span>
+  <span data-ttu-id="b86aa-127">Отображение справки в командной строке.</span><span class="sxs-lookup"><span data-stu-id="b86aa-127">Shows command-line help.</span></span>
 
-## <a name="commands"></a><span data-ttu-id="3c272-128">Команды</span><span class="sxs-lookup"><span data-stu-id="3c272-128">Commands</span></span>
+## <a name="commands"></a><span data-ttu-id="b86aa-128">Команды</span><span class="sxs-lookup"><span data-stu-id="b86aa-128">Commands</span></span>
 
-| <span data-ttu-id="3c272-129">Команда</span><span class="sxs-lookup"><span data-stu-id="3c272-129">Command</span></span>                                             |
+| <span data-ttu-id="b86aa-129">Команда</span><span class="sxs-lookup"><span data-stu-id="b86aa-129">Command</span></span>                                             |
 |-----------------------------------------------------|
-| [<span data-ttu-id="3c272-130">dotnet-counters collect</span><span class="sxs-lookup"><span data-stu-id="3c272-130">dotnet-counters collect</span></span>](#dotnet-counters-collect) |
-| [<span data-ttu-id="3c272-131">dotnet-counters list</span><span class="sxs-lookup"><span data-stu-id="3c272-131">dotnet-counters list</span></span>](#dotnet-counters-list)       |
-| [<span data-ttu-id="3c272-132">dotnet-counters monitor</span><span class="sxs-lookup"><span data-stu-id="3c272-132">dotnet-counters monitor</span></span>](#dotnet-counters-monitor) |
-| [<span data-ttu-id="3c272-133">dotnet-counters ps</span><span class="sxs-lookup"><span data-stu-id="3c272-133">dotnet-counters ps</span></span>](#dotnet-counters-ps)           |
+| [<span data-ttu-id="b86aa-130">dotnet-counters collect</span><span class="sxs-lookup"><span data-stu-id="b86aa-130">dotnet-counters collect</span></span>](#dotnet-counters-collect) |
+| [<span data-ttu-id="b86aa-131">dotnet-counters list</span><span class="sxs-lookup"><span data-stu-id="b86aa-131">dotnet-counters list</span></span>](#dotnet-counters-list)       |
+| [<span data-ttu-id="b86aa-132">dotnet-counters monitor</span><span class="sxs-lookup"><span data-stu-id="b86aa-132">dotnet-counters monitor</span></span>](#dotnet-counters-monitor) |
+| [<span data-ttu-id="b86aa-133">dotnet-counters ps</span><span class="sxs-lookup"><span data-stu-id="b86aa-133">dotnet-counters ps</span></span>](#dotnet-counters-ps)           |
 
-## <a name="dotnet-counters-collect"></a><span data-ttu-id="3c272-134">dotnet-counters collect</span><span class="sxs-lookup"><span data-stu-id="3c272-134">dotnet-counters collect</span></span>
+## <a name="dotnet-counters-collect"></a><span data-ttu-id="b86aa-134">dotnet-counters collect</span><span class="sxs-lookup"><span data-stu-id="b86aa-134">dotnet-counters collect</span></span>
 
-<span data-ttu-id="3c272-135">Периодический сбор выбранных значений счетчиков и их экспорт в указанном формате файла для последующей обработки.</span><span class="sxs-lookup"><span data-stu-id="3c272-135">Periodically collect selected counter values and export them into a specified file format for post-processing.</span></span>
+<span data-ttu-id="b86aa-135">Периодический сбор выбранных значений счетчиков и их экспорт в указанном формате файла для последующей обработки.</span><span class="sxs-lookup"><span data-stu-id="b86aa-135">Periodically collect selected counter values and export them into a specified file format for post-processing.</span></span>
 
-### <a name="synopsis"></a><span data-ttu-id="3c272-136">Краткий обзор</span><span class="sxs-lookup"><span data-stu-id="3c272-136">Synopsis</span></span>
+### <a name="synopsis"></a><span data-ttu-id="b86aa-136">Краткий обзор</span><span class="sxs-lookup"><span data-stu-id="b86aa-136">Synopsis</span></span>
 
 ```console
 dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-port] [--refresh-interval] [--counters <COUNTERS>] [--format] [-o|--output] [-- <command>]
 ```
 
-### <a name="options"></a><span data-ttu-id="3c272-137">Параметры</span><span class="sxs-lookup"><span data-stu-id="3c272-137">Options</span></span>
+### <a name="options"></a><span data-ttu-id="b86aa-137">Параметры</span><span class="sxs-lookup"><span data-stu-id="b86aa-137">Options</span></span>
 
 - **`-p|--process-id <PID>`**
 
-  <span data-ttu-id="3c272-138">Идентификатор процесса, из которого нужно получить данные счетчика.</span><span class="sxs-lookup"><span data-stu-id="3c272-138">The ID of the process to be collect counter data from.</span></span>
+  <span data-ttu-id="b86aa-138">Идентификатор процесса, из которого нужно получить данные счетчика.</span><span class="sxs-lookup"><span data-stu-id="b86aa-138">The ID of the process to be collect counter data from.</span></span>
 
 - **`-n|--name <name>`**
 
-  <span data-ttu-id="3c272-139">Имя процесса, из которого нужно получить данные счетчика.</span><span class="sxs-lookup"><span data-stu-id="3c272-139">The name of the process to be collect counter data from.</span></span>
+  <span data-ttu-id="b86aa-139">Имя процесса, из которого нужно получить данные счетчика.</span><span class="sxs-lookup"><span data-stu-id="b86aa-139">The name of the process to be collect counter data from.</span></span>
 
 - **`--diagnostic-port`**
 
-  <span data-ttu-id="3c272-140">Имя создаваемого порта диагностики.</span><span class="sxs-lookup"><span data-stu-id="3c272-140">The name of the diagnostic port to create.</span></span> <span data-ttu-id="3c272-141">Сведения об использовании этого параметра для запуска счетчиков мониторинга во время запуска приложения см. в разделе [Использование порта диагностики](#using-diagnostic-port).</span><span class="sxs-lookup"><span data-stu-id="3c272-141">See [using diagnostic port](#using-diagnostic-port) for how to use this option to start monitoring counters from app startup.</span></span>
+  <span data-ttu-id="b86aa-140">Имя создаваемого порта диагностики.</span><span class="sxs-lookup"><span data-stu-id="b86aa-140">The name of the diagnostic port to create.</span></span> <span data-ttu-id="b86aa-141">Сведения об использовании этого параметра для запуска счетчиков мониторинга во время запуска приложения см. в разделе [Использование порта диагностики](#using-diagnostic-port).</span><span class="sxs-lookup"><span data-stu-id="b86aa-141">See [using diagnostic port](#using-diagnostic-port) for how to use this option to start monitoring counters from app startup.</span></span>
 
 - **`--refresh-interval <SECONDS>`**
 
-  <span data-ttu-id="3c272-142">Время (в секундах) между обновлением значений отображаемых счетчиков</span><span class="sxs-lookup"><span data-stu-id="3c272-142">The number of seconds to delay between updating the displayed counters</span></span>
+  <span data-ttu-id="b86aa-142">Время (в секундах) между обновлением значений отображаемых счетчиков</span><span class="sxs-lookup"><span data-stu-id="b86aa-142">The number of seconds to delay between updating the displayed counters</span></span>
 
 - **`--counters <COUNTERS>`**
 
-  <span data-ttu-id="3c272-143">Список счетчиков, разделенный запятыми.</span><span class="sxs-lookup"><span data-stu-id="3c272-143">A comma-separated list of counters.</span></span> <span data-ttu-id="3c272-144">Вы можете объявить счетчики как `provider_name[:counter_name]`.</span><span class="sxs-lookup"><span data-stu-id="3c272-144">Counters can be specified `provider_name[:counter_name]`.</span></span> <span data-ttu-id="3c272-145">Если `provider_name` используется без соответствующего списка счетчиков, отображаются все счетчики от поставщика.</span><span class="sxs-lookup"><span data-stu-id="3c272-145">If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown.</span></span> <span data-ttu-id="3c272-146">Для обнаружения имен поставщиков и счетчиков используйте команду [dotnet-counters list](#dotnet-counters-list).</span><span class="sxs-lookup"><span data-stu-id="3c272-146">To discover provider and counter names, use the [dotnet-counters list](#dotnet-counters-list) command.</span></span>
+  <span data-ttu-id="b86aa-143">Список счетчиков, разделенный запятыми.</span><span class="sxs-lookup"><span data-stu-id="b86aa-143">A comma-separated list of counters.</span></span> <span data-ttu-id="b86aa-144">Вы можете объявить счетчики как `provider_name[:counter_name]`.</span><span class="sxs-lookup"><span data-stu-id="b86aa-144">Counters can be specified `provider_name[:counter_name]`.</span></span> <span data-ttu-id="b86aa-145">Если `provider_name` используется без соответствующего списка счетчиков, отображаются все счетчики от поставщика.</span><span class="sxs-lookup"><span data-stu-id="b86aa-145">If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown.</span></span> <span data-ttu-id="b86aa-146">Для обнаружения имен поставщиков и счетчиков используйте команду [dotnet-counters list](#dotnet-counters-list).</span><span class="sxs-lookup"><span data-stu-id="b86aa-146">To discover provider and counter names, use the [dotnet-counters list](#dotnet-counters-list) command.</span></span>
 
 - **`--format <csv|json>`**
 
-  <span data-ttu-id="3c272-147">Экспортируемый формат.</span><span class="sxs-lookup"><span data-stu-id="3c272-147">The format to be exported.</span></span> <span data-ttu-id="3c272-148">В настоящее время доступно: csv, json.</span><span class="sxs-lookup"><span data-stu-id="3c272-148">Currently available: csv, json.</span></span>
+  <span data-ttu-id="b86aa-147">Экспортируемый формат.</span><span class="sxs-lookup"><span data-stu-id="b86aa-147">The format to be exported.</span></span> <span data-ttu-id="b86aa-148">В настоящее время доступно: csv, json.</span><span class="sxs-lookup"><span data-stu-id="b86aa-148">Currently available: csv, json.</span></span>
 
 - **`-o|--output <output>`**
 
-  <span data-ttu-id="3c272-149">Имя выходного файла.</span><span class="sxs-lookup"><span data-stu-id="3c272-149">The name of the output file.</span></span>
+  <span data-ttu-id="b86aa-149">Имя выходного файла.</span><span class="sxs-lookup"><span data-stu-id="b86aa-149">The name of the output file.</span></span>
 
-- <span data-ttu-id="3c272-150">**`-- <command>` (только для целевых приложений, использующих .NET 5.0 или более поздней версии)**</span><span class="sxs-lookup"><span data-stu-id="3c272-150">**`-- <command>` (for target applications running .NET 5.0 or later only)**</span></span>
+- <span data-ttu-id="b86aa-150">**`-- <command>` (только для целевых приложений, использующих .NET 5.0 или более поздней версии)**</span><span class="sxs-lookup"><span data-stu-id="b86aa-150">**`-- <command>` (for target applications running .NET 5.0 or later only)**</span></span>
 
-  <span data-ttu-id="3c272-151">После параметров конфигурации коллекции пользователь может добавить `--`, а затем команду для запуска приложения .NET с помощью среды выполнения версии не ниже 5.0.</span><span class="sxs-lookup"><span data-stu-id="3c272-151">After the collection configuration parameters, the user can append `--` followed by a command to start a .NET application with at least a 5.0 runtime.</span></span> <span data-ttu-id="3c272-152">`dotnet-counters` запустит процесс с указанной командой и соберет запрошенные метрики.</span><span class="sxs-lookup"><span data-stu-id="3c272-152">`dotnet-counters` will launch a process with the provided command and collect the requested metrics.</span></span> <span data-ttu-id="3c272-153">Это часто бывает полезно для сбора метрик для пути запуска приложения и может использоваться для диагностики и отслеживания проблем, происходящих незадолго до основной точки входа или вскоре после нее.</span><span class="sxs-lookup"><span data-stu-id="3c272-153">This is often useful to collect metrics for the application's startup path and can be used to diagnose or monitor issues that happen early before or shortly after the main entrypoint.</span></span>
-
-  > [!NOTE]
-  > <span data-ttu-id="3c272-154">При использовании этого параметра выполняется мониторинг первого процесса .NET 5.0, который передает результаты обратно в средство. Это означает, что если команда запускает несколько приложений .NET, данные будут собираться только о первом приложении.</span><span class="sxs-lookup"><span data-stu-id="3c272-154">Using this option monitors the first .NET 5.0 process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app.</span></span> <span data-ttu-id="3c272-155">Поэтому рекомендуется использовать этот параметр для автономных приложений или с помощью параметра `dotnet exec <app.dll>`.</span><span class="sxs-lookup"><span data-stu-id="3c272-155">Therefore, it is recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.</span></span>
+  <span data-ttu-id="b86aa-151">После параметров конфигурации коллекции пользователь может добавить `--`, а затем команду для запуска приложения .NET с помощью среды выполнения версии не ниже 5.0.</span><span class="sxs-lookup"><span data-stu-id="b86aa-151">After the collection configuration parameters, the user can append `--` followed by a command to start a .NET application with at least a 5.0 runtime.</span></span> <span data-ttu-id="b86aa-152">`dotnet-counters` запустит процесс с указанной командой и соберет запрошенные метрики.</span><span class="sxs-lookup"><span data-stu-id="b86aa-152">`dotnet-counters` will launch a process with the provided command and collect the requested metrics.</span></span> <span data-ttu-id="b86aa-153">Это часто бывает полезно для сбора метрик для пути запуска приложения и может использоваться для диагностики и отслеживания проблем, происходящих незадолго до основной точки входа или вскоре после нее.</span><span class="sxs-lookup"><span data-stu-id="b86aa-153">This is often useful to collect metrics for the application's startup path and can be used to diagnose or monitor issues that happen early before or shortly after the main entrypoint.</span></span>
 
   > [!NOTE]
-  > <span data-ttu-id="3c272-156">При запуске исполняемого файла .NET с помощью dotnet-trace выполняется перенаправление входных и выходных данных, и вы не сможете взаимодействовать с его stdin/stdout.</span><span class="sxs-lookup"><span data-stu-id="3c272-156">Launching a .NET executable via dotnet-counters will make its input/output to be redirected and you won't be able to interact with its stdin/stdout.</span></span> <span data-ttu-id="3c272-157">Выход из средства с помощью клавиш CTRL+C или SIGTERM приведет к безопасному завершению работы средства и дочернего процесса.</span><span class="sxs-lookup"><span data-stu-id="3c272-157">Exiting the tool via CTRL+C or SIGTERM will safely end both the tool and the child process.</span></span> <span data-ttu-id="3c272-158">Если дочерний процесс завершает работу до средства, средство также завершит работу, а трассировка будет доступна для безопасного просмотра.</span><span class="sxs-lookup"><span data-stu-id="3c272-158">If the child process exits before the tool, the tool will exit as well and the trace should be safely viewable.</span></span> <span data-ttu-id="3c272-159">Если необходимо использовать stdin/stdout, можно применить параметр `--diagnostic-port`.</span><span class="sxs-lookup"><span data-stu-id="3c272-159">If you need to use stdin/stdout, you can use the `--diagnostic-port` option.</span></span> <span data-ttu-id="3c272-160">Дополнительные сведения см. в разделе [Использование порта диагностики](#using-diagnostic-port).</span><span class="sxs-lookup"><span data-stu-id="3c272-160">See [Using diagnostic port](#using-diagnostic-port) for more information.</span></span>
+  > <span data-ttu-id="b86aa-154">При использовании этого параметра выполняется мониторинг первого процесса .NET 5.0, который передает результаты обратно в средство. Это означает, что если команда запускает несколько приложений .NET, данные будут собираться только о первом приложении.</span><span class="sxs-lookup"><span data-stu-id="b86aa-154">Using this option monitors the first .NET 5.0 process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app.</span></span> <span data-ttu-id="b86aa-155">Поэтому рекомендуется использовать этот параметр для автономных приложений или с помощью параметра `dotnet exec <app.dll>`.</span><span class="sxs-lookup"><span data-stu-id="b86aa-155">Therefore, it is recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.</span></span>
+
+  > [!NOTE]
+  > <span data-ttu-id="b86aa-156">При запуске исполняемого файла .NET с помощью dotnet-trace выполняется перенаправление входных и выходных данных, и вы не сможете взаимодействовать с его stdin/stdout.</span><span class="sxs-lookup"><span data-stu-id="b86aa-156">Launching a .NET executable via dotnet-counters will make its input/output to be redirected and you won't be able to interact with its stdin/stdout.</span></span> <span data-ttu-id="b86aa-157">Выход из средства с помощью клавиш CTRL+C или SIGTERM приведет к безопасному завершению работы средства и дочернего процесса.</span><span class="sxs-lookup"><span data-stu-id="b86aa-157">Exiting the tool via CTRL+C or SIGTERM will safely end both the tool and the child process.</span></span> <span data-ttu-id="b86aa-158">Если дочерний процесс завершает работу до средства, средство также завершит работу, а трассировка будет доступна для безопасного просмотра.</span><span class="sxs-lookup"><span data-stu-id="b86aa-158">If the child process exits before the tool, the tool will exit as well and the trace should be safely viewable.</span></span> <span data-ttu-id="b86aa-159">Если необходимо использовать stdin/stdout, можно применить параметр `--diagnostic-port`.</span><span class="sxs-lookup"><span data-stu-id="b86aa-159">If you need to use stdin/stdout, you can use the `--diagnostic-port` option.</span></span> <span data-ttu-id="b86aa-160">Дополнительные сведения см. в разделе [Использование порта диагностики](#using-diagnostic-port).</span><span class="sxs-lookup"><span data-stu-id="b86aa-160">See [Using diagnostic port](#using-diagnostic-port) for more information.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="3c272-161">В Linux и macOS эта команда ожидает, что целевое приложение и `dotnet-counters` будут совместно использовать одну и ту же переменную среды `TMPDIR`.</span><span class="sxs-lookup"><span data-stu-id="3c272-161">On Linux and macOS, this command expects the target application and `dotnet-counters` to share the same `TMPDIR` environment variable.</span></span> <span data-ttu-id="3c272-162">В противном случае время ожидания команды истечет.</span><span class="sxs-lookup"><span data-stu-id="3c272-162">Otherwise, the command will time out.</span></span>
+> <span data-ttu-id="b86aa-161">В Linux и macOS эта команда ожидает, что целевое приложение и `dotnet-counters` будут совместно использовать одну и ту же переменную среды `TMPDIR`.</span><span class="sxs-lookup"><span data-stu-id="b86aa-161">On Linux and macOS, this command expects the target application and `dotnet-counters` to share the same `TMPDIR` environment variable.</span></span> <span data-ttu-id="b86aa-162">В противном случае время ожидания команды истечет.</span><span class="sxs-lookup"><span data-stu-id="b86aa-162">Otherwise, the command will time out.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="3c272-163">Чтобы получить метрики с помощью `dotnet-counters`, ее необходимо запустить от имени пользователя, запустившего целевой процесс, или от имени привилегированного пользователя.</span><span class="sxs-lookup"><span data-stu-id="3c272-163">To collect metrics using `dotnet-counters`, it needs to be run as the same user as the user running target process or as root.</span></span> <span data-ttu-id="3c272-164">В противном случае средство не сможет установить соединение с целевым процессом.</span><span class="sxs-lookup"><span data-stu-id="3c272-164">Otherwise, the tool will fail to establish a connection with the target process.</span></span>
+> <span data-ttu-id="b86aa-163">Чтобы получить метрики с помощью `dotnet-counters`, ее необходимо запустить от имени пользователя, запустившего целевой процесс, или от имени привилегированного пользователя.</span><span class="sxs-lookup"><span data-stu-id="b86aa-163">To collect metrics using `dotnet-counters`, it needs to be run as the same user as the user running target process or as root.</span></span> <span data-ttu-id="b86aa-164">В противном случае средство не сможет установить соединение с целевым процессом.</span><span class="sxs-lookup"><span data-stu-id="b86aa-164">Otherwise, the tool will fail to establish a connection with the target process.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="3c272-165">Примеры</span><span class="sxs-lookup"><span data-stu-id="3c272-165">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="b86aa-165">Примеры</span><span class="sxs-lookup"><span data-stu-id="b86aa-165">Examples</span></span>
 
-- <span data-ttu-id="3c272-166">Сбор всех счетчиков с интервалом обновления в 3 секунды и создание CSV-файла в качестве выходных данных:</span><span class="sxs-lookup"><span data-stu-id="3c272-166">Collect all counters at a refresh interval of 3 seconds and generate a csv as output:</span></span>
+- <span data-ttu-id="b86aa-166">Сбор всех счетчиков с интервалом обновления в 3 секунды и создание CSV-файла в качестве выходных данных:</span><span class="sxs-lookup"><span data-stu-id="b86aa-166">Collect all counters at a refresh interval of 3 seconds and generate a csv as output:</span></span>
 
   ```console
   > dotnet-counters collect --process-id 1902 --refresh-interval 3 --format csv
@@ -134,7 +135,7 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
   Starting a counter session. Press Q to quit.
   ```
 
-- <span data-ttu-id="3c272-167">Запустите `dotnet mvc.dll` как дочерний процесс и начните сбор счетчиков времени выполнения и счетчиков размещения ASP.NET Core из запуска и сохраните их в виде выходных данных JSON:</span><span class="sxs-lookup"><span data-stu-id="3c272-167">Start `dotnet mvc.dll` as a child process and start collecting runtime counters and ASP.NET Core Hosting counters from startup and save it as a JSON output:</span></span>
+- <span data-ttu-id="b86aa-167">Запустите `dotnet mvc.dll` как дочерний процесс и начните сбор счетчиков времени выполнения и счетчиков размещения ASP.NET Core из запуска и сохраните их в виде выходных данных JSON:</span><span class="sxs-lookup"><span data-stu-id="b86aa-167">Start `dotnet mvc.dll` as a child process and start collecting runtime counters and ASP.NET Core Hosting counters from startup and save it as a JSON output:</span></span>
 
   ```console
   > dotnet-counters collect --format json --counters System.Runtime,Microsoft.AspNetCore.Hosting -- dotnet mvc.dll
@@ -142,17 +143,17 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
   File saved to counter.json
   ```
 
-## <a name="dotnet-counters-list"></a><span data-ttu-id="3c272-168">dotnet-counters list</span><span class="sxs-lookup"><span data-stu-id="3c272-168">dotnet-counters list</span></span>
+## <a name="dotnet-counters-list"></a><span data-ttu-id="b86aa-168">dotnet-counters list</span><span class="sxs-lookup"><span data-stu-id="b86aa-168">dotnet-counters list</span></span>
 
-<span data-ttu-id="3c272-169">Отображение списка имен и описаний счетчиков, сгруппированных по поставщикам.</span><span class="sxs-lookup"><span data-stu-id="3c272-169">Displays a list of counter names and descriptions, grouped by provider.</span></span>
+<span data-ttu-id="b86aa-169">Отображение списка имен и описаний счетчиков, сгруппированных по поставщикам.</span><span class="sxs-lookup"><span data-stu-id="b86aa-169">Displays a list of counter names and descriptions, grouped by provider.</span></span>
 
-### <a name="synopsis"></a><span data-ttu-id="3c272-170">Краткий обзор</span><span class="sxs-lookup"><span data-stu-id="3c272-170">Synopsis</span></span>
+### <a name="synopsis"></a><span data-ttu-id="b86aa-170">Краткий обзор</span><span class="sxs-lookup"><span data-stu-id="b86aa-170">Synopsis</span></span>
 
 ```console
 dotnet-counters list [-h|--help]
 ```
 
-### <a name="example"></a><span data-ttu-id="3c272-171">Пример</span><span class="sxs-lookup"><span data-stu-id="3c272-171">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b86aa-171">Пример</span><span class="sxs-lookup"><span data-stu-id="b86aa-171">Example</span></span>
 
 ```console
 > dotnet-counters list
@@ -187,62 +188,62 @@ Microsoft.AspNetCore.Hosting
 ```
 
 > [!NOTE]
-> <span data-ttu-id="3c272-172">Счетчики `Microsoft.AspNetCore.Hosting` отображаются при обнаружении процессов, поддерживающих эти счетчики, например при запуске приложения ASP.NET Core на хост-компьютере.</span><span class="sxs-lookup"><span data-stu-id="3c272-172">The `Microsoft.AspNetCore.Hosting` counters are displayed when there are processes identified that support these counters, for example; when an ASP.NET Core application is running on the host machine.</span></span>
+> <span data-ttu-id="b86aa-172">Счетчики `Microsoft.AspNetCore.Hosting` отображаются при обнаружении процессов, поддерживающих эти счетчики, например при запуске приложения ASP.NET Core на хост-компьютере.</span><span class="sxs-lookup"><span data-stu-id="b86aa-172">The `Microsoft.AspNetCore.Hosting` counters are displayed when there are processes identified that support these counters, for example; when an ASP.NET Core application is running on the host machine.</span></span>
 
-## <a name="dotnet-counters-monitor"></a><span data-ttu-id="3c272-173">dotnet-counters monitor</span><span class="sxs-lookup"><span data-stu-id="3c272-173">dotnet-counters monitor</span></span>
+## <a name="dotnet-counters-monitor"></a><span data-ttu-id="b86aa-173">dotnet-counters monitor</span><span class="sxs-lookup"><span data-stu-id="b86aa-173">dotnet-counters monitor</span></span>
 
-<span data-ttu-id="3c272-174">Отображение периодически обновляемых значений для выбранных счетчиков.</span><span class="sxs-lookup"><span data-stu-id="3c272-174">Displays periodically refreshing values of selected counters.</span></span>
+<span data-ttu-id="b86aa-174">Отображение периодически обновляемых значений для выбранных счетчиков.</span><span class="sxs-lookup"><span data-stu-id="b86aa-174">Displays periodically refreshing values of selected counters.</span></span>
 
-### <a name="synopsis"></a><span data-ttu-id="3c272-175">Краткий обзор</span><span class="sxs-lookup"><span data-stu-id="3c272-175">Synopsis</span></span>
+### <a name="synopsis"></a><span data-ttu-id="b86aa-175">Краткий обзор</span><span class="sxs-lookup"><span data-stu-id="b86aa-175">Synopsis</span></span>
 
 ```console
 dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-port] [--refresh-interval] [--counters] [-- <command>]
 ```
 
-### <a name="options"></a><span data-ttu-id="3c272-176">Параметры</span><span class="sxs-lookup"><span data-stu-id="3c272-176">Options</span></span>
+### <a name="options"></a><span data-ttu-id="b86aa-176">Параметры</span><span class="sxs-lookup"><span data-stu-id="b86aa-176">Options</span></span>
 
 - **`-p|--process-id <PID>`**
 
-  <span data-ttu-id="3c272-177">Идентификатор отслеживаемого процесса.</span><span class="sxs-lookup"><span data-stu-id="3c272-177">The ID of the process to be monitored.</span></span>
+  <span data-ttu-id="b86aa-177">Идентификатор отслеживаемого процесса.</span><span class="sxs-lookup"><span data-stu-id="b86aa-177">The ID of the process to be monitored.</span></span>
 
 - **`-n|--name <name>`**
 
-  <span data-ttu-id="3c272-178">Имя отслеживаемого процесса.</span><span class="sxs-lookup"><span data-stu-id="3c272-178">The name of the process to be monitored.</span></span>
+  <span data-ttu-id="b86aa-178">Имя отслеживаемого процесса.</span><span class="sxs-lookup"><span data-stu-id="b86aa-178">The name of the process to be monitored.</span></span>
 
 - **`--diagnostic-port`**
 
-  <span data-ttu-id="3c272-179">Имя создаваемого порта диагностики.</span><span class="sxs-lookup"><span data-stu-id="3c272-179">The name of the diagnostic port to create.</span></span> <span data-ttu-id="3c272-180">Сведения об использовании этого параметра для запуска счетчиков мониторинга во время запуска приложения см. в разделе [Использование порта диагностики](#using-diagnostic-port).</span><span class="sxs-lookup"><span data-stu-id="3c272-180">See [using diagnostic port](#using-diagnostic-port) for how to use this option to start monitoring counters from app startup.</span></span>
+  <span data-ttu-id="b86aa-179">Имя создаваемого порта диагностики.</span><span class="sxs-lookup"><span data-stu-id="b86aa-179">The name of the diagnostic port to create.</span></span> <span data-ttu-id="b86aa-180">Сведения об использовании этого параметра для запуска счетчиков мониторинга во время запуска приложения см. в разделе [Использование порта диагностики](#using-diagnostic-port).</span><span class="sxs-lookup"><span data-stu-id="b86aa-180">See [using diagnostic port](#using-diagnostic-port) for how to use this option to start monitoring counters from app startup.</span></span>
 
 - **`--refresh-interval <SECONDS>`**
 
-  <span data-ttu-id="3c272-181">Время (в секундах) между обновлением значений отображаемых счетчиков</span><span class="sxs-lookup"><span data-stu-id="3c272-181">The number of seconds to delay between updating the displayed counters</span></span>
+  <span data-ttu-id="b86aa-181">Время (в секундах) между обновлением значений отображаемых счетчиков</span><span class="sxs-lookup"><span data-stu-id="b86aa-181">The number of seconds to delay between updating the displayed counters</span></span>
 
 - **`--counters <COUNTERS>`**
 
-  <span data-ttu-id="3c272-182">Список счетчиков, разделенный запятыми.</span><span class="sxs-lookup"><span data-stu-id="3c272-182">A comma-separated list of counters.</span></span> <span data-ttu-id="3c272-183">Вы можете объявить счетчики как `provider_name[:counter_name]`.</span><span class="sxs-lookup"><span data-stu-id="3c272-183">Counters can be specified `provider_name[:counter_name]`.</span></span> <span data-ttu-id="3c272-184">Если `provider_name` используется без соответствующего списка счетчиков, отображаются все счетчики от поставщика.</span><span class="sxs-lookup"><span data-stu-id="3c272-184">If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown.</span></span> <span data-ttu-id="3c272-185">Для обнаружения имен поставщиков и счетчиков используйте команду [dotnet-counters list](#dotnet-counters-list).</span><span class="sxs-lookup"><span data-stu-id="3c272-185">To discover provider and counter names, use the [dotnet-counters list](#dotnet-counters-list) command.</span></span>
+  <span data-ttu-id="b86aa-182">Список счетчиков, разделенный запятыми.</span><span class="sxs-lookup"><span data-stu-id="b86aa-182">A comma-separated list of counters.</span></span> <span data-ttu-id="b86aa-183">Вы можете объявить счетчики как `provider_name[:counter_name]`.</span><span class="sxs-lookup"><span data-stu-id="b86aa-183">Counters can be specified `provider_name[:counter_name]`.</span></span> <span data-ttu-id="b86aa-184">Если `provider_name` используется без соответствующего списка счетчиков, отображаются все счетчики от поставщика.</span><span class="sxs-lookup"><span data-stu-id="b86aa-184">If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown.</span></span> <span data-ttu-id="b86aa-185">Для обнаружения имен поставщиков и счетчиков используйте команду [dotnet-counters list](#dotnet-counters-list).</span><span class="sxs-lookup"><span data-stu-id="b86aa-185">To discover provider and counter names, use the [dotnet-counters list](#dotnet-counters-list) command.</span></span>
 
- <span data-ttu-id="3c272-186">**`-- <command>` (только для целевых приложений, использующих .NET 5.0 или более поздней версии)**</span><span class="sxs-lookup"><span data-stu-id="3c272-186">**`-- <command>` (for target applications running .NET 5.0 or later only)**</span></span>
+ <span data-ttu-id="b86aa-186">**`-- <command>` (только для целевых приложений, использующих .NET 5.0 или более поздней версии)**</span><span class="sxs-lookup"><span data-stu-id="b86aa-186">**`-- <command>` (for target applications running .NET 5.0 or later only)**</span></span>
 
-  <span data-ttu-id="3c272-187">После параметров конфигурации коллекции пользователь может добавить `--`, а затем команду для запуска приложения .NET с помощью среды выполнения версии не ниже 5.0.</span><span class="sxs-lookup"><span data-stu-id="3c272-187">After the collection configuration parameters, the user can append `--` followed by a command to start a .NET application with at least a 5.0 runtime.</span></span> <span data-ttu-id="3c272-188">`dotnet-counters` запустит процесс с указанной командой и будет отслеживать запрошенные метрики.</span><span class="sxs-lookup"><span data-stu-id="3c272-188">`dotnet-counters` will launch a process with the provided command and monitor the requested metrics.</span></span> <span data-ttu-id="3c272-189">Это часто бывает полезно для сбора метрик для пути запуска приложения и может использоваться для диагностики и отслеживания проблем, происходящих незадолго до основной точки входа или вскоре после нее.</span><span class="sxs-lookup"><span data-stu-id="3c272-189">This is often useful to collect metrics for the application's startup path and can be used to diagnose or monitor issues that happen early before or shortly after the main entrypoint.</span></span>
-
-  > [!NOTE]
-  > <span data-ttu-id="3c272-190">При использовании этого параметра выполняется мониторинг первого процесса .NET 5.0, который передает результаты обратно в средство. Это означает, что если команда запускает несколько приложений .NET, данные будут собираться только о первом приложении.</span><span class="sxs-lookup"><span data-stu-id="3c272-190">Using this option monitors the first .NET 5.0 process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app.</span></span> <span data-ttu-id="3c272-191">Поэтому рекомендуется использовать этот параметр для автономных приложений или с помощью параметра `dotnet exec <app.dll>`.</span><span class="sxs-lookup"><span data-stu-id="3c272-191">Therefore, it is recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.</span></span>
+  <span data-ttu-id="b86aa-187">После параметров конфигурации коллекции пользователь может добавить `--`, а затем команду для запуска приложения .NET с помощью среды выполнения версии не ниже 5.0.</span><span class="sxs-lookup"><span data-stu-id="b86aa-187">After the collection configuration parameters, the user can append `--` followed by a command to start a .NET application with at least a 5.0 runtime.</span></span> <span data-ttu-id="b86aa-188">`dotnet-counters` запустит процесс с указанной командой и будет отслеживать запрошенные метрики.</span><span class="sxs-lookup"><span data-stu-id="b86aa-188">`dotnet-counters` will launch a process with the provided command and monitor the requested metrics.</span></span> <span data-ttu-id="b86aa-189">Это часто бывает полезно для сбора метрик для пути запуска приложения и может использоваться для диагностики и отслеживания проблем, происходящих незадолго до основной точки входа или вскоре после нее.</span><span class="sxs-lookup"><span data-stu-id="b86aa-189">This is often useful to collect metrics for the application's startup path and can be used to diagnose or monitor issues that happen early before or shortly after the main entrypoint.</span></span>
 
   > [!NOTE]
-  > <span data-ttu-id="3c272-192">При запуске исполняемого файла .NET с помощью dotnet-trace выполняется перенаправление входных и выходных данных, и вы не сможете взаимодействовать с его stdin/stdout.</span><span class="sxs-lookup"><span data-stu-id="3c272-192">Launching a .NET executable via dotnet-counters will make its input/output to be redirected and you won't be able to interact with its stdin/stdout.</span></span> <span data-ttu-id="3c272-193">Выход из средства с помощью клавиш CTRL+C или SIGTERM приведет к безопасному завершению работы средства и дочернего процесса.</span><span class="sxs-lookup"><span data-stu-id="3c272-193">Exiting the tool via CTRL+C or SIGTERM will safely end both the tool and the child process.</span></span> <span data-ttu-id="3c272-194">Если дочерний процесс завершает работу до средства, средство также завершит работу.</span><span class="sxs-lookup"><span data-stu-id="3c272-194">If the child process exits before the tool, the tool will exit as well.</span></span> <span data-ttu-id="3c272-195">Если необходимо использовать stdin/stdout, можно применить параметр `--diagnostic-port`.</span><span class="sxs-lookup"><span data-stu-id="3c272-195">If you need to use stdin/stdout, you can use the `--diagnostic-port` option.</span></span> <span data-ttu-id="3c272-196">Дополнительные сведения см. в разделе [Использование порта диагностики](#using-diagnostic-port).</span><span class="sxs-lookup"><span data-stu-id="3c272-196">See [Using diagnostic port](#using-diagnostic-port) for more information.</span></span>
+  > <span data-ttu-id="b86aa-190">При использовании этого параметра выполняется мониторинг первого процесса .NET 5.0, который передает результаты обратно в средство. Это означает, что если команда запускает несколько приложений .NET, данные будут собираться только о первом приложении.</span><span class="sxs-lookup"><span data-stu-id="b86aa-190">Using this option monitors the first .NET 5.0 process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app.</span></span> <span data-ttu-id="b86aa-191">Поэтому рекомендуется использовать этот параметр для автономных приложений или с помощью параметра `dotnet exec <app.dll>`.</span><span class="sxs-lookup"><span data-stu-id="b86aa-191">Therefore, it is recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.</span></span>
+
+  > [!NOTE]
+  > <span data-ttu-id="b86aa-192">При запуске исполняемого файла .NET с помощью dotnet-trace выполняется перенаправление входных и выходных данных, и вы не сможете взаимодействовать с его stdin/stdout.</span><span class="sxs-lookup"><span data-stu-id="b86aa-192">Launching a .NET executable via dotnet-counters will make its input/output to be redirected and you won't be able to interact with its stdin/stdout.</span></span> <span data-ttu-id="b86aa-193">Выход из средства с помощью клавиш CTRL+C или SIGTERM приведет к безопасному завершению работы средства и дочернего процесса.</span><span class="sxs-lookup"><span data-stu-id="b86aa-193">Exiting the tool via CTRL+C or SIGTERM will safely end both the tool and the child process.</span></span> <span data-ttu-id="b86aa-194">Если дочерний процесс завершает работу до средства, средство также завершит работу.</span><span class="sxs-lookup"><span data-stu-id="b86aa-194">If the child process exits before the tool, the tool will exit as well.</span></span> <span data-ttu-id="b86aa-195">Если необходимо использовать stdin/stdout, можно применить параметр `--diagnostic-port`.</span><span class="sxs-lookup"><span data-stu-id="b86aa-195">If you need to use stdin/stdout, you can use the `--diagnostic-port` option.</span></span> <span data-ttu-id="b86aa-196">Дополнительные сведения см. в разделе [Использование порта диагностики](#using-diagnostic-port).</span><span class="sxs-lookup"><span data-stu-id="b86aa-196">See [Using diagnostic port](#using-diagnostic-port) for more information.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="3c272-197">В Linux и macOS эта команда ожидает, что целевое приложение и `dotnet-counters` будут совместно использовать одну и ту же переменную среды `TMPDIR`.</span><span class="sxs-lookup"><span data-stu-id="3c272-197">On Linux and macOS, this command expects the target application and `dotnet-counters` to share the same `TMPDIR` environment variable.</span></span>
+> <span data-ttu-id="b86aa-197">В Linux и macOS эта команда ожидает, что целевое приложение и `dotnet-counters` будут совместно использовать одну и ту же переменную среды `TMPDIR`.</span><span class="sxs-lookup"><span data-stu-id="b86aa-197">On Linux and macOS, this command expects the target application and `dotnet-counters` to share the same `TMPDIR` environment variable.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="3c272-198">Для мониторинга метрик с помощью `dotnet-counters` переменную необходимо запустить от имени пользователя, запустившего целевой процесс, или от имени привилегированного пользователя.</span><span class="sxs-lookup"><span data-stu-id="3c272-198">To monitor metrics using `dotnet-counters`, it needs to be run as the same user as the user running target process or as root.</span></span>
+> <span data-ttu-id="b86aa-198">Для мониторинга метрик с помощью `dotnet-counters` переменную необходимо запустить от имени пользователя, запустившего целевой процесс, или от имени привилегированного пользователя.</span><span class="sxs-lookup"><span data-stu-id="b86aa-198">To monitor metrics using `dotnet-counters`, it needs to be run as the same user as the user running target process or as root.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="3c272-199">Если появится сообщение об ошибке, подобное сообщению `[ERROR] System.ComponentModel.Win32Exception (299): A 32 bit processes cannot access modules of a 64 bit process.`, вы пытаетесь использовать средство `dotnet-counters`, разрядность которого не соответствует требуемой целевым процессом.</span><span class="sxs-lookup"><span data-stu-id="3c272-199">If you see an error message similar to the following one: `[ERROR] System.ComponentModel.Win32Exception (299): A 32 bit processes cannot access modules of a 64 bit process.`, you are trying to use `dotnet-counters` that has mismatched bitness against the target process.</span></span> <span data-ttu-id="3c272-200">Скачайте средство с соответствующей разрядностью по ссылке, приведенной в разделе [Установка](#install).</span><span class="sxs-lookup"><span data-stu-id="3c272-200">Make sure to download the correct bitness of the tool in the [install](#install) link.</span></span>
+> <span data-ttu-id="b86aa-199">Если появится сообщение об ошибке, подобное сообщению `[ERROR] System.ComponentModel.Win32Exception (299): A 32 bit processes cannot access modules of a 64 bit process.`, вы пытаетесь использовать средство `dotnet-counters`, разрядность которого не соответствует требуемой целевым процессом.</span><span class="sxs-lookup"><span data-stu-id="b86aa-199">If you see an error message similar to the following one: `[ERROR] System.ComponentModel.Win32Exception (299): A 32 bit processes cannot access modules of a 64 bit process.`, you are trying to use `dotnet-counters` that has mismatched bitness against the target process.</span></span> <span data-ttu-id="b86aa-200">Скачайте средство с соответствующей разрядностью по ссылке, приведенной в разделе [Установка](#install).</span><span class="sxs-lookup"><span data-stu-id="b86aa-200">Make sure to download the correct bitness of the tool in the [install](#install) link.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="3c272-201">Примеры</span><span class="sxs-lookup"><span data-stu-id="3c272-201">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="b86aa-201">Примеры</span><span class="sxs-lookup"><span data-stu-id="b86aa-201">Examples</span></span>
 
-- <span data-ttu-id="3c272-202">Мониторинг всех счетчиков из `System.Runtime` с интервалом обновления 3 секунды:</span><span class="sxs-lookup"><span data-stu-id="3c272-202">Monitor all counters from `System.Runtime` at a refresh interval of 3 seconds:</span></span>
+- <span data-ttu-id="b86aa-202">Мониторинг всех счетчиков из `System.Runtime` с интервалом обновления 3 секунды:</span><span class="sxs-lookup"><span data-stu-id="b86aa-202">Monitor all counters from `System.Runtime` at a refresh interval of 3 seconds:</span></span>
 
   ```console
   > dotnet-counters monitor --process-id 1902  --refresh-interval 3 --counters System.Runtime
@@ -275,7 +276,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
       Working Set (MB)                                              19
   ```
 
-- <span data-ttu-id="3c272-203">Мониторинг только счетчиков использования ЦП и размера кучи GC из `System.Runtime`:</span><span class="sxs-lookup"><span data-stu-id="3c272-203">Monitor just CPU usage and GC heap size from `System.Runtime`:</span></span>
+- <span data-ttu-id="b86aa-203">Мониторинг только счетчиков использования ЦП и размера кучи GC из `System.Runtime`:</span><span class="sxs-lookup"><span data-stu-id="b86aa-203">Monitor just CPU usage and GC heap size from `System.Runtime`:</span></span>
 
   ```console
   > dotnet-counters monitor --process-id 1902 --counters System.Runtime[cpu-usage,gc-heap-size]
@@ -288,7 +289,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
       GC Heap Size (MB)                            811
   ```
 
-- <span data-ttu-id="3c272-204">Мониторинг значений `EventCounter` из определяемых пользователем `EventSource`:</span><span class="sxs-lookup"><span data-stu-id="3c272-204">Monitor `EventCounter` values from user-defined `EventSource`.</span></span> <span data-ttu-id="3c272-205">Дополнительные сведения см. в статье [Руководство. Измерение производительности с помощью EventCounters в .NET Core](event-counter-perf.md).</span><span class="sxs-lookup"><span data-stu-id="3c272-205">For more information, see [Tutorial: Measure performance using EventCounters in .NET Core](event-counter-perf.md).</span></span>
+- <span data-ttu-id="b86aa-204">Мониторинг значений `EventCounter` из определяемых пользователем `EventSource`:</span><span class="sxs-lookup"><span data-stu-id="b86aa-204">Monitor `EventCounter` values from user-defined `EventSource`.</span></span> <span data-ttu-id="b86aa-205">Дополнительные сведения см. в статье [Руководство. Измерение производительности с помощью EventCounters в .NET Core](event-counter-perf.md).</span><span class="sxs-lookup"><span data-stu-id="b86aa-205">For more information, see [Tutorial: Measure performance using EventCounters in .NET Core](event-counter-perf.md).</span></span>
 
   ```console
   > dotnet-counters monitor --process-id 1902 --counters Samples-EventCounterDemos-Minimal
@@ -297,7 +298,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
       request                                      100
   ```
 
-- <span data-ttu-id="3c272-206">Просмотр всех известных счетчиков, доступных в `dotnet-counters`:</span><span class="sxs-lookup"><span data-stu-id="3c272-206">View all well-known counters that are available in `dotnet-counters`:</span></span>
+- <span data-ttu-id="b86aa-206">Просмотр всех известных счетчиков, доступных в `dotnet-counters`:</span><span class="sxs-lookup"><span data-stu-id="b86aa-206">View all well-known counters that are available in `dotnet-counters`:</span></span>
 
   ```console
   > dotnet-counters list
@@ -331,7 +332,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
       failed-requests                    Failed number of requests
   ```
 
-- <span data-ttu-id="3c272-207">Просмотр всех известных счетчиков, доступных в `dotnet-counters` для приложений .NET 5:</span><span class="sxs-lookup"><span data-stu-id="3c272-207">View all well-known counters that are available in `dotnet-counters` for .NET 5 apps:</span></span>
+- <span data-ttu-id="b86aa-207">Просмотр всех известных счетчиков, доступных в `dotnet-counters` для приложений .NET 5:</span><span class="sxs-lookup"><span data-stu-id="b86aa-207">View all well-known counters that are available in `dotnet-counters` for .NET 5 apps:</span></span>
 
   ```console
   > dotnet-counters list --runtime-version 5.0
@@ -387,10 +388,10 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
       current-requests        Current Requests
   ```
 
-- <span data-ttu-id="3c272-208">Запустите `my-aspnet-server.exe` и отслеживайте число сборок, загруженных при запуске (только для .NET 5.0 или более поздних версий):</span><span class="sxs-lookup"><span data-stu-id="3c272-208">Launch `my-aspnet-server.exe` and monitor the # of assemblies loaded from its startup (.NET 5.0 or later only):</span></span>
+- <span data-ttu-id="b86aa-208">Запустите `my-aspnet-server.exe` и отслеживайте число сборок, загруженных при запуске (только для .NET 5.0 или более поздних версий):</span><span class="sxs-lookup"><span data-stu-id="b86aa-208">Launch `my-aspnet-server.exe` and monitor the # of assemblies loaded from its startup (.NET 5.0 or later only):</span></span>
 
   > [!IMPORTANT]
-  > <span data-ttu-id="3c272-209">Это работает только для приложений, использующих .NET 5.0 или более поздней версии.</span><span class="sxs-lookup"><span data-stu-id="3c272-209">This works for apps running .NET 5.0 or later only.</span></span>
+  > <span data-ttu-id="b86aa-209">Это работает только для приложений, использующих .NET 5.0 или более поздней версии.</span><span class="sxs-lookup"><span data-stu-id="b86aa-209">This works for apps running .NET 5.0 or later only.</span></span>
 
   ```console
   > dotnet-counters monitor --counters System.Runtime[assembly-count] -- my-aspnet-server.exe
@@ -402,10 +403,10 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
       Number of Assemblies Loaded                   24
   ```
   
-- <span data-ttu-id="3c272-210">Запустите `my-aspnet-server.exe` с `arg1` и `arg2` в качестве аргументов командной строки и отслеживайте рабочий набор и размер кучи сборки мусора при запуске (только для .NET 5.0 или более поздней версии):</span><span class="sxs-lookup"><span data-stu-id="3c272-210">Launch `my-aspnet-server.exe` with `arg1` and `arg2` as command-line arguments and monitor its working set and GC heap size from its startup (.NET 5.0 or later only):</span></span>
+- <span data-ttu-id="b86aa-210">Запустите `my-aspnet-server.exe` с `arg1` и `arg2` в качестве аргументов командной строки и отслеживайте рабочий набор и размер кучи сборки мусора при запуске (только для .NET 5.0 или более поздней версии):</span><span class="sxs-lookup"><span data-stu-id="b86aa-210">Launch `my-aspnet-server.exe` with `arg1` and `arg2` as command-line arguments and monitor its working set and GC heap size from its startup (.NET 5.0 or later only):</span></span>
 
   > [!IMPORTANT]
-  > <span data-ttu-id="3c272-211">Это работает только для приложений, использующих .NET 5.0 или более поздней версии.</span><span class="sxs-lookup"><span data-stu-id="3c272-211">This works for apps running .NET 5.0 or later only.</span></span>
+  > <span data-ttu-id="b86aa-211">Это работает только для приложений, использующих .NET 5.0 или более поздней версии.</span><span class="sxs-lookup"><span data-stu-id="b86aa-211">This works for apps running .NET 5.0 or later only.</span></span>
 
   ```console
   > dotnet-counters monitor --counters System.Runtime[working-set,gc-heap-size] -- my-aspnet-server.exe arg1 arg2
@@ -420,17 +421,17 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
       Working Set (MB)                                  59
   ```
 
-## <a name="dotnet-counters-ps"></a><span data-ttu-id="3c272-212">dotnet-counters ps</span><span class="sxs-lookup"><span data-stu-id="3c272-212">dotnet-counters ps</span></span>
+## <a name="dotnet-counters-ps"></a><span data-ttu-id="b86aa-212">dotnet-counters ps</span><span class="sxs-lookup"><span data-stu-id="b86aa-212">dotnet-counters ps</span></span>
 
-<span data-ttu-id="3c272-213">Отображение списка процессов dotnet, которые можно отслеживать.</span><span class="sxs-lookup"><span data-stu-id="3c272-213">Display a list of dotnet processes that can be monitored.</span></span>
+<span data-ttu-id="b86aa-213">Отображение списка процессов dotnet, которые можно отслеживать.</span><span class="sxs-lookup"><span data-stu-id="b86aa-213">Display a list of dotnet processes that can be monitored.</span></span>
 
-### <a name="synopsis"></a><span data-ttu-id="3c272-214">Краткий обзор</span><span class="sxs-lookup"><span data-stu-id="3c272-214">Synopsis</span></span>
+### <a name="synopsis"></a><span data-ttu-id="b86aa-214">Краткий обзор</span><span class="sxs-lookup"><span data-stu-id="b86aa-214">Synopsis</span></span>
 
 ```console
 dotnet-counters ps [-h|--help]
 ```
 
-### <a name="example"></a><span data-ttu-id="3c272-215">Пример</span><span class="sxs-lookup"><span data-stu-id="3c272-215">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b86aa-215">Пример</span><span class="sxs-lookup"><span data-stu-id="b86aa-215">Example</span></span>
 
 ```console
 > dotnet-counters ps
@@ -439,38 +440,38 @@ dotnet-counters ps [-h|--help]
   16324 dotnet     /usr/local/share/dotnet/dotnet
 ```
 
-## <a name="using-diagnostic-port"></a><span data-ttu-id="3c272-216">Использование порта диагностики</span><span class="sxs-lookup"><span data-stu-id="3c272-216">Using diagnostic port</span></span>
+## <a name="using-diagnostic-port"></a><span data-ttu-id="b86aa-216">Использование порта диагностики</span><span class="sxs-lookup"><span data-stu-id="b86aa-216">Using diagnostic port</span></span>
 
   > [!IMPORTANT]
-  > <span data-ttu-id="3c272-217">Это работает только для приложений, использующих .NET 5.0 или более поздней версии.</span><span class="sxs-lookup"><span data-stu-id="3c272-217">This works for apps running .NET 5.0 or later only.</span></span>
+  > <span data-ttu-id="b86aa-217">Это работает только для приложений, использующих .NET 5.0 или более поздней версии.</span><span class="sxs-lookup"><span data-stu-id="b86aa-217">This works for apps running .NET 5.0 or later only.</span></span>
 
-<span data-ttu-id="3c272-218">Порт диагностики — это новый компонент среды выполнения, который появился в .NET 5. Он позволяет запускать мониторинг или сбор данных счетчиков во время запуска приложения.</span><span class="sxs-lookup"><span data-stu-id="3c272-218">Diagnostic port is a new runtime feature that was added in .NET 5 that allows you to start monitoring or collecting counters from app startup.</span></span> <span data-ttu-id="3c272-219">Чтобы сделать это с помощью `dotnet-counters`, можно использовать либо `dotnet-counters <collect|monitor> -- <command>`, как показано в приведенных выше примерах, либо параметр `--diagnostic-port`.</span><span class="sxs-lookup"><span data-stu-id="3c272-219">To do this using `dotnet-counters`, you can either use `dotnet-counters <collect|monitor> -- <command>` as described in the examples above, or use the `--diagnostic-port` option.</span></span>
+<span data-ttu-id="b86aa-218">Порт диагностики — это новый компонент среды выполнения, который появился в .NET 5. Он позволяет запускать мониторинг или сбор данных счетчиков во время запуска приложения.</span><span class="sxs-lookup"><span data-stu-id="b86aa-218">Diagnostic port is a new runtime feature that was added in .NET 5 that allows you to start monitoring or collecting counters from app startup.</span></span> <span data-ttu-id="b86aa-219">Чтобы сделать это с помощью `dotnet-counters`, можно использовать либо `dotnet-counters <collect|monitor> -- <command>`, как показано в приведенных выше примерах, либо параметр `--diagnostic-port`.</span><span class="sxs-lookup"><span data-stu-id="b86aa-219">To do this using `dotnet-counters`, you can either use `dotnet-counters <collect|monitor> -- <command>` as described in the examples above, or use the `--diagnostic-port` option.</span></span>
 
-<span data-ttu-id="3c272-220">Использование `dotnet-counters <collect|monitor> -- <command>` для запуска приложения в качестве дочернего процесса — самый простой способ быстрого отслеживания приложения с момента запуска.</span><span class="sxs-lookup"><span data-stu-id="3c272-220">Using `dotnet-counters <collect|monitor> -- <command>` to launch the application as a child process is the simplest way to quickly monitor it from its startup.</span></span>
+<span data-ttu-id="b86aa-220">Использование `dotnet-counters <collect|monitor> -- <command>` для запуска приложения в качестве дочернего процесса — самый простой способ быстрого отслеживания приложения с момента запуска.</span><span class="sxs-lookup"><span data-stu-id="b86aa-220">Using `dotnet-counters <collect|monitor> -- <command>` to launch the application as a child process is the simplest way to quickly monitor it from its startup.</span></span>
 
-<span data-ttu-id="3c272-221">Однако если требуется более точное управление временем отслеживания приложения (например, отслеживать приложение только в течение первых 10 минут, а затем продолжать выполнение), или если необходимо взаимодействовать с приложением их интерфейса командной строки, используйте параметр `--diagnostic-port`, который позволяет управлять как отслеживаемым целевым приложением, так и `dotnet-counters`.</span><span class="sxs-lookup"><span data-stu-id="3c272-221">However, when you want to gain a finer control over the lifetime of the app being monitored (for example, monitor the app for the first 10 minutes only and continue executing) or if you need to interact with the app using the CLI, using `--diagnostic-port` option allows you to control both the target app being monitored and `dotnet-counters`.</span></span>
+<span data-ttu-id="b86aa-221">Однако если требуется более точное управление временем отслеживания приложения (например, отслеживать приложение только в течение первых 10 минут, а затем продолжать выполнение), или если необходимо взаимодействовать с приложением их интерфейса командной строки, используйте параметр `--diagnostic-port`, который позволяет управлять как отслеживаемым целевым приложением, так и `dotnet-counters`.</span><span class="sxs-lookup"><span data-stu-id="b86aa-221">However, when you want to gain a finer control over the lifetime of the app being monitored (for example, monitor the app for the first 10 minutes only and continue executing) or if you need to interact with the app using the CLI, using `--diagnostic-port` option allows you to control both the target app being monitored and `dotnet-counters`.</span></span>
 
-1. <span data-ttu-id="3c272-222">Следующая команда заставляет dotnet-counters создать сокет диагностики с именем `myport.sock` и ожидать соединения.</span><span class="sxs-lookup"><span data-stu-id="3c272-222">The command below makes dotnet-counters create a diagnostics socket named `myport.sock` and wait for a connection.</span></span>
+1. <span data-ttu-id="b86aa-222">Следующая команда заставляет dotnet-counters создать сокет диагностики с именем `myport.sock` и ожидать соединения.</span><span class="sxs-lookup"><span data-stu-id="b86aa-222">The command below makes dotnet-counters create a diagnostics socket named `myport.sock` and wait for a connection.</span></span>
 
     > ```dotnet-cli
     > dotnet-counters collect --diagnostic-port myport.sock
     > ```
 
-    <span data-ttu-id="3c272-223">Выходные данные:</span><span class="sxs-lookup"><span data-stu-id="3c272-223">Output:</span></span>
+    <span data-ttu-id="b86aa-223">Выходные данные:</span><span class="sxs-lookup"><span data-stu-id="b86aa-223">Output:</span></span>
 
     > ```bash
     > Waiting for connection on myport.sock
     > Start an application with the following environment variable: DOTNET_DiagnosticPorts=/home/user/myport.sock
     > ```
 
-2. <span data-ttu-id="3c272-224">В отдельной консоли запустите целевое приложение с переменной среды `DOTNET_DiagnosticPorts`, для которой задано значение в выходных данных `dotnet-counters`.</span><span class="sxs-lookup"><span data-stu-id="3c272-224">In a separate console, launch the target application with the environment variable `DOTNET_DiagnosticPorts` set to the value in the `dotnet-counters` output.</span></span>
+2. <span data-ttu-id="b86aa-224">В отдельной консоли запустите целевое приложение с переменной среды `DOTNET_DiagnosticPorts`, для которой задано значение в выходных данных `dotnet-counters`.</span><span class="sxs-lookup"><span data-stu-id="b86aa-224">In a separate console, launch the target application with the environment variable `DOTNET_DiagnosticPorts` set to the value in the `dotnet-counters` output.</span></span>
 
     > ```bash
     > export DOTNET_DiagnosticPorts=/home/user/myport.sock
     > ./my-dotnet-app arg1 arg2
     > ```
 
-    <span data-ttu-id="3c272-225">Это должно позволить `dotnet-counters` запустить сбор данных счетчиков в `my-dotnet-app`:</span><span class="sxs-lookup"><span data-stu-id="3c272-225">This should then enable `dotnet-counters` to start collecting counters on `my-dotnet-app`:</span></span>
+    <span data-ttu-id="b86aa-225">Это должно позволить `dotnet-counters` запустить сбор данных счетчиков в `my-dotnet-app`:</span><span class="sxs-lookup"><span data-stu-id="b86aa-225">This should then enable `dotnet-counters` to start collecting counters on `my-dotnet-app`:</span></span>
 
     > ```bash
     > Waiting for connection on myport.sock
@@ -479,4 +480,4 @@ dotnet-counters ps [-h|--help]
     > ```
 
     > [!IMPORTANT]
-    > <span data-ttu-id="3c272-226">Запуск приложения с помощью `dotnet run` может привести к проблемам: интерфейс командной строки dotnet может порождать множество дочерних процессов, которые не являются вашим приложением, и они могут подключаться к `dotnet-counters` до приложения, в результате чего ваше приложение будет приостановлено во время выполнения.</span><span class="sxs-lookup"><span data-stu-id="3c272-226">Launching your app with `dotnet run` can be problematic because the dotnet CLI may spawn many child processes that are not your app and they can connect to `dotnet-counters` before your app, leaving your app to be suspended at runtime.</span></span> <span data-ttu-id="3c272-227">Рекомендуется использовать автономную версию приложения или запускать его с помощью `dotnet exec`.</span><span class="sxs-lookup"><span data-stu-id="3c272-227">It is recommended you directly use a self-contained version of the app or use `dotnet exec` to launch the application.</span></span>
+    > <span data-ttu-id="b86aa-226">Запуск приложения с помощью `dotnet run` может привести к проблемам: интерфейс командной строки dotnet может порождать множество дочерних процессов, которые не являются вашим приложением, и они могут подключаться к `dotnet-counters` до приложения, в результате чего ваше приложение будет приостановлено во время выполнения.</span><span class="sxs-lookup"><span data-stu-id="b86aa-226">Launching your app with `dotnet run` can be problematic because the dotnet CLI may spawn many child processes that are not your app and they can connect to `dotnet-counters` before your app, leaving your app to be suspended at runtime.</span></span> <span data-ttu-id="b86aa-227">Рекомендуется использовать автономную версию приложения или запускать его с помощью `dotnet exec`.</span><span class="sxs-lookup"><span data-stu-id="b86aa-227">It is recommended you directly use a self-contained version of the app or use `dotnet exec` to launch the application.</span></span>
