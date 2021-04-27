@@ -2,12 +2,12 @@
 title: Жизненный цикл контейнерного приложения Docker на основе платформы и средств Майкрософт
 description: Общий обзор процесса разработки и развертывания контейнерных приложений с помощью Docker, а также платформы и средств Microsoft.
 ms.date: 01/06/2021
-ms.openlocfilehash: 94c277e349bacee9b9fc7b160043005dd4135958
-ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
+ms.openlocfilehash: 0b3c12800108eda84241252f32c6f54adb99e481
+ms.sourcegitcommit: 02cc87f02c46e603ea5925de95af746b7ab46a35
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97970119"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "107954735"
 ---
 # <a name="containerized-docker-application-lifecycle-with-microsoft-platform-and-tools"></a>Жизненный цикл контейнерного приложения Docker на основе платформы и средств Майкрософт
 
@@ -58,6 +58,8 @@ ms.locfileid: "97970119"
 > **Мигель Велосо** (Miguel Veloso), инженер по разработке программного обеспечения в Plain Concepts
 >
 > **Самит Гош (Sumit Ghosh)** , главный консультант в Neudesic
+>
+> **Колин Дембовски (Colin Dembovsky)** , руководитель по применению DevOps, Cognizant Microsoft Business Group
 
 ## <a name="copyright"></a>Copyright
 

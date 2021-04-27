@@ -12,12 +12,12 @@ helpviewer_keywords:
 - managed code analysis rules, performance rules
 author: gewarren
 ms.author: gewarren
-ms.openlocfilehash: 4409cc46eb73f13f8e59d7a51899da27035bb6af
-ms.sourcegitcommit: 05d0087dfca85aac9ca2960f86c5efd218bf833f
+ms.openlocfilehash: 04177030afcae3a3081eb98592dd273f81021cef
+ms.sourcegitcommit: 02cc87f02c46e603ea5925de95af746b7ab46a35
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "96592401"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "107954905"
 ---
 # <a name="performance-rules"></a>Правила производительности
 
@@ -55,3 +55,4 @@ ms.locfileid: "96592401"
 | [CA1836: используйте `IsEmpty` вместо `Count` по возможности](ca1836.md) | Используйте свойство `IsEmpty`, которое более эффективно, чем `Count`, `Length`, <xref:System.Linq.Enumerable.Count%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> или <xref:System.Linq.Enumerable.LongCount%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29>, чтобы определить, содержит ли объект какие-либо элементы. |
 | [CA1837: используйте `Environment.ProcessId` вместо `Process.GetCurrentProcess().Id`](ca1837.md) | `Environment.ProcessId` проще и быстрее, чем `Process.GetCurrentProcess().Id`. |
 | [CA1838: не используйте параметры `StringBuilder` для вызовов P/Invoke](ca1838.md) | При маршалировании `StringBuilder` всегда создается собственная копия буфера, что приводит к множественным выделениям для одной операции маршалирования. |
+| [CA1841: предпочитайте словари, содержащие методы](ca1841.md) | Вызов `Contains` в `Keys` или в коллекции `Values` может быть более затратным, чем вызов `ContainsKey` или `ContainsValue` в самом словаре. |

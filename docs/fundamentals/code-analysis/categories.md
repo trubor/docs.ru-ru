@@ -5,12 +5,12 @@ ms.date: 02/05/2021
 ms.topic: reference
 helpviewer_keywords:
 - code analysis, categories
-ms.openlocfilehash: fdb4662f52a13906a2d9bcb3fd9a90860e394e72
-ms.sourcegitcommit: 05d0087dfca85aac9ca2960f86c5efd218bf833f
+ms.openlocfilehash: 1fdb3fbf5c316d8ebeb2877a9f505c0894449405
+ms.sourcegitcommit: 02cc87f02c46e603ea5925de95af746b7ab46a35
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "100467333"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "107954892"
 ---
 # <a name="rule-categories"></a>Категории правил
 
@@ -27,7 +27,7 @@ ms.locfileid: "100467333"
 | [Правила удобства поддержки](quality-rules/maintainability-warnings.md) | Правила удобства поддержки распространяются на обслуживание библиотек и приложений. |
 | [Правила именования](quality-rules/naming-warnings.md) | Правила именования поддерживают соблюдение соглашений об именовании в соответствии с рекомендациями по проектированию .NET. |
 | [Правила производительности](quality-rules/performance-warnings.md) | Правила производительности поддерживают высокоэффективные библиотеки и приложения. |
-| [Правила публикации](quality-rules/publish-warnings.md) | Правила публикации поддерживают приложения с одним файлом. |
+| [Правила для одного файла](quality-rules/singlefile-warnings.md) | Правила для одного файла поддерживают приложения с одним файлом. |
 | [Правила надежности](quality-rules/reliability-warnings.md) | Правила надежности поддерживают безотказность библиотек и приложений, например посредством правильного использования памяти и потоков. |
 | [Правила безопасности](quality-rules/security-warnings.md) | Правила безопасности поддерживают безопасность библиотек и приложений. Эти предупреждения помогают устранить уязвимости в программе. |
 | [Правила стилей](style-rules/index.md) | Правила стилей поддерживают единообразный стиль кода в базе кода. Эти правила начинаются с префикса "IDE". |
