@@ -27,10 +27,6 @@ items:
                 items:
                   - name: 'Сборки, удаленные с общей платформы'
                     href: aspnet-core/6.0/assemblies-removed-from-shared-framework.md
-                  - name: "Изменения в аннотациях ссылочного типа, допускающих значения\_NULL"
-                    href: aspnet-core/6.0/nullable-reference-type-annotations-changed.md
-                  - name: Устаревшие и удаленные API
-                    href: aspnet-core/6.0/obsolete-removed-apis.md
                   - name: 'Blazor: изменено имя параметра в методе RequestImageFileAsync'
                     href: aspnet-core/6.0/blazor-parameter-name-changed-in-method.md
                   - name: 'Blazor: свойство WebEventDescriptor.EventArgsType заменено'
@@ -41,20 +37,30 @@ items:
                     href: aspnet-core/6.0/messagepack-library-change.md
                   - name: 'ПО промежуточного слоя: ПО промежуточного слоя перенаправления HTTPS создает исключение для неоднозначных портов HTTPS'
                     href: aspnet-core/6.0/middleware-ambiguous-https-ports-exception.md
+                  - name: "Изменения в аннотациях ссылочного типа, допускающих значения\_NULL"
+                    href: aspnet-core/6.0/nullable-reference-type-annotations-changed.md
+                  - name: Устаревшие и удаленные API
+                    href: aspnet-core/6.0/obsolete-removed-apis.md
+                  - name: PreserveCompilationContext не настроен по умолчанию
+                    href: aspnet-core/6.0/preservecompilationcontext-not-set-by-default.md
                   - name: Razor. Компилятор создает единую сборку
                     href: aspnet-core/6.0/razor-compiler-doesnt-produce-views-assembly.md
                   - name: Razor. Интерфейсы API RazorEngine помечены как устаревшие
                     href: aspnet-core/6.0/razor-engine-apis-obsolete.md
+                  - name: 'SignalR: клиент Java обновлен до RxJava3'
+                    href: aspnet-core/6.0/signalr-java-client-updated.md
               - name: Библиотеки Core .NET
                 items:
-                  - name: Изменения аннотации о допустимости значений NULL
-                    href: core-libraries/6.0/nullable-ref-type-annotation-changes.md
                   - name: Новые перегрузки опрашиваемых методов
                     href: core-libraries/6.0/additional-linq-queryable-method-overloads.md
+                  - name: Изменения аннотации о допустимости значений NULL
+                    href: core-libraries/6.0/nullable-ref-type-annotation-changes.md
                   - name: 'Переименованы параметры в типах, производных от Stream'
                     href: core-libraries/6.0/parameters-renamed-on-stream-derived-types.md
                   - name: Значение точности при анализе стандартных числовых форматов
                     href: core-libraries/6.0/numeric-format-parsing-handles-higher-precision.md
+                  - name: Необработанные исключения от BackgroundService
+                    href: core-libraries/6.0/hosting-exception-handling.md
               - name: Windows Forms
                 items:
                   - name: API вызывают исключение ArgumentNullException
@@ -73,6 +79,8 @@ items:
                 href: 5.0.md
               - name: ASP.NET Core
                 items:
+                  - name: Метод AddDataAnnotationsValidation добавлен в число нерекомендуемых
+                    href: aspnet-core/6.0/adddataannotationsvalidation-obsolete.md
                   - name: "Приложения ASP.NET\_Core с поддержкой десериализации заключенных в кавычки чисел"
                     href: serialization/5.0/jsonserializer-allows-reading-numbers-as-strings.md
                   - name: Устаревшие API-интерфейсы AzureAD.UI и AzureADB2C.UI
@@ -337,12 +345,10 @@ items:
             items:
               - name: ".NET\_6"
                 items:
+                  - name: Метод AddDataAnnotationsValidation добавлен в число нерекомендуемых
+                    href: aspnet-core/6.0/adddataannotationsvalidation-obsolete.md
                   - name: 'Сборки, удаленные с общей платформы'
                     href: aspnet-core/6.0/assemblies-removed-from-shared-framework.md
-                  - name: "Изменения в аннотациях ссылочного типа, допускающих значения\_NULL"
-                    href: aspnet-core/6.0/nullable-reference-type-annotations-changed.md
-                  - name: Устаревшие и удаленные API
-                    href: aspnet-core/6.0/obsolete-removed-apis.md
                   - name: 'Blazor: изменено имя параметра в методе RequestImageFileAsync'
                     href: aspnet-core/6.0/blazor-parameter-name-changed-in-method.md
                   - name: 'Blazor: свойство WebEventDescriptor.EventArgsType заменено'
@@ -353,10 +359,18 @@ items:
                     href: aspnet-core/6.0/messagepack-library-change.md
                   - name: 'ПО промежуточного слоя: ПО промежуточного слоя перенаправления HTTPS создает исключение для неоднозначных портов HTTPS'
                     href: aspnet-core/6.0/middleware-ambiguous-https-ports-exception.md
+                  - name: "Изменения в аннотациях ссылочного типа, допускающих значения\_NULL"
+                    href: aspnet-core/6.0/nullable-reference-type-annotations-changed.md
+                  - name: Устаревшие и удаленные API
+                    href: aspnet-core/6.0/obsolete-removed-apis.md
+                  - name: PreserveCompilationContext не настроен по умолчанию
+                    href: aspnet-core/6.0/preservecompilationcontext-not-set-by-default.md
                   - name: Razor. Компилятор создает единую сборку
                     href: aspnet-core/6.0/razor-compiler-doesnt-produce-views-assembly.md
                   - name: Razor. Интерфейсы API RazorEngine помечены как устаревшие
                     href: aspnet-core/6.0/razor-engine-apis-obsolete.md
+                  - name: 'SignalR: клиент Java обновлен до RxJava3'
+                    href: aspnet-core/6.0/signalr-java-client-updated.md
               - name: ".NET\_5"
                 items:
                   - name: "Приложения ASP.NET\_Core с поддержкой десериализации заключенных в кавычки чисел"
@@ -457,14 +471,16 @@ items:
             items:
               - name: ".NET\_6"
                 items:
-                  - name: Изменения аннотации о допустимости значений NULL
-                    href: core-libraries/6.0/nullable-ref-type-annotation-changes.md
                   - name: Новые перегрузки опрашиваемых методов
                     href: core-libraries/6.0/additional-linq-queryable-method-overloads.md
+                  - name: Изменения аннотации о допустимости значений NULL
+                    href: core-libraries/6.0/nullable-ref-type-annotation-changes.md
                   - name: 'Переименованы параметры в типах, производных от Stream'
                     href: core-libraries/6.0/parameters-renamed-on-stream-derived-types.md
                   - name: Значение точности при анализе стандартных числовых форматов
                     href: core-libraries/6.0/numeric-format-parsing-handles-higher-precision.md
+                  - name: Необработанные исключения от BackgroundService
+                    href: core-libraries/6.0/hosting-exception-handling.md
               - name: ".NET\_5"
                 items:
                   - name: 'Изменения в API, связанные со сборкой, для публикации с одним файлом'
