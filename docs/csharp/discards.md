@@ -3,12 +3,12 @@ title: Пустые переменные — руководство по язы
 description: В этой статье приведены сведения о поддержке в C# пустых переменных (переменных, которым не присваиваются значения) и описаны способы их использования.
 ms.technology: csharp-fundamentals
 ms.date: 09/22/2020
-ms.openlocfilehash: eefa81d3bd8d56c9296e01533aaf93c4725323a3
-ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
+ms.openlocfilehash: c3dd55ea703e3061e44b50c5fe4654f53ebf1595
+ms.sourcegitcommit: 02cc87f02c46e603ea5925de95af746b7ab46a35
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102104956"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "107954527"
 ---
 # <a name="discards---c-guide"></a>Пустые переменные — руководство по языку C#
 
@@ -85,5 +85,5 @@ ms.locfileid: "102104956"
 ## <a name="see-also"></a>См. также раздел
 
 - [Деконструкция кортежей и других типов](deconstruct.md)
-- [Ключевое слово `is`](language-reference/keywords/is.md)
+- [Оператор `is`](language-reference/operators/is.md)
 - [Ключевое слово `switch`](language-reference/keywords/switch.md)

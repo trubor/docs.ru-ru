@@ -2,12 +2,13 @@
 title: Средство диагностики dotnet-gcdump — .NET CLI
 description: Узнайте, как установить и использовать средство CLI dotnet-gcdump для сбора дампов сборщика мусора активных процессов .NET с помощью .NET EventPipe.
 ms.date: 11/17/2020
-ms.openlocfilehash: fe7772eed642daadbd1754627751f58d0ab57b8e
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.topic: reference
+ms.openlocfilehash: 71f0ff3ee39ae89d56a271d3cc6dd9624681885c
+ms.sourcegitcommit: 8f71a6c655a9c39d5223401aed76c02ba00e03ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98188573"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107740791"
 ---
 # <a name="heap-analysis-tool-dotnet-gcdump"></a>Средство анализа кучи (dotnet-gcdump)
 

@@ -2,12 +2,12 @@
 title: Рекомендации по форматированию кода F#
 description: 'Ознакомьтесь с рекомендациями по форматированию кода F #.'
 ms.date: 08/31/2020
-ms.openlocfilehash: 81956844e8f868d428d9bdfa9ed8afed1d850628
-ms.sourcegitcommit: 02cc87f02c46e603ea5925de95af746b7ab46a35
+ms.openlocfilehash: dcff88d039f45e16492bd001a60bd9aa83c5325a
+ms.sourcegitcommit: 381b773c9962aca5f8d0b973d0653c0f4edcc4d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "107954813"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "108013714"
 ---
 # <a name="f-code-formatting-guidelines"></a>Рекомендации по форматированию кода F#
 
@@ -896,6 +896,46 @@ elif cond3 then
     e3
 else
     e4
+```
+
+Если условие является длинным, поместите его на следующую строку с дополнительным отступом.
+Выровняйте `if` `then` Ключевые слова и.
+
+```fsharp
+if
+    complexExpression a b && env.IsDevelopment()
+    || secondLongerExpression
+        aVeryLongparameterNameOne
+        aVeryLongparameterNameTwo
+        aVeryLongparameterNameThree
+        """
+Multiline 
+    string
+        """
+then
+        e1
+    else
+        e2
+```
+
+Если у вас есть условие, которое является длинным, сначала рассмотрите возможность его рефакторинга в отдельную функцию и вызов этой функции.
+
+```fsharp
+let condition () =
+    complexExpression a b && env.IsDevelopment()
+    || secondLongerExpression
+        aVeryLongparameterNameOne
+        aVeryLongparameterNameTwo
+        aVeryLongparameterNameThree
+        """
+Multiline 
+    string
+        """
+
+if condition () then
+    e1
+else
+    e2
 ```
 
 ### <a name="pattern-matching-constructs"></a>Конструкции сопоставления шаблонов

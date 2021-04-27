@@ -11,18 +11,18 @@ helpviewer_keywords:
 - and keyword [C#]
 - or keyword [C#]
 - not keyword [C#]
-ms.openlocfilehash: cac2208d41bca2c6befecffbe4bb0b8ca43042bc
-ms.sourcegitcommit: 089068389671f6f9e15fd67dcbfb0145bf72f1fb
+ms.openlocfilehash: cb3517516b09e21483985b04977313617a3a26fe
+ms.sourcegitcommit: 02cc87f02c46e603ea5925de95af746b7ab46a35
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "106499081"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "107954722"
 ---
 # <a name="patterns-c-reference"></a>Шаблоны (справочник по C#)
 
 Возможность использовать сопоставление шаблонов впервые появилась в C# 7.0. С тех пор в каждой новой основной версии C# возможности сопоставления шаблонов расширяются. Сопоставление шаблонов поддерживают следующие выражения и операторы C#:
 
-- [Выражение `is`](../keywords/is.md)
+- [Выражение `is`](is.md)
 - [Оператор](../keywords/switch.md) `switch`
 - [Выражение](switch-expression.md) `switch` (появилось в C# 8.0)
 

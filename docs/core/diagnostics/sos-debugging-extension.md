@@ -2,16 +2,17 @@
 title: Расширение отладки SOS для .NET
 description: Сведения о расширении отладки SOS для .NET, которое предоставляет информацию о внутренней среде CLR.
 ms.date: 12/21/2020
+ms.topic: reference
 helpviewer_keywords:
 - debugging extensions
 - SOS debugging extensions
 - SOS.dll
-ms.openlocfilehash: a24b946c4ffda59e17f61c065d2846dc1a6effe0
-ms.sourcegitcommit: c0b803bffaf101e12f071faf94ca21b46d04ff30
+ms.openlocfilehash: 3bbf7dd34b85434a338f1b0e0d38a652246e8da4
+ms.sourcegitcommit: 8f71a6c655a9c39d5223401aed76c02ba00e03ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97764972"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107740583"
 ---
 # <a name="sos-debugging-extension"></a>Расширение отладки SOS
 

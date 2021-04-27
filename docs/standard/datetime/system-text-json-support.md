@@ -12,16 +12,16 @@ helpviewer_keywords:
 - JSON Serializer, JSON Reader, JSON Writer
 - Converter, JSON Converter, DateTime Converter
 - ISO, ISO 8601, ISO 8601-1:2019
-ms.openlocfilehash: 77b83fae039321a2fe6ef6279a7cab8886484e23
-ms.sourcegitcommit: 02cc87f02c46e603ea5925de95af746b7ab46a35
+ms.openlocfilehash: 652725192b00ef42a2c51a1ae710239e72203dc9
+ms.sourcegitcommit: 381b773c9962aca5f8d0b973d0653c0f4edcc4d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "107954787"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "108013792"
 ---
 # <a name="datetime-and-datetimeoffset-support-in-systemtextjson"></a>Поддержка DateTime и DateTimeOffset в System.Text.Json
 
-System.Text.Jsв библиотеке выполняет синтаксический анализ и запись <xref:System.DateTime> и <xref:System.DateTimeOffset> значения в соответствии с расширенным профилем ISO 8601:-2019.
+System.Text.Jsв библиотеке выполняет синтаксический анализ и запись <xref:System.DateTime> и <xref:System.DateTimeOffset> значения в соответствии с расширенным профилем ISO 8601-1:2019.
 [Преобразователи](xref:System.Text.Json.Serialization.JsonConverter%601) обеспечивают пользовательскую поддержку сериализации и десериализации с помощью <xref:System.Text.Json.JsonSerializer> .
 Пользовательская поддержка также может быть реализована при использовании <xref:System.Text.Json.Utf8JsonReader> и <xref:System.Text.Json.Utf8JsonWriter> .
 

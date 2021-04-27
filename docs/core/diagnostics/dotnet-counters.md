@@ -2,12 +2,13 @@
 title: Средство диагностики dotnet-counters — .NET CLI
 description: Узнайте, как установить и использовать средство CLI dotnet-counter для нерегламентированного мониторинга работоспособности и анализа производительности первого уровня.
 ms.date: 11/17/2020
-ms.openlocfilehash: 1c802e33602c2d8f18600b9771a1f68e722d8fdf
-ms.sourcegitcommit: f0fc5db7bcbf212e46933e9cf2d555bb82666141
+ms.topic: reference
+ms.openlocfilehash: 436db72677186b5fcc8b560451b69e616870f66e
+ms.sourcegitcommit: 8f71a6c655a9c39d5223401aed76c02ba00e03ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100583309"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107740804"
 ---
 # <a name="investigate-performance-counters-dotnet-counters"></a>Исследование счетчиков производительности (dotnet-counter)
 

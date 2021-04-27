@@ -4,12 +4,13 @@ description: Узнайте, как использовать API поставщ�
 author: IEvangelist
 ms.author: dapine
 ms.date: 03/08/2021
-ms.openlocfilehash: 5f248c93de1773a8bbe8209f002806fb196bb260
-ms.sourcegitcommit: 46cfed35d79d70e08c313b9c664c7e76babab39e
+ms.topic: reference
+ms.openlocfilehash: d92afcee6a06c39d1491abc3d7c398667045fd97
+ms.sourcegitcommit: 8f71a6c655a9c39d5223401aed76c02ba00e03ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102605013"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107740817"
 ---
 # <a name="configuration-providers-in-net"></a>Поставщики конфигурации в .NET
 

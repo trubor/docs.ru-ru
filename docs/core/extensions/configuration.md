@@ -5,12 +5,12 @@ author: IEvangelist
 ms.author: dapine
 ms.date: 09/16/2020
 ms.topic: overview
-ms.openlocfilehash: 5955e46c2f5acb6776ada4e3fd6a65507d3faa1f
-ms.sourcegitcommit: ecd9e9bb2225eb76f819722ea8b24988fe46f34c
+ms.openlocfilehash: 0b94ac1a4338a0158f200dc24be45f47f60b41cf
+ms.sourcegitcommit: 178ccefa8c454bfae844ce12ed222a54913df157
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "102402110"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107883297"
 ---
 # <a name="configuration-in-net"></a>Конфигурация в .NET
 
@@ -36,7 +36,7 @@ ms.locfileid: "102402110"
 1. [ChainedConfigurationProvider](xref:Microsoft.Extensions.Configuration.ChainedConfigurationSource): добавляет существующий `IConfiguration` в качестве источника.
 1. Файл *appsettings.json*, использующий [поставщик конфигурации JSON](configuration-providers.md#file-configuration-provider).
 1. Файл *appsettings.* `Environment` *.json*, использующий [поставщик конфигурации JSON](configuration-providers.md#file-configuration-provider). Например, *appsettings*.***Production**_._json* и *appsettings*.***Development** _._json*.
-1. Секреты приложения, когда приложение выполняется в среде `Development`.
+1. [Секреты приложения](/aspnet/core/security/app-secrets), когда приложение выполняется в среде `Development`.
 1. Переменные среды, использующие [поставщик конфигурации переменных среды](configuration-providers.md#environment-variable-configuration-provider).
 1. Аргументы командной строки, использующие [поставщик конфигурации командной строки](configuration-providers.md#command-line-configuration-provider).
 

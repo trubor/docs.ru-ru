@@ -2,12 +2,12 @@
 title: Инфраструктура как код
 description: Применение инфраструктуры в качестве кода (IaC) с собственными приложениями в облаке
 ms.date: 05/13/2020
-ms.openlocfilehash: 5a7cd3a0b4906b1a4aec9e1015d6128867ae9963
-ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
+ms.openlocfilehash: 91e309440cac1c40a3dfa5848d51e87c09340c74
+ms.sourcegitcommit: 381b773c9962aca5f8d0b973d0653c0f4edcc4d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102255448"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "108013584"
 ---
 # <a name="infrastructure-as-code"></a>Инфраструктура как код
 
@@ -68,7 +68,7 @@ ARM означает [Azure Resource Manager](/azure/azure-resource-manager/mana
 
 Облачные приложения часто строятся как `cloud agnostic` . Это означает, что приложение не тесно привязано к конкретному поставщику облака и может быть развернуто в любом общедоступном облаке.
 
-[Terraform](https://www.terraform.io/) — это средство создания коммерческих шаблонов, которое позволяет подготавливать облачные приложения для всех основных облачных игроков: Azure, Google Cloud Platform, AWS и аликлауд. Вместо использования JSON в качестве языка определения шаблона он использует немного более сжатый YAML.
+[Terraform](https://www.terraform.io/) — это коммерческое средство создания шаблонов, которое позволяет подготавливать облачные приложения для всех основных облачных игроков: Azure, Google Cloud Platform, AWS и аликлауд. Вместо использования JSON в качестве языка определения шаблона он использует немного более сжатый HCL (Hashicorp Configuration Language).
 
 Пример файла terraform, который делает то же, что и предыдущий шаблон диспетчер ресурсов (рис. 10-15), показан на рис. 10-16:
 

@@ -4,12 +4,13 @@ titleSuffix: ''
 description: Узнайте о технологиях .NET Framework, недоступных в .NET Core и .NET 5.0 и более поздних версий.
 author: cartermp
 ms.date: 03/08/2021
-ms.openlocfilehash: d8eccce7e36552e0d5396779936681227cb1e28a
-ms.sourcegitcommit: c7f0beaa2bd66ebca86362ca17d673f7e8256ca6
+ms.topic: reference
+ms.openlocfilehash: d22352cee76c546531a6487387fc8e2f4105fac4
+ms.sourcegitcommit: 8f71a6c655a9c39d5223401aed76c02ba00e03ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104875126"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107740960"
 ---
 # <a name="net-framework-technologies-unavailable-on-net-core-and-net-5"></a>Технологии .NET Framework, недоступные в .NET Core и .NET 5 и более поздних версий
 

@@ -5,12 +5,12 @@ ms.date: 04/02/2020
 author: natke
 ms.author: nakersha
 ms.custom: how-to
-ms.openlocfilehash: 75d29c6bafdce5c9bb104229ddc8d7b847f57e29
-ms.sourcegitcommit: fcbe432482464b1639decad78cc4dc8387c6269e
+ms.openlocfilehash: 2cff99cfa8a29ac87db69968025ea1081ddde81d
+ms.sourcegitcommit: 02cc87f02c46e603ea5925de95af746b7ab46a35
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97366806"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "107954709"
 ---
 # <a name="install-extra-mlnet-dependencies"></a>Установка дополнительных зависимостей ML.NET
 
@@ -95,5 +95,5 @@ dotnet add package Microsoft.ML
 1. Установите библиотеку с помощью `Homebrew`:
 
     ```bash
-    brew update && brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/f5b1ac99a7fba27c19cee0bc4f036775c889b359/Formula/libomp.rb && brew link libomp --force
+    wget https://raw.githubusercontent.com/Homebrew/homebrew-core/fb8323f2b170bd4ae97e1bac9bf3e2983af3fdb0/Formula/libomp.rb && brew install ./libomp.rb && brew link libomp --force
     ```
